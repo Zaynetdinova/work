@@ -1,0 +1,82 @@
+.slider-pointer {
+  display: flex;
+  align-items: center;
+  .left {
+    width: 10px;
+    height: 10px;
+    transform: rotate(180deg);
+    background: url("../images/icons/arrow2.svg");
+    margin-right: 10px;
+    cursor: pointer;
+    cursor: pointer;
+
+    &:hover {
+      background: url("../images/icons/arrow.svg");
+    }
+  }
+  .right {
+    width: 10px;
+    height: 10px;
+    background: url("../images/icons/arrow2.svg");
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: url("../images/icons/arrow.svg");
+    }
+  }
+
+  .ellipse-wrapper {
+    display: flex;
+    align-items: center;
+    .ellipse_main {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      border: 1px solid #3D3D3C;
+    }
+    .ellipse {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #3D3D3C;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &.main {
+
+    .left {
+      transform: rotate(360deg);
+      background: url("../images/icons/arrow-white.svg");
+
+      &:hover {
+        transform: rotate(-180deg);
+        background: url("../images/icons/arrow.svg");
+      }
+    }
+
+    .right {
+      transform: rotate(180deg);
+      background: url("../images/icons/arrow-white.svg");
+
+      &:hover {
+        transform: rotate(360deg);
+        background: url("../images/icons/arrow.svg");
+      }
+    }
+
+    .ellipse-wrapper {
+
+      .ellipse_main {
+        border: 1px solid rgba(255, 255, 255, 0.6);
+      }
+
+      .ellipse {
+        background: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+}

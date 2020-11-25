@@ -1,0 +1,21 @@
+.Categories-title {
+  width: 100%;
+
+  &-text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #3D3D3C;
+    padding: 7px 10px;
+    width: 243px;
+  }
+
+
+  &-line {
+    border: 1px dashed #3D3D3C;
+  }
+
+}

@@ -1,0 +1,21 @@
+.Size {
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+  .size {
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #3D3D3C;
+    margin-right: 3px;
+    padding: 7px;
+    border: 1px solid #C8C8C8;
+    margin-top: 3px;
+  }
+  .size:last-child {
+    margin-right: 0;
+  }
+}

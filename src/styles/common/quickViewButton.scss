@@ -1,0 +1,32 @@
+.Quick-view-button {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  cursor: pointer;
+  justify-content: center;
+
+  .text {
+    font-size: 13px;
+    line-height: 134.5%;
+    color: #3D3D3C;
+  }
+
+  .icon {
+    background: url("../images/icons/eye_icon.svg") no-repeat;
+    width: 21px;
+    height: 13px;
+    margin-left: 12px;
+  }
+  @media (max-width: 1400px)  {
+    .text {
+      font-size: 10px;
+      line-height: 134.5%;
+    }
+  }
+}
+
+
+

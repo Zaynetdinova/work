@@ -1,0 +1,51 @@
+@import '../../color';
+.topHeader {
+  padding: 12.5px 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: $baseColor;
+  background: $bg-topHeader;
+}
+.topHeader nav > a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration-line: underline;
+  transition: 0.2s ease;
+}
+.topHeader nav > a:hover {
+  color: $baseColor;
+}
+.topHeader nav > span > a {
+  text-decoration: none;
+  color: $baseColor;
+  font-size: 13px;
+  line-height: 15px;
+}
+.span {
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.lk_link {
+  margin-left: 7px;
+}
+.lk_link2 {
+  margin-left: 4px;
+}
+
+.info {
+  margin-left: 7px;
+}
+.wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}

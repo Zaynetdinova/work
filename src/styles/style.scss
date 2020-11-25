@@ -1,0 +1,30 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+@import './header/header';
+@import './main/main';
+@import './footer/footer';
+@import './popularBrand/popularBrand';
+@import './common/categoriesTitle';
+@import './sharesBlock/sharesBlock';
+@import './common/common';
+@import './bestsellers/bestsellers';
+@import './common/sale';
+
+
+* {margin: 0; padding: 0;}
+
+* {
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: #ffffff;
+  }
+}
+

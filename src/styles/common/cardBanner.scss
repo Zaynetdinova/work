@@ -1,0 +1,21 @@
+.Card-banner {
+  width: 80px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 106.8%;
+  color: #FFFFFF;
+  background:  #DF2B2B;
+  padding: 4px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+
+
+  &.banner-top {
+    top: 0;
+  }
+
+  &.banner-bottom {
+    bottom: 0;
+  }
+}
