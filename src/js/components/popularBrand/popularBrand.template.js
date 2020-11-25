@@ -5,7 +5,7 @@ export function popularBrand(data) {
   const cards = data.map(card => {
     return `
       <div class="card">
-        <div style="overflow: hidden; width: 100%; height: 100%;"><img class="Com-img" src=${card.img}></div>
+        <div class="img-wrap"><img class="Com-img" src=${card.img}></div>
         <div class="info">
         <div class="text">
             <div class="title">${card.title}</div> 
