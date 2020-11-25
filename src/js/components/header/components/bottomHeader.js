@@ -1,5 +1,6 @@
 import optmoyo from '../../../../images/header/optmoyo_logo.svg'
 import search_img from '../../../../images/header/search.svg'
+import plus from '../../../../images/icons/plus.svg'
 import search_white from '../../../../images/header/search_white.svg'
 import info_icon from '../../../../images/header/info.svg'
 import user from '../../../../images/header/user.svg'
@@ -44,23 +45,23 @@ export function bottomHeader() {
                         </ul>
                     </nav>
                     <div class="input-header">
-                        <input class='search-desktop' type='search' placeholder='Я ищу...' alt='search'>    
+                        <input class='search-desktop' type='search' placeholder='Я ищу...' alt='search'> 
+                        <img src=${plus}>
+                        <img class='search-black' src=${search_img}>  
                     </div>                    
-                        <input class='search-black' type='image' src=${search_img} alt='search'>
-                        <x-field>
-                            <span class="close" onclick="this.previousElementSibling.value = ''">
-                            &times;
-                            </span>
-                        </x-field>
-                                   
+                     
+                    
+                    
                     <div class="icons">
                     <div id="mobileSearch" class='search-white' type='image'> </div>
                     <img class='info_icon' src=${info_icon} alt='info-icon'>  
                     <img class='user' src=${user} alt='user'>
                     </div>
                     <div class='buy'>
-                        <img class='basket' id='basket' src=${basket} alt='basket'>
-                        <div class='basket-price' id='basket-price'>Корзина <br> пуста</div>
+                        <div class="content">
+                          <img class='basket' id='basket' src=${basket} alt='basket'>
+                          <div class='basket-price' id='basket-price'>Корзина <br> пуста</div>
+                        </div>
                     </div>  
                                         
                 </div> 
@@ -69,3 +70,5 @@ export function bottomHeader() {
         </div>
     `
 }
+
+// <input class='search-black' type='image' src=${search_img} alt='search'>
