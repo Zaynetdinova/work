@@ -135,10 +135,16 @@ input {
   display: flex;
   align-items: center;
 
-  &:focus {
-    background: red;
+  &:hover {
+    background: #C8C8C8;
+    cursor: pointer;
+  }
+
+  &.input-header-active {
+    background: white;
   }
 }
+
 .search-desktop {
   width: 100%;
   padding: 10px 2.8em 11px 17px;
@@ -147,13 +153,14 @@ input {
   line-height: 15px;
   background: transparent;
 
-  //&:hover {
-  //  background: #FFFFFF;
-  //}
+  &:hover {
+    cursor: pointer;
 
-  &:focus {
-    background: transparent;
   }
+
+  //&:focus {
+  //  background: white;
+  //}
 
 }
 
