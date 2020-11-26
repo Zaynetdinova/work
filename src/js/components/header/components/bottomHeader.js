@@ -45,14 +45,13 @@ export function bottomHeader() {
                             </li>               
                         </ul>
                     </nav>
-                    <div class="input-header">
+                    
+                    <article class="input-header" data-id="input-search-js">
                         <input class='search-desktop' type='search' placeholder='Я ищу...' alt='search'> 
-                        <img src=${plus}>
+                        <img class="delete input-search-delete" src=${plus}>
                         <img class='search-black' src=${search_img}>  
-                    </div>                    
+                    </article>                    
                      
-                    
-                    
                     <div class="icons">
                     <div id="mobileSearch" class='search-white' type='image'> </div>
                     <img class='info_icon' src=${info_icon} alt='info-icon'>  

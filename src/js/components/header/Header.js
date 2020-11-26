@@ -6,7 +6,7 @@ export class Header extends Component {
   constructor($root) {
     super($root, {
       name: 'Header',
-      listeners: ['click']
+      listeners: ['click', 'input']
     });
 
   }
@@ -44,6 +44,12 @@ export class Header extends Component {
 
 
   onClick(e) {
+    const inputSearch1 = e.target.closest('article')
+    if(inputSearch1.dataset.id === 'input-search-js') {
+      const inputSearch = document.querySelector('.input-header')
+      inputSearch.classList.add('input-header-active')
+    }
+
     if(e.target.id === 'mobileSearch'){
       mobileSearch()
     }
@@ -62,7 +68,19 @@ export class Header extends Component {
     if(button.id === 'point-js') {
       this.openCategory(button.dataset.type)
     }
+
+    const inputElement = document.querySelector('.search-desktop')
+    inputElement.addEventListener('input', () => {
+      console.log('super')
+    })
   }
+
+  onInput(e) {
+    console.log(e)
+    const inputSearchDelete = document.querySelector('.input-search-delete')
+    inputSearchDelete.classList.add('Com-display-block')
+  }
+
 }
 
     export function close() {

@@ -133,10 +133,20 @@ input {
   display: flex;
   align-items: center;
 
+  .delete {
+    display: none;
+  }
+
   &:hover {
+    background: rgba(255,255,255,.5);
+    cursor: pointer;
+  }
+
+  &.input-header-active {
     background: $baseColor;
   }
 }
+
 .search-desktop {
   width: 100%;
   padding: 10px 2.8em 11px 17px;
@@ -144,6 +154,11 @@ input {
   font-size: 13px;
   line-height: 15px;
   background: transparent;
+
+  &:hover {
+    cursor: pointer;
+
+  }
 }
 
 input[type='search']::-webkit-search-decoration,
@@ -316,4 +331,8 @@ input::-moz-placeholder { color: #3D3D3C; }
     width: 18px;
     margin-left: -9px;
   }
+}
+
+.Com-display-block {
+  display: block !important;
 }
