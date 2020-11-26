@@ -11,12 +11,14 @@
     box-sizing: border-box;
   }
   .content {
+    padding: 40px 0 212px 0;
     display: flex;
     justify-content: space-between;
-    padding: 44px 0 212px 0;
+
   }
   .box {
     font-size: 14px;
+    margin-right: 60px;
   }
   .box h4 {
     font-weight: bold;
@@ -31,14 +33,18 @@
   }
   .box  li > a {
     text-decoration: none;
-    line-height: 35px;
+    font-size: 14px;
+    line-height: 250%;
     color: #555555;
   }
   .box  li > a:hover {
     color: #E64747;
   }
   .social {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-between;
   }
   .s-title{
     font-weight: bold;
@@ -67,6 +73,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-top: 6px;
   }
   .footer-phone {
     margin-bottom: 3px;

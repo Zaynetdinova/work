@@ -17,6 +17,7 @@ export function footerTemplate() {
             <div class='footer-mobail'>${footer_adaptive(point)}</div>
             <div class='wrapper'>
                 <div class='content'>
+                
                     <div class='box'>
                             <h4>ИНФОРМАЦИЯ</h4>
                             <nav>
@@ -29,7 +30,7 @@ export function footerTemplate() {
                                     <li><a href="#">Контакты</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                    </div>
                     <div class='box'>
                             <h4>для клиентов</h4>
                             <nav>
@@ -58,7 +59,8 @@ export function footerTemplate() {
                                     <li><a href="#">Поставщикам</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                    </div>
+                
                     <div class='contact'>
                         <div class='left'>
                             <div class='social'>
@@ -73,7 +75,7 @@ export function footerTemplate() {
                                 </div>
                             </div>
                             <div class='partners'>
-                                <span class='s-title'>ПАРТНЕРЫ</span>
+                                <div class='s-title'>ПАРТНЕРЫ</div>
                                 <div class='s-img'><a href="https://moyo.moda/" target="_blank"><img src=${partner} alt='partner'></a></div>
                             </div>
                         </div>
