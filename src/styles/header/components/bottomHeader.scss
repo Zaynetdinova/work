@@ -147,6 +147,21 @@ input {
   }
 }
 
+.favorites {
+  margin-top: 2px;
+  margin-right: 20px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.favorites-mobile {
+  //margin-right: 18px;
+  display: none;
+}
+
 .search-desktop {
   width: 100%;
   padding: 10px 2.8em 11px 17px;
@@ -233,6 +248,15 @@ input::-moz-placeholder { color: #3D3D3C; }
   }
 }
 @media (max-width: 1024px) {
+
+  .favorites {
+    display: none;
+  }
+
+  .favorites-mobile {
+    display: block;
+  }
+
   .wrapper-b {
     padding: 0 0 0 20px;
   }
