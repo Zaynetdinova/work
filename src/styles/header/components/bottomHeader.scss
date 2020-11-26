@@ -243,12 +243,20 @@ input::-moz-placeholder { color: #3D3D3C; }
     margin-right: 10px;
   }
   .logo-img {
-    width: 150px;
+
     height: 35px;
   }
 }
 @media (max-width: 1024px) {
-
+  .burger-menu span, .burger-menu span:before, .burger-menu span:after {
+    width: 18px;
+    margin-left: -9px;
+  }
+  .burger-menu {
+    width: 18px;
+    height: 14px;
+    margin-right: 10px;
+  }
   .favorites {
     display: none;
   }
@@ -267,14 +275,13 @@ input::-moz-placeholder { color: #3D3D3C; }
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 58px;
+    right: 64px;
+
   }
   .topHeader {
     display: none;
   }
-  .burger-menu {
-    margin-right: 0;
-  }
+
   .search-desktop {
     display: none;
   }
@@ -299,13 +306,13 @@ input::-moz-placeholder { color: #3D3D3C; }
     display: block;
     margin-right: 18px;
     margin-left: 18px;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
   .user {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
   .basket {
     width: 17px;
@@ -317,9 +324,9 @@ input::-moz-placeholder { color: #3D3D3C; }
     display: none;
   }
   .search-white {
-    background: url("../images/header/search_white.svg") no-repeat;
-    width: 16px;
-    height: 16px;
+    //background: url("../images/header/search_white.svg") no-repeat;
+    width: 18px;
+    height: 18px;
     display: block;
   }
   .input-header {
@@ -341,19 +348,38 @@ input::-moz-placeholder { color: #3D3D3C; }
     }
   }
   .basket-phone {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
   }
 }
 
-@media (max-width: 768px) {
-  .burger-menu {
-    width: 18px;
-    height: 14px;
+@media (max-width: 330px) {
+  .basket-phone {
+    width: 15px;
+    height: 15px;
   }
-  .burger-menu span, .burger-menu span:before, .burger-menu span:after {
-    width: 18px;
-    margin-left: -9px;
+  .search-white {
+    width: 15px;
+    height: 15px;
+  }
+  .info_icon {
+    width: 15px;
+    height: 15px;
+  }
+  .user {
+    width: 15px;
+    height: 15px;
+  }
+  .content {
+    padding: 16px;
+  }
+  .buy-phone {
+    .content {
+      padding: 16px;
+    }
+  }
+  .icons {
+    right: 62px;
   }
 }
 
