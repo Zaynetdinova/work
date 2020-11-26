@@ -79,11 +79,11 @@ export function footerTemplate() {
                         </div>
                         <div class='right'>
                             <div class='phone'>
-                                <a href='tel:+74996088925'>8 (499) 608-89-25</a>
+                                <a class="footer-phone" href='tel:+74996088925'>8 (499) 608-89-25</a>
                                 <a href='tel:+78003012575'>8 (800) 301-25-75</a>
                             </div>
                             <div class='mode'>
-                                ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line'>I</span> ОКРУЖНОЙ ПРОЕЗД <span class='line'>I</span> 30А
+                                ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line-footer'></span> ОКРУЖНОЙ ПРОЕЗД <span class='line-footer'></span> 30А
                             </div>
                             <div class='schema'>
                                 <a href="https://yandex.ru/maps/?from=api-maps&ll=37.968130%2C55.503040&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AWBTjAg5GRe0kP9x5FU3LeB13aYBomqUm&z=10" target="_blank">СХЕМА ПРОЕЗДА</a>

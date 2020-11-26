@@ -47,7 +47,7 @@
     color: #555555;
   }
   .s-img {
-    margin-top: 9px;
+    margin-top: 11px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +68,10 @@
     flex-direction: column;
     margin-bottom: 20px;
   }
+  .footer-phone {
+    margin-bottom: 3px;
+  }
+
   .phone a {
     font-weight: bold;
     font-size: 14px;
@@ -82,20 +86,23 @@
     margin-left: 29px;
   }
   .mode {
+    margin-bottom: 15px;
     font-weight: bold;
     font-size: 10px;
-    line-height: 11px;
-    margin-bottom: 5px;
+    line-height: 14px;
+
     color: #555555;
   }
   .redact {
     font-weight: normal;
   }
-  .line {
-    color: #C8C8C8;
+  .line-footer {
+    border-left: 2px solid #C8C8C8;
+    margin-right: 4px;
   }
   .schema {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+    margin-left: 6px;
   }
   .schema a {
     font-weight: bold;
