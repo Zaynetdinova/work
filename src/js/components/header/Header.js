@@ -44,11 +44,7 @@ export class Header extends Component {
 
 
   onClick(e) {
-    const inputSearch1 = e.target.closest('article')
-    if(inputSearch1.dataset.id === 'input-search-js') {
-      const inputSearch = document.querySelector('.input-header')
-      inputSearch.classList.add('input-header-active')
-    }
+
 
     if(e.target.id === 'mobileSearch'){
       mobileSearch()
@@ -76,9 +72,20 @@ export class Header extends Component {
   }
 
   onInput(e) {
-    console.log(e)
+    console.log(e.target.value)
     const inputSearchDelete = document.querySelector('.input-search-delete')
+    const input = document.querySelector('.search-desktop')
     inputSearchDelete.classList.add('Com-display-block')
+
+    if(e.target.value === '') {
+      inputSearchDelete.classList.remove('Com-display-block')
+    }
+    inputSearchDelete.addEventListener('click', () => {
+      input.value = ''
+      if(input.value === '') {
+        inputSearchDelete.classList.remove('Com-display-block')
+      }
+    })
   }
 
 }
