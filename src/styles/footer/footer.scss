@@ -11,34 +11,41 @@
     box-sizing: border-box;
   }
   .content {
+    padding: 40px 0 212px 0;
     display: flex;
     justify-content: space-between;
-    padding: 44px 0 212px 0;
+
   }
   .box {
     font-size: 14px;
   }
+  .box nav {
+    line-height: 270%;
+  }
   .box h4 {
     font-weight: bold;
     line-height: 100%;
-    letter-spacing: 0.05em;
     color: #555555;
     text-transform: uppercase;
     margin-bottom: 13px;
+    margin-top: 4px;
   }
   .box li {
     list-style-type: none;
   }
   .box  li > a {
     text-decoration: none;
-    line-height: 35px;
+    font-size: 14px;
     color: #555555;
   }
   .box  li > a:hover {
     color: #E64747;
   }
   .social {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .s-title{
     font-weight: bold;
@@ -47,7 +54,7 @@
     color: #555555;
   }
   .s-img {
-    margin-top: 9px;
+    margin-top: 11px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +74,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    justify-content: space-between;
   }
+  .footer-phone {
+    margin-bottom: 3px;
+  }
+
   .phone a {
     font-weight: bold;
     font-size: 14px;
@@ -82,20 +94,23 @@
     margin-left: 29px;
   }
   .mode {
+    margin-bottom: 15px;
     font-weight: bold;
     font-size: 10px;
-    line-height: 11px;
-    margin-bottom: 5px;
+    line-height: 14px;
+
     color: #555555;
   }
   .redact {
     font-weight: normal;
   }
-  .line {
-    color: #C8C8C8;
+  .line-footer {
+    border-left: 2px solid #C8C8C8;
+    margin-right: 4px;
   }
   .schema {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+
   }
   .schema a {
     font-weight: bold;
@@ -125,9 +140,6 @@
     .s-img {
       width: 190px;
     }
-    .box {
-      font-size: 12px;
-    }
   }
   @media (max-width: 1024px) {
     .contact {
@@ -138,6 +150,19 @@
     }
     .partners {
       margin-bottom: 35px;
+    }
+    .left {
+      order: 1;
+    }
+    .right {
+      margin-bottom: 27px;
+      order: 0;
+    }
+    .partners {
+      margin: 0;
+    }
+    .social {
+      margin-bottom: 28px;
     }
   }
   @media (max-width: 768px) {
@@ -152,15 +177,6 @@
       display: flex;
       justify-content: space-between;
       flex-flow: wrap;
-    }
-    .left {
-      order: 1;
-    }
-    .right {
-      order: 0;
-    }
-    .partners {
-      margin: 0;
     }
   }
 }

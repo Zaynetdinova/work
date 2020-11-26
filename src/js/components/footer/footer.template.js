@@ -17,6 +17,7 @@ export function footerTemplate() {
             <div class='footer-mobail'>${footer_adaptive(point)}</div>
             <div class='wrapper'>
                 <div class='content'>
+                
                     <div class='box'>
                             <h4>ИНФОРМАЦИЯ</h4>
                             <nav>
@@ -29,7 +30,7 @@ export function footerTemplate() {
                                     <li><a href="#">Контакты</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                    </div>
                     <div class='box'>
                             <h4>для клиентов</h4>
                             <nav>
@@ -58,7 +59,8 @@ export function footerTemplate() {
                                     <li><a href="#">Поставщикам</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                    </div>
+                
                     <div class='contact'>
                         <div class='left'>
                             <div class='social'>
@@ -73,17 +75,17 @@ export function footerTemplate() {
                                 </div>
                             </div>
                             <div class='partners'>
-                                <span class='s-title'>ПАРТНЕРЫ</span>
+                                <div class='s-title'>ПАРТНЕРЫ</div>
                                 <div class='s-img'><a href="https://moyo.moda/" target="_blank"><img src=${partner} alt='partner'></a></div>
                             </div>
                         </div>
                         <div class='right'>
                             <div class='phone'>
-                                <a href='tel:+74996088925'>8 (499) 608-89-25</a>
+                                <a class="footer-phone" href='tel:+74996088925'>8 (499) 608-89-25</a>
                                 <a href='tel:+78003012575'>8 (800) 301-25-75</a>
                             </div>
                             <div class='mode'>
-                                ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line'>I</span> ОКРУЖНОЙ ПРОЕЗД <span class='line'>I</span> 30А
+                                ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line-footer'></span> ОКРУЖНОЙ ПРОЕЗД <span class='line-footer'></span> 30А
                             </div>
                             <div class='schema'>
                                 <a href="https://yandex.ru/maps/?from=api-maps&ll=37.968130%2C55.503040&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AWBTjAg5GRe0kP9x5FU3LeB13aYBomqUm&z=10" target="_blank">СХЕМА ПРОЕЗДА</a>
