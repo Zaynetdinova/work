@@ -88,7 +88,7 @@ export function footerTemplate() {
                                 ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line-footer'></span> ОКРУЖНОЙ ПРОЕЗД <span class='line-footer'></span> 30А
                             </div>
                             <div class='schema'>
-                                <a href="https://yandex.ru/maps/?from=api-maps&ll=37.968130%2C55.503040&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AWBTjAg5GRe0kP9x5FU3LeB13aYBomqUm&z=10" target="_blank">СХЕМА ПРОЕЗДА</a>
+                                <a class="a-schema" href="https://yandex.ru/maps/?from=api-maps&ll=37.968130%2C55.503040&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AWBTjAg5GRe0kP9x5FU3LeB13aYBomqUm&z=10" target="_blank">СХЕМА ПРОЕЗДА</a>
                                 <img class="schema-img" src=${schema} alt='schema'>
                             </div>
                             <div class='bank_card'>
