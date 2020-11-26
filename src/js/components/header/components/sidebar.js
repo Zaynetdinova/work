@@ -4,6 +4,7 @@ import {choice, menu} from './choice'
 
 export function sidebar(point) {
     const items = point.map((item) => {
+    const {category, subcategory = false} = item
     return `
         <article id="point-js" data-type="${item.id}">
             <div class='common'>
@@ -18,7 +19,9 @@ export function sidebar(point) {
                 </div>
                 <hr class="header-line">
                 <div>
-                    <div class='categories' id=${item.id}>${choice(li)}</div> 
+                    <div class='categories ${ subcategory ? 'main-sub-category' : ''}' id=${item.id}>
+                        ${choice(category, subcategory)}
+                    </div> 
                     <div class='nav'>${menu(nav)}</div>
                 </div>                         
             </div>
@@ -29,60 +32,6 @@ export function sidebar(point) {
     return `${items.join('')}`
 }
 
-let li =
-    [
-        {
-            category: 'Платья'
-        },
-        {
-            category: 'Трикотаж'
-        },
-        {
-            category: 'Верха'
-        },
-        {
-            category: 'Низы'
-        },
-        {
-            category: 'Юбки'
-        },
-        {
-            category: 'Верхняя одежда'
-        },
-        {
-            category: 'Костюмы'
-        },
-        {
-            category: 'Для дома'
-        },
-        {
-            category: 'Спорт'
-        },
-        {
-            category: 'Нижнее белье'
-        },
-        {
-            category: 'Купальники'
-        },
-        {
-            category: 'Колготки и Носки'
-        },
-        {
-            category: 'Большие размеры'
-        },
-        {
-            category: 'Аксессуары'
-        },
-        {
-            category: 'Новинки'
-        },
-        {
-            category: 'Акции'
-        },
-        {
-            category: 'Скидки'
-        },
-    ]
 
 
 let nav = [
