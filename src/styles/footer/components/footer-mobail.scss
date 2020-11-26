@@ -21,7 +21,6 @@ Footer {
     display: flex;
   }
   .common {
-    margin-bottom: 2px;
     background: $bg-sidebar;
   }
   .points {
@@ -33,7 +32,7 @@ Footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 18px 9px 15px;
+    padding: 15px 18px 15px 15px;
     background: $bg-sidebar;
     cursor: pointer;
   }
@@ -48,9 +47,12 @@ Footer {
   .title {
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
   }
   .title:hover {
-    color: #E64747;
+    color: #AB064E;
   }
   .plus {
     display: block;
@@ -86,9 +88,21 @@ Footer {
   .choice {
     padding: 12px 0;
     cursor: pointer;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 100%;
+
+    letter-spacing: 0.05em;
+
+
   }
   .nav {
     display: none;
+  }
+  .footer-line {
+    border: none;
+    height: 2px;
+    background: $baseColor;
   }
   @media (max-width: 768px) {
     .footer-mobail {

@@ -11,6 +11,7 @@ export function footer_adaptive(point) {
                         <span></span>
                     </a>
                 </div>
+                <hr class="footer-line">
                 <div>
                     <div class='categories' id=${item.id}>${choice(item.id, obj)}</div> 
                 </div>                         

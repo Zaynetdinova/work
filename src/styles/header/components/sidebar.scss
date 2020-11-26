@@ -69,10 +69,12 @@
   font-weight: bold;
   font-size: 13px;
   line-height: 15px;
+
+  &:hover {
+    color: #AB064E;
+  }
 }
-.title:hover {
-  color: #AB064E;
-}
+
 .plus {
   display: block;
   width: 10px;

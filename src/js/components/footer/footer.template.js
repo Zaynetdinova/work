@@ -67,13 +67,11 @@ export function footerTemplate() {
                             <div class='social'>
                                 <span class='s-title'>СОЦСЕТИ</span>
                                 <div class='s-img'>
+                                    <a class="instagram" href="#"><img src=${instagram} alt='tw' width="30px" height="30px"></a>
                                     <a href="https://vk.com/optmoyo" target="_blank"><img src=${vk} alt='vk'></a>                                  
                                     <a href="https://www.facebook.com/OptMoyo.Ru/" target="_blank"><img src=${fb} alt='fb'></a>
-                                    <a class="instagram" href="#"><img src=${instagram} alt='tw' width="30px" height="30px"></a>
-                                    <a href="#"><img src=${tw} alt='tw'></a>
-                                    <a href="#"><img src=${pen} alt='pen'></a>
-                                    <a href="#"><img src=${mail} alt='mail'></a>
-                                    <a href="#"><img src=${od} alt='od'> </a>                                
+                                    
+                                
                                 </div>
                             </div>
                             <div class='partners'>
@@ -129,3 +127,7 @@ let point = [
         id: 'cooperation'
     }
 ]
+//     <a href="#"><img src=${tw} alt='tw'></a>
+// <a href="#"><img src=${pen} alt='pen'></a>
+// <a href="#"><img src=${mail} alt='mail'></a>
+// <a href="#"><img src=${od} alt='od'> </a>
