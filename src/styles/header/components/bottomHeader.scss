@@ -4,7 +4,10 @@
   color: $baseColor;
   background: $bg-bottomHeader;
 }
+
 .content-header {
+  display: flex;
+  align-items: center;
   position: relative;
   padding: 20px 0;
 }
@@ -66,11 +69,6 @@
   transition-delay: 0s, 0.3s;
 }
 
-.content-header {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
 .logo {
   display: flex;
   align-items: center;
@@ -135,13 +133,17 @@ input {
   display: flex;
   align-items: center;
 
+  .delete {
+    display: none;
+  }
+
   &:hover {
-    background: #C8C8C8;
+    background: rgba(255,255,255,.5);
     cursor: pointer;
   }
 
   &.input-header-active {
-    background: white;
+    background: $baseColor;
   }
 }
 
@@ -157,11 +159,6 @@ input {
     cursor: pointer;
 
   }
-
-  //&:focus {
-  //  background: white;
-  //}
-
 }
 
 input[type='search']::-webkit-search-decoration,
@@ -177,22 +174,11 @@ input[type='search']::-webkit-search-results-decoration {
   position: relative;
 }
 
-.x-field{
-  display:inline;
-  position:relative;
-}
-.x-field .close {
-  position:absolute;
-  padding:0 5px;
-  right:0;
-}
 input::-webkit-input-placeholder { color: #3D3D3C; }
 input::-moz-placeholder { color: #3D3D3C; }
 .like {
   cursor: pointer;
 }
-
-
 
 .basket-price {
   background: #E7003E;
@@ -216,9 +202,11 @@ input::-moz-placeholder { color: #3D3D3C; }
     flex-direction: column;
   }
 }
+.buy-phone {
+  display: none;
+}
 
 .basket {
-  //width: 20px;
   height: 20px;
   margin-top: 14px;
   margin-bottom: 19px;
@@ -234,19 +222,7 @@ input::-moz-placeholder { color: #3D3D3C; }
   display: none;
   cursor: pointer;
 }
-@media (max-width: 1480px) {
-  //.buy {
-  //  position: relative;
-  //}
-  //.basket-price {
-  //  display: none;
-  //}
-}
-@media (max-width: 1420px) {
-  //.search-desktop {
-  //  width: 200px;
-  //}
-}
+
 @media (max-width: 1280px) {
   .menu > li {
     margin-right: 10px;
@@ -281,6 +257,9 @@ input::-moz-placeholder { color: #3D3D3C; }
   .content-header nav {
     display: none;
   }
+  .content-header {
+    padding: 0;
+  }
   .logo {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -304,11 +283,6 @@ input::-moz-placeholder { color: #3D3D3C; }
     width: 16px;
     height: 16px;
   }
-  .buy {
-    width: 45px;
-    height: 100%;
-    padding: 13.5px;
-  }
   .basket {
     width: 17px;
     height: 17px;
@@ -324,11 +298,31 @@ input::-moz-placeholder { color: #3D3D3C; }
     height: 16px;
     display: block;
   }
+  .input-header {
+    display: none;
+  }
+  .buy {
+    display: none;
+  }
+  .buy-phone {
+    display: block;
+    .content {
+      position: absolute;
+      padding: 15px;
+      top: 0;
+      right: 0;
+      background: #E7003E;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .basket-phone {
+    width: 17px;
+    height: 17px;
+  }
 }
 
 @media (max-width: 768px) {
-
-
   .burger-menu {
     width: 18px;
     height: 14px;
@@ -337,4 +331,8 @@ input::-moz-placeholder { color: #3D3D3C; }
     width: 18px;
     margin-left: -9px;
   }
+}
+
+.Com-display-block {
+  display: block !important;
 }
