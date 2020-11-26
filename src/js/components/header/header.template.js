@@ -1,5 +1,6 @@
 import {topHeader} from './components/topHeader'
 import {bottomHeader} from './components/bottomHeader'
+import {bottomHeaderUser} from './components/bottomHeaderUser'
 import {sidebar} from './components/sidebar'
 import {extra} from './components/extra'
 

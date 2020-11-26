@@ -10,7 +10,7 @@ import basket from '../../../../images/header/basket.svg'
 import enter from '../../../../images/header/enter.svg'
 import {search} from './search'
 
-export function bottomHeader() {
+export function bottomHeaderUser() {
 
 
 
@@ -53,12 +53,16 @@ export function bottomHeader() {
                         <img class='search-black' src=${search_img}>  
                     </article>   
                     
-                    
+                    <div class="registry-user favorites">
+                        <img src=${like}>
+                    </div>
                      
                     <div class="icons">
                       <div id="mobileSearch" class='search-white' type='image'> </div>
                       <img class='info_icon' src=${info_icon} alt='info-icon'> 
-                      <img class='user' src=${enter} alt='enter'>
+                      <div class="registry-user favorites-mobile">
+                        <img src=${user}>
+                      </div>  
                      
                     </div>
                     <div class='buy'>
