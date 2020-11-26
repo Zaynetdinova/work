@@ -69,3 +69,4 @@ firebase.json
 .idea/
 .firebaserc
 .DS_Store
+public
