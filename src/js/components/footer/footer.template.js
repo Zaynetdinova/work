@@ -4,6 +4,7 @@ import tw from '../../../images/footer/3.svg'
 import pen from '../../../images/footer/4.svg'
 import mail from '../../../images/footer/5.svg'
 import od from '../../../images/footer/6.svg'
+import instagram from '../../../images/footer/Instagram.svg'
 import partner from '../../../images/footer/partner.svg'
 import schema  from '../../../images/footer/shema.svg'
 import card from '../../../images/footer/card_bank.svg'
@@ -64,10 +65,11 @@ export function footerTemplate() {
                     <div class='contact'>
                         <div class='left'>
                             <div class='social'>
-                                <span class='s-title'>ПОДЕЛИТЬСЯ</span>
+                                <span class='s-title'>СОЦСЕТИ</span>
                                 <div class='s-img'>
                                     <a href="https://vk.com/optmoyo" target="_blank"><img src=${vk} alt='vk'></a>                                  
                                     <a href="https://www.facebook.com/OptMoyo.Ru/" target="_blank"><img src=${fb} alt='fb'></a>
+                                    <a class="instagram" href="#"><img src=${instagram} alt='tw' width="30px" height="30px"></a>
                                     <a href="#"><img src=${tw} alt='tw'></a>
                                     <a href="#"><img src=${pen} alt='pen'></a>
                                     <a href="#"><img src=${mail} alt='mail'></a>
@@ -89,7 +91,7 @@ export function footerTemplate() {
                             </div>
                             <div class='schema'>
                                 <a href="https://yandex.ru/maps/?from=api-maps&ll=37.968130%2C55.503040&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AWBTjAg5GRe0kP9x5FU3LeB13aYBomqUm&z=10" target="_blank">СХЕМА ПРОЕЗДА</a>
-                                <img src=${schema} alt='schema'>
+                                <img class="schema-img" src=${schema} alt='schema'>
                             </div>
                             <div class='bank_card'>
                                 <img src=${card} alt='card'>
