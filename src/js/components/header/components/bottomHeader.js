@@ -6,6 +6,7 @@ import info_icon from '../../../../images/header/info.svg'
 import user from '../../../../images/header/user.svg'
 import like from '../../../../images/header/like.svg'
 import basket from '../../../../images/header/basket.svg'
+import enter from '../../../../images/header/enter.svg'
 import {search} from './search'
 
 export function bottomHeader() {
@@ -55,14 +56,20 @@ export function bottomHeader() {
                     <div class="icons">
                     <div id="mobileSearch" class='search-white' type='image'> </div>
                     <img class='info_icon' src=${info_icon} alt='info-icon'>  
-                    <img class='user' src=${user} alt='user'>
+                    <img class='user' src=${enter} alt='enter'>
                     </div>
                     <div class='buy'>
                         <div class="content">
                           <img class='basket' id='basket' src=${basket} alt='basket'>
                           <div class='basket-price' id='basket-price'>Корзина <br> пуста</div>
                         </div>
+                    </div>
+                    <div class="buy-phone">
+                    <div class="content">
+                        <img class='basket-phone' id='basket' src=${basket} alt='basket'>
+                    </div>
                     </div>  
+                    
                                         
                 </div> 
             </div>
