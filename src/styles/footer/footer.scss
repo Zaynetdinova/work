@@ -1,5 +1,6 @@
 @import '../color';
 @import 'components/footer-mobail';
+
 .Footer {
   .bg-footer {
   background-color: $bg-footer;
@@ -37,10 +38,12 @@
     text-decoration: none;
     font-size: 14px;
     color: #555555;
+
+    &:hover {
+      color: #AB064E;
+    }
   }
-  .box  li > a:hover {
-    color: #E64747;
-  }
+
   .social {
     margin-bottom: 33px;
     display: flex;
@@ -58,7 +61,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 215px;
+    width: 252px;
   }
   .s-img a {
     display: flex;
@@ -86,9 +89,10 @@
     line-height: 16px;
     text-decoration: none;
     color: #555555;
-  }
-  .phone a:hover {
-    color: #E64747;
+
+    &:hover {
+      color: #AB064E;
+    }
   }
   .right {
     margin-left: 29px;
@@ -110,7 +114,9 @@
   }
   .schema {
     margin-bottom: 16px;
-
+  }
+  .schema-img {
+    margin-bottom: -1px;
   }
   .schema a {
     font-weight: bold;
@@ -119,9 +125,9 @@
     text-decoration-line: underline;
 
     color: #555555;
-  }
-  .schema a:hover {
-    color: #E64747;
+    &:hover {
+      color: #AB064E;
+    }
   }
   .bg-down {
     background: #3D3D3C;
@@ -136,9 +142,10 @@
 
     color: #FFFFFF;
   }
+
   @media (max-width: 1280px) {
     .s-img {
-      width: 190px;
+      width: 227px;
     }
   }
   @media (max-width: 1024px) {
