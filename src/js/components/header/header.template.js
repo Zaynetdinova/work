@@ -18,17 +18,32 @@ export function createHeader(data) {
         ${topHeader()}
         <hr class="line-header">
         ${bottomHeader()}
-        <div class='sidebar' id='sidebar'>
+        
+        <section class="Sidebar" id='sidebar-js'>
+          
+          
+          <div class='menu' data-id="menu-js">
             <div class='wrapper-sidebar'>
                 <div class='points'>
                     ${sidebar(point)}
                 </div>   
                 <div class='extra'>
                     ${extra()}
-                </div>                   
-            </div>     
-                    
-        </div>  
+                </div>  
+                
+                <div class="button-close" data-id="cancel-js"></div>                
+            </div>
+          </div>
+          
+          
+          
+           
+          
+          
+          
+          <div class="background" data-id="background-js"></div>  
+        </section>
+         
     `
 }
 

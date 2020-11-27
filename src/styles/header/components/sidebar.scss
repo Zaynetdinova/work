@@ -1,30 +1,67 @@
 @import '../../color';
-.sidebar {
-  background: $baseColor;
-  color: $sidebar-color;
-  display: none;
-  position: absolute;
-  top: 118px;
-  left: 0;
-  //width: 100%;
+
+.Sidebar {
+  position: relative;
+  .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0 , 0, 0, .4);
+    z-index: 2;
+    display: none;
+  }
+
+  .button-close {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-image: url("../images/icons/cancel.svg");
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  .test {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -60px;
+    background: red;
+  }
+
+  .menu {
+    z-index: 3;
+    color: $sidebar-color;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    width: 100%;
+
+    .wrapper-sidebar {
+      display: flex;
+    }
+  }
 }
+
+
+
 .header-line {
   border: none;
   height: 2px;
   background: $baseColor;
 }
 
-.sidebar.show {
+.menu.show {
   display: block;
 }
-.wrapper-sidebar {
-  display: flex;
-  //max-width: 1440px;
-  //margin: auto;
-  //margin-bottom: 60px;
-  //padding: 0 16px;
 
-}
 .common {
   background: $bg-sidebar;
 }
@@ -135,7 +172,7 @@
   display: none;
 }
 @media (max-width: 1024px) {
-  .sidebar {
+  .menu {
     top: 85px;
   }
   .points {
@@ -154,7 +191,7 @@
   }
 }
 @media (max-width: 768px) {
-  .sidebar {
+  .menu {
     top: 47px;
   }
 
@@ -164,11 +201,7 @@
   }
 }
 
-//.search-mobail {
-//  //position: absolute;
-//  height: 100%;
-//  top: 0;
-//}
+
 
 
 
