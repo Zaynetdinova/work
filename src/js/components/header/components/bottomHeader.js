@@ -59,7 +59,7 @@ export function bottomHeader() {
                     
                      
                     <div class="icons">
-                      <div id="mobileSearch" class='search-white' type='image'> </div>
+                      <img class='search-white' src="${search_white}">
                       <img class='info_icon' src=${info_icon} alt='info-icon'> 
                       <img class='user' src=${enter} alt='enter'>
                      
