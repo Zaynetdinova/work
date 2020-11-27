@@ -5,7 +5,7 @@ import {alternative} from "./alternative";
 
 export function extra() {
     return `
-        <div class='more'>
+        <div class='More'>
             <div class="first-col">
                 <div class='first-content'>
                     ${pick(more)}

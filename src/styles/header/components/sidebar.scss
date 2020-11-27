@@ -26,14 +26,6 @@
     cursor: pointer;
   }
 
-  .test {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    right: -60px;
-    background: red;
-  }
-
   .menu {
     z-index: 3;
     color: $sidebar-color;
@@ -46,6 +38,33 @@
 
     .wrapper-sidebar {
       display: flex;
+    }
+  }
+
+  .extra {
+    background: $baseColor;
+  }
+
+  .point {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px 9px 16px;
+    background: $bg-sidebar;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1024px) {
+    .menu {
+      position: absolute;
+    }
+
+    .button-close {
+      display: none;
+    }
+
+    .points {
+      width: 100%;
     }
   }
 }
@@ -72,17 +91,8 @@
   height: 100vh;
 }
 
-.extra {
-  display: none;
-}
-.point {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 32px 9px 16px;
-  background: $bg-sidebar;
-  cursor: pointer;
-}
+
+
 .categories {
   padding: 0 32px 26px 32px;
   background: $baseColor;
@@ -175,12 +185,7 @@
   .menu {
     top: 85px;
   }
-  .points {
-    width: 320px;
-    z-index: 1;
-    height: 100vh;
-    //display: none;
-  }
+
   .extra {
     display: none;
   }
