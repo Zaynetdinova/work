@@ -1,13 +1,15 @@
 .slider-pointer {
   display: flex;
   align-items: center;
+  margin-top: 8px;
+
+
   .left {
     width: 10px;
     height: 10px;
     transform: rotate(180deg);
     background: url("../images/icons/arrow2.svg");
     margin-right: 10px;
-    cursor: pointer;
     cursor: pointer;
 
     &:hover {
@@ -40,7 +42,7 @@
       height: 5px;
       border-radius: 50%;
       background: #3D3D3C;
-      margin-left: 10px;
+      margin-left: 9px;
       cursor: pointer;
     }
   }
@@ -70,7 +72,7 @@
     .ellipse-wrapper {
 
       .ellipse_main {
-        border: 1px solid rgba(255, 255, 255, 0.6);
+        border: 1px solid #FFFFFF;
       }
 
       .ellipse {
@@ -79,4 +81,13 @@
     }
   }
 
+}
+
+@media (max-width: 1024px) {
+  .slider-pointer.main .left {
+    display: none;
+  }
+  .slider-pointer.main .right {
+    display: none;
+  }
 }
