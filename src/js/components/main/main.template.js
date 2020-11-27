@@ -11,9 +11,13 @@ export function createMain(data) {
                         <div class='banner-box'>
                             <div class='box'>
                                 <h1>Сезонная распродажа поднимет вам настроение этой осенью</h1>
-                                <p>Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков, не упустите свой шанс стать ярче.</p>
+                                
+                                <p>Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.</p>
                                 <div class="box-button">
-                                    <button type="button">ПОДРОБНЕЕ</button>   
+                                <div style="display: flex">
+                                    <button type="button">ПОДРОБНЕЕ</button>
+                                    <div class='right'></div> 
+                                    </div>
                                     ${sliderPointerTemplate('main')}   
                                 </div>
                              </div>                                                  
@@ -24,3 +28,6 @@ export function createMain(data) {
         </div>
     `
 }
+
+// Сезонная распродажа поднимет вам настроение этой осенью
+// Дизайнеры Counte предлогают вам гамму которая добавит в вашу <br> осень ярчайших цветов и приятных оттенков.
