@@ -1,5 +1,6 @@
 import {Component} from '../../core/Component'
 import {createHeader} from './header.template'
+import {openMenu} from './js/openMenu'
 
 export class Header extends Component {
   static className = 'Header'
@@ -13,12 +14,6 @@ export class Header extends Component {
   toHTML() {
     return createHeader([1, 2, 3])
 
-  }
-
-  openMenu() {
-    document.getElementById('burger-menu').classList.toggle('show')
-    document.getElementById('sidebar').classList.toggle('show')
-    document.querySelector('.bg-search').classList.remove('display-block')
   }
 
   openCategory(category) {
@@ -66,7 +61,7 @@ export class Header extends Component {
     if (!button) return;
     if(button.id === 'burger-menu') {
       mobileSearch()
-      this.openMenu()
+      openMenu()
     }
 
     if(e.target.id === 'choice') {
@@ -102,21 +97,21 @@ export class Header extends Component {
 
 }
 
-    export function close() {
-      const elements = document.querySelectorAll('.categories')
-      elements.forEach((item) => {
-        item.classList.remove('open')
-      })
-    }
+export function close() {
+  const elements = document.querySelectorAll('.categories')
+  elements.forEach((item) => {
+    item.classList.remove('open')
+  })
+}
 
-    function closeMinus() {
-      const elements = document.querySelectorAll('.plus')
-      elements.forEach((item) => {
-        item.classList.remove('minus')
-      })
-    }
+function closeMinus() {
+  const elements = document.querySelectorAll('.plus')
+  elements.forEach((item) => {
+    item.classList.remove('minus')
+  })
+}
 
-    function mobileSearch() {
-      const elem = document.querySelector('.bg-search')
-      elem.classList.toggle('display-block')
-    }
+function mobileSearch() {
+  const elem = document.querySelector('.bg-search')
+  elem.classList.toggle('display-block')
+}
