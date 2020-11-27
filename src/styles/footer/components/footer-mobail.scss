@@ -49,6 +49,7 @@ Footer {
     font-weight: bold;
     font-size: 13px;
     line-height: 15px;
+    letter-spacing: 0.05em;
   }
   .title:hover {
     color: #AB064E;
@@ -85,12 +86,10 @@ Footer {
     border: 1px dashed #D9D9D9;
   }
   .choice {
-    padding: 12px 0;
     cursor: pointer;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 100%;
-
+    font-size: 14px;
+    line-height: 40px;
     letter-spacing: 0.05em;
 
 
