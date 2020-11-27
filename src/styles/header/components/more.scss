@@ -1,52 +1,59 @@
-.Header {
-  .more {
+  .More {
     display: flex;
     justify-content: space-between;
     padding: 40px 40px 40px 30px;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 25%;
-    color: #3D3D3C;
-  }
-  .intro {
-    padding: 22px 19px 39px 18px;
-    background: #F3F2F0;
-  }
-  .title-text {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: capitalize;
-    margin-bottom: 11px;
-  }
-  .description {
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: capitalize;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 25%;
+      color: #3D3D3C;
+    }
+    .intro {
+      padding: 22px 19px 39px 18px;
+      background: #F3F2F0;
+    }
+    .title-text {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: capitalize;
+      margin-bottom: 11px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: capitalize;
+    }
+
+    .first-content a, .second-content a {
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+    .first-content a:hover, .second-content a:hover {
+      text-decoration: underline;
+    }
+    .first-content a {
+      line-height: 100%;
+      text-transform: capitalize;
+      color: #555555;
+    }
+    .second-content a {
+      line-height: 250%;
+      text-transform: uppercase;
+      color: #5A5A5A;
+    }
+    .selection {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 960px) {
+      display: none;
+
+    }
   }
 
-  .first-content a, .second-content a {
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-  }
-  .first-content a:hover, .second-content a:hover {
-    text-decoration: underline;
-  }
-  .first-content a {
-    line-height: 100%;
-    text-transform: capitalize;
-    color: #555555;
-  }
-  .second-content a {
-    line-height: 250%;
-    text-transform: uppercase;
-    color: #5A5A5A;
-  }
-  .selection {
-    margin-bottom: 15px;
-  }
-}
+
+
