@@ -23,8 +23,20 @@ export class Header extends Component {
 
   openCategory(category) {
     const cat = document.querySelector(`[data-type=${category}]`)
-
     const el = cat.querySelector(`#${category}`)
+    console.log(el)
+    el.addEventListener('click', (e) => {
+      let category = e.target.closest('article');
+      if(!category) return
+      const id = category.dataset.id
+      const elem = document.querySelector(`[data-id=${id}]`)
+      const w = elem.querySelector('.sub-category')
+      const arrow = elem.querySelector('.sub-arrow')
+      arrow.classList.toggle('arrow-transform-js')
+      w.classList.toggle('Com-disp-block')
+      console.log(elem)
+
+    })
     if(el.classList.contains('open')) {
       close()
     } else {

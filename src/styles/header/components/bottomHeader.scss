@@ -176,6 +176,11 @@ input {
   }
 }
 
+.burger-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
@@ -276,7 +281,6 @@ input::-moz-placeholder { color: #3D3D3C; }
     flex-direction: row;
     position: absolute;
     right: 64px;
-
   }
   .topHeader {
     display: none;
@@ -289,12 +293,11 @@ input::-moz-placeholder { color: #3D3D3C; }
     display: none;
   }
   .content-header {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
   }
-  .logo {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
+
   .logo-img {
     height: 27px;
     margin-right: 0;
@@ -302,6 +305,7 @@ input::-moz-placeholder { color: #3D3D3C; }
   .like {
     display: none;
   }
+
   .info_icon {
     display: block;
     margin-right: 18px;
@@ -339,7 +343,8 @@ input::-moz-placeholder { color: #3D3D3C; }
     display: block;
     .content {
       position: absolute;
-      padding: 15px;
+      height: 100%;
+      padding: 0 10px;
       top: 0;
       right: 0;
       background: #E7003E;
@@ -348,6 +353,9 @@ input::-moz-placeholder { color: #3D3D3C; }
     }
   }
   .basket-phone {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 17px;
     height: 17px;
   }

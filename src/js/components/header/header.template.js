@@ -40,11 +40,99 @@ let point =
             title: 'женщинам',
             id: 'women',
             img: icon1,
+            category: [
+              {
+                category: 'Платья'
+              },
+              {
+                category: 'Трикотаж'
+              },
+              {
+                category: 'Верха'
+              },
+              {
+                category: 'Низы'
+              },
+              {
+                category: 'Юбки'
+              },
+              {
+                category: 'Верхняя одежда'
+              },
+              {
+                category: 'Костюмы'
+              },
+              {
+                category: 'Для дома'
+              },
+              {
+                category: 'Спорт'
+              },
+              {
+                category: 'Нижнее белье'
+              },
+              {
+                category: 'Купальники'
+              },
+              {
+                category: 'Колготки и Носки'
+              },
+              {
+                category: 'Большие размеры'
+              },
+              {
+                category: 'Аксессуары'
+              },
+              {
+                category: 'Новинки'
+              },
+              {
+                category: 'Акции'
+              },
+              {
+                category: 'Скидки'
+              },
+            ],
         },
-        {
+
+      {
             title: 'девочкам',
             id: 'girl',
             img: icon2,
+            subcategory: true,
+            category: [
+              {
+                name: 'Новорожденным',
+                subtitle: '(0 - 12 мес)',
+                id: 'newBornSub',
+                categories: [
+                  {
+                    category: 'Платья'
+                  },
+                  {
+                    category: 'Трикотаж'
+                  },
+                  {
+                    category: 'Верха'
+                  },
+                ]
+              }, {
+                name: 'Девочкам',
+                subtitle: '(12 мес - 17 лет)',
+                id: 'girlSub',
+                categories: [
+                  {
+                    category: 'Платья'
+                  },
+                  {
+                    category: 'Трикотаж'
+                  },
+                  {
+                    category: 'Верха'
+                  },
+                ]
+              },
+            ],
         },
         {
             title: 'мужчинам',

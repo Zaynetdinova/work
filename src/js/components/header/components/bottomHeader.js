@@ -18,12 +18,15 @@ export function bottomHeader() {
         <div class='bottomHeader'>
             <div class='wrapper-b'>
                 <div class='content-header'>
-                    <article class='burger-menu' id="burger-menu">
-                        <span></span>
-                    </article>  
-                    <div class='logo'>                   
-                        <img class='logo-img' src=${optmoyo} alt="Логотип">
-                    </div>  
+                  <div class="burger-logo-wrapper">
+                      <article class='burger-menu' id="burger-menu">
+                          <span></span>
+                      </article>  
+                      <div class='logo'>                   
+                          <img class='logo-img' src=${optmoyo} alt="Логотип">
+                      </div> 
+                  </div>
+                     
                     <nav>
                         <ul class='menu'>
                             <li>
