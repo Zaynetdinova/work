@@ -62,7 +62,7 @@ export function footerTemplate() {
                             </nav>
                     </div>
                 
-                    <div class='contact'>
+                    
                         <div class='left'>
                             <div class='social'>
                                 <span class='s-title'>СОЦСЕТИ</span>
@@ -93,7 +93,7 @@ export function footerTemplate() {
                                 <img src=${card} alt='card'>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
