@@ -1,68 +1,62 @@
 import vk from '../../../images/footer/1.svg'
 import fb from '../../../images/footer/2.svg'
-import tw from '../../../images/footer/3.svg'
-import pen from '../../../images/footer/4.svg'
-import mail from '../../../images/footer/5.svg'
-import od from '../../../images/footer/6.svg'
 import instagram from '../../../images/footer/Instagram.svg'
 import partner from '../../../images/footer/partner.svg'
 import schema  from '../../../images/footer/shema.svg'
 import card from '../../../images/footer/card_bank.svg'
 import {footer_adaptive} from "./components/footer-adaptiv";
-import {sale} from "../common/sale";
+
 
 export function footerTemplate() {
   return `
-    <footer>
+     <footer>
         <div class='bg-footer'>
             <div class='footer-mobail'>${footer_adaptive(point)}</div>
             <div class='wrapper'>
-                <div class='content'>
-                
+                <div class='content'>                
                     <div class='box'>
-                            <div class="title-footer">ИНФОРМАЦИЯ</div>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">О нас</a></li>
-                                    <li><a href="#">Условия работы</a></li>
-                                    <li><a href="#">Доставка</a></li>
-                                    <li><a href="">Оплата</a></li>
-                                    <li><a href="#">Ответы на вопросы</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                </ul>
-                            </nav>
+                        <div class="title-footer">ИНФОРМАЦИЯ</div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Условия работы</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="">Оплата</a></li>
+                                <li><a href="#">Ответы на вопросы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class='box'>
-                            <div class="title-footer">для клиентов</div>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Личный кабинет</a></li>
-                                    <li><a href="#">Корзина</a></li>
-                                    <li><a href="#">Избранное</a></li>
-                                    <li><a href="#">Заказы и их статус</a></li>
-                                    <li><a href="">Возврат</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    <div class='box'>
-                            <div class="title-footer">сервис</div>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Таблица размеров</a></li>
-                                    <li><a href="#">Заказать звонок</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    <div class='box'>
-                            <div class="title-footer">СОТРУДНИЧЕСТВО</div>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Поставщикам</a></li>
-                                </ul>
-                            </nav>
+                        <div class="title-footer">для клиентов</div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Личный кабинет</a></li>
+                                <li><a href="#">Корзина</a></li>
+                                <li><a href="#">Избранное</a></li>
+                                <li><a href="#">Заказы и их статус</a></li>
+                                <li><a href="">Возврат</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                
-                    
+                    <div class='box'>
+                        <div class="title-footer">сервис</div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Таблица размеров</a></li>
+                                <li><a href="#">Заказать звонок</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class='box'>
+                        <div class="title-footer">СОТРУДНИЧЕСТВО</div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Поставщикам</a></li>
+                            </ul>
+                        </nav>
+                    </div>     
+                    <section class="contact">
                         <div class='left'>
                             <div class='social'>
                                 <span class='s-title'>СОЦСЕТИ</span>
@@ -92,8 +86,8 @@ export function footerTemplate() {
                             <div class='bank_card'>
                                 <img src=${card} alt='card'>
                             </div>
-                        </div>
-                    
+                    </div> 
+                    </section>                                                   
                 </div>
             </div>
         </div>
@@ -110,7 +104,6 @@ let point = [
     {
         title: 'ИНФОРМАЦИЯ',
         id: 'info'
-
     },
     {
         title: 'ДЛЯ КЛИЕНТОВ',
@@ -125,7 +118,3 @@ let point = [
         id: 'cooperation'
     }
 ]
-//     <a href="#"><img src=${tw} alt='tw'></a>
-// <a href="#"><img src=${pen} alt='pen'></a>
-// <a href="#"><img src=${mail} alt='mail'></a>
-// <a href="#"><img src=${od} alt='od'> </a>

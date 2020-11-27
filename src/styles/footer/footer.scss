@@ -15,15 +15,17 @@
     padding: 40px 0 212px 0;
     display: flex;
     justify-content: space-between;
-
   }
   .box {
     font-size: 14px;
   }
+
   .box nav {
     line-height: 270%;
   }
-
+  .contact {
+    display: contents;
+  }
   .title-footer {
     font-weight: bold;
     line-height: 100%;
@@ -67,9 +69,7 @@
   .s-img a {
     display: flex;
   }
-  .contact {
-    display: flex;
-  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -94,9 +94,6 @@
     &:hover {
       color: #AB064E;
     }
-  }
-  .right {
-
   }
   .mode {
     margin-bottom: 15px;
@@ -141,7 +138,6 @@
     font-weight: 500;
     font-size: 10px;
     line-height: 13px;
-
     color: #FFFFFF;
   }
   .a-schema {
@@ -150,10 +146,8 @@
 
   @media (max-width: 1024px) {
     .contact {
+      display: flex;
       flex-direction: column;
-    }
-    .right {
-      margin-left: 0;
     }
     .partners {
       margin-bottom: 35px;
@@ -173,27 +167,15 @@
     }
   }
   @media (max-width: 768px) {
+    .wrapper {
+      padding: 0 15px;
+    }
     .box {
       display: none;
     }
     .content {
       display: block;
       padding: 32px 0 42px 0;
-    }
-    .contact {
-      display: flex;
-      justify-content: space-between;
-      flex-flow: wrap;
-    }
-    .wrapper {
-      padding: 0 15px;
-    }
-  }
-  @media (max-width: 480px) {
-    .contact {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
     }
   }
 }
