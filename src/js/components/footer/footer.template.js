@@ -20,7 +20,7 @@ export function footerTemplate() {
                 <div class='content'>
                 
                     <div class='box'>
-                            <h4>ИНФОРМАЦИЯ</h4>
+                            <div class="title-footer">ИНФОРМАЦИЯ</div>
                             <nav>
                                 <ul>
                                     <li><a href="#">О нас</a></li>
@@ -33,7 +33,7 @@ export function footerTemplate() {
                             </nav>
                     </div>
                     <div class='box'>
-                            <h4>для клиентов</h4>
+                            <div class="title-footer">для клиентов</div>
                             <nav>
                                 <ul>
                                     <li><a href="#">Личный кабинет</a></li>
@@ -45,7 +45,7 @@ export function footerTemplate() {
                             </nav>
                         </div>
                     <div class='box'>
-                            <h4>сервис</h4>
+                            <div class="title-footer">сервис</div>
                             <nav>
                                 <ul>
                                     <li><a href="#">Таблица размеров</a></li>
@@ -54,7 +54,7 @@ export function footerTemplate() {
                             </nav>
                         </div>
                     <div class='box'>
-                            <h4>СОТРУДНИЧЕСТВО</h4>
+                            <div class="title-footer">СОТРУДНИЧЕСТВО</div>
                             <nav>
                                 <ul>
                                     <li><a href="#">Поставщикам</a></li>
@@ -70,8 +70,6 @@ export function footerTemplate() {
                                     <a class="instagram" href="#"><img src=${instagram} alt='tw' width="30px" height="30px"></a>
                                     <a href="https://vk.com/optmoyo" target="_blank"><img src=${vk} alt='vk'></a>                                  
                                     <a href="https://www.facebook.com/OptMoyo.Ru/" target="_blank"><img src=${fb} alt='fb'></a>
-                                    
-                                
                                 </div>
                             </div>
                             <div class='partners'>
