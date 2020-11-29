@@ -2,7 +2,9 @@ import optmoyo from '../../../../../images/header/optmoyo_logo.svg'
 import search_img from '../../../../../images/header/search.svg'
 import plus from '../../../../../images/icons/plus.svg'
 import basket from '../../../../../images/header/basket.svg'
+import like from '../../../../../images/header/like.svg'
 import burger from '../../../../../images/header/burger.svg'
+
 export function desktopHeader() {
 
   return `
@@ -42,7 +44,14 @@ export function desktopHeader() {
                 <input class='search-desktop' id="desktop-search-input-js" type='search' placeholder='Я ищу...' alt='search'> 
                 <img class="delete" id="desktop-search-delete-js" src=${plus} alt="delete">
                 <img class='search-black' src=${search_img} alt="search">  
-            </article>                       
+            </article> 
+            
+             ${window.userRegistry
+                ?   `<div class="registry-user favorites">
+                                <img src=${like}>
+                      </div> `
+                : '' }   
+                                
             <div class='buy'>
                 <div class="content">
                     <img class='basket' id='basket' src=${basket} alt='basket'>
@@ -50,6 +59,6 @@ export function desktopHeader() {
                 </div>
             </div>                              
         </div> 
-     </div>        
+     </div>
   `
 }

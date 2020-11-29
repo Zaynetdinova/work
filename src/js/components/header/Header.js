@@ -4,6 +4,7 @@ import {openMenu} from './js/openMenu'
 import {mobileSearch} from './js/mobileSearch'
 import {openCategory} from './js/openCategory'
 import {desktopSearch} from './js/desktopSearch'
+import {showRegistryUserData} from './js/showRegistryUserData'
 
 export class Header extends Component {
   static className = 'Header'
@@ -61,6 +62,10 @@ function spreaderClick(e) {
         break;
       case 'desktop-search-js':
         desktopSearch(e, element, 'click')
+        break;
+      case 'registry-user-mobile-button-js':
+        showRegistryUserData()
+        break;
     }
   }
 }

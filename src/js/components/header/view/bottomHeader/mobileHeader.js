@@ -3,6 +3,8 @@ import search_white from '../../../../../images/header/search_white.svg'
 import info_icon from '../../../../../images/header/info.svg'
 import basket from '../../../../../images/header/basket.svg'
 import enter from '../../../../../images/header/enter.svg'
+import user from '../../../../../images/icons/user.svg'
+import {showRegistryUserDataView} from '../showRegistryUserDataView'
 import burger from '../../../../../images/header/burger.svg'
 import {mobileSearchResult} from "../mobileSearchResult"
 
@@ -26,7 +28,11 @@ export function mobileHeader() {
                        <img class='search-white' src="${search_white}" alt="search-white">
                     </article>
                     <img class='info_icon' src=${info_icon} alt='info-icon'> 
-                    <img class='user' src=${enter} alt='enter'>
+                    ${window.userRegistry
+                      ?   `<article id="registry-user-mobile-button-js" class="registry-user favorites-mobile">
+                              <img src=${user}>
+                           </article>   `
+                      :  `<img class='user' src=${enter} alt='enter'>` }
                 </div>
                 <div class="buy-phone">
                     <div class="content">
@@ -40,5 +46,10 @@ export function mobileHeader() {
     <div class="mobile-search-wrapper">
         ${mobileSearchResult()}
     </div>
+    
+    <div class="mobile-search-wrapper">
+       ${mobileSearchResult()}
+    </div>
+
   `
 }

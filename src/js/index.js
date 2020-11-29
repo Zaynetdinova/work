@@ -19,6 +19,7 @@ const app = new OptMoyo('#app', {
   ]
 })
 
+window.userRegistry = true
 app.render()
 
 Main.slider

@@ -1,6 +1,6 @@
 import {Component} from '../../core/Component'
 import {createMain} from './main.template'
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper/bundle'
 
 export class Main extends Component {
   static className = 'Main'
@@ -19,7 +19,6 @@ export class Main extends Component {
         delay: 2000,
       },
     })
-    console.log('header Slider')
   }
 
   toHTML() {
