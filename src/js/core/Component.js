@@ -14,4 +14,8 @@ export class Component extends DomListener {
     this.initDOMListeners()
   }
 
+  slider() {
+    console.log('super')
+  }
+
 }

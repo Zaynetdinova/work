@@ -6,6 +6,7 @@ import {PopularBrand} from './components/popularBrand/PopularBrand'
 import {SharesBlock} from './components/sharesBlock/sharesBlock'
 import {Bestsellers} from './components/bestsellers/Bestsellers'
 import {Footer} from './components/footer/Footer'
+import 'swiper/swiper-bundle.css';
 
 const app = new OptMoyo('#app', {
   components: [
@@ -19,6 +20,12 @@ const app = new OptMoyo('#app', {
 })
 
 app.render()
+
+Main.slider
+
+
+
+
 
 
 // test (потом переделать)

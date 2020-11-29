@@ -1,5 +1,6 @@
 import {Component} from '../../core/Component'
 import {createMain} from './main.template'
+import Swiper from 'swiper/bundle';
 
 export class Main extends Component {
   static className = 'Main'
@@ -8,15 +9,25 @@ export class Main extends Component {
       name: 'Main',
       listeners: ['click']
     });
-
-
   }
-  toHTML() {
-    return createMain(['Main', 2, 3])
 
+  slider() {
+    let mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 2000,
+      },
+    })
+    console.log('header Slider')
+  }
+
+  toHTML() {
+    return createMain()
   }
 
   onClick(e) {
     console.log('Main', e)
   }
+
 }
