@@ -1,6 +1,5 @@
 import {$} from '../../core/dom'
 import {Slider, CategoriesSlider} from '../../core/Slider'
-// import {slider} from "../../core/Slider";
 
 export class OptMoyo {
   constructor(selector, options) {

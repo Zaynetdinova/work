@@ -1,7 +1,5 @@
-import img from '../../../../images/sidebar/img.png'
-import sale from '../../../../images/sidebar/sale.svg'
-import {pick} from "./pick";
-import {alternative} from "./alternative";
+import img from '../../../../../images/sidebar/img.png'
+import sale from '../../../../../images/sidebar/sale.svg'
 
 export function extra() {
     return `
@@ -28,6 +26,28 @@ export function extra() {
             </div>
         </div>
     `
+}
+
+function pick(more) {
+  const items = more.map((item) => {
+    return `
+            <div class='selection'>
+                <a href="#">${item.pick}</a>
+            </div>
+        `
+  })
+  return `${items.join('')}`
+}
+
+function alternative(options) {
+  const items = options.map((item) => {
+    return `
+            <div>
+                <a href="#">${item.alternative}</a>
+            </div>
+        `
+  })
+  return `${items.join('')}`
 }
 
 let more = [

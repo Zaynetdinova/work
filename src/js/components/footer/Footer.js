@@ -1,6 +1,5 @@
 import {Component} from '../../core/Component'
 import {footerTemplate} from './footer.template'
-import {close} from "../header/Header";
 
 export class Footer extends Component {
   static className = 'Footer'
@@ -37,4 +36,11 @@ export class Footer extends Component {
       this.openCategory(button.dataset.type)
     }
   }
+}
+
+function close() {
+  const elements = document.querySelectorAll('.categories')
+  elements.forEach((item) => {
+    item.classList.remove('open')
+  })
 }

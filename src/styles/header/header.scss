@@ -1,18 +1,11 @@
 @import '../color';
 @import 'components/more';
+@import './components/mobileSearch';
 .Header {
   @import 'components/topHeader';
   @import 'components/bottomHeader';
   @import 'components/sidebar';
-  .s {
-    display: flex;
-    justify-content: space-between;
-  }
-  .bg-search {
-    background-color: $bg-search;
-    padding: 0 15px;
-    display: none;
-  }
+
 
   .display-block {
     display: block;
@@ -23,38 +16,18 @@
     background: #AB4274;
   }
 
-
-  .search-mobail {
-    padding: 10px 0 11px 17px;
-    letter-spacing: 0.07em;
-    font-size: 13px;
-    line-height: 15px;
-    width: 960px;
-  }
-  .search-black-mobail {
-    width: 30px;
-    vertical-align: middle;
-  }
-  .card-search {
-    display: flex;
-    padding: 10px 42px 10px 1px;
-  }
-  .banner {
-
-  }
   .wrap {
     margin-left: 10.33px;
   }
+
   .text p {
     font-weight: bold;
     font-size: 16px;
     line-height: 16px;
-    /* or 16px */
-
     text-transform: capitalize;
-
     color: #3D3D3C;
   }
+
   .description {
     font-size: 12px;
     line-height: 12px;
@@ -62,21 +35,7 @@
 
     color: #3D3D3C;
   }
-  .result {
-    padding: 49px 0 58px 0;
-    display: flex;
-    justify-content: center;
 
-  }
-  .result a {
-    font-size: 11px;
-    line-height: 13px;
-
-    letter-spacing: 0.05em;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    color: #3D3D3C;
-  }
   @media (max-width: 1024px) {
     .line-header {
       display: none;

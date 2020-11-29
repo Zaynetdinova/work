@@ -1,4 +1,4 @@
-import icon from '../../../../images/sidebar/icon.svg'
+import icon from '../../../../../images/sidebar/icon.svg'
 
 import {choice, menu} from './choice'
 
