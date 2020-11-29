@@ -3,7 +3,7 @@ import search_img from '../../../../../images/header/search.svg'
 import plus from '../../../../../images/icons/plus.svg'
 import basket from '../../../../../images/header/basket.svg'
 import like from '../../../../../images/header/like.svg'
-import burger from '../../../../../images/header/burger.svg'
+
 
 export function desktopHeader() {
 
@@ -12,7 +12,7 @@ export function desktopHeader() {
         <div class='content-header'>
             <div class="burger-logo-wrapper">
                 <article class='burger-menu' id="burger-menu">
-                    <img src=${burger} alt="burger"> 
+                    
                 </article>
                 <a class='logo' href="/">                   
                     <img class='logo-img' src=${optmoyo} alt="Логотип">

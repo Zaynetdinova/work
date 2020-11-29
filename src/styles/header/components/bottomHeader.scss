@@ -33,6 +33,15 @@
     margin-right: 30px;
     margin-bottom: 3px;
     cursor: pointer;
+    background-image: url("../images/header/burger.svg");
+    width: 20px;
+    height: 16px;
+
+    &.show {
+      background-image: url(../images/icons/cancel.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   .logo {
     display: flex;
@@ -41,6 +50,15 @@
   .logo-img {
     margin-right: 53px;
     height: 100%;
+  }
+  .favorites {
+    margin-top: 2px;
+    margin-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
   @media (max-width: $width-1280) {
     .burger-menu {

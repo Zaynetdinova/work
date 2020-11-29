@@ -5,7 +5,7 @@ import basket from '../../../../../images/header/basket.svg'
 import enter from '../../../../../images/header/enter.svg'
 import user from '../../../../../images/icons/user.svg'
 import {showRegistryUserDataView} from '../showRegistryUserDataView'
-import burger from '../../../../../images/header/burger.svg'
+
 import {mobileSearchResult} from "../mobileSearchResult"
 
 export function mobileHeader() {
@@ -16,7 +16,7 @@ export function mobileHeader() {
             <div class='content-header'>
                 <div class="burger-logo-wrapper">
                     <article class='burger-menu' id="burger-menu">
-                        <img src=${burger} alt="burger"> 
+                        
                     </article>
                      
                     <a class='logo' href="/">                   
