@@ -2,6 +2,7 @@ import optmoyo from '../../../../../images/header/optmoyo_logo.svg'
 import search_img from '../../../../../images/header/search.svg'
 import plus from '../../../../../images/icons/plus.svg'
 import basket from '../../../../../images/header/basket.svg'
+import like from '../../../../../images/header/like.svg'
 export function desktopHeader() {
 
   return `
@@ -45,7 +46,11 @@ export function desktopHeader() {
                         <img class='search-black' src=${search_img}>  
                     </article>   
                     
-                    
+                    ${window.userRegistry 
+                        ?   `<div class="registry-user favorites">
+                                <img src=${like}>
+                            </div> `
+                        : '' }
                      
                     
                     <div class='buy'>
