@@ -1,7 +1,10 @@
   .More {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 40px 40px 30px;
+    overflow: auto;
+    height: 100vh;
 
     .card {
       display: flex;
@@ -49,7 +52,7 @@
       margin-bottom: 15px;
     }
 
-    @media (max-width: 960px) {
+    @media (max-width: 768px) {
       display: none;
 
     }

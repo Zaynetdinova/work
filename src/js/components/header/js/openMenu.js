@@ -1,22 +1,38 @@
-export function openMenu() {
-	// document.getElementById('burger-menu').classList.toggle('show')
+export function openMenu(type = '') {
+
 	const sidebar = document.getElementById('sidebar-js')
-	const menu = sidebar.querySelector(`[data-id='menu-js']`)
-	const bg = sidebar.querySelector(`[data-id='background-js']`)
-	const cancel = sidebar.querySelector(`[data-id='cancel-js']`)
+  const cancel = sidebar.querySelector(`[data-id='cancel-js']`)
+  const burgerMenu = document.getElementById('burger-menu')
 
-	menu.classList.add('show')
-	bg.classList.add('Com-disp-block')
+  if(type === 'close') {
+    classListRemove()
+    return
+  }
 
-	document.body.classList.add('Com-over-hidden')
+  if(burgerMenu.classList.contains('show')) {
+    classListRemove()
+  } else {
+    classListAdd()
+  }
 
-	cancel.addEventListener('click', () => {
-		menu.classList.remove('show')
-		bg.classList.remove('Com-disp-block')
+  cancel.addEventListener('click', () => {
+    classListRemove()
+  })
 
-		document.body.classList.remove('Com-over-hidden')
-	})
 
-	document.querySelector('.bg-search').classList.remove('display-block')
+
+  // потом объединить функции
+  function classListAdd(type) {
+    burgerMenu.classList.add('show')
+    sidebar.classList.add('Sidebar-open-js')
+    document.body.classList.add('Com-over-hidden')
+  }
+
+  function classListRemove(type) {
+    burgerMenu.classList.remove('show')
+    sidebar.classList.remove('Sidebar-open-js')
+    document.body.classList.remove('Com-over-hidden')
+  }
 
 }
+

@@ -17,11 +17,13 @@
 
   .button-close {
     position: relative;
+    min-width: 50px;
     top: 10px;
     left: 20px;
     background-image: url("../images/icons/cancel.svg");
     width: 24px;
     height: 24px;
+    background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
   }
@@ -45,16 +47,35 @@
     background: $baseColor;
   }
 
-  .point {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 32px 9px 16px;
+  .points {
+    padding-top: 26px;
+    width: 350px;
+    min-width: 220px;
     background: $bg-sidebar;
-    cursor: pointer;
+    height: 100vh;
+
+    .point {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 32px 9px 16px;
+      background: $bg-sidebar;
+      cursor: pointer;
+    }
+  }
+
+
+  &.Sidebar-open-js {
+    .background {
+      display: block;
+    }
+
+    .menu {
+      display: block;
+    }
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     .menu {
       position: absolute;
     }
@@ -66,8 +87,16 @@
     .points {
       width: 100%;
     }
+
+    .background {
+      height: 0;
+    }
   }
 }
+
+
+
+
 
 
 
@@ -84,12 +113,7 @@
 .common {
   background: $bg-sidebar;
 }
-.points {
-  padding-top: 26px;
-  width: 350px;
-  background: $bg-sidebar;
-  height: 100vh;
-}
+
 
 
 
@@ -186,9 +210,7 @@
     top: 85px;
   }
 
-  .extra {
-    display: none;
-  }
+
 
   .wrapper-sidebar {
     width: 100%;
@@ -203,6 +225,10 @@
   .wrapper-sidebar {
     width: 100%;
     padding: 0;
+  }
+
+  .extra {
+    display: none;
   }
 }
 

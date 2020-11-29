@@ -1,19 +1,13 @@
 import optmoyo from '../../../../images/header/optmoyo_logo.svg'
 import search_img from '../../../../images/header/search.svg'
 import plus from '../../../../images/icons/plus.svg'
-import user from '../../../../images/icons/user.svg'
 import search_white from '../../../../images/header/search_white.svg'
 import info_icon from '../../../../images/header/info.svg'
-// import user from '../../../../images/header/user.svg'
-import like from '../../../../images/header/like.svg'
 import basket from '../../../../images/header/basket.svg'
 import enter from '../../../../images/header/enter.svg'
-import {search} from './search'
+import {mobileSearchResult} from "./mobileSearchResult";
 
 export function bottomHeader() {
-
-
-
     return `
         <div class='bottomHeader'>
             <div class='wrapper-b'>
@@ -59,7 +53,9 @@ export function bottomHeader() {
                     
                      
                     <div class="icons">
-                      <img class='search-white' src="${search_white}">
+                      <article id="mobile-search-button-js">
+                         <img class='search-white' src="${search_white}">
+                      </article>
                       <img class='info_icon' src=${info_icon} alt='info-icon'> 
                       <img class='user' src=${enter} alt='enter'>
                      
@@ -79,7 +75,11 @@ export function bottomHeader() {
                                         
                 </div> 
             </div>
-            ${search()}
+            
+            <div class="mobile-search-wrapper">
+                ${mobileSearchResult()}
+            </div>
+            
         </div>
     `
 }

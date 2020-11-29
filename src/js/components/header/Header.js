@@ -1,6 +1,8 @@
 import {Component} from '../../core/Component'
 import {createHeader} from './header.template'
 import {openMenu} from './js/openMenu'
+import {mobileSearch} from "./js/mobileSearch";
+import {openCategory} from "./js/openCategory";
 
 export class Header extends Component {
   static className = 'Header'
@@ -12,70 +14,11 @@ export class Header extends Component {
 
   }
   toHTML() {
-    return createHeader([1, 2, 3])
-
+    return createHeader()
   }
-
-  openCategory(category) {
-    const cat = document.querySelector(`[data-type=${category}]`)
-    const el = cat.querySelector(`#${category}`)
-    console.log(el)
-    el.addEventListener('click', (e) => {
-      let category = e.target.closest('article');
-      if(!category) return
-      const id = category.dataset.id
-      const elem = document.querySelector(`[data-id=${id}]`)
-      const w = elem.querySelector('.sub-category')
-      const arrow = elem.querySelector('.sub-arrow')
-      arrow.classList.toggle('arrow-transform-js')
-      w.classList.toggle('Com-disp-block')
-      console.log(elem)
-
-    })
-    if(el.classList.contains('open')) {
-      close()
-    } else {
-      close()
-      el.classList.toggle('open')
-    }
-
-    const plus = document.querySelector(`[datatype=${category}]`)
-    if(plus.classList.contains('minus')) {
-      closeMinus()
-    } else {
-      closeMinus()
-      plus.classList.toggle('minus')
-    }
-
-  }
-
 
   onClick(e) {
-
-
-    if(e.target.id === 'mobileSearch'){
-      mobileSearch()
-    }
-
-    let button = e.target.closest('article');
-    if (!button) return;
-    if(button.id === 'burger-menu') {
-      mobileSearch()
-      openMenu()
-    }
-
-    if(e.target.id === 'choice') {
-      return;
-    }
-
-    if(button.id === 'point-js') {
-      this.openCategory(button.dataset.type)
-    }
-
-    const inputElement = document.querySelector('.search-desktop')
-    inputElement.addEventListener('input', () => {
-      console.log('super')
-    })
+    spreaderClick(e)
   }
 
   onInput(e) {
@@ -97,21 +40,26 @@ export class Header extends Component {
 
 }
 
-export function close() {
-  const elements = document.querySelectorAll('.categories')
-  elements.forEach((item) => {
-    item.classList.remove('open')
-  })
+function spreaderClick(e) {
+  if(e.target.closest('article')) {
+    const element = e.target.closest('article');
+
+    switch (element.id) {
+      case 'burger-menu':
+        openMenu()
+        break;
+      case 'mobile-search-button-js':
+        openMenu('close')
+        mobileSearch()
+        break;
+      case 'point-js':
+        openCategory(element.dataset.type)
+        break;
+    }
+  }
 }
 
-function closeMinus() {
-  const elements = document.querySelectorAll('.plus')
-  elements.forEach((item) => {
-    item.classList.remove('minus')
-  })
-}
 
-function mobileSearch() {
-  const elem = document.querySelector('.bg-search')
-  elem.classList.toggle('display-block')
-}
+
+
+
