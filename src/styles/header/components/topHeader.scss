@@ -1,4 +1,6 @@
 @import '../../color';
+@import "../../var";
+
 .topHeader {
   padding: 12.5px 0;
   font-size: 12px;
@@ -44,8 +46,8 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1024px) {
-  .wrapper {
-    padding: 0 10px;
+@media (max-width: $tablet-breakpoint) {
+  .topHeader {
+    display: none;
   }
 }
