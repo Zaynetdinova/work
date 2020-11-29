@@ -6,6 +6,9 @@ export function extra() {
         <div class='More'>
             <div class="first-col">
                 <div class='first-content'>
+                    <div class="selection-second">
+                        <a href="#">Колготки</a>
+                    </div>
                     ${pick(more)}
                 </div>
             </div>
@@ -20,8 +23,8 @@ export function extra() {
             <div class='card'>
                 <img src=${img} alt='img'>
                 <div class='intro'>
-                    <div class='title-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing</div>
-                    <p class='description'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</p>
+                    <div class='title-text'>Lorem ipsum dolor sit amet,<br> consectetuer adipiscing</div>
+                    <p class='text'>Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit. Aenean</p>
                 </div>
             </div>
         </div>
@@ -31,18 +34,20 @@ export function extra() {
 function pick(more) {
   const items = more.map((item) => {
     return `
-            <div class='selection'>
+            <div class='selection-first'>
                 <a href="#">${item.pick}</a>
             </div>
         `
   })
   return `${items.join('')}`
+
+
 }
 
 function alternative(options) {
   const items = options.map((item) => {
     return `
-            <div>
+            <div class="selection-second">
                 <a href="#">${item.alternative}</a>
             </div>
         `
@@ -50,92 +55,97 @@ function alternative(options) {
   return `${items.join('')}`
 }
 
+
+
 let more = [
-    {
-        pick: 'КОЛГОТКИ'
-    },
-    {
-        pick: 'Классические'
-    },
-    {
-        pick: 'Фантазийные'
-    },
-    {
-        pick: 'Эротические'
-    },
-    {
-        pick: 'Для беременных'
-    },
-    {
-        pick: 'Conte Elegant'
-    },
-    {
-        pick: 'Elledue'
-    },
-    {
-        pick: 'Filodoro'
-    },
-    {
-        pick: 'Fiore'
-    },
-    {
-        pick: 'Giulia'
-    },
-    {
-        pick: 'Giulietta'
-    },
-    {
-        pick: 'Golden Lady'
-    },
-    {
-        pick: 'Gatta'
-    },
-    {
-        pick: 'Levante'
-    },
-    {
-        pick: 'Marilyn'
-    },
-    {
-        pick: 'Minimi'
-    },
-    {
-        pick: 'Mirey'
-    },
-    {
-        pick: 'My'
-    },
-    {
-        pick: 'Omsa'
-    },
-    {
-        pick: 'Omero'
-    },
-    {
-        pick: 'Philippe Matignon'
-    },
-    {
-        pick: 'Sisi'
-    },
+    {title: 'Колготки',
+        elem: [
+            {
+                pick: 'Классические'
+            },
+            {
+                pick: 'Фантазийные'
+            },
+            {
+                pick: 'Эротические'
+            },
+            {
+                pick: 'Для беременных'
+            },
+            {
+                pick: 'Conte Elegant'
+            },
+            {
+                pick: 'Elledue'
+            },
+            {
+                pick: 'Filodoro'
+            },
+            {
+                pick: 'Fiore'
+            },
+            {
+                pick: 'Giulia'
+            },
+            {
+                pick: 'Giulietta'
+            },
+            {
+                pick: 'Golden Lady'
+            },
+            {
+                pick: 'Gatta'
+            },
+            {
+                pick: 'Levante'
+            },
+            {
+                pick: 'Marilyn'
+            },
+            {
+                pick: 'Minimi'
+            },
+            {
+                pick: 'Mirey'
+            },
+            {
+                pick: 'My'
+            },
+            {
+                pick: 'Omsa'
+            },
+            {
+                pick: 'Omero'
+            },
+            {
+                pick: 'Philippe Matignon'
+            },
+            {
+                pick: 'Sisi'
+            },
+        ]
+    }
 ]
 
 let options = [
     {
-        alternative: 'чулки'
+        alternative: 'Чулки'
     },
     {
-        alternative: 'гольфы'
+        alternative: 'Гольфы'
     },
     {
-        alternative: 'пояса для чулок'
+        alternative: 'Пояса для чулок'
     },
     {
-        alternative: 'подследники'
+        alternative: 'Подследники'
     },
     {
-        alternative: 'носки'
+        alternative: 'Носки'
     },
     {
-        alternative: 'ботфорты'
+        alternative: 'Ботфорты'
     },
 ]
+
+
