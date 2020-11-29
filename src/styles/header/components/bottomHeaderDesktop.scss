@@ -1,0 +1,25 @@
+.desktop-header {
+
+  .input-header {
+    width: 100%;
+    max-width: 490px;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+
+    .delete {
+      display: none;
+    }
+
+    &:hover {
+      background: rgba(255,255,255,.5);
+      cursor: pointer;
+    }
+
+    &.input-header-active {
+      background: $baseColor;
+    }
+  }
+}
