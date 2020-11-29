@@ -6,16 +6,13 @@
     padding: 30px 40px 40px 30px;
     overflow: auto;
     height: 100vh;
-    .first-col {
-      margin-right: 70px;
-    }
-    .second-col {
-      margin-right: 105px;
-    }
+
+
     .card {
       display: flex;
       flex-direction: column;
       color: #3D3D3C;
+      max-width: 310px;
     }
     .intro {
       padding: 22px 19px 39px 18px;
@@ -27,40 +24,43 @@
       line-height: 18.5px;
       text-transform: capitalize;
       margin-bottom: 11px;
+      white-space: pre-wrap;
     }
     .text {
       font-size: 14px;
       line-height: 16px;
       text-transform: capitalize;
+      white-space: pre-wrap;
     }
     .selection-second a {
       color: #555555;
     }
     .selection-first a {
       color: #9E9E9E;
+      &:hover {
+        color: #555555;
+      }
     }
-    .first-content a, .second-content a {
+    .selection-second a,
+    .selection-first a {
       font-size: 14px;
       letter-spacing: 0.05em;
       text-decoration: none;
       line-height: 250%;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    .first-content a:hover, .second-content a:hover {
-      text-decoration: underline;
+    @media (max-width: 980px) {
+      .first-col {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .second-col {
+        margin-right: 20px;
+      }
     }
-
-    //.first-content a {
-    //  text-transform: capitalize;
-    //  color: #555555;
-    //}
-    //.second-content a {
-    //  color: #555555;
-    //}
-    .selection {
-
-    }
-
     @media (max-width: 768px) {
       display: none;
     }

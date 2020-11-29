@@ -5,10 +5,7 @@ export function extra() {
     return `
         <div class='More'>
             <div class="first-col">
-                <div class='first-content'>
-                    <div class="selection-second">
-                        <a href="#">Колготки</a>
-                    </div>
+                <div class='first-content'>                  
                     ${pick(more)}
                 </div>
             </div>
@@ -23,8 +20,8 @@ export function extra() {
             <div class='card'>
                 <img src=${img} alt='img'>
                 <div class='intro'>
-                    <div class='title-text'>Lorem ipsum dolor sit amet,<br> consectetuer adipiscing</div>
-                    <p class='text'>Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit. Aenean</p>
+                    <div class='title-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing</div>
+                    <p class='text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</p>
                 </div>
             </div>
         </div>
@@ -34,14 +31,24 @@ export function extra() {
 function pick(more) {
   const items = more.map((item) => {
     return `
-            <div class='selection-first'>
-                <a href="#">${item.pick}</a>
+            <div class='selection-second'>
+                <a href="#">${item.title}</a>
             </div>
+            ${pick2(item.elem)}
+            
         `
   })
   return `${items.join('')}`
-
-
+}
+function pick2(more) {
+    const items = more.map((item) => {
+        return `           
+            <div class="selection-first">
+                <a href="#">${item.pick}</a>
+            </div>
+        `
+    })
+    return `${items.join('')}`
 }
 
 function alternative(options) {
