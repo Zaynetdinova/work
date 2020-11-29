@@ -25,6 +25,7 @@ export class OptMoyo {
     this.$el.append(this.getRoot())
 
     this.components.forEach(component => component.init())
+    this.components.forEach(component => component.slider())
 
     new Slider()
     new CategoriesSlider()
