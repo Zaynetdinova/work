@@ -1,5 +1,5 @@
 import {topHeader} from './view/topHeader'
-import {bottomHeader} from './view/bottomHeader'
+import {bottomHeader} from './view/bottomHeader/bottomHeader'
 import {sidebarWrapper} from "./view/sidebar/sidebarWrapper";
 
 
