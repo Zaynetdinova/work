@@ -1,0 +1,94 @@
+@import "../../color";
+@import "../../var";
+
+.mobile-header {
+
+  .buy-phone {
+    display: none;
+  }
+  .search-white {
+    display: none;
+  }
+  .info_icon {
+    display: none;
+    cursor: pointer;
+  }
+  .user {
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width: $tablet-breakpoint) {
+    .icons {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      right: 64px;
+      top: 14px;
+    }
+    .info_icon {
+      display: block;
+      margin-right: 18px;
+      margin-left: 18px;
+      width: 18px;
+      height: 18px;
+    }
+    .user {
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+    .basket-phone {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 17px;
+      height: 18px;
+    }
+    .buy-phone {
+      display: block;
+      .content {
+        position: absolute;
+        height: 100%;
+        padding: 0 14px;
+        top: 0;
+        right: 0;
+        background: #E7003E;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .search-white {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+  }
+  @media (max-width: 330px) {
+    .basket-phone {
+      width: 15px;
+      height: 15px;
+    }
+    .search-white {
+      width: 15px;
+      height: 15px;
+    }
+    .info_icon {
+      width: 15px;
+      height: 15px;
+    }
+    .user {
+      width: 15px;
+      height: 15px;
+    }
+
+    .icons {
+      right: 62px;
+    }
+    .buy-phone {
+      .content {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
