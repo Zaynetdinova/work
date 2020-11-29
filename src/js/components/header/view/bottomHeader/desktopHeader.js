@@ -9,7 +9,9 @@ export function desktopHeader() {
      <div class='wrapper-b'>
         <div class='content-header'>
             <div class="burger-logo-wrapper">
-                <img src=${burger} alt="burger" id="burger-menu" class="burger-menu"> 
+                <article class='burger-menu' id="burger-menu">
+                    <img src=${burger} alt="burger"> 
+                </article>
                 <a class='logo' href="/">                   
                     <img class='logo-img' src=${optmoyo} alt="Логотип">
                 </a>
