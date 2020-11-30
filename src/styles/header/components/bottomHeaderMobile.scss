@@ -2,7 +2,14 @@
 @import "../../var";
 
 .mobile-header {
-
+  .icons {
+    height: 100%;
+  }
+  .icon-width {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
   .buy-phone {
     display: none;
   }
