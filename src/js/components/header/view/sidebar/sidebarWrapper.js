@@ -24,14 +24,7 @@ export function sidebarWrapper() {
                 <div class="button-close" data-id="cancel-js"></div>                
             </div>
           </div>
-          
-          
-          
-           
-          
-          
-          
-          <div class="background" data-id="background-js"></div>  
+         <div class="background" data-id="background-js"></div>  
         </section>
   `
 }
@@ -44,6 +37,7 @@ let point =
       img: icon1,
       category: [
         {
+          id: 'dress',
           category: 'Платья'
         },
         {

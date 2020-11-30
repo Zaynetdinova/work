@@ -1,25 +1,13 @@
 import arrow from '../../../../../images/icons/arrow2.svg'
 
 export function choice(li = [], subcategory) {
-    const items = li.map((item) => {
-        return `
-            <div class='category'>
-                <a class='choice' id="choice">
-                    ${item.category}
-                    <div class="arrow"></div>
-                </a>
-                <div class='line'></div>
-            </div>
-        `
-    })
-
-    const test = (arr = []) => {
-        console.log(arr)
+    const items = (arr = []) => {
         return  arr.map((item) => {
+            const {category, id = ''} = item
             return `
-            <div class='category'>
+            <div class='category' id="${id}">
                 <a class='choice' id="choice">
-                    ${item.category}
+                    ${category}
                     <div class="arrow"></div>
                 </a>
                 <div class='line'></div>
@@ -37,10 +25,10 @@ export function choice(li = [], subcategory) {
                     <span>${item.name}</span>
                     <span class="sub-title">${item.subtitle}</span>
                 </div>
-                <img class="sub-arrow" src=${arrow}>
+                <img class="sub-arrow arrow-transform-js" src=${arrow}>
                 </a>
-                <div class="sub-category Com-disp-none">
-                    ${test(item.categories)}
+                <div class="sub-category">
+                    ${items(item.categories)}
                 </div>
             </article>
         `
@@ -48,20 +36,10 @@ export function choice(li = [], subcategory) {
 
 
     if (!subcategory) {
-        return `${items.join('')}`
+        return `${items(li)}`
     } else {
         return `${itemsSubCategories.join('')}`
     }
 }
 
-export function menu(nav) {
-    const items = nav.map((item) => {
-        return `
-            <a href="#" class='choice'>
-                ${item.article}
-            </a>
-            <div class='line'></div>
-        `
-    })
-    return `${items.join('')}`
-}
+
