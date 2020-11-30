@@ -1,3 +1,6 @@
+@import '../color';
+@import '../var';
+
 .Popular-brand {
   margin-bottom: 80px;
 
@@ -5,6 +8,9 @@
     max-width: 1440px;
     margin: auto;
     padding: 55px 0;
+  }
+  .main-title {
+    margin-bottom: 53px;
   }
   .img-wrap {
     overflow: hidden;
@@ -26,21 +32,6 @@
     display: flex;
     justify-content: flex-end;
   }
-  @media (max-width: 1440px) {
-    .root {
-      padding: 55px 20px;
-    }
-  }
-
-  .main-title {
-    margin-bottom: 53px;
-  }
-  @media (max-width: 768px) {
-    .main-title {
-      margin-bottom: 10px;
-    }
-  }
-
   .card {
     margin-right: 20px;
     display: flex;
@@ -52,7 +43,7 @@
       flex-direction: column;
       justify-content: space-between;
       background: #F3F2F0;
-      padding: 17px 20px;
+      padding: 15px 20px 20px 20px;
       height: 100%;
     }
 
@@ -88,42 +79,74 @@
     }
 
   }
-
   .mobile {
     display: none;
+    .Com-img {
+      height: 100%;
+    }
+    .card {
+      margin-right: 0;
+
+      .info {
+        min-height: 190px;
+      }
+    }
   }
-
-  @media (max-width: 960px) {
-
+  @media (max-width: 1440px) {
+    .root {
+      padding: 55px 20px;
+    }
+  }
+  @media (max-width: $tablet-breakpoint) {
+    .root {
+      padding: 55px 15px;
+    }
+    .card {
+      margin-right: 16px;
+    }
     .desktop {
-      flex-wrap: wrap;
-      justify-content: space-evenly;
       .card {
-        margin-right: 0;
-        flex-basis: 48%;
-        margin-bottom: 10px;
+        max-width: 237px;
       }
+    }
+    .Com-img {
+      height: 202px;
+    }
+    .info {
+      padding: 15px 15px 23px 15px;
+    }
+    .title {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 8px;
     }
   }
-
-  @media (max-width: 480px) {
-    .mobile {
-      display: block;
-
-      .card {
-        width: 100%;
-      }
-    }
+  @media (max-width: $mobile-breakpoint) {
     .desktop {
       display: none;
+      .card {
+        max-width: 173px;
+      }
+    }
+    .Com-img {
+      height: 147px;
+    }
+    .info {
+      padding: 15px 15px 20px 15px;
+    }
+    .mobile {
+      display: block;
     }
   }
-
-}
-
-@media (max-width: 768px) {
-  .Popular-brand {
-    margin-bottom: 20px;
+  @media (max-width: $width-414) {
+    .desktop {
+      .card {
+        max-width: 184px;
+      }
+    }
+    .Com-img {
+      height: 156px;
+    }
   }
 }
 

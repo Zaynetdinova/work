@@ -12,7 +12,7 @@ export class Main extends Component {
   }
 
   slider() {
-    let mySwiper = new Swiper('.swiper-container', {
+    let mySwiper = new Swiper('.swiper-container1', {
       // Optional parameters
       loop: true,
       speed: 800,
