@@ -1,7 +1,11 @@
 export function showRegistryUserDataView() {
   return `
-    <div>
-        <h1>hello</h1>
+    <div class="Show-registry-user-data-view">
+       <div>личные данные</div>
+       <div>история заказов</div>
+       <div>скидки и бонусы</div>
+       <div>избранное</div>
+       <div>выход</div>
     <div>
   `
 }

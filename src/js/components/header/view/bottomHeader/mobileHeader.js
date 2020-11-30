@@ -28,11 +28,13 @@ export function mobileHeader() {
                        <img class='search-white' src="${search_white}" alt="search-white">
                     </article>
                     <img class='info_icon' src=${info_icon} alt='info-icon'> 
-                    ${window.userRegistry
+                    
+                      ${window.userRegistry
                       ?   `<article id="registry-user-mobile-button-js" class="registry-user favorites-mobile">
                               <img src=${user}>
                            </article>   `
                       :  `<img class='user' src=${enter} alt='enter'>` }
+                      
                 </div>
                 <div class="buy-phone">
                     <div class="content">
@@ -44,11 +46,11 @@ export function mobileHeader() {
     </div>
             
     <div class="mobile-search-wrapper">
-        ${mobileSearchResult()}
+       ${mobileSearchResult()}
     </div>
     
-    <div class="mobile-search-wrapper">
-       ${mobileSearchResult()}
+    <div class="wrapper-user-data-view" id="wrapper-user-data-view-js">
+        ${showRegistryUserDataView()}
     </div>
 
   `

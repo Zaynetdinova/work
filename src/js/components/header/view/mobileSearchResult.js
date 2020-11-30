@@ -4,7 +4,7 @@ export function mobileSearchResult() {
   return `
             <div class='Mobile-search' id="Mobile-search-js">
               <form class='s'>
-                  <input class='search-mobail' type='search' placeholder='Я ищу...' alt='search'>     
+                  <input class='search-mobail' type='text' placeholder='Я ищу...' alt='search'>     
                   <input class='search-black-mobail' type='image' src=${search_img} alt='search'>
               </form>
               <section class="">
