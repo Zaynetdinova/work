@@ -23,6 +23,9 @@
 
     &.wrapper-user-data-view-show {
       display: block;
+      position: absolute;
+      width: 100%;
+      z-index: 5;
     }
   }
 
@@ -40,11 +43,13 @@
       margin-left: 18px;
       width: 18px;
       height: 18px;
+      cursor: pointer;
     }
     .user {
       display: block;
       width: 18px;
       height: 18px;
+      cursor: pointer;
     }
     .basket-phone {
       position: relative;
@@ -64,12 +69,14 @@
         background: #E7003E;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
       }
     }
     .search-white {
       width: 18px;
       height: 18px;
       display: block;
+      cursor: pointer;
     }
   }
   @media (max-width: 330px) {

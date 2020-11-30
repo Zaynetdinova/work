@@ -11,6 +11,7 @@
   .box {
     max-width: 60px;
     width: 100%;
+    cursor: pointer;
   }
   .icon {
     margin-bottom: 20px;
@@ -25,5 +26,9 @@
     letter-spacing: 0.05em;
 
     color: $baseColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
