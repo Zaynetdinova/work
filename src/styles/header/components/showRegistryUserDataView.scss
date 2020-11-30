@@ -1,7 +1,29 @@
+@import "../../color";
+@import "../../var";
+
 .Show-registry-user-data-view {
-  border-top: 1px solid #F3F2F0;
-  padding: 20px;
+  border-top: 1px solid #AB4274;
+  padding: 30px 15px 25px 15px;
   display: flex;
   justify-content: space-between;
   text-align: center;
+  background: linear-gradient(90.08deg, #710067 3.72%, #E64747 122.63%);
+  .box {
+    max-width: 60px;
+    width: 100%;
+  }
+  .icon {
+    margin-bottom: 20px;
+  }
+  .text {
+    font-size: 9px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $baseColor;
+  }
 }
