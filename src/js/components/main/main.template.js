@@ -29,7 +29,7 @@ function mainBackground(className = '') {
     <div class='bg-main ${className}'>
       <div class='wrapper'>
         <div class='content'>
-          <div class='bg'></div>
+          <div class='bg ${className}'></div>
           <div class='banner-box'>
             <div class='box'>
 
@@ -64,9 +64,8 @@ function card(title, description) {
 }
 
 const cards = [
-  { title: 'Сезонная распродажа поднимет вам настроение этой осенью',
-    description: 'Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'},
-
+  { title: 'BLACK FRIDAY СКИДКИ ДО 70%*',
+    description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'},
 ]
 
 
@@ -74,3 +73,5 @@ const cards = [
 
 // Сезонная распродажа поднимет вам настроение этой осенью
 // Дизайнеры Counte предлогают вам гамму которая добавит в вашу <br> осень ярчайших цветов и приятных оттенков.
+//BLACK FRIDAY СКИДКИ ДО 70%*
+//*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.
