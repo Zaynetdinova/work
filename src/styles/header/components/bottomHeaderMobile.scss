@@ -17,6 +17,15 @@
     display: none;
     cursor: pointer;
   }
+
+  .wrapper-user-data-view {
+    display: none;
+
+    &.wrapper-user-data-view-show {
+      display: block;
+    }
+  }
+
   @media (max-width: $tablet-breakpoint) {
     .icons {
       display: flex;

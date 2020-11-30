@@ -12,6 +12,7 @@
   background-color: $bg-search;
   padding: 0 15px;
   display: none;
+  z-index: 2;
 
   .s {
     display: flex;
@@ -23,6 +24,9 @@
     letter-spacing: 0.07em;
     font-size: 13px;
     line-height: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
   }
   .search-black-mobail {
     width: 30px;
