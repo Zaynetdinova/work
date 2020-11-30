@@ -9,9 +9,9 @@
 
   .navigation {
     position: absolute;
-    bottom: 4%;
+    bottom: 26%;
     z-index: 2;
-    left: 50%;
+    left: 500px;
     transform: translateX(-50%);
   }
 
@@ -37,14 +37,15 @@
     padding: 75px 0 78px 0;
   }
 
-  .banner-box {
-    width: 588px;
-    background: rgba(0, 0, 0, 0.8);
-    color: $baseColor;
-  }
+
 
   .box {
+    width: 588px;
+    height: 344px;
+    background: rgba(0, 0, 0, 0.8);
+    color: $baseColor;
     padding: 52px 40px 43px 45px;
+    position: relative;
 
     h1 {
       margin: 0;
@@ -71,6 +72,8 @@
       letter-spacing: 0.07em;
       padding: 8px 30px 9px 30px;
       cursor: pointer;
+      position: absolute;
+      bottom: 0;
 
       &:hover {
         border: 2px solid #FFFFFF;
@@ -82,23 +85,28 @@
     display: none;
   }
 
+  @media (min-width: 1400px) {
+    .navigation {
+      left: 36%;
+    }
+
+  }
 
   @media (max-width: $tablet-breakpoint) {
 
     .navigation {
-
-      bottom: 4%;
-      padding-top: 12px;
+      bottom: 21%;
+      left: 360px;
     }
+
     .content {
       padding: 40px 0 40px 0;
     }
 
-    .banner-box {
-      width: 405px;
-    }
 
     .box {
+      width: 405px;
+      height: 276px;
       padding: 40px 40px 38px 40px;
 
       h1 {
@@ -132,15 +140,14 @@
     }
 
     .navigation {
-      bottom: 4%;
+      bottom: 20%;
+      left: 280px;
     }
 
-    .banner-box {
-      width: 301px;
-      background: rgba(0, 0, 0, 0.8);
-      color: $baseColor;
-    }
+
     .box {
+      width: 303px;
+      height: 220px;
       padding: 20px 15px 21px 15px;
     }
   }
@@ -150,7 +157,15 @@
     .wrapper {
       padding: 0;
     }
+
+    .navigation {
+      bottom: 7%;
+      left: 90%;
+    }
+
     .box {
+      width: 100%;
+      height: 200px;
       padding: 20px 15px 27px 15px;
 
       h1 {
