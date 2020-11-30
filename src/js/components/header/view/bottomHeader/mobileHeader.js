@@ -21,18 +21,22 @@ export function mobileHeader() {
                      
                     <a class='logo' href="/">                   
                         <img class='logo-img' src=${optmoyo} alt="Логотип">
-                    </a> 
+                    </a>
                 </div>
                 <div class="icons">
+                    <div class="icon-width">
                     <article id="mobile-search-button-js">
                        <img class='search-white' src="${search_white}" alt="search-white">
                     </article>
+                    </div>
+                    <div class="icon-width">
                     <img class='info_icon' src=${info_icon} alt='info-icon'> 
-                    
+                    </div>
                       ${window.userRegistry
-                      ?   `<article id="registry-user-mobile-button-js" class="registry-user favorites-mobile user">
+                      ?   `<div class="icon-width">
+                            <article id="registry-user-mobile-button-js" class="registry-user favorites-mobile user">
                               <img src=${user}>
-                           </article>   `
+                           </article> </div>  `
                       :  `<img class='user' src=${enter} alt='enter'>` }
                       
                 </div>

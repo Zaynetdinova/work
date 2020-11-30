@@ -17,7 +17,7 @@
     margin-bottom: 20px;
   }
   .text {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 10px;
     display: flex;
     align-items: center;
@@ -29,6 +29,11 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+  @media (max-width: 360px) {
+    .text {
+      font-size: 9px;
     }
   }
 }
