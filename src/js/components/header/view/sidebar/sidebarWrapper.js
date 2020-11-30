@@ -117,6 +117,48 @@ let point =
             {
               category: 'Верха'
             },
+            {
+              category: 'Низы'
+            },
+            {
+              category: 'Юбки'
+            },
+            {
+              category: 'Верхняя одежда'
+            },
+            {
+              category: 'Костюмы'
+            },
+            {
+              category: 'Для дома'
+            },
+            {
+              category: 'Спорт'
+            },
+            {
+              category: 'Нижнее белье'
+            },
+            {
+              category: 'Купальники'
+            },
+            {
+              category: 'Колготки и Носки'
+            },
+            {
+              category: 'Большие размеры'
+            },
+            {
+              category: 'Аксессуары'
+            },
+            {
+              category: 'Новинки'
+            },
+            {
+              category: 'Акции'
+            },
+            {
+              category: 'Скидки'
+            },
           ]
         }, {
           name: 'Девочкам',
@@ -132,6 +174,48 @@ let point =
             {
               category: 'Верха'
             },
+            {
+              category: 'Низы'
+            },
+            {
+              category: 'Юбки'
+            },
+            {
+              category: 'Верхняя одежда'
+            },
+            {
+              category: 'Костюмы'
+            },
+            {
+              category: 'Для дома'
+            },
+            {
+              category: 'Спорт'
+            },
+            {
+              category: 'Нижнее белье'
+            },
+            {
+              category: 'Купальники'
+            },
+            {
+              category: 'Колготки и Носки'
+            },
+            {
+              category: 'Большие размеры'
+            },
+            {
+              category: 'Аксессуары'
+            },
+            {
+              category: 'Новинки'
+            },
+            {
+              category: 'Акции'
+            },
+            {
+              category: 'Скидки'
+            },
           ]
         },
       ],
@@ -140,6 +224,59 @@ let point =
       title: 'мужчинам',
       id: 'men',
       img: icon3,
+      categories: [
+        {
+          category: 'Платья'
+        },
+        {
+          category: 'Трикотаж'
+        },
+        {
+          category: 'Верха'
+        },
+        {
+          category: 'Низы'
+        },
+        {
+          category: 'Юбки'
+        },
+        {
+          category: 'Верхняя одежда'
+        },
+        {
+          category: 'Костюмы'
+        },
+        {
+          category: 'Для дома'
+        },
+        {
+          category: 'Спорт'
+        },
+        {
+          category: 'Нижнее белье'
+        },
+        {
+          category: 'Купальники'
+        },
+        {
+          category: 'Колготки и Носки'
+        },
+        {
+          category: 'Большие размеры'
+        },
+        {
+          category: 'Аксессуары'
+        },
+        {
+          category: 'Новинки'
+        },
+        {
+          category: 'Акции'
+        },
+        {
+          category: 'Скидки'
+        },
+      ]
     },
     {
       title: 'мальчикам',
@@ -150,10 +287,116 @@ let point =
       title: 'для дома',
       id: 'home',
       img: icon5,
+      categories: [
+        {
+          category: 'Платья'
+        },
+        {
+          category: 'Трикотаж'
+        },
+        {
+          category: 'Верха'
+        },
+        {
+          category: 'Низы'
+        },
+        {
+          category: 'Юбки'
+        },
+        {
+          category: 'Верхняя одежда'
+        },
+        {
+          category: 'Костюмы'
+        },
+        {
+          category: 'Для дома'
+        },
+        {
+          category: 'Спорт'
+        },
+        {
+          category: 'Нижнее белье'
+        },
+        {
+          category: 'Купальники'
+        },
+        {
+          category: 'Колготки и Носки'
+        },
+        {
+          category: 'Большие размеры'
+        },
+        {
+          category: 'Аксессуары'
+        },
+        {
+          category: 'Новинки'
+        },
+        {
+          category: 'Акции'
+        },
+        {
+          category: 'Скидки'
+        },
+      ]
     },
     {
       title: 'игрушки',
       id: 'game',
       img: icon6,
+      categories: [
+        {
+          category: 'Платья'
+        },
+        {
+          category: 'Трикотаж'
+        },
+        {
+          category: 'Верха'
+        },
+        {
+          category: 'Низы'
+        },
+        {
+          category: 'Юбки'
+        },
+        {
+          category: 'Верхняя одежда'
+        },
+        {
+          category: 'Костюмы'
+        },
+        {
+          category: 'Для дома'
+        },
+        {
+          category: 'Спорт'
+        },
+        {
+          category: 'Нижнее белье'
+        },
+        {
+          category: 'Купальники'
+        },
+        {
+          category: 'Колготки и Носки'
+        },
+        {
+          category: 'Большие размеры'
+        },
+        {
+          category: 'Аксессуары'
+        },
+        {
+          category: 'Новинки'
+        },
+        {
+          category: 'Акции'
+        },
+        {
+          category: 'Скидки'
+        },
+      ]
     },
   ]
