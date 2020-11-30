@@ -30,7 +30,7 @@ export function mobileHeader() {
                     <img class='info_icon' src=${info_icon} alt='info-icon'> 
                     
                       ${window.userRegistry
-                      ?   `<article id="registry-user-mobile-button-js" class="registry-user favorites-mobile">
+                      ?   `<article id="registry-user-mobile-button-js" class="registry-user favorites-mobile user">
                               <img src=${user}>
                            </article>   `
                       :  `<img class='user' src=${enter} alt='enter'>` }
