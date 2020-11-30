@@ -3,12 +3,13 @@ import women from '../../../../images/header/women.png'
 export function mobileSearchResult() {
   return `
             <div class='Mobile-search' id="Mobile-search-js">
-              <form class='s'>
-                  <input class='search-mobail' type='text' placeholder='Я ищу...' alt='search'>     
-                  <input class='search-black-mobail' type='image' src=${search_img} alt='search'>
-              </form>
-              <section class="">
-                <div class='line'></div>
+              <article class='input-wrapper' id="mobile-search-js">
+                <input class='search-mobail' id="mobile-search-input-js" type='text' placeholder='Я ищу...' alt='search'> 
+                <div class="delete" id="mobile-search-delete-js"></div>
+                <div class='icon-search-mobail'> <div> 
+              </article> 
+              
+              <section class="show-result" id="mobile-search-result">
                 <div class='card-search'>
                     <img src=${women} alt="women">
                     <div class='wrap'>

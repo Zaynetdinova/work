@@ -8,30 +8,61 @@
 
 .Mobile-search {
   width: 100%;
+  height: 100vh;
   position: absolute;
   background-color: $bg-search;
   padding: 0 15px;
   display: none;
   z-index: 2;
 
-  .s {
-    display: flex;
-    justify-content: space-between;
+  .show-result {
+    display: none;
   }
 
-  .search-mobail {
-    padding: 10px 0 11px 17px;
-    letter-spacing: 0.07em;
-    font-size: 13px;
-    line-height: 15px;
-    width: 100%;
-    border: none;
-    outline: none;
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #D9D9D9;
+    padding: 10px 0 8px;
+
+    .delete {
+      background: url("../images/icons/plus.svg") no-repeat;
+      width: 24px;
+      height: 23px;
+      margin-right: 24px;
+      display: none;
+    }
+    .icon-search-mobail {
+      background: url("../images/header/search.svg") no-repeat;
+      width: 32px;
+      height: 24px;
+      background-size: contain;
+      position: absolute;
+      right: -10px;
+    }
+
+    .search-mobail {
+      letter-spacing: 0.07em;
+      font-size: 13px;
+      line-height: 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 23px;
+    }
+
+    &.input-header-active {
+      .delete {
+        display: block;
+      }
+    }
   }
-  .search-black-mobail {
-    width: 30px;
-    vertical-align: middle;
-  }
+
+
+
+
   .card-search {
     display: flex;
     padding: 10px 42px 10px 1px;
