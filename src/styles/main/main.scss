@@ -24,6 +24,9 @@
 
   .bg-main2 {
     background-image: url('../images/main/slider.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .wrapper {
     max-width: 1480px;
@@ -157,8 +160,7 @@
       }
 
       p {
-        margin: 15px 0 18px 0;
-        margin-right: 46px;
+        margin: 15px 46px 50px 0;
       }
     }
 
@@ -173,6 +175,10 @@
       background-position: center;
       width: 100%;
       height: 207px;
+
+      &.bg-main2 {
+        background-image: url('../images/main/slider-mobail2.jpg');
+      }
     }
 
     .content {
@@ -198,7 +204,7 @@
       p {
         font-size: 14px;
         line-height: 16px;
-        margin: 15px 36px 18px 0;
+        //margin: 15px 36px 18px 0;
       }
     }
 
