@@ -15,8 +15,19 @@ export class Main extends Component {
     let mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
       loop: true,
+      speed: 800,
       autoplay: {
         delay: 2000,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-main',
+        prevEl: '.swiper-button-prev-main',
       },
     })
   }

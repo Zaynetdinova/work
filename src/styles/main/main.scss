@@ -1,10 +1,29 @@
 @import '../color';
+@import '../var';
+
 .Main {
+
+  .root {
+    position: relative;
+  }
+
+  .navigation {
+    position: absolute;
+    bottom: 4%;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .bg-main {
-    background-image: url('../images/main/slider.jpg');
+    background-image: url('../images/main/slider2.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .bg-main2 {
+    background-image: url('../images/main/slider.jpg');
   }
   .wrapper {
     max-width: 1480px;
@@ -14,108 +33,105 @@
   .content {
     padding: 75px 0 78px 0;
   }
+
   .banner-box {
     width: 588px;
     background: rgba(0, 0, 0, 0.8);
     color: $baseColor;
   }
+
   .box {
     padding: 52px 40px 43px 45px;
-  }
-  .box h1 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 95%;
-  }
-  .box p {
-    font-size: 14px;
-    line-height: 16px;
-    margin: 24px 0 58px 0;
-  }
-  .box button {
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    box-sizing: border-box;
-    border-radius: 4px;
-    background: transparent;
-    color: $baseColor;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.07em;
-    padding: 8px 30px 9px 30px;
-    cursor: pointer;
-  }
-  .box button:hover {
-    border: 2px solid #FFFFFF;
 
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 95%;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 24px 0 58px 0;
+    }
+
+    button {
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      box-sizing: border-box;
+      border-radius: 4px;
+      background: transparent;
+      color: $baseColor;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.07em;
+      padding: 8px 30px 9px 30px;
+      cursor: pointer;
+
+      &:hover {
+        border: 2px solid #FFFFFF;
+      }
+    }
   }
+
   .bg {
     display: none;
   }
-  @media (max-width: 1439px) {
-    .bg-main {
-      background-position: center;
 
+
+  @media (max-width: $tablet-breakpoint) {
+
+    .navigation {
+
+      bottom: 4%;
+      padding-top: 12px;
     }
-
-  }
-  @media (max-width: 1024px) {
-    .bg-main {
-      height: 356px;
-    }
-
-      .right {
-        background: url("../images/icons/arrow.svg");
-        width: 10px;
-        height: 10px;
-      }
-
     .content {
       padding: 40px 0 40px 0;
     }
+
     .banner-box {
       width: 405px;
-      background: rgba(0, 0, 0, 0.8);
-      color: $baseColor;
     }
+
     .box {
       padding: 40px 40px 38px 40px;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      button {
+        border: 0;
+        padding: 0;
+        font-size: 10px;
+        line-height: 11px;
+
+        &:hover {
+          border: none;
+        }
+
+        &:after {
+          content: '';
+          background: url('../images/icons/arrow.svg') no-repeat;
+          width: 10px;
+          height: 10px;
+        }
+      }
     }
-    .box h1 {
-      margin: 0;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 95%;
-    }
-    .box p {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      margin: 10px 0 58px 0;
-    }
-    .box button {
-      border: 0;
-      box-sizing: border-box;
-      border-radius: 0;
-      background: transparent;
-      color: $baseColor;
-      font-size: 10px;
-      line-height: 11px;
-      text-align: center;
-      letter-spacing: 0.07em;
-      padding: 0;
-      cursor: pointer;
-      font-weight: bold;
-    }
+
   }
-  @media (max-width: 768px) {
-    .bg-main {
-      height: 267px;
-    }
+
+  @media (max-width: $mobile-breakpoint) {
     .content {
-      padding: 23px 0 20px 0;
+      padding: 23px 0 34px 0;
     }
+
+    .navigation {
+      bottom: 4%;
+    }
+
     .banner-box {
       width: 301px;
       background: rgba(0, 0, 0, 0.8);
@@ -124,40 +140,32 @@
     .box {
       padding: 20px 15px 21px 15px;
     }
-    .box h1 {
-      margin: 0;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 95%;
-    }
-    .box p {
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      margin: 7px 0 30px 0;
-
-    }
   }
-  @media (max-width: 414px) {
+
+
+  @media (max-width: $width-414) {
     .wrapper {
       padding: 0;
     }
     .box {
       padding: 20px 15px 27px 15px;
+
+      h1 {
+        font-size: 18px;
+        line-height: 95%;
+        margin-right: 104px;
+      }
+
+      p {
+        margin: 15px 0 18px 0;
+        margin-right: 46px;
+      }
     }
 
-    .box h1 {
-      font-size: 18px;
-      line-height: 95%;
-      margin-right: 104px;
-    }
-    .box p {
-      margin: 15px 0 18px 0;
-      margin-right: 46px;
-    }
     .bg-main {
       background-image: none;
     }
+
     .bg {
       display: block;
       background-image: url('../images/main/slider-mobail.png');
@@ -166,27 +174,34 @@
       width: 100%;
       height: 207px;
     }
+
     .content {
       padding: 0;
     }
+
     .banner-box {
       background: #3D3D3C;
       color: $baseColor;
       width: 100%;
     }
   }
-  @media (max-width: 374px) {
-    .box h1 {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 95%;
-      margin-right: 30px;
+
+  @media (max-width: $portrait-breakpoint) {
+    .box {
+      h1 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 95%;
+        margin-right: 30px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 15px 36px 18px 0;
+      }
     }
-    .box p {
-      font-size: 14px;
-      line-height: 16px;
-      margin: 15px 36px 18px 0;
-    }
+
     .bg-main {
       background-image: none;
     }
