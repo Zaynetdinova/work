@@ -2,6 +2,18 @@
 
 .Sidebar {
   position: relative;
+  .categories {
+    padding: 0 32px 26px 32px;
+    background: $baseColor;
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
+
+
+
   .background {
     position: fixed;
     width: 100%;
@@ -76,6 +88,12 @@
       display: block;
     }
   }
+
+  .test {
+    .categories {
+      display: block;
+    }
+  }
   
   @media (max-width: 768px) {
     .menu {
@@ -119,14 +137,7 @@
 
 
 
-.categories {
-  padding: 0 32px 26px 32px;
-  background: $baseColor;
-  display: none;
-}
-.categories.open {
-  display: block;
-}
+
 .name {
   display: flex;
   align-items: center;
@@ -152,6 +163,7 @@
   width: 10px;
   height: 10px;
   position: relative;
+
 }
 .plus span, .plus span:after {
   display: block;

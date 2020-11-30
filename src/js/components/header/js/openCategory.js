@@ -1,41 +1,35 @@
 export function openCategory(category) {
-  const cat = document.querySelector(`[data-type=${category}]`)
-  const el = cat.querySelector(`#${category}`)
-  console.log(el)
-  el.addEventListener('click', (e) => {
-    let category = e.target.closest('article');
-    if(!category) return
-    const id = category.dataset.id
-    const elem = document.querySelector(`[data-id=${id}]`)
-    const w = elem.querySelector('.sub-category')
-    const arrow = elem.querySelector('.sub-arrow')
-    arrow.classList.toggle('arrow-transform-js')
-    w.classList.toggle('Com-disp-block')
-    console.log(elem)
+  // Main category
+  const mainCategory = document.querySelector(`[data-type=${category}]`)
 
+  // const plus = document.querySelector(`[datatype=${category}]`)
+  //
+  // if(plus.classList.contains('minus')) {
+  //   closeMinus()
+  // } else {
+  //   closeMinus()
+  //   plus.classList.toggle('minus')
+  // }
+
+  if(mainCategory.classList.contains('test')) {
+    close()
+  } else {
+    close()
+    mainCategory.classList.toggle('test')
+  }
+
+  mainCategory.addEventListener('click', (e) => {
+    let subCategory = e.target.closest('article');
+    if(!subCategory) return
+    subCategory.classList.toggle('show')
   })
-  if(el.classList.contains('open')) {
-    close()
-  } else {
-    close()
-    el.classList.toggle('open')
-  }
-
-  const plus = document.querySelector(`[datatype=${category}]`)
-  if(plus.classList.contains('minus')) {
-    closeMinus()
-  } else {
-    closeMinus()
-    plus.classList.toggle('minus')
-  }
-
 }
 
 
 function close() {
-  const elements = document.querySelectorAll('.categories')
+  const elements = document.querySelectorAll('#point-js')
   elements.forEach((item) => {
-    item.classList.remove('open')
+    item.classList.remove('test')
   })
 }
 

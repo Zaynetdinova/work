@@ -7,6 +7,7 @@ import {SharesBlock} from './components/sharesBlock/sharesBlock'
 import {Bestsellers} from './components/bestsellers/Bestsellers'
 import {Footer} from './components/footer/Footer'
 import 'swiper/swiper-bundle.css';
+import {eventGlobal} from './core/eventGlobal'
 
 const app = new OptMoyo('#app', {
   components: [
@@ -22,29 +23,14 @@ const app = new OptMoyo('#app', {
 window.userRegistry = true
 app.render()
 
+
 Main.slider
 
+eventGlobal()
 
 
 
 
 
-// test (потом переделать)
-const inputSearch = document.querySelector('.input-header')
-
-document.body.addEventListener('click', (e) => {
-  let input = e.target.closest('article');
-  if (!input) {
-    inputSearch.classList.remove('input-header-active')
-  };
-
-})
-
-inputSearch.addEventListener('click', () => {
-  if(inputSearch.dataset.id === 'input-search-js') {
-    const inputSearch = document.querySelector('.input-header')
-    inputSearch.classList.add('input-header-active')
-  }
-})
 
 
