@@ -5,6 +5,7 @@ import {mobileSearch} from './js/mobileSearch'
 import {openCategory} from './js/openCategory'
 import {desktopSearch} from './js/desktopSearch'
 import {showRegistryUserData} from './js/showRegistryUserData'
+import {mobileSearchInput} from './js/mobileSearchInput'
 
 export class Header extends Component {
   static className = 'Header'
@@ -38,6 +39,9 @@ function spreaderOnInput(e) {
     switch (element.id) {
       case 'desktop-search-js':
         desktopSearch(e, element)
+        break;
+      case 'mobile-search-js':
+        mobileSearchInput(e, element)
         break;
     }
   }
