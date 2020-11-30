@@ -3,6 +3,36 @@
   align-items: center;
   margin-top: 8px;
 
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #3D3D3C;
+      margin-left: 9px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.6);
+
+    }
+
+    span:first-child {
+      margin-left: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      //border: 1px solid #3D3D3C;
+      background: transparent;
+      border: 1px solid #FFFFFF;
+    }
+  }
+
 
   .left {
     width: 10px;
