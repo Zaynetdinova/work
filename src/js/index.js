@@ -8,6 +8,7 @@ import {Bestsellers} from './components/bestsellers/Bestsellers'
 import {Footer} from './components/footer/Footer'
 import 'swiper/swiper-bundle.css';
 import {eventGlobal} from './core/eventGlobal'
+import {MoyomodaBlock} from "./components/moyomodaBlock/MoyomodaBlock";
 
 const app = new OptMoyo('#app', {
   components: [
@@ -15,6 +16,7 @@ const app = new OptMoyo('#app', {
     Main,
     PopularBrand,
     SharesBlock,
+    MoyomodaBlock,
     Bestsellers,
     Footer
   ]

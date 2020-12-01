@@ -1,0 +1,132 @@
+@import '../color';
+@import '../var';
+
+.Moyomoda-Block {
+  background-image: url("../images/moyo/bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 72%;
+  background-size: auto;
+  margin: 0 auto 100px auto;
+  .root {
+    max-width: 1480px;
+    margin: auto;
+    padding: 68px 20px 0 20px;
+
+  }
+  .main-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    .caption {
+      font-size: 17px;
+      line-height: 18px;
+      margin-right: 10px;
+      color: #666666;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .box-img {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+    }
+    .info {
+      padding-top: 20px;
+      display: flex;
+      cursor: pointer;
+      .line {
+        border-left: 2px solid #C8C8C8;
+        height: 52px;
+        margin-right: 18px;
+      }
+      .text {
+        color: #3D3D3C;
+        .title {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 100%;
+
+          text-transform: capitalize;
+
+        }
+        .description {
+          font-size: 13px;
+          line-height: 17px;
+        }
+      }
+      &:hover {
+        .line {
+          border-left: 2px solid #DF2B2B;
+        }
+        .text {
+          .title {
+            color: #DF2B2B;
+          }
+        }
+      }
+    }
+  }
+  .mobile {
+    display: none;
+    .card {
+      align-items: center;
+      .img {
+        height: 230px;
+      }
+    }
+  }
+  @media (max-width: 1576px) {
+    background-size: contain;
+  }
+  @media (max-width: 1440px) {
+    .card {
+      .img {
+        height: 230px;
+      }
+      .info {
+        .line {
+          height: 36px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .card {
+      .img {
+        height: 160px;
+      }
+
+      .info {
+        .text {
+          .title {
+            font-size: 14px;
+          }
+
+          .description {
+            font-size: 11px;
+          }
+        }
+        .line {
+          height: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: $with-767) {
+
+    .mobile {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
+}
