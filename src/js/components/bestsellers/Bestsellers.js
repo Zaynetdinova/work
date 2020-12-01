@@ -40,7 +40,7 @@ export class Bestsellers extends Component {
   constructor($root) {
     super($root, {
       name: 'Bestsellers',
-      listeners: ['click']
+      listeners: ['click', 'mouseover', 'mouseenter']
     });
 
 
@@ -50,11 +50,34 @@ export class Bestsellers extends Component {
 
   }
 
-  viewMaterial(id) {
+  functionAfterContent() {
+    const test = document.querySelectorAll('.test-bestseller')
+
+    test.forEach((item) => {
+      item.addEventListener('mouseenter', (e) => {
+        let elem = e.target.closest('article');
+        this.viewMaterial(elem.dataset.id)
+      })
+    })
+
+    test.forEach((item) => {
+      item.addEventListener('mouseleave', (e) => {
+        let elem = e.target.closest('article');
+        this.viewMaterial(elem.dataset.id, 'close')
+      })
+    })
+  }
+
+  viewMaterial(id, type) {
+    const infoAll = document.querySelectorAll(`.additional-information`)
+    if(type === 'close') {
+      close()
+      return
+    }
     const comWidth = document.documentElement.clientWidth
     const card = document.querySelector(`#${id}`)
     const info = card.querySelector(`.additional-information`)
-    const infoAll = document.querySelectorAll(`.additional-information`)
+
 
     if(info.classList.contains('additional-information-open') || info.classList.contains('additional-information-open-left')) {
       close()
@@ -86,10 +109,18 @@ export class Bestsellers extends Component {
   }
 
   onClick(e) {
-    let elem = e.target.closest('article');
-    if (!elem) return; // (2)
-    this.viewMaterial(elem.dataset.id)
+
   }
+
+  onMouseover(e) {
+
+  }
+
+  onMouseenter(e) {
+
+  }
+
+
 }
 
 const cards = [

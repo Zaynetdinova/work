@@ -26,6 +26,7 @@ export class OptMoyo {
 
     this.components.forEach(component => component.init())
     this.components.forEach(component => component.slider())
+    this.components.forEach(component => component.functionAfterContent())
 
   }
 }
