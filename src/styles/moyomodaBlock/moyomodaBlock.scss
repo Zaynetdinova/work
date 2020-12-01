@@ -120,7 +120,18 @@
     }
   }
   @media (max-width: $with-767) {
+    .main-title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 26px;
+      align-items: flex-start;
+      .caption {
+        font-size: 12px;
+        line-height: 17px;
+        margin-right: 0;
 
+      }
+    }
     .mobile {
       display: block;
     }
