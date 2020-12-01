@@ -15,7 +15,11 @@ export class Component extends DomListener {
   }
 
   slider() {
-    console.log('super')
+
+  }
+
+  functionAfterContent() {
+
   }
 
 }

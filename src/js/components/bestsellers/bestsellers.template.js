@@ -104,7 +104,7 @@ export function createBestsellers(data) {
                   
                   const {sale = false, id, img, banner, title, description, oldPrice = '', newPrice = '', price = '', bannerPosition = ''} = i
                       return `
-                        <div class="card" id="${id}">
+                        <article class="card test-bestseller" id="${id}" data-id="${id}">
                             <div style="background: url(${img}) center" class="img">
                                  ${banner ? cardBanner('новинка', bannerPosition) : ''}
                             <div>
@@ -131,7 +131,7 @@ export function createBestsellers(data) {
                         }
                         </div>
                        ${additionalInformation(title, description, img, index)}
-                    </div>
+                    </article>
                     `
                       }).join('')}
                   </div>
