@@ -4,10 +4,11 @@ import {cardBanner} from "../common/cardBanner";
 
 
 export function sharesBlock(data) {
-  const cards = data.map(card => {
-    return `
+    const cards = (className = '') => {
+        return data.map(card => {
+            return `
       <div class="card">
-        <div style="background-image: url(${card.img}); background-repeat: no-repeat; background-position: center; position: relative; background-size: cover" class="img">
+        <div style="background-image: url(${card.img});" class="img">
             ${card.banner ? cardBanner('-35%', 'bottom') : ''}
         </div>
         <div class="info">
@@ -19,26 +20,43 @@ export function sharesBlock(data) {
         </div>
       </div>
     `
-  })
+    }).join('')
+}
 
+    const mobile = (className = '') => {
+        return data.map(card => {
+        return `
+      <div class="${className}">
+      <div class="card">
+        <div style="background-image: url(${card.img});" class="img">
+            ${card.banner ? cardBanner('-35%', 'bottom') : ''}
+        </div>
+        <div class="info">
+        <div class="text">
+            <div class="title">${card.title}</div> 
+            <div class="description">${card.description}</div>
+        </div>
+        ${button('подробнее')}
+        </div>
+      </div>
+      </div>
+    `
+    }).join('')
+  }
   return `
     <section class="root">
         <div class="main-title">
             ${categoriesTitle('АКЦИИ')}
          </div>
         <div class="desktop Com-flex">
-            ${cards.join('')}
+            ${cards()}
         </div>
         
         <div class="mobile">
-            <div class="slider-root">
-            <div class="popular-brand-js">
-                ${cards.join('')}
-              </div>
-              <div class='slider-dots-wrapper'>
-                <div class="Slider-dots2"></div>            
-              </div>
-              
+            <div class="swiper-container3 swiper-container">
+                <div class="swiper-wrapper">
+                     ${mobile('swiper-slide')}                
+                </div>
             </div>
         </div>
         
