@@ -2,6 +2,9 @@
 @import '../var';
 
 .Popular-brand {
+  background: #fff;
+  position: relative;
+  z-index: 2;
   .root {
     max-width: 1480px;
     margin: auto;

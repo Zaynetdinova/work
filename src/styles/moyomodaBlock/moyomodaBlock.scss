@@ -2,17 +2,22 @@
 @import '../var';
 
 .Moyomoda-Block {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
   background-image: url("../images/moyo/bg.png");
   background-repeat: no-repeat;
-  background-position: 50% 72%;
+  background-position: 50% 42%;
   background-size: auto;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 0 auto;
+  padding-bottom: 100px;
   .root {
     max-width: 1480px;
     margin: auto;
     padding: 68px 20px 0 20px;
 
   }
+
   .main-title {
     display: flex;
     align-items: center;
@@ -24,6 +29,7 @@
       color: #666666;
     }
   }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -33,8 +39,8 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-
     }
+
     .info {
       padding-top: 20px;
       display: flex;
@@ -120,6 +126,11 @@
     }
   }
   @media (max-width: $with-767) {
+
+    .root {
+      padding: 68px 0 0 0;
+    }
+
     .main-title {
       display: flex;
       flex-direction: column;
