@@ -13,7 +13,7 @@ export function bestsellersHeader(text) {
         </div>
       </section>
       <section class="slider-pointer">
-        ${sliderPointerTemplate()}
+        ${sliderPointerTemplate('slider-pointer-bestseller')}
       </section>
     </div>
   `
