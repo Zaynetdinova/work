@@ -2,6 +2,8 @@
 @import 'components/footer-mobail';
 
 .Footer {
+  position: relative;
+  z-index: 2;
   .bg-footer {
   background-color: $bg-footer;
   }

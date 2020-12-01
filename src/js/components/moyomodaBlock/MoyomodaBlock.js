@@ -17,9 +17,16 @@ export class MoyomodaBlock extends Component {
     }
     slider() {
         let moyomodaBlock = new Swiper('.swiper-container4', {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
             slidesPerGroup: 1,
-            centerSlides: true,
+            centeredSlides: true,
+            loop: true,
+
+          breakpoints: {
+              415: {
+                slidesPerView: 3,
+              }
+          }
         })
     }
     toHTML() {

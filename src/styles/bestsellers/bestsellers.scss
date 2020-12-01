@@ -1,5 +1,7 @@
 .Bestsellers {
-
+  position: relative;
+  z-index: 2;
+  background: #fff;
   .bestseller-woman {
     z-index: 10;
   }
