@@ -2,7 +2,7 @@ import {categoriesTitle} from '../common/categoriesTitle'
 import {bestsellersCards} from './view/bestsellerCards'
 
 
-export function createBestsellers({woman, child}) {
+export function createBestsellers({woman, child, man}) {
   return `
    <section class="root">
      <div class="main-title">
@@ -13,6 +13,9 @@ export function createBestsellers({woman, child}) {
     </div>
     <div class="bestsellers-item">
         ${bestsellersCards(child, 'price')}
+    </div>
+    <div class="bestsellers-item">
+        ${bestsellersCards(man, 'price')}
     </div>
    </section>
     `

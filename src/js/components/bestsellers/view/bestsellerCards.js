@@ -23,11 +23,11 @@ export function bestsellersCards(elem, infoType) {
 		return `
                           <div class="swiper-slide">
                             <article class="card test-bestseller" id="${id}" data-id="${id}">
-                                <div style="background: url(${img}) center" class="img">
+                                <div style="background: url(${img}) center top; background-size: contain;" class="img">
                                      ${banner ? cardBanner('новинка', bannerPosition) : ''}
                                 <div>
                                 </div>
-                                  <div class="quick-view">
+                                  <div class="quick-view"> 
                                       ${quickViewButton(id)}
                                   </div>
                                 </div>
