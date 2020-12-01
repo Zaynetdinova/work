@@ -115,7 +115,7 @@ export class Bestsellers extends Component {
   slider() {
     const options = {
       slidesPerView: 1.8,
-      spaceBetween: 16,
+      spaceBetween: 15,
       autoHeight: true,
       pagination: {
         el: '.swiper-pagination',
@@ -141,6 +141,7 @@ export class Bestsellers extends Component {
     }
     let womanSwiper = new Swiper('.bestseller-woman', options)
     let childSwiper = new Swiper('.bestseller-child', options)
+    let manSwiper = new Swiper('.bestseller-man', options)
   }
 
 }
@@ -266,8 +267,72 @@ const cards = {
     }
 
     ]
+  },
+  man: {
+    _id: 'man',
+    title: 'lorem',
+    data:   [
+    {
+      id: 'men1',
+      img: men1,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'men2',
+      img: men2,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'men3',
+      img: men3,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      price: '1 243,00'
+    },
+    {
+      id: 'men4',
+      img: men4,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'men5',
+      img: men5,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      price: '1 243,00'
+    },
+    {
+      id: 'men6',
+      img: men6,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    }
+  ],
+
   }
-  }
+}
 
 
 
