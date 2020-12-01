@@ -1,5 +1,21 @@
 .Bestsellers {
 
+  .bestseller-woman {
+    z-index: 10;
+  }
+
+  .bestseller-child {
+    z-index: 9;
+  }
+
+.bestseller-woman, .bestseller-child {
+  padding-bottom: 160px;
+}
+
+  .bestsellers-item {
+    margin-top: -140px;
+  }
+
   .slider-root-categories {
     margin-bottom: 42px;
   }
@@ -24,11 +40,6 @@
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
-    max-width: 223px;
-    width: 223px;
-    margin-right: 20px;
     cursor: default;
     position: relative;
 
@@ -77,11 +88,16 @@
     }
 
     .additional-information {
-      padding: 17px 20px;
       padding-top: 0;
-      background: #FFFFFF;
       .content {
         display: none;
+      }
+
+      .text-size-wrapper {
+        position: absolute;
+        background: #fff;
+        padding: 0 19px 12px 19px;
+        z-index: 2;
       }
 
       .images {
