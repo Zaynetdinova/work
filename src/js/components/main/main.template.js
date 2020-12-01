@@ -4,7 +4,7 @@ export function createMain(data) {
 
   return `
 <div class="root">
-    <div class="swiper-container">
+    <div class="swiper-container swiper-container1">
       <div class="swiper-wrapper">
         ${mainBackground(cards.first)}
         ${mainBackground(cards.second, 'bg-main2')}

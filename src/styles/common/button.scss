@@ -6,19 +6,20 @@
 
   .text {
     text-transform: uppercase;
-    font-size: 11px;
-    line-height: 13px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 11px;
     letter-spacing: 0.07em;
     color: #3D3D3C;
   }
   .text:hover {
-    color: #d02626;
+    color: #AB064E;
   }
 
   .arrow {
     background: url("../images/icons/arrow.svg") no-repeat;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     margin-left: 4px;
   }
 }

@@ -24,7 +24,6 @@ window.userRegistry = true
 app.render()
 
 
-Main.slider
 
 eventGlobal()
 
