@@ -22,7 +22,7 @@ export class PopularBrand extends Component {
       slidesPerGroup: 1,
       spaceBetween: 16,
       breakpoints: {
-        376: {
+        414: {
           slidesPerView: 2,
           slidesPerGroup: 2,
         }
@@ -41,19 +41,19 @@ const cards = [
   {
     id: '',
     img: img1,
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing',
+    title: 'Lorem ipsum dolor sit amet, consectetuer',
     description: 'Lorem ipsum dolor sit amet'
   },
   {
     id: '',
     img: img2,
     title: 'Lorem ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean adipiscing elit. Aeneanadipiscing elit. Aenean'
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneanadipiscing elit.'
   },
   {
     id: '',
     img: img3,
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing',
+    title: 'Lorem ipsum dolor sit amet, consectetuer',
     description: 'Lorem ipsum dolor sit amet, consectetuer'
   },
   {

@@ -2,15 +2,13 @@
 @import '../var';
 
 .Popular-brand {
-  margin-bottom: 80px;
-
   .root {
     max-width: 1440px;
     margin: auto;
-    padding: 55px 0;
+    padding: 60px 20px 80px 20px;
   }
   .main-title {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
   .img-wrap {
     overflow: hidden;
@@ -27,10 +25,6 @@
     &:hover {
       transform: scale(1.1);
     }
-  }
-  .slider-dots-wrapper {
-    display: flex;
-    justify-content: flex-end;
   }
   .card {
     margin-right: 20px;
@@ -92,14 +86,12 @@
       }
     }
   }
-  @media (max-width: 1440px) {
-    .root {
-      padding: 55px 20px;
-    }
-  }
   @media (max-width: $tablet-breakpoint) {
     .root {
-      padding: 55px 15px;
+      padding: 40px 15px 30px 15px;
+    }
+    .main-title {
+      margin-bottom: 20px;
     }
     .card {
       margin-right: 16px;
@@ -122,11 +114,30 @@
     }
   }
   @media (max-width: $mobile-breakpoint) {
+    .root {
+      padding-top: 30px;
+    }
+    .card {
+      margin-right: 15px;
+    }
     .desktop {
-      display: none;
       .card {
         max-width: 173px;
       }
+    }
+    .Com-img {
+      height: 147px;
+    }
+  }
+  @media (max-width: $with-767) {
+    .desktop {
+      display: none;
+    }
+    .root {
+      padding-bottom: 25px;
+    }
+    .main-title {
+      margin-bottom: 15px;
     }
     .Com-img {
       height: 147px;
@@ -138,14 +149,19 @@
       display: block;
     }
   }
-  @media (max-width: $width-414) {
-    .desktop {
-      .card {
-        max-width: 184px;
-      }
+  @media (max-width: 413px) {
+    .root {
+      padding-bottom: 18px;
     }
-    .Com-img {
-      height: 156px;
+    .mobile {
+      .Com-img {
+        height: 247px;
+      }
+      .card {
+        .info {
+          min-height: 190px;
+        }
+      }
     }
   }
 }
