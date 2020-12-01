@@ -82,11 +82,19 @@
       transform: rotate(90deg);
     }
 
-    .arrow-transform-js {
-      transform: rotate(270deg);
-    }
     .sub-category{
       margin-top: 10px;
+      display: none;
+    }
+
+    &.show {
+      .sub-category {
+        display: block;
+      }
+
+      .arrow-transform-js {
+        transform: rotate(270deg);
+      }
     }
   }
 
