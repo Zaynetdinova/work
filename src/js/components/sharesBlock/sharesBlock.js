@@ -3,6 +3,7 @@ import {sharesBlock} from './sharesBlock.template'
 import img1 from '../../../images/shares/img1.png'
 import img2 from '../../../images/shares/img2.png'
 import img3 from '../../../images/shares/img3.png'
+import Swiper from 'swiper/bundle'
 
 
 export class SharesBlock extends Component {
@@ -14,6 +15,12 @@ export class SharesBlock extends Component {
     });
 
 
+  }
+  slider() {
+    let sharesBlock = new Swiper('.swiper-container3', {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    })
   }
   toHTML() {
     return sharesBlock(cards)

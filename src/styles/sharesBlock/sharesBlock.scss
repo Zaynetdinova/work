@@ -1,35 +1,29 @@
+@import '../color';
+@import '../var';
+
 .Shares-block {
-  background: #F3F2F0;
-  margin-bottom: 80px;
+  background: $bg-shareBlock;
 
   .root {
-    max-width: 1440px;
+    max-width: 1480px;
     margin: auto;
+    padding: 52px 20px 55px 20px;
   }
   .slider-dots-wrapper {
     display: flex;
     justify-content: flex-end;
   }
-  @media (max-width: 1440px) {
-    .root {
-      padding: 0 20px;
-    }
-  }
 
   .main-title {
-    margin-bottom: 45px;
-  }
-  @media (max-width: 768px) {
-    .main-title {
-      margin-bottom: 10px;
-    }
+    margin-bottom: 52px;
   }
 
   .card {
-    margin-right: 20px;
+    margin-right: 19px;
     display: flex;
     flex-direction: column;
-    flex-basis: 33.333%;
+    flex-basis: 33.33%;
+    overflow: hidden;
 
     .card-banner-wrapper {
       position: relative;
@@ -42,6 +36,13 @@
       background-repeat: no-repeat;
       flex-shrink: 0;
       position: relative;
+      background-size: cover;
+      transition: 1s;
+      transform: none;
+      object-fit: cover;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .info {
@@ -49,7 +50,7 @@
       flex-direction: column;
       justify-content: space-between;
       background: #F3F2F0;
-      padding: 17px 20px;
+      padding: 17px 20px 0 0;
       height: 100%;
     }
 
@@ -68,34 +69,65 @@
       text-transform: capitalize;
       margin-bottom: 28px;
     }
-
-
   }
 
   .desktop {
-
     .card:last-child {
       margin-right: 0;
     }
-
   }
 
   .mobile {
     display: none;
+    .card {
+      margin-right: 0;
+      .img {
+        height: 230px;
+      }
+    }
+
   }
 
-  @media (max-width: 720px ) {
+  @media (max-width: $tablet-breakpoint) {
     .root {
-      background: #FFFFFF;
+      padding: 30px 15px 30px 15px;
+    }
+    .main-title {
+      margin-bottom: 20px;
+    }
+    .card {
+      margin-right: 16px;
+      .img {
+        height: 193px;
+      }
+    }
+    .title {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 8px;
+    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+    .root {
+      padding-top: 30px;
+    }
+    .card {
+      margin-right: 15px;
+      .img {
+        height: 141px;
+      }
+    }
+  }
+  @media (max-width: $with-767 ) {
+    .root {
+      background: $baseColor;
     }
     .mobile {
       display: block;
 
       .card {
-        margin-right: 0;
-
         .info {
-          background: #FFFFFF;
+          background: $baseColor;
         }
       }
     }
@@ -104,10 +136,23 @@
       display: none;
     }
   }
-}
+  @media (max-width: 413px) {
+    .mobile {
+      .card {
+        .img {
+          height: 230px;
+        }
+      }
+    }
+  }
 
-@media (max-width: 768px) {
-  .Shares-block {
-    margin-bottom: 20px;
+  @media (max-width: 320px) {
+    .mobile {
+      .card {
+        .img {
+          height: 174px;
+        }
+      }
+    }
   }
 }

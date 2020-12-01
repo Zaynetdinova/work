@@ -57,8 +57,7 @@ export function popularBrand(data) {
         <div class="mobile">
             <div class="swiper-container2 swiper-container">
                 <div class="swiper-wrapper">
-                     ${mobile('swiper-slide')}
-                
+                     ${mobile('swiper-slide')}                
                 </div>
             </div>
         </div>

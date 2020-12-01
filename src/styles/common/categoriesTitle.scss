@@ -1,5 +1,8 @@
+@import '../color';
+@import '../var';
+
 .Categories-title {
-  width: 100%;
+  display: flex;
 
   &-text {
     font-weight: bold;
@@ -9,13 +12,23 @@
     text-transform: uppercase;
     color: #FFFFFF;
     background: #3D3D3C;
-    padding: 7px 10px;
-    width: 243px;
+    padding: 7px 10px 8px 10px;
+    width: 260px;
   }
 
 
   &-line {
-    border: 1px dashed #3D3D3C;
+    border-bottom: 2px dotted #777777;;
+    width: 100%;
   }
-
+  @media (max-width: $tablet-breakpoint) {
+    &-text {
+      width: 305px;
+    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+    &-text {
+      width: 340px;
+    }
+  }
 }
