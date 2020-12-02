@@ -54,7 +54,10 @@ export class Bestsellers extends Component {
   }
 
   functionAfterContent() {
-    eventHover()
+    if(window.userRegistry) {
+      eventHover()
+    }
+
   }
 
 
