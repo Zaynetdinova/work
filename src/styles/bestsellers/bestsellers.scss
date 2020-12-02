@@ -28,15 +28,15 @@
   .root {
     max-width: 1440px;
     margin: auto;
-    padding: 37px 0 0 0;
+    padding: 0;
     .main-title {
       margin-bottom: 72px;
     }
     @media (max-width: 1440px) {
-      padding: 37px 20px 158px 20px;
+      padding: 0 20px 158px 20px;
     }
     @media (max-width: $tablet-breakpoint) {
-      padding: 37px 15px 158px 15px;
+      padding: 0 15px 158px 15px;
     }
     @media (max-width: 768px) {
       .main-title {
