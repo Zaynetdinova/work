@@ -13,18 +13,14 @@ export class Main extends Component {
 
   slider() {
     let mySwiper = new Swiper('.swiper-container1', {
-      // Optional parameters
       loop: true,
       speed: 800,
       autoplay: {
         delay: 2000,
       },
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
-
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next-main',
         prevEl: '.swiper-button-prev-main',
