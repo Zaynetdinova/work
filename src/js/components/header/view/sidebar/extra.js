@@ -22,6 +22,7 @@ export function extra() {
                 <div class='intro'>
                     <div class='title-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing</div>
                     <p class='text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</p>
+                    <div id="test-show-extra-js"></div>
                 </div>
             </div>
         </div>

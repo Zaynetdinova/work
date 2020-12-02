@@ -6,13 +6,14 @@ import {openCategory} from './js/openCategory'
 import {desktopSearch} from './js/desktopSearch'
 import {showRegistryUserData} from './js/showRegistryUserData'
 import {mobileSearchInput} from './js/mobileSearchInput'
+import {showExtra} from './js/showExtra'
 
 export class Header extends Component {
   static className = 'Header'
   constructor($root) {
     super($root, {
       name: 'Header',
-      listeners: ['click', 'input']
+      listeners: ['click', 'input', 'mouseenter', 'mouseover']
     });
 
   }
@@ -28,7 +29,17 @@ export class Header extends Component {
     spreaderOnInput(e)
   }
 
+  onMouseenter(e) {
+    console.log(e.target)
+  }
 
+  onMouseover(e) {
+    // на будущее
+    const el = e.target.closest('figure')
+    if(el != undefined) {
+      showExtra(el.id)
+    }
+  }
 
 }
 
