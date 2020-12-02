@@ -1,0 +1,17 @@
+.Health {
+  background: url("../images/icons/health.svg") no-repeat;
+  width: 19px;
+  height: 18px;
+  display: none;
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+
+  &.Health-open {
+    display: block;
+  }
+
+}

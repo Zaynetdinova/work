@@ -22,8 +22,8 @@ export function bestsellersCards(elem, infoType) {
 		const {sale = false, id, img, banner, title, description, oldPrice = '', newPrice = '', price = '', bannerPosition = ''} = i
 		return `
                           <div class="swiper-slide">
-                            <article class="card test-bestseller" id="${id}" data-id="${id}">
-                                <div style="background: url(${img}) center top; background-size: contain;" class="img">
+                            <article class="card card-bestsellers-js" id="${id}" data-id="${id}">
+                                <div style="background: url(${img}) center top" class="img">
                                      ${banner ? cardBanner('новинка', bannerPosition) : ''}
                                 <div>
                                 </div>
@@ -33,9 +33,9 @@ export function bestsellersCards(elem, infoType) {
                                 </div>
                             
      
-                                ${infoType === 'price'
-			? priceContent(oldPrice, newPrice, price, sale)
-			: infoCard(title, description)}
+                                  ${infoType === 'price'
+                                    ? priceContent(oldPrice, newPrice, price, sale)
+                                    : infoCard(title, description)}
                           
                             
                                 ${additionalInformation(title, description, img)}
