@@ -10,22 +10,20 @@ import icon6 from '../../../../../images/icons/toy.svg'
 export function sidebarWrapper() {
   return `
   <section class="Sidebar" id='sidebar-js'>
+    <div class='menu'>
+      <div class='wrapper-sidebar'>
+          <div class='points'>
+              ${sidebar(point)}
+          </div>   
+          <div class='extra'>
+              ${extra()}
+          </div>  
           
-          
-          <div class='menu'>
-            <div class='wrapper-sidebar'>
-                <div class='points'>
-                    ${sidebar(point)}
-                </div>   
-                <div class='extra'>
-                    ${extra()}
-                </div>  
-                
-                <div class="button-close" data-id="cancel-js"></div>                
-            </div>
-          </div>
-         <div class="background" data-id="background-js"></div>  
-        </section>
+          <div class="button-close" data-id="cancel-js"></div>                
+      </div>
+    </div>
+    <div class="background" data-id="background-js"></div>  
+  </section>
   `
 }
 

@@ -55,19 +55,24 @@ function spreaderClick(e) {
 
     switch (element.id) {
       case 'burger-menu':
+        mobileSearch('close')
+        showRegistryUserData('close')
         openMenu()
         break;
       case 'mobile-search-button-js':
         openMenu('close')
+        showRegistryUserData('close')
         mobileSearch()
         break;
       case 'point-js':
-        openCategory(element.dataset.type)
+        openCategory(e, element.dataset.type)
         break;
       case 'desktop-search-js':
         desktopSearch(e, element, 'click')
         break;
       case 'registry-user-mobile-button-js':
+        openMenu('close')
+        mobileSearch('close')
         showRegistryUserData()
         break;
     }

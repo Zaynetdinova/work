@@ -5,13 +5,13 @@ export function choice(li = [], subcategory) {
         return  arr.map((item) => {
             const {category, id = ''} = item
             return `
-            <div class='category' id="${id}">
+            <figure data-test2 class='category' id="${id}">
                 <a class='choice' id="choice">
                     ${category}
                     <div class="arrow"></div>
                 </a>
                 <div class='line'></div>
-            </div>
+            </figure>
         `
         }).join('')
     }
@@ -19,7 +19,7 @@ export function choice(li = [], subcategory) {
 
     const itemsSubCategories = li.map((item) => {
         return `
-            <article class='sub-category-wrapper' data-id=${item.id}>
+            <figure data-test class='sub-category-wrapper' data-id=${item.id}>
                 <a class='item'>
                 <div>
                     <span>${item.name}</span>
@@ -30,7 +30,7 @@ export function choice(li = [], subcategory) {
                 <div class="sub-category">
                     ${items(item.categories)}
                 </div>
-            </article>
+            </figure>
         `
     })
 

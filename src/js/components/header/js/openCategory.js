@@ -1,41 +1,39 @@
-export function openCategory(category) {
-  // Main category
+export function openCategory(e, category) {
+  const subCategories = e.target.closest('figure')
+
+  if (subCategories !== null && subCategories.dataset.test != undefined) {
+    subCategories.classList.toggle('show')
+    return
+  } else if(subCategories !== null && subCategories.dataset.test2 != undefined) {
+    return
+  }
+  // separatorSubCategories(subCategories)
+
+
   const mainCategory = document.querySelector(`[data-type=${category}]`)
 
-  // const plus = document.querySelector(`[datatype=${category}]`)
-  //
-  // if(plus.classList.contains('minus')) {
-  //   closeMinus()
-  // } else {
-  //   closeMinus()
-  //   plus.classList.toggle('minus')
-  // }
-
-  if(mainCategory.classList.contains('test')) {
+  if (mainCategory.classList.contains('open-category-js')) {
     close()
   } else {
     close()
-    mainCategory.classList.toggle('test')
+    mainCategory.classList.toggle('open-category-js')
   }
-
-  mainCategory.addEventListener('click', (e) => {
-    let subCategory = e.target.closest('article');
-    if(!subCategory) return
-    subCategory.classList.toggle('show')
-  })
 }
 
+// function separatorSubCategories(subCategories) {
+//   if (subCategories !== null && subCategories.dataset.test != undefined) {
+//     subCategories.classList.toggle('show')
+//     return
+//   } else if(subCategories !== null && subCategories.dataset.test2 != undefined) {
+//     return
+//   }
+// }
 
 function close() {
   const elements = document.querySelectorAll('#point-js')
   elements.forEach((item) => {
-    item.classList.remove('test')
+    item.classList.remove('open-category-js')
   })
 }
 
-function closeMinus() {
-  const elements = document.querySelectorAll('.plus')
-  elements.forEach((item) => {
-    item.classList.remove('minus')
-  })
-}
+
