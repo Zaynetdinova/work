@@ -1,5 +1,6 @@
 @import '../color';
 @import '../var';
+@import './priceContent';
 
 .Bestsellers {
   position: relative;
@@ -13,12 +14,12 @@
     z-index: 9;
   }
 
-.bestseller-woman, .bestseller-child {
-  padding-bottom: 160px;
+.bestseller-woman, .bestseller-child, .bestseller-man {
+  padding-bottom: 200px;
 }
 
   .bestsellers-item {
-    margin-top: -140px;
+    margin-top: -180px;
   }
 
   .slider-root-categories {
@@ -27,7 +28,7 @@
   .root {
     max-width: 1440px;
     margin: auto;
-    padding: 0 0 158px 0;
+    padding: 0;
     .main-title {
       margin-bottom: 72px;
     }
@@ -58,6 +59,7 @@
     }
 
     .img {
+      background-size: cover;
       height: 336px;
       background-position: center;
       background-repeat: no-repeat;
@@ -90,15 +92,14 @@
       display: none;
     }
 
-    &:hover {
-      .quick-view {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
     .additional-information {
       padding-top: 0;
+
+        .quick-view {
+          display: flex;
+          justify-content: center;
+        }
+
       .content {
         display: none;
       }
@@ -106,7 +107,7 @@
       .text-size-wrapper {
         position: absolute;
         background: #fff;
-        padding: 0 19px 12px 19px;
+        padding: 0 19px 32px 19px;
         z-index: 2;
       }
 
@@ -122,7 +123,6 @@
         padding-bottom: 0;
 
         img {
-
           width: 77.62px;
           height: 116.44px;
           padding-bottom: 4px;
@@ -131,14 +131,22 @@
 
     }
 
-    .additional-information-open {
+    &.additional-information-open {
+      .quick-view {
+        display: flex;
+        justify-content: center;
+      }
       .content {
         display: block;
 
       }
     }
 
-    .additional-information-open-left {
+    &.additional-information-open-left {
+      .quick-view {
+        display: flex;
+        justify-content: center;
+      }
       .content {
         display: block;
         .images {
@@ -146,120 +154,31 @@
           left: -82px;
         }
       }
-
     }
+
     @media (max-width: $tablet-breakpoint) {
-        .info {
-          padding: 9px 12px;
+      .root {
+        .main-title {
+          margin-bottom: 28px;
         }
+      }
+      .info {
+        padding: 9px 12px;
+      }
+      .card {
+
         .img {
+          background-size: contain;
           height: 231px;
         }
-    }
-    @media (min-width: $mobile-breakpoint) {
-      .img {
-        height: 261px;
-      }
-    }
-  }
 
-  .card-flex {
-    .card:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .card-wrapper {
-    margin-bottom: 58px;
-  }
-
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  @media (max-width: 1024px) {
-    .root {
-      .main-title {
-          margin-bottom: 28px;
-      }
-    }
-    .desktop {
-      display: none;
-    }
-
-    .mobile {
-      display: block;
-
-      .card {
-        width: 223px;
-        //padding-right: 19px;
       }
     }
   }
 }
 
-.Price-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 19px;
-  background: $baseColor;
 
 
-  .action {
-    display: flex;
-    align-items: center;
-    height: 12px;
-    margin-bottom: 7px;
 
-    .old-price {
-      font-size: 12px;
-      line-height: 106.8%;
-      color: #3D3D3C;
-      text-decoration: line-through;
-    }
-
-    .new-price {
-      font-size: 12px;
-      line-height: 106.8%;
-      color: #DF2B2B;
-      margin-left: 3px;
-    }
-  }
-
-  .price {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 106.8%;
-    color: #3D3D3C;
-  }
-
-@media (max-width: $tablet-breakpoint) {
-  padding: 9px 12px;
-}
-
-}
-
-.Health {
-  background: url("../images/icons/health.svg") no-repeat;
-  width: 19px;
-  height: 18px;
-  display: none;
-  cursor: pointer;
-  transition: 1s;
-
-  &:hover {
-    transform: scale(1.5);
-  }
-
-  &.Health-open {
-    display: block;
-  }
-
-}
 
 

@@ -1,0 +1,41 @@
+.Price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px;
+  background: $baseColor;
+
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 12px;
+    margin-bottom: 7px;
+
+    .old-price {
+      font-size: 12px;
+      line-height: 106.8%;
+      color: #3D3D3C;
+      text-decoration: line-through;
+    }
+
+    .new-price {
+      font-size: 12px;
+      line-height: 106.8%;
+      color: #DF2B2B;
+      margin-left: 3px;
+    }
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 106.8%;
+    color: #3D3D3C;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 9px 12px;
+  }
+
+}
