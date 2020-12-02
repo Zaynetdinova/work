@@ -3,29 +3,28 @@ import {sliderPointerTemplate} from "../common/sliderPointer.template";
 export function createMain(data) {
 
   return `
-<div class="root">
-    <div class="swiper-container swiper-container1">
-      <div class="swiper-wrapper">
-        ${mainBackground(cards.first)}
-        ${mainBackground(cards.second, 'bg-main2')}
+      <div class="root">
+          <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+              ${mainBackground(cards.first)}
+              ${mainBackground(cards.second, 'bg-main2')}
+            </div>
+            
+            <figure class="navigation-wrapper">
+                 <div class="navigation">
+              ${sliderPointerTemplate('main')}
+            </div>
+            </figure>
+           
+         </div>
       </div>
-      
-      <div class="navigation">
-        ${sliderPointerTemplate('main')}
-        </div>
-   </div>
-
-   
-    
-</div>
-
     `
 }
 
 function mainBackground(cardData, className = '') {
   const {title, description} = cardData
   return `
-    <div class="swiper-slide ">
+    <div class="swiper-slide">
     <div class='bg-main ${className}'>
       <div class='wrapper'>
         <div class='content'>
