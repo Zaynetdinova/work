@@ -63,7 +63,8 @@ export class Bestsellers extends Component {
     const options = {
       slidesPerView: 1.8,
       spaceBetween: 15,
-      autoHeight: true,
+      centeredSlides: true,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
       },
@@ -74,15 +75,20 @@ export class Bestsellers extends Component {
       breakpoints: {
         1024: {
           slidesPerView: 6,
+          centeredSlides: false,
+          loop: false,
         },
         768: {
           slidesPerView: 4,
+          centeredSlides: false,
+          loop: false,
         },
         415: {
-          slidesPerView: 3,
+          slidesPerView: 3.3,
         },
         414: {
           slidesPerView: 2.5,
+
         }
       }
     }
@@ -407,278 +413,4 @@ const cards = {
 
 
 
-// const cards = [
-//   [
-//     {
-//       id: 'woman1',
-//       img: img1,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       bannerPosition: 'bottom',
-//     },
-//     {
-//       id: 'woman2',
-//       img: img2,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара '
-//     },
-//     {
-//       id: 'woman3',
-//       img: img3,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара '
-//     },
-//     {
-//       id: 'woman4',
-//       img: img4,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       bannerPosition: 'bottom'
-//     },
-//     {
-//       id: 'woman5',
-//       img: img5,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара '
-//     },
-//     {
-//       id: 'woman6',
-//       img: img6,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара '
-//     }
-// ], [
-//     {
-//       id: 'ch1',
-//       img: ch1,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00 &#8381;',
-//       bannerPosition: 'bottom'
-//     },
-//     {
-//       id: 'ch2',
-//       img: ch2,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00 &#8381; ',
-//       sale: true
-//     },
-//     {
-//       id: 'ch3',
-//       img: ch3,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'ch4',
-//       img: ch4,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'ch5',
-//       img: ch5,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00',
-//       bannerPosition: 'bottom'
-//     },
-//     {
-//       id: 'ch6',
-//       img: ch6,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     }
-//   ],
-//   [
-//     {
-//       id: 'men1',
-//       img: men1,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'men2',
-//       img: men2,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'men3',
-//       img: men3,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'men4',
-//       img: men4,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'men5',
-//       img: men5,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'men6',
-//       img: men6,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     }
-//   ],
-//
-//   [
-//     {
-//       id: 'pil1',
-//       img: pil1,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'pil2',
-//       img: pil2,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'pil3',
-//       img: pil3,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'pil4',
-//       img: pil4,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'pil5',
-//       img: pil5,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'pil6',
-//       img: pil6,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     }
-//   ],
-//
-//   [
-//     {
-//       id: 'toy1',
-//       img: toy1,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'toy2',
-//       img: toy2,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'toy3',
-//       img: toy3,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'toy4',
-//       img: toy4,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     },
-//     {
-//       id: 'toy5',
-//       img: toy5,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       banner: 'НОВИНКА',
-//       price: '1 243,00'
-//     },
-//     {
-//       id: 'toy6',
-//       img: toy6,
-//       title: 'Vittoria Vicci',
-//       description: 'Наименование товара ',
-//       oldPrice: '1 234,00',
-//       newPrice: '-234,00 &#8381;',
-//       price: '1 243,00',
-//       sale: true
-//     }
-//   ],
-//
-// ]
+
