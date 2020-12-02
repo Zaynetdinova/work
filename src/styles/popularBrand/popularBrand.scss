@@ -2,7 +2,8 @@
 @import '../var';
 
 .Popular-brand {
-  background: #fff;
+  background: $baseColor;
+  color: #3D3D3C;
   position: relative;
   z-index: 2;
   .root {
@@ -40,7 +41,7 @@
       flex-direction: column;
       justify-content: space-between;
       background: #F3F2F0;
-      padding: 15px 20px 20px 20px;
+      padding: 20px;
       height: 100%;
     }
 
@@ -49,7 +50,7 @@
       font-size: 18px;
       line-height: 21px;
       text-transform: capitalize;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .description {
@@ -57,7 +58,7 @@
       font-size: 14px;
       line-height: 16px;
       text-transform: capitalize;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .button-wrapper {
@@ -85,7 +86,10 @@
       margin-right: 0;
 
       .info {
-        min-height: 190px;
+        min-height: 200px;
+      }
+      .description {
+        margin-bottom: 20px;
       }
     }
   }
@@ -98,6 +102,13 @@
     }
     .card {
       margin-right: 16px;
+      .info {
+        padding: 15px;
+      }
+      .title {
+        font-size: 16px;
+        line-height: 18px;
+      }
     }
     .desktop {
       .card {
@@ -106,14 +117,6 @@
     }
     .Com-img {
       height: 202px;
-    }
-    .info {
-      padding: 15px 15px 23px 15px;
-    }
-    .title {
-      font-size: 16px;
-      line-height: 18px;
-      margin-bottom: 8px;
     }
   }
   @media (max-width: $mobile-breakpoint) {
@@ -145,11 +148,23 @@
     .Com-img {
       height: 147px;
     }
-    .info {
-      padding: 15px 15px 20px 15px;
-    }
+
     .mobile {
       display: block;
+      .card {
+        .info {
+          min-height: 190px;
+        }
+      }
+    }
+  }
+  @media (max-width: 415px) {
+    .mobile {
+      .card {
+        .button-wrapper {
+          display: none;
+        }
+      }
     }
   }
   @media (max-width: 413px) {
