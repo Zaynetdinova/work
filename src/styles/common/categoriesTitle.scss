@@ -31,4 +31,9 @@
       width: 340px;
     }
   }
+  @media (max-width: $portrait-breakpoint) {
+    &-text {
+      width: 400px;
+    }
+  }
 }

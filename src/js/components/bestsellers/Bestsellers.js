@@ -89,6 +89,8 @@ export class Bestsellers extends Component {
     let womanSwiper = new Swiper('.bestseller-woman', options)
     let childSwiper = new Swiper('.bestseller-child', options)
     let manSwiper = new Swiper('.bestseller-man', options)
+    let homeSwiper = new Swiper('.bestseller-home', options)
+    let toySwiper = new Swiper('.bestseller-toy', options)
   }
 
 }
@@ -217,7 +219,7 @@ const cards = {
   },
   man: {
     _id: 'man',
-    title: 'lorem',
+    title: 'МУЖЧИНАМ',
     data:   [
     {
       id: 'men1',
@@ -278,7 +280,129 @@ const cards = {
     }
   ],
 
+  },
+  home: {
+    _id: 'home',
+    title: 'для дома',
+    data:   [
+    {
+      id: 'pil1',
+      img: pil1,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      price: '1 243,00'
+    },
+    {
+      id: 'pil2',
+      img: pil2,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'pil3',
+      img: pil3,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      price: '1 243,00'
+    },
+    {
+      id: 'pil4',
+      img: pil4,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'pil5',
+      img: pil5,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'pil6',
+      img: pil6,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    }
+    ]
+  },
+  toy: {
+    _id: 'toy',
+    title: 'игрушки',
+    data:   [
+      {
+      id: 'toy1',
+      img: toy1,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      price: '1 243,00'
+    },
+    {
+      id: 'toy2',
+      img: toy2,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'toy3',
+      img: toy3,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      price: '1 243,00'
+    },
+    {
+      id: 'toy4',
+      img: toy4,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    },
+    {
+      id: 'toy5',
+      img: toy5,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      price: '1 243,00'
+    },
+    {
+      id: 'toy6',
+      img: toy6,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00',
+      sale: true
+    }
+    ]
   }
+
 }
 
 

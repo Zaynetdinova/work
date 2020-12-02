@@ -5,7 +5,7 @@
 .Bestsellers {
   position: relative;
   z-index: 2;
-  background: #fff;
+  background: #f9f9f9;
   .bestseller-woman {
     z-index: 10;
   }
@@ -13,13 +13,25 @@
   .bestseller-child {
     z-index: 9;
   }
+  .bestseller-man {
+    z-index: 8;
+  }
+  .bestseller-home {
+    z-index: 7;
+  }
+  .bestseller-toy {
+    z-index: 6;
+  }
 
-.bestseller-woman, .bestseller-child, .bestseller-man {
+.bestseller-woman, .bestseller-child, .bestseller-man, .bestseller-home, .bestseller-toy {
   padding-bottom: 200px;
 }
 
   .bestsellers-item {
-    margin-top: -180px;
+    margin-top: -80px;
+    @media (max-width: $tablet-breakpoint) {
+      margin-top: -135px;
+    }
   }
 
   .slider-root-categories {
@@ -33,10 +45,10 @@
       margin-bottom: 72px;
     }
     @media (max-width: 1440px) {
-      padding: 0 20px 158px 20px;
+      padding: 0 20px 0 20px;
     }
     @media (max-width: $tablet-breakpoint) {
-      padding: 0 15px 158px 15px;
+      padding: 0 15px 0 15px;
     }
     @media (max-width: 768px) {
       .main-title {
@@ -165,13 +177,45 @@
       .info {
         padding: 9px 12px;
       }
-      .card {
-
-        .img {
-          background-size: contain;
+      .img {
           height: 231px;
-        }
-
+          background-size: contain;
+      }
+    }
+    @media (max-width: 1023px) {
+      .img {
+        background-size: cover;
+        height: 336px;
+      }
+    }
+    @media (max-width: $mobile-breakpoint) {
+      .img {
+        height: 261px;
+      }
+    }
+    @media (max-width: $with-767) {
+      .img {
+        height: 336px;
+      }
+    }
+    @media (max-width: 423px) {
+      .img {
+        height: 336px;
+      }
+    }
+    @media (max-width: $width-414) {
+      .img {
+        height: 231px;
+      }
+    }
+    @media (max-width: 413px) {
+      .img {
+        height: 336px;
+      }
+    }
+    @media (max-width: 320px) {
+      .img {
+        height: 231px;
       }
     }
   }
