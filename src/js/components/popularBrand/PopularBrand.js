@@ -48,7 +48,7 @@ const cards = [
     id: '',
     img: img2,
     title: 'Lorem ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aeneanadipiscing elit.'
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean adipiscing elit. Aeneanadipiscing elit. Aenean'
   },
   {
     id: '',
