@@ -39,12 +39,12 @@
       flex-shrink: 0;
       position: relative;
       background-size: cover;
-      transition: 1s;
-      transform: none;
-      object-fit: cover;
-      &:hover {
-        transform: scale(1.1);
-      }
+      //transition: 1s;
+      //transform: none;
+      //object-fit: cover;
+      //&:hover {
+      //  transform: scale(1.1);
+      //}
     }
 
     .info {
@@ -102,12 +102,13 @@
       .img {
         height: 193px;
       }
+      .title {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 8px;
+      }
     }
-    .title {
-      font-size: 16px;
-      line-height: 18px;
-      margin-bottom: 8px;
-    }
+
   }
   @media (max-width: $mobile-breakpoint) {
     .root {

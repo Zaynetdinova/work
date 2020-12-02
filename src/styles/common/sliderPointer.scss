@@ -87,6 +87,10 @@
 
       .swiper-pagination-bullet-active {
         border: 2px solid #000;
+        background: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
       }
     }
   }
