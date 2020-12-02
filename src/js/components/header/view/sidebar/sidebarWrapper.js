@@ -39,6 +39,7 @@ let point =
           category: 'Платья'
         },
         {
+          id: 'jersey',
           category: 'Трикотаж'
         },
         {
@@ -101,6 +102,7 @@ let point =
           id: 'newBornSub',
           categories: [
             {
+              id: 'dress',
               category: 'Платья'
             },
             {
