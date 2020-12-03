@@ -5,6 +5,7 @@
   position: relative;
   z-index: 2;
   background: $bg-shareBlock;
+  color: #3D3D3C;
 
   .root {
     max-width: 1480px;
@@ -26,6 +27,8 @@
     flex-direction: column;
     flex-basis: 33.33%;
     overflow: hidden;
+    cursor: pointer;
+
     .sharesBlock-sale {
       .Card-banner {
         width: 80px;
