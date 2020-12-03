@@ -101,10 +101,13 @@ position: sticky;
 
   @media (max-width: $tablet-breakpoint) {
 
-    .navigation {
-      bottom: 21%;
-      left: 360px;
+    .navigation-wrapper {
+      .navigation {
+        bottom: 21%;
+        left: 360px;
+      }
     }
+
 
     .content {
       padding: 40px 0 40px 0;
@@ -146,11 +149,12 @@ position: sticky;
       padding: 23px 0 34px 0;
     }
 
-    .navigation {
-      bottom: 20%;
-      left: 280px;
+    .navigation-wrapper {
+      .navigation {
+        bottom: 20%;
+        left: 280px;
+      }
     }
-
 
     .box {
       width: 303px;
@@ -165,9 +169,11 @@ position: sticky;
       padding: 0;
     }
 
-    .navigation {
-      bottom: 7%;
-      left: 90%;
+    .navigation-wrapper {
+      .navigation {
+        bottom: 7%;
+        left: 90%;
+      }
     }
 
     .box {

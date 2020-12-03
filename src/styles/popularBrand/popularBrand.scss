@@ -89,6 +89,12 @@
       }
     }
   }
+
+  .pointer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+  }
   @media (max-width: $tablet-breakpoint) {
     .root {
       padding: 40px 15px 30px 15px;

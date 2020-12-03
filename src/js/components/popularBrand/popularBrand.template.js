@@ -1,5 +1,6 @@
 import {categoriesTitle} from '../common/categoriesTitle'
 import {button} from '../common/button'
+import {sliderPointerTemplate} from '../common/sliderPointer.template'
 
 export function popularBrand(data) {
   const cards = (className = '') => {
@@ -57,8 +58,14 @@ export function popularBrand(data) {
         <div class="mobile">
             <div class="swiper-container2 swiper-container">
                 <div class="swiper-wrapper">
-                     ${mobile('swiper-slide')}                
+                     ${mobile('swiper-slide')} 
+                     
+                                    
                 </div>
+                <div class="pointer-wrapper">
+                    ${sliderPointerTemplate('', 'black')}
+                </div>
+                
             </div>
         </div>
         
