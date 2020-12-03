@@ -1,4 +1,5 @@
 import {DomListener} from "./DomListener";
+import {eventCommonCardHover} from './utils/eventCommonCardHover'
 
 export class Component extends DomListener {
   constructor($root, options) {
@@ -20,6 +21,9 @@ export class Component extends DomListener {
 
   functionAfterContent() {
 
+    if(window.userRegistry) {
+      eventCommonCardHover()
+    }
   }
 
 }

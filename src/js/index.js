@@ -22,7 +22,7 @@ const app = new OptMoyo('#app', {
   ]
 })
 
-window.userRegistry = false
+window.userRegistry = true
 app.render()
 
 

@@ -7,9 +7,11 @@
   bottom: 40px;
   justify-content: center;
 
+
   .text {
     font-size: 13px;
     line-height: 134.5%;
+
     color: #3D3D3C;
   }
 
@@ -18,6 +20,17 @@
     width: 21px;
     height: 13px;
     margin-left: 12px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background:   rgba(255, 255, 255, 0.8);
+
+
+    .text {
+      color: #979797;
+    }
+
   }
   @media (max-width: 1400px)  {
     .text {

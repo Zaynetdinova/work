@@ -1,7 +1,6 @@
 import {Component} from '../../core/Component'
 import Swiper from 'swiper/bundle'
 import {createBestsellers} from './bestsellers.template'
-import {eventHover} from './js/viewMaterial'
 
 import img1 from '../../../images/bestsellers/1/img1.png'
 import img2 from '../../../images/bestsellers/1/img2.png'
@@ -46,21 +45,11 @@ export class Bestsellers extends Component {
       name: 'Bestsellers',
       listeners: []
     });
-
-
   }
+
   toHTML() {
     return createBestsellers(cards)
   }
-
-  functionAfterContent() {
-    if(window.userRegistry) {
-      eventHover()
-    }
-
-  }
-
-
 
   slider() {
     const options = {
@@ -90,11 +79,11 @@ export class Bestsellers extends Component {
           slidesOffsetAfter: 0,
         },
         415: {
-          slidesPerView: 3.3,
+          slidesPerView: 3,
+          slidesOffsetAfter: 0,
         },
         414: {
           slidesPerView: 2.5,
-
         }
       }
     }

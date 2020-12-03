@@ -1,9 +1,6 @@
 .Size {
   display: flex;
   flex-wrap: wrap;
-
-
-
   .size {
     font-size: 10px;
     line-height: 100%;
@@ -14,6 +11,13 @@
     padding: 7px;
     border: 1px solid #C8C8C8;
     margin-top: 3px;
+
+    &:hover {
+      cursor: pointer;
+      outline: 2px solid #C8C8C8;
+      outline-offset: -2px;
+
+    }
   }
   .size:last-child {
     margin-right: 0;
