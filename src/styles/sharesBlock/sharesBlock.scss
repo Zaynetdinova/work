@@ -129,14 +129,14 @@
   }
   @media (max-width: $with-767 ) {
     .root {
-      background: $baseColor;
+      background: #f9f9f9;
     }
     .mobile {
       display: block;
 
       .card {
         .info {
-          background: $baseColor;
+          background: #f9f9f9;
         }
       }
     }

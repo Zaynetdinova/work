@@ -2,7 +2,7 @@
 @import '../var';
 
 .Popular-brand {
-  background: $baseColor;
+  background: #f9f9f9;
   color: #3D3D3C;
   position: relative;
   z-index: 2;
@@ -124,6 +124,9 @@
     }
     .Com-img {
       height: 202px;
+      &:hover {
+        transform: none;
+      }
     }
   }
   @media (max-width: $mobile-breakpoint) {
