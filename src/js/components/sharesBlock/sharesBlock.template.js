@@ -19,7 +19,7 @@ export function sharesBlock(data) {
             <div class="title">${card.title}</div> 
             <div class="description">${card.description}</div>
         </div>
-        ${button('подробнее')}
+        ${button('ПОДРОБНЕЕ')}
         </div>
       </div>
     `
@@ -41,7 +41,7 @@ export function sharesBlock(data) {
             <div class="title">${card.title}</div> 
             <div class="description">${card.description}</div>
         </div>
-        ${button('подробнее')}
+        ${button('ПОДРОБНЕЕ')}
         </div>
       </div>
       </div>
