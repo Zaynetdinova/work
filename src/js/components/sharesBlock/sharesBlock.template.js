@@ -10,7 +10,9 @@ export function sharesBlock(data) {
             return `
       <div class="card">
         <div style="background-image: url(${card.img});" class="img">
+        <div class="sharesBlock-sale">
             ${card.banner ? cardBanner('-35%', 'bottom') : ''}
+        </div>
         </div>
         <div class="info">
         <div class="text">
@@ -30,7 +32,9 @@ export function sharesBlock(data) {
       <div class="${className}">
       <div class="card">
         <div style="background-image: url(${card.img});" class="img">
+        <div class="sharesBlock-sale">
             ${card.banner ? cardBanner('-35%', 'bottom') : ''}
+        </div>
         </div>
         <div class="info">
         <div class="text">
@@ -62,6 +66,7 @@ export function sharesBlock(data) {
                     ${sliderPointerTemplate('', 'black')}
                 </div>
             </div>
+            <div class="shares-line"></div>
         </div>
         
     </section>
