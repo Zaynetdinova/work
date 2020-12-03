@@ -1,6 +1,6 @@
-import {sliderPointerTemplate} from './sliderPointer.template'
+import {sliderPointerTemplate} from '../sliderPointer.template'
 
-export function bestsellersHeader(text) {
+export function commonCardHeader(text) {
   return `
     <div class="Bestsellers-header">
       <section class="content">

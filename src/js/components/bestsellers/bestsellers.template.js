@@ -1,5 +1,5 @@
 import {categoriesTitle} from '../common/categoriesTitle'
-import {bestsellersCards} from './view/bestsellerCards'
+import {commonCard} from '../common/commonCard/commonCards'
 
 
 export function createBestsellers({woman, child, man, home, toy}) {
@@ -9,19 +9,19 @@ export function createBestsellers({woman, child, man, home, toy}) {
          ${categoriesTitle('ХИТЫ ПРОДАЖ')}
      </div>
      <div class="">
-        ${bestsellersCards(woman)}
+        ${commonCard(woman)}
     </div>
     <div class="bestsellers-item">
-        ${bestsellersCards(child, 'price')}
+        ${commonCard(child, 'price')}
     </div>
     <div class="bestsellers-item">
-        ${bestsellersCards(man, 'price')}
+        ${commonCard(man, 'price')}
     </div>
     <div class="bestsellers-item">
-        ${bestsellersCards(home, 'price')}
+        ${commonCard(home, 'price')}
     </div>
     <div class="bestsellers-item">
-        ${bestsellersCards(toy, 'price')}
+        ${commonCard(toy, 'price')}
     </div>
    </section>
     `

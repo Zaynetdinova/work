@@ -1,5 +1,5 @@
 // переделать
-export function eventHover() {
+export function eventCommonCardHover() {
   const cards = document.querySelectorAll('.card-bestsellers-js')
   const clientWidth = document.documentElement.clientWidth
   const minWidthNotSlider = '1025'
@@ -44,19 +44,27 @@ export function eventHover() {
 }
 
 function viewMaterial(id, type) {
+  console.log('id', id)
+
   const comWidth = document.documentElement.clientWidth
   const card = document.querySelector(`#${id}`)
+  const test = card.closest('figure')
   const cardСoordinate = card.getBoundingClientRect()
+
+
 
   if(type === 'close') {
     card.classList.remove('additional-information-open')
     card.classList.remove('additional-information-open-left')
+    test.classList.remove('super-z-index')
     return
   }
 
   if(comWidth/2 < cardСoordinate.left) {
     card.classList.add('additional-information-open-left')
+    test.classList.add('super-z-index')
   } else {
     card.classList.add('additional-information-open')
+    test.classList.add('super-z-index')
   }
 }

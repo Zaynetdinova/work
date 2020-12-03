@@ -1,6 +1,7 @@
-import {Sale} from '../../common/sale'
+import {Sale} from '../sale'
 
-export function priceContent(oldPrice, newPrice, price, _, sale) {
+export function priceContent(oldPrice, newPrice, price, sale) {
+	console.log(sale)
 	return `
   <div class='Price-content'>
     <section>
@@ -13,9 +14,9 @@ export function priceContent(oldPrice, newPrice, price, _, sale) {
         <div style="margin-left: 5px">${sale ? `${Sale()}` : ''}</div>
       </div>
     </section>
-    <section>
-        <div class="Health"></div>
-    </section>
+    
+		<div class="Health"></div>
+    
   </div>
   `
 }
