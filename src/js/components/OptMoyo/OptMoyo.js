@@ -1,9 +1,8 @@
 import {$} from '../../core/dom'
-import {Slider, CategoriesSlider} from '../../core/Slider'
 
 export class OptMoyo {
-  constructor(selector, options) {
-    this.$el = $(selector)
+  constructor(options) {
+    // this.$el = $(selector)
     this.components = options.components || []
   }
 
@@ -21,8 +20,8 @@ export class OptMoyo {
     return $root
   }
 
-  render() {
-    this.$el.append(this.getRoot())
+  init() {
+    // this.$el.append(this.getRoot())
 
     this.components.forEach(component => component.init())
     this.components.forEach(component => component.slider())
