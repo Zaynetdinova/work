@@ -4,6 +4,7 @@
 .Footer {
   position: relative;
   z-index: 2;
+  margin-top: -42px;
   .bg-footer {
     background-color: $bg-footer;
   }
@@ -147,6 +148,7 @@
   }
 
   @media (max-width: 1024px) {
+    margin-top: -130px;
     .contact {
       display: flex;
       flex-direction: column;

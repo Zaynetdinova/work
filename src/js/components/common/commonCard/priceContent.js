@@ -9,9 +9,9 @@ export function priceContent(oldPrice, newPrice, price, sale) {
         <div class="old-price">${oldPrice}</div>
         <div class="new-price">${newPrice}</div>
       </div>
-      <div class="sale-price" style="display: flex">
+      <div class="sale-price" style="display: flex; align-items: center;">
         <div class="price">${price}</div>
-        <div style="margin-left: 5px">${sale ? `${Sale()}` : ''}</div>
+        <div style="margin-left: 6px">${sale ? `${Sale()}` : ''}</div>
       </div>
     </section>
     

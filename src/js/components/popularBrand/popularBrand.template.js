@@ -15,7 +15,7 @@ export function popularBrand(data) {
               <div class="description">${card.description}</div>
           </div>
           <div class="button-wrapper">
-              ${button('подробнее')}
+              ${button('ПОДРОБНЕЕ')}
           </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export function popularBrand(data) {
               <div class="description">${card.description}</div>
           </div>
           <div class="button-wrapper">
-              ${button('подробнее')}
+              ${button('ПОДРОБНЕЕ')}
           </div>
           </div>
         </div>

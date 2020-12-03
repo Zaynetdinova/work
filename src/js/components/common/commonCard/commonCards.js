@@ -17,7 +17,7 @@ export function commonCard(elem, infoType) {
 					<div class="swiper-wrapper">
 							${data.map(i => {
 
-								const {sale = false, id, img, banner, title, description, oldPrice = '', newPrice = '', price = '', bannerPosition = ''} = i
+								const {sale = false, id, img, banner, title, description, oldPrice = '', newPrice = '', price = '', bannerPosition = 'bottom'} = i
 								return `
 								<div class="swiper-slide">
 								
