@@ -2,7 +2,7 @@
 @import '../var';
 
 .Popular-brand {
-  background: $baseColor;
+  background: #f9f9f9;
   color: #3D3D3C;
   position: relative;
   z-index: 2;
@@ -42,7 +42,7 @@
       justify-content: space-between;
       background: #F3F2F0;
       padding: 20px;
-      height: 100%;
+      min-height: 150px;
     }
 
     .title {
@@ -110,6 +110,7 @@
       margin-right: 16px;
       .info {
         padding: 15px;
+        min-height: 170px;
       }
       .title {
         font-size: 16px;
@@ -123,6 +124,9 @@
     }
     .Com-img {
       height: 202px;
+      &:hover {
+        transform: none;
+      }
     }
   }
   @media (max-width: $mobile-breakpoint) {
@@ -135,6 +139,9 @@
     .desktop {
       .card {
         max-width: 173px;
+      }
+      .info {
+        min-height: 200px;
       }
     }
     .Com-img {
@@ -179,11 +186,20 @@
     }
     .mobile {
       .Com-img {
-        height: 247px;
+        height: 100%;
       }
       .card {
         .info {
-          min-height: 190px;
+          min-height: 130px;
+        }
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .mobile {
+      .card {
+        .info {
+          padding-right: 50px;
         }
       }
     }

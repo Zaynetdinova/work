@@ -26,7 +26,16 @@
     flex-direction: column;
     flex-basis: 33.33%;
     overflow: hidden;
-
+    .sharesBlock-sale {
+      .Card-banner {
+        width: 80px;
+        font-size: 17px;
+        padding: 4.2px;
+        &.banner-bottom {
+          margin-bottom: -13px;
+        }
+      }
+    }
     .card-banner-wrapper {
       position: relative;
     }
@@ -52,7 +61,7 @@
       flex-direction: column;
       justify-content: space-between;
       background: #F3F2F0;
-      padding: 17px 20px 0 0;
+      padding: 22px 40px 0 0;
       height: 100%;
     }
 
@@ -87,6 +96,11 @@
         height: 230px;
       }
     }
+    .shares-line {
+      border-bottom: 2px dotted #777777;
+      margin-top: 25px;
+    }
+
 
   }
 
@@ -129,14 +143,15 @@
   }
   @media (max-width: $with-767 ) {
     .root {
-      background: $baseColor;
+      background: #f9f9f9;
+      padding: 16px 15px 0;
     }
     .mobile {
       display: block;
 
       .card {
         .info {
-          background: $baseColor;
+          background: #f9f9f9;
         }
       }
     }
@@ -145,13 +160,20 @@
       display: none;
     }
   }
-  @media (max-width: 413px) {
+  @media (max-width: 415px) {
     .mobile {
       .card {
         .img {
           height: 230px;
         }
+        .Button {
+          display: none;
+        }
       }
+
+    }
+    .pointer-wrapper {
+      margin-top: -15px;
     }
   }
 
