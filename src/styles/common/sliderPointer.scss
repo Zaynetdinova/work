@@ -15,7 +15,7 @@
       margin-left: 9px;
       cursor: pointer;
       background: rgba(255, 255, 255, 0.6);
-
+      opacity: 1;
     }
 
     span:first-child {
@@ -85,7 +85,7 @@
       }
 
       .swiper-pagination-bullet-active {
-        border: 2px solid #000;
+        border: 2px solid #3D3D3C;
         background: 0;
         width: 8px;
         height: 8px;
@@ -137,7 +137,7 @@
       }
 
       .swiper-pagination-bullet-active {
-        border: 2px solid #000;
+        border: 2px solid #3D3D3C;
         background: 0;
         width: 8px;
         height: 8px;
