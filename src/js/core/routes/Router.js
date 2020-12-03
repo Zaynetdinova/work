@@ -29,7 +29,6 @@ export class Router {
 		const Page = ActiveRoute.path.includes('categories')
 				? this.routes.viewCategoriesPage
 				: this.routes.mainPage
-		// const Page = this.routes.mainPage
 		this.page = new Page(ActiveRoute.param)
 
 		this.$placeholder.append(this.page.getRoot())

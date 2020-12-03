@@ -67,10 +67,16 @@ export class Bestsellers extends Component {
         prevEl: '.swiper-button-prev-main',
       },
       breakpoints: {
+        1025: {
+          spaceBetween: 20,
+          slidesPerView: 6,
+        },
+
         1024: {
           slidesPerView: 6,
           centeredSlides: false,
           loop: false,
+          spaceBetween: 15,
         },
         768: {
           slidesPerView: 4,
@@ -82,7 +88,7 @@ export class Bestsellers extends Component {
           slidesPerView: 3,
           slidesOffsetAfter: 0,
         },
-        414: {
+        374: {
           slidesPerView: 2.5,
         }
       }

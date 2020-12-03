@@ -1,25 +1,37 @@
+@import '../../color';
+@import '../../var';
 .Common-card {
   .card {
     cursor: default;
     position: relative;
-    //border-bottom: none;
 
     .card-banner-wrapper {
       position: relative;
     }
-
-    .img {
-      background-size: cover;
-      height: 336px;
-      background-position: center;
-      background-repeat: no-repeat;
+    .img-wrapper {
       position: relative;
-      flex-shrink: 0;
+      padding-bottom: 150.5%;
+      overflow: hidden;
+    }
+    .img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 100%;
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     .info {
       background: #FFFFFF;
       padding: 19px;
+      position: relative;
+      margin: 0;
+      overflow: hidden;
     }
 
     .title {
@@ -69,8 +81,7 @@
         top: 0;
         right: -82px;
         background: #3D3D3C;
-        padding: 5px;
-        padding-bottom: 0;
+        padding: 5px 5px 0 5px;
 
         img {
           width: 77.62px;
@@ -122,47 +133,6 @@
       }
       .info {
         padding: 9px 12px;
-      }
-      .img {
-        height: 231px;
-        background-size: contain;
-      }
-    }
-    @media (max-width: 1023px) {
-      .img {
-        background-size: cover;
-        height: 336px;
-      }
-    }
-    @media (max-width: $mobile-breakpoint) {
-      .img {
-        height: 261px;
-      }
-    }
-    @media (max-width: $with-767) {
-      .img {
-        height: 336px;
-      }
-    }
-    @media (max-width: 423px) {
-      .img {
-        height: 336px;
-      }
-    }
-    @media (max-width: $width-414) {
-
-      .img {
-        height: 231px;
-      }
-    }
-    @media (max-width: 413px) {
-      .img {
-        height: 336px;
-      }
-    }
-    @media (max-width: 320px) {
-      .img {
-        height: 231px;
       }
     }
   }

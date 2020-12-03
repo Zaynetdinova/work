@@ -9,10 +9,12 @@ export function sharesBlock(data) {
         return data.map(card => {
             return `
       <div class="card">
-        <div style="background-image: url(${card.img});" class="img">
-        <div class="sharesBlock-sale">
+      <div class="img-wrapper">
+        <div style="background-image: url(${card.img});" class="img"></div>
+      </div>
+        
+         <div class="sharesBlock-sale">
             ${card.banner ? cardBanner('-35%', 'bottom') : ''}
-        </div>
         </div>
         <div class="info">
         <div class="text">

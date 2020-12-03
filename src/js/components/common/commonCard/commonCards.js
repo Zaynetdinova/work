@@ -22,10 +22,10 @@ export function commonCard(elem, infoType) {
 								<div class="swiper-slide">
 								
 									 <article class="card card-bestsellers-js" id="${id}" data-id="${id}">
-											<div class="img" style="background-image: url(${img});">
-													 ${banner ? cardBanner('новинка', bannerPosition) : ''}
-											<div>
-											</div>
+											<div class="img-wrapper">
+												<div class="img" style="background-image: url(${img});">
+													${banner ? cardBanner('новинка', bannerPosition) : ''}
+												</div>
 												<div class="quick-view"> 
 														${quickViewButton(id)}
 												</div>
