@@ -20,6 +20,13 @@ export class SharesBlock extends Component {
     let sharesBlock = new Swiper('.swiper-container3', {
       slidesPerView: 1,
       slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next-main',
+        prevEl: '.swiper-button-prev-main',
+      },
     })
   }
   toHTML() {

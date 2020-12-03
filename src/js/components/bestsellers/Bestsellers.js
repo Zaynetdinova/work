@@ -64,10 +64,12 @@ export class Bestsellers extends Component {
 
   slider() {
     const options = {
-      slidesPerView: 1.8,
+      slidesPerView: 1.6,
       spaceBetween: 15,
-      centeredSlides: true,
-      loop: true,
+      centeredSlides: false,
+      loop: false,
+      slidesOffsetAfter: 16,
+
       pagination: {
         el: '.swiper-pagination',
       },
@@ -85,6 +87,7 @@ export class Bestsellers extends Component {
           slidesPerView: 4,
           centeredSlides: false,
           loop: false,
+          slidesOffsetAfter: 0,
         },
         415: {
           slidesPerView: 3.3,

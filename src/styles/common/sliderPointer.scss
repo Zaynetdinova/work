@@ -1,7 +1,6 @@
 .slider-pointer {
   display: flex;
   align-items: center;
-  margin-top: 8px;
 
   .swiper-pagination {
     position: relative;
@@ -129,13 +128,31 @@
     }
   }
 
+  &.black {
+    .swiper-pagination {
+
+      span {
+        background: #3D3D3C;
+
+      }
+
+      .swiper-pagination-bullet-active {
+        border: 2px solid #000;
+        background: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 1024px) {
-  .slider-pointer.main .left {
+  .slider-pointer .left {
     display: none;
   }
-  .slider-pointer.main .right {
+  .slider-pointer .right {
     display: none;
   }
 }

@@ -1,6 +1,7 @@
 import {categoriesTitle} from '../common/categoriesTitle'
 import {button} from '../common/button'
 import {cardBanner} from "../common/cardBanner";
+import {sliderPointerTemplate} from '../common/sliderPointer.template'
 
 
 export function sharesBlock(data) {
@@ -56,6 +57,9 @@ export function sharesBlock(data) {
             <div class="swiper-container3 swiper-container">
                 <div class="swiper-wrapper">
                      ${mobile('swiper-slide')}                
+                </div>
+                <div class="pointer-wrapper">
+                    ${sliderPointerTemplate('', 'black')}
                 </div>
             </div>
         </div>
