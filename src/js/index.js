@@ -9,25 +9,30 @@ import {Footer} from './components/footer/Footer'
 import 'swiper/swiper-bundle.css';
 import {eventGlobal} from './core/eventGlobal'
 import {MoyomodaBlock} from "./components/moyomodaBlock/MoyomodaBlock";
+import {Router} from './core/routes/Router'
+import {MainPage} from './pages/MainPage'
+import {ViewCategoriesPage} from './pages/ViewCategoriesPage'
 
-const app = new OptMoyo('#app', {
-  components: [
-    Header,
-    Main,
-    PopularBrand,
-    SharesBlock,
-    MoyomodaBlock,
-    Bestsellers,
-    Footer
-  ]
+new Router('#app', {
+  mainPage: MainPage,
+  viewCategoriesPage: ViewCategoriesPage
 })
 
-window.userRegistry = true
-app.render()
-
-
-
-eventGlobal()
+// const app = new OptMoyo('#app', {
+//   components: [
+//     Header,
+//     Main,
+//     PopularBrand,
+//     SharesBlock,
+//     MoyomodaBlock,
+//     Bestsellers,
+//     Footer
+//   ]
+// })
+//
+// window.userRegistry = true
+// app.render()
+// eventGlobal()
 
 
 
