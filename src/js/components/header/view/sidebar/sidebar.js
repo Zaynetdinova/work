@@ -12,9 +12,9 @@ export function sidebar(point) {
                     <img class="sidebar-img" src=${item.img} alt='icon'>
                     <div class='title'>${item.title}</div>
                 </div>
-                <a class='plus' id='plus' href='#' datatype="${item.id}">
+                <div class='plus' id='plus' datatype="${item.id}">
                     <span></span>
-                </a>
+                </div>
             </div>
                 
             <hr class="header-line">
