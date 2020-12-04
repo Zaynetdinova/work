@@ -68,8 +68,12 @@
       .text-size-wrapper {
         position: absolute;
         background: #fff;
-        padding: 0 19px 32px 19px;
+        padding: 0 19px 20px 19px;
         z-index: 2;
+        margin-top: -10px;
+        .text {
+          padding-bottom: 10px;
+        }
       }
 
       .images {
@@ -78,13 +82,13 @@
         flex-direction: column;
         position: absolute;
         top: 0;
-        right: -82px;
+        right: -87px;
         background: #3D3D3C;
         padding: 5px 5px 0 5px;
 
         img {
           width: 77.62px;
-          height: 116.44px;
+          height: 120.44px;
           padding-bottom: 4px;
         }
       }
@@ -115,7 +119,7 @@
         display: block;
         .images {
           width: fit-content;
-          left: -82px;
+          left: -87px;
         }
       }
 
