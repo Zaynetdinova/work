@@ -56,15 +56,15 @@ function viewMaterial(id, type) {
   if(type === 'close') {
     card.classList.remove('additional-information-open')
     card.classList.remove('additional-information-open-left')
-    test.classList.remove('super-z-index')
+    test.classList.remove('Com-super-z-index')
     return
   }
 
   if(comWidth/2 < cardСoordinate.left) {
     card.classList.add('additional-information-open-left')
-    test.classList.add('super-z-index')
+    test.classList.add('Com-super-z-index')
   } else {
     card.classList.add('additional-information-open')
-    test.classList.add('super-z-index')
+    test.classList.add('Com-super-z-index')
   }
 }
