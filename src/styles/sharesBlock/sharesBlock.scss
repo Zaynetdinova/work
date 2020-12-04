@@ -4,8 +4,8 @@
 .Shares-block {
   position: relative;
   z-index: 2;
-  background: $bg-shareBlock;
-  color: #3D3D3C;
+  background: $bg-Blocks;
+  color: $color-Blocks;
 
   .root {
     max-width: 1480px;
@@ -69,7 +69,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: #F3F2F0;
       padding: 22px 40px 0 0;
       height: 100%;
     }
@@ -155,7 +154,7 @@
   }
   @media (max-width: $with-767 ) {
     .root {
-      background: #f9f9f9;
+      background: $bg-phone-Blocks;
       padding: 16px 15px 0;
     }
     .mobile {
@@ -163,7 +162,7 @@
 
       .card {
         .info {
-          background: #f9f9f9;
+          background: $bg-phone-Blocks;
         }
       }
     }
