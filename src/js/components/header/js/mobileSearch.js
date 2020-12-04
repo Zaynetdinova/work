@@ -6,6 +6,12 @@ export function mobileSearch(type = '') {
     return
   }
 
-  elem.classList.toggle('display-block')
-  document.body.classList.toggle('Com-over-hidden')
+  if(elem.classList.contains('display-block')) {
+    elem.classList.remove('display-block')
+    document.body.classList.remove('Com-over-hidden')
+  } else {
+    elem.classList.add('display-block')
+    document.body.classList.add('Com-over-hidden')
+  }
+
 }

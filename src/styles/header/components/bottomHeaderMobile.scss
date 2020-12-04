@@ -3,23 +3,40 @@
 
 .mobile-header {
 
+  .burger-menu-wrapper {
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .burger-menu {
+      cursor: pointer;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    height: 46px;
+  }
+
   .icon-width {
     display: block;
-    width: 100%;
-    height: 27px;
     cursor: pointer;
+    .content {
+      background: none;
+    }
   }
-  .buy-phone {
-    display: none;
-  }
-  .search-white {
-    display: none;
-  }
-  .info_icon {
-    display: none;
-  }
-  .user {
-    display: none;
+
+  .content {
+    height: 100%;
+    padding: 0 14px;
+    background: #E7003E;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
   }
 
   .wrapper-user-data-view {
@@ -33,81 +50,23 @@
     }
   }
 
-  @media (max-width: $tablet-breakpoint) {
-    .icons {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      right: 64px;
-      top: 14px;
-    }
-    .info_icon {
-      display: block;
-      margin-right: 9px;
-      margin-left: 9px;
-      width: 18px;
-      height: 18px;
-
-    }
-    .user {
-      display: block;
-      width: 18px;
-      height: 18px;
-      margin-left: 9px;
-    }
-    .basket-phone {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 17px;
-      height: 18px;
-    }
-    .buy-phone {
-      display: block;
-      .content {
-        position: absolute;
-        height: 100%;
-        padding: 0 14px;
-        top: 0;
-        right: 0;
-        background: #E7003E;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-      }
-    }
-    .search-white {
-      width: 18px;
-      height: 18px;
-      display: block;
-      margin-right: 9px;
-    }
+  .icon-img {
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  @media (max-width: 330px) {
-    .basket-phone {
-      width: 15px;
-      height: 15px;
-    }
-    .search-white {
-      width: 15px;
-      height: 15px;
-    }
-    .info_icon {
-      width: 15px;
-      height: 15px;
-    }
-    .user {
-      width: 15px;
-      height: 15px;
+
+  @media (max-width: 320px) {
+    .content {
+      padding: 0 12px;
     }
 
-    .icons {
-      right: 62px;
-    }
-    .buy-phone {
-      .content {
-        padding: 0 15px;
-      }
+    .icon-img {
+      width: 15px;
+      height: 15px;
     }
   }
 }
