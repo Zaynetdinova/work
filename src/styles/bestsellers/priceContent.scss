@@ -2,7 +2,7 @@
 @import '../var';
 .Price-content {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 19px;
   background: $baseColor;
@@ -34,8 +34,7 @@
     line-height: 106.8%;
 
   }
-
-  @media (max-width: $tablet-breakpoint) {
-    padding: 11px 12px;
+  @media (max-width: 1200px) {
+    padding: 10px;
   }
 }
