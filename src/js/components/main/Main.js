@@ -18,6 +18,19 @@ export class Main extends Component {
       autoplay: {
         delay: 2000,
       },
+      on: {
+        slideChange: function () {
+          console.log(this.previousIndex)
+          if(this.previousIndex === 1) {
+            const test = document.querySelector('#test')
+            test.innerHTML = 'Сезонная распродажа поднимет вам настроение этой осенью'
+          } else if(this.previousIndex === 2) {
+            const test = document.querySelector('#test')
+            test.innerHTML = 'Hello'
+          }
+
+        }
+      },
       pagination: {
         el: '.swiper-pagination',
       },

@@ -2,6 +2,7 @@
 @import '../var';
 
 .Popular-brand {
+  -webkit-transform: translate3d(0,0,0);
   background: #f9f9f9;
   color: $color-Blocks;
   position: relative;
