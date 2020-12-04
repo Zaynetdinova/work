@@ -7,9 +7,9 @@ export function footer_adaptive(point) {
             <div class='common'>
                 <div class="point">
                     <div class='title'>${item.title}</div>
-                    <a class='plus' id='plus' href='#'>
+                    <div class='plus' id='plus' >
                         <span></span>
-                    </a>
+                    </div>
                 </div>
                 <hr class="footer-line">
                 <div>
