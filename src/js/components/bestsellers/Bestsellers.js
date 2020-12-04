@@ -59,6 +59,19 @@ export class Bestsellers extends Component {
       loop: false,
       slidesOffsetAfter: 16,
 
+      on: {
+        slideChange: function () {
+          console.log(this.slides.length)
+        },
+
+        init: function () {
+          console.log(this.slides.length)
+          if(this.slides.length >= 8) {
+
+          }
+        }
+      },
+
       pagination: {
         el: '.swiper-pagination',
       },

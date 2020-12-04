@@ -13,6 +13,7 @@ export function commonCard(elem, infoType) {
 			<figure class="swiper-container bestseller-${_id}" id="bestseller-${_id}">
 					<div class="bestsellers-header-wrapper">
 						${commonCardHeader(title)}
+						<div class="test-dots"></div>
 					</div>
 					<div class="swiper-wrapper">
 							${data.map(i => {
