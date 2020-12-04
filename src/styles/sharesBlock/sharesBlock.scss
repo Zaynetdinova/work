@@ -149,7 +149,7 @@
         height: 141px;
       }
       .sharesBlock-sale {
-        position: static;
+        position: relative;
       }
     }
   }
@@ -164,6 +164,9 @@
       .card {
         .info {
           background: #f9f9f9;
+        }
+        .sharesBlock-sale {
+          position: static;
         }
       }
     }

@@ -106,6 +106,17 @@
       }
     }
   }
+  @media (max-width: 1175px) {
+    .card {
+      .info {
+        .text {
+          .description {
+            line-height: 100%;
+          }
+        }
+      }
+    }
+  }
   @media (max-width: $tablet-breakpoint) {
     .root {
       padding: 68px 20px 80px 20px;
