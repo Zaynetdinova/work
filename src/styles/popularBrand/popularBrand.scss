@@ -3,7 +3,7 @@
 
 .Popular-brand {
   background: #f9f9f9;
-  color: #3D3D3C;
+  color: $color-Blocks;
   position: relative;
   z-index: 2;
   .root {
@@ -196,7 +196,7 @@
       }
     }
   }
-  @media (max-width: 375px) {
+  @media (max-width: $portrait-breakpoint) {
     .mobile {
       .card {
         .info {

@@ -1,8 +1,9 @@
 @import '../../color';
+@import '../../var';
 Footer {
   .footer-mobail {
     display: none;
-    color: #555555;
+    color: $color-footer;
   }
   .sidebar {
     background: $baseColor;
@@ -52,7 +53,7 @@ Footer {
 
   }
   .title:hover {
-    color: #AB064E;
+    color: $color-footer-hover;
   }
   .plus {
     display: block;
@@ -102,7 +103,7 @@ Footer {
     height: 2px;
     background: $baseColor;
   }
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-breakpoint) {
     .footer-mobail {
       display: block;
     }

@@ -1,10 +1,12 @@
+@import '../color';
+@import '../var';
 .Price-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 19px;
   background: $baseColor;
-
+  color: $color-Blocks;
 
   .action {
     display: flex;
@@ -15,7 +17,6 @@
     .old-price {
       font-size: 12px;
       line-height: 106.8%;
-      color: #3D3D3C;
       text-decoration: line-through;
     }
 
@@ -31,11 +32,10 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 106.8%;
-    color: #3D3D3C;
+
   }
 
   @media (max-width: $tablet-breakpoint) {
     padding: 11px 12px;
   }
-
 }
