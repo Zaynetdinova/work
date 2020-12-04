@@ -60,7 +60,7 @@ function card(title, description) {
 }
 
 const cards = {
-  first:  { title: 'BLACK FRIDAY<br> СКИДКИ ДО 70%*',
+  first:  { title: 'BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*',
     description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'},
   second:  { title: 'Сезонная распродажа поднимет вам настроение этой осенью',
     description: '*Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'},
