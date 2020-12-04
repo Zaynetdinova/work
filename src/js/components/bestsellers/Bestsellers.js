@@ -130,50 +130,72 @@ const cards = {
         description: 'Наименование товара ',
         banner: 'НОВИНКА',
         bannerPosition: 'bottom',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman2',
         img: img2,
         title: 'Vittoria Vicci',
-        description: 'Наименование товара '
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman3',
         img: img3,
         title: 'Vittoria Vicci',
-        description: 'Наименование товара '
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman4',
         img: img4,
         title: 'Vittoria Vicci',
         description: 'Наименование товара ',
-        banner: 'НОВИНКА',
-        bannerPosition: 'bottom'
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman5',
         img: img5,
         title: 'Vittoria Vicci',
-        description: 'Наименование товара '
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman6',
         img: img6,
         title: 'Vittoria Vicci',
-        description: 'Наименование товара '
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman7',
         img: img5,
         title: 'Vittoria Vicci',
-        description: 'Наименование товара '
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       },
       {
         id: 'woman8',
         img: img6,
         title: 'Vittoria Vicci',
-        description: 'Наименование товара '
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381; ',
       }
     ],
   },

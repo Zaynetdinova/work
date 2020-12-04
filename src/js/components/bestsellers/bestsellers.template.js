@@ -9,7 +9,7 @@ export function createBestsellers({woman, child, man, home, toy}) {
          ${categoriesTitle('ХИТЫ ПРОДАЖ')}
      </div>
      <div class="">
-        ${commonCard(woman)}
+        ${commonCard(woman, 'price')}
     </div>
     <div class="bestsellers-item">
         ${commonCard(child, 'price')}
