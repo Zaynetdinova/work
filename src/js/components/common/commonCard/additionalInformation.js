@@ -16,7 +16,7 @@ export function additionalInformation(title, description, img, index) {
        <div class="text-size-wrapper">
           ${index == 0
 		? ''
-		: `<div class="text" style="padding-bottom: 15px">
+		: `<div class="text" style="padding-bottom: 10px">
                   <div class="title">${title}</div> 
                   <div class="description">${description}</div>
               </div>`}

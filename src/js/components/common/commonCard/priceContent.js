@@ -11,7 +11,7 @@ export function priceContent(oldPrice, newPrice, price, sale) {
       </div>
       <div class="sale-price" style="display: flex; align-items: center;">
         <div class="price">${price}</div>
-        <div style="margin-left: 6px">${sale ? `${Sale()}` : ''}</div>
+        <div style="margin-left: 9px">${sale ? `${Sale()}` : ''}</div>
       </div>
     </section>
     
