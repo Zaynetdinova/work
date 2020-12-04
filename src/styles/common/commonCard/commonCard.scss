@@ -36,17 +36,16 @@
 
     .title {
       font-weight: bold;
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 16px;
+      line-height: 17px;
       text-transform: capitalize;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .description {
       font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      text-transform: capitalize;
+      font-size: 12px;
+      line-height: 12px;
     }
 
 
@@ -133,6 +132,18 @@
       }
       .info {
         padding: 9px 12px;
+      }
+      .title {
+        font-size: 14px;
+        line-height: 15px;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+      }
+
+      .description {
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 11px;
       }
     }
   }
