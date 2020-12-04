@@ -17,14 +17,15 @@ position: sticky;
     top: 0;
     right: 0;
     left: 0;
+  }
 
-    .navigation {
-      position: absolute;
-      bottom: 26%;
-      z-index: 2;
-      left: 525px;
-      transform: translateX(-50%);
-    }
+  .wrapper-navigation-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
 
@@ -42,24 +43,27 @@ position: sticky;
     background-position: center;
     background-size: cover;
   }
+
   .wrapper {
     max-width: 1480px;
     margin: 0 auto;
     padding: 0 20px;
   }
+
   .content {
-    padding: 75px 0 78px 0;
+    height: 500px;
   }
 
-
-
   .box {
+    position: absolute;
+    top: 78px;
+    left: 20px;
+    z-index: 2;
     width: 588px;
     height: 344px;
     background: rgba(0, 0, 0, 0.8);
     color: $baseColor;
     padding: 52px 40px 43px 45px;
-    position: relative;
 
     h1 {
       margin: 0;
@@ -86,7 +90,6 @@ position: sticky;
       letter-spacing: 0.07em;
       padding: 8px 30px 9px 30px;
       cursor: pointer;
-      position: absolute;
       bottom: 0;
 
       &:hover {
@@ -101,21 +104,13 @@ position: sticky;
   }
 
   @media (max-width: $tablet-breakpoint) {
-
-    .navigation-wrapper {
-      .navigation {
-        bottom: 21%;
-        left: 360px;
-      }
-    }
-
-
     .content {
-      padding: 40px 0 40px 0;
+      height: 356px;
     }
 
 
     .box {
+      top: 40px;
       width: 405px;
       height: 276px;
       padding: 40px 40px 38px 40px;
@@ -147,7 +142,7 @@ position: sticky;
 
   @media (max-width: $mobile-breakpoint) {
     .content {
-      padding: 23px 0 34px 0;
+      height: 266px;
     }
 
     .navigation-wrapper {
@@ -158,6 +153,7 @@ position: sticky;
     }
 
     .box {
+      top: 23px;
       width: 303px;
       height: 220px;
       padding: 20px 15px 21px 15px;
@@ -171,13 +167,14 @@ position: sticky;
     }
 
     .navigation-wrapper {
-      .navigation {
-        bottom: 7%;
-        left: 90%;
-      }
+      width: 100%;
+      position: relative;
+      top: -23px;
     }
 
     .box {
+      left: 0;
+      position: relative;
       width: 100%;
       height: 200px;
       padding: 20px 15px 27px 15px;
@@ -211,7 +208,7 @@ position: sticky;
     }
 
     .content {
-      padding: 0;
+      height: auto;
     }
 
     .banner-box {

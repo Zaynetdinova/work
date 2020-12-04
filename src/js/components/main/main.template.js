@@ -11,12 +11,13 @@ export function createMain(data) {
             </div>
             
             <figure class="navigation-wrapper">
-                 <div class="navigation">
-              ${sliderPointerTemplate('main')}
-            </div>
+               <div class='box'>
+                    ${card()}
+               </div>
             </figure>
            
          </div>
+        
       </div>
     `
 }
@@ -30,17 +31,7 @@ function mainBackground(cardData, className = '') {
         <div class='content'>
           <div class='bg ${className}'></div>
          
-            <div class='box'>
-
-
             
-                    ${card(title, description)}
-                 
-  
-
-             
-
-            </div>
           
         </div>
       </div>
@@ -49,12 +40,19 @@ function mainBackground(cardData, className = '') {
   `
 }
 
-function card(title, description) {
+function card(title = 'hello', description = 'hello') {
  return `
   <div class="swiper-slide">
-    <h1>${title}</h1>
+    <h1 id="test">${title}</h1>
     <p>${description}</p>
-    <button class="box-button type="button">ПОДРОБНЕЕ</button>
+    
+    <div class="wrapper-navigation-button">
+        <button class="box-button type="button">ПОДРОБНЕЕ</button>
+        <div class="navigation">
+            ${sliderPointerTemplate('main')}
+        </div>
+    </div>
+    
   </div>
  `
 }

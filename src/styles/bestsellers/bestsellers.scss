@@ -3,6 +3,7 @@
 @import './priceContent';
 
 .Bestsellers {
+  -webkit-transform: translate3d(0,0,0);
   position: relative;
   z-index: 2;
   background: #f9f9f9;
