@@ -18,14 +18,20 @@
   .img-wrap {
     overflow: hidden;
     flex-shrink: 0;
-    width: 100%;
+    position: relative;
+    padding-bottom: 85%;
   }
   .Com-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
     transition: 1s;
     transform: none;
     object-fit: cover;
-    width: 100%;
-    height: 294px;
   }
   .card {
     margin-right: 20px;
@@ -40,7 +46,10 @@
       justify-content: space-between;
       background: #F3F2F0;
       padding: 20px;
-      min-height: 150px;
+      height: 100%;
+      position: relative;
+      margin: 0;
+      overflow: hidden;
     }
 
     .title {
@@ -77,9 +86,7 @@
 
   .desktop {
 
-    .card {
-      max-width: 345px;
-    }
+
     .card:last-child {
       margin-right: 0;
     }
@@ -87,12 +94,8 @@
   }
   .mobile {
     display: none;
-    .Com-img {
-      height: 100%;
-    }
     .card {
       margin-right: 0;
-
       .info {
         min-height: 200px;
       }
@@ -118,20 +121,13 @@
       margin-right: 16px;
       .info {
         padding: 15px;
-        min-height: 170px;
       }
       .title {
         font-size: 16px;
         line-height: 18px;
       }
     }
-    .desktop {
-      .card {
-        max-width: 237px;
-      }
-    }
     .Com-img {
-      height: 202px;
       &:hover {
         transform: none;
       }
@@ -144,17 +140,6 @@
     .card {
       margin-right: 15px;
     }
-    .desktop {
-      .card {
-        max-width: 173px;
-      }
-      .info {
-        min-height: 200px;
-      }
-    }
-    .Com-img {
-      height: 147px;
-    }
   }
   @media (max-width: $with-767) {
     .desktop {
@@ -166,22 +151,17 @@
     .main-title {
       margin-bottom: 15px;
     }
-    .Com-img {
-      height: 147px;
-    }
 
     .mobile {
       display: block;
-      .card {
-        .info {
-          min-height: 190px;
-        }
-      }
     }
   }
   @media (max-width: 415px) {
     .mobile {
       .card {
+        .info {
+          min-height: 190px;
+        }
         .button-wrapper {
           display: none;
         }
@@ -193,12 +173,9 @@
       padding-bottom: 18px;
     }
     .mobile {
-      .Com-img {
-        height: 100%;
-      }
       .card {
         .info {
-          min-height: 130px;
+          min-height: 120px;
         }
       }
     }
