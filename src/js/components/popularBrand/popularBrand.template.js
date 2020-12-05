@@ -5,22 +5,19 @@ import {sliderPointerTemplate} from '../common/sliderPointer.template'
 export function popularBrand(data) {
   const cards = (className = '') => {
     return data.map(card => {
-      return `
-        
-           <div class="card">
-          <div class="img-wrap"><img class="Com-img" src=${card.img}></div>
-          <div class="info">
-          <div class="text">
-              <div class="title">${card.title}</div> 
-              <div class="description">${card.description}</div>
-          </div>
+      return `        
+          <div class="card">
+            <div class="img-wrap"><img class="Com-img" src=${card.img}></div>
+            <div class="info">
+                <div class="text">
+                    <div class="title">${card.title}</div> 
+                    <div class="description">${card.description}</div>
+                </div>
           <div class="button-wrapper">
               ${button('ПОДРОБНЕЕ')}
           </div>
           </div>
         </div>
-      
-     
     `
     }).join('')
   }
@@ -29,18 +26,18 @@ export function popularBrand(data) {
     return data.map(card => {
       return `
         <div class="${className}">
-           <div class="card">
-          <div class="img-wrap"><img class="Com-img" src=${card.img}></div>
-          <div class="info">
-          <div class="text">
-              <div class="title">${card.title}</div> 
-              <div class="description">${card.description}</div>
+          <div class="card">
+            <div class="img-wrap"><img class="Com-img" src=${card.img}></div>
+            <div class="info">
+                <div class="text">
+                    <div class="title">${card.title}</div> 
+                    <div class="description">${card.description}</div>
+                </div>
+                <div class="button-wrapper">
+                    ${button('ПОДРОБНЕЕ')}
+                </div>
+            </div>
           </div>
-          <div class="button-wrapper">
-              ${button('ПОДРОБНЕЕ')}
-          </div>
-          </div>
-        </div>
         </div>
      
     `
@@ -58,18 +55,13 @@ export function popularBrand(data) {
         <div class="mobile">
             <div class="swiper-container2 swiper-container">
                 <div class="swiper-wrapper">
-                     ${mobile('swiper-slide')} 
-                     
-                                    
+                     ${mobile('swiper-slide')}                   
                 </div>
                 <div class="pointer-wrapper">
                     ${sliderPointerTemplate('', 'black')}
-                </div>
-                
+                </div>                
             </div>
-        </div>
-        
-       
+        </div>     
     </section>
     `
 }
