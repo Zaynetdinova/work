@@ -2,7 +2,6 @@ import {Component} from '../../core/Component'
 import {createHeader} from './header.template'
 import {openMenu} from './js/openMenu'
 import {mobileSearch} from './js/mobileSearch'
-import {openCategory} from './js/openCategory'
 import {desktopSearch} from './js/desktopSearch'
 import {showRegistryUserData} from './js/showRegistryUserData'
 import {mobileSearchInput} from './js/mobileSearchInput'
@@ -74,9 +73,6 @@ function spreaderClick(e) {
         openMenu('close')
         showRegistryUserData('close')
         mobileSearch()
-        break;
-      case 'point-js':
-        openCategory(e, element.dataset.type)
         break;
       case 'desktop-search-js':
         desktopSearch(e, element, 'click')

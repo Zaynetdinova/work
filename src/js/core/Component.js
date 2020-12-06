@@ -1,5 +1,6 @@
 import {DomListener} from "./DomListener";
 import {eventCommonCardHover} from './utils/eventCommonCardHover'
+import {openSidebar} from './utils/openSidebar'
 
 export class Component extends DomListener {
   constructor($root, options) {
@@ -20,7 +21,7 @@ export class Component extends DomListener {
   }
 
   functionAfterContent() {
-
+    openSidebar()
     if(window.userRegistry) {
       eventCommonCardHover()
     }

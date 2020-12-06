@@ -1,8 +1,14 @@
 @import '../../color';
 
 .Sidebar {
-  @import './points.scss';
   position: relative;
+
+  .points-wrapper {
+    width: 100%;
+    .points {
+      height: 100vh;
+    }
+  }
 
   &.Sidebar-open-js {
     .background {
@@ -14,31 +20,7 @@
     }
   }
 
-  .categories {
-    padding: 0 32px 26px 32px;
-    background: $baseColor;
-    display: none;
 
-    &.open {
-      display: block;
-    }
-  }
-
-  .open-category-js {
-    .categories {
-      display: block;
-    }
-
-    .plus {
-      span {
-          transform: rotate(-90deg);
-      }
-
-      span:after {
-        display: none;
-      }
-    }
-  }
 
 
 
@@ -88,6 +70,32 @@
     width: 100%;
   }
 
+  .extra-mobile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background: red;
+    display: none;
+
+
+    &.show-extra-mobile {
+      display: block;
+      animation: width 0.5s;
+    }
+
+    @keyframes width {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+
+
+
 
 
 
@@ -115,10 +123,6 @@
 
     .button-close {
       display: none;
-    }
-
-    .points {
-      width: 100%;
     }
 
     .background {

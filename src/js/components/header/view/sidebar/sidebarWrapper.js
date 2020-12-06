@@ -1,4 +1,4 @@
-import {sidebar} from './sidebar'
+// import {sidebar} from './sidebar'
 import {extra} from './extra'
 import icon1 from '../../../../../images/icons/woman.svg'
 import icon2 from '../../../../../images/icons/girl.svg'
@@ -6,18 +6,25 @@ import icon3 from '../../../../../images/icons/man.svg'
 import icon4 from '../../../../../images/icons/boys.svg'
 import icon5 from '../../../../../images/icons/house.svg'
 import icon6 from '../../../../../images/icons/toy.svg'
+import {sidebarPoint} from '../../../common/sidebarPoint'
+import {subCategoriesMenu} from "../../../common/subCategoriesMenu";
 
 export function sidebarWrapper() {
   return `
   <section class="Sidebar" id='sidebar-js'>
     <div class='menu'>
       <div class='wrapper-sidebar'>
-          <div class='points'>
-              ${sidebar(point)}
+          <div class='points-wrapper'>
+            <div class='points'>
+               ${sidebarPoint(point)}
+            </div>
           </div>   
           <div class='extra'>
               ${extra()}
-          </div>  
+          </div> 
+          <div class="extra-mobile" id="open-mobile-extra-js">
+            ${subCategoriesMenu()}
+          </div> 
           
           <div class="button-close" data-id="cancel-js"></div>                
       </div>

@@ -4,14 +4,18 @@ import instagram from '../../../images/footer/Instagram.svg'
 import partner from '../../../images/footer/partner.svg'
 import schema  from '../../../images/footer/shema.svg'
 import card from '../../../images/footer/card_bank.svg'
-import {footer_adaptive} from "./components/footer-adaptiv";
+import {sidebarPoint} from "../common/sidebarPoint";
 
 
 export function footerTemplate() {
   return `
      <footer>
         <div class='bg-footer'>
-            <div class='footer-mobail'>${footer_adaptive(point)}</div>
+            <div class="footer-mobile-points-wrapper">
+              <div class='points'>
+                  ${sidebarPoint(point, 'notArrow')}
+              </div>
+            </div>
             <div class='wrapper'>
                 <div class='content'>                
                     <div class='box'>
@@ -101,20 +105,78 @@ export function footerTemplate() {
 }
 
 let point = [
-    {
-        title: 'ИНФОРМАЦИЯ',
-        id: 'info'
+  {
+    title: 'ИНФОРМАЦИЯ',
+    id: 'info',
+    img: false,
+    category: [{
+      category: 'О нас'
     },
-    {
-        title: 'ДЛЯ КЛИЕНТОВ',
-        id: 'client'
-    },
-    {
-        title: 'СЕРВИС',
-        id: 'service'
-    },
-    {
-        title: 'СОТРУДНИЧЕСТВО',
-        id: 'cooperation'
-    }
+      {
+        category: 'Условия работы'
+      },
+      {
+        category: 'Доставка'
+      },
+      {
+        category: 'Оплата'
+      },
+      {
+        category: 'Ответы на вопросы'
+      },
+      {
+        category: 'Контакты'
+      }
+      ]
+  },
+
+  {
+    title: 'ДЛЯ КЛИЕНТОВ',
+    id: 'client',
+    img: false,
+    category: [
+      {
+        category: 'Личный кабинет'
+      },
+      {
+        category: 'Корзина'
+      },
+      {
+        category: 'Избранное'
+      },
+      {
+        category: 'Заказы и их статус'
+      },
+      {
+        category: ' Возврат'
+      },
+    ]
+  },
+
+  {
+    title: 'СЕРВИС',
+    id: 'service',
+    img: false,
+    category: [
+      {
+        category: 'Таблица размеров'
+      },
+      {
+        category: 'Заказать звонок'
+      },
+    ]
+  },
+
+  {
+    title: 'СОТРУДНИЧЕСТВО',
+    id: 'cooperation',
+    img: false,
+    category: [
+      {
+        category: 'Поставщикам'
+      },
+    ]
+  },
 ]
+
+

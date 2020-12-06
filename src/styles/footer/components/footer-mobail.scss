@@ -1,111 +1,13 @@
-@import '../../color';
 @import '../../var';
-Footer {
-  .footer-mobail {
-    display: none;
-    color: $color-footer;
-  }
-  .sidebar {
-    background: $baseColor;
-    color: $sidebar-color;
-    display: none;
-    position: absolute;
-    top: 118px;
-    left: 0;
-    height: 1105px;
-    width: 100%;
-  }
-  .sidebar.show {
-    display: block;
-  }
-  .wrapper-sidebar {
-    display: flex;
-  }
-  .common {
-    background: $bg-sidebar;
-  }
+
+.footer-mobile-points-wrapper {
+  display: none;
+
   .points {
-    padding-top: 26px;
-    width: 286px;
-    background: $bg-sidebar;
-  }
-  .point {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 18px 16px 15px;
-    background: $bg-sidebar;
-    cursor: pointer;
-  }
-  .categories {
-    padding: 0 16px 40px 15px;
-    background: $baseColor;
-    display: none;
-  }
-  .categories.open {
-    display: block;
-  }
-  .title {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 100%;
 
   }
-  .title:hover {
-    color: $color-footer-hover;
-  }
-  .plus {
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: relative;
-  }
-  .plus span, .plus span:after {
-    display: block;
-    width: 2px;
-    height: 10px;
-    background: $sidebar-color;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -1px;
-    margin-top: -5px;
-    transition: all 0.4s linear;
-  }
-  .plus span:after {
-    content: '';
-    transform: rotate(-90deg);
-  }
-  .plus.minus span {
-    transform: rotate(-90deg);
-  }
-  .plus.minus span:after {
-    background: none;
-  }
-  .line {
-    border-bottom: 2px dotted #D9D9D9;
-  }
-  .choice {
-    cursor: pointer;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 40px;
-    letter-spacing: 0.05em;
 
-
-  }
-  .nav {
-    display: none;
-  }
-  .footer-line {
-    border: none;
-    height: 2px;
-    background: $baseColor;
-  }
   @media (max-width: $mobile-breakpoint) {
-    .footer-mobail {
       display: block;
-    }
   }
 }
