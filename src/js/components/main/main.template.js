@@ -14,10 +14,8 @@ export function createMain(data) {
                <div class='box'>
                     ${card()}
                </div>
-            </figure>
-           
-         </div>
-        
+            </figure>       
+         </div>       
       </div>
     `
 }
@@ -29,10 +27,7 @@ function mainBackground(cardData, className = '') {
     <div class='bg-main ${className}'>
       <div class='wrapper'>
         <div class='content'>
-          <div class='bg ${className}'></div>
-         
-            
-          
+          <div class='bg ${className}'></div>        
         </div>
       </div>
     </div>
@@ -40,14 +35,14 @@ function mainBackground(cardData, className = '') {
   `
 }
 
-function card(title = 'hello', description = 'hello') {
+function card(title, description) {
  return `
   <div class="swiper-slide">
-    <h1 id="test">${title}</h1>
-    <p>${description}</p>
+    <h1 id="title">${title}</h1>
+    <p id="description">${description}</p>
     
     <div class="wrapper-navigation-button">
-        <button class="box-button type="button">ПОДРОБНЕЕ</button>
+        <button class="box-button" type="button">ПОДРОБНЕЕ</button>
         <div class="navigation">
             ${sliderPointerTemplate('main')}
         </div>
@@ -62,7 +57,6 @@ const cards = {
     description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'},
   second:  { title: 'Сезонная распродажа поднимет вам настроение этой осенью',
     description: '*Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'},
-
 }
 
 

@@ -196,7 +196,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-      }
+      },
     ],
   },
   child: {
@@ -251,6 +251,26 @@ const cards = {
     },
     {
       id: 'ch6',
+      img: ch6,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00 &#8381',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00 &#8381',
+      sale: true
+    },
+    {
+      id: 'ch7',
+      img: ch6,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      oldPrice: '1 234,00 &#8381',
+      newPrice: '-234,00 &#8381;',
+      price: '1 243,00 &#8381',
+      sale: true
+    },
+    {
+      id: 'ch8',
       img: ch6,
       title: 'Vittoria Vicci',
       description: 'Наименование товара ',
@@ -322,7 +342,26 @@ const cards = {
       newPrice: '-234,00 &#8381;',
       price: '1 243,00 &#8381',
       sale: true
-    }
+    },
+    {
+      id: 'men7',
+      img: men5,
+      title: 'Vittoria Vicci',
+      description: 'Наименование товара ',
+      banner: 'НОВИНКА',
+      price: '1 243,00 &#8381'
+    },
+      {
+        id: 'men8',
+        img: men1,
+        title: 'Vittoria Vicci',
+        description: 'Наименование товара ',
+        banner: 'НОВИНКА',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381',
+        sale: true
+      },
   ],
 
   },
@@ -385,7 +424,28 @@ const cards = {
       newPrice: '-234,00 &#8381;',
       price: '1 243,00 &#8381',
       sale: true
-    }
+    },
+      {
+        id: 'pil7',
+        img: pil5,
+        title: 'Vittoria Vicci',
+        description: 'Наименование товара ',
+        banner: 'НОВИНКА',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381',
+        sale: true
+      },
+      {
+        id: 'pil8',
+        img: pil6,
+        title: 'Vittoria Vicci',
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381',
+        sale: true
+      }
     ]
   },
   toy: {
@@ -444,7 +504,25 @@ const cards = {
       newPrice: '-234,00 &#8381;',
       price: '1 243,00 &#8381',
       sale: true
-    }
+    },
+      {
+        id: 'toy7',
+        img: toy4,
+        title: 'Vittoria Vicci',
+        description: 'Наименование товара ',
+        oldPrice: '1 234,00 &#8381',
+        newPrice: '-234,00 &#8381;',
+        price: '1 243,00 &#8381',
+        sale: true
+      },
+      {
+        id: 'toy8',
+        img: toy5,
+        title: 'Vittoria Vicci',
+        description: 'Наименование товара ',
+        banner: 'НОВИНКА',
+        price: '1 243,00 &#8381'
+      },
     ]
   }
 

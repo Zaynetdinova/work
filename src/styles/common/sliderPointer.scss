@@ -96,6 +96,30 @@
       }
     }
   }
+  .dots {
+    display: none;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    .dots-bestseller {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #3D3D3C;
+      margin-left: 9px;
+      cursor: pointer;
+      opacity: 1;
+
+      &.active {
+        border: 2px solid #3D3D3C;
+        background: 0;
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
 
   &.main {
 
@@ -148,7 +172,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -157,5 +180,11 @@
   }
   .slider-pointer .right {
     display: none;
+  }
+  .slider-pointer .slider-pointer-bestseller {
+    display: none;
+  }
+  .slider-pointer .dots {
+    display: flex;
   }
 }
