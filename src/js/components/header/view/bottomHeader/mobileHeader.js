@@ -7,6 +7,7 @@ import user from '../../../../../images/icons/user.svg'
 import {showRegistryUserDataView} from '../showRegistryUserDataView'
 
 import {mobileSearchResult} from "../mobileSearchResult"
+import {infoView} from "../infoView";
 
 export function mobileHeader() {
 
@@ -69,6 +70,10 @@ export function mobileHeader() {
     
     <div class="wrapper-user-data-view" id="wrapper-user-data-view-js">
         ${showRegistryUserDataView()}
+    </div>
+    
+    <div class="">
+        ${infoView()}
     </div>
 
   `
