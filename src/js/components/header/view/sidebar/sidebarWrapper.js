@@ -16,7 +16,9 @@ export function sidebarWrapper() {
       <div class='wrapper-sidebar'>
           <div class='points-wrapper'>
             <div class='points'>
-               ${sidebarPoint(point)}
+                <div class="points-header">
+                    ${sidebarPoint(point)}
+                </div>
             </div>
           </div>   
           <div class='extra'>
