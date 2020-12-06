@@ -16,7 +16,7 @@ export function sidebarPoint(point, arrow = '') {
                 </div>
             </div>
                 
-            <hr class="header-line">
+            <hr class="line-white">
             
            
             <div class='categories ${ subcategory ? 'main-sub-category' : ''}' id=${item.id}>

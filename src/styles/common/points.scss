@@ -1,12 +1,14 @@
 @import '../color';
 
 .points {
-  padding-top: 26px;
+
   width: 350px;
   min-width: 220px;
   background: $bg-sidebar;
   overflow-y: auto;
-
+  .points-header {
+    padding-top: 26px;
+  }
   .categories {
     padding: 0 32px 26px 32px;
     background: $baseColor;
@@ -42,12 +44,13 @@
     cursor: pointer;
   }
 
+
   .title {
     text-transform: uppercase;
     margin-left: 13px;
     font-weight: bold;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 15px;
 
     &:hover {
       color: #AB064E;

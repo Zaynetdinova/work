@@ -13,7 +13,9 @@ export function footerTemplate() {
         <div class='bg-footer'>
             <div class="footer-mobile-points-wrapper">
               <div class='points'>
-                  ${sidebarPoint(point, 'notArrow')}
+                <div class="points-footer">
+                    ${sidebarPoint(point, 'notArrow')}
+                </div>
               </div>
             </div>
             <div class='wrapper'>

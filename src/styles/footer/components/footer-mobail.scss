@@ -3,8 +3,19 @@
 .footer-mobile-points-wrapper {
   display: none;
 
-  .points {
-
+  .points-footer {
+    .point {
+      padding: 15px;
+    }
+    .title {
+        margin: 0;
+    }
+    .categories {
+      padding: 0 15px 40px 15px;
+    }
+    .choice {
+      padding: 0;
+    }
   }
 
   @media (max-width: $mobile-breakpoint) {
