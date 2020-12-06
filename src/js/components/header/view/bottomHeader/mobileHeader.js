@@ -72,7 +72,7 @@ export function mobileHeader() {
         ${showRegistryUserDataView()}
     </div>
     
-    <div class="">
+    <div class="info-mobail">
         ${infoView()}
     </div>
 
