@@ -4,7 +4,6 @@
   position: relative;
 
   .points-wrapper {
-    width: 100%;
     .points {
       height: 100vh;
     }
@@ -111,6 +110,9 @@
   }
   
   @media (max-width: 768px) {
+    .points-wrapper {
+      width: 100%;
+    }
     .menu {
       position: absolute;
       top: 0;

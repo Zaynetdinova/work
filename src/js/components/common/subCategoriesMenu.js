@@ -3,9 +3,15 @@ import {sidebarChoice} from "./sidebarChoice";
 export function subCategoriesMenu() {
   return `
     <div class="Mobile-sub-menu">
-    <div>Платье</div>
-    <div>Выйти</div>
-      <div class="categories ">
+      <div class="main-sub-menu">  
+        <div class="title-sub-menu">Платья</div>
+        <div class="button-back">
+            <div class="back"></div>
+            <div class="text-back">НАЗАД</div>
+        </div>
+        
+      </div> 
+      <div class="categories">
         ${sidebarChoice(category)}
       </div>
     </div>
@@ -15,11 +21,11 @@ export function subCategoriesMenu() {
 const category = [
   {
     id: 'dress',
-    category: 'Платья'
+    category: 'Повседневные'
   },
   {
     id: 'jersey',
-    category: 'Трикотаж'
+    category: 'Офисные'
   },
   {
     category: 'Верха'
