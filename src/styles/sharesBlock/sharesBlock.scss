@@ -121,11 +121,8 @@
       }
     }
     .sharesBlock-sale {
-      .Card-banner {
-        &.banner-bottom {
-          margin-bottom: 0;
-        }
-      }
+      z-index: 2;
+      bottom: 0;
     }
     .shares-line {
       border-bottom: 2px dotted #777777;
