@@ -38,8 +38,8 @@ function mainBackground(cardData, className = '') {
 function card(title, description) {
  return `
   <div class="swiper-slide">
-    <h1 id="title">${title}</h1>
-    <p id="description">${description}</p>
+    <h1 id="title">BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*</h1>
+    <p id="description">Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.</p>
     
     <div class="wrapper-navigation-button">
         <button class="box-button" type="button">ПОДРОБНЕЕ</button>
