@@ -1,10 +1,37 @@
+@import '../color';
+
 .points {
   padding-top: 26px;
   width: 350px;
   min-width: 220px;
   background: $bg-sidebar;
-  height: 100vh;
   overflow-y: auto;
+
+  .categories {
+    padding: 0 32px 26px 32px;
+    background: $baseColor;
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
+
+  .open-category-js {
+    .categories {
+      display: block;
+    }
+
+    .plus {
+      span {
+        transform: rotate(-90deg);
+      }
+
+      span:after {
+        display: none;
+      }
+    }
+  }
 
   .point {
     display: flex;
@@ -95,8 +122,6 @@
 
 
   @media (max-width: 768px) {
-    .points {
       width: 100%;
-    }
   }
 }

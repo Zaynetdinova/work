@@ -1,5 +1,19 @@
-export function openCategory(e, category) {
+export function openSidebar() {
+  const test = document.querySelectorAll('.point-js')
+
+  test.forEach((item) => {
+    item.addEventListener('click', (event) =>  openCategories(event, item.dataset.type))
+  })
+
+}
+
+function openCategories(e, category) {
   const subCategories = e.target.closest('figure')
+
+  if(document.documentElement.clientWidth <= 768 && subCategories && subCategories.dataset.subtest == undefined) {
+    const extra = document.querySelector('#open-mobile-extra-js')
+    extra.classList.add('show-extra-mobile')
+  }
 
   if (subCategories !== null && subCategories.dataset.test != undefined) {
     subCategories.classList.toggle('show')
@@ -7,7 +21,6 @@ export function openCategory(e, category) {
   } else if(subCategories !== null && subCategories.dataset.test2 != undefined) {
     return
   }
-  // separatorSubCategories(subCategories)
 
 
   const mainCategory = document.querySelector(`[data-type=${category}]`)
@@ -20,14 +33,6 @@ export function openCategory(e, category) {
   }
 }
 
-// function separatorSubCategories(subCategories) {
-//   if (subCategories !== null && subCategories.dataset.test != undefined) {
-//     subCategories.classList.toggle('show')
-//     return
-//   } else if(subCategories !== null && subCategories.dataset.test2 != undefined) {
-//     return
-//   }
-// }
 
 function close() {
   const elements = document.querySelectorAll('#point-js')
@@ -35,5 +40,3 @@ function close() {
     item.classList.remove('open-category-js')
   })
 }
-
-

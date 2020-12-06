@@ -1,8 +1,10 @@
 @import '../color';
 @import '../var';
-@import 'components/footer-mobail';
+
 
 .Footer {
+  @import 'components/footer-mobail';
+
   position: relative;
   z-index: 2;
   margin-top: -42px;

@@ -1,15 +1,14 @@
-import icon from '../../../../../images/sidebar/icon.svg'
+import {sidebarChoice} from "./sidebarChoice";
 
-import {choice} from './choice'
-
-export function sidebar(point) {
-    const items = point.map((item) => {
-    const {category, subcategory = false} = item
+export function sidebarPoint(point, arrow = '') {
+  const items = point.map((item) => {
+    const {category, subcategory = false, img} = item
     return `
-        <article id="point-js" data-type="${item.id}">
+        <article id="point-js" class="point-js" data-type="${item.id}">
             <div class="point">
                 <div class='name'>
-                    <img class="sidebar-img" src=${item.img} alt='icon'>
+                    ${img ? `<img class="sidebar-img" src=${img} alt='icon'>` : ''}
+                    
                     <div class='title'>${item.title}</div>
                 </div>
                 <div class='plus' id='plus' datatype="${item.id}">
@@ -21,16 +20,11 @@ export function sidebar(point) {
             
            
             <div class='categories ${ subcategory ? 'main-sub-category' : ''}' id=${item.id}>
-                ${choice(category, subcategory)}
+                ${sidebarChoice(category, subcategory, arrow)}
             </div> 
         </article>
         
     `
-    })
-    return `${items.join('')}`
+  })
+  return `${items.join('')}`
 }
-
-
-
-
-
