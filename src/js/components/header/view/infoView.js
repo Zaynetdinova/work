@@ -2,7 +2,7 @@ import {sidebarPoint} from "../../common/sidebarPoint";
 
 export function infoView() {
   return `
-    <div>
+    <div class="info-wrapper">
         <div class='points'>
         ${sidebarPoint(point)}
    </div>
@@ -13,15 +13,12 @@ export function infoView() {
 
 let point = [
   {
-    title: 'ИНФОРМАЦИЯ',
+    title: 'О ПОКУПКАХ',
     id: 'info',
     img: false,
     category: [{
-      category: 'О нас'
+      category: 'Размеры'
     },
-      {
-        category: 'Условия работы'
-      },
       {
         category: 'Доставка'
       },
@@ -38,7 +35,7 @@ let point = [
   },
 
   {
-    title: 'ДЛЯ КЛИЕНТОВ',
+    title: 'О магазине',
     id: 'client',
     img: false,
     category: [
@@ -59,21 +56,6 @@ let point = [
       },
     ]
   },
-
-  {
-    title: 'СЕРВИС',
-    id: 'service',
-    img: false,
-    category: [
-      {
-        category: 'Таблица размеров'
-      },
-      {
-        category: 'Заказать звонок'
-      },
-    ]
-  },
-
   {
     title: 'СОТРУДНИЧЕСТВО',
     id: 'cooperation',
