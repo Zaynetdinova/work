@@ -14,7 +14,7 @@ export function infoView() {
 let point = [
   {
     title: 'О ПОКУПКАХ',
-    id: 'info',
+    id: 'purchases',
     img: false,
     category: [{
       category: 'Размеры'
@@ -36,7 +36,7 @@ let point = [
 
   {
     title: 'О магазине',
-    id: 'client',
+    id: 'store',
     img: false,
     category: [
       {
