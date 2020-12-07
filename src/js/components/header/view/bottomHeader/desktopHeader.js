@@ -21,7 +21,7 @@ export function desktopHeader() {
             <nav>
                 <ul class='menu'>
                     <li>
-                        <a href="#">Женщинам</a>
+                        <a href="/#categories">Женщинам</a>
                     </li>
                     <li>
                         <a href="#">Девочкам</a>

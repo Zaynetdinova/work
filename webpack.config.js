@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const devMode = process.env.NODE_ENV !== 'production';
 
+
 const plugins = [];
 if (!devMode) {
     plugins.push(new MiniCssExtractPlugin());
@@ -58,7 +59,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpg|gif|jpeg|svg)$/i,
+                test: /\.(mp4|png|jpg|gif|jpeg|svg)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -78,6 +79,10 @@ module.exports = {
                 test: /\.js$/,
                 enforce: 'pre',
                 use: ['source-map-loader'],
+            },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
             },
         ],
     },

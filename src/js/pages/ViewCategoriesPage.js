@@ -9,12 +9,15 @@ import {Bestsellers} from '../components/bestsellers/Bestsellers'
 import {Footer} from '../components/footer/Footer'
 import {eventGlobal} from '../core/eventGlobal'
 import {CategoriesVideo} from '../components/categoriesVideo/categoriesVideo'
+import {TransitionTitle} from "../components/categoriesTransitionTitle/categoriesTitle";
+import {categoriesMenuSidebar} from "../components/categoriesMenuSidebar/categoriesMenuSidebar";
 
 export class ViewCategoriesPage extends Page{
 	getRoot() {
 		this.app = new OptMoyo( {
 			components: [
 				Header,
+				TransitionTitle,
 				CategoriesVideo,
 				Footer,
 			]

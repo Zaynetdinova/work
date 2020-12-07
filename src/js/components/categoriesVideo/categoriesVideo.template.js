@@ -1,6 +1,14 @@
-import video from '../../../images/categories-test.png'
+import video from '../../../video/1.mp4'
+import {categoriesMenuSidebar} from "../categoriesMenuSidebar/categoriesMenuSidebar";
+
+
 export function categoriesVideo() {
 	return `
-		<img src=${video} alt="video">
+		<div class="wrapper-main">
+			${categoriesMenuSidebar()}
+			<div class="banner-video">
+				<video class="video" autoplay muted loop src=${video} </video>
+			</div>
+		</div>
 	`
 }
