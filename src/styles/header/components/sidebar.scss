@@ -74,14 +74,18 @@
     overflow-y: auto;
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 0%;
     right: 0;
-    display: none;
 
 
     &.show-extra-mobile {
-      display: block;
+      width: 100%;
       animation: width 0.5s;
+    }
+
+    &.show-extra-cancel {
+      animation: cancel 0.5s;
+
     }
 
     @keyframes width {
@@ -90,6 +94,15 @@
       }
       100% {
         width: 100%;
+      }
+    }
+
+    @keyframes cancel {
+      0% {
+        width: 100%;
+      }
+      100% {
+        width: 0;
       }
     }
   }

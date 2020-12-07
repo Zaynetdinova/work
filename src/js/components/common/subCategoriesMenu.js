@@ -5,7 +5,7 @@ export function subCategoriesMenu() {
     <div class="Mobile-sub-menu">
       <div class="main-sub-menu">  
         <div class="title-sub-menu">Платья</div>
-        <div class="button-back">
+        <div class="button-back" id="sub-categories-menu-close">
             <div class="back"></div>
             <div class="text-back">НАЗАД</div>
         </div>
