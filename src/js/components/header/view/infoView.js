@@ -58,7 +58,7 @@ let point = [
   },
   {
     title: 'СОТРУДНИЧЕСТВО',
-    id: 'cooperation',
+    id: 'cooperationHeader',
     img: false,
     category: [
       {
