@@ -1,6 +1,7 @@
 @import '../color';
 
 .Mobile-sub-menu {
+  padding-bottom: 80px;
   .main-sub-menu {
     display: flex;
     justify-content: space-between;
@@ -41,8 +42,8 @@
     border-bottom: 2px dotted #D9D9D9;
   }
   .categories {
-    padding: 0 18px 26px 18px;
-    //background: $baseColor;
+    padding: 0 18px 0 18px;
+
 
     .choice {
       padding: 0;
