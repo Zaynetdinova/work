@@ -10,11 +10,9 @@
 @import './bestsellers/bestsellers';
 @import './common/sale';
 @import './commonStyles';
-@import 'categoriesVideo/categoriesVideo';
-@import 'categoriesTransitionTitle/categoriesTransitionTitle';
-@import 'categoriesMenuSidebar/categoriesMenuSidebar';
-@import 'partnerOffers/partnerOffers';
-
+@import './categoriesWomen/categoriesMenuSidebar';
+@import './categoriesWomen/partnerOffers';
+@import './categoriesWomen/categoriesWomen';
 
 
 * {margin: 0; padding: 0;}

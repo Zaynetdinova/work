@@ -1,4 +1,5 @@
 export function openSidebar() {
+  console.log('openSidebar')
   const test = document.querySelectorAll('.point-js')
 
   test.forEach((item) => {

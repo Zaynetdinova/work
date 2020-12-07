@@ -21,7 +21,8 @@ export class Component extends DomListener {
   }
 
   functionAfterContent() {
-    openSidebar()
+    console.log('super')
+    // openSidebar()
     if(window.userRegistry) {
       eventCommonCardHover()
     }

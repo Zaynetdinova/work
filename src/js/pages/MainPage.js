@@ -9,6 +9,7 @@ import {MoyomodaBlock} from '../components/moyomodaBlock/MoyomodaBlock'
 import {Bestsellers} from '../components/bestsellers/Bestsellers'
 import {Footer} from '../components/footer/Footer'
 import {eventGlobal} from '../core/eventGlobal'
+import {openSidebar} from '../core/utils/openSidebar'
 
 export class MainPage extends Page {
 	getRoot() {
@@ -31,6 +32,7 @@ export class MainPage extends Page {
 	}
 
 	afterRender() {
+		openSidebar()
 		eventGlobal()
 		this.app.init()
 	}
