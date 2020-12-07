@@ -1,0 +1,18 @@
+ .points {
+    width: 100%;
+   .sidebar {
+     margin: 0;
+     padding: 0;
+     width: 223px;
+     position: absolute;
+     height: 100%;
+     overflow: auto;
+     .title {
+       text-transform: none;
+       margin: 0;
+     }
+     .point {
+       padding: 10.5px;
+     }
+   }
+  }
