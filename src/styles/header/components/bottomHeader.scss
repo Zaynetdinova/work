@@ -29,6 +29,8 @@
     display: flex;
     align-items: center;
   }
+
+
   .burger-menu {
     margin-right: 30px;
     margin-bottom: 3px;
@@ -36,13 +38,17 @@
     background-image: url("../images/header/burger.svg");
     width: 20px;
     height: 16px;
+  }
 
-    &.show {
+  .show {
+    .burger-menu {
       background-image: url(../images/icons/cancel.svg);
       background-repeat: no-repeat;
       background-size: contain;
     }
   }
+
+
   .logo {
     display: flex;
     align-items: center;

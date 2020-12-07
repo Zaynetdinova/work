@@ -68,22 +68,28 @@ function spreaderClick(e) {
       case 'burger-menu':
         mobileSearch('close')
         showRegistryUserData('close')
+        info('close')
         openMenu()
         break;
       case 'mobile-search-button-js':
         openMenu('close')
         showRegistryUserData('close')
+        info('close')
         mobileSearch()
         break;
       case 'desktop-search-js':
         desktopSearch(e, element, 'click')
         break;
       case 'icon-info-button-js':
+        mobileSearch('close')
+        openMenu('close')
+        showRegistryUserData('close')
         info()
         break;
       case 'registry-user-mobile-button-js':
         openMenu('close')
         mobileSearch('close')
+        info('close')
         showRegistryUserData()
         break;
     }

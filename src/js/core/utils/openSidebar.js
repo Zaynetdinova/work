@@ -5,6 +5,15 @@ export function openSidebar() {
     item.addEventListener('click', (event) =>  openCategories(event, item.dataset.type))
   })
 
+
+  const cancel = document.querySelector('#sub-categories-menu-close')
+  cancel.addEventListener('click', closeSubCategories)
+}
+
+function closeSubCategories() {
+  const extra = document.querySelector('#open-mobile-extra-js')
+  extra.classList.remove('show-extra-mobile')
+  extra.classList.add('show-extra-cancel')
 }
 
 function openCategories(e, category) {
@@ -12,6 +21,7 @@ function openCategories(e, category) {
 
   if(document.documentElement.clientWidth <= 768 && subCategories && subCategories.dataset.subtest == undefined) {
     const extra = document.querySelector('#open-mobile-extra-js')
+    extra.classList.remove('show-extra-cancel')
     extra.classList.add('show-extra-mobile')
   }
 
