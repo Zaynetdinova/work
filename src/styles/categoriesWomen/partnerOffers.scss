@@ -4,11 +4,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .img-wrap-offers {
+    overflow: hidden;
+  }
+  .img {
+    transition: 1s;
+    transform: none;
+    object-fit: cover;
+  }
   .card {
     display: flex;
     flex-direction: column;
     flex-basis: 49.2%;
     margin-bottom: 30px;
+    cursor: pointer;
+
+    &:hover {
+      .img {
+        transform: scale(1.1);
+      }
+    }
 
   }
   .text-offers {
@@ -30,6 +45,16 @@
         line-height: 140%;
         letter-spacing: normal;
       }
+    }
+  }
+  @media (max-width: 1024px) {
+    .card {
+      &:hover {
+        .img {
+          transform: none;
+        }
+      }
+
     }
   }
   @media (max-width: 550px) {

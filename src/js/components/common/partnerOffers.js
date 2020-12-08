@@ -17,7 +17,7 @@ export function partnerOffers() {
         <div class="img-offers">
             <div class="card">
                 <div class="img-wrap-offers">
-                    <img src=${img1} alt="" width="100%" height="100%">
+                    <img class="img" src=${img1} alt="" width="100%" height="100%">
                 </div>               
                 <div class="text-offers">
                     <div class="category-dress">Женская одежда</div>
@@ -28,7 +28,7 @@ export function partnerOffers() {
             </div>
             <div class="card">
                 <div class="img-wrap-offers">
-                    <img src=${img2} alt=""  width="100%" height="100%">
+                    <img class="img" src=${img2} alt=""  width="100%" height="100%">
                 </div>
                 <div class="text-offers">
                     <div class="category-dress">Верхняя одежда</div>
@@ -39,7 +39,7 @@ export function partnerOffers() {
             </div>
             <div class="card">
                 <div class="img-wrap-offers">
-                    <img src=${img3} alt=""  width="100%" height="100%">
+                    <img class="img" src=${img3} alt=""  width="100%" height="100%">
                 </div>
                 <div class="text-offers">
                     <div class="category-dress">Одежда для девочек</div>
@@ -50,7 +50,7 @@ export function partnerOffers() {
             </div>
             <div class="card">
                 <div class="img-wrap-offers">
-                    <img src=${img4} alt=""  width="100%" height="100%">
+                    <img class="img" src=${img4} alt=""  width="100%" height="100%">
                 </div>
                 <div class="text-offers">
                     <div class="category-dress">Одежда для мальчиков</div>
