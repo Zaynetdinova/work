@@ -19,11 +19,55 @@ export class CategoriesWomen extends Component {
 	}
 	slider() {
 		const options = {
-			slidesPerView: 5,
+			slidesPerView: 1.9,
 			spaceBetween: 15,
 			centeredSlides: false,
 			loop: false,
 			slidesOffsetAfter: 16,
+
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next-main',
+				prevEl: '.swiper-button-prev-main',
+			},
+			breakpoints: {
+				1921: {
+					slidesPerView: 8,
+					spaceBetween: 20,
+				},
+				1920: {
+					slidesPerView: 5,
+					spaceBetween: 20,
+				},
+				1025: {
+					slidesPerView: 5,
+					spaceBetween: 20,
+				},
+				1024: {
+					slidesPerView: 6,
+					centeredSlides: false,
+					loop: false,
+					spaceBetween: 15,
+				},
+				768: {
+					slidesPerView: 4,
+					centeredSlides: false,
+					loop: false,
+					slidesOffsetAfter: 0,
+				},
+				700: {
+					slidesPerView: 3,
+					slidesOffsetAfter: 0,
+				},
+				600: {
+					slidesPerView: 2.5,
+				},
+				374: {
+					slidesPerView: 2.27,
+				}
+			}
 		}
 
 		let womanSwiper = new Swiper('.bestseller-goods', options)
@@ -38,7 +82,7 @@ export class CategoriesWomen extends Component {
 
 let woman =  {
 	_id: 'goods',
-	title: 'женщинам',
+	title: 'Категория женских товаров',
 	data: [
 		{
 			id: 'woman1',
@@ -101,6 +145,17 @@ let woman =  {
 			img: img5,
 			title: 'Vittoria Vicci',
 			description: 'Наименование товара ',
+			oldPrice: '1 234,00 &#8381',
+			newPrice: '-234,00 &#8381;',
+			price: '1 243,00 &#8381; ',
+		},
+		{
+			id: 'woman8',
+			img: img1,
+			title: 'Vittoria Vicci',
+			description: 'Наименование товара ',
+			banner: 'НОВИНКА',
+			bannerPosition: 'bottom',
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',

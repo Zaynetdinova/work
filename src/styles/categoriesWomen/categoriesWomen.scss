@@ -3,13 +3,31 @@
     padding: 0 20px;
     background: #F9F9F9;
   }
+  .wrap-IconImg {
+    display: none;
+  }
+  .bestseller-goods {
+    padding-bottom: 110px;
+  }
+  .wrap-categoriesTitle {
+    margin-bottom: 40px;
+  }
+  .wrap-card-women-2 {
+    padding-bottom: 100px;
+  }
+  .wrap-partnerOffers {
+    margin-top: -50px;
+    padding-bottom: 30px;
+  }
   .content-page-categoriesWomen {
     margin-left: 243px;
   }
   .banner-video {
+    position: relative;
+
     .video {
-      height: auto;
       width: 100%;
+      height: auto;
       padding-bottom: 60px;
     }
   }
@@ -17,7 +35,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
-    padding: 20px;
+    padding: 20px 0;
     background: #F9F9F9;
 
     a {
@@ -41,8 +59,8 @@
   }
 
   .titleWrapper {
-    padding: 7px 20px 20px;
-    max-width: 261px;
+    padding: 7px 0 20px;
+    max-width: 219px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -57,6 +75,39 @@
     .value {
       font-size: 11px;
       line-height: 13px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .wrapper-categoriesWomen {
+      padding: 0 15px;
+    }
+    .wrap-categoriesTitle {
+      margin-bottom: 20px;
+    }
+    .sidebar-page-categoriesWomen {
+      display: none;
+    }
+    .content-page-categoriesWomen {
+      margin-left: 0;
+    }
+    .wrap-IconImg {
+      display: block;
+      padding:  0 0 60px 0;
+    }
+    .banner-video {
+      .video {
+        padding-bottom: 45px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .wrap-IconImg {
+      padding:  0 26px 60px 28px;
+    }
+  }
+  @media (max-width: 415px) {
+    .wrap-IconImg {
+      padding:  0 0 50px 0;
     }
   }
 }
