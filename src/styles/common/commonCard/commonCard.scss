@@ -4,7 +4,7 @@
   .card {
     cursor: default;
     position: relative;
-    border: 1px solid red;
+    border: 1px solid #555555;
 
     .card-banner-wrapper {
       position: relative;
@@ -68,7 +68,7 @@
       }
 
       .text-size-wrapper {
-        border: 1px solid red;
+        border: 1px solid #555555;
         position: absolute;
         background: #fff;
         padding: 0 19px 20px 19px;
@@ -80,22 +80,35 @@
         .text {
           padding-bottom: 10px;
         }
+
+        .test-block {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          background: #555555;
+          height: 101%;
+          width: 87px;
+          left: 100%;
+          border-bottom: 1px solid #555555;
+        }
       }
 
       .images {
         z-index: 2;
         display: flex;
         flex-direction: column;
+        align-items: center;
         position: absolute;
         top: -1px;
         right: -87px;
-        background: #3D3D3C;
+        width: 87px;
+        background: #555555;
         padding: 5px 5px 0 5px;
-        border: 1px solid red;
+        border: 1px solid #555555;
 
         img {
-          width: 77.62px;
-          height: 120.44px;
+          width: 98%;
+          //height: 120.44px;
           padding-bottom: 4px;
         }
       }
@@ -125,13 +138,27 @@
       .content {
         display: block;
         .images {
-          width: fit-content;
+          //width: fit-content;
           left: -87px;
         }
       }
 
       .Health {
         display: block;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .additional-information {
+
+        .images {
+
+          img {
+            //width: 77.62px;
+            //height: 120.44px;
+            //padding-bottom: 4px;
+          }
+        }
       }
     }
 

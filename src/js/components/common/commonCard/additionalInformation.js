@@ -13,26 +13,27 @@ export function additionalInformation(title, description, img, index) {
 	return `
   <div class="additional-information">
      <div class="content">
-       <div class="text-size-wrapper">
-          ${index == 0
-		? ''
-		: `<div class="text" style="padding-bottom: 10px">
-                  <div class="title">${title}</div> 
-                  <div class="description">${description}</div>
-              </div>`}
-         
-          <div class="Size">
-              ${block.join('')}
-          </div>
-      </div>
+				 <div class="text-size-wrapper">
+						${index == 0
+							? ''
+							: `<div class="text" style="padding-bottom: 10px">
+														<div class="title">${title}</div> 
+														<div class="description">${description}</div>
+												</div>`}
+					 
+							<div class="Size">
+									${block.join('')}
+							</div>
+							<div class="test-block"></div>
+				</div>
         
           
-          <div class='images'>
-              <img src="${img}">
-              <img src="${img}">
-              <img src="${img}">
-              <img src="${img}">
-          </div>
+				<div class='images'>
+						<img src="${img}">
+						<img src="${img}">
+						<img src="${img}">
+						<img src="${img}">
+				</div>
       </div>
   </div>
   `
