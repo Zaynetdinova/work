@@ -1,11 +1,42 @@
-.PartnerOffers {
-  margin-bottom: 42px;
-  padding: 0 20px;
+.wrap-partnerOffers {
+  .img-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 49.2%;
+    margin-bottom: 30px;
 
+  }
+  .text-offers {
+    padding: 20px;
+    background: #F3F2F0;
+    line-height: 18px;
+    color: #3D3D3C;
+  }
+  .category-dress {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .button-wrap-offers {
+    .Button {
+      .text {
+        text-transform: none;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 140%;
+        letter-spacing: normal;
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    .card {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+    }
+  }
 }
 
-.img-offers {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 30px;
-}

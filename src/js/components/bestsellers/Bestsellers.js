@@ -84,7 +84,6 @@ export class Bestsellers extends Component {
           spaceBetween: 20,
           slidesPerView: 6,
         },
-
         1024: {
           slidesPerView: 6,
           centeredSlides: false,

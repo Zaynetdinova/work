@@ -1,0 +1,41 @@
+.Icon-img {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(87px, 1fr)) / repeat(auto-fit, minmax(55px, 1fr));
+  grid-gap: 30px 30px;
+  margin: 0 auto;
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      .title {
+        color: #AB064E;
+      }
+    }
+    &:last-child {
+      .title {
+        color: #AB064E;
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 9px;
+      line-height: 10px;
+      text-transform: uppercase;
+      color: #555555;
+      margin-top: 12px;
+    }
+  }
+  @media (max-width: 768px) {
+    grid-gap: 30px 70px;
+  }
+  @media (max-width: 600px) {
+    grid-gap: 30px 30px;
+  }
+  @media (max-width: 340px) {
+    grid-gap: 30px 20px;
+  }
+}
