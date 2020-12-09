@@ -1,7 +1,21 @@
 .Categories-view {
+  padding: 0 20px;
+  background: #F9F9F9;
+  max-width: 1480px;
+  margin: 0 auto;
+
+  .root {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
+
   .cards {
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 2vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1vw;
   }
 }

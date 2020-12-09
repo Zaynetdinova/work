@@ -9,13 +9,15 @@ import {card} from '../common/commonCard/card'
 export function categoriesViewTemplate() {
 	return `
 	<div class="Categories-view">
-	<section class="cards">
-			${woman.data.map(i => {
-			return `
-				${card(i)}
-			`}).join('')}
-	</section>
-	
+		<div class="root">
+			<section class="sidebar"></section>
+			<section class="cards">
+					${woman.data.map(i => {
+				return `
+						${card(i)}
+					`}).join('')}
+			</section>
+		</div>
 	</div>
 	`
 }
