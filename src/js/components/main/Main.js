@@ -2,6 +2,13 @@ import {Component} from '../../core/Component'
 import {createMain} from './main.template'
 import Swiper from 'swiper/bundle'
 
+const cards = {
+  first:  { title: 'BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*',
+    description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'},
+  second:  { title: 'Сезонная распродажа поднимет вам настроение этой осенью',
+    description: '*Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'},
+}
+
 export class Main extends Component {
   static className = 'Main'
   constructor($root) {
@@ -12,6 +19,8 @@ export class Main extends Component {
   }
 
   slider() {
+    const title = document.querySelector('#title')
+    const description = document.querySelector('#description')
     let mySwiper = new Swiper('.swiper-container1', {
       loop: true,
       speed: 800,
@@ -20,20 +29,28 @@ export class Main extends Component {
       },
       on: {
         slideChange: function () {
-          console.log(this.previousIndex)
-          if(this.previousIndex === 1) {
-            const title = document.querySelector('#title')
-            const description = document.querySelector('#description')
-            title.innerHTML = 'Сезонная распродажа поднимет вам настроение этой осенью'
-            description.innerHTML = 'Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'
-
-          } else if(this.previousIndex === 2) {
-            const title = document.querySelector('#title')
-            const description = document.querySelector('#description')
-            title.innerHTML = 'BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*'
-            description.innerHTML = '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'
+          function textChange(previousIndex = 1) {
+            let text
+            switch (previousIndex) {
+              case 0:
+                text =  'first'
+                break;
+              case 1:
+                text = 'second'
+                break;
+            }
+            return text
           }
+          const text = textChange(this.realIndex)
+          if(text) {
+            title.innerHTML = cards[text].title
+            description.innerHTML = cards[text].description
+          }
+        },
 
+        init: function () {
+          title.innerHTML = cards.first.title
+          description.innerHTML = cards.second.description
         }
       },
       pagination: {
@@ -51,7 +68,7 @@ export class Main extends Component {
   }
 
   onClick(e) {
-    console.log('Main', e)
+
   }
 
 }

@@ -61,11 +61,11 @@ export class Bestsellers extends Component {
 
       on: {
         slideChange: function () {
-          console.log(this.slides.length)
+         
         },
 
         init: function () {
-          console.log(this.slides.length)
+
           if(this.slides.length >= 8) {
 
           }

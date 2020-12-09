@@ -1,11 +1,9 @@
 export function openSidebar() {
-  console.log('openSidebar')
   const test = document.querySelectorAll('.point-js')
 
   test.forEach((item) => {
     item.addEventListener('click', (event) =>  openCategories(event, item.dataset.type))
   })
-
 
   const cancel = document.querySelector('#sub-categories-menu-close')
   cancel.addEventListener('click', closeSubCategories)

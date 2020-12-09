@@ -1,7 +1,6 @@
 import {Sale} from '../sale'
 
 export function priceContent(oldPrice, newPrice, price, sale) {
-	console.log(sale)
 	return `
   <div class='Price-content'>
     <section>
