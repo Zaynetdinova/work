@@ -24,19 +24,19 @@ export function desktopHeader() {
                         <a href="/#categories">Женщинам</a>
                     </li>
                     <li>
-                        <a href="#">Девочкам</a>
+                        <a href="/#categories-children">Девочкам</a>
                     </li>
                     <li>
-                        <a href="#">Мужчинам</a>
+                        <a href="/#categories"">Мужчинам</a>
                     </li>
                     <li>
-                        <a href="#">Мальчикам</a>
+                        <a href="/#categories-children">Мальчикам</a>
                     </li>
                     <li>
-                        <a href="#">Для дома</a>
+                        <a href="/#categories"">Для дома</a>
                     </li>
                     <li>
-                        <a href="#">Игрушки</a>
+                        <a href="/#categories"">Игрушки</a>
                     </li>               
                 </ul>
             </nav>

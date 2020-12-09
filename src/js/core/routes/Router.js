@@ -1,6 +1,6 @@
 import {$} from '../dom'
 import {ActiveRoute} from './ActiveRoute'
-import {ViewCategoriesPage} from '../../pages/ViewCategoriesPage'
+
 export class Router {
 	constructor(selector, routes) {
 		if(!selector) {
@@ -26,9 +26,24 @@ export class Router {
 			this.page.destroy()
 		}
 		this.$placeholder.html('')
-		const Page = ActiveRoute.path.includes('categories')
-				? this.routes.viewCategoriesPage
-				: this.routes.mainPage
+		console.log(ActiveRoute.path)
+		// let Page = ActiveRoute.path.includes('categories')
+		// 		? this.routes.viewCategoriesPage
+		// 		: this.routes.mainPage
+		let Page
+		switch (ActiveRoute.path) {
+			case 'categories':
+				Page = this.routes.viewCategoriesPage
+				break;
+			case 'categories-view':
+				Page = this.routes.viewCategoriesIndex
+				break;
+			case 'categories-children':
+				Page = this.routes.viewCategoriesChildren
+				break;
+			default:
+				Page = this.routes.mainPage
+		}
 		this.page = new Page(ActiveRoute.param)
 
 		this.$placeholder.append(this.page.getRoot())

@@ -82,7 +82,7 @@ export class CategoriesWomen extends Component {
 
 let woman =  {
 	_id: 'goods',
-	title: 'Категория женских товаров',
+	title: 'Категория',
 	data: [
 		{
 			id: 'woman1',
