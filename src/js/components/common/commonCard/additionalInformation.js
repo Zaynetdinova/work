@@ -24,7 +24,7 @@ export function additionalInformation(title, description, img, index) {
 							<div class="Size">
 									${block.join('')}
 							</div>
-							<div class="test-block"></div>
+							<div class="block-under-image"></div>
 				</div>
         
           
