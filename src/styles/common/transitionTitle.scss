@@ -1,0 +1,50 @@
+.TransitionWrapper {
+  .transitionWrapper {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    padding: 20px 0;
+    background: #F9F9F9;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .home a {
+      color: #777777;
+      margin-right: 4px;
+
+      &:hover {
+        color: #3D3D3C;
+      }
+    }
+
+    .title a {
+      color: #3D3D3C;
+      margin-left: 4px;
+    }
+  }
+
+  .titleWrapper {
+    padding: 7px 0 20px;
+    display: flex;
+    align-items: baseline;
+    letter-spacing: 0.05em;
+    color: #3D3D3C;
+    .title {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+    .value {
+      font-size: 11px;
+      line-height: 13px;
+      color: #777777;
+    }
+  }
+}
+
+

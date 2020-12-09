@@ -4,6 +4,7 @@ import {Header} from '../components/header/Header'
 import {Footer} from '../components/footer/Footer'
 import {eventGlobal} from '../core/eventGlobal'
 import {openSidebar} from '../core/utils/openSidebar'
+import {CategoriesChildren} from "../components/categoriesChildren/CategoriesChildren";
 
 
 
@@ -12,7 +13,7 @@ export class ViewCategoriesChildren extends Page{
 		this.app = new OptMoyo( {
 			components: [
 				Header,
-
+				CategoriesChildren,
 				Footer,
 			]
 		})

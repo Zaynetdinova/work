@@ -1,0 +1,25 @@
+.CategoriesChildren {
+  .wrapper-categoriesChildren {
+    padding: 0 20px;
+    background: #F9F9F9;
+  }
+  .sidebar-page-categoriesChildren {
+    margin: 0;
+    padding: 0;
+    width: 223px;
+    position: absolute;
+    height: 100%;
+  }
+  .content-page-categoriesChildren {
+    margin-left: 243px;
+  }
+  .banner-video {
+    position: relative;
+
+    .video {
+      width: 100%;
+      height: auto;
+      padding-bottom: 60px;
+    }
+  }
+}

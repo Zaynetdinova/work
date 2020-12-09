@@ -37,12 +37,16 @@ export class CategoriesWomen extends Component {
 					slidesPerView: 8,
 					spaceBetween: 20,
 				},
-				1920: {
+				1500: {
+					slidesPerView: 6,
+					spaceBetween: 20,
+				},
+				1200: {
 					slidesPerView: 5,
 					spaceBetween: 20,
 				},
 				1025: {
-					slidesPerView: 5,
+					slidesPerView: 4,
 					spaceBetween: 20,
 				},
 				1024: {
