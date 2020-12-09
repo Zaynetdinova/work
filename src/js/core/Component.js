@@ -20,7 +20,7 @@ export class Component extends DomListener {
   }
 
   functionAfterContent() {
-    // openSidebar()
+
     if(window.userRegistry) {
       eventCommonCardHover()
     }
