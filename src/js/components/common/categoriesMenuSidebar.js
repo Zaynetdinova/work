@@ -1,14 +1,14 @@
-import {sidebarPoint} from "../common/sidebarPoint";
+import {sidebarPoint} from "./sidebarPoint";
 
 
 export  function categoriesMenuSidebar() {
     return `
-<div class="CategoriesMenuSidebar">
-        <div class="points">
-            <div class="sidebar">
-                ${sidebarPoint(point,'notArrow')}               
+        <div class="CategoriesMenuSidebar">
+            <div class="points">
+                <div class="sidebar">
+                    ${sidebarPoint(point,'notArrow')}               
+                </div>
             </div>
-        </div>
         </div>
     `
 }

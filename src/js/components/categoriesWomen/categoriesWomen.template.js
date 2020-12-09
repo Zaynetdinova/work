@@ -12,7 +12,7 @@ import {IconImg} from "../common/commonCard/icon";
 export function categoriesWomen(woman) {
 	return `
 		<div class="wrapper-categoriesWomen">	
-			${transitionTitle()}
+			${transitionTitle(pageForWomen)}
 			<div class="flex-wrap">	
 				<div class="sidebar-page-categoriesWomen">
 					${categoriesMenuSidebar()}
@@ -36,3 +36,13 @@ export function categoriesWomen(woman) {
   		</div>
 	`
 }
+
+
+
+let pageForWomen = [
+	{
+		link: '/#categories',
+		title: 'Женщинам',
+		value: '1000 товаров'
+	}
+]
