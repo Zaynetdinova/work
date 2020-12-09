@@ -1,6 +1,6 @@
 export function additionalInformation(title, description, img, index) {
 	const sizes = [
-		'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+		'40', '42', '46', '48', '50', '52'
 	]
 	const block = sizes.map(item => {
 		return `
@@ -38,3 +38,6 @@ export function additionalInformation(title, description, img, index) {
   </div>
   `
 }
+
+
+// '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
