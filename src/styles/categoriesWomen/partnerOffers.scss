@@ -1,4 +1,7 @@
 .wrap-partnerOffers {
+  .wrap-categoriesTitle {
+    margin-bottom: 40px;
+  }
   .img-offers {
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +57,9 @@
           transform: none;
         }
       }
-
+    }
+    .wrap-categoriesTitle {
+      margin-bottom: 20px;
     }
   }
   @media (max-width: 550px) {

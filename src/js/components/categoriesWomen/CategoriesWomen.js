@@ -33,14 +33,7 @@ export class CategoriesWomen extends Component {
 				prevEl: '.swiper-button-prev-main',
 			},
 			breakpoints: {
-				1921: {
-					slidesPerView: 8,
-					spaceBetween: 20,
-				},
-				1500: {
-					slidesPerView: 6,
-					spaceBetween: 20,
-				},
+
 				1200: {
 					slidesPerView: 5,
 					spaceBetween: 20,
