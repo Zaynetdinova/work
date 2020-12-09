@@ -26,10 +26,7 @@ export class Router {
 			this.page.destroy()
 		}
 		this.$placeholder.html('')
-		console.log(ActiveRoute.path)
-		// let Page = ActiveRoute.path.includes('categories')
-		// 		? this.routes.viewCategoriesPage
-		// 		: this.routes.mainPage
+
 		let Page
 		switch (ActiveRoute.path) {
 			case 'categories':

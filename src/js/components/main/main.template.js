@@ -6,8 +6,8 @@ export function createMain(data) {
       <div class="root">
           <div class="swiper-container swiper-container1">
             <div class="swiper-wrapper">
-              ${mainBackground(cards.first)}
-              ${mainBackground(cards.second, 'bg-main2')}
+              ${mainBackground()}
+              ${mainBackground('bg-main2')}
             </div>
             
             <figure class="navigation-wrapper">
@@ -20,8 +20,7 @@ export function createMain(data) {
     `
 }
 
-function mainBackground(cardData, className = '') {
-  const {title, description} = cardData
+function mainBackground(className = '') {
   return `
     <div class="swiper-slide">
     <div class='bg-main ${className}'>
@@ -35,11 +34,11 @@ function mainBackground(cardData, className = '') {
   `
 }
 
-function card(title, description) {
+function card() {
  return `
   <div class="swiper-slide">
-    <h1 id="title">BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*</h1>
-    <p id="description">Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.</p>
+    <h1 id="title"></h1>
+    <p id="description"></p>
     
     <div class="wrapper-navigation-button">
         <button class="box-button" type="button">ПОДРОБНЕЕ</button>
@@ -50,13 +49,6 @@ function card(title, description) {
     
   </div>
  `
-}
-
-const cards = {
-  first:  { title: 'BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*',
-    description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'},
-  second:  { title: 'Сезонная распродажа поднимет вам настроение этой осенью',
-    description: '*Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'},
 }
 
 
