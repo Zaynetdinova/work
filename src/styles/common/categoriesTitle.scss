@@ -7,13 +7,13 @@
   &-text {
     font-weight: bold;
     font-size: 12px;
-    line-height: 13px;
+    line-height: 106.8%;
     letter-spacing: 0.035em;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #3D3D3C;
-    padding: 7px 10px 8px 10px;
-    width: 260px;
+    padding: 8px 8px 8px 10px;
+    min-width: 243px;
   }
 
 
@@ -21,19 +21,10 @@
     border-bottom: 2px dotted #777777;;
     width: 100%;
   }
-  @media (max-width: $tablet-breakpoint) {
+
+  @media (max-width: $width-414) {
     &-text {
-      width: 305px;
-    }
-  }
-  @media (max-width: $mobile-breakpoint) {
-    &-text {
-      width: 340px;
-    }
-  }
-  @media (max-width: $portrait-breakpoint) {
-    &-text {
-      width: 400px;
+     min-width: 222px;
     }
   }
 }
