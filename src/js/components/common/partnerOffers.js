@@ -22,7 +22,7 @@ export function partnerOffers() {
                 <div class="text-offers">
                     <div class="category-dress">Женская одежда</div>
                     <div class="button-wrap-offers">
-                        ${button('На сайте партнера')}
+                        ${button('На сайт партнера')}
                     </div>
                 </div>            
             </div>
@@ -33,7 +33,7 @@ export function partnerOffers() {
                 <div class="text-offers">
                     <div class="category-dress">Верхняя одежда</div>
                     <div class="button-wrap-offers">
-                        ${button('На сайте партнера')}
+                        ${button('На сайт партнера')}
                     </div>
                 </div>              
             </div>
@@ -44,7 +44,7 @@ export function partnerOffers() {
                 <div class="text-offers">
                     <div class="category-dress">Одежда для девочек</div>
                     <div class="button-wrap-offers">
-                        ${button('На сайте партнера')}
+                        ${button('На сайт партнера')}
                     </div>
                 </div>             
             </div>
@@ -55,7 +55,7 @@ export function partnerOffers() {
                 <div class="text-offers">
                     <div class="category-dress">Одежда для мальчиков</div>
                     <div class="button-wrap-offers">
-                        ${button('На сайте партнера')}
+                        ${button('На сайт партнера')}
                     </div>
                 </div>             
             </div>

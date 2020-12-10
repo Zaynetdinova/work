@@ -44,7 +44,7 @@ function templateSidebarChildren(item) {
 
 let pointGirl = [
     {
-        title: 'платья',
+        title: 'Платья',
         id: 'info',
         img: false,
         category: [

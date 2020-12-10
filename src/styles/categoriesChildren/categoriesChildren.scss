@@ -24,10 +24,6 @@
     .wrap-ImgChildren {
       display: block;
     }
-
-    .wrapper-categories .sidebar-page-categoriesChildren {
-      display: none;
-    }
   }
 }
 
@@ -38,7 +34,9 @@
 
 
 
-
+.titleWoman {
+  display: none;
+}
 
 
 
@@ -71,6 +69,9 @@
   }
 }
 @media (max-width: 1024px) {
+  .titleWoman {
+    display: block;
+  }
   .wrapper-categories {
     padding: 0 15px;
   }

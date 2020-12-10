@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     flex-basis: 49.2%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
 
     &:hover {
@@ -39,6 +39,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
+    margin-bottom: 2px;
   }
   .button-wrap-offers {
     .Button {
@@ -50,9 +51,13 @@
         letter-spacing: normal;
       }
     }
+    .arrow {
+      margin-top: 1px;
+    }
   }
   @media (max-width: 1024px) {
     .card {
+      margin-bottom: 15px;
       &:hover {
         .img {
           transform: none;
@@ -66,7 +71,6 @@
   @media (max-width: 550px) {
     .card {
       flex-basis: 100%;
-      margin-bottom: 15px;
     }
   }
 }
