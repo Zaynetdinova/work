@@ -7,13 +7,14 @@ import img4 from "../../../images/bestsellers/1/img4.png";
 import img5 from "../../../images/bestsellers/1/img5.png";
 import img6 from "../../../images/bestsellers/1/img6.png";
 import Swiper from 'swiper/bundle'
+import {sidebarChildren} from './js/sidebarChildren'
 
 export class CategoriesChildren extends Component {
     static className = 'CategoriesChildren'
     constructor($root) {
         super($root, {
             name: 'CategoriesChildren',
-            listeners: []
+            listeners: ['click']
         });
     }
     slider() {
@@ -71,6 +72,10 @@ export class CategoriesChildren extends Component {
 
     toHTML() {
         return categoriesChildren(woman)
+    }
+
+    onClick(e) {
+        sidebarChildren(e)
     }
 }
 
