@@ -1,4 +1,16 @@
 .ChildrenSidebar {
+  .point {
+    padding: 10.5px 10px 10.5px 13px;
+  }
+  .categories {
+    padding: 2px 10px 1px 13px;
+  }
+  .choice {
+    line-height: 14px;
+    padding: 11px 0 9px 0;
+    font-size: 13px;
+  }
+
 
   .link-children {
     display: flex;
@@ -6,7 +18,9 @@
     padding: 12px 0;
     cursor: pointer;
   }
-  .line-white {
+  .line-children {
+    border: none;
+    height: 2px;
     background: #F3F2F0;
   }
   .wrap-span {
