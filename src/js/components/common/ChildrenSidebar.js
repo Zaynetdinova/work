@@ -8,9 +8,15 @@ export function childrenSidebar(item) {
             <hr class="line-white">
             ${templateSidebarChildren(item)}
             
-            <div class='points sidebar-children'>
+            <div class='points sidebar-girl'>
                 <div class="points-footer">
-                    ${sidebarPoint(point)}
+                    ${sidebarPoint(pointGirl)}
+                </div>
+            </div>
+            
+             <div class='points sidebar-baby'>
+                <div class="points-footer">
+                    ${sidebarPoint(pointBaby)}
                 </div>
             </div>
         </div>
@@ -23,8 +29,7 @@ function templateSidebarChildren(item) {
         return `
             <div>
                  <article data-type-children=${item.id} class='link-children'>
-                    <img class="img" src=${item.img} alt="">
-                    <div></div>
+                    <div class="img img-${item.img}"></div>
                     <div class='wrap-span'>
                         <span class="item">${item.name}</span>
                         <span class="month">${item.month}</span>
@@ -37,7 +42,7 @@ function templateSidebarChildren(item) {
     return `${items.join('')}`
 }
 
-let point = [
+let pointGirl = [
     {
         title: 'ИНФОРМАЦИЯ',
         id: 'info',
@@ -111,3 +116,53 @@ let point = [
         ]
     }
     ]
+
+let pointBaby = [
+    {
+        title: 'ИНФОРМАЦИЯ',
+        id: 'info',
+        img: false,
+        category: [{
+            category: 'О нас'
+        },
+            {
+                category: 'Условия работы'
+            },
+            {
+                category: 'Доставка'
+            },
+            {
+                category: 'Оплата'
+            },
+            {
+                category: 'Ответы на вопросы'
+            },
+            {
+                category: 'Контакты'
+            }
+        ]
+    },
+
+    {
+        title: 'ДЛЯ КЛИЕНТОВ',
+        id: 'client',
+        img: false,
+        category: [
+            {
+                category: 'Личный кабинет'
+            },
+            {
+                category: 'Корзина'
+            },
+            {
+                category: 'Избранное'
+            },
+            {
+                category: 'Заказы и их статус'
+            },
+            {
+                category: ' Возврат'
+            },
+        ]
+    }
+]

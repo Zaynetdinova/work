@@ -1,0 +1,76 @@
+.ChildrenSidebar {
+
+  .link-children {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+  }
+  .line-white {
+    background: #F3F2F0;
+  }
+  .wrap-span {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .img-baby {
+    background-image: url("../images/icons/baby.svg");
+  }
+
+  .img-girl {
+    background-image: url("../images/icons/girl.svg");
+  }
+
+  .item {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+
+    color: #555555;
+  }
+  .month {
+
+    font-size: 11px;
+    line-height: 140%;
+    color: #777777;
+  }
+
+  .points {
+    width: 223px;
+    display: none;
+
+    .title {
+      margin-left: 0;
+    }
+  }
+
+  &.children-girl {
+    .img-girl {
+      background-image: url("../images/icons/icon_menu_girl.svg");
+    }
+
+    .sidebar-girl {
+      display: block;
+    }
+  }
+
+  &.children-baby {
+    .img-baby {
+      background-image: url("../images/icons/icon_menu_newborn.svg");
+    }
+
+    .sidebar-baby {
+      display: block;
+    }
+  }
+
+
+}

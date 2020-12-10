@@ -1,5 +1,6 @@
 .CategoriesChildren {
 @import "./components/sidebar";
+@import "./components/iconMobileChildren";
 
   .wrapper-categories {
     padding: 0 20px;
@@ -15,6 +16,18 @@
 
   .bestseller-children {
     padding-bottom: 110px;
+  }
+  .wrap-ImgChildren {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .wrap-ImgChildren {
+      display: block;
+    }
+
+    .wrapper-categories .sidebar-page-categoriesChildren {
+      display: none;
+    }
   }
 }
 
