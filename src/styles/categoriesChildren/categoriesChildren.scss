@@ -9,6 +9,14 @@
   .bestseller-children {
     padding-bottom: 110px;
   }
+  .wrap-ImgChildren {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .wrap-ImgChildren {
+      display: block;
+    }
+  }
 }
 
 
