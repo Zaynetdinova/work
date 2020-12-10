@@ -10,13 +10,10 @@ export function categoriesChildren(woman) {
     return `
 		<div class="wrapper-categories">	
 				${transitionWrapper(pageForChildren)}
-				<div class="titleWoman">
-				    ${titleWrapper(pageForChildren)}
-			    </div>
+                ${titleWrapper(pageForChildren)}
 				<div class="flex-wrap">	
 				
 					<section class="sidebar-page-categories sidebar-page-categoriesChildren">
-						${titleWrapper(pageForChildren)}
                         ${childrenSidebar(dataSidebarGirl)}
 					</section>
 					

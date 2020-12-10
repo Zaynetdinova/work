@@ -112,4 +112,14 @@
     }
   }
 
+  @media (max-width: 1024px) {
+    .content-icon {
+      margin-top: 40px;
+    }
+  }
+  @media (max-width: 768px) {
+    .content-icon {
+      margin-top: 30px;
+    }
+  }
 }
