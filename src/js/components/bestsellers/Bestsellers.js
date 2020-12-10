@@ -197,6 +197,7 @@ const cards = {
         price: '1 243,00 &#8381; ',
       },
     ],
+    link: '/#categories',
   },
   child: {
     _id: 'child',
@@ -279,7 +280,8 @@ const cards = {
       sale: true
     }
 
-    ]
+    ],
+    link: '/#categories-children',
   },
   man: {
     _id: 'man',

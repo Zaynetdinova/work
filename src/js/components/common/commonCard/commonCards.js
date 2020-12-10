@@ -6,13 +6,13 @@ import {infoCard} from './infoCard'
 import {additionalInformation} from './additionalInformation'
 
 export function commonCard(elem, infoType) {
-	const {data, title, _id} = elem
+	const {data, title, _id, link} = elem
 
 	return `
 	<div class="Common-card">
 			<figure class="swiper-container bestseller-${_id}" id="bestseller-${_id}">
 					<div class="bestsellers-header-wrapper">
-						${commonCardHeader(title)}
+						${commonCardHeader(title, link)}
 						<div class="test-dots"></div>
 					</div>
 					<div class="swiper-wrapper">
