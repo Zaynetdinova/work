@@ -1,11 +1,19 @@
 .CategoriesChildren {
-  .sidebar-page-categoriesChildren {
-    margin: 0;
-    padding: 0;
-    width: 223px;
-    position: absolute;
-    height: 100%;
+@import "./components/sidebar";
+@import "./components/iconMobileChildren";
+
+  .wrapper-categories {
+    padding: 0 20px;
+    background: #F9F9F9;
+    max-width: 1480px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .flex-wrap {
+
+    }
   }
+
   .bestseller-children {
     padding-bottom: 110px;
   }
@@ -16,16 +24,24 @@
     .wrap-ImgChildren {
       display: block;
     }
+
+    .wrapper-categories .sidebar-page-categoriesChildren {
+      display: none;
+    }
   }
 }
 
 
-.wrapper-categories {
-  padding: 0 20px;
-  background: #F9F9F9;
-  max-width: 1480px;
-  margin: 0 auto;
-}
+
+
+
+
+
+
+
+
+
+
 .content-page-categories {
   margin-left: 243px;
 }

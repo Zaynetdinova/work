@@ -1,7 +1,7 @@
 import img1 from '../../../images/icons/baby.svg'
 import img2 from '../../../images/icons/girl.svg'
 
-import {IconImg} from "./icon";
+import {IconImg} from "../common/icon";
 import img3 from "../../../images/Categories/woman/img3.svg";
 import img4 from "../../../images/Categories/woman/img4.svg";
 import img5 from "../../../images/Categories/woman/img5.svg";
@@ -27,28 +27,13 @@ import img23 from '../../../images/Categories/girl/img17.svg';
 
 export function IconChildren() {
     return `
-        <div class="Icon-children">
+        <div class="Icon-children" id="sidebar-children-mobile">
             <div class="title-icon">
-                <div class="wrap">
-                <a class='link-children'>
-                    <img class="img" src=${img1} alt="">
-                    <div class='wrap-span'>
-                        <span class="item">Новорожденным</span>
-                        <span class="month">(12 мес. - 17 лет)</span>
-                    </div>
-                </a>
-                <hr class="hr-children-2">
-                </div>
-                <div class="wrap">
-                <a class='link-children'>
-                    <img class="img" src=${img2} alt="">
-                    <div class='wrap-span'>
-                        <span class="item">Девочкам</span>
-                        <span class="month">(12 мес. - 17 лет)</span>
-                    </div>
-                </a>
-                <hr class="hr-children">
-                </div>
+                
+                ${dataSidebarGirl.map((item) => {
+                  return  categoriesChoice(item) 
+                }).join('')}
+                
             </div>
             <div class="content-icon">
                 <div class="content-icon-baby">
@@ -61,6 +46,37 @@ export function IconChildren() {
         </div>
     `
 }
+
+function categoriesChoice(item) {
+    const {id, name, img, month} = item
+    return `
+    <article class="wrap" data-type-children=${id}>
+        <a class='link-children'>
+            <div class="img img-${img}"></div>
+            <div class='wrap-span'>
+                <span class="item">${name}</span>
+                <span class="month">${month}</span>
+            </div>
+        </a>
+        <hr class="hr hr-${id}">
+    </article>
+    `
+}
+
+let dataSidebarGirl = [
+    {
+        id: 'children-baby',
+        img: 'baby',
+        name: 'Новорожденным',
+        month: '(12 мес. - 17 лет)'
+    },
+    {
+        id: 'children-girl',
+        img: 'girl',
+        name: 'Девочкам',
+        month: '(12 мес. - 17 лет)'
+    },
+]
 
 let baby = [
     {
