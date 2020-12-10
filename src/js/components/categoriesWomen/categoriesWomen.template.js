@@ -35,12 +35,9 @@ export function categoriesWomen(woman) {
 	return `
 		<div class="wrapper-categories">	
 			${transitionWrapper(pageForWomen)}
-			<div class="titleWoman">
-				${titleWrapper(pageForWomen)}
-			</div>
+			${titleWrapper(pageForWomen)}
 			<div class="flex-wrap">	
-				<div class="sidebar-page-categories">
-					${titleWrapper(pageForWomen)}
+				<div class="sidebar-page-categories">				
 					${categoriesMenuSidebar()}
 				</div>
 				<div class="content-page-categories">
