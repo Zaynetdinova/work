@@ -1,11 +1,11 @@
 import {sliderPointerTemplate} from '../sliderPointer.template'
 
-export function commonCardHeader(text) {
+export function commonCardHeader(text,link) {
   return `
     <div class="Bestsellers-header">
       <section class="content">
           <div class="categories">
-             ${text}
+             <a href=${link}>${text}</a>
         </div>
         <div class="line"></div>
         <div class="see-all">

@@ -9,17 +9,12 @@
   @media (max-width: 1024px) {
     .wrap-IconImg {
       display: block;
-      padding:  0 0 60px 0;
+      padding:  45px 0 0 0;
     }
   }
   @media (max-width: 768px) {
     .wrap-IconImg {
-      padding:  0 26px 60px 28px;
-    }
-  }
-  @media (max-width: 415px) {
-    .wrap-IconImg {
-      padding:  0 0 50px 0;
+      padding:  45px 26px 0 28px;
     }
   }
 }
