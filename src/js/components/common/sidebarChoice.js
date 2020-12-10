@@ -6,7 +6,7 @@ export function sidebarChoice(li = [], subcategory, arrow) {
       const {category, id = ''} = item
 
       return `
-        <figure data-test class='category' id="${id}">
+        <figure data-category class='category' id="${id}">
             <a class='choice' id="choice">
                 ${category}
                 ${arrow == 'notArrow' ? '' : `<div class="arrow"></div>`}
@@ -20,7 +20,7 @@ export function sidebarChoice(li = [], subcategory, arrow) {
 
   const itemsSubCategories = li.map((item) => {
     return `
-            <figure data-test data-subtest class='sub-category-wrapper' data-id=${item.id}>
+            <figure data-category data-subcategory class='sub-category-wrapper' data-id=${item.id}>
                 <a class='item'>
                 <div>
                     <span>${item.name}</span>
