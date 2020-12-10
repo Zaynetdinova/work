@@ -11,7 +11,11 @@ $widthCardImage: 87px;
     &:hover {
       border: 1px solid #555555;
     }
-
+    @media (max-width: 1024px) {
+      &:hover {
+        border: 1px solid transparent;
+      }
+    }
     .card-banner-wrapper {
       position: relative;
     }
@@ -194,6 +198,7 @@ $widthCardImage: 87px;
     }
 
     @media (max-width: $tablet-breakpoint) {
+
       .root {
         .main-title {
           margin-bottom: 28px;

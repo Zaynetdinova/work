@@ -3,7 +3,7 @@ import {categoriesMenuSidebar} from '../common/categoriesMenuSidebar'
 
 import video from '../../../video/1.mp4'
 import {partnerOffers} from '../common/partnerOffers'
-import {transitionTitle} from '../common/transitionTitle'
+import {titleWrapper, transitionWrapper} from '../common/transitionTitle'
 import {IconImg} from "../common/icon";
 import img1 from "../../../images/Categories/woman/img1.svg";
 import img2 from "../../../images/Categories/woman/img2.svg";
@@ -34,17 +34,18 @@ import img23 from '../../../images/bestsellers/1/img6.png'
 export function categoriesWomen(woman) {
 	return `
 		<div class="wrapper-categories">	
-			${transitionTitle(pageForWomen)}
+			${transitionWrapper(pageForWomen)}
+			<div class="titleWoman">
+				${titleWrapper(pageForWomen)}
+			</div>
 			<div class="flex-wrap">	
 				<div class="sidebar-page-categories">
+					${titleWrapper(pageForWomen)}
 					${categoriesMenuSidebar()}
 				</div>
 				<div class="content-page-categories">
-					<div class="banner-video">
-						<video class="video" autoplay muted loop src=${video}  </video>
-					</div>
 					<div class="wrap-IconImg">${IconImg(item)}</div>
-					<div class="wrap-card">
+					<div class="wrap-card3">
 						${commonCard(woman, 'price')}
 					</div>
 					<div class="wrap-partnerOffers">
@@ -222,3 +223,8 @@ let woman2 =  {
 
 	],
 }
+
+
+// <div class="banner-video">
+// 	<video class="video" autoplay muted loop src=${video}  </video>
+// </div>

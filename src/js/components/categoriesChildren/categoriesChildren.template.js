@@ -1,4 +1,4 @@
-import {transitionTitle} from "../common/transitionTitle";
+import {titleWrapper, transitionTitle, transitionWrapper} from "../common/transitionTitle";
 import video from '../../../video/2.mp4'
 import {childrenSidebar} from "../common/ChildrenSidebar";
 import {partnerOffers} from "../common/partnerOffers";
@@ -9,11 +9,15 @@ import {IconChildren} from './iconChildren'
 export function categoriesChildren(woman) {
     return `
 		<div class="wrapper-categories">	
-				${transitionTitle(pageForChildren)}
+				${transitionWrapper(pageForChildren)}
+				<div class="titleWoman">
+				    ${titleWrapper(pageForChildren)}
+			    </div>
 				<div class="flex-wrap">	
 				
 					<section class="sidebar-page-categories sidebar-page-categoriesChildren">
-						${childrenSidebar(dataSidebarGirl)}
+						${titleWrapper(pageForChildren)}
+                        ${childrenSidebar(dataSidebarGirl)}
 					</section>
 					
 					<section class="content-page-categories">

@@ -1,4 +1,5 @@
 .CategoriesWomen {
+
   .wrap-IconImg {
     display: none;
   }
@@ -20,12 +21,7 @@
   @media (max-width: 1024px) {
     .wrap-IconImg {
       display: block;
-      padding:  45px 0 0 0;
-    }
-  }
-  @media (max-width: 768px) {
-    .wrap-IconImg {
-      padding:  45px 0 0 0;
+      padding:  0 0 45px 0;
     }
   }
 }
