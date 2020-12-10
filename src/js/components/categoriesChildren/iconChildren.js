@@ -109,11 +109,11 @@ let baby = [
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'верхняя одежда'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'КОЛГОТКИ И НоСКИ'
     },
     {
         img: img20,

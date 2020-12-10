@@ -68,6 +68,7 @@ export class CategoriesWomen extends Component {
 		}
 
 		let womanSwiper = new Swiper('.bestseller-goods', options)
+		let womenSwiper2 = new Swiper('.bestseller-goods22', options)
 	}
 
 	toHTML() {

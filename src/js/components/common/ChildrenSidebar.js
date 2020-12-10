@@ -5,7 +5,7 @@ import {sidebarPoint} from './sidebarPoint'
 export function childrenSidebar(item) {
     return `
         <div class='ChildrenSidebar' id="sidebar-children">
-            <hr class="line-white">
+            <hr class="line-children">
             ${templateSidebarChildren(item)}
             
             <div class='points sidebar-girl'>
@@ -35,7 +35,7 @@ function templateSidebarChildren(item) {
                         <span class="month">${item.month}</span>
                     </div>
                 </article>
-                <hr class="line-white">
+                <hr class="line-children">
             </div>
         `
     })
@@ -44,55 +44,83 @@ function templateSidebarChildren(item) {
 
 let pointGirl = [
     {
-        title: 'ИНФОРМАЦИЯ',
+        title: 'платья',
         id: 'info',
         img: false,
-        category: [{
-            category: 'О нас'
-        },
+        category: [
             {
-                category: 'Условия работы'
+                category: 'Повседневные'
             },
             {
-                category: 'Доставка'
+                category: 'Офисные'
             },
             {
-                category: 'Оплата'
+                category: 'Трикотажные'
             },
             {
-                category: 'Ответы на вопросы'
+                category: 'Коктейльные'
             },
             {
-                category: 'Контакты'
-            }
+                category: 'Вечерние'
+            },
+            {
+                category: 'Длинные'
+            },
+            {
+                category: 'Костюмы'
+            },
+            {
+                category: 'Сарафаны'
+            },
+            {
+                category: 'Летние'
+            },
+            {
+                category: 'Короткие'
+            },
         ]
     },
 
     {
-        title: 'ДЛЯ КЛИЕНТОВ',
+        title: 'Трикотаж',
         id: 'client',
         img: false,
         category: [
             {
-                category: 'Личный кабинет'
+                category: 'Повседневные'
             },
             {
-                category: 'Корзина'
+                category: 'Офисные'
             },
             {
-                category: 'Избранное'
+                category: 'Трикотажные'
             },
             {
-                category: 'Заказы и их статус'
+                category: 'Коктейльные'
             },
             {
-                category: ' Возврат'
+                category: 'Вечерние'
+            },
+            {
+                category: 'Длинные'
+            },
+            {
+                category: 'Костюмы'
+            },
+            {
+                category: 'Сарафаны'
+            },
+            {
+                category: 'Летние'
+            },
+            {
+                category: 'Короткие'
             },
         ]
     },
 
     {
-        title: 'СЕРВИС',
+        title: 'Верха',
         id: 'service',
         img: false,
         category: [
@@ -106,7 +134,7 @@ let pointGirl = [
     },
 
     {
-        title: 'СОТРУДНИЧЕСТВО',
+        title: 'Низы',
         id: 'cooperation',
         img: false,
         category: [
@@ -119,49 +147,77 @@ let pointGirl = [
 
 let pointBaby = [
     {
-        title: 'ИНФОРМАЦИЯ',
-        id: 'info',
+        title: 'Юбки',
+        id: 'info-2',
         img: false,
-        category: [{
-            category: 'О нас'
-        },
+        category: [
             {
-                category: 'Условия работы'
+                category: 'Повседневные'
             },
             {
-                category: 'Доставка'
+                category: 'Офисные'
             },
             {
-                category: 'Оплата'
+                category: 'Трикотажные'
             },
             {
-                category: 'Ответы на вопросы'
+                category: 'Коктейльные'
             },
             {
-                category: 'Контакты'
-            }
+                category: 'Вечерние'
+            },
+            {
+                category: 'Длинные'
+            },
+            {
+                category: 'Костюмы'
+            },
+            {
+                category: 'Сарафаны'
+            },
+            {
+                category: 'Летние'
+            },
+            {
+                category: 'Короткие'
+            },
         ]
     },
 
     {
-        title: 'ДЛЯ КЛИЕНТОВ',
-        id: 'client',
+        title: 'Верхняя одежда',
+        id: 'client-2',
         img: false,
         category: [
             {
-                category: 'Личный кабинет'
+                category: 'Повседневные'
             },
             {
-                category: 'Корзина'
+                category: 'Офисные'
             },
             {
-                category: 'Избранное'
+                category: 'Трикотажные'
             },
             {
-                category: 'Заказы и их статус'
+                category: 'Коктейльные'
             },
             {
-                category: ' Возврат'
+                category: 'Вечерние'
+            },
+            {
+                category: 'Длинные'
+            },
+            {
+                category: 'Костюмы'
+            },
+            {
+                category: 'Сарафаны'
+            },
+            {
+                category: 'Летние'
+            },
+            {
+                category: 'Короткие'
             },
         ]
     }
