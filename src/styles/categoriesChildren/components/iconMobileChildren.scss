@@ -1,5 +1,5 @@
 .Icon-children {
-  padding-top: 35px;
+  padding-top: 34px;
 
   .title-icon {
     display: flex;
@@ -8,7 +8,7 @@
   .link-children {
     display: flex;
     align-items: center;
-    padding: 12px 0;
+    padding: 0 0 27px 0;
 
 
   }
@@ -118,6 +118,7 @@
     }
   }
   @media (max-width: 768px) {
+    padding-top: 35px;
     .content-icon {
       margin-top: 30px;
     }

@@ -2,18 +2,6 @@
 @import "./components/sidebar";
 @import "./components/iconMobileChildren";
 
-  .wrapper-categories {
-    padding: 0 15px;
-    background: #F9F9F9;
-    max-width: 1480px;
-    margin: 0 auto;
-    overflow: hidden;
-
-    .flex-wrap {
-
-    }
-  }
-
   .bestseller-children {
     padding-bottom: 112px;
   }
@@ -23,6 +11,14 @@
   @media (max-width: 1024px) {
     .wrap-ImgChildren {
       display: block;
+    }
+    .bestseller-children {
+      padding-bottom: 88px;
+    }
+  }
+  @media (max-width: 414px) {
+    .wrap-ImgChildren {
+      padding: 0 15px;
     }
   }
 }
@@ -36,7 +32,8 @@
 
 
 
-
+//common
+//общие стили для детей и женщин
 
 .content-page-categories {
   margin-left: 243px;
@@ -51,9 +48,14 @@
   margin-top: -50px;
   padding-bottom: 44px;
 }
-.banner {
-
+.wrapper-categories {
+  padding: 0 15px;
+  background: #F9F9F9;
+  max-width: 1480px;
+  margin: 0 auto;
+  overflow: hidden;
 }
+
 .banner-video {
   position: relative;
   overflow: hidden;
@@ -61,13 +63,14 @@
   height: 100%;
   max-height: 512px;
 
-
   .video {
     width: 100%;
   }
 }
 @media (max-width: 1024px) {
-
+  .banner-video {
+    max-height: 426px;
+  }
   .wrapper-categories {
     padding: 0 15px;
   }
@@ -81,6 +84,38 @@
     padding-bottom: 102px;
   }
   .wrap-partnerOffers {
-    padding-bottom: 42px;
+    padding-bottom: 47px;
+  }
+}
+@media (max-width: 768px) {
+  .banner-video {
+    max-height: 317px;
+  }
+}
+@media (max-width: 414px) {
+  .banner-video {
+    max-height: 177px;
+  }
+  .wrapper-categories {
+    padding: 0;
+  }
+  .wrap-card {
+    padding: 50px 15px 0 15px;
+  }
+  .wrap-card-2 {
+    padding: 0 15px 100px 15px;
+  }
+  .wrap-partnerOffers {
+    padding: 0 15px 44px 15px;
+  }
+}
+@media (max-width: 375px) {
+  .banner-video {
+    max-height: 160px;
+  }
+}
+@media (max-width: 320px) {
+  .banner-video {
+    max-height: 146px;
   }
 }

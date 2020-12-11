@@ -95,6 +95,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman2',
@@ -104,6 +105,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman3',
@@ -113,6 +115,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman4',
@@ -122,6 +125,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman5',
@@ -131,6 +135,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman6',
@@ -140,6 +145,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman7',
@@ -149,6 +155,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman8',
@@ -160,6 +167,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
 
     ],

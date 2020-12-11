@@ -132,6 +132,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman2',
@@ -141,6 +142,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman3',
@@ -150,6 +152,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman4',
@@ -159,6 +162,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman5',
@@ -168,6 +172,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman6',
@@ -177,6 +182,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman7',
@@ -186,6 +192,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
       {
         id: 'woman8',
@@ -195,6 +202,7 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
+        sale: true
       },
     ],
     link: '/#categories',

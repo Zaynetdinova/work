@@ -134,7 +134,11 @@
       }
     }
   }
-
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 13px;
+    }
+  }
   @media (max-width: 768px) {
       width: 100%;
 
