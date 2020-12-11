@@ -52,7 +52,7 @@ let pageForChildren = [
 
 let dataSidebarGirl = [
     {
-    		id: 'children-baby',
+    	id: 'children-baby',
         img: 'baby',
         name: 'Новорожденным',
         month: '(12 мес. - 17 лет)'

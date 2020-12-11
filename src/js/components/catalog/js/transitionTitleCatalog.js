@@ -1,5 +1,5 @@
 
-export function transitionWrapper(item) {
+export function transitionTitleCatalog(item) {
 
     const items = item.map((item) => {
         return `
@@ -7,7 +7,8 @@ export function transitionWrapper(item) {
                 <span class="home"><a href="/">Главная</a></span>
                 <span>/</span>
                 <span class="title"><a href=${item.link}>${item.title}</a></span>
-                    
+                <span>/</span>
+                <span class="title"><a href=${item.linkCategory}>${item.titleCategory}</a></span>                   
             </div>
                 
         `
@@ -15,12 +16,13 @@ export function transitionWrapper(item) {
     return `${items.join('')}`
 }
 
-export function titleWrapper(item) {
+
+export function titleCatalog(item) {
 
     const items = item.map((item) => {
         return `
             <div class="titleWrapper">
-                <div class="title">${item.title}</div>
+                <div class="title">${item.titleCategory}</div>
 		        <div class="value">${item.value}</div>
             </div>
                    
@@ -28,5 +30,3 @@ export function titleWrapper(item) {
     })
     return `${items.join('')}`
 }
-
-
