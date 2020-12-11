@@ -1,3 +1,6 @@
+@import '../../color';
+@import '../../var';
+
 .Icon-children {
   padding-top: 34px;
 
@@ -112,12 +115,12 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $tablet-breakpoint) {
     .content-icon {
       margin-top: 40px;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-breakpoint) {
     padding-top: 35px;
     .content-icon {
       margin-top: 30px;

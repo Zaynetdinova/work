@@ -37,12 +37,12 @@
     @media (max-width: $tablet-breakpoint) {
       padding: 0 15px 0 15px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: $mobile-breakpoint) {
       .main-title {
         margin-bottom: 40px;
       }
     }
-    @media (max-width: 414px) {
+    @media (max-width: $width-414) {
       padding-right: 0;
 
       .slider-pointer {

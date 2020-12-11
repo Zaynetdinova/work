@@ -1,3 +1,7 @@
+@import '../color';
+@import '../var';
+
+
 .CategoriesChildren {
 @import "./components/sidebar";
 @import "./components/iconMobileChildren";
@@ -8,7 +12,7 @@
   .wrap-ImgChildren {
     display: none;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: $tablet-breakpoint) {
     .wrap-ImgChildren {
       display: block;
     }
@@ -16,7 +20,7 @@
       padding-bottom: 88px;
     }
   }
-  @media (max-width: 414px) {
+  @media (max-width: $width-414) {
     .wrap-ImgChildren {
       padding: 0 15px;
     }
@@ -67,7 +71,7 @@
     width: 100%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: $tablet-breakpoint) {
   .banner-video {
     max-height: 426px;
   }
@@ -87,12 +91,12 @@
     padding-bottom: 47px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: $mobile-breakpoint) {
   .banner-video {
     max-height: 317px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: $width-414) {
   .banner-video {
     max-height: 177px;
   }
@@ -109,12 +113,12 @@
     padding: 0 15px 44px 15px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: $portrait-breakpoint) {
   .banner-video {
     max-height: 160px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: $with-320) {
   .banner-video {
     max-height: 146px;
   }

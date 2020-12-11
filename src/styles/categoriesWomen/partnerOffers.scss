@@ -1,3 +1,6 @@
+@import '../color';
+@import '../var';
+
 .wrap-partnerOffers {
   .wrap-categoriesTitle {
     margin-bottom: 40px;
@@ -55,7 +58,7 @@
       margin-top: 1px;
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: $tablet-breakpoint) {
     .card {
       margin-bottom: 15px;
       &:hover {
