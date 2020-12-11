@@ -41,8 +41,11 @@ export function categoriesWomen(woman) {
 					${categoriesMenuSidebar()}
 				</div>
 				<div class="content-page-categories">
+					<div class="banner-video">
+						<video class="video" autoplay muted loop src=${video} </video>
+					</div>
 					<div class="wrap-IconImg">${IconImg(item)}</div>
-					<div class="wrap-card3">
+					<div class="wrap-card">
 						${commonCard(woman, 'price')}
 					</div>
 					<div class="wrap-partnerOffers">
