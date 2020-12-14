@@ -3,6 +3,7 @@ import {number, pagination} from "./js/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./js/navCatalog";
 import {filter} from "./js/filter";
+import arrow from "../../../images/icons/arrow2.svg"
 
 
 export function catalog()  {
@@ -22,7 +23,17 @@ export function catalog()  {
                     <div class="wrapper-filter">${filter()}</div>                    
 				</div>
 				<div class="content-page-categories">
-				    ${navCatalog(item)}
+				    <div class="container">
+				        ${navCatalog(item)}
+				        <div class="pages">
+				            <div class="select">
+				                <div>На странице</div>
+				                <img class="arrow" src="${arrow}" alt="">
+                            </div>
+				            
+				            <span>100</span>
+                        </div>				      
+                    </div>				  
     			</div>
   			</div>                  
         </div>
