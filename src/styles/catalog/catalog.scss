@@ -2,8 +2,9 @@
   @import 'components/pagination';
   @import 'components/navCatalog';
   @import 'components/filter';
+  @import 'components/filter-choice';
   .wrapper-catalog {
-    padding: 0 20px 1000px 20px;
+    padding: 0 20px 10000px 20px;
   }
   .wrapper-pagination {
     display: flex;
@@ -16,6 +17,22 @@
   }
   .titleWrapper {
     padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pages {
+    display: flex;
+    align-items: center;
+    .select {
+      display: flex;
+      cursor: pointer;
+    }
+    .arrow {
+      transform: rotate(90deg);
+      margin: 0 5px;
+    }
   }
   .sidebar-page-categories {
     margin: 0;
