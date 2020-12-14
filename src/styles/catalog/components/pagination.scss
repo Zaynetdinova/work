@@ -47,14 +47,13 @@
       color: #3D3D3C;
     }
   }
-  //.number {
-  //
-  //  span {
-  //    cursor: pointer;
-  //    &:hover {
-  //      color: #DF2B2B;
-  //      text-decoration: underline;
-  //    }
-  //  }
-  //}
+}
+
+.number {
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+    list-style: none;
+  }
 }

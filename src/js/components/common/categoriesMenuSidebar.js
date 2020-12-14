@@ -38,9 +38,6 @@ let point =
                     category: 'Длинные'
                 },
                 {
-                    category: 'Костюмы'
-                },
-                {
                     category: 'Сарафаны'
                 },
                 {
@@ -48,6 +45,18 @@ let point =
                 },
                 {
                     category: 'Короткие'
+                },
+                {
+                    category: 'Выпускные'
+                },
+                {
+                    category: 'Кружевные'
+                },
+                {
+                    category: 'Пляжные'
+                },
+                {
+                    category: 'Свадебные'
                 },
             ],
         },
@@ -57,34 +66,37 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Платья'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Жакеты'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Джемперы'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Свитера'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Кофты'
                 },
                 {
-                    category: 'Длинные'
+                    category: 'Худи, толстовки'
                 },
                 {
-                    category: 'Костюмы'
+                    category: 'Кардиганы'
                 },
                 {
-                    category: 'Сарафаны'
+                    category: 'Водолазки'
                 },
                 {
-                    category: 'Летние'
+                    category: 'Туники'
                 },
                 {
-                    category: 'Короткие'
+                    category: 'Пуловеры'
+                },
+                {
+                    category: 'Жилеты'
                 },
             ],
         },
@@ -94,23 +106,53 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'О нас'
+                    category: 'Блузы'
                 },
                 {
-                    category: 'Условия работы'
+                    category: 'Джемпера'
                 },
                 {
-                    category: 'Доставка'
+                    category: 'Праздничное'
                 },
                 {
-                    category: 'Оплата'
+                    category: 'Кофточки'
                 },
                 {
-                    category: 'Ответы на вопросы'
+                    category: 'Рубашки'
                 },
                 {
-                    category: 'Контакты'
-                }
+                    category: 'Поло'
+                },
+                {
+                    category: 'Водолазки'
+                },
+                {
+                    category: 'Топы и майки'
+                },
+                {
+                    category: 'Лонгсливы'
+                },
+                {
+                    category: 'Туники'
+                },
+                {
+                    category: 'Толстовки, ветровки'
+                },
+                {
+                    category: 'Футболки'
+                },
+                {
+                    category: 'Худи'
+                },
+                {
+                    category: 'Жилеты'
+                },
+                {
+                    category: 'Боди'
+                },
+                {
+                    category: 'Болеро'
+                },
             ]
         },
         {
@@ -119,23 +161,29 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'О нас'
+                    category: 'Брюки'
                 },
                 {
-                    category: 'Условия работы'
+                    category: 'Джинсы'
                 },
                 {
-                    category: 'Доставка'
+                    category: 'Бриджи, капри'
                 },
                 {
-                    category: 'Оплата'
+                    category: 'Леггинсы'
                 },
                 {
-                    category: 'Ответы на вопросы'
+                    category: 'Шорты'
                 },
                 {
-                    category: 'Контакты'
-                }
+                    category: 'Кюлоты'
+                },
+                {
+                    category: 'Тайтсы'
+                },
+                {
+                    category: 'Велосипедки'
+                },
             ]
         },
         {
@@ -144,23 +192,41 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'О нас'
+                    category: 'Мини'
                 },
                 {
-                    category: 'Условия работы'
+                    category: 'Миди'
                 },
                 {
-                    category: 'Доставка'
+                    category: 'Макси'
                 },
                 {
-                    category: 'Оплата'
+                    category: 'В колено'
                 },
                 {
-                    category: 'Ответы на вопросы'
+                    category: 'Джинсовые'
                 },
                 {
-                    category: 'Контакты'
-                }
+                    category: 'Кружевные'
+                },
+                {
+                    category: 'Летние'
+                },
+                {
+                    category: 'Вязаные'
+                },
+                {
+                    category: 'Кожаные'
+                },
+                {
+                    category: 'Праздничные'
+                },
+                {
+                    category: 'Расклешенные (трапеции)'
+                },
+                {
+                    category: 'Футляры (прямые)'
+                },
             ]
         },
         {
@@ -169,34 +235,40 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Пальто'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Пуховики'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Куртки'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Парки'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Пиджаки'
                 },
                 {
-                    category: 'Длинные'
+                    category: 'Плащи'
                 },
                 {
-                    category: 'Костюмы'
+                    category: 'Пончо'
                 },
                 {
-                    category: 'Сарафаны'
+                    category: 'Тренчи'
                 },
                 {
-                    category: 'Летние'
+                    category: 'Кожаные куртки'
                 },
                 {
-                    category: 'Короткие'
+                    category: 'Бомберы'
+                },
+                {
+                    category: 'Жакеты'
+                },
+                {
+                    category: 'Жилеты'
                 },
             ],
         },
@@ -206,34 +278,22 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Юбочные'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Брючные'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Комбезные'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Платье с жакетом'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Спортивные'
                 },
                 {
-                    category: 'Длинные'
-                },
-                {
-                    category: 'Костюмы'
-                },
-                {
-                    category: 'Сарафаны'
-                },
-                {
-                    category: 'Летние'
-                },
-                {
-                    category: 'Короткие'
+                    category: 'Карнавальные'
                 },
             ],
         },
@@ -243,34 +303,49 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Лонгсливы'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Топы, майки'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Футболки'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Туники'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Худи, толстовки'
                 },
                 {
-                    category: 'Длинные'
+                    category: 'Платья'
                 },
                 {
                     category: 'Костюмы'
                 },
                 {
-                    category: 'Сарафаны'
+                    category: 'Пижамы'
                 },
                 {
-                    category: 'Летние'
+                    category: 'Спортивки (верха)'
                 },
                 {
-                    category: 'Короткие'
+                    category: 'Спортивка (низы)'
+                },
+                {
+                    category: 'Халаты'
+                },
+                {
+                    category: 'Ночные сорочки'
+                },
+                {
+                    category: 'Брюки'
+                },
+                {
+                    category: 'Бриджи, шорты'
+                },
+                {
+                    category: 'Комплекты передпостельные'
                 },
             ],
         },
@@ -280,34 +355,46 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Рашгарды'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Тайтсы'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Футболки'
                 },
                 {
-                    category: 'Коктейльные'
-                },
-                {
-                    category: 'Вечерние'
-                },
-                {
-                    category: 'Длинные'
+                    category: 'Шорты'
                 },
                 {
                     category: 'Костюмы'
                 },
                 {
-                    category: 'Сарафаны'
+                    category: 'Брюки'
                 },
                 {
-                    category: 'Летние'
+                    category: 'Капри'
                 },
                 {
-                    category: 'Короткие'
+                    category: 'Куртки, ветровки'
+                },
+                {
+                    category: 'Лонгсливы'
+                },
+                {
+                    category: 'Толстовки, туники'
+                },
+                {
+                    category: 'Худи'
+                },
+                {
+                    category: 'Топы'
+                },
+                {
+                    category: 'Майки'
+                },
+                {
+                    category: 'Топы-бра'
                 },
             ],
         },
@@ -317,34 +404,58 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Трусы стринги'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Трусы слипы'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Трусы бразильяна'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Трусы танга'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Трусы хипстеры'
                 },
                 {
-                    category: 'Длинные'
+                    category: 'Шорты'
                 },
                 {
-                    category: 'Костюмы'
+                    category: 'Панталоны'
                 },
                 {
-                    category: 'Сарафаны'
+                    category: 'Боди'
                 },
                 {
-                    category: 'Летние'
+                    category: 'Бюстгальтеры'
                 },
                 {
-                    category: 'Короткие'
+                    category: 'Топы-бра'
+                },
+                {
+                    category: 'Топы, майки'
+                },
+                {
+                    category: 'Белье корректирующее'
+                },
+                {
+                    category: 'Пояса для чулок'
+                },
+                {
+                    category: 'Комплекты нижнего белья'
+                },
+                {
+                    category: 'Белье в стиле "спорт"'
+                },
+                {
+                    category: 'Термобелье'
+                },
+                {
+                    category: 'Корсеты'
+                },
+                {
+                    category: 'Эротическое белье'
                 },
             ],
         },
@@ -354,34 +465,22 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Раздельные'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Слитные'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Пляжная одежда'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Парео'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Бюстгальтеры'
                 },
                 {
-                    category: 'Длинные'
-                },
-                {
-                    category: 'Костюмы'
-                },
-                {
-                    category: 'Сарафаны'
-                },
-                {
-                    category: 'Летние'
-                },
-                {
-                    category: 'Короткие'
+                    category: 'Трусы'
                 },
             ],
         },
@@ -391,7 +490,7 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Классические'
                 },
                 {
                     category: 'Офисные'
@@ -428,34 +527,94 @@ let point =
             img: false,
             category: [
                 {
-                    category: 'Повседневные'
+                    category: 'Бейсболки'
                 },
                 {
-                    category: 'Офисные'
+                    category: 'Береты'
                 },
                 {
-                    category: 'Трикотажные'
+                    category: 'Шарфы, снуды'
                 },
                 {
-                    category: 'Коктейльные'
+                    category: 'Шапки, комплекты'
                 },
                 {
-                    category: 'Вечерние'
+                    category: 'Маски'
                 },
                 {
-                    category: 'Длинные'
+                    category: 'Повязки'
                 },
                 {
-                    category: 'Костюмы'
+                    category: 'Гетры'
                 },
                 {
-                    category: 'Сарафаны'
+                    category: 'Перчатки и варежки'
                 },
                 {
-                    category: 'Летние'
+                    category: 'Митенки'
                 },
                 {
-                    category: 'Короткие'
+                    category: 'Пледы'
+                },
+                {
+                    category: 'Ремни, пояса'
+                },
+                {
+                    category: 'Сумки, клатчи'
+                },
+                {
+                    category: 'Платки, палантины'
+                },
+                {
+                    category: 'Обувь'
+                },
+                {
+                    category: 'Очки'
+                },
+                {
+                    category: 'Для волос'
+                },
+                {
+                    category: 'Заколки'
+                },
+                {
+                    category: 'Диадемы'
+                },
+                {
+                    category: 'Колье, цепочки, бусы, ожерелья'
+                },
+                {
+                    category: 'Кольца'
+                },
+                {
+                    category: 'Браслеты'
+                },
+                {
+                    category: 'Комплекты, серьги, каффы'
+                },
+                {
+                    category: 'Броши'
+                },
+                {
+                    category: 'Перчатки ажурные'
+                },
+                {
+                    category: 'Товары для взрослых'
+                },
+                {
+                    category: 'Портупеи'
+                },
+                {
+                    category: 'Карновальные маски'
+                },
+                {
+                    category: 'Карновальные аксессуары'
+                },
+                {
+                    category: 'Зонты'
+                },
+                {
+                    category: 'Парики'
                 },
             ],
         },
