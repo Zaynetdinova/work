@@ -3,7 +3,7 @@
   @import 'components/navCatalog';
   @import 'components/filter';
   .wrapper-catalog {
-    padding: 0 15px;
+    padding: 0 20px 1000px 20px;
   }
   .wrapper-pagination {
     display: flex;
@@ -23,7 +23,6 @@
     width: 223px;
     position: absolute;
     height: 100%;
-    z-index: 3;
     .points {
       width: 100%;
     }
@@ -31,6 +30,11 @@
       padding: 10.5px 10px 10.5px 13px;
       .title {
         margin: 0;
+        text-transform: none;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #555555;
       }
     }
     .categories {

@@ -19,11 +19,15 @@ export function pagination() {
 export function number() {
     return `
         <div class="number">
-            <span>1</span>
-            <span>...</span>
-            <span>3 4 5</span>
-            <span>...</span>
-            <span>315</span>
+            <ul>
+                <li><span>1</span></li>
+                <li><span>...</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+                <li><span>...</span></li>
+                <li><span>315</span></li>
+            </ul>
         </div>
     `
 }
