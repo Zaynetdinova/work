@@ -7,13 +7,14 @@ import img4 from "../../../images/bestsellers/1/img4.png";
 import img5 from "../../../images/bestsellers/1/img5.png";
 import img6 from "../../../images/bestsellers/1/img6.png";
 import Swiper from 'swiper/bundle'
+import {sidebarChildren} from './js/sidebarChildren'
 
 export class CategoriesChildren extends Component {
     static className = 'CategoriesChildren'
     constructor($root) {
         super($root, {
             name: 'CategoriesChildren',
-            listeners: []
+            listeners: ['click']
         });
     }
     slider() {
@@ -72,6 +73,10 @@ export class CategoriesChildren extends Component {
     toHTML() {
         return categoriesChildren(woman)
     }
+
+    onClick(e) {
+        sidebarChildren(e)
+    }
 }
 
 
@@ -90,6 +95,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman2',
@@ -99,6 +105,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman3',
@@ -108,6 +115,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman4',
@@ -117,6 +125,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman5',
@@ -126,6 +135,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman6',
@@ -135,6 +145,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman7',
@@ -144,6 +155,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman8',
@@ -155,6 +167,7 @@ let woman =  {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
 
     ],

@@ -16,14 +16,12 @@ export function sidebarPoint(point, arrow = '') {
                 </div>
             </div>
                 
-            <hr class="line-white">
-            
+            <hr class="line-white">           
            
             <div class='categories ${ subcategory ? 'main-sub-category' : ''}' id=${item.id}>
                 ${sidebarChoice(category, subcategory, arrow)}
             </div> 
-        </article>
-        
+        </article>        
     `
   })
   return `${items.join('')}`

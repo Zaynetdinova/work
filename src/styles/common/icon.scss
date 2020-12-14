@@ -1,7 +1,7 @@
 .Icon-img {
   display: grid;
-  grid-template: repeat(auto-fit, minmax(87px, 1fr)) / repeat(auto-fit, minmax(55px, 1fr));
-  grid-gap: 30px 30px;
+  grid-template: repeat(auto-fit, minmax(70px, 1fr)) / repeat(auto-fit, minmax(55px, 1fr));
+  grid-gap: 22px 30px;
   margin: 0 auto;
   .box {
     display: flex;
@@ -29,13 +29,10 @@
       margin-top: 12px;
     }
   }
-  @media (max-width: 768px) {
-    grid-gap: 30px 70px;
+  @media (max-width: 414px) {
+    grid-gap: 22px 17px;
   }
-  @media (max-width: 600px) {
-    grid-gap: 30px 30px;
-  }
-  @media (max-width: 340px) {
-    grid-gap: 30px 20px;
+  @media (max-width: 320px) {
+    grid-gap: 22px 12px;
   }
 }

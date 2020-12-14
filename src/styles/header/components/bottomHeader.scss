@@ -52,10 +52,10 @@
   .logo {
     display: flex;
     align-items: center;
-
+    margin-right: 53px;
     &-img {
-      margin-right: 53px;
       height: 100%;
+      cursor: pointer;
     }
   }
 
@@ -73,7 +73,7 @@
     .burger-menu {
       margin-right: 10px;
     }
-    .logo-img {
+    .logo {
       margin-right: 30px;
     }
   }
@@ -95,9 +95,11 @@
     .wrapper-b {
       padding: 0;
     }
+    .logo {
+      margin-right: 0;
+    }
     .logo-img {
       height: 27px;
-      margin-right: 0;
     }
 
   }

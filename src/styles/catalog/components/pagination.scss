@@ -1,0 +1,59 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .wrapper-button-pagination {
+    display: flex;
+
+    .next,
+    .prev {
+      display: flex;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      cursor: pointer;
+    }
+
+    .prev {
+      border-radius: 4px 0 0 4px;
+      padding: 8.5px 90px 8.5px 13px;
+    }
+
+    .next {
+      border-radius: 0 4px 4px 0;
+      border-left: none;
+      padding: 8.5px 13px 8.5px 90px;
+    }
+
+    .arrow-prev,
+    .arrow-next {
+      background: url("../images/icons/arrow2.svg") no-repeat;
+      width: 10px;
+      height: 10px;
+    }
+
+    .arrow-prev {
+      transform: rotate(-180deg);
+      margin-right: 70px;
+    }
+
+    .arrow-next {
+      margin-left: 70px;
+    }
+
+    .text {
+      font-size: 15px;
+      line-height: 17px;
+      color: #3D3D3C;
+    }
+  }
+}
+
+.number {
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+    list-style: none;
+  }
+}

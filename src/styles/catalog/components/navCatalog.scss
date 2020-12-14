@@ -1,0 +1,18 @@
+.navCatalog {
+  padding-top: 10px;
+  .nav {
+    display: flex;
+  }
+  .nav-text {
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3C;
+    text-decoration: none;
+    border-bottom: 0.5px dashed #555555;
+    &:hover {
+      color: #EE3434;
+      border-bottom: 0.5px dashed #EE3434;
+    }
+  }
+}

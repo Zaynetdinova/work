@@ -4,7 +4,11 @@ import {Header} from '../components/header/Header'
 import {Footer} from '../components/footer/Footer'
 import {eventGlobal} from '../core/eventGlobal'
 import {openSidebar} from '../core/utils/openSidebar'
+
 import {CategoriesView} from '../components/categoriesView/categoriesView'
+
+import {Catalog} from "../components/catalog/Catalog";
+
 
 
 export class ViewCategoriesIndex extends Page{
@@ -12,7 +16,8 @@ export class ViewCategoriesIndex extends Page{
 		this.app = new OptMoyo( {
 			components: [
 				Header,
-				CategoriesView,
+				// CategoriesView,
+				Catalog,
 				Footer,
 			]
 		})

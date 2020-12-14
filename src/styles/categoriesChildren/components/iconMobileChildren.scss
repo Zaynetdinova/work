@@ -1,0 +1,129 @@
+@import '../../color';
+@import '../../var';
+
+.Icon-children {
+  padding-top: 34px;
+
+  .title-icon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .link-children {
+    display: flex;
+    align-items: center;
+    padding: 0 0 27px 0;
+
+
+  }
+  .wrap-span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .img-baby {
+    background-image: url("../images/icons/baby.svg");
+  }
+
+  .img-girl {
+    background-image: url("../images/icons/girl.svg");
+  }
+
+  .item {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 11px;
+
+    text-transform: uppercase;
+
+    color: #555555;
+  }
+  .month {
+
+    font-size: 9px;
+    line-height: 140%;
+    color: #777777;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .content-icon-girl {
+    display: none;
+  }
+
+  .content-icon-baby {
+    display: block;
+  }
+  .content-icon {
+    margin-top: 50px;
+  }
+
+  .hr {
+    width: 100%;
+    height: 4px;
+    background: #D9D9D9;
+    border: none;
+  }
+
+  .hr-children-baby {
+    background: #AB064E;
+  }
+
+
+  &.children-baby {
+    .img-baby {
+      background-image: url("../images/icons/icon_menu_newborn.svg");
+    }
+    .content-icon-baby {
+      display: block;
+    }
+
+    .hr-children-baby {
+      background: #AB064E;
+    }
+  }
+
+  &.children-girl {
+    .img-girl {
+      background-image: url("../images/icons/icon_menu_girl.svg");
+    }
+    .content-icon-baby {
+      display: none;
+    }
+    .content-icon-girl {
+      display: block;
+    }
+
+    .hr-children-baby {
+      background: #D9D9D9;
+    }
+
+    .hr-children-girl {
+      background: #AB064E;
+    }
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    .content-icon {
+      margin-top: 40px;
+    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 35px;
+    .content-icon {
+      margin-top: 30px;
+    }
+  }
+}

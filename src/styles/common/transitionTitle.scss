@@ -1,4 +1,4 @@
-.TransitionWrapper {
+
   .transitionWrapper {
     font-size: 12px;
     line-height: 14px;
@@ -24,10 +24,16 @@
       color: #3D3D3C;
       margin-left: 4px;
     }
+    @media (max-width: 1024px) {
+      padding: 10px 0;
+    }
+    @media (max-width: 414px) {
+      padding: 10px 15px;
+    }
   }
 
   .titleWrapper {
-    padding: 7px 0 20px;
+    padding: 0 0 20px;
     display: flex;
     align-items: baseline;
     letter-spacing: 0.05em;
@@ -44,7 +50,13 @@
       line-height: 13px;
       color: #777777;
     }
+    @media (max-width: 1024px) {
+      padding: 0 0 14px;
+    }
+    @media (max-width: 414px) {
+      padding: 0 15px 14px 15px;
+    }
   }
-}
+
 
 

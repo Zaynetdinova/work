@@ -16,8 +16,9 @@
 @import './common/icon';
 @import './common/transitionTitle';
 @import './categoriesChildren/categoriesChildren';
-@import './common/childrenSidebar';
+@import './categoriesChildren/components/childrenSidebar';
 @import './categoriesView/categoriesView';
+@import './catalog/catalog';
 
 
 * {margin: 0; padding: 0;}

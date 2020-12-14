@@ -1,0 +1,66 @@
+.Catalog {
+  @import 'components/pagination';
+  @import 'components/navCatalog';
+  @import 'components/filter';
+  @import 'components/filter-choice';
+  .wrapper-catalog {
+    padding: 0 20px 10000px 20px;
+  }
+  .wrapper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  .wrapper-filter {
+    margin-top: 36px;
+  }
+  .titleWrapper {
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pages {
+    display: flex;
+    align-items: center;
+    .select {
+      display: flex;
+      cursor: pointer;
+    }
+    .arrow {
+      transform: rotate(90deg);
+      margin: 0 5px;
+    }
+  }
+  .sidebar-page-categories {
+    margin: 0;
+    padding: 0;
+    width: 223px;
+    position: absolute;
+    height: 100%;
+    .points {
+      width: 100%;
+    }
+    .point {
+      padding: 10.5px 10px 10.5px 13px;
+      .title {
+        margin: 0;
+        text-transform: none;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #555555;
+      }
+    }
+    .categories {
+      padding: 2px 10px 1px 13px;
+    }
+    .choice {
+      line-height: 14px;
+      padding: 11px 0 9px 0;
+      font-size: 13px;
+    }
+  }
+}
