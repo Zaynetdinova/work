@@ -37,8 +37,9 @@
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     cursor: pointer;
+    width: 100%;
+    max-width: 224px;
 
     .box-img {
       display: flex;
@@ -53,21 +54,21 @@
       .line {
         border-left: 2px solid #C8C8C8;
         height: 52px;
-        margin-right: 18px;
+        margin-right: 18.45px;
       }
       .text {
         color: #3D3D3C;
         .title {
           font-weight: bold;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 100%;
-
+          margin-bottom: 7px;
           text-transform: capitalize;
 
         }
         .description {
           font-size: 13px;
-          line-height: 140%;
+          line-height: 100%;
         }
       }
     }
@@ -101,7 +102,6 @@
       }
       .info {
         .line {
-          height: 36px;
           margin-right: 14px;
         }
       }
@@ -140,11 +140,10 @@
           }
 
           .description {
-            font-size: 11px;
+            font-size: 12px;
           }
         }
         .line {
-          height: 25px;
           margin-right: 10px;
         }
       }
@@ -161,7 +160,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 0;
-      padding: 0 20px;
+      //padding: 0 20px;
       align-items: flex-start;
       .caption {
         font-size: 12px;

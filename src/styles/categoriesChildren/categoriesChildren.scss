@@ -12,6 +12,9 @@
   .wrap-ImgChildren {
     display: none;
   }
+  .wrap-card3 {
+    padding-top: 60px;
+  }
   @media (max-width: $tablet-breakpoint) {
     .wrap-ImgChildren {
       display: block;
@@ -44,12 +47,13 @@
 }
 .wrap-card {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .wrap-card-2 {
   padding-bottom: 23px;
 }
 .wrap-partnerOffers {
-  margin-top: -50px;
+
   padding-bottom: 44px;
 }
 .wrapper-categories {
@@ -74,8 +78,18 @@
 @media (max-width: $tablet-breakpoint) {
   .banner-video {
     max-height: 426px;
+    padding: 0 15px;
   }
   .wrapper-categories {
+    padding: 0;
+  }
+  .wrap-card {
+    padding: 60px 15px;
+  }
+  .wrap-card-2 {
+    padding: 0 15px;
+  }
+  .wrap-partnerOffers {
     padding: 0 15px;
   }
   .sidebar-page-categories {
@@ -99,12 +113,13 @@
 @media (max-width: $width-414) {
   .banner-video {
     max-height: 177px;
+    padding: 0;
   }
   .wrapper-categories {
     padding: 0;
   }
   .wrap-card {
-    padding: 50px 15px 0 15px;
+    padding: 50px 15px 50px 15px;
   }
   .wrap-card-2 {
     padding: 0 15px 100px 15px;

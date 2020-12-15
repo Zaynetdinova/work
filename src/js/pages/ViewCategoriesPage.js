@@ -7,6 +7,7 @@ import {openSidebar} from '../core/utils/openSidebar'
 import {CategoriesWomen} from '../components/categoriesWomen/CategoriesWomen'
 
 
+
 export class ViewCategoriesPage extends Page{
 	getRoot() {
 		this.app = new OptMoyo( {
