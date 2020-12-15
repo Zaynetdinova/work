@@ -6,6 +6,10 @@
   .wrapper-catalog {
     padding: 0 20px 10000px 20px;
   }
+
+  .flex-wrap {
+    display: flex;
+  }
   .wrapper-pagination {
     display: flex;
     align-items: center;
@@ -35,10 +39,10 @@
     }
   }
   .sidebar-page-categories {
-    margin: 0;
+    position: relative;
+    margin-right: 20px;
     padding: 0;
     width: 223px;
-    position: absolute;
     height: 100%;
     .points {
       width: 100%;
@@ -62,5 +66,14 @@
       padding: 11px 0 9px 0;
       font-size: 13px;
     }
+  }
+
+  .cards-wrapper {
+    width: 100%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1vw;
   }
 }
