@@ -45,4 +45,19 @@
       letter-spacing: 0.05em;
     }
   }
+
+  .wrapper-choice {
+    display: none;
+  }
+
+  .open-category-filter {
+    .wrapper-choice {
+      display: block;
+    }
+
+
+      .arrow {
+        transform: rotate(270deg);
+      }
+  }
 }
