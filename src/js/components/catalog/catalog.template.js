@@ -4,39 +4,59 @@ import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./js/navCatalog";
 import {filter} from "./js/filter";
 import arrow from "../../../images/icons/arrow2.svg"
+import img1 from '../../../images/bestsellers/1/img1.png'
+import img2 from '../../../images/bestsellers/1/img2.png'
+import img3 from '../../../images/bestsellers/1/img3.png'
+import img4 from '../../../images/bestsellers/1/img4.png'
+import img5 from '../../../images/bestsellers/1/img5.png'
+import img6 from '../../../images/bestsellers/1/img6.png'
+import {card} from '../common/commonCard/card'
 
 
 export function catalog()  {
     return `
-        <div class="wrapper-catalog">
+    <div class="wrapper-catalog">
             ${transitionTitleCatalog(catalogCategory)}
+            
             <div class="wrapper-pagination">
                 ${titleCatalog(catalogCategory)}
                 ${pagination()}
                 ${number()}
             </div>
-            <div class="flex-wrap">	
-				<div class="sidebar-page-categories">
-                    <div class="points">				
-                        ${sidebarPoint(point,'notArrow')}
-                    </div>
-                    <div class="wrapper-filter">${filter()}</div>                    
-				</div>
-				<div class="content-page-categories">
-				    <div class="container">
-				        ${navCatalog(item)}
-				        <div class="pages">
-				            <div class="select">
-				                <div>На странице</div>
-				                <img class="arrow" src="${arrow}" alt="">
+            
+        <div class="flex-wrap">	
+            
+            <section class="sidebar-page-categories">
+                <div class="points">				
+                    ${sidebarPoint(point,'notArrow')}
+                </div>
+                <div class="wrapper-filter">${filter()}</div>                    
+            </section>
+			
+			      <section class="cards-wrapper">
+                 
+                    <div class="container">
+                        ${navCatalog(item)}
+                        <div class="pages">
+                            <div class="select">
+                                <div>На странице</div>
+                                <img class="arrow" src="${arrow}" alt="">
                             </div>
-				            
-				            <span>100</span>
+                        
+                            <span>100</span>
                         </div>				      
                     </div>				  
-    			</div>
-  			</div>                  
-        </div>
+                 
+                 
+			           <div class="cards">
+                    ${woman.data.map(i => {
+                    return `
+                    ${card(i)}
+                    `}).join('')}
+                 </div>
+            </section>
+        </div>                  
+    </div>
     `
 }
 
@@ -119,3 +139,82 @@ let item = [
     },
 ]
 
+
+const woman = {
+    data: [
+        {
+            id: 'woman1',
+            img: img1,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            banner: 'НОВИНКА',
+            bannerPosition: 'bottom',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman2',
+            img: img2,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman3',
+            img: img3,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman4',
+            img: img4,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman5',
+            img: img5,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman6',
+            img: img6,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman7',
+            img: img5,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+        {
+            id: 'woman8',
+            img: img6,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+        },
+    ],
+}
