@@ -2,7 +2,7 @@ import {titleCatalog, transitionTitleCatalog} from "./js/transitionTitleCatalog"
 import {number, pagination} from "./js/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./js/navCatalog";
-import {filter} from "./js/filter";
+import {filter} from "./view/filter";
 import arrow from "../../../images/icons/arrow2.svg"
 import img1 from '../../../images/bestsellers/1/img1.png'
 import img2 from '../../../images/bestsellers/1/img2.png'
@@ -35,17 +35,19 @@ export function catalog()  {
 			
 			      <section class="cards-wrapper">
                  
-                    <div class="container">
-                        ${navCatalog(item)}
-                        <div class="pages">
-                            <div class="select">
-                                <div>На странице</div>
-                                <img class="arrow" src="${arrow}" alt="">
-                            </div>
-                        
-                            <span>100</span>
-                        </div>				      
-                    </div>				  
+                <div class="container">
+                    ${navCatalog(item)}
+                    <div class="pages">
+                        <div class="select">
+                            <div>На странице</div>
+                            <img class="arrow" src="${arrow}" alt="">
+                        </div>
+                    
+                        <span>100</span>
+                    </div>				      
+                </div>	
+                
+                <div id="choice-filter"></div>			  
                  
                  
 			           <div class="cards">
