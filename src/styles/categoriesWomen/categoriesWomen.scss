@@ -2,7 +2,7 @@
 @import '../var';
 
 .CategoriesWomen {
-
+@import "banner";
   .wrap-IconImg {
     display: none;
   }
@@ -13,7 +13,7 @@
   @media (max-width: $tablet-breakpoint) {
     .wrap-IconImg {
       display: block;
-      padding:  0 0 45px 0;
+      padding:  45px 15px 0 15px;
     }
   }
 }

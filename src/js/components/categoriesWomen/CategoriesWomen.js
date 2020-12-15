@@ -69,6 +69,22 @@ export class CategoriesWomen extends Component {
 
 		let womanSwiper = new Swiper('.bestseller-goods', options)
 		let womenSwiper2 = new Swiper('.bestseller-goods22', options)
+		let bannerBlock = new Swiper('.swiper-container4', {
+			slidesPerView: 1.9,
+			slidesPerGroup: 1,
+			centeredSlides: true,
+			loop: true,
+			initialSlide: 1,
+
+			breakpoints: {
+				321: {
+					slidesPerView: 2.5,
+				},
+				415: {
+					slidesPerView: 3,
+				}
+			}
+		})
 	}
 
 	toHTML() {

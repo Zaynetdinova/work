@@ -31,6 +31,8 @@ import img21 from '../../../images/bestsellers/1/img4.png'
 import img22 from '../../../images/bestsellers/1/img5.png'
 import img23 from '../../../images/bestsellers/1/img6.png'
 
+import {bannerBlock} from "./js/banner";
+
 export function categoriesWomen(woman) {
 	return `
 		<div class="wrapper-categories">	
@@ -45,20 +47,22 @@ export function categoriesWomen(woman) {
 						<video class="video" autoplay muted loop src=${video} </video>
 					</div>
 					<div class="wrap-IconImg">${IconImg(item)}</div>
-					<div class="wrap-card">
-						${commonCard(woman, 'price')}
+					<div class="wrap-card Moyomoda-Block BannerBlock">
+						${bannerBlock()}
 					</div>
 					<div class="wrap-partnerOffers">
 						${partnerOffers()}
 					</div>
 					<div class="wrap-card-2">
 						${commonCard(woman2, 'price')}
-					</div>	
+					</div>
     			</div>
   			</div>
   		</div>
 	`
 }
+
+// ${commonCard(woman, 'price')}
 
 let pageForWomen = [
 	{
@@ -138,7 +142,6 @@ let item = [
 		title: 'акции'
 	}
 ]
-
 
 let woman2 =  {
 	_id: 'goods',
@@ -231,10 +234,5 @@ let woman2 =  {
 
 	],
 }
-
-
-// <div class="banner-video">
-// 	<video class="video" autoplay muted loop src=${video}  </video>
-// </div>
 
 

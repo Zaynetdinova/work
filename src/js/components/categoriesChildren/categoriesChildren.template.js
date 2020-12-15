@@ -26,7 +26,7 @@ export function categoriesChildren(woman) {
 							${IconChildren()}
 						</div>
 						
-						<div class="wrap-card">
+						<div class="wrap-card3">
 							${commonCard(woman, 'price')}
 						</div>
 						<div class="wrap-partnerOffers">
