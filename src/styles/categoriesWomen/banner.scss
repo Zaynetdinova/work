@@ -70,11 +70,26 @@
   }
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../images/moyo/6_1024.png");
-    //background-position: 50% 57%;
+    background-position: 50% 53%;
+    .card {
+      .box-img {
+        padding-bottom: 141%;
+      }
+    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+
+    background-position: 50% 49%;
+    .card {
+      .box-img {
+        padding-bottom: 147%;
+      }
+    }
   }
 
   @media (max-width: $with-767) {
-    background-size: auto;
+    background-position: 50% 54%;
+    background-size: 220% 46%;
     .card {
       .img {
         height: 270px;
