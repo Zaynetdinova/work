@@ -4,7 +4,7 @@
 .BannerBlock {
 
   background-image: url("../images/moyo/6.png");
-  background-position: 50% 56%;
+  background-position: 50% 53%;
   background-size: contain;
 
   .root {
@@ -47,7 +47,7 @@
     }
     &:hover {
       .line {
-        border-left: 2px solid #DF2B2B;
+        border-left: 2px solid #C8C8C8;
       }
       .text {
         .title {
@@ -58,7 +58,7 @@
   }
 
   @media (max-width: 1440px) {
-    background-position: 50% 60%;
+
     .card {
       .box-img {
         padding-bottom: 151%;
@@ -70,11 +70,9 @@
   }
   @media (max-width: $tablet-breakpoint) {
     background-image: url("../images/moyo/6_1024.png");
-    background-position: 50% 57%;
+    //background-position: 50% 57%;
   }
-  @media (max-width: 1000px) {
-    background-position: 50% 50%;
-  }
+
   @media (max-width: $with-767) {
     background-size: auto;
     .card {
