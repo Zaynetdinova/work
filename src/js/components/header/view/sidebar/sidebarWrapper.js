@@ -45,7 +45,8 @@ let point =
       category: [
         {
           id: 'dress',
-          category: 'Платья'
+          category: 'Платья',
+          link: '/#categories-view'
         },
         {
           id: 'jersey',

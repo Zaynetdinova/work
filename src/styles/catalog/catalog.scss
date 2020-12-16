@@ -4,7 +4,7 @@
   @import 'components/filter';
   @import 'components/filter-choice';
   .wrapper-catalog {
-    padding: 0 20px 10000px 20px;
+    padding: 0 20px 330px 20px;
   }
 
   .flex-wrap {
@@ -22,21 +22,37 @@
   .titleWrapper {
     padding: 0;
   }
+  .transitionWrapper .title a {
+    color: #777777;
+    &:hover {
+      color: #3D3D3C;
+    }
+  }
+  .transitionWrapper .title2 a {
+    color: #3D3D3C;
+  }
   .container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
   }
   .pages {
     display: flex;
     align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3C;
     .select {
       display: flex;
       cursor: pointer;
     }
     .arrow {
       transform: rotate(90deg);
-      margin: 0 5px;
+      margin: 0 5px 2px 5px;
     }
+
   }
   .sidebar-page-categories {
     position: relative;
@@ -73,8 +89,8 @@
   }
   .cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     padding-top: 36px;
   }
 
@@ -115,28 +131,49 @@
     }
   }
 
-  @media (max-width: 1210px) {
+  @media (max-width: 1024px) {
+    .wrapper-catalog {
+      padding: 0 15px 310px 15px;
+    }
+    .transitionWrapper {
+      padding: 10px 0;
+    }
     .cards {
-      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
     }
   }
-  @media (max-width: 1454px) {
-    .cards {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  @media (min-width: 1920px) {
-    .cards {
-      grid-template-columns: repeat(5, 1fr);
+  @media (max-width: 756px) {
+    .container {
+      display: none;
     }
   }
 
+
+  @media (min-width: 700px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 960px) {
+    .cards {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media (min-width: 1025px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 1040px) {
+    .cards {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
   @media (min-width: 2100px) {
     .cards {
       grid-template-columns: repeat(6, 1fr);
     }
   }
-
   @media (min-width: 2220px) {
     .cards {
       grid-template-columns: repeat(7, 1fr);

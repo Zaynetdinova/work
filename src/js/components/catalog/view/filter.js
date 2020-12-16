@@ -27,7 +27,8 @@ export function filter() {
 										<hr class="hr-material">
 										<div class="wrapper-choice" id="filter-choice">
 												${filterChoice(categories)}
-										</div>
+												<hr class="hr-material">
+										</div>								
 									</div>
 								`
 							}).join('')	}
@@ -230,5 +231,6 @@ let filters = [
 				number: '(888)',
 				id: 'category35'
 			},
-		]}
+		]},
+
 ]
