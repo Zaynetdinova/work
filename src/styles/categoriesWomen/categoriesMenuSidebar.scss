@@ -21,7 +21,8 @@
     }
     .categories {
       padding: 2px 10px 1px 13px;
-      overflow-y: auto;
+      overflow-y: scroll;
+      max-height: 374px;
     }
   }
 }
