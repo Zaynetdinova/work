@@ -47,10 +47,9 @@ export function catalog()  {
                     </div>				      
                 </div>	
                 
-                <div id="selected-filters"></div>			  
+                <div id="selected-filters-js" class="selected-filters"></div>			  
                  
-                 
-			           <div class="cards">
+                <div class="cards">
                     ${woman.data.map(i => {
                     return `
                     ${card(i)}

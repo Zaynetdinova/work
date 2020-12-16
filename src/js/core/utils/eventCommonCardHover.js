@@ -30,7 +30,7 @@ export function eventCommonCardHover() {
 
   window.addEventListener('resize', () => {
     const clientWidth = document.documentElement.clientWidth
-    console.log(clientWidth)
+
     if(clientWidth < minWidthNotSlider) {
       cards.forEach((item) => {
         item.removeEventListener('mouseenter', eventFunc)
@@ -44,8 +44,6 @@ export function eventCommonCardHover() {
 }
 
 function viewMaterial(id, type) {
-  console.log('id', id)
-
   const comWidth = document.documentElement.clientWidth
   const card = document.querySelector(`#${id}`)
   const test = card.closest('figure')
