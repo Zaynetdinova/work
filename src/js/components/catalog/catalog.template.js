@@ -47,7 +47,7 @@ export function catalog()  {
                     </div>				      
                 </div>	
                 
-                <div id="choice-filter"></div>			  
+                <div id="selected-filters"></div>			  
                  
                  
 			           <div class="cards">
