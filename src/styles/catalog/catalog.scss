@@ -81,20 +81,36 @@
 
   .selected-filters {
     display: flex;
-
+    flex-wrap: wrap;
     .choice-filter {
       display: flex;
       align-items: center;
       background: #F3F2F0;
       border-radius: 30px;
-      padding: 12px;
+      padding: 5px 5px 5px 10px;
+      position: relative;
+      bottom: -20px;
+      margin-right: 9px;
+      margin-bottom: 9px;
 
       .text {
-
+        font-size: 12px;
+        line-height: 14px;
+        color: #555555;
       }
 
       .close {
-        margin-left: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 11px;
+        transform: rotate(-45deg);
+        color: #FFFFFF;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: #D9D9D9;
       }
     }
   }
@@ -106,24 +122,24 @@
   }
   @media (max-width: 1454px) {
     .cards {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
   }
-  @media (min-width: 1783px) {
+  @media (min-width: 1920px) {
     .cards {
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 
   @media (min-width: 2100px) {
     .cards {
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(6, 1fr);
     }
   }
 
   @media (min-width: 2220px) {
     .cards {
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(7, 1fr);
     }
   }
 }
