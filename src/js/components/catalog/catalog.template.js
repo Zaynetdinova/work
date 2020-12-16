@@ -154,6 +154,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman2',
@@ -163,6 +164,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman3',
@@ -172,6 +174,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman4',
@@ -181,6 +184,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman5',
@@ -190,6 +194,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman6',
@@ -199,6 +204,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman7',
@@ -208,6 +214,7 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
         },
         {
             id: 'woman8',
@@ -217,6 +224,79 @@ const woman = {
             oldPrice: '1 234,00 &#8381',
             newPrice: '-234,00 &#8381;',
             price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman9',
+            img: img1,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            banner: 'НОВИНКА',
+            bannerPosition: 'bottom',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman10',
+            img: img2,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman11',
+            img: img3,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman12',
+            img: img4,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman13',
+            img: img5,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman14',
+            img: img6,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
+        },
+        {
+            id: 'woman15',
+            img: img5,
+            title: 'Vittoria Vicci',
+            description: 'Наименование товара ',
+            oldPrice: '1 234,00 &#8381',
+            newPrice: '-234,00 &#8381;',
+            price: '1 243,00 &#8381; ',
+            sale: true
         },
     ],
 }

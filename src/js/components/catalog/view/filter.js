@@ -40,159 +40,194 @@ export function filter() {
 let filters = [
 	{title: 'Материал', id: 'material', categories: [
 			{
-				category: 'Хлопок (888)',
+				category: 'Хлопок',
+				number: '(888)',
 				id: 'material1',
 			},
 			{
-				category: 'Лен (888)',
+				category: 'Лен',
+				number: '(888)',
 				id: 'category2',
 			},
 			{
-				category: 'Шерсть (888)',
+				category: 'Шерсть',
+				number: '(888)',
 				id: 'category3',
 			},
 			{
-				category: 'Кашемир (888)',
+				category: 'Кашемир',
+				number: '(888)',
 				id: 'category4',
 			},
 			{
-				category: 'Вискоза (888)',
+				category: 'Вискоза',
+				number: '(888)',
 				id: 'category5',
 			},
 			{
-				category: 'Полиэстр (888)',
+				category: 'Полиэстр',
+				number: '(888)',
 				id: 'category6',
 			},
 			{
-				category: 'Нейлон (888)',
+				category: 'Нейлон',
+				number: '(888)',
 				id: 'category7',
 			},
 			{
-				category: 'Шёлк (888)',
+				category: 'Шёлк',
+				number: '(888)',
 				id: 'category8',
 			},
 		]},
 	{title: 'Цвет', id: 'color', categories: [
 			{
-				category: 'Белый (888)',
+				category: 'Белый',
+				number: '(888)',
 				id: 'category9',
-				color: ''
+				color: 'color'
 			},
 			{
-				category: 'Черно-белый (888)',
+				category: 'Черно-белый',
+				number: '(888)',
 				id: 'category10',
 				color: 'black-and-white'
 			},
 			{
-				category: 'Бежевый (888)',
+				category: 'Бежевый',
+				number: '(888)',
 				id: 'category11',
 				color: 'beige'
 			},
 			{
-				category: 'Серый (888)',
+				category: 'Серый',
+				number: '(888)',
 				id: 'category12',
 				color: 'grey'
 			},
 			{
-				category: 'Зеленый (888)',
+				category: 'Зеленый',
+				number: '(888)',
 				id: 'category13',
 				color: 'green'
 			},
 			{
-				category: 'Пурпурный (888)',
+				category: 'Пурпурный',
+				number: '(888)',
 				id: 'category14',
 				color: 'purple'
 			},
 			{
-				category: 'Мятный (888)',
+				category: 'Мятный',
+				number: '(888)',
 				id: 'category15',
 				color: 'mint'
 			},
 			{
-				category: 'Мульти (888)',
+				category: 'Мульти',
+				number: '(888)',
 				id: 'category16',
 				color: 'multi'
 			},
 		]},
 	{title: 'Размер', id: 'size', categories: [
 			{
-				category: '23/32 (888)',
+				category: '23/32',
+				number: '(888)',
 				id: 'category17'
 			},
 			{
-				category: '23/34 (888)',
+				category: '23/34',
+				number: '(888)',
 				id: 'category18'
 			},
 			{
-				category: '24/32 (888)',
+				category: '24/32',
+				number: '(888)',
 				id: 'category19'
 			},
 			{
-				category: '24/34 (888)',
+				category: '24/34',
+				number: '(888)',
 				id: 'category20'
 			},
 			{
-				category: '25 (888)',
+				category: '25',
+				number: '(888)',
 				id: 'category21'
 			},
 			{
-				category: '25/32 (888)',
+				category: '25/32',
+				number: '(888)',
 				id: 'category22'
 			},
 			{
-				category: '25/34 (888)',
+				category: '25/34',
+				number: '(888)',
 				id: 'category23'
 			},
 			{
-				category: '26 (888)',
+				category: '26',
+				number: '(888)',
 				id: 'category24'
 			},
 		]},
 	{title: 'Сезон', id: 'season',  categories: [
 			{
-				category: 'Демисезон (888)',
+				category: 'Демисезон',
+				number: '(888)',
 				id: 'category25'
 			},
 			{
-				category: 'Весна - Лето (888)',
+				category: 'Весна - Лето',
+				number: '(888)',
 				id: 'category26'
 			},
 			{
-				category: 'Осень - Зима (888)',
+				category: 'Осень - Зима',
+				number: '(888)',
 				id: 'category27'
 			},
 		]},
 	{title: 'Стиль', id: 'style', categories: [
 			{
-				category: 'Базовый (888)',
+				category: 'Базовый',
+				number: '(888)',
 				id: 'category28'
 			},
 			{
-				category: 'Деловой (888)',
+				category: 'Деловой',
+				number: '(888)',
 				id: 'category29'
 			},
 			{
-				category: 'Нарядный (888)',
+				category: 'Нарядный',
+				number: '(888)',
 				id: 'category30'
 			},
 			{
-				category: 'Повседневный (888)',
+				category: 'Повседневный',
+				number: '(888)',
 				id: 'category31'
 			},
 			{
-				category: 'Романтический (888)',
+				category: 'Романтический',
+				number: '(888)',
 				id: 'category32'
 			},
 			{
-				category: 'Сексуальный (888)',
+				category: 'Сексуальный',
+				number: '(888)',
 				id: 'category33'
 			},
 			{
-				category: 'Спортивный (888)',
+				category: 'Спортивный',
+				number: '(888)',
 				id: 'category34'
 			},
 			{
-				category: 'Ультрамодный (888)',
+				category: 'Ультрамодный',
+				number: '(888)',
 				id: 'category35'
 			},
 		]}

@@ -1,7 +1,7 @@
 export function filterChoice(item) {
 
 	const items = item.map((item) => {
-		const {id, color, category} = item
+		const {id, color, category, number} = item
 		return `
             <div class="wrapper-box">
                 <div class="filter-choice">
@@ -11,7 +11,7 @@ export function filterChoice(item) {
                             <div class="cont">
                                 ${color ? `<div class="color ${color}"></div>` : ''}
                                 
-                                <div class="title">${category}</div>
+                                <div class="title">${category} ${number}</div>
                             </div>
                         </label>
                         <div class="line"></div>
