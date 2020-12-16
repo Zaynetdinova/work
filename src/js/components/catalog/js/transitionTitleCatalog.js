@@ -8,7 +8,7 @@ export function transitionTitleCatalog(item) {
                 <span>/</span>
                 <span class="title"><a href=${item.link}>${item.title}</a></span>
                 <span>/</span>
-                <span class="title"><a href=${item.linkCategory}>${item.titleCategory}</a></span>                   
+                <span class="title2"><a href=${item.linkCategory}>${item.titleCategory}</a></span>                   
             </div>
                 
         `

@@ -39,7 +39,7 @@ export function catalog()  {
                     ${navCatalog(item)}
                     <div class="pages">
                         <div class="select">
-                            <div>На странице</div>
+                            <div class="page-title">На странице</div>
                             <img class="arrow" src="${arrow}" alt="">
                         </div>
                     
