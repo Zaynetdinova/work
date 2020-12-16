@@ -78,8 +78,17 @@
     padding-top: 36px;
   }
 
-
-  @media (min-width: 2000px) {
+  @media (max-width: 1210px) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1454px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 1783px) {
     .cards {
       grid-template-columns: repeat(6, 1fr);
     }
@@ -91,7 +100,7 @@
     }
   }
 
-  @media (min-width: 2200px) {
+  @media (min-width: 2220px) {
     .cards {
       grid-template-columns: repeat(8, 1fr);
     }
