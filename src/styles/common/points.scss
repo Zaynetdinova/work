@@ -15,6 +15,9 @@
     background: $baseColor;
     display: none;
 
+    overflow-y: scroll;
+    max-height: 374px;
+
     &.open {
       display: block;
     }
