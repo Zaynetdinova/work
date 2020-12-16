@@ -4,7 +4,7 @@ export function updateSelectedFilters(arrSelected) {
 		return `
 		<div class="choice-filter">
 			<div class="text">${item.text}</div>
-			<article id="delete-filter-js" data-_id="${item.id}" class="close">x</article>
+			<article id="delete-filter-js" data-_id="${item.id}" class="close">+</article>
 		</div>
 	`
 	}).join('')

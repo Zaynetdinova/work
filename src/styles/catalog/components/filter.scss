@@ -29,6 +29,11 @@
       display: flex;
       justify-content: space-between;
       padding: 10.5px 10px 10.5px 13px;
+      .title2 {
+
+        font-weight: 600;
+        font-size: 13px;
+      }
     }
     .arrow {
       transform: rotate(90deg);

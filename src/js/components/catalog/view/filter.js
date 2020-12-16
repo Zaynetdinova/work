@@ -21,7 +21,7 @@ export function filter() {
 								return `
 									<div id="parents-filter-js" data-_id=${id} class="box">
 											<article id="filter-catalog" class="wrapper-material">
-													<div class="title">${title}</div>
+													<div class="title2">${title}</div>
 													<img class="arrow" src="${arrow}" alt="arrow">
 											</article>
 										<hr class="hr-material">
