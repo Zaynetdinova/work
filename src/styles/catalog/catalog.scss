@@ -202,6 +202,7 @@
     height: 100%;
     .points {
       width: 100%;
+
     }
     .point {
       padding: 10.5px 10px 10.5px 13px;
@@ -347,6 +348,17 @@
         display: none;
       }
     }
+  }
+
+  .wrap-card {
+    max-width: calc(100vw - 283px);
+  }
+
+  @media (max-width: 1024px) {
+    .wrap-card {
+      max-width: 100%;
+    }
+
   }
 
 
