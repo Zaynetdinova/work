@@ -4,7 +4,7 @@
   @import 'components/filter';
   @import 'components/filter-choice';
   .wrapper-catalog {
-    padding: 0 20px 330px 20px;
+    padding: 0 20px 100px 20px;
   }
   .wrapper-number {
     display: none;
@@ -59,6 +59,11 @@
 
   .flex-wrap {
     display: flex;
+  }
+  .bottom-pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
   }
   .wrapper-pagination {
     display: flex;
@@ -192,6 +197,9 @@
 
   .cards-wrapper {
     width: 100%;
+    .wrap-card {
+      margin-top: 70px;
+    }
   }
   .cards {
     display: grid;
