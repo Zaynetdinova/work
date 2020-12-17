@@ -2,7 +2,6 @@ import {$} from '../../core/dom'
 
 export class OptMoyo {
   constructor(options) {
-    // this.$el = $(selector)
     this.components = options.components || []
   }
 
@@ -21,11 +20,7 @@ export class OptMoyo {
   }
 
   init() {
-    // this.$el.append(this.getRoot())
-
     this.components.forEach(component => component.init())
     this.components.forEach(component => component.slider())
-    this.components.forEach(component => component.functionAfterContent())
-
   }
 }

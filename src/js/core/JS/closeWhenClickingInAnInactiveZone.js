@@ -1,5 +1,4 @@
-// расширить функцию
-export function eventGlobal() {
+export function closeWhenClickingInAnInactiveZone() {
 	const inputSearch = document.querySelector('#desktop-search-js')
 
 	document.body.addEventListener('click', (e) => {
@@ -10,5 +9,3 @@ export function eventGlobal() {
 
 	})
 }
-
-

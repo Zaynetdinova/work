@@ -3,7 +3,7 @@ import video from '../../../video/2.mp4'
 import {childrenSidebar} from "../common/ChildrenSidebar";
 import {partnerOffers} from "../common/partnerOffers";
 import {commonCard} from '../common/commonCard/commonCards'
-import {IconChildren} from './iconChildren'
+import {IconChildren} from './view/iconChildren'
 
 
 export function categoriesChildren(woman) {

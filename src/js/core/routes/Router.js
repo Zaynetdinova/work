@@ -32,7 +32,7 @@ export class Router {
 			case 'categories':
 				Page = this.routes.viewCategoriesPage
 				break;
-			case 'categories-view':
+			case 'catalog':
 				Page = this.routes.viewCategoriesIndex
 				break;
 			case 'categories-children':

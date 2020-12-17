@@ -1,5 +1,4 @@
 import {Page} from '../core/Page'
-// import {$} from '../core/dom'
 import {Header} from '../components/header/Header'
 import {Main} from '../components/main/Main'
 import {OptMoyo} from '../components/OptMoyo/OptMoyo'
@@ -8,8 +7,6 @@ import {SharesBlock} from '../components/sharesBlock/sharesBlock'
 import {MoyomodaBlock} from '../components/moyomodaBlock/MoyomodaBlock'
 import {Bestsellers} from '../components/bestsellers/Bestsellers'
 import {Footer} from '../components/footer/Footer'
-import {eventGlobal} from '../core/eventGlobal'
-import {openSidebar} from '../core/utils/openSidebar'
 
 export class MainPage extends Page {
 	getRoot() {
@@ -25,15 +22,11 @@ export class MainPage extends Page {
   ]
 	})
 
-		window.userRegistry = true
-
-
 		return this.app.getRoot()
 	}
 
 	afterRender() {
-		openSidebar()
-		eventGlobal()
 		this.app.init()
+		super.afterRender()
 	}
 }

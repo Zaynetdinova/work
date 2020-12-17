@@ -1,4 +1,4 @@
-import {closeSidebarCloseMenu} from '../../../core/utils/openSidebar'
+import {closeSidebarCloseMenu} from '../../../core/JS/openSidebar'
 
 export function openMenu(type = '') {
 
