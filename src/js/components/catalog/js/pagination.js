@@ -20,7 +20,7 @@ export function number() {
     return `
         <div class="number">
             <div class="wrap-button">
-                <button class="button-prev"><div class="arrow-prev"></div></button>
+                <div class="button-prev"><div class="arrow-prev"></div></div>
             </div>
             <ul>
                 <li><span>1</span></li>
@@ -32,7 +32,7 @@ export function number() {
                 <li><span>315</span></li>
             </ul>
             <div class="wrap-button">
-                <button class="button-next"><div class="arrow-next"></div></button>
+                <div class="button-next"><div class="arrow-next"></div></div>
             </div>
         </div>
     `
