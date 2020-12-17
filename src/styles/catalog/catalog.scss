@@ -81,6 +81,7 @@
       text-transform: capitalize;
       color: #555555;
       display: none;
+      cursor: pointer;
     }
     .titleAndValue {
       display: flex;
@@ -138,6 +139,7 @@
     width: 100%;
     .openPage {
       background-color: #FDFDFD;
+      cursor: pointer;
       .q {
         font-size: 14px;
         line-height: 100%;
