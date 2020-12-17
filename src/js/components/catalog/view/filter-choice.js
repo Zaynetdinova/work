@@ -3,8 +3,7 @@ export function filterChoice(item) {
 	const items = item.map((item) => {
 		const {id, color, category, number} = item
 		return `
-            <div class="wrapper-box">
-                <div class="filter-choice">
+
                     <div class="checkbox-choice">
                         <input class="checkbox" type="checkbox" id="${id}" data-text="${category}"> 
                         <label for="${id}">
@@ -16,9 +15,6 @@ export function filterChoice(item) {
                         </label>
                         <div class="line"></div>
                     </div>
-                </div>
-            </div>
-                   
         `
 	})
 	return `${items.join('')}`

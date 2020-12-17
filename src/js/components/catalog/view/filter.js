@@ -26,10 +26,12 @@ export function filter() {
 												<img class="arrow" src="${arrow}" alt="arrow">
 											</article>
 										<hr class="hr-material">
-										<div class="wrapper-choice" id="filter-choice">
-												${filterChoice(categories)}
-												<hr class="hr-material">
-										</div>								
+										<div class="c">
+											<div class="wrapper-choice" id="filter-choice">
+													${filterChoice(categories)}										
+											</div>	
+											<hr class="hr-material">		
+										</div>				
 									</div>
 								`
 							}).join('')	}
