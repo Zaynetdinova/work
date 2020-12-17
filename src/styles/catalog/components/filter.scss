@@ -12,6 +12,10 @@
       line-height: 16px;
       letter-spacing: 0.05em;
     }
+
+    .mobile-title {
+      display: none;
+    }
     .cancel {
       display: flex;
       align-items: center;
@@ -49,6 +53,7 @@
       line-height: 16px;
       letter-spacing: 0.05em;
     }
+
     .noUi-horizontal {
       margin-top: 17px;
       height: 6px;
@@ -94,6 +99,7 @@
       outline: none;
       text-align: center;
     }
+
   }
 
   .wrapper-choice {
@@ -109,5 +115,19 @@
       .arrow {
         transform: rotate(270deg);
       }
+  }
+
+  @media (max-width: 1024px) {
+    .wrapper-title {
+      .title {
+        display: none;
+      }
+
+      .mobile-title {
+        display: block;
+      }
+    }
+
+
   }
 }

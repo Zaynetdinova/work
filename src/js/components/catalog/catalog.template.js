@@ -32,16 +32,16 @@ export function catalog()  {
                 <div class="button-popular">${Popular()}</div>
                 <div class="button-quantity">${Pages()}</div>
             </div>
-        <div class="flex-wrap">	
+            <div class="flex-wrap">	
             
             <section class="sidebar-page-categories">
                 <div class="points">				
                     ${sidebarPoint(point,'notArrow')}
                 </div>
-                <div class="wrapper-filter">${filter()}</div>                    
+                <div class="wrapper-filter mobile-filter" id="mobile-filter-js">${filter()}</div>                    
             </section>
 			
-			<section class="cards-wrapper">
+			      <section class="cards-wrapper">
                  
                 <div class="container">
                     ${navCatalog(item)}
