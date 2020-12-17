@@ -61,13 +61,9 @@ export function catalog()  {
                  <div class="bottom-pagination">                                             
                     ${pagination()}
                     ${number()}
-                </div>
-               
-
-            </section>
-            
-        </div>  
-                    
+                </div>               
+            </section>        
+        </div>                     
     </div>
     `
 }

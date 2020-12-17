@@ -22,8 +22,8 @@ export function filter() {
 								return `
 									<div id="parents-filter-js" data-_id=${id} class="box">
 											<article id="filter-catalog" class="wrapper-material">
-													<div class="title2">${title}</div>
-													<img class="arrow" src="${arrow}" alt="arrow">
+												<div class="title2">${title}</div>
+												<img class="arrow" src="${arrow}" alt="arrow">
 											</article>
 										<hr class="hr-material">
 										<div class="wrapper-choice" id="filter-choice">
@@ -33,8 +33,22 @@ export function filter() {
 									</div>
 								`
 							}).join('')	}
-							
-							<div id="price"></div>
+							<div id="parents-filter-js" data-_id='price' class="box">
+									<article id="filter-catalog" class="wrapper-material">
+										<div class="title2">Цена</div>
+										<img class="arrow" src="${arrow}" alt="arrow">
+									</article>
+									<hr class="hr-material">
+									<div class="wrapper-choice" id="filter-choice">
+									<div class="input-price">
+										<input class="min-price" type="text" placeholder="1$">
+										<div>–</div>
+										<input class="max-price" type="text" placeholder="888 888$">
+									</div>
+									<div id="price"></div>								
+									</div>
+							</div>
+						
             </div>
         </div>
     `
