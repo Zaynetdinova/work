@@ -37,6 +37,7 @@
     "@babel/polyfill": "^7.12.1",
     "firebase": "^8.0.2",
     "firebase-tools": "^8.16.2",
+    "nouislider": "^14.6.3",
     "siema": "^1.5.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^6.3.5"
