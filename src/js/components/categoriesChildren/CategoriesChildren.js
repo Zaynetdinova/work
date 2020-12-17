@@ -6,7 +6,6 @@ import img3 from "../../../images/bestsellers/1/img3.png";
 import img4 from "../../../images/bestsellers/1/img4.png";
 import img5 from "../../../images/bestsellers/1/img5.png";
 import img6 from "../../../images/bestsellers/1/img6.png";
-import Swiper from 'swiper/bundle'
 import {sidebarChildren} from './js/sidebarChildren'
 
 export class CategoriesChildren extends Component {
@@ -16,58 +15,6 @@ export class CategoriesChildren extends Component {
             name: 'CategoriesChildren',
             listeners: ['click']
         });
-    }
-    slider() {
-        const options = {
-            slidesPerView: 1.9,
-            spaceBetween: 15,
-            centeredSlides: false,
-            loop: false,
-            slidesOffsetAfter: 16,
-
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next-main',
-                prevEl: '.swiper-button-prev-main',
-            },
-            breakpoints: {
-
-                1200: {
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                },
-                1025: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 6,
-                    centeredSlides: false,
-                    loop: false,
-                    spaceBetween: 15,
-                },
-                768: {
-                    slidesPerView: 4,
-                    centeredSlides: false,
-                    loop: false,
-                    slidesOffsetAfter: 0,
-                },
-                700: {
-                    slidesPerView: 3,
-                    slidesOffsetAfter: 0,
-                },
-                600: {
-                    slidesPerView: 2.5,
-                },
-                374: {
-                    slidesPerView: 2.27,
-                }
-            }
-        }
-
-        let childrenSwiper = new Swiper('.bestseller-children', options)
     }
 
     toHTML() {

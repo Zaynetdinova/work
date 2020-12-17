@@ -3,13 +3,15 @@ import 'swiper/swiper-bundle.css';
 import {Router} from './core/routes/Router'
 import {MainPage} from './pages/MainPage'
 import {ViewCategoriesPage} from './pages/ViewCategoriesPage'
-import {ViewCategoriesIndex} from './pages/ViewCategoriesIndex'
+import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
+
+window.userRegistry = true
 
 new Router('#app', {
   mainPage: MainPage,
   viewCategoriesPage: ViewCategoriesPage,
-  viewCategoriesIndex: ViewCategoriesIndex,
+  viewCategoriesIndex: CatalogPage,
   viewCategoriesChildren: ViewCategoriesChildren,
 })
 

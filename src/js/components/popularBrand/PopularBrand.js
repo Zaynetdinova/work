@@ -12,7 +12,7 @@ export class PopularBrand extends Component {
   constructor($root) {
     super($root, {
       name: 'PopularBrand',
-      listeners: ['click']
+      listeners: []
     });
   }
 
@@ -38,9 +38,6 @@ export class PopularBrand extends Component {
   }
   toHTML() {
     return popularBrand(cards)
-  }
-
-  onClick(e) {
   }
 }
 

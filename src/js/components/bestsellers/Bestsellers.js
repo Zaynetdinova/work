@@ -1,5 +1,4 @@
 import {Component} from '../../core/Component'
-import Swiper from 'swiper/bundle'
 import {createBestsellers} from './bestsellers.template'
 
 import img1 from '../../../images/bestsellers/1/img1.png'
@@ -50,71 +49,6 @@ export class Bestsellers extends Component {
   toHTML() {
     return createBestsellers(cards)
   }
-
-  slider() {
-    const options = {
-      slidesPerView: 1.9,
-      spaceBetween: 15,
-      centeredSlides: false,
-      loop: false,
-      slidesOffsetAfter: 16,
-
-      on: {
-        slideChange: function () {
-         
-        },
-
-        init: function () {
-
-          if(this.slides.length >= 8) {
-
-          }
-        }
-      },
-
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next-main',
-        prevEl: '.swiper-button-prev-main',
-      },
-      breakpoints: {
-        1025: {
-          spaceBetween: 20,
-          slidesPerView: 6,
-        },
-        1024: {
-          slidesPerView: 6,
-          centeredSlides: false,
-          loop: false,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 4,
-          centeredSlides: false,
-          loop: false,
-          slidesOffsetAfter: 0,
-        },
-        700: {
-          slidesPerView: 3,
-          slidesOffsetAfter: 0,
-        },
-        600: {
-          slidesPerView: 2.5,
-        },
-        374: {
-          slidesPerView: 2.27,
-        }
-      }
-    }
-    let womanSwiper = new Swiper('.bestseller-woman', options)
-    let childSwiper = new Swiper('.bestseller-child', options)
-    let manSwiper = new Swiper('.bestseller-man', options)
-    let homeSwiper = new Swiper('.bestseller-home', options)
-    let toySwiper = new Swiper('.bestseller-toy', options)
-  }
-
 }
 
 const cards = {

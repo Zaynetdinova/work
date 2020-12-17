@@ -31,7 +31,7 @@ import img21 from '../../../images/bestsellers/1/img4.png'
 import img22 from '../../../images/bestsellers/1/img5.png'
 import img23 from '../../../images/bestsellers/1/img6.png'
 
-import {bannerBlock} from "./js/banner";
+import {bannerBlock} from "./view/banner";
 
 export function categoriesWomen(woman) {
 	return `
@@ -61,8 +61,6 @@ export function categoriesWomen(woman) {
   		</div>
 	`
 }
-
-// ${commonCard(woman, 'price')}
 
 let pageForWomen = [
 	{
