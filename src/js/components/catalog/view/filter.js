@@ -25,13 +25,10 @@ export function filter() {
 												<div class="title2">${title}</div>
 												<img class="arrow" src="${arrow}" alt="arrow">
 											</article>
-										<hr class="hr-material">
-										<div class="c">
-											<div class="wrapper-choice" id="filter-choice">
-													${filterChoice(categories)}										
-											</div>	
-											<hr class="hr-material">		
-										</div>				
+										
+										<div class="wrapper-choice" id="filter-choice">
+												${filterChoice(categories)}										
+										</div>															
 									</div>
 								`
 							}).join('')	}
@@ -40,7 +37,7 @@ export function filter() {
 										<div class="title2">Цена</div>
 										<img class="arrow" src="${arrow}" alt="arrow">
 									</article>
-									<hr class="hr-material">
+									
 									<div class="wrapper-choice" id="filter-choice">
 									<div class="input-price">
 										<input class="min-price" type="text" placeholder="1$">

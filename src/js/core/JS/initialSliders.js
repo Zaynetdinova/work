@@ -4,6 +4,7 @@ export function initialSliders() {
 	mainPageInitialSlider()
 	initialSliderWomanPage()
 	initialSliderChildrenPage()
+	initialSliderCatalog()
 }
 
 function mainPageInitialSlider() {
@@ -125,7 +126,6 @@ function initialSliderWomanPage() {
 
 	let womanSwiper = new Swiper('.bestseller-goods', options)
 	let womenSwiper2 = new Swiper('.bestseller-goods22', options)
-	let catalog = new Swiper('.bestseller-catalog',options)
 	let bannerBlock = new Swiper('.swiper-container4', {
 		slidesPerView: 1.9,
 		slidesPerGroup: 1,
@@ -195,4 +195,24 @@ function initialSliderChildrenPage() {
 	}
 
 	let childrenSwiper = new Swiper('.bestseller-children', options)
+}
+
+function initialSliderCatalog() {
+	(function test() {
+		const options = {
+			slidesPerView: 5,
+			spaceBetween: 15,
+			slidesOffsetAfter: 16,
+
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next-main',
+				prevEl: '.swiper-button-prev-main',
+			},
+
+		}
+		new Swiper('.bestseller-catalog', options)
+	}())
 }
