@@ -32,6 +32,8 @@ export function filter() {
 									</div>
 								`
 							}).join('')	}
+							
+							<div id="price"></div>
             </div>
         </div>
     `
