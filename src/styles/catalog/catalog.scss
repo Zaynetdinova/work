@@ -26,16 +26,34 @@
     }
     .button-popular,
     .button-quantity {
-
       background-color: #F3F2F0;
-      width: 100%;
+      width: 50%;
     }
     .button-popular {
-      margin-right: 1px;
-      padding: 10px 10px 10px 14px;
+
+
+      border-radius: 4px 0 0 4px;
+      .arrow {
+        margin: 0 0 2px 5px;
+      }
+      .pages {
+        padding: 10px 10px 10px 14px;
+      }
+      .Q {
+        margin-top: 0;
+        padding-top: 0;
+      }
     }
     .button-quantity {
-      padding: 10px 9px 10px 8px;
+      margin-left: 1px;
+      border-radius: 0 4px 4px 0;
+      .pages {
+        padding: 10px 9px 10px 8px;
+      }
+      .Q {
+        margin-top: 0;
+        padding-top: 0;
+      }
     }
   }
 
@@ -84,6 +102,9 @@
     justify-content: space-between;
     padding-top: 10px;
   }
+  .common {
+    position: relative;
+  }
   .pages {
     display: flex;
     align-items: center;
@@ -107,6 +128,35 @@
       margin: 0 5px 2px 5px;
     }
 
+  }
+  .Q {
+    margin-top: 7px;
+    padding-top: 5px;
+    background-color:#F3F2F0;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    .openPage {
+      background-color: #FDFDFD;
+      .q {
+        font-size: 14px;
+        line-height: 100%;
+
+        letter-spacing: 0.05em;
+
+        color: #555555;
+        padding: 12px;
+      }
+      .line {
+        border-bottom: 2px dotted #D9D9D9;
+      }
+
+      &:last-child {
+        .line {
+          border-bottom: none;
+        }
+      }
+    }
   }
   .sidebar-page-categories {
     position: relative;
