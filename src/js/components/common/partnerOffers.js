@@ -12,7 +12,7 @@ export function partnerOffers() {
     return ` 
     <section class="root"> 
         <div class="wrap-categoriesTitle">  
-            ${categoriesTitle('НУЖЕН ЗАГОЛОВОК')}
+            ${categoriesTitle('ИНТЕРЕСНЫЕ ПРЕДЛОЖЕНИЯ')}
         </div> 
         <div class="img-offers">
             <div class="card">

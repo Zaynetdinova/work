@@ -44,8 +44,8 @@ export function catalog()  {
                  
                 <div class="container">
                     ${navCatalog(item)}
-                    ${Pages()}			      
-                </div>	
+                    ${Pages()}		      
+                </div>
                 
                 <div id="selected-filters-js" class="selected-filters"></div>			  
                  
@@ -56,7 +56,8 @@ export function catalog()  {
                     `}).join('')}
                  </div>
             </section>
-        </div>                  
+        </div>  
+                    
     </div>
     `
 }
@@ -299,3 +300,5 @@ const woman = {
         },
     ],
 }
+
+
