@@ -22,10 +22,13 @@ export function titleCatalog(item) {
     const items = item.map((item) => {
         return `
             <div class="titleWrapper">
-                <div class="title">${item.titleCategory}</div>
-		        <div class="value">${item.value}</div>
+                <div class="titleAndValue">
+                    <div class="title">${item.titleCategory}</div>
+                    <div class="value">${item.value}</div>
+                </div>
+                    <div class="button-filter">Фильтры</div>               
             </div>
-                   
+                             
         `
     })
     return `${items.join('')}`

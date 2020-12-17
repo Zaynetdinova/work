@@ -6,6 +6,38 @@
   .wrapper-catalog {
     padding: 0 20px 330px 20px;
   }
+  .wrapper-number {
+    display: none;
+    .number {
+      justify-content: space-between;
+    }
+  }
+  .wrapper-sort {
+    display: none;
+    justify-content: space-between;
+    margin-top: 15px;
+    .pages {
+      width: 100%;
+    }
+    .select {
+      justify-content: space-between;
+      width: 100%;
+
+    }
+    .button-popular,
+    .button-quantity {
+
+      background-color: #F3F2F0;
+      width: 100%;
+    }
+    .button-popular {
+      margin-right: 1px;
+      padding: 10px 10px 10px 14px;
+    }
+    .button-quantity {
+      padding: 10px 9px 10px 8px;
+    }
+  }
 
   .flex-wrap {
     display: flex;
@@ -21,6 +53,21 @@
   }
   .titleWrapper {
     padding: 0;
+    .button-filter {
+      margin-left: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      border-bottom: 0.5px dashed #555555;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #555555;
+      display: none;
+    }
+    .titleAndValue {
+      display: flex;
+      align-items: baseline;
+    }
   }
   .transitionWrapper .title a {
     color: #777777;
@@ -47,6 +94,13 @@
     .select {
       display: flex;
       cursor: pointer;
+
+      .wrap {
+        display: flex;
+        .page-title {
+          margin-left: 8px;
+        }
+      }
     }
     .arrow {
       transform: rotate(90deg);
@@ -141,10 +195,42 @@
     .cards {
       grid-gap: 15px;
     }
+    .titleWrapper {
+      .button-filter {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .titleWrapper {
+      .titleAndValue {
+        display: block;
+
+        .value {
+          margin-top: 10px;
+        }
+      }
+    }
   }
   @media (max-width: 756px) {
     .container {
       display: none;
+    }
+    .wrapper-number {
+      display: block;
+    }
+    .wrapper-sort {
+      display: flex;
+    }
+    .titleWrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 726px;
+    }
+    .wrapper-pagination {
+      .number {
+        display: none;
+      }
     }
   }
 

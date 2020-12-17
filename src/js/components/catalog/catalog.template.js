@@ -3,7 +3,6 @@ import {number, pagination} from "./js/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./js/navCatalog";
 import {filter} from "./view/filter";
-import arrow from "../../../images/icons/arrow2.svg"
 import img1 from '../../../images/bestsellers/1/img1.png'
 import img2 from '../../../images/bestsellers/1/img2.png'
 import img3 from '../../../images/bestsellers/1/img3.png'
@@ -11,6 +10,7 @@ import img4 from '../../../images/bestsellers/1/img4.png'
 import img5 from '../../../images/bestsellers/1/img5.png'
 import img6 from '../../../images/bestsellers/1/img6.png'
 import {card} from '../common/commonCard/card'
+import {Pages, Popular} from "./view/pages";
 
 
 export function catalog()  {
@@ -19,11 +19,18 @@ export function catalog()  {
             ${transitionTitleCatalog(catalogCategory)}
             
             <div class="wrapper-pagination">
-                ${titleCatalog(catalogCategory)}
+                ${titleCatalog(catalogCategory)}              
                 ${pagination()}
                 ${number()}
             </div>
             
+            <div class="wrapper-number">
+                ${number()}
+            </div>
+            <div class="wrapper-sort">
+                <div class="button-popular">${Popular()}</div>
+                <div class="button-quantity">${Pages()}</div>
+            </div>
         <div class="flex-wrap">	
             
             <section class="sidebar-page-categories">
@@ -37,14 +44,7 @@ export function catalog()  {
                  
                 <div class="container">
                     ${navCatalog(item)}
-                    <div class="pages">
-                        <div class="select">
-                            <div class="page-title">На странице</div>
-                            <img class="arrow" src="${arrow}" alt="">
-                        </div>
-                    
-                        <span>100</span>
-                    </div>				      
+                    ${Pages()}			      
                 </div>	
                 
                 <div id="selected-filters-js" class="selected-filters"></div>			  
