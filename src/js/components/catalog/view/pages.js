@@ -5,14 +5,14 @@ export function Pages() {
 
     return `
     <div class="common">
-        <div class="pages">
+        <article class="pages" id="number-of-cards-per-page-js">
             <div class="select">
-                <div class="page-title">На странице</div>
+                <div class="page-title" >На странице</div>
                 <img class="arrow" src="${arrow}" alt="">
             </div>
         
             <span>100</span>                            
-        </div>
+        </article>
         <div class="Q">${q(item)}</div>        
     </div>
          
@@ -36,7 +36,7 @@ function q(item) {
 export function Popular() {
     return `
         <div class="common">
-            <div class="pages">
+            <article class="pages" id="filter-by">
                 <div class="select">
                     <div class="wrap">
                         <img src="${popular}" alt="">
@@ -44,7 +44,7 @@ export function Popular() {
                     </div>
                     <img class="arrow" src="${arrow}" alt="">
                 </div>
-            </div>  
+            </article>  
             <div class="Q">${q(sort)}</div>   
         </div>     
     `

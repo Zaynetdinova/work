@@ -111,6 +111,10 @@
   .common {
     position: relative;
   }
+
+  .show-number-of-cards-page {
+
+  }
   .pages {
     display: flex;
     align-items: center;
@@ -142,6 +146,7 @@
     position: absolute;
     z-index: 3;
     width: 100%;
+    display: none;
     .openPage {
       background-color: #FDFDFD;
       cursor: pointer;
@@ -165,6 +170,30 @@
       }
     }
   }
+
+  .show-number-of-cards-page {
+    .pages {
+      .arrow {
+        transform: rotate(270deg);
+      }
+    }
+    .Q {
+      display: block;
+    }
+  }
+
+  .show-filter-by {
+    .pages {
+      .arrow {
+        transform: rotate(270deg);
+      }
+    }
+
+    .Q {
+      display: block;
+    }
+  }
+
   .sidebar-page-categories {
     position: relative;
     margin-right: 20px;
@@ -245,6 +274,8 @@
     }
   }
 
+
+
   @media (max-width: 1024px) {
     .wrapper-catalog {
       padding: 0 15px 310px 15px;
@@ -259,6 +290,30 @@
       .button-filter {
         display: block;
       }
+    }
+
+    .sidebar-page-categories {
+      width: 0;
+      margin-right: 0;
+    }
+
+    .wrapper-filter {
+      margin-top: 0;
+    }
+
+    .mobile-filter {
+      position: fixed;
+      z-index: 6;
+      background: #fff;
+      top: 46px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: none;
+    }
+
+    .points {
+      display: none;
     }
   }
   @media (max-width: 768px) {

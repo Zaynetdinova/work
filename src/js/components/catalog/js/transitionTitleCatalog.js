@@ -26,7 +26,7 @@ export function titleCatalog(item) {
                     <div class="title">${item.titleCategory}</div>
                     <div class="value">${item.value}</div>
                 </div>
-                    <div class="button-filter">Фильтры</div>               
+                    <article class="button-filter" id="button-filter-mobile-js">Фильтры</article>               
             </div>
                              
         `

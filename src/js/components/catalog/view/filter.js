@@ -8,6 +8,7 @@ export function filter() {
         
             <div class="wrapper-title">
                 <div class="title">Фильтры</div>
+                <article class="mobile-title" id="mobile-filter-close-js">CLOSE</article>
                 <div class="cancel">
                    <div class="clear">Очистить</div>
                    <img src="${exit}" alt="exit">

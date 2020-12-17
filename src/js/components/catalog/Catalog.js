@@ -2,6 +2,9 @@ import {Component} from "../../core/Component";
 import {catalog} from "./catalog.template";
 import {choiceFilter} from './js/choiceFilter'
 import {choiceFilters, deleteFilterGroup} from './js/choiceFilters'
+import {stateFilterMobile} from './js/stateFilterMobile'
+import {stateNumberOfCardsPerPage} from './js/stateNumberOfCardsPerPage'
+import {filterBy} from './js/filterBy'
 
 export class Catalog extends Component {
     static className = 'Catalog'
@@ -28,6 +31,18 @@ export class Catalog extends Component {
                     break
                 case 'delete-filter-js':
                     deleteFilterGroup(element.dataset._id)
+                    break
+                case 'button-filter-mobile-js':
+                    stateFilterMobile()
+                    break
+                case 'mobile-filter-close-js':
+                    stateFilterMobile('close')
+                    break
+                case 'number-of-cards-per-page-js':
+                    stateNumberOfCardsPerPage(element)
+                    break
+                case 'filter-by':
+                    filterBy(element)
                     break
             }
         }
