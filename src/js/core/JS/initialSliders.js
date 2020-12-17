@@ -125,6 +125,7 @@ function initialSliderWomanPage() {
 
 	let womanSwiper = new Swiper('.bestseller-goods', options)
 	let womenSwiper2 = new Swiper('.bestseller-goods22', options)
+	let catalog = new Swiper('.bestseller-catalog',options)
 	let bannerBlock = new Swiper('.swiper-container4', {
 		slidesPerView: 1.9,
 		slidesPerGroup: 1,

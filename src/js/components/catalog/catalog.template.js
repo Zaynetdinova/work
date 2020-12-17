@@ -11,6 +11,7 @@ import img5 from '../../../images/bestsellers/1/img5.png'
 import img6 from '../../../images/bestsellers/1/img6.png'
 import {card} from '../common/commonCard/card'
 import {Pages, Popular} from "./view/pages";
+import {commonCard} from "../common/commonCard/commonCards";
 
 
 export function catalog()  {
@@ -40,7 +41,7 @@ export function catalog()  {
                 <div class="wrapper-filter">${filter()}</div>                    
             </section>
 			
-			      <section class="cards-wrapper">
+			<section class="cards-wrapper">
                  
                 <div class="container">
                     ${navCatalog(item)}
@@ -55,13 +56,25 @@ export function catalog()  {
                     ${card(i)}
                     `}).join('')}
                  </div>
+                 
+                 
+                 <div class="bottom-pagination">                                             
+                    ${pagination()}
+                    ${number()}
+                </div>
+               
+
             </section>
+            
         </div>  
                     
     </div>
     `
 }
 
+// <div class="wrap-card">
+//     ${commonCard(woman, 'price')}
+// </div>
 
 let catalogCategory = [
     {
@@ -143,6 +156,8 @@ let item = [
 
 
 const woman = {
+    title: 'Вы недавно смотрели',
+    // _id: 'catalog',
     data: [
         {
             id: 'woman1',

@@ -12,6 +12,12 @@
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
       cursor: pointer;
+      &:hover {
+        .arrow-prev,
+        .arrow-next {
+          background: url("../images/icons/arrow.svg") no-repeat;
+        }
+      }
     }
 
     .prev {
@@ -97,7 +103,12 @@
     display: inline-block;
     vertical-align: top;
     margin: 0 4px;
+    cursor: pointer;
     list-style: none;
+    :hover {
+      color: #DF2B2B;
+      text-decoration: underline;
+    }
   }
   @media (max-width: 1130px) {
     .wrap-button {
