@@ -3,8 +3,12 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding-top: 36px;
-
-
+  @media (max-width: 699px) {
+    padding: 30px 15px 0;
+  }
+  @media (max-width: 756px) {
+    padding-bottom: 30px;
+  }
   @media (max-width: 1024px) {
     grid-gap: 15px;
   }

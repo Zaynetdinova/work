@@ -60,8 +60,11 @@ export function catalog()  {
                  <div class="bottom-pagination">                                             
                     ${pagination()}
                     ${number()}
-                 </div>                 
-                <div class="wrap-card">
+                 </div>  
+                 <div class="wrapper-number">
+                    ${number()}
+                 </div>               
+                <div class="wrap-card-see">
                     ${commonCard(woman2, 'price')}
                 </div>               
             </section>        
