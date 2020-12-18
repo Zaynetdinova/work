@@ -1,7 +1,7 @@
 .select {
   width: 100%;
   position: relative;
-  z-index: 100;
+  z-index: 5;
 
   &.open {
     .popup {
@@ -15,7 +15,8 @@
 
   &__item {
     border-bottom: 1px dotted #ccc;
-    padding: 8px 0;
+    padding: 8px 10px;
+    background-color: #FDFDFD;
 
     &.selected {
       background-color: bisque;
@@ -30,6 +31,8 @@
 
   .pages {
     display: flex;
+    justify-content: space-between;
+    min-width: 126px;
     align-items: center;
     font-weight: normal;
     font-size: 14px;
@@ -46,6 +49,9 @@
         }
       }
     }
+    //.value {
+    //  min-width: 26px;
+    //}
     .arrow {
       transform: rotate(90deg);
       margin: 0 5px 2px 5px;

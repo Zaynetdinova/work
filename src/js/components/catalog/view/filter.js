@@ -7,7 +7,12 @@ export function filter() {
         <div class="filter">        
             <div class="wrapper-title">
                 <div class="title">Фильтры</div>
-                <article class="mobile-title" id="mobile-filter-close-js">CLOSE</article>
+                <article class="mobile-title" id="mobile-filter-close-js">
+                	<div class="close-filter">
+						<img class="arrow" src="${arrow}" alt="arrow">
+						<div class="close-title">Фильтры</div>
+					</div>
+                </article>
                 <article class="cancel" id="clear-filter-list">
                    <div class="clear">Очистить</div>
                    <img src="${exit}" alt="exit">

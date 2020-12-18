@@ -23,7 +23,7 @@ const getTemplate = (data = [], placeholder, selectedId) => {
 							<div data-type="input" class="page-title" >На странице</div>
 							<img data-type="input" class="arrow" src="${arrow}" alt="">
 					</div>            
-					<span data-type="value">${text}</span>                            
+					<span data-type="value" class="value">${text}</span>                            
 			</article>
 			<div class="popup">  ${items.join('')}</div>        
 		</div> 
