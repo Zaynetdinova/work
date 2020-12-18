@@ -1,7 +1,7 @@
-import {titleCatalog, transitionTitleCatalog} from "./js/transitionTitleCatalog";
-import {number, pagination} from "./js/pagination";
+import {titleCatalog, transitionTitleCatalog} from "./view/transitionTitleCatalog";
+import {number, pagination} from "./view/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
-import {navCatalog} from "./js/navCatalog";
+import {navCatalog} from "./view/navCatalog";
 import {filter} from "./view/filter";
 import img1 from '../../../images/bestsellers/1/img1.png'
 import img2 from '../../../images/bestsellers/1/img2.png'
@@ -17,51 +17,47 @@ import {commonCard} from "../common/commonCard/commonCards";
 export function catalog()  {
     return `
     <div class="wrapper-catalog">
-            ${transitionTitleCatalog(catalogCategory)}
-            
-            <div class="wrapper-pagination">
-                ${titleCatalog(catalogCategory)}              
-                ${pagination()}
-                ${number()}
-            </div>
-            
-            <div class="wrapper-number">
-                ${number()}
-            </div>
-            <div class="wrapper-sort">
-                <div class="button-popular">${Popular()}</div>
-                <div class="button-quantity">${Pages()}</div>
-            </div>
-            <div class="flex-wrap">	
-            
+        ${transitionTitleCatalog(catalogCategory)}
+                    
+        <div class="wrapper-pagination">
+            ${titleCatalog(catalogCategory)}      
+            ${pagination()}
+            ${number()}
+        </div>
+                   
+        <div class="wrapper-number">
+            ${number()}
+        </div>
+        
+        <div class="wrapper-sort">
+            <div class="button-popular">${Popular()}</div>
+            <div class="button-quantity">${Pages()}</div>
+        </div>
+        
+        <div class="flex-wrap">	            
             <section class="sidebar-page-categories">
                 <div class="points" id="points-catalog-open-js">				
                     ${sidebarPoint(point,'notArrow')}
                 </div>
                 <div class="wrapper-filter mobile-filter" id="mobile-filter-js">${filter()}</div>                    
             </section>
-			
-			      <section class="cards-wrapper">
-                 
+            
+            <section class="cards-wrapper">                 
                 <div class="container">
                     ${navCatalog(item)}
                     ${Pages()}		      
-                </div>
-                
-                <div id="selected-filters-js" class="selected-filters"></div>			  
-                 
+                </div>                
+                <div id="selected-filters-js" class="selected-filters"></div>			                   
                 <div class="cards">
                     ${woman.data.map(i => {
                     return `
                     ${card(i)}
                     `}).join('')}
-                 </div>
-                 
-                 
+                </div>                                  
                  <div class="bottom-pagination">                                             
                     ${pagination()}
                     ${number()}
-                </div>
+                 </div>                 
                 <div class="wrap-card">
                     ${commonCard(woman2, 'price')}
                 </div>               
@@ -153,8 +149,6 @@ let item = [
 
 
 const woman = {
-    title: 'Вы недавно смотрели',
-    // _id: 'catalog',
     data: [
         {
             id: 'woman1',

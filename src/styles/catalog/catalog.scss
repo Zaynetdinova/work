@@ -39,7 +39,7 @@
       .pages {
         padding: 10px 10px 10px 14px;
       }
-      .Q {
+      .popup {
         margin-top: 0;
         padding-top: 0;
       }
@@ -50,7 +50,7 @@
       .pages {
         padding: 10px 9px 10px 8px;
       }
-      .Q {
+      .popup {
         margin-top: 0;
         padding-top: 0;
       }
@@ -139,7 +139,7 @@
     }
 
   }
-  .Q {
+  .popup {
     margin-top: 7px;
     padding-top: 5px;
     background-color:#F3F2F0;
@@ -150,19 +150,16 @@
     .openPage {
       background-color: #FDFDFD;
       cursor: pointer;
-      .q {
+      .select-number {
         font-size: 14px;
         line-height: 100%;
-
         letter-spacing: 0.05em;
-
         color: #555555;
         padding: 12px;
       }
       .line {
         border-bottom: 2px dotted #D9D9D9;
       }
-
       &:last-child {
         .line {
           border-bottom: none;
@@ -177,7 +174,7 @@
         transform: rotate(270deg);
       }
     }
-    .Q {
+    .popup {
       display: block;
     }
   }
@@ -189,7 +186,7 @@
       }
     }
 
-    .Q {
+    .popup {
       display: block;
     }
   }
@@ -351,7 +348,7 @@
   }
 
   .wrap-card {
-    max-width: calc(100vw - 283px);
+    max-width: calc(100vw - 280px);
   }
 
   @media (max-width: 1024px) {
