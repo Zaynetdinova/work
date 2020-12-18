@@ -10,7 +10,6 @@ import img4 from '../../../images/bestsellers/1/img4.png'
 import img5 from '../../../images/bestsellers/1/img5.png'
 import img6 from '../../../images/bestsellers/1/img6.png'
 import {card} from '../common/commonCard/card'
-import {Pages, Popular} from "./view/pages";
 import {commonCard} from "../common/commonCard/commonCards";
 
 

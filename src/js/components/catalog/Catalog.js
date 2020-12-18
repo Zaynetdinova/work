@@ -42,13 +42,11 @@ export class Catalog extends Component {
                     deleteFilterGroup(element.dataset._id)
                     break
                 case 'button-filter-mobile-js':
+                    console.log('super')
                     stateFilterMobile()
                     break
                 case 'mobile-filter-close-js':
                     stateFilterMobile('close')
-                    break
-                case 'number-of-cards-per-page-js':
-                    stateNumberOfCardsPerPage(element)
                     break
                 case 'filter-by':
                     filterBy(element)

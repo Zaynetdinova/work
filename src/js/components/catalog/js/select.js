@@ -29,6 +29,7 @@ export function select() {
 
 	new Select('#select-filter-popular-mobile', {
 		placeholder: 'Популярные',
+		type: 'test',
 		// selectedId: '2',
 		data: [
 			{id: '1', value: 'Наш выбор'},
