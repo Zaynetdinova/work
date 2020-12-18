@@ -22,12 +22,28 @@ function addFilterGroup(id, text) {
 }
 
 export function deleteFilterGroup(id) {
+	if(!id) {
+		deleteFilterGroupAll()
+	} else {
+		deleteFilterGroupOne(id)
+	}
+
+	updateSelectedFilters(testGlob)
+}
+
+function deleteFilterGroupAll() {
+	testGlob = []
+	const $inputCheckbox = document.querySelectorAll('.checkbox-filter-js')
+	$inputCheckbox.forEach((input) => {
+		input.checked = false
+	})
+}
+
+function deleteFilterGroupOne(id) {
 	const newArr = testGlob.filter((item) => {
 		return item.id !== id
 	})
 	testGlob = newArr
 	document.querySelector(`#${id}`).checked = false
-
-	updateSelectedFilters(testGlob)
 }
 

@@ -2,8 +2,9 @@ export function filterChoice(item) {
 	const items = item.map((item) => {
 		const {id, color, category, number} = item
 		return `
+
 			<div class="checkbox-choice">
-				<input class="checkbox" type="checkbox" id="${id}" data-text="${category}"> 
+				<input class="checkbox checkbox-filter-js" type="checkbox" id="${id}" data-text="${category}"> 
 				<label for="${id}">
 					<div class="cont">
 						${color ? `<div class="color ${color}"></div>` : ''}
