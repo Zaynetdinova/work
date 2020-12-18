@@ -10,7 +10,7 @@ const getTemplate = (data = [], placeholder, selectedId) => {
 		// 	cls = 'selected'
 		// }
 		return `
-				<div data-type="item" data-id="${item.id}" class="openPage select__item select-number">
+				<div data-type="item" data-id="${item.id}" class="select__item select-number">
 					${item.value} 
 				</div>
     `
@@ -18,10 +18,10 @@ const getTemplate = (data = [], placeholder, selectedId) => {
 
 	return `
     <div class="common">
-			<article class="pages" id="number-of-cards-per-page-js">
-					<div class="select">
-							<div class="page-title" >На странице</div>
-							<img class="arrow" src="${arrow}" alt="">
+			<article data-type="input" class="pages">
+					<div data-type="input" class="select">
+							<div data-type="input" class="page-title" >На странице</div>
+							<img data-type="input" class="arrow" src="${arrow}" alt="">
 					</div>            
 					<span data-type="value">${text}</span>                            
 			</article>
@@ -91,6 +91,7 @@ export class Select {
 	}
 
 	toggle() {
+		console.log('super')
 		this.isOpen ? this.close() : this.open()
 	}
 
