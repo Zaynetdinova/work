@@ -1,0 +1,14 @@
+.transitionWrapper {
+  .title a {
+    color: #777777;
+    &:hover {
+      color: #3D3D3C;
+    }
+  }
+  .title2 a {
+    color: #3D3D3C;
+  }
+  @media (max-width: 1024px) {
+    padding: 10px 0;
+  }
+}

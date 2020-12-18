@@ -1,0 +1,40 @@
+.material {
+  @import 'category-price';
+  .wrapper-material {
+    display: flex;
+    justify-content: space-between;
+    padding: 10.5px 10px 10.5px 13px;
+    border-bottom: 1px solid #BDBDBD;
+    .title2 {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .arrow {
+    transform: rotate(90deg);
+  }
+  .hr-material {
+    height: 1px;
+    background: #BDBDBD;
+    border: none;
+  }
+  .title {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+  .wrapper-choice {
+    display: none;
+    border-bottom: 1px solid #BDBDBD;
+  }
+  .open-category-filter {
+    .wrapper-choice {
+      display: block;
+    }
+    .arrow {
+      transform: rotate(270deg);
+    }
+  }
+}

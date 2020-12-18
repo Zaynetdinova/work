@@ -202,7 +202,6 @@ function initialSliderCatalog() {
 		const options = {
 			slidesPerView: 5,
 			spaceBetween: 15,
-			slidesOffsetAfter: 16,
 
 			pagination: {
 				el: '.swiper-pagination',

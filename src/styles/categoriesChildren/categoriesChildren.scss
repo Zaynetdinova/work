@@ -18,9 +18,15 @@
   @media (max-width: $tablet-breakpoint) {
     .wrap-ImgChildren {
       display: block;
+      padding-right: 15px;
+      padding-left: 15px;
     }
     .bestseller-children {
       padding-bottom: 88px;
+    }
+    .wrap-card3 {
+      padding-right: 15px;
+      padding-left: 15px;
     }
   }
   @media (max-width: $width-414) {
@@ -53,7 +59,6 @@
   padding-bottom: 23px;
 }
 .wrap-partnerOffers {
-
   padding-bottom: 44px;
 }
 .wrapper-categories {
@@ -92,9 +97,9 @@
   .wrap-partnerOffers {
     padding: 0 15px;
   }
-  //.sidebar-page-categories {
-  //  display: none;
-  //}
+  .sidebar-page-categories {
+    display: none;
+  }
   .content-page-categories {
     margin-left: 0;
   }

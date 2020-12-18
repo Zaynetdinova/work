@@ -1,0 +1,9 @@
+.wrap-card {
+  margin-top: 70px;
+  max-width: calc(100vw - 280px);
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    padding: 0;
+  }
+}
