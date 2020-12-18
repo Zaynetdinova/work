@@ -200,8 +200,12 @@ function initialSliderChildrenPage() {
 function initialSliderCatalog() {
 	(function test() {
 		const options = {
-			slidesPerView: 5,
+			slidesPerView: 1.9,
 			spaceBetween: 15,
+			centeredSlides: false,
+			loop: false,
+			slidesOffsetAfter: 15,
+			slidesOffsetBefore: 15,
 
 			pagination: {
 				el: '.swiper-pagination',
@@ -210,7 +214,55 @@ function initialSliderCatalog() {
 				nextEl: '.swiper-button-next-main',
 				prevEl: '.swiper-button-prev-main',
 			},
-
+			breakpoints: {
+				2200: {
+					slidesPerView: 7,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				2100: {
+					slidesPerView: 6,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				1040: {
+					slidesPerView: 5,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				1025: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				960: {
+					slidesPerView: 6,
+					centeredSlides: false,
+					loop: false,
+					spaceBetween: 15,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				700: {
+					slidesPerView: 4,
+					centeredSlides: false,
+					loop: false,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				411: {
+					slidesOffsetAfter: 15,
+					slidesPerView: 2.5,
+				},
+				374: {
+					slidesPerView: 2.27,
+					slidesOffsetAfter: 15,
+				}
+			}
 		}
 		new Swiper('.bestseller-catalog', options)
 	}())

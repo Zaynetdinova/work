@@ -1,9 +1,21 @@
-.wrap-card {
+.wrap-card-see {
   margin-top: 70px;
   max-width: calc(100vw - 280px);
+
+  .line {
+    display: none;
+  }
+  .see-all {
+    display: none;
+  }
 
   @media (max-width: 1024px) {
     max-width: 100%;
     padding: 0;
+  }
+  @media (max-width: 699px) {
+    .bestsellers-header-wrapper {
+      padding: 0 15px;
+    }
   }
 }
