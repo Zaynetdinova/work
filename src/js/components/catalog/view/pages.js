@@ -3,16 +3,8 @@ import popular from '../../../../images/icons/popular.svg'
 
 export function Pages() {
     return `
-        <div class="common">
-            <article class="pages" id="number-of-cards-per-page-js">
-                <div class="select">
-                    <div class="page-title" >На странице</div>
-                    <img class="arrow" src="${arrow}" alt="">
-                </div>            
-                <span>100</span>                            
-            </article>
-            <div class="popup">${openPage(item)}</div>        
-        </div>        
+        
+               
     `
 }
 
