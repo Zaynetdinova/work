@@ -27,11 +27,12 @@ export function catalog()  {
                    
         <div class="wrapper-number">
             ${number()}
+            
         </div>
         
         <div class="wrapper-sort">
-            <div class="button-popular">${Popular()}</div>
-            <div class="button-quantity">${Pages()}</div>
+            <div class="button-popular" id="select-filter-popular-mobile"></div>
+            <div class="button-quantity" id="select-filter-mobile"></div>
         </div>
         
         <div class="flex-wrap">	            
@@ -45,7 +46,10 @@ export function catalog()  {
             <section class="cards-wrapper">                 
                 <div class="container">
                     ${navCatalog(item)}
-                    ${Pages()}		      
+                    <div class="wrapper-filter-desktop-ilmira">
+                        <div id="select-filter"></div>
+                    </div>
+                     
                 </div>                
                 <div id="selected-filters-js" class="selected-filters"></div>			                   
                 <div class="cards">

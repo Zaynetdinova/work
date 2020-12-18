@@ -7,6 +7,7 @@ import {stateNumberOfCardsPerPage} from './js/stateNumberOfCardsPerPage'
 import {filterBy} from './js/filterBy'
 import {priceFilterRange} from './js/priceFilterRange'
 import {pointsCatalogOpen} from './js/pointsCatalogOpen'
+import {select} from './js/select'
 
 export class Catalog extends Component {
     static className = 'Catalog'
@@ -26,6 +27,7 @@ export class Catalog extends Component {
     afterInitComponent() {
         priceFilterRange()
         pointsCatalogOpen()
+        select()
     }
 
     onClick(e) {
