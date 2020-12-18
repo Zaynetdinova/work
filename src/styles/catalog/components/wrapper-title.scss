@@ -14,6 +14,21 @@
   .mobile-title {
     display: none;
   }
+  .close-filter {
+    display: flex;
+    .arrow {
+      transform: rotate(180deg);
+      margin-right: 2px;
+    }
+    .close-title {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #555555;
+    }
+  }
   .cancel {
     display: flex;
     align-items: center;

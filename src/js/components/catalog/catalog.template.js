@@ -25,8 +25,7 @@ export function catalog()  {
         </div>
                    
         <div class="wrapper-number">
-            ${number()}
-            
+            ${number()}            
         </div>
         
         <div class="wrapper-sort">
@@ -81,7 +80,7 @@ let catalogCategory = [
         title: 'Женщинам',
         value: '1000 товаров',
         titleCategory: 'Платья',
-        linkCategory: '/#categories-view'
+        linkCategory: '/#catalog'
     }
 ]
 
