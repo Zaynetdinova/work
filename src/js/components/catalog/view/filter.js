@@ -38,13 +38,13 @@ export function filter() {
 						<img class="arrow" src="${arrow}" alt="arrow">
 					</article>
 					
-					<div class="wrapper-choice no-line" id="filter-choice">
-					<div class="input-price">
-						<input class="min-price" id="min-price-filter-js" type="text" placeholder="1$">
-						<div>–</div>
-						<input class="max-price" id="max-price-filter-js" type="text" placeholder="888 888$">
-					</div>
-					<div id="price"></div>								
+					<div class="wrapper-choice category-price" id="filter-choice">
+						<div class="input-price">
+							<input class="min-price" id="min-price-filter-js" type="text" placeholder="1$">
+							<div>–</div>
+							<input class="max-price" id="max-price-filter-js" type="text" placeholder="888 888$">
+						</div>
+						<div id="price"></div>								
 					</div>
 				</div>						
             </div>

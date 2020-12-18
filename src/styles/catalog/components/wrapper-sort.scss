@@ -1,0 +1,44 @@
+.wrapper-sort {
+  display: none;
+  justify-content: space-between;
+  margin-top: 15px;
+  .pages {
+    width: 100%;
+  }
+  .select {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .button-popular,
+  .button-quantity {
+    background-color: #F3F2F0;
+    width: 50%;
+  }
+  .button-popular {
+    border-radius: 4px 0 0 4px;
+    .arrow {
+      margin: 0 0 2px 5px;
+    }
+    .pages {
+      padding: 10px 10px 10px 14px;
+    }
+    .popup {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+  .button-quantity {
+    margin-left: 1px;
+    border-radius: 0 4px 4px 0;
+    .pages {
+      padding: 10px 9px 10px 8px;
+    }
+    .popup {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+  @media (max-width: 756px) {
+    display: flex;
+  }
+}

@@ -1,0 +1,54 @@
+.number {
+  display: flex;
+  align-items: center;
+  .wrap-button {
+    display: none;
+  }
+  .arrow-prev,
+  .arrow-next {
+    background: url("../images/icons/arrow2.svg") no-repeat;
+    width: 10px;
+    height: 10px;
+  }
+
+  .arrow-prev {
+    transform: rotate(-180deg);
+  }
+
+  .button-prev,
+  .button-next {
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+  }
+  .button-prev {
+    border-radius: 4px 0 0 4px;
+    margin-right: 19px;
+  }
+  .button-next {
+    border-radius: 0 4px 4px 0;
+    margin-left: 19px;
+  }
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 4px;
+    cursor: pointer;
+    list-style: none;
+    :hover {
+      color: #DF2B2B;
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 1130px) {
+    .wrap-button {
+      display: block;
+    }
+  }
+}

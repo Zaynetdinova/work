@@ -1,0 +1,38 @@
+.titleWrapper {
+  padding: 0;
+  .button-filter {
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border-bottom: 0.5px dashed #555555;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #555555;
+    display: none;
+    cursor: pointer;
+  }
+  .titleAndValue {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media (max-width: 1024px) {
+    .button-filter {
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    .titleAndValue {
+      display: block;
+      .value {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 756px) {
+    display: flex;
+    justify-content: space-between;
+    width: 726px;
+  }
+}

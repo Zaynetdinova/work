@@ -1,0 +1,40 @@
+.wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10.5px 10px 10.5px 13px;
+  background: #F3F2F0;
+
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .mobile-title {
+    display: none;
+  }
+  .cancel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .clear {
+    margin-right: 7px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper-title {
+    .title {
+      display: none;
+    }
+
+    .mobile-title {
+      display: block;
+    }
+  }
+}

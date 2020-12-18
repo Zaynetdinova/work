@@ -4,8 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //padding: 8px 32px 9px 16px;
-    //background: #F3F2F0;
     cursor: pointer;
   }
   .categories {
@@ -16,7 +14,6 @@
     padding: 11px 0 9px 0;
     font-size: 13px;
   }
-
 
   .link-children {
     display: flex;
@@ -94,6 +91,4 @@
       display: block;
     }
   }
-
-
 }
