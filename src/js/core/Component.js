@@ -14,6 +14,10 @@ export class Component extends DomListener {
     this.initDOMListeners()
   }
 
+  afterInitComponent() {
+
+  }
+
   //?
   slider() {
 

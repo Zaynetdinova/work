@@ -9,10 +9,10 @@ export function filter() {
             <div class="wrapper-title">
                 <div class="title">Фильтры</div>
                 <article class="mobile-title" id="mobile-filter-close-js">CLOSE</article>
-                <div class="cancel">
+                <article class="cancel" id="clear-filter-list">
                    <div class="clear">Очистить</div>
                    <img src="${exit}" alt="exit">
-                </div>
+                </article>
             </div>
             
             <div class="material">
@@ -40,9 +40,9 @@ export function filter() {
 									
 									<div class="wrapper-choice" id="filter-choice">
 									<div class="input-price">
-										<input class="min-price" type="text" placeholder="1$">
+										<input class="min-price" id="min-price-filter-js" type="text" placeholder="1$">
 										<div>–</div>
-										<input class="max-price" type="text" placeholder="888 888$">
+										<input class="max-price" id="max-price-filter-js" type="text" placeholder="888 888$">
 									</div>
 									<div id="price"></div>								
 									</div>

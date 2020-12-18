@@ -35,7 +35,7 @@ export function catalog()  {
             <div class="flex-wrap">	
             
             <section class="sidebar-page-categories">
-                <div class="points">				
+                <div class="points" id="points-catalog-open-js">				
                     ${sidebarPoint(point,'notArrow')}
                 </div>
                 <div class="wrapper-filter mobile-filter" id="mobile-filter-js">${filter()}</div>                    
