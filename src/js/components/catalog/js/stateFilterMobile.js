@@ -5,5 +5,4 @@ export function stateFilterMobile(type) {
 	} else {
 		elem.classList.add('Com-disp-block')
 	}
-
 }

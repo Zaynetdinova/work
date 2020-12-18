@@ -5,7 +5,6 @@ export function navCatalog(item) {
 }
 
 
-
 function jumpCatalog(item) {
     const items = item.map((item) => {
         return `
