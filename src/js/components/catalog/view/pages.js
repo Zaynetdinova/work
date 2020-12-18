@@ -2,29 +2,26 @@ import arrow from "../../../../images/icons/arrow2.svg"
 import popular from '../../../../images/icons/popular.svg'
 
 export function Pages() {
-
     return `
-    <div class="common">
-        <article class="pages" id="number-of-cards-per-page-js">
-            <div class="select">
-                <div class="page-title" >На странице</div>
-                <img class="arrow" src="${arrow}" alt="">
-            </div>
-        
-            <span>100</span>                            
-        </article>
-        <div class="Q">${q(item)}</div>        
-    </div>
-         
+        <div class="common">
+            <article class="pages" id="number-of-cards-per-page-js">
+                <div class="select">
+                    <div class="page-title" >На странице</div>
+                    <img class="arrow" src="${arrow}" alt="">
+                </div>            
+                <span>100</span>                            
+            </article>
+            <div class="popup">${openPage(item)}</div>        
+        </div>        
     `
 }
 
 
-function q(item) {
+function openPage(item) {
     const items = item.map((item) => {
         return `
             <div class="openPage">
-                <div class="q">${item.number}</div>
+                <div class="select-number">${item.number}</div>
                 <div class="line"></div>
             </div>	
         `
@@ -45,7 +42,7 @@ export function Popular() {
                     <img class="arrow" src="${arrow}" alt="">
                 </div>
             </article>  
-            <div class="Q">${q(sort)}</div>   
+            <div class="popup">${openPage(sort)}</div>   
         </div>     
     `
 }
