@@ -16,10 +16,23 @@
     padding: 0 20px 133px 20px;
   }
 
+  .box-pagination {
+    padding-bottom: 26px;
+    position: relative;
+  }
+  .box {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
+
+
 
   .mobile-filter {
     overflow: auto;
   }
+
 
   .wrapper-number {
     display: none;
@@ -31,15 +44,16 @@
     display: flex;
   }
   .bottom-pagination {
-    display: flex;
-    justify-content: space-between;
     margin-top: 40px;
+    position: relative;
+    .box {
+      bottom: -10px;
+    }
   }
+
   .wrapper-pagination {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
+    justify-content: flex-end;
   }
   .wrapper-filter {
     margin-top: 36px;
