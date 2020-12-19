@@ -12,6 +12,7 @@
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
       cursor: pointer;
+      min-width: 340px;
       &:hover {
         .arrow-prev,
         .arrow-next {
@@ -22,7 +23,7 @@
 
     .prev {
       border-radius: 4px 0 0 4px;
-      padding: 8.5px 90px 8.5px 13px;
+      padding: 8.5px 82px 8.5px 13px;
     }
 
     .next {
