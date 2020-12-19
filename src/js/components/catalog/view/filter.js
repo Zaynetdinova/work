@@ -44,11 +44,11 @@ export function filter() {
 					</article>
 					
 					<div class="wrapper-choice category-price" id="filter-choice">
-						<div class="input-price">
-							<input class="min-price" id="min-price-filter-js" type="text" placeholder="1$">
+						<form id="catalog-price-filter-js" class="input-price">
+							<input class="min-price" id="min-price-filter-js" type="text" placeholder="0">
 							<div>–</div>
-							<input class="max-price" id="max-price-filter-js" type="text" placeholder="888 888$">
-						</div>
+							<input class="max-price" id="max-price-filter-js" type="text" placeholder="0">
+						</form>
 						<div id="price"></div>								
 					</div>
 				</div>						

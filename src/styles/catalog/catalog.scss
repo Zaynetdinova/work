@@ -15,6 +15,12 @@
   .wrapper-catalog {
     padding: 0 20px 133px 20px;
   }
+
+
+  .mobile-filter {
+    overflow: auto;
+  }
+
   .wrapper-number {
     display: none;
     .number {
@@ -44,29 +50,7 @@
     justify-content: space-between;
     padding-top: 10px;
   }
-  .common {
-    position: relative;
-  }
-  .show-number-of-cards-page {
-    .pages {
-      .arrow {
-        transform: rotate(270deg);
-      }
-    }
-    .popup {
-      display: block;
-    }
-  }
-  .show-filter-by {
-    .pages {
-      .arrow {
-        transform: rotate(270deg);
-      }
-    }
-    .popup {
-      display: block;
-    }
-  }
+
   .cards-wrapper {
     width: 100%;
   }

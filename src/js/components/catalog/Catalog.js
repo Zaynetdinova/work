@@ -5,7 +5,7 @@ import {choiceFilters, deleteFilterGroup} from './js/choiceFilters'
 import {stateFilterMobile} from './js/stateFilterMobile'
 import {stateNumberOfCardsPerPage} from './js/stateNumberOfCardsPerPage'
 import {filterBy} from './js/filterBy'
-import {priceFilterRange} from './js/priceFilterRange'
+import {PriceFilterRange} from './js/priceFilterRange'
 import {pointsCatalogOpen} from './js/pointsCatalogOpen'
 import {select} from './js/select'
 
@@ -25,7 +25,7 @@ export class Catalog extends Component {
     }
 
     afterInitComponent() {
-        priceFilterRange()
+        new PriceFilterRange()
         pointsCatalogOpen()
         select()
     }
@@ -60,5 +60,6 @@ export class Catalog extends Component {
 
     onInput(e) {
         choiceFilters(e)
+
     }
 }
