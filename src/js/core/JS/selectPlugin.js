@@ -1,6 +1,6 @@
 import arrow from "../../../images/icons/arrow2.svg"
 
-const getTemplate = (data = [], placeholder, selectedId) => {
+const getTemplate = (data = [], placeholder, selectedId, type = '') => {
 	let text = placeholder ?? 'Placeholder по умолчанию'
 
 	const items = data.map(item => {
@@ -10,22 +10,53 @@ const getTemplate = (data = [], placeholder, selectedId) => {
 		// 	cls = 'selected'
 		// }
 		return `
-				<div data-type="item" data-id="${item.id}" class="select__item select-number">
+				<article data-type="item" data-id="${item.id}" class="select-item">
 					${item.value} 
-				</div>
+				</article>
     `
 	})
 
+	if(type === 'test') {
+		return test(items, text)
+	} else {
+		return defaultSelectedItem(items, text)
+	}
+
+
+}
+
+function test(items, text) {
 	return `
-    <div class="common">
-			<article data-type="input" class="pages">
-					<div data-type="input" class="select">
-							<div data-type="input" class="page-title" >На странице</div>
-							<img data-type="input" class="arrow" src="${arrow}" alt="">
-					</div>            
-					<span data-type="value" class="value">${text}</span>                            
+    <div class="">
+    
+   		<article data-type="input" class="input-selected-item">
+				<section class="Com-disp-flex-al-center">
+					<div class="test-img"></div>
+					<div data-type="value" class="title" >${text}</div>
+				</section>
+				<section class="arrow-wrapper">
+						<img class="arrow" src="${arrow}" alt="">   
+				</section>   
 			</article>
-			<div class="popup">  ${items.join('')}</div>        
+			
+			<div class="popup-selected-items">  ${items.join('')}</div>        
+		</div> 
+  `
+}
+
+function defaultSelectedItem(items, text) {
+	return `
+    <div class="">
+    
+   		<article data-type="input" class="input-selected-item">
+				<div class="title" >На странице</div>
+				<div class="arrow-wrapper">
+					<img class="arrow" src="${arrow}" alt="">      
+					<span data-type="value" class="value">${text}</span>
+				</div>
+			</article>
+			
+			<div class="popup-selected-items">  ${items.join('')}</div>        
 		</div> 
   `
 }
@@ -41,29 +72,31 @@ export class Select {
 	}
 
 	render() {
-		console.log(this.$el)
-		const {placeholder, data} = this.options
+		const {placeholder, data, type} = this.options
+		console.log(type)
 		this.$el.classList.add('select')
-		this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId)
+		this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId, type)
 	}
 
 	setup() {
 		this.clickHandler = this.clickHandler.bind(this)
 		this.$el.addEventListener('click', this.clickHandler)
-		// this.$arrow = this.$el.querySelector('[data-type="arrow"]')
 		this.$value = this.$el.querySelector('[data-type="value"]')
 	}
 
 	clickHandler(event) {
-		const {type} = event.target.dataset
+		if(event.target.closest('article')) {
+			const element = event.target.closest('article')
+			const {type} = element.dataset
 
-		if (type === 'input') {
-			this.toggle()
-		} else if (type === 'item') {
-			const id = event.target.dataset.id
-			this.select(id)
-		} else if (type === 'backdrop') {
-			this.close()
+			switch (type) {
+				case 'input':
+					this.toggle()
+					break;
+				case 'item':
+					const id = event.target.dataset.id
+					this.select(id)
+			}
 		}
 	}
 
@@ -77,7 +110,6 @@ export class Select {
 
 	select(id) {
 		this.selectedId = id
-		console.log(this.current.value)
 		this.$value.textContent = this.current.value
 
 		this.$el.querySelectorAll('[data-type="item"]').forEach(el => {
@@ -91,20 +123,15 @@ export class Select {
 	}
 
 	toggle() {
-		console.log('super')
 		this.isOpen ? this.close() : this.open()
 	}
 
 	open() {
 		this.$el.classList.add('open')
-		// this.$arrow.classList.remove('fa-chevron-down')
-		// this.$arrow.classList.add('fa-chevron-up')
 	}
 
 	close() {
 		this.$el.classList.remove('open')
-		// this.$arrow.classList.add('fa-chevron-down')
-		// this.$arrow.classList.remove('fa-chevron-up')
 	}
 
 	destroy() {
