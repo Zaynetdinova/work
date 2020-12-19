@@ -18,7 +18,11 @@ export function catalog()  {
     <div class="wrapper-catalog">
         ${transitionTitleCatalog(catalogCategory)}
                     
-
+        <div class="wrapper-pagination">
+            ${titleCatalog(catalogCategory)}      
+            ${pagination()}
+            ${number()}
+        </div>
                    
         <div class="wrapper-number">
             ${number()}            
@@ -30,21 +34,14 @@ export function catalog()  {
         </div>
         
         <div class="flex-wrap">	            
-            <section class="sidebar-page-categories">
-            <div style="margin-bottom: 15px">${titleCatalog(catalogCategory)}</div>    
+            <section class="sidebar-page-categories">              
                 <div class="points" id="points-catalog-open-js">				
                     ${sidebarPoint(point,'notArrow')}
                 </div>
                 <div class="wrapper-filter mobile-filter" id="mobile-filter-js">${filter()}</div>                    
             </section>
             
-            <section class="cards-wrapper">
-                <div class="box-pagination">
-                    <div class="box">${pagination()}</div>
-                    <div class="wrapper-pagination">             
-                        ${number()}   
-                    </div>
-                </div>
+            <section class="cards-wrapper">               
                 <div class="container">
                     ${navCatalog(item)}
                     <div class="wrapper-filter-desktop-ilmira">
@@ -60,10 +57,8 @@ export function catalog()  {
                     `}).join('')}
                 </div>                                  
                  <div class="bottom-pagination">                                             
-                    <div class="box" ">${pagination()}</div>             
-                    <div class="wrapper-pagination">             
-                        ${number()}   
-                    </div>
+                    <div class="box">${pagination()}</div>
+                    <div class="box-number">${number()}</div>
                  </div>  
                  <div class="wrapper-number">
                     ${number()}

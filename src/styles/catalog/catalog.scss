@@ -16,24 +16,6 @@
     padding: 0 20px 133px 20px;
   }
 
-  .box-pagination {
-    padding-bottom: 26px;
-    position: relative;
-  }
-  .box {
-    position: absolute;
-    left: 40%;
-    transform: translateX(-50%);
-    bottom: 20px;
-  }
-
-
-
-  .mobile-filter {
-    overflow: auto;
-  }
-
-
   .wrapper-number {
     display: none;
     .number {
@@ -45,15 +27,23 @@
   }
   .bottom-pagination {
     margin-top: 40px;
-    position: relative;
+
     .box {
-      bottom: -10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .box-number {
+      display: flex;
+      justify-content: flex-end;
     }
   }
 
   .wrapper-pagination {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
   }
   .wrapper-filter {
     margin-top: 36px;
@@ -83,6 +73,7 @@
       bottom: 0;
       right: 0;
       left: 0;
+      overflow: auto;
       display: none;
     }
   }
