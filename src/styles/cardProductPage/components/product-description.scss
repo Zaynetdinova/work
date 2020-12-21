@@ -1,0 +1,22 @@
+.product-description {
+  @import "price";
+  width: 588px;
+  margin: 0 auto;
+  .first-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .right-wrap {
+      display: flex;
+    }
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+  .social {
+    display: flex;
+  }
+}
