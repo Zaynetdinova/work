@@ -5,8 +5,9 @@ import {MainPage} from './pages/MainPage'
 import {ViewCategoriesPage} from './pages/ViewCategoriesPage'
 import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
-
+import {CardProduct} from './pages/CardProduct'
 import 'nouislider/distribute/nouislider.css';
+
 
 
 window.userRegistry = true
@@ -16,6 +17,7 @@ new Router('#app', {
   viewCategoriesPage: ViewCategoriesPage,
   viewCategoriesIndex: CatalogPage,
   viewCategoriesChildren: ViewCategoriesChildren,
+  cardProduct: CardProduct
 })
 
 
