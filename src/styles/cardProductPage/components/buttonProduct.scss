@@ -1,0 +1,35 @@
+.ButtonProduct {
+  .text {
+    min-width: 76px;
+    background-color: #E7003E;
+    font-weight: bold;
+    font-family: Geometria, sans-serif;
+    font-size: 10px;
+    line-height: 106.8%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px 0;
+    text-transform: uppercase;
+  }
+}
+
+.buttonAnotherGoods {
+  margin-top: 20px;
+  cursor: pointer;
+  .ButtonProduct {
+    .text {
+      min-width: 240px;
+      background: #8F8F8F;
+      border-radius: 4px;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 17px;
+      font-family: 'Arial', sans-serif;
+
+      text-align: center;
+      color: #FFFFFF;
+      padding: 10px 0;
+      text-transform: none;
+    }
+  }
+}

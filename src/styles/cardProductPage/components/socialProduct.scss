@@ -1,0 +1,12 @@
+.socialProduct {
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #C8C8C8;
+  min-width: 40px;
+  &:last-child {
+    border-right: 1px solid #C8C8C8;
+  }
+  .socialImg {
+    cursor: pointer;
+  }
+}
