@@ -38,6 +38,9 @@ export class Router {
 			case 'categories-children':
 				Page = this.routes.viewCategoriesChildren
 				break;
+			case 'card-product':
+				Page = this.routes.cardProduct
+				break;
 			default:
 				Page = this.routes.mainPage
 		}

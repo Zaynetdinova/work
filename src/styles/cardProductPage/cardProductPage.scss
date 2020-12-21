@@ -1,0 +1,14 @@
+.Card-product-page {
+  @import "./components/viewPhotosBlock";
+
+  .root {
+    padding: 0 20px;
+    max-width: 1480px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    display: flex;
+
+  }
+}
