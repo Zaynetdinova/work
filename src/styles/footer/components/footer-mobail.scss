@@ -12,6 +12,9 @@
     }
     .categories {
       padding: 0 15px 40px 15px;
+      &:last-child .line {
+        display: block;
+      }
     }
     .choice {
       padding: 0;

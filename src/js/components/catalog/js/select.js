@@ -5,9 +5,8 @@ export function select() {
 		placeholder: '100',
 		// selectedId: '2',
 		data: [
-			{id: '1', value: '50'},
-			{id: '2', value: '60'},
-			{id: '3', value: '100'}
+			{id: '1', value: '60'},
+			{id: '2', value: '100'}
 		],
 		onSelect(item) {
 			console.log('Selected Item', item)
@@ -18,9 +17,8 @@ export function select() {
 		placeholder: '100',
 		// selectedId: '2',
 		data: [
-			{id: '1', value: '50'},
-			{id: '2', value: '60'},
-			{id: '3', value: '100'}
+			{id: '1', value: '60'},
+			{id: '2', value: '100'}
 		],
 		onSelect(item) {
 			console.log('Selected Item', item)
