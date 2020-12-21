@@ -39,7 +39,7 @@ export function categoriesWomen(woman) {
 			${transitionWrapper(pageForWomen)}
 			${titleWrapper(pageForWomen)}
 			<div class="flex-wrap">	
-				<div class="sidebar-page-categories">				
+				<div class="sidebar-page-categories-women">				
 					${categoriesMenuSidebar()}
 				</div>
 				<div class="content-page-categories">

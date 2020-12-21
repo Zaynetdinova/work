@@ -6,4 +6,9 @@
   width: 223px;
   position: absolute;
   height: 100%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
+
+

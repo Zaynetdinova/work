@@ -12,7 +12,7 @@ export class PriceFilterRange {
 		noUiSlider.create(this.rangeFilter, {
 			start: [20000, 80000],
 			connect: true,
-			margin: 5000,
+			margin: 0,
 			range: {
 				'min': 1,
 				'max': 100000
