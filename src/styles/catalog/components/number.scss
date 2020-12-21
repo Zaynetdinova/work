@@ -41,9 +41,14 @@
     margin: 0 4px;
     cursor: pointer;
     list-style: none;
+    font-size: 14px;
+    line-height: 16px;
     :hover {
       color: #DF2B2B;
       text-decoration: underline;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
   @media (max-width: 1130px) {

@@ -59,13 +59,17 @@
   .input-selected-item {
     display: flex;
     justify-content: space-between;
-    min-width: 132px;
+    min-width: 127px;
     align-items: center;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #3D3D3C;
     cursor: pointer;
+
+    .title {
+      min-width: 83px;
+    }
 
     .arrow-wrapper {
       display: flex;
