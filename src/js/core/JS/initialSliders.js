@@ -5,6 +5,7 @@ export function initialSliders() {
 	initialSliderWomanPage()
 	initialSliderChildrenPage()
 	initialSliderCatalog()
+	cardProductPage()
 }
 
 function mainPageInitialSlider() {
@@ -266,4 +267,29 @@ function initialSliderCatalog() {
 		}
 		new Swiper('.bestseller-catalog', options)
 	}())
+}
+
+function cardProductPage() {
+	const options = {
+		slidesPerView: 4,
+		direction: 'vertical',
+		spaceBetween: 5,
+		navigation: {
+			nextEl: '.swiper-button-next-main',
+			prevEl: '.swiper-button-prev-main',
+		},
+	}
+	const test = new Swiper('#view-photos-block-swiper-js', options)
+
+	new Swiper('#view-big-photos-block-swiper-js', {
+		slidesPerView: 4,
+		direction: 'vertical',
+		thumbs: {
+			swiper: test
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-main',
+			prevEl: '.swiper-button-prev-main',
+		},
+	})
 }

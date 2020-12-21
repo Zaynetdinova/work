@@ -1,3 +1,18 @@
 .View-photos-block {
-  background: red;
+  @import './auxiliaryPhotosBlock';
+  @import "./topPhotosBlock";
+
+  display: flex;
+
+  @media (max-width: 1024px) {
+    .view-photos-block {
+      width: 89px;
+      height: 501px;
+    }
+
+    .view-big-photos-block {
+      width: 331px;
+      height: 2000px;
+    }
+  }
 }

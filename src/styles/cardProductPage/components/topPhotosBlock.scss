@@ -1,0 +1,41 @@
+.view-big-photos-block {
+  width: 462px;
+  height: 2799px;
+
+  .button {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 0;
+    background: rgba(61, 61, 60, 0.1);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+
+    .arrow {
+      background-image: url("../images/icons/arrow-slider.svg");
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 9px;
+    }
+
+    &.button-prev {
+      top: 0;
+    }
+
+    &.button-next {
+      top: 655px;
+
+      .arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: rgba(61, 61, 60, 0.2);
+    }
+  }
+}
