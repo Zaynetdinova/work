@@ -38,6 +38,10 @@
       justify-content: flex-end;
       position: relative;
       top: 10px;
+      padding-right: 3px;
+      @media (max-width: 1024px) {
+        padding-right: 0;
+      }
     }
   }
 

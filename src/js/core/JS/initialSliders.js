@@ -221,7 +221,7 @@ function initialSliderCatalog() {
 					slidesOffsetAfter: 0,
 					slidesOffsetBefore: 0,
 				},
-				1920: {
+				1601: {
 					slidesPerView: 6,
 					spaceBetween: 20,
 					slidesOffsetAfter: 0,
