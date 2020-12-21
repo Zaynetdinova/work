@@ -1,5 +1,8 @@
 .material {
   @import 'category-price';
+  .filter-phone {
+    display: none;
+  }
   .wrapper-material {
     display: flex;
     justify-content: space-between;
@@ -36,6 +39,11 @@
     }
     .arrow {
       transform: rotate(270deg);
+    }
+  }
+  @media (max-width: 1024px) {
+    .filter-phone {
+      display: block;
     }
   }
 }
