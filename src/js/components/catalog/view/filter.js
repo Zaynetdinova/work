@@ -20,7 +20,9 @@ export function filter() {
             </div>
             
             <div class="material">
-					
+				<div class="filter-phone">
+					${filterPhone(filter_phone)}
+				</div>
 				${filters.map((filter) => {
 					const {title, categories, id} = filter
 					return `
@@ -57,7 +59,80 @@ export function filter() {
     `
 }
 
+function filterPhone(item) {
 
+	const items = item.map((item) => {
+		return `
+            <div id="parents-filter-js" data-_id=${item.id} class="box">
+				<article id="filter-catalog" class="wrapper-material">
+					<div class="title2">${item.title}</div>
+					<img class="arrow" src="${arrow}" alt="arrow">
+				</article>
+				
+				<div class="wrapper-choice" id="filter-choice">
+					${filterChoice(item.categories)}										
+				</div>															
+			</div>
+                
+        `
+	})
+	return `${items.join('')}`
+}
+
+let filter_phone = [
+	{title: 'Тип', id: 'type', categories: [
+			{
+				category: 'Повседневные',
+				number: '(888)',
+				id: 'type1',
+			},
+			{
+				category: 'Офисные',
+				number: '(888)',
+				id: 'type2',
+			},
+			{
+				category: 'Трикотажные',
+				number: '(888)',
+				id: 'type3',
+			},
+			{
+				category: 'Коктейльные',
+				number: '(888)',
+				id: 'type4',
+			},
+			{
+				category: 'Вечерние',
+				number: '(888)',
+				id: 'type5',
+			},
+			{
+				category: 'Длинные',
+				number: '(888)',
+				id: 'type6',
+			},
+			{
+				category: 'Костюмы',
+				number: '(888)',
+				id: 'type7',
+			},
+			{
+				category: 'Сарафаны',
+				number: '(888)',
+				id: 'type8',
+			},
+			{
+				category: 'Летние',
+				number: '(888)',
+				id: 'type9',
+			},
+			{
+				category: 'Короткие',
+				number: '(888)',
+				id: 'type10',
+			},
+		]},
+]
 let filters = [
 	{title: 'Материал', id: 'material', categories: [
 		{
