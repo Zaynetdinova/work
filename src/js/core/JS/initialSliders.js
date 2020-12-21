@@ -274,6 +274,23 @@ function cardProductPage() {
 		slidesPerView: 4,
 		direction: 'vertical',
 		spaceBetween: 5,
+		on: {
+			slideChange: function () {
+				// console.log(this.slides)
+			},
+			click: function (e){
+				if(this.clickedSlide.dataset.swiperSlideIndex) {
+					const test = this.clickedSlide.dataset.swiperSlideIndex
+					// починить
+					const a = +test + 4
+					console.log(a)
+					topSlider.slideTo(a)
+				}
+
+			},
+		},
+
+		loop: true,
 		navigation: {
 			nextEl: '.swiper-button-next-main',
 			prevEl: '.swiper-button-prev-main',
@@ -281,11 +298,14 @@ function cardProductPage() {
 	}
 	const test = new Swiper('#view-photos-block-swiper-js', options)
 
-	new Swiper('#view-big-photos-block-swiper-js', {
+	const topSlider = new Swiper('#view-big-photos-block-swiper-js', {
 		slidesPerView: 4,
 		direction: 'vertical',
-		thumbs: {
-			swiper: test
+		loop: true,
+		on: {
+			slideChange: function () {
+				console.log(this.activeIndex)
+			}
 		},
 		navigation: {
 			nextEl: '.swiper-button-next-main',
