@@ -19,19 +19,19 @@ export class Menu extends Component {
         });
     }
 
-    slider() {
-        let menu = new Swiper('.swiper-container3', {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 20,
-            breakpoints: {
-                538: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                }
-            }
-        })
-    }
+    // slider() {
+    //     let menu = new Swiper('.swiper-container3', {
+    //         slidesPerView: 1,
+    //         slidesPerGroup: 1,
+    //         spaceBetween: 20,
+    //         breakpoints: {
+    //             538: {
+    //                 slidesPerView: 2,
+    //                 slidesPerGroup: 2,
+    //             }
+    //         }
+    //     })
+    // }
     toHTML() {
         return menuCategories(cards)
     }
