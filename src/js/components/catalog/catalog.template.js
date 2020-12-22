@@ -334,7 +334,7 @@ const woman2 = {
     _id: 'catalog',
     data: [
         {
-            id: 'woman1',
+            id: '1catalog',
             img: img1,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -346,7 +346,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman2',
+            id: '2catalog',
             img: img2,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -356,7 +356,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman3',
+            id: '3catalog',
             img: img3,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -366,7 +366,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman4',
+            id: '4catalog',
             img: img4,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -376,7 +376,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman5',
+            id: '5catalog',
             img: img5,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -386,7 +386,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman6',
+            id: '6catalog',
             img: img6,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -396,7 +396,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman7',
+            id: '7catalog',
             img: img5,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
@@ -406,7 +406,7 @@ const woman2 = {
             sale: true
         },
         {
-            id: 'woman15',
+            id: '15catalog',
             img: img5,
             title: 'Vittoria Vicci',
             description: 'Наименование товара ',
