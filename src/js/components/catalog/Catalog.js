@@ -8,6 +8,7 @@ import {filterBy} from './js/filterBy'
 import {PriceFilterRange} from './js/priceFilterRange'
 import {pointsCatalogOpen} from './js/pointsCatalogOpen'
 import {select} from './js/select'
+import {numberPages} from './js/numberPages'
 
 export class Catalog extends Component {
     static className = 'Catalog'
@@ -42,7 +43,6 @@ export class Catalog extends Component {
                     deleteFilterGroup(element.dataset._id)
                     break
                 case 'button-filter-mobile-js':
-                    console.log('super')
                     stateFilterMobile()
                     break
                 case 'mobile-filter-close-js':
@@ -53,6 +53,9 @@ export class Catalog extends Component {
                     break
                 case 'clear-filter-list':
                     deleteFilterGroup()
+                    break
+                case 'number-pages-js':
+                    numberPages(e)
                     break
             }
         }

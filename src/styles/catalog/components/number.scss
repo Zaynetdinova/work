@@ -50,6 +50,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    .active-number {
+      color: #DF2B2B;
+    }
   }
   @media (max-width: 1130px) {
     .wrap-button {
