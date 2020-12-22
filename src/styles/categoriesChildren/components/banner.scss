@@ -1,0 +1,98 @@
+@import '../../color';
+@import '../../var';
+
+.BannerBlockChildren {
+  background-image: url("../images/moyo/6.png");
+  background-position: 50% 53%;
+  background-size: contain;
+
+  .root {
+    max-width: 1480px;
+    margin: auto;
+    padding: 0;
+    .main-title {
+      margin-bottom: 16px;
+    }
+  }
+
+  .card {
+
+    .box-img {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-shrink: 0;
+      position: relative;
+      padding-bottom: 151%;
+      width: 100%;
+
+      .img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 100%;
+      }
+    }
+
+    .info {
+      padding-top: 20px;
+      .text {
+        .title {
+          text-transform: none;
+        }
+      }
+    }
+    &:hover {
+      .line {
+        border-left: 2px solid #C8C8C8;
+      }
+      .text {
+        .title {
+          color: #0196AB;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+
+    .card {
+      .box-img {
+        padding-bottom: 151%;
+      }
+      .img {
+        height: auto;
+      }
+    }
+  }
+  @media (max-width: $tablet-breakpoint) {
+    background-image: url("../images/moyo/6_1024.png");
+    background-position: 50% 53%;
+    .card {
+      .box-img {
+        padding-bottom: 141%;
+      }
+    }
+  }
+  @media (max-width: $mobile-breakpoint) {
+
+    background-position: 50% 49%;
+    .card {
+      .box-img {
+        padding-bottom: 147%;
+      }
+    }
+  }
+
+  @media (max-width: $with-767) {
+    background-position: 50% 54%;
+    background-size: 220% 46%;
+    .card {
+      .img {
+        height: 270px;
+      }
+    }
+  }
+}

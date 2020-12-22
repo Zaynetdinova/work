@@ -3,6 +3,9 @@
   grid-template: repeat(auto-fit, minmax(70px, 1fr)) / repeat(auto-fit, minmax(55px, 1fr));
   grid-gap: 22px 30px;
   margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
   .box {
     display: flex;
     flex-direction: column;

@@ -41,7 +41,8 @@ export function cardProductPageTemplate() {
 							<div class="social">${socialProduct(social)}</div>
 							<div class="buttonAnotherGoods">${buttonProduct('Другие товары этого бренда')}</div>
 						</div>
-					</div>		
+					</div>
+							
 				</section>
 			</div>
 			
