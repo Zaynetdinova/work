@@ -1,14 +1,14 @@
+import {Title} from "../../moyomodaBlock/view/title";
 import {desktop} from "../../moyomodaBlock/view/desktop";
 import {mobile} from "../../moyomodaBlock/view/mobile";
-import {Title} from "../../moyomodaBlock/view/title";
-import img1 from "../../../../images/moyo/1.png";
-import img2 from "../../../../images/moyo/2.png";
-import img3 from "../../../../images/moyo/3.png";
-import img4 from "../../../../images/moyo/4.png";
-import img5 from "../../../../images/moyo/5.png";
-import MOYOmoda from '../../../../images/moyo/MOYOmoda2.svg'
+import MOYOmoda from "../../../../images/moyo/MOYOmoda2.svg";
+import img1 from "../../../../images/moyo/girl/1.png";
+import img2 from "../../../../images/moyo/girl/2.png";
+import img3 from "../../../../images/moyo/girl/3.png";
+import img4 from "../../../../images/moyo/girl/4.png";
+import img5 from "../../../../images/moyo/girl/5.png";
 
-export function bannerBlockWomen() {
+export function bannerBlockChildren() {
     return `
     <section class="root">
         ${Title(title)}      
@@ -35,7 +35,7 @@ const cards = [
     {
         id: '',
         img: img2,
-        title: 'Трикотаж',
+        title: 'Блузки',
         description: 'Смотреть на сайте партнера',
     },
     {
@@ -47,7 +47,7 @@ const cards = [
     {
         id: '',
         img: img4,
-        title: 'Нижнее белье',
+        title: 'Одежда для школы',
         description: 'Смотреть на сайте партнера',
     },
     {

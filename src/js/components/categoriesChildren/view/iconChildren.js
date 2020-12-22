@@ -77,132 +77,164 @@ let dataSidebarGirl = [
 let baby = [
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'верхняя одежда'
+        title: 'верхняя одежда',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'КОЛГОТКИ И НоСКИ'
+        title: 'КОЛГОТКИ И НоСКИ',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Категория'
+        title: 'Категория',
+        link: '/#catalog'
     },
     {
         img: img20,
-        title: 'Скидки'
+        title: 'Скидки',
+        link: '/#catalog'
     },
 ]
 let girl = [
     {
         img: img18,
-        title: 'Платья'
+        title: 'Платья',
+        link: '/#catalog'
     },
     {
         img: img19,
-        title: 'Блузки'
+        title: 'Блузки',
+        link: '/#catalog'
     },
     {
         img: img3,
-        title: 'трикотаж'
+        title: 'трикотаж',
+        link: '/#catalog'
     },
     {
         img: img4,
-        title: 'брюки'
+        title: 'брюки',
+        link: '/#catalog'
     },
     {
         img: img5,
-        title: 'ЮБКИ'
+        title: 'ЮБКИ',
+        link: '/#catalog'
     },
     {
         img: img6,
-        title: 'школа'
+        title: 'школа',
+        link: '/#catalog'
     },
     {
         img: img7,
-        title: 'жакеты'
+        title: 'жакеты',
+        link: '/#catalog'
     },
     {
         img: img8,
-        title: 'верхняя одежда'
+        title: 'верхняя одежда',
+        link: '/#catalog'
     },
     {
         img: img12,
-        title: 'КОЛГОТКИ И НоСКИ'
+        title: 'КОЛГОТКИ И НоСКИ',
+        link: '/#catalog'
     },
     {
         img: img10,
-        title: 'Нижнее белье'
+        title: 'Нижнее белье',
+        link: '/#catalog'
     },
     {
         img: img11,
-        title: 'купальники'
+        title: 'купальники',
+        link: '/#catalog'
     },
     {
         img: img9,
         title: 'костюмы',
+        link: '/#catalog'
     },
     {
         img: img13,
-        title: 'комбинезоны'
+        title: 'комбинезоны',
+        link: '/#catalog'
     },
     {
         img: img14,
-        title: 'боди'
+        title: 'боди',
+        link: '/#catalog'
     },
     {
         img: img21,
-        title: 'для дома'
+        title: 'для дома',
+        link: '/#catalog'
     },
     {
         img: img22,
-        title: 'аксессуары'
+        title: 'аксессуары',
+        link: '/#catalog'
     },
     {
         img: img23,
-        title: 'обувь'
+        title: 'обувь',
+        link: '/#catalog'
     },
     {
         img: img16,
-        title: 'новинки'
+        title: 'новинки',
+        link: '/#catalog'
     },
     {
         img: img15,
-        title: 'скидки'
+        title: 'скидки',
+        link: '/#catalog'
     },
     {
         img: img17,
-        title: 'акции'
+        title: 'акции',
+        link: '/#catalog'
     }
 ]

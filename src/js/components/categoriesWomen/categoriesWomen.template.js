@@ -31,7 +31,7 @@ import img21 from '../../../images/bestsellers/1/img4.png'
 import img22 from '../../../images/bestsellers/1/img5.png'
 import img23 from '../../../images/bestsellers/1/img6.png'
 
-import {bannerBlock} from "./view/banner";
+import {bannerBlockWomen} from "./view/banner";
 
 export function categoriesWomen(woman) {
 	return `
@@ -48,7 +48,7 @@ export function categoriesWomen(woman) {
 					</div>
 					<div class="wrap-IconImg">${IconImg(item)}</div>
 					<div class="wrap-card Moyomoda-Block BannerBlock">
-						${bannerBlock()}
+						${bannerBlockWomen()}
 					</div>
 					<div class="wrap-partnerOffers">
 						${partnerOffers()}
@@ -73,71 +73,88 @@ let pageForWomen = [
 let item = [
 	{
 		img: img1,
-		title: 'Платья'
+		title: 'Платья',
+		link: '/#catalog',
 	},
 	{
 		img: img2,
-		title: 'Трикотаж'
+		title: 'Трикотаж',
+		link: '/#catalog',
 	},
 	{
 		img: img3,
-		title: 'ВЕРХА'
+		title: 'ВЕРХА',
+		link: '/#catalog',
 	},
 	{
 		img: img4,
-		title: 'НИЗЫ'
+		title: 'НИЗЫ',
+		link: '/#catalog',
 	},
 	{
 		img: img5,
-		title: 'ЮБКИ'
+		title: 'ЮБКИ',
+		link: '/#catalog',
 	},
 	{
 		img: img6,
-		title: 'ВЕРХНЯЯ ОДЕЖДА'
+		title: 'ВЕРХНЯЯ ОДЕЖДА',
+		link: '/#catalog',
 	},
 	{
 		img: img7,
-		title: 'костюмы'
+		title: 'костюмы',
+		link: '/#catalog',
 	},
 	{
 		img: img8,
-		title: 'для дома'
+		title: 'для дома',
+		link: '/#catalog',
 	},
 	{
 		img: img9,
-		title: 'спорт'
+		title: 'спорт',
+		link: '/#catalog',
 	},
 	{
 		img: img10,
-		title: 'Нижнее белье'
+		title: 'Нижнее белье',
+		link: '/#catalog',
 	},
 	{
 		img: img11,
-		title: 'купальники'
+		title: 'купальники',
+		link: '/#catalog',
 	},
 	{
 		img: img12,
-		title: 'КОЛГОТКИ И НоСКИ'
+		title: 'КОЛГОТКИ И НоСКИ',
+		link: '/#catalog',
 	},
 	{
 		img: img13,
-		title: 'аксессуары'
+		title: 'аксессуары',
+		link: '/#catalog',
 	},
 	{
 		img: img14,
-		title: 'большие размеры'
+		title: 'большие размеры',
+		link: '/#catalog',
 	},
 	{
 		img: img15,
-		title: 'новинки'
+		title: 'новинки',
+		link: '/#catalog',
 	},
 	{
 		img: img16,
-		title: 'скидки'
+		title: 'скидки',
+		link: '/#catalog',
 	},
 	{
 		img: img17,
-		title: 'акции'
+		title: 'акции',
+		link: '/#catalog',
 	}
 ]
 
