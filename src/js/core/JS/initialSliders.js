@@ -196,6 +196,8 @@ function initialSliderChildrenPage() {
 	}
 
 	let childrenSwiper = new Swiper('.bestseller-children', options)
+	let childrenSwiper2 = new Swiper('.bestseller-children2', options)
+
 }
 
 function initialSliderCatalog() {

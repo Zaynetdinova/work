@@ -40,16 +40,15 @@
     line-height: 14px;
     letter-spacing: 0.05em;
   }
-}
-
-@media (max-width: 1024px) {
-  .wrapper-title {
+  @media (max-width: 1024px) {
     .title {
       display: none;
     }
-
     .mobile-title {
       display: block;
     }
+  }
+  @media (max-width: 768px) {
+    padding: 11.5px 10px 11.5px 13px;
   }
 }

@@ -103,7 +103,10 @@
   .line {
     border-bottom: 2px dotted #D9D9D9;
   }
-
+  a {
+    color: #555555;
+    text-decoration: none;
+  }
   .choice {
     padding: 0 0 0 25px;
     display: flex;

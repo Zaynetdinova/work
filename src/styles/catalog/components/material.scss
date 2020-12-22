@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10.5px 10px 10.5px 13px;
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid #D9D9D9;
     .title2 {
       font-weight: 600;
       font-size: 13px;
@@ -31,7 +31,7 @@
   .wrapper-choice {
     display: none;
     border-bottom: 1px solid #BDBDBD;
-
+    padding-bottom: 1px;
   }
   .open-category-filter {
     .wrapper-choice {
@@ -44,6 +44,16 @@
   @media (max-width: 1024px) {
     .filter-phone {
       display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    .wrapper-material {
+      padding: 0 10px 0 13px;
+      .title2 {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 39px;
+      }
     }
   }
 }

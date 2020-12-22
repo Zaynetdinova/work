@@ -9,10 +9,15 @@
     background: url("../images/icons/arrow2.svg") no-repeat;
     width: 10px;
     height: 10px;
+    position: relative;
   }
 
   .arrow-prev {
     transform: rotate(-180deg);
+    left: 1px;
+  }
+  .arrow-next {
+    right: 1px;
   }
 
   .button-prev,

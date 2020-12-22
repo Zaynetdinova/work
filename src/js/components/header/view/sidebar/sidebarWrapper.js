@@ -46,14 +46,16 @@ let point =
         {
           id: 'dress',
           category: 'Платья',
-          link: '/#categories-view'
+          link: '/#catalog'
         },
         {
           id: 'jersey',
-          category: 'Трикотаж'
+          category: 'Трикотаж',
+          link: '/#catalog'
         },
         {
-          category: 'Верха'
+          category: 'Верха',
+          link: '/#catalog'
         },
         {
           category: 'Низы'

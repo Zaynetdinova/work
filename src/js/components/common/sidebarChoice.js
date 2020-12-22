@@ -7,7 +7,7 @@ export function sidebarChoice(li = [], subcategory, arrow) {
 
       return `
         <figure data-category class='category' id="${id}">
-            <a class='choice' id="choice">
+            <a class='choice' id="choice" href="${item.link}">
                 ${category}
                 ${arrow == 'notArrow' ? '' : `<div class="arrow"></div>`}
             </a>
