@@ -21,7 +21,7 @@ export function additionalInformation(title, description, img, index) {
 														<div class="description">${description}</div>
 												</div>`}
 					 
-					 test
+					 
 							<div class="Size">
 									${block.join('')}
 							</div>
