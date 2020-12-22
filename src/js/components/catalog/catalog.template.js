@@ -63,7 +63,7 @@ export function catalog()  {
                  <div class="wrapper-number">
                     ${number()}
                  </div>               
-                <div class="wrap-card-see">
+                <div class="wrap-card-see" id="style-for-apple-js">
                     ${commonCard(woman2, 'price')}
                 </div>               
             </section>        
