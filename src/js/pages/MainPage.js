@@ -7,6 +7,7 @@ import {SharesBlock} from '../components/sharesBlock/sharesBlock'
 import {MoyomodaBlock} from '../components/moyomodaBlock/MoyomodaBlock'
 import {Bestsellers} from '../components/bestsellers/Bestsellers'
 import {Footer} from '../components/footer/Footer'
+import {Menu} from "../components/menu1024/Menu";
 
 export class MainPage extends Page {
 	getRoot() {
@@ -14,6 +15,7 @@ export class MainPage extends Page {
   	components: [
     Header,
     Main,
+	Menu,
     PopularBrand,
     SharesBlock,
     MoyomodaBlock,
@@ -21,7 +23,6 @@ export class MainPage extends Page {
     Footer
   ]
 	})
-
 		return this.app.getRoot()
 	}
 
