@@ -236,7 +236,13 @@ function initialSliderCatalog() {
 				prevEl: '.swiper-button-prev-main',
 			},
 			breakpoints: {
-				2200: {
+				2400: {
+					slidesPerView: 8,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				2100: {
 					slidesPerView: 7,
 					spaceBetween: 20,
 					slidesOffsetAfter: 0,
