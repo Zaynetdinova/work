@@ -19,8 +19,17 @@ export function initialSliders() {
 		},
 		on: {
 			click: function (e) {
-				// console.log(this)
-				// console.log(this.clickedSlide.dataset.swiperSlideIndex)
+
+			}
+		}
+	})
+
+	new Swiper('.test-Ilmira', {
+		slidesPerView: 3.4,
+		spaceBetween: 20,
+		breakpoints: {
+			538: {
+				slidesPerView: 6,
 			}
 		}
 	})
