@@ -1,5 +1,4 @@
 import {Component} from "../../core/Component";
-import Swiper from "swiper";
 
 import img1 from "../../../images/menu/1.svg";
 import img2 from "../../../images/menu/2.svg";
@@ -18,20 +17,6 @@ export class Menu extends Component {
             listeners: []
         });
     }
-
-    // slider() {
-    //     let menu = new Swiper('.swiper-container3', {
-    //         slidesPerView: 1,
-    //         slidesPerGroup: 1,
-    //         spaceBetween: 20,
-    //         breakpoints: {
-    //             538: {
-    //                 slidesPerView: 2,
-    //                 slidesPerGroup: 2,
-    //             }
-    //         }
-    //     })
-    // }
     toHTML() {
         return menuCategories(cards)
     }

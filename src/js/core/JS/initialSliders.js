@@ -25,11 +25,31 @@ export function initialSliders() {
 	})
 
 	new Swiper('.test-Ilmira', {
-		slidesPerView: 3.4,
-		spaceBetween: 20,
+		slidesPerView: 5,
+		spaceBetween: 10,
+		slidesOffsetAfter: 0,
 		breakpoints: {
-			538: {
+			600: {
 				slidesPerView: 6,
+				slidesOffsetAfter: 0,
+			},
+			485: {
+				slidesOffsetAfter: 0,
+			},
+			411: {
+				slidesPerView: 4.5,
+				spaceBetween: 10,
+				slidesOffsetAfter: 10,
+			},
+			350: {
+				slidesPerView: 3.9,
+				spaceBetween: 10,
+				slidesOffsetAfter: 15,
+			},
+			320: {
+				slidesPerView: 3.5,
+				spaceBetween: 10,
+				slidesOffsetAfter: 15
 			}
 		}
 	})
