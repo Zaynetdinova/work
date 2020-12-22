@@ -85,10 +85,10 @@ $widthCardImage: 87px;
 
       .block-under-image {
         position: absolute;
-        top: -38px;
-        bottom: 0;
+        //top: -38px;
+        bottom: -1px;
         background: #555555;
-        height: 141%;
+        height: 100%;
         width: $widthCardImage;
         left: 100%;
         border-bottom: 1px solid #555555;
@@ -97,20 +97,62 @@ $widthCardImage: 87px;
 
     .images {
       z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       position: absolute;
       top: -1px;
       right: -$widthCardImage;
       width: $widthCardImage;
       background: #555555;
-      padding: 4.85px 4.85px 0 4.85px;
+      padding: 5px;
+      //padding-bottom: 0;
       //border: 1px solid #555555;
 
-      img {
-        width: 100%;
-        padding-bottom: 4.85px;
+
+      .photos-block-common-block {
+        height: 490px;
+
+        @media (max-width: 1200px) {
+          height: 390px;
+        }
+      }
+
+      .button {
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 120%;
+        background: rgba(61, 61, 60, 0.4);
+        z-index: 2;
+        height: 15px;
+        left: -10%;
+        cursor: pointer;
+        display: none;
+
+
+        .arrow {
+          background-image: url("../images/icons/arrow-card.svg");
+          background-repeat: no-repeat;
+          width: 12px;
+          height: 6px;
+        }
+
+
+        &.button-prev {
+          top: 0;
+        }
+        &.button-next {
+          bottom: 0;
+
+          .arrow {
+            transform: rotate(180deg);
+          }
+
+        }
+      }
+
+      &:hover {
+        .button {
+          display: flex;
+        }
       }
     }
 
@@ -118,8 +160,6 @@ $widthCardImage: 87px;
 
   &.additional-information-open {
     border: 1px solid #555555;
-    //outline: 1px solid #555555;
-    //border-left: 1px solid red;
     .quick-view {
       display: flex;
       justify-content: center;

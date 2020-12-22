@@ -6,6 +6,24 @@ export function initialSliders() {
 	initialSliderChildrenPage()
 	initialSliderCatalog()
 	cardProductPage()
+
+	new Swiper('.photos-block-common-block-js', {
+		slidesPerView: 4,
+		direction: 'vertical',
+		observer: true,
+		observeParents: true,
+		spaceBetween: 5,
+		navigation: {
+			nextEl: '.swiper-button-next-main-au',
+			prevEl: '.swiper-button-prev-main-au',
+		},
+		on: {
+			click: function (e) {
+				// console.log(this)
+				// console.log(this.clickedSlide.dataset.swiperSlideIndex)
+			}
+		}
+	})
 }
 
 function mainPageInitialSlider() {
