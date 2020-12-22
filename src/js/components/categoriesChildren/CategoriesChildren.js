@@ -18,104 +18,10 @@ export class CategoriesChildren extends Component {
     }
 
     toHTML() {
-        return categoriesChildren(woman)
+        return categoriesChildren()
     }
 
     onClick(e) {
         sidebarChildren(e)
     }
-}
-
-
-
-let woman =  {
-    _id: 'children',
-    title: 'Категория',
-    data: [
-        {
-            id: 'woman1',
-            img: img1,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            banner: 'НОВИНКА',
-            bannerPosition: 'bottom',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman2',
-            img: img2,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman3',
-            img: img3,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman4',
-            img: img4,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman5',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman6',
-            img: img6,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman7',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman8',
-            img: img1,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            banner: 'НОВИНКА',
-            bannerPosition: 'bottom',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-
-    ],
 }
