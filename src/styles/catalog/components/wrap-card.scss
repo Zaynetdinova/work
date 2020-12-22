@@ -2,6 +2,10 @@
   margin-top: 70px;
   max-width: calc(100vw - 300px);
 
+  .bestseller-catalog {
+    padding-bottom: 150px;
+  }
+
   &.style-apple-padding {
     max-width: calc(100vw - 280px);
   }
@@ -14,8 +18,16 @@
   }
 
   @media (max-width: 1024px) {
-    max-width: 100%;
+   max-width: 100%;
     padding: 0;
+
+    &.style-apple-padding {
+      max-width: 100%;
+    }
+
+    .bestseller-catalog {
+      padding-bottom: 0;
+    }
   }
   @media (max-width: 699px) {
     .bestsellers-header-wrapper {
