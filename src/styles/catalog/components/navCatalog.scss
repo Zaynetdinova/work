@@ -1,7 +1,5 @@
 .navCatalog {
-  .nav {
-    display: flex;
-  }
+  display: flex;
   .nav-text {
     margin-right: 15px;
     font-size: 14px;
@@ -9,9 +7,14 @@
     color: #3D3D3C;
     text-decoration: none;
     border-bottom: 0.5px dashed #555555;
+    cursor: pointer;
     &:hover {
       color: #EE3434;
       border-bottom: 0.5px dashed #EE3434;
     }
+  }
+  .active-number {
+    color: #EE3434;
+    border-bottom: 0.5px dashed #EE3434;
   }
 }

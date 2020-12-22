@@ -127,28 +127,44 @@ let point =
 
 let item = [
     {
-        title: 'Наш выбор'
+        title: 'Наш выбор',
+        id: 'active1',
+        class: 'active-number'
     },
     {
-        title: 'Дешевые'
+        title: 'Дешевые',
+        id: 'active2',
+        class: ''
     },
     {
-        title: 'Дорогие'
+        title: 'Дорогие',
+        id: 'active3',
+        class: ''
     },
     {
-        title: 'Новые'
+        title: 'Новые',
+        id: 'active4',
+        class: ''
     },
     {
-        title: 'Старые'
+        title: 'Старые',
+        id: 'active5',
+        class: ''
     },
     {
-        title: 'Скидки'
+        title: 'Скидки',
+        id: 'active6',
+        class: ''
     },
     {
-        title: 'Акции'
+        title: 'Акции',
+        id: 'active7',
+        class: ''
     },
     {
-        title: 'Популярные'
+        title: 'Популярные',
+        id: 'active8',
+        class: ''
     },
 ]
 
