@@ -1,6 +1,6 @@
 export function additionalInformation(title, description, img, index) {
 	const sizes = [
-		'40', '42', '46', '48', '50', '52'
+		'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 	]
 	const block = sizes.map(item => {
 		return `
@@ -21,6 +21,7 @@ export function additionalInformation(title, description, img, index) {
 														<div class="description">${description}</div>
 												</div>`}
 					 
+					 test
 							<div class="Size">
 									${block.join('')}
 							</div>
@@ -29,14 +30,31 @@ export function additionalInformation(title, description, img, index) {
         
           
 				<div class='images'>
-						<img src="${img}">
-						<img src="${img}">
-						<img src="${img}">
-						<img src="${img}">
+						<div class="swiper-container photos-block-common-block photos-block-common-block-js">
+							<div class="swiper-wrapper">
+								<img src="${img}" class="swiper-slide">
+								<img src="${img}" class="swiper-slide">
+								<img src="${img}" class="swiper-slide">
+								<img src="${img}" class="swiper-slide">
+								<img src="${img}" class="swiper-slide">
+								<img src="${img}" class="swiper-slide">
+							</div>
+							
+								${buttonPhotos('prev')}
+								${buttonPhotos('next')}
+						</div>
 				</div>
       </div>
   </div>
   `
+}
+
+function buttonPhotos(type) {
+	return `
+		<span class="swiper-button-${type}-main-au button button-${type}">
+				<div class="arrow"></div>
+		</span>
+	`
 }
 
 

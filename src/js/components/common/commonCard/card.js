@@ -19,7 +19,7 @@ export function card(i, infoType = 'price') {
 			${infoType == 'price'
 			? priceContent(oldPrice, newPrice, price, sale)
 			: infoCard(title, description)}
-			${additionalInformation(title, description, img)}
+			${additionalInformation(title, description, img, id)}
 		</article>
 	
 	`
