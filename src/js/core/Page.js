@@ -2,6 +2,7 @@ import {openSidebar} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
 import {eventCommonCardHover} from './JS/eventCommonCardHover'
 import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
+import {UserAgent} from './JS/userAgent'
 
 export class Page {
 	constructor(params) {
@@ -19,9 +20,13 @@ export class Page {
 			eventCommonCardHover()
 		}
 		closeWhenClickingInAnInactiveZone()
+		const userAgent = new UserAgent()
+		userAgent.operatingSystemDetection()
+
 	}
 
 	destroy() {
 
 	}
 }
+
