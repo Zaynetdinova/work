@@ -1,0 +1,27 @@
+.dop-info {
+  .dop-info-items {
+    display: flex;
+    justify-content: space-between;
+    .first-col {
+      width: 48.5%;
+    }
+    .second-col {
+      width: 48.5%;
+    }
+  }
+  .common-dop-info {
+    border-bottom: 1px dotted #777777;
+    padding: 10px 0;
+    .dop-info-inform,
+    .dop-info-title {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .dop-info-title {
+      font-weight: bold;
+    }
+    .dop-info-inform {
+      font-weight: normal;
+    }
+  }
+}
