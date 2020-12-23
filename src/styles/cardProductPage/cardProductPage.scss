@@ -2,11 +2,18 @@
   @import "./components/viewPhotosBlock";
   @import "./components/product-description";
   @import "./components/buttonProduct";
+  @import "./components/titleProdactPage";
   @import "./components/star";
   @import "./components/favorites";
   @import "./components/transitionBrand";
   @import "./components/infoProduct";
-  @import "components/socialProduct";
+  @import "./components/socialProduct";
+  @import "./components/anotherColor";
+  @import "./components/infoTable";
+  @import "./components/attention";
+  @import "./components/description";
+  @import "./components/dopInfo";
+  @import "./components/form";
   .root {
     padding: 0 20px;
     max-width: 1480px;
@@ -16,5 +23,12 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+  }
+  .wrapper-card {
+    margin-top: 116px;
+    .bestseller-product,
+    .bestseller-product2{
+      padding-bottom: 120px;
+    }
   }
 }

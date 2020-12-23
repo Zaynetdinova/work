@@ -118,6 +118,8 @@ function mainPageInitialSlider() {
 		let manSwiper = new Swiper('.bestseller-man', options)
 		let homeSwiper = new Swiper('.bestseller-home', options)
 		let toySwiper = new Swiper('.bestseller-toy', options)
+		let card = new Swiper('.bestseller-product',options)
+		let card2 = new Swiper('.bestseller-product2',options)
 	}())
 }
 
@@ -321,6 +323,7 @@ function initialSliderCatalog() {
 			}
 		}
 		new Swiper('.bestseller-catalog', options)
+
 	}())
 }
 
@@ -341,7 +344,6 @@ function cardProductPage() {
 					console.log(a)
 					topSlider.slideTo(a)
 				}
-
 			},
 		},
 
@@ -368,3 +370,6 @@ function cardProductPage() {
 		},
 	})
 }
+
+
+
