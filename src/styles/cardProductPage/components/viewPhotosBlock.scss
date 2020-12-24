@@ -4,7 +4,7 @@
 
   display: flex;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     .view-photos-block {
       width: 89px;
       height: 501px;
@@ -14,5 +14,19 @@
       width: 331px;
       height: 2000px;
     }
+  }
+  @media (max-width: 1023px) {
+    .view-photos-block {
+      width: 67px;
+      height: 376px;
+    }
+
+    .view-big-photos-block {
+      width: 251px;
+      height: 1520px;
+    }
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 }

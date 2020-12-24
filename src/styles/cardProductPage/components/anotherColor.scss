@@ -11,4 +11,25 @@
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 1300px) {
+    .anotherPhoto {
+      img {
+        width: 85px;
+        height: 128px;
+      }
+    }
+  }
+  @media (max-width: 1023px) {
+    .anotherPhoto {
+      img {
+        width: 62px;
+        height: 92px;
+      }
+    }
+  }
+  @media (max-width: 410px) {
+    .anotherPhoto {
+      display: none;
+    }
+  }
 }

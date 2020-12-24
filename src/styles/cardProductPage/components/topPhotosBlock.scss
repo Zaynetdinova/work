@@ -37,5 +37,16 @@
       cursor: pointer;
       background: rgba(61, 61, 60, 0.2);
     }
+
+    @media (max-width: 1300px) {
+      &.button-next {
+        top: 454px;
+      }
+    }
+    @media (max-width: 1023px) {
+      &.button-next {
+        top: 334px;
+      }
+    }
   }
 }

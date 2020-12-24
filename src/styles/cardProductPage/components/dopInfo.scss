@@ -24,4 +24,16 @@
       font-weight: normal;
     }
   }
+  @media (max-width: 1023px) {
+    .dop-info-items {
+      display: flex;
+      flex-direction: column;
+      .first-col {
+        width: 100%;
+      }
+      .second-col {
+        width: 100%;
+      }
+    }
+  }
 }
