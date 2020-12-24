@@ -15,7 +15,7 @@
   @import "./components/dopInfo";
   @import "./components/form";
   .root {
-    padding: 0 20px;
+    padding: 0 15px;
     max-width: 1480px;
     margin: 0 auto;
   }
@@ -29,6 +29,31 @@
     .bestseller-product,
     .bestseller-product2{
       padding-bottom: 120px;
+      .content {
+        .line {
+          display: none;
+        }
+        .see-all {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .transitionWrapper {
+      padding: 10px 0;
+    }
+    .wrapper-card {
+      margin-bottom: 163px;
+      .bestseller-product,
+      .bestseller-product2{
+        padding-bottom: 50px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .wrapper-card {
+      margin-top: 60px;
     }
   }
 }

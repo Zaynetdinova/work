@@ -58,7 +58,13 @@
     top: 50%;
     transform: translateY(-50%);
   }
-
+  @media (max-width: 1024px) {
+    .burger-menu-wrapper {
+      .burger-menu {
+        margin-left: 15px;
+      }
+    }
+  }
   @media (max-width: 320px) {
     .content {
       padding: 0 12px;

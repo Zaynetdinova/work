@@ -40,7 +40,7 @@ export function cardProductPageTemplate() {
 				<section class="product-description">
 					<div class="first-line">
 						<div class="right-wrap">
-							<div style="margin-right: 12px">${buttonProduct('Новинка')}</div>							
+							<div class="wrapper-button-new">${buttonProduct('Новинка')}</div>							
 							${star(starItem)}
 						</div>
 						${favorites()}
@@ -49,7 +49,7 @@ export function cardProductPageTemplate() {
 					${goodStock()}
 					<div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
 					<div class="info">
-						<div>${infoProduct(info)}</div>
+						<div class="info-1">${infoProduct(info)}</div>
 						<div>
 							<div class="social">${socialProduct(social)}</div>
 							<div class="buttonAnotherGoods">${buttonProduct('Другие товары этого бренда')}</div>

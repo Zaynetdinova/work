@@ -13,7 +13,7 @@
       font-size: 15px;
       line-height: 20px;
       color: #3D3D3C;
-      margin-right: 3px;
+      margin-right: 10px;
     }
   }
   table {
@@ -87,6 +87,19 @@
     .result-price {
       font-weight: bold;
       margin-left: 6px;
+    }
+  }
+  @media (max-width: 410px) {
+    table {
+      #col1 {
+        width: 30%;
+      }
+      #col2 {
+        width: 32%;
+      }
+      #col3 {
+        width: 37%;
+      }
     }
   }
 }

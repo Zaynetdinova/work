@@ -1,6 +1,6 @@
 .product-description {
   @import "price";
-  width: 588px;
+  max-width: 588px;
   margin: 0 auto;
   .first-line {
     display: flex;
@@ -8,6 +8,9 @@
     margin-bottom: 15px;
     .right-wrap {
       display: flex;
+      .wrapper-button-new {
+        margin-right: 12px;
+      }
     }
   }
   .info {
@@ -29,5 +32,28 @@
   .wrapper-dop-info {
     margin-top: 55px;
     margin-bottom: 40px;
+  }
+  @media (max-width: 1300px) {
+    max-width: 533px;
+  }
+  @media (max-width: 1023px) {
+    max-width: 384px;
+    .info {
+      flex-direction: column;
+      align-items: normal;
+      .info-1 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    max-width: 737px;
+    .first-line {
+      .right-wrap {
+        .wrapper-button-new {
+          display: none;
+        }
+      }
+    }
   }
 }

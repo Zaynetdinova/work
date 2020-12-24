@@ -268,19 +268,19 @@ function initialSliderCatalog() {
 			},
 			breakpoints: {
 				2400: {
-					slidesPerView: 8,
+					slidesPerView: 11,
 					spaceBetween: 20,
 					slidesOffsetAfter: 0,
 					slidesOffsetBefore: 0,
 				},
 				2100: {
-					slidesPerView: 7,
+					slidesPerView: 10,
 					spaceBetween: 20,
 					slidesOffsetAfter: 0,
 					slidesOffsetBefore: 0,
 				},
 				1601: {
-					slidesPerView: 6,
+					slidesPerView: 7,
 					spaceBetween: 20,
 					slidesOffsetAfter: 0,
 					slidesOffsetBefore: 0,
