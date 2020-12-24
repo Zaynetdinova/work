@@ -66,7 +66,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman2',
@@ -76,7 +77,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman3',
@@ -86,7 +88,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman4',
@@ -96,7 +99,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman5',
@@ -106,7 +110,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman6',
@@ -116,7 +121,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman7',
@@ -126,7 +132,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
       {
         id: 'woman8',
@@ -136,7 +143,8 @@ const cards = {
         oldPrice: '1 234,00 &#8381',
         newPrice: '-234,00 &#8381;',
         price: '1 243,00 &#8381; ',
-        sale: true
+        sale: true,
+        link: '/#card-product'
       },
     ],
     link: '/#categories',
@@ -153,7 +161,8 @@ const cards = {
       description: 'Наименование товара ',
       banner: 'НОВИНКА',
       price: '1 243,00 &#8381;',
-      bannerPosition: 'bottom'
+      bannerPosition: 'bottom',
+      link: '/#card-product'
     },
     {
       id: 'ch2',
