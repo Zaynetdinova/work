@@ -11,13 +11,19 @@ export function infoTable(item) {
             </div>
             <table>
                 <tr>${titleTable(item)}</tr>   
-                <tr data-size class="tr-common">${dataTable(item)}</tr>
-                <tr data-size class="tr-common">${dataTable(item)}</tr>   
-                <tr data-size class="tr-common">${dataTable(item)}</tr>   
-                <tr data-size class="tr-common">${dataTable(item)}</tr>
-                <tr data-size class="tr-common">${dataTable(item)}</tr>        
+                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>
+                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>   
+                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>   
+                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>
+                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>        
             </table>
-            <div class="result"><span class="result-title">Итого:</span> <span class="result-price">88 шт./ 1 234 ₽</span></div>
+            <div class="result">
+            <span class="result-title">Итого:</span> 
+                <span class="result-price">
+                        <input class="common-count-js input-count-number" value="0" readonly> шт./
+                        <input class="common-price-js input-count-number" readonly value="0"> ₽
+                </span>
+            </div>
         </article>
    `
 }
@@ -73,7 +79,7 @@ function price() {
     return `
         <table>
             <tr>
-                <td class="price">Цена закрыта</td>
+                <td class="price price-js" data-price="1230">Цена закрыта</td>
             </tr>
         </table>       
     `
