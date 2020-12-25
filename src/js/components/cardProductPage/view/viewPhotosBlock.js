@@ -2,14 +2,14 @@ import testBig1 from '../../../../images/cardProduct/test-big1.png'
 import testBig2 from '../../../../images/cardProduct/test-big2.png'
 import testBig3 from '../../../../images/cardProduct/test-big3.png'
 import testBig4 from '../../../../images/cardProduct/test-big4.png'
-import {sliderPointerTemplate} from "../../common/sliderPointer.template";
+import {r} from "../../common/commonCard/commonCardHeader";
 
 export function viewPhotosBlock() {
 	return `
 	<div class="View-photos-block">
 		<section id="view-photos-block-swiper-js" class="swiper-container view-photos-block">
 			<div class="swiper-wrapper">
-					${photos()}
+				${photos()}
 			</div>
 			
 			${buttonPhotos('prev')}
@@ -21,7 +21,7 @@ export function viewPhotosBlock() {
 			<div class="swiper-wrapper">
 				${photos()}
 			</div>
-			
+						
 			${buttonPhotos('prev')}
 			${buttonPhotos('next')}
 		</section>
@@ -35,6 +35,7 @@ export function viewPhotosBlockMobile() {
 			<div class="swiper-wrapper">
 				${photos()}
 			</div>
+			<div class="slider-pointer">${r()}</div>
 		</div>
 	`
 }

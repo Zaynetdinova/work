@@ -20,7 +20,7 @@ export function commonCardHeader(text,link) {
   `
 }
 
-function r () {
+export function r () {
   return `
     <div class="dots">
         <span class="dots-bestseller active"></span>

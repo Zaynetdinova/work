@@ -11,7 +11,7 @@ import {Menu} from "../components/menu1024/Menu";
 
 export class MainPage extends Page {
 	getRoot() {
-		this.app = new OptMoyo( {
+	this.app = new OptMoyo( {
   	components: [
     Header,
     Main,
