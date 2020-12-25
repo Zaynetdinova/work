@@ -218,6 +218,11 @@
       }
     }
   }
+  @media (max-width: 767px) {
+    .wrapper-button {
+      justify-content: center;
+    }
+  }
   @media (max-width: 410px) {
     .wrapper-button {
       .cancel,

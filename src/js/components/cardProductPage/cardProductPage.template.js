@@ -1,4 +1,4 @@
-import {viewPhotosBlock} from './view/viewPhotosBlock'
+import {viewPhotosBlock, viewPhotosBlockMobile} from './view/viewPhotosBlock'
 import {transitionTitleProduct} from "./view/transitionTitleProduct";
 import {buttonProduct} from "./view/buttonProduct";
 import {star} from "./view/star";
@@ -36,6 +36,7 @@ export function cardProductPageTemplate() {
 			<div class="wrapper">
 				<section class="photos">
 					${viewPhotosBlock()}
+					${viewPhotosBlockMobile()}
 				</section>
 				<section class="product-description">
 					<div class="first-line">

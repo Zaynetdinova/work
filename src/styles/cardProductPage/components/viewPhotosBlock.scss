@@ -30,3 +30,16 @@
     display: none;
   }
 }
+.View-photos-block-mobile {
+  display: none;
+  .pointer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+
+
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
