@@ -1,6 +1,7 @@
 import info from '../../../../images/cardProduct/info.svg'
 import minus from '../../../../images/cardProduct/minus.svg'
 import plus from '../../../../images/cardProduct/plus.svg'
+import {Sale} from "../../common/sale";
 
 export function infoTable(item) {
     return `
@@ -11,11 +12,11 @@ export function infoTable(item) {
             </div>
             <table>
                 <tr>${titleTable(item)}</tr>   
-                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>
+                <tr data-size class="tr-common product-item-js">${dataTable3(item)}</tr>
                 <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>   
-                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>   
-                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>
-                <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>        
+                <tr data-size class="tr-common product-item-js">${dataTable2(item)}</tr>   
+                <tr data-size class="tr-common product-item-js">${dataTable3(item)}</tr>
+                <tr data-size class="tr-common product-item-js">${dataTable3(item)}</tr>        
             </table>
             <div class="result">
             <span class="result-title">Итого:</span> 
@@ -45,6 +46,20 @@ function dataTable() {
         <td class="td-common">${price()}</td>         
     `
 }
+function dataTable2() {
+    return `
+        <td class="td-common">${size()}</td>  
+        <td class="td-common">${quantity()}</td>
+        <td class="td-common">${price2()}</td>         
+    `
+}
+function dataTable3() {
+    return `
+        <td class="td-common">${size()}</td>  
+        <td class="td-common">${quantity()}</td>
+        <td class="td-common">${price3()}</td>         
+    `
+}
 
 function size() {
     return `
@@ -62,13 +77,13 @@ function quantity() {
         <table>
             <tr class="quantity">
                 <td>
-                    <img data-button-name="minus" src="${minus}" alt="">
+                    <img class="minus" data-button-name="minus" src="${minus}" alt="">
                 </td>
                 <td class="quantity-number">
                     <input class="input-count-js input-count-number"  maxlength="2" type="text" readonly value="0">
                 </td>
                 <td>
-                    <img data-button-name="plus" src="${plus}" alt="">
+                    <img class="plus" data-button-name="plus" src="${plus}" alt="">
                 </td>
             </tr>
         </table>       
@@ -79,9 +94,41 @@ function price() {
     return `
         <table>
             <tr>
+                <td class="price price-js" data-price="1230">${priceProduct('1 234,00 ₽','1 234,00 ₽',true)}</td>
+            </tr>
+        </table>       
+    `
+}
+function price2() {
+    return `
+        <table>
+            <tr>
+                <td class="price price-js" data-price="1230">${priceProduct('','1 234,00 ₽',false)}</td>
+            </tr>
+        </table>       
+    `
+}
+function price3() {
+    return `
+        <table>
+            <tr>
                 <td class="price price-js" data-price="1230">Цена закрыта</td>
             </tr>
         </table>       
+    `
+}
+
+function priceProduct(oldPrice, price, sale) {
+    return `
+        <div class="price-product">
+            <section>
+                <div class="action">
+                    <div style="margin-right: 6px">${sale ? `${Sale()}` : ''}</div>
+                    <div class="old-price">${oldPrice}</div>
+                </div>
+                <div class="price">${price}</div>
+            </section>
+        </div>
     `
 }
 

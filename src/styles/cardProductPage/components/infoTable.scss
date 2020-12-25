@@ -36,13 +36,18 @@
     }
     .quantity {
       display: flex;
-      align-items: center;
+      text-align: center;
       .quantity-number {
         display: flex;
         align-items: center;
         margin-right: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
+        color: #3D3D3C;
+      }
+      .minus,
+      .plus {
+        cursor: pointer;
       }
     }
     .size {
@@ -55,6 +60,7 @@
       .img-size {
         display: flex;
         align-items: center;
+        cursor: pointer;
       }
     }
     .price {
@@ -104,6 +110,27 @@
     text-align: center;
     outline: none;
     cursor: default;
+  }
+  .price-product {
+    .action {
+      display: flex;
+      margin-bottom: 2px;
+      .ButtonSale {
+        padding: 0 2px;
+      }
+      .old-price {
+        font-size: 12px;
+        line-height: 106.8%;
+        color: #777777;
+        text-decoration: line-through;
+      }
+    }
+    .price {
+      font-size: 14px;
+      line-height: 106.8%;
+      color: #3D3D3C;
+      padding: 0;
+    }
   }
 
   @media (max-width: 410px) {
