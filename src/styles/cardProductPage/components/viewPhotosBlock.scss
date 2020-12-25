@@ -36,8 +36,10 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 14px;
-
-
+  }
+  .slider-pointer {
+    justify-content: flex-end;
+    margin-top: 22px;
   }
   @media (max-width: 767px) {
     display: block;

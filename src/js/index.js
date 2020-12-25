@@ -10,6 +10,7 @@ import 'nouislider/distribute/nouislider.css';
 
 
 
+
 window.userRegistry = true
 
 new Router('#app', {
@@ -17,7 +18,7 @@ new Router('#app', {
   viewCategoriesPage: ViewCategoriesPage,
   viewCategoriesIndex: CatalogPage,
   viewCategoriesChildren: ViewCategoriesChildren,
-  cardProduct: CardProduct
+  cardProduct: CardProduct,
 })
 
 
