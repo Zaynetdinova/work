@@ -4,21 +4,21 @@ import plus from '../../../../images/cardProduct/plus.svg'
 
 export function infoTable(item) {
     return `
-        <div class="infoTable">
+        <article id="info-table" class="infoTable">
             <div class="common">
                 <div class="size-quantity">Размер и количество</div>
                 <div class="table-size">Таблица размеров</div>
             </div>
             <table>
                 <tr>${titleTable(item)}</tr>   
-                <tr class="tr-common">${dataTable(item)}</tr>
-                <tr class="tr-common">${dataTable(item)}</tr>   
-                <tr class="tr-common">${dataTable(item)}</tr>   
-                <tr class="tr-common">${dataTable(item)}</tr>
-                <tr class="tr-common">${dataTable(item)}</tr>        
+                <tr data-size class="tr-common">${dataTable(item)}</tr>
+                <tr data-size class="tr-common">${dataTable(item)}</tr>   
+                <tr data-size class="tr-common">${dataTable(item)}</tr>   
+                <tr data-size class="tr-common">${dataTable(item)}</tr>
+                <tr data-size class="tr-common">${dataTable(item)}</tr>        
             </table>
             <div class="result"><span class="result-title">Итого:</span> <span class="result-price">88 шт./ 1 234 ₽</span></div>
-        </div>
+        </article>
    `
 }
 
@@ -55,9 +55,15 @@ function quantity() {
     return `
         <table>
             <tr class="quantity">
-                <td><img src="${minus}" alt=""></td>
-                <td class="quantity-number">88</td>
-                <td><img src="${plus}" alt=""></td>
+                <td>
+                    <img data-button-name="minus" src="${minus}" alt="">
+                </td>
+                <td class="quantity-number">
+                    <input class="input-count-js input-count-number"  maxlength="2" type="text" readonly value="0">
+                </td>
+                <td>
+                    <img data-button-name="plus" src="${plus}" alt="">
+                </td>
             </tr>
         </table>       
     `
