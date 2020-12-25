@@ -2,6 +2,7 @@ import testBig1 from '../../../../images/cardProduct/test-big1.png'
 import testBig2 from '../../../../images/cardProduct/test-big2.png'
 import testBig3 from '../../../../images/cardProduct/test-big3.png'
 import testBig4 from '../../../../images/cardProduct/test-big4.png'
+import {sliderPointerTemplate} from "../../common/sliderPointer.template";
 
 export function viewPhotosBlock() {
 	return `
@@ -25,6 +26,16 @@ export function viewPhotosBlock() {
 			${buttonPhotos('next')}
 		</section>
 	</div>
+	`
+}
+
+export function viewPhotosBlockMobile() {
+	return `
+		<div class="View-photos-block-mobile swiper-container test-mobile">
+			<div class="swiper-wrapper">
+				${photos()}
+			</div>
+		</div>
 	`
 }
 
