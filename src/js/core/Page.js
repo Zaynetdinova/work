@@ -15,9 +15,12 @@ export class Page {
 
 	afterRender() {
 		const test = document.querySelector('.test1')
-		console.log(test.scrollWidth)
-		console.log(test.scrollLeft)
-		test.scrollLeft = test.scrollWidth
+		if(test) {
+			console.log(test.scrollWidth)
+			console.log(test.scrollLeft)
+			test.scrollLeft = test.scrollWidth
+		}
+
 		openSidebar()
 		initialSliders()
 		if(window.userRegistry) {
