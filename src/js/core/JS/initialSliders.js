@@ -52,6 +52,26 @@ export function initialSliders() {
 			}
 		}
 	})
+
+	new Swiper('.test-mobile', {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 16,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-main',
+			prevEl: '.swiper-button-prev-main',
+		},
+		breakpoints: {
+			414: {
+				slidesPerView: 2,
+				slidesPerGroup: 2,
+				spaceBetween: 15,
+			}
+		}
+	})
 }
 
 function mainPageInitialSlider() {
@@ -368,25 +388,7 @@ function cardProductPage() {
 			prevEl: '.swiper-button-prev-main',
 		},
 	})
-	new Swiper('test-mobile', {
-		slidesPerView: 1,
-		slidesPerGroup: 1,
-		spaceBetween: 16,
-		pagination: {
-			el: '.swiper-pagination',
-		},
-		navigation: {
-			nextEl: '.swiper-button-next-main',
-			prevEl: '.swiper-button-prev-main',
-		},
-		breakpoints: {
-			414: {
-				slidesPerView: 2,
-				slidesPerGroup: 2,
-				spaceBetween: 15,
-			}
-		}
-	})
+
 }
 
 
