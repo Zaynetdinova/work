@@ -40,8 +40,33 @@
     }
   }
   @media (max-width: 1024px) {
+    .test1 {
+      overflow: scroll;
+      margin-left: -15px;
+      margin-bottom: 15px;
+
+      .test-block {
+        display: table;
+        width: 15px;
+        background: #ffffff;
+      }
+    }
+    /* хром, сафари */
+    .test1::-webkit-scrollbar { height: 0; }
+
+    /* ie 10+ */
+    .test1 { -ms-overflow-style: none; }
+
+    /* фф (свойство больше не работает, других способов тоже нет)*/
+    .test1 { overflow: -moz-scrollbars-none; }
     .transitionWrapper {
       padding: 10px 0;
+     display: flex;
+      flex-wrap: nowrap;
+
+      a {
+        white-space: nowrap;
+      }
     }
     .wrapper-card {
       margin-bottom: 163px;
