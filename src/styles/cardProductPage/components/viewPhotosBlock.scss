@@ -32,6 +32,10 @@
 }
 .View-photos-block-mobile {
   display: none;
+  .photosMobile-mobile {
+    position: absolute;
+    bottom: 0;
+  }
   .pointer-wrapper {
     display: flex;
     justify-content: flex-end;
