@@ -34,10 +34,12 @@ export function cardProductPageTemplate() {
 		<div class="root">
 			${transitionTitleProduct(productCategory)}
 			<div class="wrapper">
+				
 				<section class="photos">
 					${viewPhotosBlock()}
 					${viewPhotosBlockMobile()}
 				</section>
+				
 				<section class="product-description">
 					<div class="first-line">
 						<div class="right-wrap">

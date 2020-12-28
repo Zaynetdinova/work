@@ -1,7 +1,6 @@
 .product-description {
   @import "price";
-  max-width: 588px;
-  margin: 0 auto;
+
   .first-line {
     display: flex;
     justify-content: space-between;
@@ -34,10 +33,10 @@
     margin-bottom: 40px;
   }
   @media (max-width: 1300px) {
-    max-width: 533px;
+
   }
   @media (max-width: 1023px) {
-    max-width: 384px;
+
     .info {
       flex-direction: column;
       align-items: normal;
@@ -47,7 +46,7 @@
     }
   }
   @media (max-width: 767px) {
-    max-width: 737px;
+
     .first-line {
       margin-top: 26px;
       .right-wrap {
