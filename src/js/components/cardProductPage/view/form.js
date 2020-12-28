@@ -23,13 +23,21 @@ export function form() {
                 </div>            
                 <input class="button-question" type="text" placeholder="Ваш вопрос или отзыв (не обязательно)">
             
-                <label for="Photos" class="photos-upload">
-                    <div class="cloud">
+                <div id="drop-area-js" class="drop-area">
+                  <form>
+                  <div class="cloud">
                         <i class="img"><img src="${load}" alt=""></i>
-                        <i>Кликните или перетащите, чтобы загрузить фотографии (максимум 3 шт, 18 мегабайт)</i>
-                    </div>
-                </label>
-                <input type="file" name="Photos" id="Photos">
+                        <i class="text">Кликните или перетащите, чтобы загрузить фотографии (максимум 3 шт, 18 мегабайт)</i>
+                  </div>
+                    
+                    <input class="file-elem-input"  type="file" id="fileElem" multiple accept="image/*">
+                    <label  class="button" for="fileElem"></label>
+                  </form>
+                
+                  <div id="file-name" class="file-name"></div>
+             
+                </div>
+                
                 <div class="wrapper-button">
                     <button class="cancel">Отменить</button>
                     <button class="send">Отправить</button>

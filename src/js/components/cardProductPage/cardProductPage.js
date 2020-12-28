@@ -1,6 +1,7 @@
 import {Component} from '../../core/Component'
 import {cardProductPageTemplate} from './cardProductPage.template'
 import {infoTable} from './js/infoTable'
+import {inputFile} from '../catalog/js/inputFile'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -14,6 +15,10 @@ export class CardProductPage extends Component {
 
 	toHTML() {
 		return cardProductPageTemplate()
+	}
+
+	afterInitComponent() {
+		inputFile()
 	}
 
 	onClick(e) {
