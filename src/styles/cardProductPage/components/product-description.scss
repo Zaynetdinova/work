@@ -57,6 +57,7 @@
   @media (max-width: 767px) {
     margin: auto;
     max-width: 100%;
+    padding-top: 0;
     .first-line {
       margin-top: 26px;
       .right-wrap {
@@ -66,4 +67,5 @@
       }
     }
   }
+
 }
