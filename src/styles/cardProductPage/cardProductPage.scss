@@ -25,9 +25,9 @@
     justify-content: space-between;
   }
   .wrapper-card {
-    margin-top: 116px;
     padding: 0 20px;
-
+    max-width: 1480px;
+    margin: 116px auto 0 auto;
     .bestseller-product,
     .bestseller-product2{
       padding-bottom: 121px;

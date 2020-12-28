@@ -16,6 +16,31 @@
       margin-right: 10px;
     }
   }
+  .popup {
+    background: #3D3D3C;
+    border-radius: 4px;
+    padding: 6px 8px 10px 10px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 31%;
+    position: relative;
+    top: 80px;
+    left: 40px;
+    display: none;
+  }
+  .popup::after, .popup::before {
+    content: '';
+    position: absolute;
+    background: #3D3D3C;
+    left: 10px;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
   table {
     font-size: 14px;
     line-height: 20px;
@@ -61,6 +86,11 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        &:hover {
+          .popup {
+            display: block;
+          }
+        }
       }
     }
     .price {
@@ -80,7 +110,6 @@
       padding: 10px 0 10px 12px;
     }
   }
-
   .result {
     display: flex;
     justify-content: flex-end;
@@ -94,7 +123,6 @@
       font-weight: bold;
       margin-left: 6px;
     }
-
     .input-count-number {
       max-width: 50px;
       width: auto;

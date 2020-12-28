@@ -21,7 +21,7 @@ export function form() {
                         <div class="size"><input id="3" class="input" type="radio" name="topic1"><label for="3">Большемерит</label></div>
                     </div>
                 </div>            
-                <input class="button-question" type="text" placeholder="Ваш вопрос или отзыв (не обязательно)">
+                <textarea class="button-question" placeholder="Ваш вопрос или отзыв (не обязательно)"></textarea>
             
                 <div id="drop-area-js" class="drop-area">
                   <form>

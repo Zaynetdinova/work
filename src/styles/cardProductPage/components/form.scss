@@ -50,9 +50,12 @@
 
     .file-name {
       margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
       div {
         color: #000000;
         margin-bottom: 6px;
+        margin-right: 10px;
       }
     }
 
@@ -75,7 +78,7 @@
     padding-bottom: 9px;
     padding-top: 9px;
   }
-  input[type='text'] {
+  input[type='text'], textarea {
     width: 100%;
     background: #FFFFFF;
     border: 1px solid transparent;
