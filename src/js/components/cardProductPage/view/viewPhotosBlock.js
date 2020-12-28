@@ -43,7 +43,7 @@ export function viewPhotosBlockMobile() {
 function buttonPhotos(type) {
 	return `
 		<span class="swiper-button-${type}-main button button-${type}">
-				<div class="arrow"></div>
+			<div class="arrow"></div>
 		</span>
 	`
 }

@@ -56,7 +56,8 @@ export function initialSliders() {
 	new Swiper('.test-mobile', {
 		slidesPerView: 1,
 		slidesPerGroup: 1,
-		spaceBetween: 16,
+		spaceBetween: 15,
+		slidesOffsetAfter: 0,
 		pagination: {
 			el: '.swiper-pagination',
 		},
@@ -65,10 +66,62 @@ export function initialSliders() {
 			prevEl: '.swiper-button-prev-main',
 		},
 		breakpoints: {
-			414: {
+			415: {
 				slidesPerView: 2,
 				slidesPerGroup: 2,
 				spaceBetween: 15,
+				slidesOffsetAfter: 0,
+			},
+			376: {
+				slidesPerView: 1.36,
+				slidesPerGroup: 1,
+				spaceBetween: 15,
+				slidesOffsetAfter: 15,
+			},
+			321: {
+				slidesPerView: 1.18,
+				slidesPerGroup: 1,
+				spaceBetween: 15,
+				slidesOffsetAfter: 15,
+			}
+		}
+	})
+
+	new Swiper('.another-photo-mobile',{
+		slidesPerView: 6,
+		slidesPerGroup: 1,
+		spaceBetween: 5,
+		slidesOffsetAfter: 0,
+		breakpoints: {
+			768: {
+				slidesPerView: 6,
+				slidesPerGroup: 1,
+				spaceBetween: 5,
+				slidesOffsetAfter: 0,
+			},
+			525: {
+				slidesPerView: 7,
+				slidesPerGroup: 1,
+				spaceBetween: 5,
+				slidesOffsetAfter: 0,
+			},
+			500: {
+				slidesPerView: 6,
+				slidesPerGroup: 1,
+				spaceBetween: 5,
+				slidesOffsetAfter: 0,
+			},
+			375: {
+				slidesPerView: 4,
+				slidesPerGroup: 1,
+				spaceBetween: 5,
+				slidesOffsetAfter: 0,
+			},
+			320: {
+				slidesPerView: 3,
+				slidesPerGroup: 1,
+				spaceBetween: 5,
+				slidesOffsetAfter: 0,
 			}
 		}
 	})

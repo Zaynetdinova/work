@@ -64,11 +64,10 @@ export function cardProductPageTemplate() {
 					${form()}
 				</section>
 			</div>
-			
-			<div class="wrapper-card">
-				${commonCard(woman2, 'price')}
-				${commonCard(woman, 'price')}
-			</div>
+		</div>
+		<div class="wrapper-card">
+			${commonCard(woman2, 'price')}
+			${commonCard(woman, 'price')}
 		</div>
 	`
 }
