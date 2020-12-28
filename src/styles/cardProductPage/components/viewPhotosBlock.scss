@@ -44,4 +44,16 @@
   @media (max-width: 767px) {
     display: block;
   }
+  @media (max-width: 414px) {
+    margin-right: -15px;
+    .slider-pointer {
+      padding-right: 15px;
+    }
+  }
+  @media (max-width: 320px) {
+    margin-right: 0;
+    .slider-pointer {
+      padding-right: 0;
+    }
+  }
 }

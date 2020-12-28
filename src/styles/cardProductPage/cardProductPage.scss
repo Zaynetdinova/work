@@ -26,9 +26,12 @@
   }
   .wrapper-card {
     margin-top: 116px;
+    padding: 0 15px;
+
     .bestseller-product,
     .bestseller-product2{
       padding-bottom: 121px;
+
       .content {
         .line {
           display: none;
@@ -43,7 +46,6 @@
     .test1 {
       overflow: scroll;
       margin-left: -15px;
-      margin-bottom: 15px;
 
       .test-block {
         display: table;
@@ -82,6 +84,15 @@
     }
     .wrapper-card {
       margin-top: 60px;
+    }
+  }
+  @media (max-width: 699px) {
+    .wrapper-card {
+      padding-left: 15px;
+      padding-right: 0;
+      .bestsellers-header-wrapper {
+        padding-right: 15px;
+      }
     }
   }
 }

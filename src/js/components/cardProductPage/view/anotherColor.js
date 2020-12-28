@@ -1,8 +1,19 @@
+import {r} from "../../common/commonCard/commonCardHeader";
+
 export function anotherColor(item) {
     return `
     <div class="anotherColor">
-        <div class="title">Выберите другой цвет</div>
-        <div class="anotherPhoto">${anotherPhoto(item)}</div>
+        <div class="wrapper-title-dots">
+            <div class="title">Выберите другой цвет</div>
+            <div class="slider-pointer">${r()}</div>
+        </div>
+        <div class="anotherPhoto">
+            <section class="swiper-container another-photo-mobile">
+                <div class="swiper-wrapper">
+                    ${anotherPhoto(item)}
+                </div>
+            </section>
+        </div>
     </div>
     `
 }
@@ -12,7 +23,7 @@ function anotherPhoto(item) {
 
     const items = item.map((item) => {
         return `
-            <div><img src="${item.photo}" alt=""></div>              
+            <img class="swiper-slide" src="${item.photo}" alt="">     
         `
     })
     return `${items.join('')}`
