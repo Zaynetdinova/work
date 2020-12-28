@@ -2,6 +2,7 @@
   @import "price";
   max-width: 548px;
   margin: 0 auto;
+  padding-top: 47px;
   .first-line {
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,15 @@
     margin-top: 55px;
     margin-bottom: 40px;
   }
+
+  @media (max-width: 1300px) {
+    max-width: 533px;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 20px;
+  }
+
+
 
   @media (max-width: 1023px) {
    max-width: 384px;
