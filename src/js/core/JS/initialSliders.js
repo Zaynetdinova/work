@@ -424,6 +424,9 @@ function cardProductPage() {
 			nextEl: '.swiper-button-next-main',
 			prevEl: '.swiper-button-prev-main',
 		},
+		cssMode: true,
+		mousewheel: true,
+
 	}
 	const test = new Swiper('#view-photos-block-swiper-js', options)
 
