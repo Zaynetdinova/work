@@ -1,4 +1,38 @@
-.star {
+.rating-area {
   cursor: pointer;
   max-height: 18px;
+  overflow: hidden;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 19px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 18px;
+  color: lightgrey;
+  margin-right: 10px;
+}
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+.rating-area > input:checked ~ label {
+  color: #FF9900;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: #FF9900;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: #FF9900;
+}
+.rate-area > label:active {
+  position: relative;
 }

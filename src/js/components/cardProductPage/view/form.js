@@ -1,4 +1,4 @@
-import {star} from "./star";
+import {star, star2} from "./star";
 import img1 from "../../../../images/icons/star.svg";
 import img2 from "../../../../images/icons/star_empty.svg";
 import load from '../../../../images/cardProduct/load.svg'
@@ -11,7 +11,7 @@ export function form() {
                 <input class="name" type="text" placeholder="Ваше имя">
                 <div class="appraisal">
                     <div class="title">Общая оценка</div>
-                    ${star(starItem)}
+                    ${star2()}
                 </div>
                 <div class="wrapper-size">
                     <input class="input-size" type="text" placeholder="Размер">
@@ -47,9 +47,3 @@ export function form() {
     `
 }
 
-let starItem = [
-    {
-        star: img1,
-        starEmpty: img2
-    }
-]
