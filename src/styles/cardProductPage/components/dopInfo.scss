@@ -29,12 +29,23 @@
     .dop-info-items {
       display: flex;
     }
+    .title-product-page {
+      border-bottom: 1px solid #AB064E;
+      .arrow {
+        transform: rotate(-90deg);
+      }
+    }
   }
-
-  @media (max-width: 1023px) {
-
+  @media (max-width: 1024px) {
     .dop-info-items {
       display: none;
+    }
+    .title-product-page {
+      border-bottom: 1px solid #D9D9D9;
+    }
+  }
+  @media (max-width: 1023px) {
+    .dop-info-items {
       flex-direction: column;
       .first-col {
         width: 100%;

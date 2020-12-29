@@ -4,6 +4,12 @@
     .text {
       display: block;
     }
+    .title-product-page {
+      border-bottom: 1px solid #AB064E;
+      .arrow {
+        transform: rotate(-90deg);
+      }
+    }
   }
 
   .text {
@@ -12,11 +18,14 @@
     line-height: 140%;
     color: #3D3D3C;
     display: block;
+    padding-top: 15px;
+    padding-bottom: 55px;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     .text {
       display: none;
+      padding-bottom: 27px;
     }
   }
 }

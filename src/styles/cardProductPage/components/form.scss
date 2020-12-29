@@ -33,8 +33,12 @@
       display: flex;
 
       .text {
-        margin-right: 60px;
+        padding-right: 60px;
+        @media (max-width: 375px) {
+          padding-right: 0;
+        }
       }
+
 
       .img {
         margin-right: 8px;

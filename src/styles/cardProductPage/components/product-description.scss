@@ -33,7 +33,6 @@
     margin-bottom: 50px;
   }
   .wrapper-dop-info {
-    margin-top: 55px;
     margin-bottom: 40px;
   }
 
@@ -46,6 +45,9 @@
   }
   @media (max-width: 1024px) {
     padding-top: 20px;
+    .wrapper-attention {
+      margin-bottom: 40px;
+    }
   }
 
 
