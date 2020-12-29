@@ -7,20 +7,20 @@ export function infoTable(e) {
 		const count = $size.querySelector('.input-count-js')
 		count.value = changeCount(count.value, buttonType)
 
-		if(count.value > 0 ) {
-			blackButton()
-		} else {
-			blackButton('remove')
-		}
-		function blackButton(type) {
-			const button = $size.querySelector('.plus')
-			if(type === 'remove') {
-				button.src=plus
-				return
-			}
-			button.classList.add('button-black')
-			button.src=plusBlack
-		}
+		// if(count.value > 0 ) {
+		// 	blackButton()
+		// } else {
+		// 	blackButton('remove')
+		// }
+		// function blackButton(type) {
+		// 	const button = $size.querySelector('.plus')
+		// 	if(type === 'remove') {
+		// 		button.src=plus
+		// 		return
+		// 	}
+		// 	button.classList.add('button-black')
+		// 	button.src=plusBlack
+		// }
 
 	updateCommonSumAndCount()
 	}

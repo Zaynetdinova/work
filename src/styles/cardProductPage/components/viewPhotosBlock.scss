@@ -3,7 +3,9 @@
   @import "./topPhotosBlock";
 
   display: flex;
-
+  .img-slide {
+    padding-bottom: 1px;
+  }
   @media (max-width: 1300px) {
     .view-photos-block {
       width: 89px;
