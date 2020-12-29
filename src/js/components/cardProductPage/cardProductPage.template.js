@@ -44,7 +44,7 @@ export function cardProductPageTemplate() {
 					<div class="first-line">
 						<div class="right-wrap">
 							<div class="wrapper-button-new">${buttonProduct('Новинка')}</div>							
-							${star(starItem)}
+							${star()}
 						</div>
 						${favorites()}
 					</div>
@@ -87,12 +87,7 @@ let productCategory = [
 	}
 ]
 
-let starItem = [
-	{
-		star: img1,
-		starEmpty: img2
-	}
-]
+
 
 let brand = [
 	{
