@@ -1,0 +1,28 @@
+.Popup-quick-button {
+  .root {
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+  }
+  .header-popup {
+    background: #AB064E;
+    padding: 20px;
+    .transitionBrand .brand a,
+    .transitionBrand .category {
+      color: #FFFFFF;
+    }
+    .transitionBrand  .category a {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .wrapper-star-goodStock {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .goodStock {
+      margin: 0;
+      .stock {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

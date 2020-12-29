@@ -161,18 +161,20 @@
       border: 1px solid #CDCDCD;
       border-radius: 4px 0 0 4px;
       &:hover {
-        color: #AB064E;
+        color: #FFFFFF;
+        background: #AB064E;
+        border: 1px solid #AB064E;
       }
     }
     .send {
       color: #FFFFFF;
-      background: #AB064E;
+      background: #8F8F8F;
       border-radius: 0 4px 4px 0;
-      border: 1px solid #AB064E;
+      border: 1px solid #8F8F8F;
       outline: none;
       &:hover {
-        color: #3D3D3C;
-        background: #FFFFFF;
+        background: #AB064E;
+        border: 1px solid #AB064E;
       }
     }
   }

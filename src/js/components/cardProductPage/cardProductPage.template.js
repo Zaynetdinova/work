@@ -53,7 +53,7 @@ export function cardProductPageTemplate() {
 					<div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
 					<div class="info">
 						<div class="info-1">${infoProduct(info)}</div>
-						<div>
+						<div style="margin-bottom: 4px;">
 							<div class="social">${socialProduct(social)}</div>
 							<div class="buttonAnotherGoods">${buttonProduct('Другие товары этого бренда')}</div>
 						</div>
