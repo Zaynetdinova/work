@@ -3,6 +3,7 @@ import {cardProductPageTemplate} from './cardProductPage.template'
 import {infoTable} from './js/infoTable'
 import {inputFile} from '../catalog/js/inputFile'
 import {anotherColorButton} from './js/anotherColorBorder'
+import {infoProductShow, testInfo} from './js/infoProductShow'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -32,6 +33,12 @@ export class CardProductPage extends Component {
 					break;
 				case 'another-color-js':
 					anotherColorButton(e)
+					break;
+				case 'title-description-js':
+					infoProductShow(element, e)
+					break;
+				case 'title-dop-info-js':
+					testInfo(element, e)
 					break;
 			}
 		}

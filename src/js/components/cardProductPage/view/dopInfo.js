@@ -2,8 +2,8 @@ import {titleProductPage} from "./titleProdactPage";
 
 export function dopInfo() {
     return `
-        <div class="dop-info">
-            ${titleProductPage('Дополнительная информация')}
+        <div class="dop-info dop-info-js">
+            ${titleProductPage('Дополнительная информация', 'dop-info')}
             <div class="dop-info-items">
                 <div class="first-col">${dopInfoItem(information)}</div>
                 <div class="second-col">${dopInfoItem(information2)}</div>
