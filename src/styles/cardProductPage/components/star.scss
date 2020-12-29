@@ -1,5 +1,4 @@
 .rating-area {
-  cursor: pointer;
   max-height: 18px;
   overflow: hidden;
 }
@@ -35,4 +34,10 @@
 }
 .rate-area > label:active {
   position: relative;
+}
+
+@media (max-width: 320px) {
+  .rating-area:not(:checked) > label {
+    margin-right: 5px;
+  }
 }
