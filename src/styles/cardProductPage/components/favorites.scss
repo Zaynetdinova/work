@@ -9,5 +9,9 @@
     color: #777777;
     border-bottom: 0.5px dashed #777777;
     min-width: 83px;
+    &:hover {
+      color: #AB064E;
+      border-bottom: 0.5px dashed #AB064E;
+    }
   }
 }

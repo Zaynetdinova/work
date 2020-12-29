@@ -10,4 +10,10 @@
     font-weight: normal;
     margin-left: 6px;
   }
+  &:last-child {
+    margin-bottom: 0;
+    .infoType {
+      line-height: 100%;
+    }
+  }
 }

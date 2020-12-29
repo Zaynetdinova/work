@@ -13,7 +13,7 @@
   font-size: 18px;
   line-height: 18px;
   color: lightgrey;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .rating-area:not(:checked) > label:before {
   content: '★';
@@ -35,7 +35,22 @@
 .rate-area > label:active {
   position: relative;
 }
-
+.rating-result {
+  max-height: 18px;
+}
+.rating-result span {
+  padding: 0;
+  font-size: 18px;
+  margin-right: 5px;
+  line-height: 1;
+  color: lightgrey;
+}
+.rating-result > span:before {
+  content: '★';
+}
+.rating-result > span.active {
+  color: #FF9900;
+}
 @media (max-width: 320px) {
   .rating-area:not(:checked) > label {
     margin-right: 5px;

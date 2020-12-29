@@ -10,6 +10,7 @@
     color: #FFFFFF;
     padding: 5px 0;
     text-transform: uppercase;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -30,5 +31,11 @@
       padding: 10px 0;
       text-transform: none;
     }
+    &:hover {
+      .text {
+        background: #AB064E;
+      }
+    }
   }
+
 }

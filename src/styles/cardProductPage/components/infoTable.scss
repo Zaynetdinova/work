@@ -4,9 +4,13 @@
     margin-bottom: 20px;
     .table-size {
       font-size: 14px;
-
+      cursor: pointer;
       color: #777777;
       border-bottom: 1px solid #7777;
+      &:hover {
+        color: #AB064E;
+        border-bottom: 1px solid #AB064E;
+      }
     }
     .size-quantity {
       font-weight: bold;
@@ -138,17 +142,19 @@
       margin-left: 6px;
     }
     .input-count-number {
-      max-width: 50px;
-      width: auto;
       color: #3D3D3C;
       font-weight: bold;
+      text-align: right;
+    }
+    .count {
+      max-width: 30px;
     }
   }
 
   .input-count-number {
+    max-width: 55px;
     border: none;
     background: none;
-    width: 30px;
     text-align: center;
     outline: none;
     cursor: default;

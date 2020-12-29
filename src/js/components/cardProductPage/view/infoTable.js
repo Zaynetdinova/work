@@ -21,7 +21,7 @@ export function infoTable(item) {
             <div class="result">
             <span class="result-title">Итого:</span> 
                 <span class="result-price">
-                    <input class="common-count-js input-count-number" value="0" readonly> шт./
+                    <input class="common-count-js input-count-number count" value="0" readonly> шт. /
                     <input class="common-price-js input-count-number" readonly value="0"> ₽
                 </span>
             </div>
