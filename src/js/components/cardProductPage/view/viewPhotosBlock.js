@@ -52,11 +52,11 @@ function buttonPhotos(type) {
 
 function photos() {
 	return `
-	<img src="${testBig1}" class="swiper-slide">
-	<img src="${testBig2}" class="swiper-slide">
-	<img src="${testBig3}" class="swiper-slide">
-	<img src="${testBig4}" class="swiper-slide">
-	<img src="${testBig1}" class="swiper-slide">
+	<img src="${testBig1}" class="swiper-slide img-slide">
+	<img src="${testBig2}" class="swiper-slide img-slide">
+	<img src="${testBig3}" class="swiper-slide img-slide">
+	<img src="${testBig4}" class="swiper-slide img-slide">
+	<img src="${testBig1}" class="swiper-slide img-slide">
 	`
 }
 
