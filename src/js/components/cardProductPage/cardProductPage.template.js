@@ -147,22 +147,28 @@ let social = [
 
 let color = [
 	{
-		photo: photo1
+		photo: photo1,
+		classColor: 'active-color'
 	},
 	{
-		photo: photo2
+		photo: photo2,
+		classColor: ''
 	},
 	{
-		photo: photo1
+		photo: photo1,
+		classColor: ''
 	},
 	{
-		photo: photo1
+		photo: photo1,
+		classColor: ''
 	},
 	{
-		photo: photo1
+		photo: photo1,
+		classColor: ''
 	},
 	{
-		photo: photo1
+		photo: photo1,
+		classColor: ''
 	},
 ]
 

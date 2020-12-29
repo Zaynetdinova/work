@@ -23,7 +23,7 @@ function anotherPhoto(item) {
 
     const items = item.map((item) => {
         return `
-            <img data-color="color-number" class="swiper-slide color-card-product-js" src="${item.photo}" alt="">     
+            <img data-color="color-number" class="swiper-slide ${item.classColor} color-card-product-js" src="${item.photo}" alt="">     
         `
     })
     return `${items.join('')}`
