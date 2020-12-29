@@ -1,8 +1,22 @@
 .description-module {
+  display: block;
+  &.show-info {
+    .text {
+      display: block;
+    }
+  }
+
   .text {
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
     color: #3D3D3C;
+    display: block;
+  }
+
+  @media (max-width: 1023px) {
+    .text {
+      display: none;
+    }
   }
 }
