@@ -1,16 +1,34 @@
+import plusBlack from '../../../../images/cardProduct/plus-black.svg'
+import plus from '../../../../images/cardProduct/plus.svg'
 export function infoTable(e) {
 	if(e.target.dataset.buttonName) {
 		const buttonType = e.target.dataset.buttonName
 		const $size = e.target.closest('[data-size]')
 		const count = $size.querySelector('.input-count-js')
-
 		count.value = changeCount(count.value, buttonType)
-		updateCommonSumAndCount()
+
+		if(count.value > 0 ) {
+			blackButton()
+		} else {
+			blackButton('remove')
+		}
+		function blackButton(type) {
+			const button = $size.querySelector('.plus')
+			if(type === 'remove') {
+				button.src=plus
+				return
+			}
+			button.classList.add('button-black')
+			button.src=plusBlack
+		}
+
+	updateCommonSumAndCount()
 	}
 }
 
 function changeCount(valueCount, buttonType) {
-	if(buttonType == 'plus') {
+	if(buttonType === 'plus') {
+		console.log('super')
 		return +valueCount + 1
 
 	} else {

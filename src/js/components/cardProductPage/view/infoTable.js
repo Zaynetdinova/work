@@ -6,12 +6,6 @@ import {Sale} from "../../common/sale";
 export function infoTable(item) {
     return `
         <article id="info-table" class="infoTable">
-            <div class="popup">
-                <div>Оригинальный размер: S</div>
-                <div>Обхват груди: 86-89 см</div>
-                <div>Обхват талии: 67-71 см</div>
-                <div>Обхват бёдер: 94-97 см</div>
-            </div>
             <div class="common">
                 <div class="size-quantity">Размер и количество</div>
                 <div class="table-size">Таблица размеров</div>
@@ -72,7 +66,15 @@ function size() {
         <table>
             <tr class="size">
                 <td class="td-size">44</td>
-                <td><img class="img-size" src="${info}" alt=""></td>
+                <td class="img-size-wrapper">
+                    <img class="img-size" src="${info}" alt="">
+                    <div class="popup">
+                        <div>Оригинальный размер: S</div>
+                        <div>Обхват груди: 86-89 см</div>
+                        <div>Обхват талии: 67-71 см</div>
+                        <div>Обхват бёдер: 94-97 см</div>
+                    </div>
+                </td>
             </tr>
         </table>       
     `

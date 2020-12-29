@@ -78,6 +78,9 @@
     padding-bottom: 9px;
     padding-top: 9px;
   }
+  textarea {
+    resize: vertical;
+  }
   input[type='text'], textarea {
     width: 100%;
     background: #FFFFFF;

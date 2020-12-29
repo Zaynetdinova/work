@@ -17,17 +17,19 @@
     }
   }
   .popup {
+    width: 180px;
     background: #3D3D3C;
     border-radius: 4px;
     padding: 6px 8px 10px 10px;
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
-    width: 31%;
-    position: relative;
-    top: 80px;
-    left: 40px;
+    //width: 31%;
+    position: absolute;
+    top: -100px;
+    left: -8px;
     display: none;
+    z-index: 2;
   }
   .popup::after, .popup::before {
     content: '';
@@ -54,7 +56,10 @@
       font-weight: normal;
     }
     .tr-common {
-      border-bottom: 2px dotted #777777;
+      background-image: linear-gradient(to right, #777777 33%, rgba(255,255,255,0) 0%);
+      background-position: bottom;
+      background-size: 3px 1px;
+      background-repeat: repeat-x;
     }
     .td-common {
       padding: 1px 0;
@@ -81,6 +86,16 @@
       padding-left: 12px;
       .td-size {
         margin-right: 20px;
+      }
+
+      .img-size-wrapper {
+        position: relative;
+
+        &:hover {
+          .popup {
+           display: block;
+          }
+        }
       }
       .img-size {
         display: flex;
