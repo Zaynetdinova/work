@@ -15,14 +15,13 @@
   @import "./components/dopInfo";
   @import "./components/form";
   .root {
-    padding: 0 15px;
+    padding: 0 20px;
     max-width: 1480px;
     margin: 0 auto;
   }
 
   .wrapper {
     display: flex;
-    justify-content: space-between;
   }
   .wrapper-card {
     padding: 0 20px;
@@ -43,6 +42,9 @@
     }
   }
   @media (max-width: 1024px) {
+    .root {
+      padding: 0 15px;
+    }
     .wrapper-card {
       padding: 0 15px;
     }

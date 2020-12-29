@@ -1,8 +1,10 @@
 .product-description {
   @import "price";
-  max-width: 548px;
-  margin: 0 auto;
   padding-top: 47px;
+  background: #ffffff;
+  padding-left: 143px;
+  padding-right: 119px;
+  max-width: 854px;
   .first-line {
     display: flex;
     justify-content: space-between;
@@ -36,6 +38,10 @@
   }
 
   @media (max-width: 1300px) {
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
     max-width: 533px;
   }
   @media (max-width: 1024px) {
