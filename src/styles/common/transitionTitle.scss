@@ -10,18 +10,22 @@
     }
     .home a {
       color: #777777;
-      margin-right: 4px;
-
+      //margin-right: 4px;
       &:hover {
         color: #3D3D3C;
       }
     }
+  .line-span {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
     .title a {
       color: #3D3D3C;
-      margin-left: 4px;
+      //margin-left: 4px;
     }
     @media (max-width: 1024px) {
       padding: 10px 15px;
+
   }
 }
 
