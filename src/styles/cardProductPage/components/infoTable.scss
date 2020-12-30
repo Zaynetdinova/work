@@ -211,4 +211,24 @@
       }
     }
   }
+  @media (max-width: 343px) {
+
+    table {
+      .quantity {
+        .quantity-number {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+      #col1 {
+        width: 28%;
+      }
+      #col2 {
+        width: 21%;
+      }
+      #col3 {
+        width: 51%;
+      }
+    }
+  }
 }

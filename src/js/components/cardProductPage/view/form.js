@@ -1,12 +1,14 @@
-import {star, star2} from "./star";
-import img1 from "../../../../images/icons/star.svg";
-import img2 from "../../../../images/icons/star_empty.svg";
+import {star2} from "./star";
 import load from '../../../../images/cardProduct/load.svg'
+import arrow from '../../../../images/icons/arrow2.svg'
 
 export function form() {
     return `
         <form class="form">
-            <div class="review-and-question">Отзывы и вопросы</div> 
+            <div class="wrapper-title">
+                <div class="review-and-question">Отзывы и вопросы</div>
+                <img class="arrow" src="${arrow}" alt="arrow">
+            </div> 
             <div class="form-wrapper">
                 <input class="name" type="text" placeholder="Ваше имя">
                 <div class="appraisal">
