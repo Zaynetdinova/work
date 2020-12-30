@@ -1,6 +1,18 @@
 .form {
-  background: #F3F2F0;
-
+  .wrapper-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    padding-right: 4px;
+    border-top: 1px solid #D9D9D9;
+    .arrow {
+      transform: rotate(90deg);
+      width: 10px;
+      height: 21px;
+    }
+  }
   .drop-area {
     position: relative;
     width: 100%;
@@ -69,12 +81,10 @@
     font-size: 15px;
     line-height: 140%;
     color: #3D3D3C;
-    padding: 9px 20px;
-    background: #F3F2F0;
-    border-bottom: 1px solid #FFFFFF;
   }
   .form-wrapper {
     padding: 22px 20px 55px 20px;
+    background: #F3F2F0;
   }
   .name {
     margin-bottom: 21px;
@@ -155,24 +165,23 @@
       cursor: pointer;
       font-size: 15px;
       line-height: 17px;
+      border-radius: 4px;
     }
     .cancel {
       color: #3D3D3C;
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
-      border-radius: 4px 0 0 4px;
       &:hover {
-        color: #FFFFFF;
-        background: #AB064E;
+        color: #AB064E;
         border: 1px solid #AB064E;
       }
     }
     .send {
       color: #FFFFFF;
       background: #8F8F8F;
-      border-radius: 0 4px 4px 0;
       border: 1px solid #8F8F8F;
       outline: none;
+      margin-left: 6px;
       &:hover {
         background: #AB064E;
         border: 1px solid #AB064E;
@@ -250,6 +259,11 @@
       opacity: 1;
     }
   }
+  @media (max-width: 1024px) {
+    .wrapper-title {
+      border-top: none;
+    }
+  }
   @media (max-width: 1023px) {
     .checkbox {
       flex-direction: column;
@@ -261,7 +275,7 @@
     .wrapper-button {
       .cancel,
       .send {
-        min-width: 171px;
+        min-width: 168px;
       }
     }
   }
@@ -274,7 +288,7 @@
     .wrapper-button {
       .cancel,
       .send {
-        min-width: 152px;
+        min-width: 149px;
       }
     }
   }
@@ -282,7 +296,7 @@
     .wrapper-button {
       .cancel,
       .send {
-        min-width: 125.5px;
+        min-width: 123px;
       }
     }
   }

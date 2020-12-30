@@ -2,8 +2,6 @@ import {viewPhotosBlock, viewPhotosBlockMobile} from './view/viewPhotosBlock'
 import {transitionTitleProduct} from "./view/transitionTitleProduct";
 import {buttonProduct} from "./view/buttonProduct";
 import {star} from "./view/star";
-import img1 from '../../../images/icons/star.svg'
-import img2 from '../../../images/icons/star_empty.svg'
 import vk from '../../../images/social/vk.svg'
 import fb from '../../../images/social/facebook.svg'
 import tw from '../../../images/social/tvitter.svg'
@@ -34,12 +32,10 @@ export function cardProductPageTemplate() {
 		<div class="root">
 			${transitionTitleProduct(productCategory)}
 			<div class="wrapper">
-				
 				<section class="photos">
 					${viewPhotosBlock()}
 					${viewPhotosBlockMobile()}
 				</section>
-				
 				<section class="product-description">
 					<div class="first-line">
 						<div class="right-wrap">

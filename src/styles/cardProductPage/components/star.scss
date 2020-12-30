@@ -49,8 +49,4 @@
 .rating-result > span.active {
   color: #FF9900;
 }
-@media (max-width: 1024px) {
-  .rating-area:not(:checked) > label {
-    margin-right: 10px;
-  }
-}
+

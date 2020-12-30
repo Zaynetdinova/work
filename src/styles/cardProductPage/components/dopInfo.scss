@@ -2,6 +2,7 @@
   .dop-info-items {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
     .first-col {
       width: 48.5%;
     }
@@ -28,6 +29,7 @@
   &.show-info {
     .dop-info-items {
       display: flex;
+      border-bottom: 1px solid #D9D9D9;
     }
     .title-product-page {
       border-bottom: 1px solid #AB064E;
