@@ -45,15 +45,12 @@
     }
     .cloud {
       display: flex;
-
       .text {
         padding-right: 60px;
         @media (max-width: 375px) {
           padding-right: 0;
         }
       }
-
-
       .img {
         margin-right: 8px;
         -moz-osx-font-smoothing: grayscale;
@@ -193,13 +190,14 @@
   }
 
   &.open-form {
-
     .form-wrapper {
       display: block;
     }
-
     .wrapper-title {
       border-bottom: none;
+      .arrow {
+        transform: rotate(-90deg);
+      }
     }
   }
   .checkbox {
@@ -276,6 +274,7 @@
   @media (max-width: 1024px) {
     .wrapper-title {
       border-top: none;
+      cursor: none;
     }
   }
   @media (max-width: 1023px) {
