@@ -1,6 +1,7 @@
 .rating-area {
   max-height: 18px;
   overflow: hidden;
+  unicode-bidi: bidi-override;
 }
 .rating-area:not(:checked) > input {
   display: none;
@@ -36,6 +37,7 @@
 }
 .rating-result {
   min-height: 20px;
+  unicode-bidi: bidi-override;
 }
 .rating-result span {
   padding: 0;
