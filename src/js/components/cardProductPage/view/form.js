@@ -16,7 +16,7 @@ export function form() {
                     ${star2()}
                 </div>
                 <div class="wrapper-size">
-                    <input class="input-size" type="text" placeholder="Размер">
+                    <input class="input-size" type="text" placeholder="Размер (не обязательно)">
                     <div class="checkbox">
                         <div class="size"><input id="1" class="input" type="radio" name="topic1"><label for="1">Маломерит</label></div>
                         <div class="size"><input id="2" class="input" type="radio" name="topic1"><label for="2">Соответствует</label></div>
