@@ -1,6 +1,4 @@
 import info from '../../../../images/cardProduct/info.svg'
-import minus from '../../../../images/cardProduct/minus.svg'
-import plus from '../../../../images/cardProduct/plus.svg'
 import {Sale} from "../../common/sale";
 
 export function infoTable(item) {
@@ -85,13 +83,13 @@ function quantity() {
         <table>
             <tr class="quantity">
                 <td>
-                    <img class="minus" data-button-name="minus" src="${minus}" alt="">
+                    <div class="minus" data-button-name="minus"></div>
                 </td>
                 <td class="quantity-number">
                     <input class="input-count-js input-count-number"  maxlength="2" type="text" readonly value="0">
                 </td>
                 <td>
-                    <img class="plus" data-button-name="plus" src="${plus}" alt="">
+                    <div class="plus" data-button-name="plus"></div>
                 </td>
             </tr>
         </table>       

@@ -1,17 +1,12 @@
 .favoritesProduct {
-  display: flex;
-  align-items: center;
   cursor: pointer;
-  .text {
-    margin-right: 9px;
-    font-size: 14px;
-    line-height: 16px;
-    color: #777777;
-    border-bottom: 0.5px dashed #777777;
-    min-width: 83px;
+  .img-like {
+    background-image: url("../images/icons/iconLike.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 20px;
     &:hover {
-      color: #AB064E;
-      border-bottom: 0.5px dashed #AB064E;
+      background-image: url("../images/icons/iconLike-2.svg");
     }
   }
 }
