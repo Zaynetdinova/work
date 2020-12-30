@@ -5,10 +5,10 @@ import arrow from '../../../../images/icons/arrow2.svg'
 export function form() {
     return `
         <form class="form form-js-show">
-            <div class="wrapper-title">
+            <article id="form-js" class="wrapper-title">
                 <div class="review-and-question">Отзывы и вопросы</div>
                 <img class="arrow" src="${arrow}" alt="arrow">
-            </div> 
+            </article> 
             <div class="form-wrapper">
                 <input class="name" type="text" placeholder="Ваше имя">
                 <div class="appraisal">

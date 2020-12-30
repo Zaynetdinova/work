@@ -6,6 +6,7 @@ import {anotherColorButton} from './js/anotherColorBorder'
 
 import {formShow, infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
+import {openForm} from './js/openForm'
 
 
 export class CardProductPage extends Component {
@@ -51,6 +52,9 @@ export class CardProductPage extends Component {
 				case 'favorites-product-js':
 					favoritesProduct(element)
 					break;
+				case 'form-js':
+					openForm(element)
+					break
 			}
 		}
 	}
