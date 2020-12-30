@@ -34,6 +34,10 @@
       padding: 8px 0;
       background-color: #FDFDFD;
       cursor: pointer;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      color: #555555;
 
       &.selected {
         color: #AB064E;

@@ -83,7 +83,23 @@
       .minus,
       .plus {
         cursor: pointer;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
       }
+      .plus {
+        background-image: url("../images/cardProduct/plus.svg");
+        &:hover {
+          background-image: url("../images/cardProduct/plus-black.svg");
+        }
+      }
+      .minus {
+        background-image: url("../images/cardProduct/minus.svg");
+        &:hover {
+          background-image: url("../images/cardProduct/minus-black.svg");
+        }
+      }
+
     }
     .size {
       display: flex;

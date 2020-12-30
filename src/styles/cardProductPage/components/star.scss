@@ -7,13 +7,12 @@
 }
 .rating-area:not(:checked) > label {
   float: right;
-  width: 19px;
+  width: 25px;
   padding: 0;
   cursor: pointer;
   font-size: 18px;
   line-height: 18px;
   color: lightgrey;
-  margin-right: 5px;
 }
 .rating-area:not(:checked) > label:before {
   content: '★';
