@@ -5,7 +5,6 @@ import {inputFile} from '../catalog/js/inputFile'
 import {anotherColorButton} from './js/anotherColorBorder'
 
 import {formShow, infoProductShow, testInfo} from './js/infoProductShow'
-import {infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
 
 
@@ -51,8 +50,7 @@ export class CardProductPage extends Component {
 
 				case 'favorites-product-js':
 					favoritesProduct(element)
-					break
-
+					break;
 			}
 		}
 	}
