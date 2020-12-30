@@ -9,4 +9,12 @@
       background-image: url("../images/icons/iconLike-2.svg");
     }
   }
+
+  &.favorite-product-active {
+    .img-like {
+      background-image: url("../images/icons/iconLike-2.svg");
+    }
+
+  }
+
 }

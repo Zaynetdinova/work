@@ -1,7 +1,7 @@
 export function favorites() {
     return `
-        <div class="favoritesProduct">           
+        <article id="favorites-product-js" class="favoritesProduct">           
             <div class="img-like"></div>
-        </div>            
+        </article>            
     `
 }

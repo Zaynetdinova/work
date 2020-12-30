@@ -4,6 +4,7 @@ import {infoTable} from './js/infoTable'
 import {inputFile} from '../catalog/js/inputFile'
 import {anotherColorButton} from './js/anotherColorBorder'
 import {infoProductShow, testInfo} from './js/infoProductShow'
+import {favoritesProduct} from './js/favoritesProduct'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -40,6 +41,9 @@ export class CardProductPage extends Component {
 				case 'title-dop-info-js':
 					testInfo(element, e)
 					break;
+				case 'favorites-product-js':
+					favoritesProduct(element)
+					break
 			}
 		}
 	}
