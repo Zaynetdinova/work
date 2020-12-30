@@ -4,7 +4,7 @@ import arrow from '../../../../images/icons/arrow2.svg'
 
 export function form() {
     return `
-        <form class="form">
+        <form class="form form-js-show">
             <div class="wrapper-title">
                 <div class="review-and-question">Отзывы и вопросы</div>
                 <img class="arrow" src="${arrow}" alt="arrow">
