@@ -4,7 +4,7 @@ import {infoTable} from './js/infoTable'
 import {inputFile} from '../catalog/js/inputFile'
 import {anotherColorButton} from './js/anotherColorBorder'
 
-import {formShow, infoProductShow, testInfo} from './js/infoProductShow'
+import {infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
 import {openForm} from './js/openForm'
 
@@ -44,11 +44,6 @@ export class CardProductPage extends Component {
 				case 'title-dop-info-js':
 					testInfo(element, e)
 					break;
-
-				case 'wrapper-title':
-					formShow(element, e)
-					break;
-
 				case 'favorites-product-js':
 					favoritesProduct(element)
 					break;
