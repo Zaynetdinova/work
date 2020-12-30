@@ -1,7 +1,9 @@
 .view-big-photos-block {
   width: 462px;
   height: 2799px;
-
+  .img-slide {
+    padding-bottom: 5px;
+  }
   .button {
     position: absolute;
     width: 46px;
@@ -26,7 +28,7 @@
     }
 
     &.button-next {
-      top: 653px;
+      top: 649px;
 
       .arrow {
         transform: rotate(180deg);
@@ -40,12 +42,12 @@
 
     @media (max-width: 1300px) {
       &.button-next {
-        top: 452px;
+        top: 448px;
       }
     }
     @media (max-width: 1023px) {
       &.button-next {
-        top: 332px;
+        top: 328px;
       }
     }
   }

@@ -3,13 +3,11 @@
   @import "./topPhotosBlock";
 
   display: flex;
-  .img-slide {
-    padding-bottom: 1px;
-  }
+
   @media (max-width: 1300px) {
     .view-photos-block {
       width: 89px;
-      height: 501px;
+      height: 495px;
     }
 
     .view-big-photos-block {
@@ -20,7 +18,7 @@
   @media (max-width: 1023px) {
     .view-photos-block {
       width: 67px;
-      height: 376px;
+      height: 375px;
     }
 
     .view-big-photos-block {
