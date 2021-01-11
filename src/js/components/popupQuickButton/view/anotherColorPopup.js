@@ -1,14 +1,14 @@
 import {r} from "../../common/commonCard/commonCardHeader";
 
-export function anotherColor(item) {
+export function anotherColorPopup(item) {
     return `
-    <div class="anotherColor">
+    <div class="anotherColorPopup">
         <section id="another-color" class="wrapper-title-dots">
-            <div class="title">Выберите другой цвет</div>
+            <div class="title">Доступные цвета</div>
             <div class="slider-pointer">${r()}</div>
         </section>
        
-        <article id="another-color-js" class="swiper-container another-photo-mobile">
+        <article id="another-color-js" class="swiper-container another-photo-mobile-2">
             <div class="swiper-wrapper">
                 ${anotherPhoto(item)}
             </div>

@@ -427,6 +427,7 @@ function cardProductPage() {
 		cssMode: true,
 	}
 	const test = new Swiper('#view-photos-block-swiper-js', options)
+	const test2 = new Swiper('#view-photos-block-swiper-js-2', options)
 
 	const topSlider = new Swiper('#view-big-photos-block-swiper-js', {
 		slidesPerView: 4,
@@ -442,7 +443,20 @@ function cardProductPage() {
 			prevEl: '.swiper-button-prev-main',
 		},
 	})
-
+	const topSlider2 = new Swiper('#view-big-photos-block-swiper-js-2', {
+		slidesPerView: 1,
+		direction: 'vertical',
+		loop: true,
+		on: {
+			slideChange: function () {
+				console.log(this.activeIndex)
+			}
+		},
+		navigation: {
+			nextEl: '.swiper-button-next-main',
+			prevEl: '.swiper-button-prev-main',
+		},
+	})
 }
 
 

@@ -1,4 +1,4 @@
-import arrow from '../../../../images/icons/arrow2.svg'
+import arrow from '../../../images/icons/arrow2.svg'
 
 export function titleProductPage(name, id) {
     return `

@@ -1,4 +1,4 @@
-import {titleProductPage} from "./titleProdactPage";
+import {titleProductPage} from "../../common/titleProdactPage";
 
 export function dopInfo() {
     return `

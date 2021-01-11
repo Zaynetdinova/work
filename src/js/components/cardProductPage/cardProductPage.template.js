@@ -1,6 +1,6 @@
 import {viewPhotosBlock, viewPhotosBlockMobile} from './view/viewPhotosBlock'
 import {transitionTitleProduct} from "./view/transitionTitleProduct";
-import {buttonProduct} from "./view/buttonProduct";
+import {buttonProduct} from "../common/buttonProduct";
 import {star} from "./view/star";
 import vk from '../../../images/social/vk.svg'
 import fb from '../../../images/social/facebook.svg'
@@ -10,15 +10,15 @@ import mail from '../../../images/social/mail.svg'
 import od from '../../../images/social/odnoklassniki.svg'
 import photo1 from '../../../images/cardProduct/photo1.png'
 import photo2 from '../../../images/cardProduct/photo2.png'
-import {favorites} from "./view/favorites";
+import {favorites} from "../common/favorites";
 import {goodStock, transitionBrand} from "./view/transitionBrand";
 import {priceContent} from "../common/commonCard/priceContent";
-import {infoProduct} from "./view/infoProduct";
+import {infoProduct} from "../common/infoProduct";
 import {socialProduct} from "./view/socialProduct";
 import {anotherColor} from "./view/anotherColor";
-import {infoTable} from "./view/infoTable";
+import {infoTable} from "../common/infoTable";
 import {attention} from "./view/attention";
-import {descriptionModule} from "./view/description";
+import {descriptionModule} from "../common/description";
 import {dopInfo} from "./view/dopInfo";
 import {form} from "./view/form";
 import {commonCard} from "../common/commonCard/commonCards";

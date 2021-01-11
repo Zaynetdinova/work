@@ -13,10 +13,10 @@
   cursor: pointer;
   font-size: 18px;
   line-height: 18px;
-  color: lightgrey;
+  color:  #FF9900;
 }
 .rating-area:not(:checked) > label:before {
-  content: '★';
+  content: '☆';
 }
 .rating-area > input:checked ~ label {
   color: #FF9900;
@@ -41,9 +41,9 @@
 }
 .rating-result span {
   padding: 0;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 100%;
-  color: lightgrey;
+  color: #FF9900;
 }
 .rating-result > span:before {
   content: '★';

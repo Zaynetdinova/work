@@ -8,7 +8,6 @@ import {infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
 import {openForm} from './js/openForm'
 
-
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
 
