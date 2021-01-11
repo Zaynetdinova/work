@@ -1,4 +1,7 @@
 .Popup-quick-button {
+  @import "components/product-description";
+  @import "components/viewPhotosBlockPopup";
+  @import "components/anotherColorPopup";
   .root {
     max-width: 1000px;
     margin: 20px auto 0 auto;
@@ -6,18 +9,44 @@
   .header-popup {
     background: #AB064E;
     padding: 20px;
-    .transitionBrand .brand a,
-    .transitionBrand .category {
-      color: #FFFFFF;
+    .wrapper-header {
+      display: flex;
+      justify-content: space-between;
+      img {
+        cursor: pointer;
+      }
+      .transitionBrand .brand a,
+      .transitionBrand .category {
+        color: #FFFFFF;
+        font-size: 28px;
+        line-height: 29px;
+      }
+      .transitionBrand  .category a {
+        color: rgba(255, 255, 255, 0.7);
+      }
     }
-    .transitionBrand  .category a {
-      color: rgba(255, 255, 255, 0.7);
+  }
+  .main-popup {
+    padding: 20px;
+    background: #FFFFFF;
+    .photos {
+      max-width: 470px;
+    }
+    .wrapper-infoTable {
+      .result {
+        display: none;
+      }
+      .price {
+        display: none;
+      }
     }
   }
   .wrapper-star-goodStock {
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-items: baseline;
+    .star-popup {
+      margin-right: 10px;
+    }
     .goodStock {
       margin: 0;
       .stock {

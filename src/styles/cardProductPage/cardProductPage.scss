@@ -1,15 +1,15 @@
 .Card-product-page {
-  @import "./components/viewPhotosBlock";
+  @import "components/viewPhotosBlock";
   @import "./components/product-description";
-  @import "./components/buttonProduct";
-  @import "./components/titleProdactPage";
-  @import "./components/favorites";
-  @import "./components/infoProduct";
+  @import "../common/buttonProduct";
+  @import "../common/titleProdactPage";
+  @import "../common/favorites";
+  @import "../common/infoProduct";
   @import "./components/socialProduct";
   @import "./components/anotherColor";
-  @import "./components/infoTable";
+  @import "../common/infoTable";
   @import "./components/attention";
-  @import "./components/description";
+  @import "../common/description";
   @import "./components/dopInfo";
   @import "./components/form";
   .root {

@@ -13,12 +13,10 @@
   }
 
   img {
-    border: 3px solid transparent;
     cursor: pointer;
-
-
     &.active-color {
-      border: 3px solid #AB064E;
+      outline: 3px solid #AB064E;
+      outline-offset: -3px;
     }
   }
 }

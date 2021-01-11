@@ -1,6 +1,6 @@
 .View-photos-block {
-  @import './auxiliaryPhotosBlock';
-  @import "./topPhotosBlock";
+  @import 'auxiliaryPhotosBlock';
+  @import 'topPhotosBlock';
 
   display: flex;
 

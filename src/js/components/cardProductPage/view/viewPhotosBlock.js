@@ -3,7 +3,8 @@ import testBig2 from '../../../../images/cardProduct/test-big2.png'
 import testBig3 from '../../../../images/cardProduct/test-big3.png'
 import testBig4 from '../../../../images/cardProduct/test-big4.png'
 import {r} from "../../common/commonCard/commonCardHeader";
-import {buttonProduct} from "./buttonProduct";
+import {buttonProduct} from "../../common/buttonProduct";
+import icon_max from "../../../../images/icons/icon_max.svg"
 
 export function viewPhotosBlock() {
 	return `
@@ -25,6 +26,7 @@ export function viewPhotosBlock() {
 						
 			${buttonPhotos('prev')}
 			${buttonPhotos('next')}
+
 		</section>
 	</div>
 	`

@@ -1,0 +1,20 @@
+.product-description {
+  max-width: 470px;
+  .first-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 27px;
+  }
+  .price {
+    .Price-content {
+      padding: 0;
+    }
+  }
+}

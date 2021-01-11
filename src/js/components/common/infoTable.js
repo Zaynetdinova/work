@@ -1,5 +1,5 @@
-import info from '../../../../images/cardProduct/info.svg'
-import {Sale} from "../../common/sale";
+import info from '../../../images/cardProduct/info.svg'
+import {Sale} from "./sale";
 
 export function infoTable(item) {
     return `

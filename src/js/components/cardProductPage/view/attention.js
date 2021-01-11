@@ -1,4 +1,4 @@
-import {buttonProduct} from "./buttonProduct";
+import {buttonProduct} from "../../common/buttonProduct";
 
 export function attention() {
     return `
