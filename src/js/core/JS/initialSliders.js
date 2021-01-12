@@ -433,6 +433,7 @@ function cardProductPage() {
 		slidesPerView: 4,
 		direction: 'vertical',
 		loop: true,
+		spaceBetween: 5,
 		on: {
 			slideChange: function () {
 				console.log(this.activeIndex)
