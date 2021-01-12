@@ -7,6 +7,7 @@ import {anotherColorButton} from './js/anotherColorBorder'
 import {infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
 import {openForm} from './js/openForm'
+import {viewPhotoZoom} from './js/viewPhotoZoom'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -23,7 +24,9 @@ export class CardProductPage extends Component {
 	}
 
 	afterInitComponent() {
+		viewPhotoZoom()
 		inputFile()
+
 	}
 
 	onClick(e) {

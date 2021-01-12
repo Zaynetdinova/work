@@ -2,6 +2,7 @@ import testBig1 from '../../../../images/cardProduct/test-big1.png'
 import testBig2 from '../../../../images/cardProduct/test-big2.png'
 import testBig3 from '../../../../images/cardProduct/test-big3.png'
 import testBig4 from '../../../../images/cardProduct/test-big4.png'
+import zoom from '../../../../images/zoom.jpg'
 import {r} from "../../common/commonCard/commonCardHeader";
 import {buttonProduct} from "../../common/buttonProduct";
 import icon_max from "../../../../images/icons/icon_max.svg"
@@ -21,7 +22,7 @@ export function viewPhotosBlock() {
 		
 		<section id="view-big-photos-block-swiper-js" class="swiper-container view-big-photos-block">
 			<div class="swiper-wrapper">
-				${photos()}
+				${photosBig()}
 			</div>
 						
 			${buttonPhotos('prev')}
@@ -59,6 +60,41 @@ function photos() {
 	<img src="${testBig3}" class="swiper-slide img-slide">
 	<img src="${testBig4}" class="swiper-slide img-slide">
 	<img src="${testBig1}" class="swiper-slide img-slide">
+	`
+}
+
+function photosBig() {
+	return `
+		<div  class="swiper-slide img-slide">
+			<img src="${testBig1}" class="main-img">
+			<div class="test zoom-img-wrapper">
+				<img class="test-img" src="${testBig1}">
+			</div>
+		</div>
+		<div class="swiper-slide img-slide">
+			<img src="${testBig2}" class="main-img">
+			<div class="test zoom-img-wrapper">
+				<img class="test-img" src="${testBig2}">
+			</div>
+		</div>
+		<div class="swiper-slide img-slide">
+			<img src="${testBig3}" class="main-img">
+			<div class="test zoom-img-wrapper">
+				<img class="test-img" src="${testBig3}">
+			</div>
+		</div>
+		<div class="swiper-slide img-slide">
+			<img src="${testBig4}" class="main-img">
+			<div class="test zoom-img-wrapper">
+				<img class="test-img" src="${testBig4}">
+			</div>
+		</div>
+		<div class="swiper-slide img-slide">
+			<img src="${testBig1}" class="main-img">
+			<div class="test zoom-img-wrapper">
+				<img class="test-img" src="${testBig1}">
+			</div>
+		</div>
 	`
 }
 
