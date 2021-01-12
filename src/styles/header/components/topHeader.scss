@@ -10,7 +10,6 @@
 }
 .topHeader nav > a {
   color: rgba(255, 255, 255, 0.7);
-  text-decoration-line: underline;
   transition: 0.2s ease;
 }
 .topHeader nav > a:hover {
@@ -34,7 +33,8 @@
 }
 
 .info {
-  margin-left: 7px;
+  margin-left: 17px;
+  text-decoration: none;
 }
 .wrapper {
   max-width: 1480px;

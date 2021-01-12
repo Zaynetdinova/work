@@ -1,7 +1,6 @@
 .rating-area {
   max-height: 18px;
   overflow: hidden;
-  unicode-bidi: bidi-override;
 }
 .rating-area:not(:checked) > input {
   display: none;
@@ -13,10 +12,10 @@
   cursor: pointer;
   font-size: 18px;
   line-height: 18px;
-  color:  #FF9900;
+  color: lightgrey;
 }
 .rating-area:not(:checked) > label:before {
-  content: '☆';
+  content: '★';
 }
 .rating-area > input:checked ~ label {
   color: #FF9900;
@@ -37,13 +36,13 @@
 }
 .rating-result {
   min-height: 20px;
-  unicode-bidi: bidi-override;
 }
 .rating-result span {
   padding: 0;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 100%;
-  color: #FF9900;
+  color: lightgrey;
+  margin-right: 3px;
 }
 .rating-result > span:before {
   content: '★';
