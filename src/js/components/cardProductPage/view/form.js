@@ -1,6 +1,7 @@
 import {star2} from "./star";
 import load from '../../../../images/cardProduct/load.svg'
 import arrow from '../../../../images/icons/arrow2.svg'
+import {Statistics} from "./statistics";
 
 export function form() {
     return `
@@ -9,7 +10,16 @@ export function form() {
                 <div class="review-and-question">Отзывы и вопросы</div>
                 <img class="arrow" src="${arrow}" alt="arrow">
             </article> 
-            <div class="form-wrapper">
+            ${formWrapper()}
+            ${Statistics()}
+        </form>
+    `
+}
+
+
+function formWrapper() {
+    return `
+        <div class="form-wrapper">
                 <input class="name" type="text" placeholder="Ваше имя">
                 <div class="appraisal">
                     <div class="title">Общая оценка</div>
@@ -45,7 +55,5 @@ export function form() {
                     <button class="send">Отправить</button>
                 </div>        
             </div>   
-        </form>
     `
 }
-

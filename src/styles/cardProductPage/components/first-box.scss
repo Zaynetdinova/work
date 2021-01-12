@@ -1,6 +1,6 @@
 .first-box {
   background: #F3F2F0;
-  padding: 46px 37px 45px 43px;
+  padding: 46px 43px 45px 44px;
   display: flex;
   justify-content: space-between;
   .rating {
@@ -12,8 +12,11 @@
       text-align: center;
     }
     .wrap-star {
-      margin-top: 16px;
-      margin-bottom: 13px;
+      margin-top: 13px;
+      margin-bottom: 16px;
+      .rating-result {
+        width: 127px;
+      }
     }
     .number {
       font-size: 69.0811px;
@@ -62,6 +65,95 @@
             background-color: #AB064E;
           }
         }
+      }
+    }
+    @media (max-width: 1300px) {
+      width: 301px;
+      .wrap-percent {
+        .lines {
+          .progress-bar {
+            width: 212px;
+            .progress-bar-fill {
+              width: 212px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1023px) {
+      width: 211px;
+      .wrap-percent {
+        .lines {
+          .progress-bar {
+            width: 147px;
+            .progress-bar-fill {
+              width: 147px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 374px) {
+      width: 180px;
+      .wrap-percent {
+        .lines {
+          .progress-bar {
+            width: 120px;
+            .progress-bar-fill {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1300px) {
+    padding: 46px 20px 45px 27px;
+  }
+  @media (max-width: 1023px) {
+    padding: 30.5px 28.5px 31px 19.5px;
+    .rating {
+      .wrap-star {
+        margin-top: 13px;
+        margin-bottom: 16px;
+        .rating-result {
+          width: 91px;
+          min-height: 13px;
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+      .number {
+        font-size: 49px;
+      }
+      .comment {
+        font-size: 12px;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    padding: 30.5px 13.5px 31px 13.5px;
+  }
+  @media (max-width: 374px) {
+    padding: 27px 9px 25px 11px;
+    .rating {
+      .wrap-star {
+        margin-top: 13px;
+        margin-bottom: 16px;
+        .rating-result {
+          width: 76px;
+          min-height: 10px;
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+      .number {
+        font-size: 41px;
+      }
+      .comment {
+        font-size: 10px;
       }
     }
   }

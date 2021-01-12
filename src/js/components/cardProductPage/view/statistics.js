@@ -15,23 +15,27 @@ export function Statistics() {
             </div>
             <div class="second-box">
                 <div class="circle-percent">
-                    <div class="circle2">0%</div>
-                    <div class="text">Маломерит</div>
+                    ${circle('0%', 'Маломерит')}                   
                 </div>
                 <div class="circle-percent">
-                    <div id="activeBorder" class="active-border">
-                        <div id="circle" class="circle">75%</div>
+                    <div class="active-border">
+                        <div class="circle">75%</div>
                     </div>
-                    <div class="text">Соответсвует</div>
+                    <div class="text">Соответствует</div>
                 </div>
                 <div class="circle-percent">
-                    <div class="circle2">0%</div>
-                    <div class="text">Большемерит</div>
+                    ${circle('0%', 'Большемерит')}   
                 </div>       
             </div>
             <div class="button">Написать отзыв / вопрос</div>
             ${reviews(info)}         
         </div>
+    `
+}
+function circle(percent, text) {
+    return `
+        <div class="circle2">${percent}</div>
+        <div class="text">${text}</div>
     `
 }
 
