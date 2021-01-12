@@ -6,7 +6,9 @@ export function topHeader() {
                     <nav>
                         <span class='span'>Оптовая торговля</span>
                         <a class='lk_link' href='#'>Вход / Регистрация</a>
-                        <a class='info' href='#'>Информация</a>
+                        <a class='info' href='#'>О покупках</a>
+                        <a class='info' href='#'>О магазине</a>
+                        <a class='info' href='#'>Сотрудничество</a>
                     </nav>
                     <nav>
                         <span>
@@ -17,6 +19,17 @@ export function topHeader() {
                     </nav>
                 </div> 
             </div>
+        </div>
+    `
+}
+
+function tooltip() {
+    return `
+        <div class="tooltip">
+            <div>Размеры</div>
+            <div>Доставка</div>
+            <div>Оплата</div>
+            <div>Ответы на вопросы</div>
         </div>
     `
 }

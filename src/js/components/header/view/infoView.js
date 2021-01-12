@@ -26,11 +26,8 @@ let point = [
         category: 'Оплата'
       },
       {
-        category: 'Ответы на вопросы'
+        category: 'Ответы на частые вопросы'
       },
-      {
-        category: 'Контакты'
-      }
     ]
   },
 
@@ -40,19 +37,13 @@ let point = [
     img: false,
     category: [
       {
-        category: 'Личный кабинет'
+        category: 'О нас'
       },
       {
-        category: 'Корзина'
+        category: 'Условия работы'
       },
       {
-        category: 'Избранное'
-      },
-      {
-        category: 'Заказы и их статус'
-      },
-      {
-        category: ' Возврат'
+        category: 'Контакты'
       },
     ]
   },
