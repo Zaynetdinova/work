@@ -61,7 +61,6 @@ export function cardProductPageTemplate() {
 					${descriptionModule()}
 					<div class="wrapper-dop-info">${dopInfo()}</div>
 					${form()}
-					${Statistics()}
 				</section>
 			</div>
 		</div>

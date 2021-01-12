@@ -35,11 +35,14 @@
   position: relative;
 }
 .rating-result {
-  min-height: 20px;
+  min-height: 18px;
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
 }
 .rating-result span {
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 100%;
   color: lightgrey;
   margin-right: 3px;
@@ -47,7 +50,11 @@
 .rating-result > span:before {
   content: '★';
 }
-.rating-result > span.active {
+.rating-result > span.active,
+.rating-result > span.inactive {
   color: #FF9900;
+}
+.rating-result > span.inactive:before {
+  content: '☆';
 }
 

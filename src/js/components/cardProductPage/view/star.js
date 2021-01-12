@@ -5,8 +5,8 @@ export function star() {
                 <span class="active"></span>
                 <span class="active"></span>    
                 <span class="active"></span>  
-                <span></span>    
-                <span></span>
+                <span class="active"></span>     
+                <span class="inactive"></span>
             </div>
         </div>     
     `
