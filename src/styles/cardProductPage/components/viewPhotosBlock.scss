@@ -1,6 +1,7 @@
 .View-photos-block {
   @import 'auxiliaryPhotosBlock';
   @import 'topPhotosBlock';
+  @import 'popupPhotosBlock.scss';
 
   display: flex;
 

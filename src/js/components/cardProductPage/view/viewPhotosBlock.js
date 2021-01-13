@@ -19,13 +19,32 @@ export function viewPhotosBlock() {
 		</section>
 		
 		<section id="view-big-photos-block-swiper-js" class="swiper-container view-big-photos-block">
-			<div id="zoom-photo-js" class="swiper-wrapper">
+			<article id="zoom-photo-js" class="swiper-wrapper">
 				${photosBig(dataPhotos)}
-			</div>
+			</article>
 						
 			${buttonPhotos('prev')}
 			${buttonPhotos('next')}
 
+		</section>
+		
+		<section class="view-big-photos-popup-block">
+		
+			<div class="paranja"></div>
+			
+			<div  class='content'>
+				<div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
+					<div class="swiper-wrapper">
+					${popupPhoto(dataPhotos)}
+					</div>
+					<div class="swiper-button-next-main swiper-button button-next"></div>
+					<div class="swiper-button-prev-main swiper-button button-prev"></div>
+				</div>
+				<article id="close-popup-js" class="close-popup"></article>
+			</div>
+			
+			
+			
 		</section>
 	</div>
 	`
@@ -63,11 +82,24 @@ function photosBig(data) {
 	return data.map((photo) => {
 		return `
 		<div  class="swiper-slide img-slide">
+		
 			<img src="${photo.original}" class="main-img">
+		
+			
 			<div data-zoom-js class="zoom-img-wrapper">
 				<img class="zoom-img-js" src="${photo.original}">
 			</div>
 		</div>
+		`
+	}).join('')
+}
+
+function popupPhoto(data) {
+	return data.map((photo) => {
+		return `
+				<div class="test swiper-slide">
+				 <img src="${photo.original}" class="popup-photo">
+				</div>
 		`
 	}).join('')
 }
