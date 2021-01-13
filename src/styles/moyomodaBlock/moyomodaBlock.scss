@@ -12,7 +12,6 @@
   background-size: auto;
   margin: 0 auto 0 auto;
 
-
   .root {
     max-width: 1480px;
     margin: auto;
@@ -96,6 +95,7 @@
     background-size: contain;
   }
   @media (max-width: 1440px) {
+    background-position: 50% 48%;
     .card {
       .img {
         height: 230px;
@@ -109,6 +109,7 @@
   }
 
   @media (max-width: $tablet-breakpoint) {
+    background-position: 50% 56%;
     .root {
       padding: 68px 20px 80px 20px;
     }
