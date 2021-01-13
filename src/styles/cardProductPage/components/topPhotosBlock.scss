@@ -5,9 +5,15 @@
     position: relative;
     overflow: hidden;
 
+    .main-img {
+      height: auto;
+      width: 100%;
+    }
+
     &:hover {
       .main-img {
         opacity: 0;
+
       }
 
       .zoom-img-wrapper {

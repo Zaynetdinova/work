@@ -9,6 +9,8 @@ import {favoritesProduct} from './js/favoritesProduct'
 import {openForm} from './js/openForm'
 import {viewPhotoZoom} from './js/viewPhotoZoom'
 import {showForm} from './js/showForm'
+import {popupSliderPhoto} from './js/popupSliderPhoto'
+import {initialSlider} from './js/initialSlider'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -25,6 +27,7 @@ export class CardProductPage extends Component {
 	}
 
 	afterInitComponent() {
+		initialSlider()
 		viewPhotoZoom()
 		inputFile()
 
@@ -61,6 +64,12 @@ export class CardProductPage extends Component {
 					break
 				case 'send-form-js':
 					showForm('send')
+					break
+				case 'zoom-photo-js':
+					popupSliderPhoto()
+					break
+				case 'close-popup-js':
+					popupSliderPhoto('close')
 					break
 			}
 		}
