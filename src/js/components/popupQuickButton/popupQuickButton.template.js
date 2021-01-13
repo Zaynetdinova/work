@@ -47,6 +47,7 @@ export function popupQuickButtonTemplate() {
             </div>
             <div class="wrapper-infoTable">
                 ${infoTable(table)}
+                <div class="no-title">${infoTable(table)}</div>
             </div>
         </div>        
     </div>  

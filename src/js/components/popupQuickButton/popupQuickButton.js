@@ -4,6 +4,7 @@ import {favoritesProduct} from "../cardProductPage/js/favoritesProduct";
 import {infoProductShow} from "../cardProductPage/js/infoProductShow";
 import {anotherColorButton} from "../cardProductPage/js/anotherColorBorder";
 import {inputFile} from "../catalog/js/inputFile";
+import {infoTable} from "../cardProductPage/js/infoTable";
 
 
 export class PopupQuickButton extends Component {
@@ -29,6 +30,9 @@ export class PopupQuickButton extends Component {
             const element = e.target.closest('article');
 
             switch (element.id) {
+                case 'info-table':
+                    infoTable(e)
+                    break;
                 case 'title-description-js':
                     infoProductShow(element, e)
                     break;
