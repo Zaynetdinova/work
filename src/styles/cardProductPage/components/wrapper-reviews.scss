@@ -22,11 +22,12 @@
     margin-top: 12px;
     margin-bottom: 6px;
     .rating-result {
-      min-height: 14px;
       width: 105px;
-    }
-    .rating-result span {
-      font-size: 14px;
+      min-height: 14px;
+      span {
+        width: 15px;
+        height: 14px;
+      }
     }
   }
   .size-text {
