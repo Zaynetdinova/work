@@ -2,17 +2,15 @@ import testBig1 from '../../../../images/cardProduct/test-big1.png'
 import testBig2 from '../../../../images/cardProduct/test-big2.png'
 import testBig3 from '../../../../images/cardProduct/test-big3.png'
 import testBig4 from '../../../../images/cardProduct/test-big4.png'
-import zoom from '../../../../images/zoom.jpg'
 import {r} from "../../common/commonCard/commonCardHeader";
 import {buttonProduct} from "../../common/buttonProduct";
-import icon_max from "../../../../images/icons/icon_max.svg"
 
 export function viewPhotosBlock() {
 	return `
 	<div class="View-photos-block">
 		<section id="view-photos-block-swiper-js" class="swiper-container view-photos-block">
 			<div class="swiper-wrapper">
-				${photos()}
+				${photos(dataPhotos)}
 			</div>
 			
 			${buttonPhotos('prev')}
@@ -21,8 +19,8 @@ export function viewPhotosBlock() {
 		</section>
 		
 		<section id="view-big-photos-block-swiper-js" class="swiper-container view-big-photos-block">
-			<div class="swiper-wrapper">
-				${photosBig()}
+			<div id="zoom-photo-js" class="swiper-wrapper">
+				${photosBig(dataPhotos)}
 			</div>
 						
 			${buttonPhotos('prev')}
@@ -53,49 +51,25 @@ function buttonPhotos(type) {
 }
 
 
-function photos() {
-	return `
-	<img src="${testBig1}" class="swiper-slide img-slide">
-	<img src="${testBig2}" class="swiper-slide img-slide">
-	<img src="${testBig3}" class="swiper-slide img-slide">
-	<img src="${testBig4}" class="swiper-slide img-slide">
-	<img src="${testBig1}" class="swiper-slide img-slide">
-	`
+function photos(data) {
+	return data.map((photo) => {
+		return `
+			<img src="${photo.original}" class="swiper-slide img-slide">
+		`
+	}).join('')
 }
 
-function photosBig() {
-	return `
+function photosBig(data) {
+	return data.map((photo) => {
+		return `
 		<div  class="swiper-slide img-slide">
-			<img src="${testBig1}" class="main-img">
-			<div class="test zoom-img-wrapper">
-				<img class="test-img" src="${testBig1}">
+			<img src="${photo.original}" class="main-img">
+			<div data-zoom-js class="zoom-img-wrapper">
+				<img class="zoom-img-js" src="${photo.original}">
 			</div>
 		</div>
-		<div class="swiper-slide img-slide">
-			<img src="${testBig2}" class="main-img">
-			<div class="test zoom-img-wrapper">
-				<img class="test-img" src="${testBig2}">
-			</div>
-		</div>
-		<div class="swiper-slide img-slide">
-			<img src="${testBig3}" class="main-img">
-			<div class="test zoom-img-wrapper">
-				<img class="test-img" src="${testBig3}">
-			</div>
-		</div>
-		<div class="swiper-slide img-slide">
-			<img src="${testBig4}" class="main-img">
-			<div class="test zoom-img-wrapper">
-				<img class="test-img" src="${testBig4}">
-			</div>
-		</div>
-		<div class="swiper-slide img-slide">
-			<img src="${testBig1}" class="main-img">
-			<div class="test zoom-img-wrapper">
-				<img class="test-img" src="${testBig1}">
-			</div>
-		</div>
-	`
+		`
+	}).join('')
 }
 
 function photosMobile() {
@@ -107,3 +81,26 @@ function photosMobile() {
 	<img src="${testBig1}" class="swiper-slide">
 	`
 }
+
+const dataPhotos = [
+	{
+		original: testBig1,
+		compressedImg: testBig1,
+	},
+	{
+	original: testBig2,
+		compressedImg: testBig2,
+	},
+	{
+		original: testBig3,
+		compressedImg: testBig3,
+	},
+	{
+		original: testBig4,
+		compressedImg: testBig4,
+	},
+	{
+		original: testBig1,
+		compressedImg: testBig1,
+	}
+]
