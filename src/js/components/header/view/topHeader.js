@@ -1,3 +1,5 @@
+import {backCall} from "../../backСall/backСall.template";
+
 export function topHeader() {
     return `
         <div class='topHeader'>
@@ -5,7 +7,7 @@ export function topHeader() {
                 <div class='content'>
                     <nav>
                         <span class='span'>Оптовая торговля</span>
-                        <a class='lk_link' href='#'>Вход / Регистрация</a>
+                        <article class='lk_link'>Вход / Регистрация</article>
                         
                         <a class='info' href='#'>О покупках
                             <div class="wrapper-tooltip"><div class="tooltip">${tooltip(buy)}</div></div>
@@ -24,7 +26,9 @@ export function topHeader() {
                             <a href='tel:+74996088925'>8 (499) 608-89-25,</a>
                             <a class='lk_link2' href='tel:+78003012575'> (800) 301-25-75</a>
                         </span>
-                        <a class='lk_link' href='#'>Заказать звонок</a>
+                        <article id="backCall" class='lk_link'>Заказать звонок
+                            ${backCall()}
+                        </article>
                     </nav>
                 </div> 
             </div>

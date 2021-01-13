@@ -7,6 +7,9 @@
   line-height: 14px;
   color: $baseColor;
   background: $bg-topHeader;
+  nav {
+    display: flex;
+  }
 }
 .topHeader nav > a {
   color: rgba(255, 255, 255, 0.7);
@@ -27,7 +30,19 @@
 }
 .lk_link {
   margin-left: 7px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  &:hover {
+    color: $baseColor;
+  }
 }
+.show-callBack {
+  .BackCall {
+    display: block;
+  }
+}
+
 .lk_link2 {
   margin-left: 4px;
 }

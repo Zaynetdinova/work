@@ -2,7 +2,7 @@ import {closeSidebarCloseMenu} from '../../../core/JS/openSidebar'
 
 export function openMenu(type = '') {
 
-	const sidebar = document.getElementById('sidebar-js')
+  const sidebar = document.getElementById('sidebar-js')
   const cancel = sidebar.querySelector(`[data-id='cancel-js']`)
   const burgerMenu = document.getElementById('burger-menu')
 

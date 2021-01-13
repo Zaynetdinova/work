@@ -32,6 +32,7 @@ import img22 from '../../../images/bestsellers/1/img5.png'
 import img23 from '../../../images/bestsellers/1/img6.png'
 
 import {bannerBlockWomen} from "./view/banner";
+import {backCall} from "../backСall/backСall.template";
 
 export function categoriesWomen(woman) {
 	return `
