@@ -1,5 +1,9 @@
 .rating-area {
   max-height: 18px;
+  width: 135px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   overflow: hidden;
 
   &:not(:checked) > input {
@@ -12,7 +16,6 @@
     cursor: pointer;
     width: 19px;
     height: 18px;
-    margin-right: 3px;
     background: url("../images/icons/star_empty.svg") no-repeat;
 
   }
@@ -46,15 +49,16 @@
   span {
     width: 19px;
     height: 18px;
-    margin-right: 3px;
   }
 
   .active {
     background: url("../images/icons/star.svg") no-repeat;
+    background-size: contain;
   }
 
   .inactive {
     background: url("../images/icons/star_empty.svg") no-repeat;
+    background-size: contain;
   }
 }
 

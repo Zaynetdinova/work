@@ -1,14 +1,13 @@
 export function star() {
     return `
-        <div class="rating-area">
-            <div class="rating-result">
-                <span class="active"></span>
-                <span class="active"></span>    
-                <span class="active"></span>  
-                <span class="active"></span>     
-                <span class="inactive"></span>
-            </div>
-        </div>     
+        <div class="rating-result">
+            <span class="active"></span>
+            <span class="active"></span>    
+            <span class="active"></span>  
+            <span class="active"></span>     
+            <span class="inactive"></span>
+        </div>
+   
     `
 }
 

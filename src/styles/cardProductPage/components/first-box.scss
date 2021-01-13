@@ -122,13 +122,12 @@
     padding: 30.5px 28.5px 31px 19.5px;
     .rating {
       .wrap-star {
-        margin-top: 13px;
-        margin-bottom: 16px;
         .rating-result {
           width: 91px;
           min-height: 13px;
           span {
-            font-size: 13px;
+            width: 14px;
+            height: 13px;
           }
         }
       }
@@ -151,9 +150,10 @@
         margin-bottom: 16px;
         .rating-result {
           width: 76px;
-          min-height: 10px;
+          min-height: 11px;
           span {
-            font-size: 10px;
+            width: 12px;
+            height: 11px;
           }
         }
       }
