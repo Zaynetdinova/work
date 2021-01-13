@@ -57,11 +57,8 @@ function formWrapper() {
                 </div>
                 
                 <div class="wrapper-button">
-                   
-                        <article id="cancel-form-js" class="cancel">Отменить</article>
-                   
-                    
-                    <button class="send">Отправить</button>
+                    <article id="cancel-form-js" class="cancel">Отменить</article>
+                    <article id="send-form-js" class="send">Отправить</article>
                 </div>        
             </div>   
     `

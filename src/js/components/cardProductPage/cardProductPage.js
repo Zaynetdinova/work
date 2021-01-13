@@ -59,6 +59,9 @@ export class CardProductPage extends Component {
 				case 'cancel-form-js':
 					showForm('cancel')
 					break
+				case 'send-form-js':
+					showForm('send')
+					break
 			}
 		}
 	}
