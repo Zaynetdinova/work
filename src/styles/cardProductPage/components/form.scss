@@ -173,12 +173,12 @@
       font-size: 15px;
       line-height: 17px;
       border-radius: 4px;
+      text-align: center;
     }
     .cancel {
       color: #3D3D3C;
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
-      text-align: center;
       &:hover {
         color: #AB064E;
         border: 1px solid #AB064E;
@@ -210,13 +210,24 @@
     }
   }
 
+
   .show-form {
     .form-wrapper {
       display: block;
     }
-
     .Statistics {
       display: none;
+    }
+  }
+  .gratitude-form {
+    .form-wrapper {
+      display: none;
+    }
+    .Statistics {
+      display: none;
+    }
+    .Gratitude {
+      display: block;
     }
   }
 
