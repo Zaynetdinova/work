@@ -27,7 +27,7 @@ export function Statistics() {
                     ${circle('0%', 'Большемерит')}   
                 </div>       
             </div>
-            <article id="show-form-js" class="button">Написать отзыв / вопрос</article>
+            <article id="show-form-js" class="button-write-feedback">Написать отзыв / вопрос</article>
                 
         </div>
     `

@@ -3,6 +3,7 @@ import load from '../../../../images/cardProduct/load.svg'
 import arrow from '../../../../images/icons/arrow2.svg'
 import {Statistics} from "./statistics";
 import photo1 from '../../../../images/cardProduct/photo1.png'
+import {gratitude} from "./gratitude";
 
 export function form() {
     return `
@@ -14,6 +15,7 @@ export function form() {
             <div id="regulate-form-and-statistics-js" class="content-form">
                 ${formWrapper()}
                 ${Statistics()}
+                ${gratitude()}
                 ${reviews(info)}     
             </div>
         </form>

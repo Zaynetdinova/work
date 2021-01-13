@@ -90,6 +90,10 @@
               width: 147px;
             }
           }
+          .first,
+          .third {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -102,6 +106,10 @@
             .progress-bar-fill {
               width: 120px;
             }
+          }
+          .first,
+          .third {
+            font-size: 10px;
           }
         }
       }
@@ -136,7 +144,7 @@
     padding: 30.5px 13.5px 31px 13.5px;
   }
   @media (max-width: 374px) {
-    padding: 27px 9px 25px 11px;
+    padding: 27px 9px 25px 9px;
     .rating {
       .wrap-star {
         margin-top: 13px;

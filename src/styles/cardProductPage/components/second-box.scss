@@ -55,7 +55,7 @@
       linear-gradient(270deg, #AB064E 50%, transparent 50%);
   }
   @media (max-width: 1023px) {
-    padding: 30px 18px 50px 18px;
+    padding: 25px 18px 32px 18px;
     .circle2 {
       height: 90px;
       width: 90px;
@@ -80,9 +80,25 @@
     padding: 30px 9px 50px 9px;
   }
   @media (max-width: 374px) {
-    padding: 30px 7px 50px 7px;
+    padding: 24px 7px 30px 7px;
+    .circle2 {
+      height: 76px;
+      width: 76px;
+      font-size: 15px;
+    }
     .text {
       font-size: 10px;
+    }
+    .circle {
+      top: 7px;
+      left: 7px;
+      height: 62px;
+      width: 62px;
+      font-size: 15px;
+    }
+    .active-border {
+      height: 76px;
+      width: 76px;
     }
   }
 }
