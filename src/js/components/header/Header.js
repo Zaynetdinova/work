@@ -7,6 +7,7 @@ import {showRegistryUserData} from './js/showRegistryUserData'
 import {mobileSearchInput} from './js/mobileSearchInput'
 import {showExtra} from './js/showExtra'
 import {info} from "./js/info";
+import {showBackCall} from "./js/showBackCall";
 
 export class Header extends Component {
   static className = 'Header'
@@ -91,6 +92,12 @@ function spreaderClick(e) {
         mobileSearch('close')
         info('close')
         showRegistryUserData()
+        break;
+      case 'backCall':
+        showBackCall()
+        break;
+      case 'closeImg-backCall':
+        showBackCall('close')
         break;
     }
   }
