@@ -59,7 +59,10 @@ export function cardProductPageTemplate() {
 					${infoTable(table)}
 					<div class="wrapper-attention">${attention()}</div>
 					${descriptionModule()}
-					<div class="wrapper-dop-info">${dopInfo()}</div>
+					<div class="wrapper-dop-info">
+						${dopInfo()}
+					</div>
+					
 					${form()}
 				</section>
 			</div>

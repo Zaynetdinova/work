@@ -35,6 +35,47 @@
 .info {
   margin-left: 17px;
   text-decoration: none;
+  position: relative;
+  .wrapper-tooltip {
+    position: absolute;
+    left: 0;
+    //top: 20px;
+    padding-top: 4px;
+    display: none;
+    z-index: 10;
+    .tooltip {
+      background: #FFFFFF;
+      border: 1px solid #EAE7E1;
+      color: black;
+      padding: 11px 17px 0 15px;
+      width: 199px;
+      .item {
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        color: #555555;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-bottom: 1px dotted #D9D9D9;
+
+        &:hover {
+          color: #AB064E;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .wrapper-tooltip {
+       display: block;
+    }
+  }
 }
 .wrapper {
   max-width: 1480px;
@@ -45,6 +86,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 
 @media (max-width: $tablet-breakpoint) {
   .topHeader {

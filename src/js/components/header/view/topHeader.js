@@ -6,9 +6,18 @@ export function topHeader() {
                     <nav>
                         <span class='span'>Оптовая торговля</span>
                         <a class='lk_link' href='#'>Вход / Регистрация</a>
-                        <a class='info' href='#'>О покупках</a>
-                        <a class='info' href='#'>О магазине</a>
-                        <a class='info' href='#'>Сотрудничество</a>
+                        
+                        <a class='info' href='#'>О покупках
+                            <div class="wrapper-tooltip"><div class="tooltip">${tooltip(buy)}</div></div>
+                        </a>
+                        
+                       
+                        <a class='info' href='#'>О магазине
+                            <div class="wrapper-tooltip"><div class="tooltip">${tooltip(score)}</div></div>
+                        </a>
+                        <a class='info' href='#'>Сотрудничество
+                            <div class="wrapper-tooltip"><div class="tooltip">${tooltip(cooperation)}</div></div>
+                        </a>
                     </nav>
                     <nav>
                         <span>
@@ -23,13 +32,44 @@ export function topHeader() {
     `
 }
 
-function tooltip() {
-    return `
-        <div class="tooltip">
-            <div>Размеры</div>
-            <div>Доставка</div>
-            <div>Оплата</div>
-            <div>Ответы на вопросы</div>
-        </div>
-    `
+function tooltip(item) {
+    const items = item.map((item) => {
+        return `
+            <div class="item">${item.title}</div>
+        `
+    })
+    return `${items.join('')}`
 }
+
+const buy = [
+    {
+        title: 'Размеры'
+    },
+    {
+        title: 'Доставка'
+    },
+    {
+        title: 'Оплата'
+    },
+    {
+        title: 'Ответы на вопросы'
+    }
+]
+
+const score = [
+    {
+        title: 'О нас'
+    },
+    {
+        title: 'Условия работы'
+    },
+    {
+        title: 'Контакты'
+    },
+]
+
+const cooperation = [
+    {
+        title: 'Поставщикам'
+    },
+]
