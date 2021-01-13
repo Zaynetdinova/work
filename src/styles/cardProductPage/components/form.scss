@@ -81,16 +81,23 @@
     line-height: 140%;
     color: #3D3D3C;
   }
+
+  .content-form {
+    display: none;
+  }
+
   .form-wrapper {
     padding: 22px 20px 55px 20px;
     background: #F3F2F0;
     display: none;
+    margin-bottom: 40px;
+    .name {
+      margin-bottom: 21px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
   }
-  .name {
-    margin-bottom: 21px;
-    padding-bottom: 9px;
-    padding-top: 9px;
-  }
+
   textarea {
     resize: vertical;
   }
@@ -171,6 +178,7 @@
       color: #3D3D3C;
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
+      text-align: center;
       &:hover {
         color: #AB064E;
         border: 1px solid #AB064E;
@@ -190,7 +198,7 @@
   }
 
   &.open-form {
-    .form-wrapper {
+    .content-form {
       display: block;
     }
 
@@ -201,6 +209,17 @@
       }
     }
   }
+
+  .show-form {
+    .form-wrapper {
+      display: block;
+    }
+
+    .Statistics {
+      display: none;
+    }
+  }
+
   .checkbox {
     display: flex;
     .size {

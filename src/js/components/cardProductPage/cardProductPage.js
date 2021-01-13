@@ -8,6 +8,7 @@ import {infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
 import {openForm} from './js/openForm'
 import {viewPhotoZoom} from './js/viewPhotoZoom'
+import {showForm} from './js/showForm'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -51,6 +52,12 @@ export class CardProductPage extends Component {
 					break;
 				case 'form-js':
 					openForm(element)
+					break
+				case 'show-form-js':
+					showForm()
+					break
+				case 'cancel-form-js':
+					showForm('cancel')
 					break
 			}
 		}

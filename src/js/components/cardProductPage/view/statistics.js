@@ -1,5 +1,5 @@
 import {star} from "./star";
-import photo1 from '../../../../images/cardProduct/photo1.png'
+
 export function Statistics() {
     return `
         <div class="Statistics">
@@ -27,8 +27,8 @@ export function Statistics() {
                     ${circle('0%', 'Большемерит')}   
                 </div>       
             </div>
-            <div class="button">Написать отзыв / вопрос</div>
-            ${reviews(info)}         
+            <article id="show-form-js" class="button">Написать отзыв / вопрос</article>
+                
         </div>
     `
 }
@@ -55,26 +55,7 @@ function percent(item) {
     return `${items.join('')}`
 }
 
-function reviews(item) {
-    const items = item.map((item) => {
-        return `
-            <div class="wrapper-reviews">
-                <div class="nameClient">
-                    <div class="name">Имя Фамилия</div>
-                    <div class="data">20.11.2020</div>
-                </div>
-                <div class="wrap">${star()}</div>
-                <div class="size-text">
-                    <div class="size">Размер: 134</div>
-                    <div class="text">Соответствует</div>
-                </div>
-                <div class="description">${item.description}</div>
-                <img class="photo" src="${item.photo}" alt="">
-            </div>
-        `
-    })
-    return `${items.join('')}`
-}
+
 
 
 const item = [
@@ -100,16 +81,3 @@ const item = [
     }
 ]
 
-const info = [
-    {
-        description: 'Короткое женское платье прямого кроя с поясом на талии из основной ткани. Рукава длинные с манжетами на кнопке, спинка с застежкой на пуговицу.' +
-            ' Отличное платье для любительниц строго стиля и минимализма в одежде. ' +
-            'Отличный выбор для современной женщины. ВНИМАНИЕ!!! ' +
-            'Города, закрытые для отгрузки: Хабаровск, <span style="white-space: nowrap">Петропавловск-Камчатский</span> ' +
-            'Владивосток, Краснодар, Самара, Шахты.',
-    },
-    {
-        description: 'Короткое женское платье прямого кроя с поясом на талии из основной ткани. Рукава длинные с манжетами на кнопке, спинка с застежкой на пуговицу.',
-        photo: photo1
-    },
-]

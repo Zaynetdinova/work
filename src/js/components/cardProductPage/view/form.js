@@ -1,7 +1,8 @@
-import {star2} from "./star";
+import {star, star2} from './star'
 import load from '../../../../images/cardProduct/load.svg'
 import arrow from '../../../../images/icons/arrow2.svg'
 import {Statistics} from "./statistics";
+import photo1 from '../../../../images/cardProduct/photo1.png'
 
 export function form() {
     return `
@@ -9,9 +10,12 @@ export function form() {
             <article id="form-js" class="wrapper-title">
                 <div class="review-and-question">Отзывы и вопросы</div>
                 <img class="arrow" src="${arrow}" alt="arrow">
-            </article> 
-            ${formWrapper()}
-            ${Statistics()}
+            </article>
+            <div id="regulate-form-and-statistics-js" class="content-form">
+                ${formWrapper()}
+                ${Statistics()}
+                ${reviews(info)}     
+            </div>
         </form>
     `
 }
@@ -51,9 +55,47 @@ function formWrapper() {
                 </div>
                 
                 <div class="wrapper-button">
-                    <button class="cancel">Отменить</button>
+                   
+                        <article id="cancel-form-js" class="cancel">Отменить</article>
+                   
+                    
                     <button class="send">Отправить</button>
                 </div>        
             </div>   
     `
 }
+
+function reviews(item) {
+  const items = item.map((item) => {
+    return `
+            <div class="wrapper-reviews">
+                <div class="nameClient">
+                    <div class="name">Имя Фамилия</div>
+                    <div class="data">20.11.2020</div>
+                </div>
+                <div class="wrap">${star()}</div>
+                <div class="size-text">
+                    <div class="size">Размер: 134</div>
+                    <div class="text">Соответствует</div>
+                </div>
+                <div class="description">${item.description}</div>
+                <img class="photo" src="${item.photo}" alt="">
+            </div>
+        `
+  })
+  return `${items.join('')}`
+}
+
+const info = [
+  {
+    description: 'Короткое женское платье прямого кроя с поясом на талии из основной ткани. Рукава длинные с манжетами на кнопке, спинка с застежкой на пуговицу.' +
+      ' Отличное платье для любительниц строго стиля и минимализма в одежде. ' +
+      'Отличный выбор для современной женщины. ВНИМАНИЕ!!! ' +
+      'Города, закрытые для отгрузки: Хабаровск, <span style="white-space: nowrap">Петропавловск-Камчатский</span> ' +
+      'Владивосток, Краснодар, Самара, Шахты.',
+  },
+  {
+    description: 'Короткое женское платье прямого кроя с поясом на талии из основной ткани. Рукава длинные с манжетами на кнопке, спинка с застежкой на пуговицу.',
+    photo: photo1
+  },
+]
