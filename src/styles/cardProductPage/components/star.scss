@@ -1,60 +1,62 @@
 .rating-area {
   max-height: 18px;
   overflow: hidden;
+
+  &:not(:checked) > input {
+    display: none;
+  }
+
+  &:not(:checked) > label {
+    float: right;
+    display: block;
+    cursor: pointer;
+    width: 19px;
+    height: 18px;
+    margin-right: 3px;
+    background: url("../images/icons/star_empty.svg") no-repeat;
+
+  }
+
+  & > input:checked ~ label {
+    background: url("../images/icons/star.svg") no-repeat;
+  }
+
+  &:not(:checked) > label:hover,
+  &:not(:checked) > label:hover ~ label {
+    background: url("../images/icons/star.svg") no-repeat;
+  }
+
+  & > input:checked + label:hover,
+  & > input:checked + label:hover ~ label,
+  & > input:checked ~ label:hover,
+  & > input:checked ~ label:hover ~ label,
+  & > label:hover ~ input:checked ~ label {
+    background: url("../images/icons/star.svg") no-repeat;
+  }
 }
-.rating-area:not(:checked) > input {
-  display: none;
-}
-.rating-area:not(:checked) > label {
-  float: right;
-  width: 25px;
-  padding: 0;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 18px;
-  color: lightgrey;
-}
-.rating-area:not(:checked) > label:before {
-  content: '★';
-}
-.rating-area > input:checked ~ label {
-  color: #FF9900;
-}
-.rating-area:not(:checked) > label:hover,
-.rating-area:not(:checked) > label:hover ~ label {
-  color: #FF9900;
-}
-.rating-area > input:checked + label:hover,
-.rating-area > input:checked + label:hover ~ label,
-.rating-area > input:checked ~ label:hover,
-.rating-area > input:checked ~ label:hover ~ label,
-.rating-area > label:hover ~ input:checked ~ label {
-  color: #FF9900;
-}
-.rate-area > label:active {
-  position: relative;
-}
+
+
+
 .rating-result {
   min-height: 18px;
   width: 135px;
   display: flex;
   justify-content: space-between;
+
+  span {
+    width: 19px;
+    height: 18px;
+    margin-right: 3px;
+  }
+
+  .active {
+    background: url("../images/icons/star.svg") no-repeat;
+  }
+
+  .inactive {
+    background: url("../images/icons/star_empty.svg") no-repeat;
+  }
 }
-.rating-result span {
-  padding: 0;
-  font-size: 18px;
-  line-height: 100%;
-  color: lightgrey;
-  margin-right: 3px;
-}
-.rating-result > span:before {
-  content: '★';
-}
-.rating-result > span.active,
-.rating-result > span.inactive {
-  color: #FF9900;
-}
-.rating-result > span.inactive:before {
-  content: '☆';
-}
+
+
 
