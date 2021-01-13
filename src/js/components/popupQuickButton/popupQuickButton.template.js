@@ -45,7 +45,9 @@ export function popupQuickButtonTemplate() {
                     <div class="wrapper-another-color">${anotherColorPopup(color)}</div>
                 </section>
             </div>
-            <div class="wrapper-infoTable">${infoTable(table)} </div>
+            <div class="wrapper-infoTable">
+                ${infoTable(table)}
+            </div>
         </div>        
     </div>  
     `

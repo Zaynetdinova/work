@@ -33,6 +33,8 @@
       max-width: 470px;
     }
     .wrapper-infoTable {
+      display: flex;
+      justify-content: space-between;
       .result {
         display: none;
       }

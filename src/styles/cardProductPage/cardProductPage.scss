@@ -13,6 +13,7 @@
   @import "./components/dopInfo";
   @import "./components/form";
   @import "./components/statistics";
+  @import "./components/gratitude";
   .root {
     padding: 0 20px;
     max-width: 1480px;
@@ -59,15 +60,13 @@
     }
     /* хром, сафари */
     .test1::-webkit-scrollbar { height: 0; }
-
     /* ie 10+ */
     .test1 { -ms-overflow-style: none; }
-
     /* фф (свойство больше не работает, других способов тоже нет)*/
     .test1 { overflow: -moz-scrollbars-none; }
     .transitionWrapper {
       padding: 10px 0;
-     display: flex;
+      display: flex;
       flex-wrap: nowrap;
 
       a {
