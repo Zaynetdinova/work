@@ -27,12 +27,13 @@
     }
   }
   .main-popup {
-    padding: 20px;
+    padding: 20px 20px 43px 20px;
     background: #FFFFFF;
     .photos {
       max-width: 470px;
     }
     .wrapper-infoTable {
+      margin-top: 20px;
       display: flex;
       justify-content: space-between;
       .result {
@@ -40,6 +41,15 @@
       }
       .price {
         display: none;
+      }
+      .infoTable table #col1 {
+        width: 313px;
+      }
+      .no-title {
+        margin-top: 40px;
+        .common {
+          display: none;
+        }
       }
     }
   }
