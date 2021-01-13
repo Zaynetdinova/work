@@ -28,7 +28,6 @@ export function infoTable(e) {
 
 function changeCount(valueCount, buttonType) {
 	if(buttonType === 'plus') {
-		console.log('super')
 		return +valueCount + 1
 
 	} else {
@@ -49,8 +48,9 @@ function updateCommonSumAndCount() {
 	//вставка
 	const $count = document.querySelector('.common-count-js')
 	const $sum = document.querySelector('.common-price-js')
+	const numberDischarge = String(obj.sum).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')
 	$count.value = obj.count
-	$sum.value = obj.sum
+	$sum.value = numberDischarge
 
 
 }
