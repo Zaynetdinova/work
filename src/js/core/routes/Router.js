@@ -41,9 +41,6 @@ export class Router {
 			case 'card-product':
 				Page = this.routes.cardProduct
 				break;
-			case 'popup':
-				Page = this.routes.popup
-				break;
 			default:
 				Page = this.routes.mainPage
 		}

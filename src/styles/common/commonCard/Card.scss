@@ -201,6 +201,33 @@ $widthCardImage: 87px;
     }
   }
 
+  .quick-view-test {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+
+    .paranja {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      opacity: .5;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+    }
+  }
+
   @media (max-width: 1280px) {
     .additional-information {
       .content {
