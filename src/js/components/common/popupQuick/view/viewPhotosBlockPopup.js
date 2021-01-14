@@ -1,12 +1,12 @@
-import testBig1 from '../../../../images/cardProduct/test-big1.png'
-import testBig2 from '../../../../images/cardProduct/test-big2.png'
-import testBig3 from '../../../../images/cardProduct/test-big3.png'
-import testBig4 from '../../../../images/cardProduct/test-big4.png'
+import testBig1 from '../../../../../images/cardProduct/test-big1.png'
+import testBig2 from '../../../../../images/cardProduct/test-big2.png'
+import testBig3 from '../../../../../images/cardProduct/test-big3.png'
+import testBig4 from '../../../../../images/cardProduct/test-big4.png'
 
 export function viewPhotosBlockPopup() {
     return `
 	<div class="View-photos-block-popup">
-		<section id="view-photos-block-swiper-js-2" class="swiper-container view-photos-block">
+		<section id="view-photos-block-swiper-popup-js" class="swiper-container view-photos-block">
 			<div class="swiper-wrapper">
 				${photos()}
 			</div>
@@ -16,7 +16,7 @@ export function viewPhotosBlockPopup() {
 			
 		</section>
 		
-		<section id="view-big-photos-block-swiper-js-2" class="swiper-container view-big-photos-block">
+		<section id="view-big-photos-block-swiper-popup-js" class="swiper-container view-big-photos-block">
 			<div class="swiper-wrapper">
 				${photos()}
 			</div>

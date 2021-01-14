@@ -1,10 +1,39 @@
-.Popup-quick-button {
+.Popup-quick {
+  position: absolute;
+  z-index: 6;
+  margin: auto;
+  width: 100%;
+  //(проблема) посмотреть z index
+  z-index: 9999;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  .paranja {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+
   @import "components/product-description";
   @import "components/viewPhotosBlockPopup";
   @import "components/anotherColorPopup";
   .root {
+    position: absolute;
     max-width: 1000px;
+    width: 100%;
     margin: 20px auto 0 auto;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .header-popup {
     background: #AB064E;

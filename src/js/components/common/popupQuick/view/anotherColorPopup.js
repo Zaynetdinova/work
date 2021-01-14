@@ -1,4 +1,6 @@
-import {r} from "../../common/commonCard/commonCardHeader";
+// import {r} from "../../common/commonCard/commonCardHeader";
+
+import {r} from '../../commonCard/commonCardHeader'
 
 export function anotherColorPopup(item) {
     return `
@@ -8,7 +10,7 @@ export function anotherColorPopup(item) {
             <div class="slider-pointer">${r()}</div>
         </section>
        
-        <article id="another-color-js" class="swiper-container another-photo-mobile-2">
+        <article id="another-color-popup-js" class="swiper-container another-photo-mobile-2">
             <div class="swiper-wrapper">
                 ${anotherPhoto(item)}
             </div>

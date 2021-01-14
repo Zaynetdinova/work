@@ -3,6 +3,7 @@ import {initialSliders} from './JS/initialSliders'
 import {eventCommonCardHover} from './JS/eventCommonCardHover'
 import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
 import {UserAgent} from './JS/userAgent'
+import {quickView} from './JS/quickView'
 
 export class Page {
 	constructor(params) {
@@ -16,11 +17,10 @@ export class Page {
 	afterRender() {
 		const test = document.querySelector('.test1')
 		if(test) {
-			console.log(test.scrollWidth)
-			console.log(test.scrollLeft)
 			test.scrollLeft = test.scrollWidth
 		}
 
+		quickView()
 		openSidebar()
 		initialSliders()
 		if(window.userRegistry) {
