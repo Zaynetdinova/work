@@ -54,17 +54,22 @@
     transform: translateX(-50%);
   }
 
-
   .swiper-button {
     position: absolute;
     z-index: 1;
     top: 50%;
-    //transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: url("../images/icons/arrow.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    background: url("../images/icons/arrow3.svg") no-repeat;
     background-size: contain;
     cursor: pointer;
+    &:hover {
+      width: 30px;
+      height: 30px;
+      background: url("../images/icons/arrow4.svg") no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
   }
   .button-next {
     right: 0;
@@ -76,19 +81,16 @@
     transform: rotate(180deg);
     outline: none;
   }
-  .button-prev.swiper-button-disabled {
-
-  }
   .swiper-button-disabled {
-    width: 40px;
-    height: 40px;
-    background: url("../images/icons/arrow2.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    background: url("../images/icons/arrow5.svg") no-repeat;
     background-size: contain;
     cursor: default;
     &:hover {
-      background: url("../images/icons/arrow2.svg") no-repeat;
-      width: 40px;
-      height: 40px;
+      background: url("../images/icons/arrow5.svg") no-repeat;
+      width: 30px;
+      height: 30px;
       background-size: contain;
       cursor: default;
     }
