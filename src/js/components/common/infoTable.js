@@ -14,7 +14,7 @@ export function infoTable(item) {
                 <tr data-size class="tr-common product-item-js">${dataTable(item)}</tr>   
                 <tr data-size class="tr-common product-item-js">${dataTable2(item)}</tr>   
                 <tr data-size class="tr-common product-item-js">${dataTable3(item)}</tr>
-                <tr data-size class="tr-common product-item-js">${dataTable3(item)}</tr>        
+                       
             </table>
             <div class="result">
             <span class="result-title">Итого:</span> 
@@ -26,7 +26,7 @@ export function infoTable(item) {
         </article>
    `
 }
-
+// <tr data-size class="tr-common product-item-js">${dataTable3(item)}</tr>
 function titleTable(item) {
 
     const items = item.map((item) => {

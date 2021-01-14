@@ -1,7 +1,7 @@
-export function buttonProduct(name) {
+export function buttonProduct(name,item= '') {
     return `
-    <div class="ButtonProduct">
+    <a class="ButtonProduct" href="${item}">
       <div class="text">${name}</div>
-    </div>
+    </a>
   `
 }

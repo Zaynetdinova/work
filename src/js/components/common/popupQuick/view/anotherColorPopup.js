@@ -1,10 +1,8 @@
-// import {r} from "../../common/commonCard/commonCardHeader";
-
 import {r} from '../../commonCard/commonCardHeader'
 
 export function anotherColorPopup(item) {
     return `
-    <div class="anotherColorPopup">
+    <div class="anotherColor">
         <section id="another-color" class="wrapper-title-dots">
             <div class="title">Доступные цвета</div>
             <div class="slider-pointer">${r()}</div>
