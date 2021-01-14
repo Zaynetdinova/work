@@ -15,6 +15,7 @@ export class Footer extends Component {
     return footerTemplate()
   }
 
-  onClick() {}
+  onClick() {
+  }
 }
 

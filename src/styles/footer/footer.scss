@@ -83,8 +83,30 @@
   .phone {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     justify-content: space-between;
+    .btnRequestCall {
+      display: flex;
+      align-items: flex-end;
+      cursor: pointer;
+      margin-top: 11px;
+      .textCall {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 11px;
+        text-decoration-line: underline;
+
+        color: $color-footer;
+        &:hover {
+          color: $color-footer-hover;
+        }
+      }
+      img {
+        width: 20px;
+        height: 19px;
+        margin-left: 6px;
+      }
+    }
   }
   .footer-phone {
     margin-bottom: 3px;
@@ -102,7 +124,7 @@
     }
   }
   .mode {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     font-weight: bold;
     font-size: 10px;
     line-height: 14px;
@@ -116,7 +138,8 @@
     margin-right: 4px;
   }
   .schema {
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    cursor: pointer;
   }
   .schema-img {
     margin-bottom: -3px;

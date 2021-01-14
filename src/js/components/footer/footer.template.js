@@ -4,7 +4,9 @@ import instagram from '../../../images/footer/Instagram.svg'
 import partner from '../../../images/footer/partner.svg'
 import schema  from '../../../images/footer/shema.svg'
 import card from '../../../images/footer/card_bank.svg'
+import phone from '../../../images/icons/icon_phone_black.svg'
 import {sidebarPoint} from "../common/sidebarPoint";
+import {backCall} from "../backСall/backСall.template";
 
 
 export function footerTemplate() {
@@ -81,6 +83,10 @@ export function footerTemplate() {
                             <div class='phone'>
                                 <a class="footer-phone" href='tel:+74996088925'>8 (499) 608-89-25</a>
                                 <a href='tel:+78003012575'>8 (800) 301-25-75</a>
+                                <article class="btnRequestCall">
+                                    <div class="textCall">ЗАКАЗАТЬ ЗВОНОК</div>
+                                    <img src="${phone}" alt="">
+                                </article>
                             </div>
                             <div class='mode'>
                                 ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line-footer'></span> ОКРУЖНОЙ ПРОЕЗД <span class='line-footer'></span> 30А

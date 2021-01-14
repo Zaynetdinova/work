@@ -4,9 +4,9 @@ import schema from '../../../images/icons/schema.svg'
 import time from '../../../images/icons/time.svg'
 export function backCall() {
     return `
-        <div class="BackCall">
+        <div class="BackCall" id="#popupBackCall">
             <div class="wrapper-backCall">
-                <article  id="closeImg-backCall" class="close"><img src="${close}" alt=""></article>
+                <article  id="closeImg-backCall" class="close"><img style="cursor: pointer" id="close-BackCall" src="${close}" alt=""></article>
                 <div class="title">Обратный звонок</div>
                 <div class="wrap-input">
                     <input style="margin-bottom: 20px" class="input-name" placeholder="Имя" type="text">
