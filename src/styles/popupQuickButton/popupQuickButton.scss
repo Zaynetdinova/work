@@ -48,7 +48,7 @@
       .transitionBrand .category {
         color: #FFFFFF;
         font-size: 28px;
-        line-height: 29px;
+        line-height: 31px;
       }
       .transitionBrand  .category a {
         color: rgba(255, 255, 255, 0.7);
@@ -56,10 +56,17 @@
     }
   }
   .main-popup {
-    padding: 20px 20px 43px 20px;
+    padding: 20px 20px 41px 20px;
     background: #FFFFFF;
     .photos {
       max-width: 470px;
+    }
+    .wrapper-description {
+      .description-module {
+        .text {
+          padding-bottom: 19px;
+        }
+      }
     }
     .wrapper-infoTable {
       margin-top: 20px;
@@ -84,7 +91,6 @@
   }
   .wrapper-star-goodStock {
     display: flex;
-    align-items: baseline;
     .star-popup {
       margin-right: 10px;
     }

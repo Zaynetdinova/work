@@ -1,5 +1,4 @@
 import {popupQuickTemplate} from './popupQuick.template'
-import Swiper from 'swiper'
 
 
 export function popupQuick() {
@@ -9,6 +8,4 @@ export function popupQuick() {
 		${popupQuickTemplate()}
 	</div>
 	`
-
-
 }

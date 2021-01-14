@@ -1,6 +1,7 @@
 import {popupQuick} from '../../components/common/popupQuick/popupQuick'
 import Swiper from 'swiper'
 
+
 export function quickView() {
 
 	const $buttons = document.querySelectorAll('.quick-view-js')
@@ -26,6 +27,7 @@ function openQuickView(e) {
 	const test = document.querySelector('#Popup-quick-js')
 	const close = document.querySelector('#close-popup')
 	const $paranja = document.querySelector('#paranja-click-js')
+
 	close.addEventListener('click', () => {
 		test.remove()
 	})
@@ -35,6 +37,8 @@ function openQuickView(e) {
 
 	const $el = document.querySelector('#popup-js')
 	$el.setAttribute("style", `top: ${window.pageYOffset}px`);
+
+
 
 	function initial() {
 		new Swiper('#another-color-popup-js', {

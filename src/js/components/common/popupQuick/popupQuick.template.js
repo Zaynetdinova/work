@@ -41,9 +41,9 @@ export function popupQuickTemplate() {
                     <div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
                     <div class="info">
                         <div class="info-1">${infoProduct(info)}</div>
-                        <div class="buttonAnotherGoods">${buttonProduct('На страницу с товаром')}</div>	
+                        <div class="buttonAnotherGoods">${buttonProduct('На страницу с товаром','/#card-product')}</div>	
                     </div>
-                    ${descriptionModule()}
+                    <div class="wrapper-description">${descriptionModule()}</div>
                     <div class="wrapper-another-color">${anotherColorPopup(color)}</div>
                 </section>
             </div>
