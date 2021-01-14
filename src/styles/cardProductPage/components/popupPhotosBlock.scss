@@ -5,7 +5,6 @@
   z-index: 5;
   align-items: center;
   justify-content: center;
-  //margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
@@ -14,7 +13,6 @@
 
   &.block {
     display: flex;
-    //display: block;
   }
 
   .paranja {
@@ -37,7 +35,6 @@
   .content {
     position: relative;
     width: 90%;
-    //max-width: 1300px;
     margin: 0 60px;
     padding: 20px;
     background: #fff;
@@ -63,10 +60,11 @@
     position: absolute;
     z-index: 1;
     top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
+    //transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
     background: url("../images/icons/arrow.svg") no-repeat;
+    background-size: contain;
     cursor: pointer;
   }
   .button-next {
@@ -83,9 +81,10 @@
     position: absolute;
     top: 2%;
     right: 2%;
-    background: url("../images/icons/exit.svg") no-repeat;
-    width: 8px;
-    height: 8px;
+    background: url("../images/icons/close_popup_black.svg") no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
     z-index: 2;
     cursor: pointer;
   }
