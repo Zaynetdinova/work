@@ -1,5 +1,8 @@
 import {popupQuick} from '../../components/common/popupQuick/popupQuick'
 import Swiper from 'swiper'
+import {infoTable} from '../../components/cardProductPage/js/infoTable'
+import {favoritesProduct} from '../../components/cardProductPage/js/favoritesProduct'
+import {changeSizeCount} from '../../components/common/js/changeSizeCount'
 
 
 export function quickView() {
@@ -74,4 +77,24 @@ function openQuickView(e) {
 	}
 
 	initial()
+
+	// problem
+	const $colorCard = document.querySelector('#popup-another-color-js-test')
+	const $countSize = document.querySelector('#info-table')
+	const $like = document.querySelector('#favorites-product-js')
+
+	$colorCard.addEventListener('click', anotherColorButton)
+	$countSize.addEventListener('click', changeSizeCount)
+	$like.addEventListener('click', favoritesProduct)
+
+	function anotherColorButton(e) {
+		if(e.target.dataset.color) {
+			document.querySelectorAll('.color-card-product-js').forEach((item) => {
+				item.classList.remove('active-color')
+			})
+			const $el = e.target
+			$el.classList.add('active-color')
+		}
+	}
+
 }
