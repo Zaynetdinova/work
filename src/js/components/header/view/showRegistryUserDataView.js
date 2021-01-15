@@ -17,7 +17,7 @@ export function showRegistryUserDataView() {
         </div>
         <div class="box">
             <img class="icon" src=${sale_icon} alt="sale_icon">
-            <div class="text">Скидки и бонусы</div>
+            <div class="text">Скидки <br> и бонусы</div>
         </div>
         <div class="box">
             <img class="icon" src=${favorites} alt="favorites">

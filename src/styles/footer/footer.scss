@@ -101,10 +101,15 @@
           color: $color-footer-hover;
         }
       }
-      img {
+      .imgPhone {
         width: 20px;
         height: 19px;
         margin-left: 6px;
+      }
+    }
+    .show-callBack {
+      .BackCall {
+        display: block;
       }
     }
   }
