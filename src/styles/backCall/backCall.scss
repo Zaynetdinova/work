@@ -26,68 +26,146 @@
     .wrap-input {
       display: flex;
       flex-direction: column;
-      margin-top: 78px;
+      margin-top: 73px;
+      input[type="text"] {
+        color: #FFFFFF;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        &:focus {
+          border-bottom: 1px dashed #FFFFFF;
+        }
+      }
+      input[type="text"]::-moz-placeholder {color: #FFFFFF; }
+      input[type="text"]::-webkit-input-placeholder { color: #FFFFFF; }
+      input[type="text"]:-ms-input-placeholder { color: #FFFFFF; }
+      input[type="text"]::-ms-input-placeholder { color: #FFFFFF; }
+      input[type="text"]::placeholder { color: #FFFFFF; }
 
       .input-name {
         font-size: 14px;
         line-height: 16px;
-        border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        background: transparent;
         outline: none;
-        height: 26px;
+        height: 30px;
+        background: transparent;
       }
     }
-    .phone {
+    .wrapper-phoneBackCall-btnCall {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin-top: 42px;
-      margin-bottom: 44px;
-      .number {
-        font-size: 14px;
-        line-height: 100%;
+      .phoneBackCall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 44px;
+        margin-bottom: 38px;
+        .wrapper-number-BackCall {
+          margin-left: 6px;
+          .number {
+            font-size: 14px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            text-decoration: none;
+          }
+        }
+      }
+      .btnCall {
+        width: 210px;
+        font-size: 15px;
+        line-height: 17px;
         text-align: center;
-        letter-spacing: 0.05em;
-        color: #FFFFFF;
-        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        background: transparent;
+        padding: 8px 0 9px 0;
+        cursor: pointer;
+        margin: 0 auto;
       }
     }
-    .btnCall {
-      width: 210px;
-      font-size: 15px;
-      line-height: 17px;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      border-radius: 4px;
-      background: transparent;
-      padding: 8px 0 9px 0;
-      margin: 0 auto;
-      cursor: pointer;
-    }
-    .bottom-wrapper {
+    .bottom-wrapperBackCall {
       display: flex;
       justify-content: space-between;
-      margin-top: 54px;
-      .left,
-      .right {
+      margin-top: 55px;
+      .leftBackCall,
+      .rightBackCall {
         display: flex;
         align-items: start;
         .address {
           margin-left: 10px;
           font-size: 14px;
-          line-height: 120%;
+          line-height: 128%;
           color: #FFFFFF;
           a {
             text-decoration-line: underline;
             font-style: italic;
             color: rgba(255, 255, 255, 0.5);
+            &:hover {
+              color: rgba(255, 255, 255, 0.9);
+            }
           }
         }
       }
+      .rightBackCall {
+        .address {
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    .wrapper-backCall {
+      max-width: 354px;
+      .wrapper-phoneBackCall-btnCall {
+        .phoneBackCall {
+          justify-content: normal;
+          align-items: start;
+          .wrapper-number-BackCall {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .number {
+            }
+          }
+        }
+      }
+      .bottom-wrapperBackCall {
+        margin-top: 0;
+        margin-left: 5px;
+        flex-direction: column;
+        .leftBackCall,
+        .rightBackCall {
+          .address {
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .wrapper-phoneBackCall-btnCall {
+        align-items: start;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        .btnCall {
+          margin-bottom: 50px;
+        }
+        .phoneBackCall {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 410px) {
+    .wrapper-backCall {
+      max-width: 315px;
+    }
+  }
+  @media (max-width: 374px) {
+    .wrapper-backCall {
+      max-width: 260px;
     }
   }
 }
