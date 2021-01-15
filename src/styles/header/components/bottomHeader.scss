@@ -29,8 +29,6 @@
     display: flex;
     align-items: center;
   }
-
-
   .burger-menu {
     margin-right: 30px;
     margin-bottom: 3px;
@@ -39,7 +37,6 @@
     width: 20px;
     height: 16px;
   }
-
   .show {
     .burger-menu {
       background-image: url(../images/icons/cancel.svg);
@@ -47,8 +44,6 @@
       background-size: contain;
     }
   }
-
-
   .logo {
     display: flex;
     align-items: center;
@@ -58,7 +53,6 @@
       cursor: pointer;
     }
   }
-
   .favorites {
     margin-top: 2px;
     margin-right: 25px;
@@ -68,7 +62,6 @@
       transform: scale(1.1);
     }
   }
-
   @media (max-width: $width-1280) {
     .burger-menu {
       margin-right: 10px;
