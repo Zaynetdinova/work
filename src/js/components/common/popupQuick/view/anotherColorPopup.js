@@ -2,7 +2,7 @@ import {r} from '../../commonCard/commonCardHeader'
 
 export function anotherColorPopup(item) {
     return `
-    <div class="anotherColor">
+    <div id="popup-another-color-js-test" class="anotherColor">
         <section id="another-color" class="wrapper-title-dots">
             <div class="title">Доступные цвета</div>
             <div class="slider-pointer">${r()}</div>

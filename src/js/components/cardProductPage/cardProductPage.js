@@ -1,6 +1,6 @@
 import {Component} from '../../core/Component'
 import {cardProductPageTemplate} from './cardProductPage.template'
-import {infoTable} from './js/infoTable'
+
 import {inputFile} from '../catalog/js/inputFile'
 import {anotherColorButton} from './js/anotherColorBorder'
 
@@ -11,6 +11,7 @@ import {viewPhotoZoom} from './js/viewPhotoZoom'
 import {showForm} from './js/showForm'
 import {popupSliderPhoto} from './js/popupSliderPhoto'
 import {initialSlider} from './js/initialSlider'
+import {changeSizeCount} from '../common/js/changeSizeCount'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -39,7 +40,7 @@ export class CardProductPage extends Component {
 
 			switch (element.id) {
 				case 'info-table':
-					infoTable(e)
+					changeSizeCount(e)
 					break;
 				case 'another-color-js':
 					anotherColorButton(e)

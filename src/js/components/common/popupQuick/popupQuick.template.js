@@ -11,7 +11,7 @@ import {descriptionModule} from "../../common/description";
 import {buttonProduct} from "../../common/buttonProduct";
 import {viewPhotosBlockPopup} from "./view/viewPhotosBlockPopup";
 import {anotherColorPopup} from "./view/anotherColorPopup";
-import {infoTable} from '../../common/infoTable'
+import {infoTable, popupSizes} from '../../common/infoTable'
 import {goodStock, transitionBrand} from '../../cardProductPage/view/transitionBrand'
 import {star} from '../../cardProductPage/view/star'
 
@@ -48,8 +48,7 @@ export function popupQuickTemplate() {
                 </section>
             </div>
             <div class="wrapper-infoTable">
-                ${infoTable(table)}
-                <div class="no-title">${infoTable(table)}</div>
+                ${popupSizes(table)}
             </div>
         </div>        
     </div>  
