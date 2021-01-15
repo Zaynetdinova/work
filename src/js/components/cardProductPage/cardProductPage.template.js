@@ -182,7 +182,7 @@ let table = [
 ]
 
 const woman = {
-	title: 'Вам может понравиться',
+	title: 'Вы недавно смотрели',
 	_id: 'product2',
 	data: [
 		{
@@ -251,7 +251,7 @@ const woman = {
 }
 
 const woman2 = {
-	title: 'Вы недавно смотрели',
+	title: 'Вам может понравиться',
 	_id: 'product',
 	data: [
 		{

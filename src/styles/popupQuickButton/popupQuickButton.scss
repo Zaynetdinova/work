@@ -72,6 +72,9 @@
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
+      .table-size {
+        display: none;
+      }
       .result {
         display: none;
       }

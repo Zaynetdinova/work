@@ -33,6 +33,7 @@ export function viewPhotosBlock() {
 			<div class="paranja"></div>
 			
 			<div  class='content'>
+				<div style="display: flex;justify-content: flex-end;"><article id="close-popup-js" class="close-popup"></article></div>
 				<div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
 					<div class="swiper-wrapper">
 					${popupPhoto(dataPhotos)}
@@ -40,7 +41,6 @@ export function viewPhotosBlock() {
 					<div class="swiper-button-next-main swiper-button button-next"></div>
 					<div class="swiper-button-prev-main swiper-button button-prev"></div>
 				</div>
-				<article id="close-popup-js" class="close-popup"></article>
 			</div>
 			
 			
