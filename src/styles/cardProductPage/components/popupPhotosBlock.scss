@@ -36,12 +36,10 @@
     width: 90%;
     margin: 0 60px;
     padding: 20px;
-    //background: #fff;
     height: 90vh;
   }
 
   .test {
-    //background: #fff;
     width: 100%;
     height: 100%;
 
@@ -58,15 +56,15 @@
     position: absolute;
     z-index: 1;
     top: 50%;
-    width: 30px;
-    height: 30px;
-    background: url("../images/icons/arrow3.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    background: url("../images/icons/arrow3.svg") center no-repeat;
     background-size: contain;
     cursor: pointer;
     &:hover {
-      width: 30px;
-      height: 30px;
-      background: url("../images/icons/arrow4.svg") no-repeat;
+      width: 25px;
+      height: 25px;
+      background: url("../images/icons/arrow4.svg") center no-repeat;
       background-size: contain;
       cursor: pointer;
     }
@@ -82,24 +80,21 @@
     outline: none;
   }
   .swiper-button-disabled {
-    width: 30px;
-    height: 30px;
-    background: url("../images/icons/arrow5.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    background: url("../images/icons/arrow5.svg") center no-repeat;
     background-size: contain;
     cursor: default;
     &:hover {
-      background: url("../images/icons/arrow5.svg") no-repeat;
-      width: 30px;
-      height: 30px;
+      background: url("../images/icons/arrow5.svg") center no-repeat;
+      width: 25px;
+      height: 25px;
       background-size: contain;
       cursor: default;
     }
   }
 
   .close-popup {
-    position: absolute;
-    top: 2%;
-    right: 2%;
     background: url("../images/icons/close_popup.svg") no-repeat;
     background-size: contain;
     width: 20px;

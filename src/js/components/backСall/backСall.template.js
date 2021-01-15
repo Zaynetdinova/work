@@ -5,6 +5,7 @@ import time from '../../../images/icons/time.svg'
 export function backCall() {
     return `
         <div class="BackCall" id="#popupBackCall">
+        <div class="paranja"></div>
             <div class="wrapper-backCall">
                 <article  id="closeImg-backCall" class="close"><img style="cursor: pointer" id="close-BackCall" src="${close}" alt=""></article>
                 <div class="title">Обратный звонок</div>
