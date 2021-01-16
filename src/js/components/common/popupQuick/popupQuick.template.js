@@ -1,17 +1,15 @@
-// import {goodStock, transitionBrand} from "../cardProductPage/view/transitionBrand";
-// import {star} from "../cardProductPage/view/star";
 import close from '../../../../images/icons/close_popup.svg'
-import {favorites} from "../../common/favorites";
-import {priceContent} from "../../common/commonCard/priceContent";
-import {infoProduct} from "../../common/infoProduct";
+import {favorites} from "../favorites";
+import {priceContent} from "../commonCard/priceContent";
+import {infoProduct} from "../infoProduct";
 import photo1 from "../../../../images/cardProduct/photo1.png";
 import photo2 from "../../../../images/cardProduct/photo2.png";
 import saleBtn  from '../../../../images/icons/sale_btn.svg'
-import {descriptionModule} from "../../common/description";
-import {buttonProduct} from "../../common/buttonProduct";
+import {descriptionModule} from "../description";
+import {buttonProduct} from "../buttonProduct";
 import {viewPhotosBlockPopup} from "./view/viewPhotosBlockPopup";
 import {anotherColorPopup} from "./view/anotherColorPopup";
-import {infoTable, popupSizes} from '../../common/infoTable'
+import {popupSizes} from "../infoTable";
 import {goodStock, transitionBrand} from '../../cardProductPage/view/transitionBrand'
 import {star} from '../../cardProductPage/view/star'
 

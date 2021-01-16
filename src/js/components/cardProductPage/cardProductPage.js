@@ -1,9 +1,7 @@
 import {Component} from '../../core/Component'
 import {cardProductPageTemplate} from './cardProductPage.template'
-
 import {inputFile} from '../catalog/js/inputFile'
 import {anotherColorButton} from './js/anotherColorBorder'
-
 import {infoProductShow, testInfo} from './js/infoProductShow'
 import {favoritesProduct} from './js/favoritesProduct'
 import {openForm} from './js/openForm'
