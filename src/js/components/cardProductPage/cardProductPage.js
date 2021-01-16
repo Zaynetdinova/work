@@ -10,7 +10,6 @@ import {openForm} from './js/openForm'
 import {viewPhotoZoom} from './js/viewPhotoZoom'
 import {showForm} from './js/showForm'
 import {popupSliderPhoto} from './js/popupSliderPhoto'
-import {initialSlider} from './js/initialSlider'
 import {changeSizeCount} from '../common/js/changeSizeCount'
 
 export class CardProductPage extends Component {
@@ -28,12 +27,12 @@ export class CardProductPage extends Component {
 	}
 
 	afterInitComponent() {
-		initialSlider()
 		viewPhotoZoom()
 		inputFile()
 
 	}
 
+	//переделать
 	onClick(e) {
 		if(e.target.closest('article')) {
 			const element = e.target.closest('article');
@@ -69,6 +68,9 @@ export class CardProductPage extends Component {
 				case 'zoom-photo-js':
 					popupSliderPhoto()
 					break
+        case 'zoom-photo-js-mobile':
+          popupSliderPhoto()
+          break
 				case 'close-popup-js':
 					popupSliderPhoto('close')
 					break

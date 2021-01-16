@@ -27,37 +27,18 @@ export function viewPhotosBlock() {
 			${buttonPhotos('next')}
 
 		</section>
-		
-		<section class="view-big-photos-popup-block">
-		
-			<div class="paranja"></div>
-			
-			<div  class='content'>
-				<div style="display: flex;justify-content: flex-end;"><article id="close-popup-js" class="close-popup"></article></div>
-				<div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
-					<div class="swiper-wrapper">
-					${popupPhoto(dataPhotos)}
-					</div>
-					<div class="swiper-button-next-main swiper-button button-next"></div>
-					<div class="swiper-button-prev-main swiper-button button-prev"></div>
-				</div>
-			</div>
-			
-			
-			
-		</section>
 	</div>
 	`
 }
 
 export function viewPhotosBlockMobile() {
 	return `
-		<div class="View-photos-block-mobile swiper-container test-mobile">
+		<article id="zoom-photo-js-mobile" class="View-photos-block-mobile swiper-container test-mobile">
 			<div class="swiper-wrapper">
 				${photosMobile()}
 			</div>
 			<div class="slider-pointer">${r()}</div>
-		</div>
+		</article>
 	`
 }
 
@@ -94,15 +75,7 @@ function photosBig(data) {
 	}).join('')
 }
 
-function popupPhoto(data) {
-	return data.map((photo) => {
-		return `
-				<div class="test swiper-slide">
-				 <img src="${photo.original}" class="popup-photo">
-				</div>
-		`
-	}).join('')
-}
+
 
 function photosMobile() {
 	return `

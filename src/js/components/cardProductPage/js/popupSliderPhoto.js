@@ -1,8 +1,14 @@
-export function popupSliderPhoto(type = '') {
-	const $el = document.querySelector('.view-big-photos-popup-block')
-	$el.classList.add('block')
+import {popupPhoto} from "../../common/popupPhoto/popupPhoto";
 
-	if(type === 'close') {
-		$el.classList.remove('block')
-	}
+
+export function popupSliderPhoto() {
+  const $body = document.querySelector('body')
+
+  // инициализация класса
+  const test = new popupPhoto
+
+  $body.insertAdjacentHTML('afterbegin', test.toHTML());
+  test.initialSlider()
+  test.eventClose()
+
 }
