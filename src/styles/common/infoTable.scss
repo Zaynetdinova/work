@@ -1,4 +1,5 @@
 .infoTable {
+  width: 100%;
   .common {
     display: flex;
     margin-bottom: 20px;
@@ -195,6 +196,36 @@
       color: #3D3D3C;
       padding: 0;
     }
+  }
+  .strings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 4px 2px;
+    background-repeat: repeat-x;
+    height: 42px;
+    .quantity {
+      margin-right: 50px;
+    }
+  }
+  .wrapper-first-line {
+    display: flex;
+    justify-content: space-between;
+    background: #F3F2F0;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    .first-title {
+      padding-left: 12px;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 470px 470px;
+    grid-column-gap: 20px;
   }
 
   @media (max-width: 410px) {

@@ -2,10 +2,11 @@ import info from '../../../images/cardProduct/info.svg'
 import {Sale} from './sale'
 
 const testArrSizes = [
-    {size: '44', oldPrice: '1 234,00 ₽', price: false, sale: true},
-    {size: '56', oldPrice: '1 234,00 ₽', price: '1 234,00 ₽', sale: false},
-    {size: '52', oldPrice: '1 244,00 ₽', price: false, sale: true},
-    {size: '46', oldPrice: '1 254,00 ₽', price: '1 234,00 ₽', sale: true}
+    {size: '40', oldPrice: '1 234,00 ₽', price: false, sale: true},
+    {size: '42', oldPrice: '1 234,00 ₽', price: '1 234,00 ₽', sale: true},
+    {size: '44', oldPrice: '', price: '1 234,00 ₽', sale: false},
+    {size: '46', oldPrice: '1 254,00 ₽', price: false, sale: true},
+    {size: '48', oldPrice: '1 234,00 ₽', price: false, sale: true},
 ]
 
 export function infoTable(item) {
@@ -43,15 +44,26 @@ export function popupSizes(item) {
                 <div class="size-quantity">Размер и количество</div>
                 <div class="table-size">Таблица размеров</div>
             </div>
-            
-            
             <div>
-                ${testArrSizes.map((item) => {
-                return `
+                <div class="grid">
+                    <div class="wrapper-first-line">
+                      <div class="first-title">Размер</div>
+                      <div style="margin-right: 94px">Количество</div>
+                    </div>
+                    <div class="wrapper-first-line">
+                        <div class="first-title">Размер</div>
+                        <div style="margin-right: 94px">Количество</div>
+                    </div>
+                </div>
+                       
+                <div class="grid">                
+                    ${testArrSizes.map((item) => {
+                    return `
                         <div data-size class="tr-common product-item-js">${dataTable2(item)}</div>
                     `
-                }).join('')  }
-            </div>
+                    }).join('')  }
+                </div>
+            </div>  
         </article>
    `
 }
@@ -77,7 +89,11 @@ function dataTable(data) {
 
 function dataTable2(data) {
   return `
-    <div>Hello</div>
+    <div class="strings">
+        <div>${size(data)}</div>
+        <div>${quantity()}</div>
+    </div>
+
   `
 }
 
@@ -126,8 +142,7 @@ function price(data) {
         <table>
             <tr>
                 <td class="price price-js" data-price="1230">
-                ${price ? priceProduct(oldPrice, price, sale) : 'Цена закрыта'}
-                    
+                    ${price ? priceProduct(oldPrice, price, sale) : 'Цена закрыта'} 
                 </td>
             </tr>
         </table>       
