@@ -6,21 +6,18 @@ import testBig4 from "../../../../images/cardProduct/test-big4.png";
 export function popupPhotoTemplate() {
   return `
   <section class="view-big-photos-popup-block">
-
     <div class="paranja"></div>
-  
     <div  class='content'>
-    <div style="display: flex;justify-content: flex-end;">
+      <div class="wrapper-close-popup">
         <article id="close-popup-js" class="close-popup"></article>
-    </div>
-  
-    <div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
-    <div class="swiper-wrapper">
-        ${popupPhoto(dataPhotos)}
-    </div>
-    <div class="swiper-button-next-main swiper-button button-next"></div>
-    <div class="swiper-button-prev-main swiper-button button-prev"></div>
-    </div>
+      </div>
+      <div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
+        <div class="swiper-wrapper">
+          ${popupPhoto(dataPhotos)}
+        </div>
+        <div class="swiper-button-next-main swiper-button button-next"></div>
+        <div class="swiper-button-prev-main swiper-button button-prev"></div>
+      </div>
     </div>
   </section>
   `
