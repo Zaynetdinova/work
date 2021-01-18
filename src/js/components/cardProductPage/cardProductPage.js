@@ -9,6 +9,7 @@ import {viewPhotoZoom} from './js/viewPhotoZoom'
 import {showForm} from './js/showForm'
 import {popupSliderPhoto} from './js/popupSliderPhoto'
 import {changeSizeCount} from '../common/js/changeSizeCount'
+import {changeFavoritesProduct} from '../common/js/changeFavoritesProduct'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -49,7 +50,7 @@ export class CardProductPage extends Component {
 					testInfo(element, e)
 					break;
 				case 'favorites-product-js':
-					favoritesProduct(element)
+					changeFavoritesProduct(element)
 					break;
 				case 'form-js':
 					openForm(element)
