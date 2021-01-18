@@ -12,7 +12,7 @@ import photo1 from '../../../images/cardProduct/photo1.png'
 import photo2 from '../../../images/cardProduct/photo2.png'
 import {favorites} from "../common/favorites";
 import {goodStock, transitionBrand} from "./view/transitionBrand";
-import {priceContent} from "../common/commonCard/priceContent";
+import {priceContent} from "../common/priceContent";
 import {infoProduct} from "../common/infoProduct";
 import {socialProduct} from "./view/socialProduct";
 import {anotherColor} from "./view/anotherColor";

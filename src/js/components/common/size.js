@@ -7,9 +7,10 @@ export function size() {
     `
   })
   return `
-  <div class="Size">
+  
+  <div id="size-active-js" class="Size">
     ${block.join('')}
-  <div>
+  </div>
   `
 }
 

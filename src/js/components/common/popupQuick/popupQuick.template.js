@@ -1,6 +1,6 @@
 import close from '../../../../images/icons/close_popup.svg'
 import {favorites} from "../favorites";
-import {priceContent} from "../commonCard/priceContent";
+import {priceContent} from "../priceContent";
 import {infoProduct} from "../infoProduct";
 import photo1 from "../../../../images/cardProduct/photo1.png";
 import photo2 from "../../../../images/cardProduct/photo2.png";

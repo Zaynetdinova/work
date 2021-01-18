@@ -2,7 +2,6 @@ import testBig1 from '../../../../images/cardProduct/test-big1.png'
 import testBig2 from '../../../../images/cardProduct/test-big2.png'
 import testBig3 from '../../../../images/cardProduct/test-big3.png'
 import testBig4 from '../../../../images/cardProduct/test-big4.png'
-import {r} from "../../common/commonCard/commonCardHeader";
 import {buttonProduct} from "../../common/buttonProduct";
 
 export function viewPhotosBlock() {
@@ -109,3 +108,15 @@ const dataPhotos = [
 		compressedImg: testBig1,
 	}
 ]
+
+// problem
+function r () {
+	return `
+    <div class="dots">
+        <span class="dots-bestseller active"></span>
+        <span class="dots-bestseller"></span>
+        <span class="dots-bestseller"></span>
+        <span class="dots-bestseller"></span>
+    </div>
+  `
+}

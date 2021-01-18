@@ -1,4 +1,4 @@
-import {commonCardHeader} from './commonCardHeader'
+import {commonCardHeader} from './view/commonCardHeader'
 import {card} from './card'
 
 export function commonCard(elem, infoType) {

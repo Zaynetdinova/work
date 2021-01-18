@@ -1,9 +1,9 @@
 import {openSidebar} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
-import {eventCommonCardHover} from './JS/eventCommonCardHover'
 import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
 import {UserAgent} from './JS/userAgent'
 import {quickView} from './JS/quickView'
+import {commonCardFunctions} from '../components/common/commonCard/js/commonCardFunctions'
 
 export class Page {
 	constructor(params) {
@@ -24,7 +24,7 @@ export class Page {
 		openSidebar()
 		initialSliders()
 		if(window.userRegistry) {
-			eventCommonCardHover()
+			commonCardFunctions()
 		}
 		closeWhenClickingInAnInactiveZone()
 		const userAgent = new UserAgent()
