@@ -8,6 +8,8 @@ import {mobileSearchInput} from './js/mobileSearchInput'
 import {showExtra} from './js/showExtra'
 import {info} from "./js/info";
 import {showBackCall} from "./js/showBackCall";
+import {showEntry} from "./js/showEntry";
+import {showRestorePassword} from "./js/showRestorePassword";
 
 export class Header extends Component {
   static className = 'Header'
@@ -31,7 +33,7 @@ export class Header extends Component {
   }
 
   onMouseenter(e) {
-    console.log(e.target)
+    // console.log(e.target)
   }
 
   onMouseover(e) {
@@ -98,6 +100,15 @@ function spreaderClick(e) {
         break;
       case 'closeImg-backCall':
         showBackCall('close')
+        break;
+      case 'entry':
+        showEntry()
+        break;
+      case 'closeImg-entry':
+        showEntry('close')
+        break;
+      case 'restore':
+        showRestorePassword()
         break;
     }
   }

@@ -2,16 +2,17 @@ import close from '../../../images/icons/close-regisr.svg'
 import phone from '../../../images/icons/icon_phone.svg'
 import schema from '../../../images/icons/schema.svg'
 import time from '../../../images/icons/time.svg'
+import {buttonRegistration} from "../common/buttonRegistration";
+import {titleRegistration} from "../common/titleRegistration";
 export function backCall() {
     return `
         <div class="BackCall" id="#popupBackCall">
-        <div class="paranja"></div>
             <div class="wrapper-backCall">
                 <article  id="closeImg-backCall" class="close"><img style="cursor: pointer" id="close-BackCall" src="${close}" alt=""></article>
-                <div class="title">Обратный звонок</div>
+                ${titleRegistration('Обратный звонок')}
                 <div class="wrap-input">
-                    <input style="margin-bottom: 15px" class="input-name"  placeholder="Имя*" type="text">
-                    <input class="input-name" placeholder="Телефон*" type="text">
+                    <input style="margin-bottom: 15px" class="input-name"  placeholder="Имя*" type="text" name="name">
+                    <input class="input-name" placeholder="Телефон*" type="text" name="phone">
                 </div>
                 <div class="wrapper-phoneBackCall-btnCall">
                     <div class="phoneBackCall">
@@ -21,7 +22,7 @@ export function backCall() {
                             <a class="number" href='tel:+74996088925'>8 (499) 608-89-25 </a>
                         </span>
                     </div>
-                    <div class="btnCall">Позвоните мне</div>
+                    ${buttonRegistration('Позвоните мне')}
                 </div>    
                 <div class="bottom-wrapperBackCall">
                     <div class="leftBackCall">

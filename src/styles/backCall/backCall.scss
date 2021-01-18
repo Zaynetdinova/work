@@ -10,20 +10,13 @@
   background: linear-gradient(90.08deg, rgba(113, 0, 103, 0.95) 3.72%, rgba(207, 9, 62, 0.95) 122.63%);
   cursor: auto;
 
+
   .wrapper-backCall {
     max-width: 500px;
     margin: 76px auto 0 auto;
     .close {
       display: flex;
       justify-content: flex-end;
-    }
-    .title {
-      margin-top: 52px;
-      font-size: 28px;
-      line-height: 32px;;
-      text-align: center;
-      letter-spacing: 0.05em;
-      color: #FFFFFF;
     }
     .wrap-input {
       display: flex;
@@ -80,23 +73,6 @@
             text-decoration: none;
           }
         }
-      }
-      .btnCall {
-        width: 210px;
-        font-size: 15px;
-        line-height: 17px;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 4px;
-        background: transparent;
-        padding: 8px 0 9px 0;
-        cursor: pointer;
-        margin: 0 auto;
-        //&:hover {
-        //  background: #FFFFFF;
-        //  color: #AB064E;
-        //}
       }
     }
     .bottom-wrapperBackCall {
@@ -160,9 +136,7 @@
         flex-direction: column-reverse;
         margin-top: 50px;
         margin-bottom: 40px;
-        .btnCall {
-          margin-bottom: 50px;
-        }
+
         .phoneBackCall {
           margin: 0;
         }
