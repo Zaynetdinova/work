@@ -1,4 +1,5 @@
 import {backCall} from "../../backСall/backСall.template";
+import {entry} from "../../entry/entry.template";
 
 export function topHeader() {
     return `
@@ -7,7 +8,9 @@ export function topHeader() {
                 <div class='content'>
                     <nav>
                         <span class='span'>Оптовая торговля</span>
-                        <article class='lk_link'>Вход / Регистрация</article>
+                        <article id="entry" class='lk_link'>Вход / Регистрация
+                            ${entry()}
+                        </article>
                         
                         <a class='info' href='#'>О покупках
                             <div class="wrapper-tooltip"><div class="tooltip">${tooltip(buy)}</div></div>
