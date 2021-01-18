@@ -10,13 +10,17 @@
   background: linear-gradient(90.08deg, rgba(113, 0, 103, 0.95) 3.72%, rgba(207, 9, 62, 0.95) 122.63%);
   cursor: auto;
 
-
   .wrapper-backCall {
     max-width: 500px;
     margin: 76px auto 0 auto;
     .close {
       display: flex;
       justify-content: flex-end;
+      .close-icon {
+        display: flex;
+        padding: 10px 0 10px 10px;
+        cursor: pointer;
+      }
     }
     .wrap-input {
       display: flex;

@@ -8,7 +8,7 @@ export function backCall() {
     return `
         <div class="BackCall" id="#popupBackCall">
             <div class="wrapper-backCall">
-                <article  id="closeImg-backCall" class="close"><img style="cursor: pointer" id="close-BackCall" src="${close}" alt=""></article>
+                <div class="close"><article class="close-icon"  id="closeImg-backCall"><img src="${close}" alt=""></article></div>
                 ${titleRegistration('Обратный звонок')}
                 <div class="wrap-input">
                     <input style="margin-bottom: 15px" class="input-name"  placeholder="Имя*" type="text" name="name">

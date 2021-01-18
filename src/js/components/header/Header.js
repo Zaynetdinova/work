@@ -8,8 +8,9 @@ import {mobileSearchInput} from './js/mobileSearchInput'
 import {showExtra} from './js/showExtra'
 import {info} from "./js/info";
 import {showBackCall} from "./js/showBackCall";
-import {showEntry} from "./js/showEntry";
-import {showRestorePassword} from "./js/showRestorePassword";
+import {showEntry, showEntry2} from "./js/showEntry";
+import {showRestorePassword, showRestorePassword2} from "./js/showRestorePassword";
+import {showRegister} from "./js/showRegister";
 
 export class Header extends Component {
   static className = 'Header'
@@ -106,9 +107,17 @@ function spreaderClick(e) {
         break;
       case 'closeImg-entry':
         showEntry('close')
+        showEntry2('close')
         break;
       case 'restore':
         showRestorePassword()
+        showRestorePassword2()
+        break;
+      case 'enter-button-js':
+        showEntry2()
+        break;
+      case 'sign-up':
+        showRegister()
         break;
     }
   }

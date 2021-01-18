@@ -14,6 +14,11 @@
     .close {
       display: flex;
       justify-content: flex-end;
+      .close-icon {
+        display: flex;
+        padding: 10px 0 10px 10px;
+        cursor: pointer;
+      }
     }
     .wrap-input {
       display: flex;
@@ -42,8 +47,6 @@
         }
       }
       .password {
-        //width: 300px;
-        //margin: 15px auto;
         position: relative;
         .password-control {
           position: absolute;
@@ -53,9 +56,6 @@
           width: 20px;
           height: 20px;
           background: url("../images/icons/eyes.svg") center no-repeat;
-        }
-        .password-control.view {
-          background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
         }
       }
     }

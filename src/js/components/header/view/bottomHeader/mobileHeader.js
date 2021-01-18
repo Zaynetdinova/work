@@ -7,6 +7,8 @@ import user from '../../../../../images/icons/user.svg'
 import {showRegistryUserDataView} from '../showRegistryUserDataView'
 import {mobileSearchResult} from "../mobileSearchResult"
 import {infoView} from "../infoView";
+import {entry} from "../../../entry/entry.template";
+import {restorePassword} from "../../../restorePassword/restorePassword";
 export function mobileHeader() {
 
     return `
@@ -43,6 +45,8 @@ export function mobileHeader() {
                         :  `<div class="icon-width">
                                 <article id="enter-button-js" class="content">
                                     <img class='icon-img' src=${enter} alt='enter'>
+                                    ${entry()}
+                                    ${restorePassword()}
                                 </article>
                             </div>
                         ` }                        
