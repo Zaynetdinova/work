@@ -1,17 +1,13 @@
-import {popupQuick} from '../../components/common/popupQuick/popupQuick'
+import {popupQuick} from '../popupQuick'
+import {changeSizeCount} from '../../js/changeSizeCount'
+import {changeFavoritesProduct} from '../../js/changeFavoritesProduct'
 import Swiper from 'swiper'
-import {infoTable} from '../../components/cardProductPage/js/infoTable'
-import {favoritesProduct} from '../../components/cardProductPage/js/favoritesProduct'
-import {changeSizeCount} from '../../components/common/js/changeSizeCount'
-import {changeFavoritesProduct} from '../../components/common/js/changeFavoritesProduct'
 
-
-export function quickView() {
+export function popupQuickFunctions() {
 	const $buttons = document.querySelectorAll('.quick-view-js')
 	$buttons.forEach((button) => {
 		button.addEventListener('click', openQuickView)
 	})
-
 }
 
 // problem
@@ -37,6 +33,8 @@ function openQuickView(e) {
 	$countSize.addEventListener('click', changeSizeCount)
 	$like.addEventListener('click', () => changeFavoritesProduct($like))
 
+	const $test = $popup.querySelector('#popup-js')
+
 	positionPopup()
 
 	initialSlider()
@@ -60,8 +58,22 @@ function openQuickView(e) {
 		$popup.remove()
 	}
 
+	// problem
 	function positionPopup() {
-		$popup.setAttribute("style", `top: ${window.pageYOffset}px`);
+		const s = window.pageYOffset + $test.clientHeight
+		if (document.documentElement.scrollHeight < s) {
+			const number = document.documentElement.scrollHeight - $test.clientHeight
+			$test.setAttribute("style", `top: ${number}px`);
+			window.scrollTo({top: number})
+			return
+		}
+		$test.setAttribute("style", `top: ${window.pageYOffset}px`);
+
+
+
+		function isHidden(elem) {
+			return !elem.offsetWidth && !elem.offsetHeight;
+		}
 	}
 
 	function initialSlider() {
