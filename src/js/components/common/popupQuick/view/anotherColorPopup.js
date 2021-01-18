@@ -1,5 +1,3 @@
-import {r} from '../../commonCard/commonCardHeader'
-
 export function anotherColorPopup(item) {
     return `
     <div id="popup-another-color-js-test" class="anotherColor">
@@ -26,4 +24,16 @@ function anotherPhoto(item) {
         `
     })
     return `${items.join('')}`
+}
+
+// problem
+function r () {
+    return `
+    <div class="dots">
+        <span class="dots-bestseller active"></span>
+        <span class="dots-bestseller"></span>
+        <span class="dots-bestseller"></span>
+        <span class="dots-bestseller"></span>
+    </div>
+  `
 }

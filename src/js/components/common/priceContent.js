@@ -1,4 +1,4 @@
-import {Sale} from '../sale'
+import {Sale} from './sale'
 
 export function priceContent(oldPrice, newPrice, price, sale) {
 	return `

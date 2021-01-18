@@ -1,15 +1,6 @@
-export function additionalInformation(title, description, img, index) {
-	const sizes = [
-		'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106'
-	]
-	const block = sizes.map(item => {
-		return `
-      <div class="size">
-        ${item}
-      </div>
-    `
-	})
+import {size} from '../../size'
 
+export function additionalInformation(title, description, img, index) {
 	return `
   <div class="additional-information">
      <div class="content">
@@ -22,9 +13,7 @@ export function additionalInformation(title, description, img, index) {
 												</div>`}
 					 
 					 
-							<div class="Size">
-									${block.join('')}
-							</div>
+							${size()}
 							<div class="block-under-image"></div>
 				</div>
         
@@ -56,6 +45,3 @@ function buttonPhotos(type) {
 		</span>
 	`
 }
-
-
-// '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
