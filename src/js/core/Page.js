@@ -2,8 +2,8 @@ import {openSidebar} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
 import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
 import {UserAgent} from './JS/userAgent'
-import {quickView} from './JS/quickView'
 import {commonCardFunctions} from '../components/common/commonCard/js/commonCardFunctions'
+import {popupQuickFunctions} from '../components/common/popupQuick/js/popupQuickFunctions'
 
 export class Page {
 	constructor(params) {
@@ -20,7 +20,8 @@ export class Page {
 			test.scrollLeft = test.scrollWidth
 		}
 
-		quickView()
+		// problem (импортировать только однк функцию)
+		popupQuickFunctions()
 		openSidebar()
 		initialSliders()
 		if(window.userRegistry) {
