@@ -1,11 +1,11 @@
-import {titleRegistration} from "../common/titleRegistration";
-import {buttonRegistration} from "../common/buttonRegistration";
-import close from "../../../images/icons/close-regisr.svg";
-import arrow from "../../../images/icons/arrow-back.svg";
+import {titleRegistration} from "../../titleRegistration";
+import {buttonRegistration} from "../../buttonRegistration";
+import close from "../../../../../images/icons/close-regisr.svg";
+import arrow from "../../../../../images/icons/arrow-back.svg";
 
 export function restorePassword() {
     return `
-        <div class="restorePassword">
+        <div id="restore-password-js" class="restorePassword">
             <div class="wrapper-restorePassword">
                 <div class="wrap-back">
                     <div class="back"><img class="btn" src="${arrow}" alt="">Назад</div>
