@@ -11,7 +11,7 @@ import 'nouislider/distribute/nouislider.css';
 
 
 
-window.userRegistry = false
+window.userRegistry = true
 
 new Router('#app', {
   mainPage: MainPage,
