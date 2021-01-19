@@ -23,7 +23,7 @@ export function backCall() {
                         </span>
                     </div>
                     ${buttonRegistration('Позвоните мне')}
-                </div>    
+                </div>
                 <div class="bottom-wrapperBackCall">
                     <div class="leftBackCall">
                         <img src="${schema}" alt="">
@@ -36,7 +36,7 @@ export function backCall() {
                         <img src="${time}" alt="">
                         <div class="address">Время работы менеджеров: <br> Пн – Пт: 10:00 – 20:00 <br> Сб – Вс: выходные</div>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     `
