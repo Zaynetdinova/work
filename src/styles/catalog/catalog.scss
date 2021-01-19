@@ -26,18 +26,16 @@
     display: flex;
   }
   .bottom-pagination {
-    margin-top: 40px;
-
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     .box {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-48%);
     }
     .box-number {
-      display: flex;
-      justify-content: flex-end;
-      position: relative;
-      top: 10px;
       padding-right: 3px;
       @media (max-width: 1024px) {
         padding-right: 0;
