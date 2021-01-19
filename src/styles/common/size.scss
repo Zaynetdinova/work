@@ -18,12 +18,10 @@
       cursor: pointer;
       outline: 2px solid #C8C8C8;
       outline-offset: -2px;
-
     }
 
     &.active {
-      outline: 2px solid #C8C8C8;
-      outline-offset: -2px;
+      background: #C8C8C8;
     }
   }
   .size:last-child {
