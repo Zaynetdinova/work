@@ -1,10 +1,10 @@
-import close from "../../../images/icons/close-regisr.svg";
-import {titleRegistration} from "../common/titleRegistration";
-import {buttonRegistration} from "../common/buttonRegistration";
+import close from "../../../../images/icons/close-regisr.svg";
+import {titleRegistration} from "../titleRegistration";
+import {buttonRegistration} from "../buttonRegistration";
 
-export function entry() {
+export function entryTemplate() {
     return `
-        <div class="Entry">
+        <div id="Entry-js" class="Entry">
             <div class="wrapper-Entry">
                 <div class="close"><article class="close-icon"  id="closeImg-entry"><img src="${close}" alt=""></article></div>
                 ${titleRegistration('Вход')}
@@ -25,7 +25,9 @@ export function entry() {
                 </div>  
                 <div class="wrap-registration">
                     <div>Если Вы не зарегистрированы в нашем магазине, пожалуйста,</div>
-                    <article id="sign-up" class="sign-up"> зарегистрируйтесь</article>
+                    <article id="sign-up-js" class="sign-up"> 
+                       зарегистрируйтесь 
+                    </article>
                 </div>     
             </div>
         </div>

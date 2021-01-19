@@ -1,7 +1,7 @@
-import {titleRegistration} from "../common/titleRegistration";
-import close from "../../../images/icons/close-regisr.svg";
+import {titleRegistration} from '../../titleRegistration'
+import close from '../../../../../images/icons/close-regisr.svg'
 
-export function registration() {
+export function registrationTemplate() {
     return `
         <div class="Registration">
             <div class="wrapper-Registration">
