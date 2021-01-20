@@ -1,15 +1,46 @@
 .wrapper-buyForMe {
     max-width: 1020px;
-    margin: 76px auto 76px auto;
+    margin: 67px auto 67px auto;
     .box-input {
       display: flex;
       justify-content: space-between;
-      margin-top: 10px;
     }
     .wrap-input {
       width: 500px;
       .password {
         width: 235px;
+      }
+      .password2 {
+        width: 100%;
+        position: relative;
+        .password-control {
+          position: absolute;
+          top: 21px;
+          right: 10px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../images/icons/eyes.svg") center no-repeat;
+        }
+        .phone-control {
+          position: absolute;
+          top: 21px;
+          right: 10px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../images/icons/russia.svg") center no-repeat;
+        }
+        .phone-arrow {
+          position: absolute;
+          top: 21px;
+          right: 35px;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../images/icons/arrow-back.svg") center no-repeat;
+          transform: rotate(-90deg);
+        }
       }
     }
     .wrapper-button {
