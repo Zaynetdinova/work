@@ -62,11 +62,11 @@
     input[type="text"]::-ms-input-placeholder,input[type="password"]::-ms-input-placeholder, input[type="tel"]::-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
     input[type="text"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder, input[type="tel"]::-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
     input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder { color: rgba(255, 255, 255, 0.5); }
-    input[type="text"]:focus::-moz-placeholder, input[type="password"]:focus::-moz-placeholder { color: #FFFFFF; }
-    input[type="text"]:focus::-webkit-input-placeholder, input[type="password"]:focus::-webkit-input-placeholder{ color: #FFFFFF; }
-    input[type="text"]:focus::-ms-input-placeholder, input[type="password"]:focus::-ms-input-placeholder { color: #FFFFFF; }
-    input[type="text"]:focus::-ms-input-placeholder, input[type="password"]:focus::-ms-input-placeholder {color: #FFFFFF; }
-    input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder { color: #FFFFFF; }
+    input[type="text"]:focus::-moz-placeholder, input[type="password"]:focus::-moz-placeholder, input[type="tel"]:focus::-moz-placeholder{ color: #FFFFFF; }
+    input[type="text"]:focus::-webkit-input-placeholder, input[type="password"]:focus::-webkit-input-placeholder, input[type="tel"]:focus::-webkit-input-placeholder{ color: #FFFFFF; }
+    input[type="text"]:focus::-ms-input-placeholder, input[type="password"]:focus::-ms-input-placeholder, input[type="tel"]:focus::-ms-input-placeholder{ color: #FFFFFF; }
+    input[type="text"]:focus::-ms-input-placeholder, input[type="password"]:focus::-ms-input-placeholder, input[type="tel"]:focus::-ms-input-placeholder{color: #FFFFFF; }
+    input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder, input[type="tel"]:focus::placeholder { color: #FFFFFF; }
 
     input[type="text"],
     input[type="password"],

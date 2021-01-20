@@ -24,7 +24,10 @@ export function buyForSaleTemplate() {
             </div>
             <div class="wrap-input">
                 <input class="input-name" placeholder="ИНН*" type="text"> 
-                <input class="input-name" placeholder="Форма собственности*" type="text">
+                <div class="password2">
+                    <input class="input-name" placeholder="Форма собственности*" type="text">
+                    <a href="#" class="phone-arrow2"></a>
+                </div> 
                 <input class="input-name" placeholder="Наименование организации*" type="text">
                 <div class="wrapper-password">
                     <div class="password">
