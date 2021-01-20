@@ -1,104 +1,74 @@
 .wrapper-Entry {
-    max-width: 500px;
-    margin: 76px auto 76px auto;
-    .close {
-      display: flex;
-      justify-content: flex-end;
-      .close-icon {
-        display: flex;
-        padding: 10px 0 10px 10px;
-        cursor: pointer;
-      }
-    }
+  max-width: 500px;
+  margin: 76px auto 76px auto;
+  .wrap-input {
+    margin-top: 73px;
+  }
+  .restore-input {
+    margin-bottom: 60px;
     .wrap-input {
-      display: flex;
-      flex-direction: column;
-      margin-top: 73px;
-      input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder {color: rgba(255, 255, 255, 0.5); }
-      input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder{ color: rgba(255, 255, 255, 0.5); }
-      input[type="text"]::-ms-input-placeholder,input[type="password"]::-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
-      input[type="text"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder{ color: rgba(255, 255, 255, 0.5); }
-      input[type="text"]::placeholder, input[type="password"]::placeholder { color: rgba(255, 255, 255, 0.5); }
-      input[type="text"]:focus::-moz-placeholder, input[type="password"]:focus::-moz-placeholder { color: #FFFFFF; }
-      input[type="text"]:focus::-webkit-input-placeholder, input[type="password"]:focus::-webkit-input-placeholder{ color: #FFFFFF; }
-      input[type="text"]:focus::-ms-input-placeholder, input[type="password"]:focus::-ms-input-placeholder { color: #FFFFFF; }
-      input[type="text"]:focus::-ms-input-placeholder, input[type="password"]:focus::-ms-input-placeholder {color: #FFFFFF; }
-      input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder { color: #FFFFFF; }
+      margin-top: 52px;
+    }
+  }
+  .title-restorePassword {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F3F2F0;
+    margin-top: 57px;
+  }
+  .text-email {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 70px;
+  }
 
-      input[type="text"],
-      input[type="password"] {
+  .wrap-agree {
+    margin-top: 48px;
+    margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    .restore {
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: underline;
+      margin-left: 6px;
+      cursor: pointer;
+      &:hover {
         color: #FFFFFF;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-        &:focus {
-          border-bottom: 1px dashed #FFFFFF;
-        }
-      }
-      .password {
-        position: relative;
-        .password-control {
-          position: absolute;
-          top: 5px;
-          right: 10px;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          background: url("../images/icons/eyes.svg") center no-repeat;
-        }
       }
     }
+  }
 
-    .input-name {
-      font-size: 14px;
-      line-height: 16px;
-      outline: none;
-      height: 30px;
-      background: transparent;
-      width: 100%;
-    }
-    .wrap-agree {
-      margin-top: 48px;
-      margin-bottom: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      line-height: 100%;
-      letter-spacing: 0.05em;
-      color: #FFFFFF;
-      .restore {
-        font-style: italic;
-        color: rgba(255, 255, 255, 0.5);
-        text-decoration: underline;
-        margin-left: 6px;
-        cursor: pointer;
-        &:hover {
-          color: #FFFFFF;
-        }
+  .wrap-registration {
+    margin: 44px auto 0 auto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    .sign-up {
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        color: #FFFFFF;
       }
     }
-    .wrap-registration {
-      margin: 44px auto 0 auto;
-      font-size: 14px;
-      line-height: 16px;
-      color: #FFFFFF;
-      text-align: center;
-      .sign-up {
-        font-style: italic;
-        color: rgba(255, 255, 255, 0.5);
-        text-decoration: underline;
-        cursor: pointer;
-        &:hover {
-          color: #FFFFFF;
-        }
-      }
-    }
+  }
 
   @media (max-width: 550px) {
       max-width: 354px;
-
   }
   @media (max-width: 410px) {
       max-width: 315px;

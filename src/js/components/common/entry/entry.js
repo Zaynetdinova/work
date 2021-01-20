@@ -69,8 +69,6 @@ export class Entry {
 		if(clickElem.closest('.restore-className-js')) {
 			this.addElement(this.toRegistration())
 		}
-
-
 	}
 
 	controlBack(className) {
