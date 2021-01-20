@@ -7,8 +7,7 @@ import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
 import {CardProduct} from './pages/CardProduct'
 import 'nouislider/distribute/nouislider.css';
-
-
+import {PersonalAreaPage} from "./pages/PersonalAreaPage";
 
 
 window.userRegistry = true
@@ -18,7 +17,8 @@ new Router('#app', {
   viewCategoriesPage: ViewCategoriesPage,
   viewCategoriesIndex: CatalogPage,
   viewCategoriesChildren: ViewCategoriesChildren,
-  cardProduct: CardProduct
+  cardProduct: CardProduct,
+  personalAreaPage: PersonalAreaPage,
 })
 
 

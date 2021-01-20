@@ -8,9 +8,7 @@ export class Router {
 		}
 
 		this.$placeholder = $(selector)
-
 		this.routes = routes
-
 		this.page = null
 		this.changePageHandler = this.changePageHandler.bind(this)
 		this.init()
@@ -40,6 +38,9 @@ export class Router {
 				break;
 			case 'card-product':
 				Page = this.routes.cardProduct
+				break;
+			case 'personal-area':
+				Page = this.routes.personalAreaPage
 				break;
 			default:
 				Page = this.routes.mainPage
