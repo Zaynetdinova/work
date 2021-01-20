@@ -1,19 +1,13 @@
-import {titleRegistration} from "../common/titleRegistration";
-import {titleBuy} from "../common/titleBuy";
-import {checkboxRegistration} from "../common/checkboxRegistration";
-import {buttonRegistration} from "../common/buttonRegistration";
-import {infoTextRegistration} from "../common/infoTextRegistration";
-import close from '../../../images/icons/close-regisr.svg'
-import arrow from "../../../images/icons/arrow-back.svg";
+import {titleRegistration} from "../../titleRegistration";
+import {titleBuy} from "../../titleBuy";
+import {checkboxRegistration} from "../../checkboxRegistration";
+import {buttonRegistration} from "../../buttonRegistration";
+import {infoTextRegistration} from "../../infoTextRegistration";
 
-export function buyForMe() {
+export function buyForMeTemplate() {
     return `
-        <div class="buyForMeReg">
+        
             <div class="wrapper-buyForMe">
-            <div class="wrap-back">
-                <div class="back"><img class="btn" src="${arrow}" alt="">Назад</div>
-                <div class="close"><article class="close-icon"  id="closeImg-entry"><img src="${close}" alt=""></article></div>
-            </div>
              ${titleRegistration('Регистрация')}
              ${titleBuy('Покупаю для себя')}
              <div class="box-input">
@@ -34,6 +28,6 @@ export function buyForMe() {
              <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
              ${infoTextRegistration()}
         </div>
-        </div>
+       
     `
 }

@@ -1,5 +1,4 @@
 import {backCall} from '../../backСall/backСall.template'
-import {restorePassword} from '../../restorePassword/restorePassword'
 
 export function topHeader() {
     return `
@@ -8,9 +7,7 @@ export function topHeader() {
                 <div class='content'>
                     <nav>
                         <span class='span'>Оптовая торговля</span>
-                        <article id="entry-registration-button-js" class='lk_link'>Вход / Регистрация
-                            ${restorePassword()}
-                        </article>
+                        <article id="entry-registration-button-js" class='lk_link'>Вход / Регистрация</article>
                         
                         <a class='info' href='#'>О покупках
                             <div class="wrapper-tooltip"><div class="tooltip">${tooltip(buy)}</div></div>
