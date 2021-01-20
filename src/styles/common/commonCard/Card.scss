@@ -7,8 +7,9 @@ $widthCardImage: 87px;
   cursor: default;
   position: relative;
   border: 1px solid transparent;
-
-
+  &:hover {
+    border: 1px solid #555555;
+  }
   .card-banner-wrapper {
     position: relative;
   }
@@ -29,7 +30,6 @@ $widthCardImage: 87px;
     background-position: center;
     background-size: cover;
   }
-
   .info {
     background: #FFFFFF;
     padding: 19px;
@@ -37,7 +37,6 @@ $widthCardImage: 87px;
     margin: 0;
     overflow: hidden;
   }
-
   .title {
     font-weight: bold;
     font-size: 16px;
@@ -45,30 +44,23 @@ $widthCardImage: 87px;
     text-transform: capitalize;
     margin-bottom: 5px;
   }
-
   .description {
     font-weight: normal;
     font-size: 12px;
     line-height: 12px;
   }
-
-
   .quick-view {
     display: none;
   }
-
   .additional-information {
     padding-top: 0;
-
     .quick-view {
       display: flex;
       justify-content: center;
     }
-
     .content {
       display: none;
     }
-
     .text-size-wrapper {
       border: 1px solid #555555;
       position: absolute;
@@ -83,10 +75,8 @@ $widthCardImage: 87px;
         padding-bottom: 10px;
         color: #3D3D3C;
       }
-
       .block-under-image {
         position: absolute;
-        //top: -38px;
         bottom: -1px;
         background: #555555;
         height: 100%;
@@ -95,7 +85,6 @@ $widthCardImage: 87px;
         border-bottom: 1px solid #555555;
       }
     }
-
     .images {
       z-index: 2;
       position: absolute;
@@ -104,18 +93,12 @@ $widthCardImage: 87px;
       width: $widthCardImage;
       background: #555555;
       padding: 5px;
-      //padding-bottom: 0;
-      //border: 1px solid #555555;
-
-
       .photos-block-common-block {
         height: 490px;
-
         @media (max-width: 1200px) {
           height: 390px;
         }
       }
-
       .button {
         justify-content: center;
         align-items: center;
@@ -127,38 +110,29 @@ $widthCardImage: 87px;
         left: -10%;
         cursor: pointer;
         display: none;
-
-
         .arrow {
           background-image: url("../images/icons/arrow-card.svg");
           background-repeat: no-repeat;
           width: 12px;
           height: 6px;
         }
-
-
         &.button-prev {
           top: 0;
         }
         &.button-next {
           bottom: 0;
-
           .arrow {
             transform: rotate(180deg);
           }
-
         }
       }
-
       &:hover {
         .button {
           display: flex;
         }
       }
     }
-
   }
-
   &.additional-information-open {
     border: 1px solid #555555;
     .quick-view {
@@ -167,40 +141,32 @@ $widthCardImage: 87px;
     }
     .content {
       display: block;
-
     }
-
     .Health {
       display: block;
     }
   }
-
   &.additional-information-open-left {
     border: 1px solid #555555;
-    //outline: 1px solid #555555;
     .quick-view {
       display: flex;
       justify-content: center;
     }
     .content {
       display: block;
-
       .text-size-wrapper {
         .block-under-image {
           left: -$widthCardImage;
         }
       }
-
       .images {
         left: -$widthCardImage;
       }
     }
-
     .Health {
       display: block;
     }
   }
-
   .quick-view-test {
     width: 100%;
     height: 100%;
@@ -213,7 +179,6 @@ $widthCardImage: 87px;
     left: 0;
     right: 0;
     display: block;
-
     .paranja {
       position: fixed;
       width: 100%;
@@ -224,7 +189,6 @@ $widthCardImage: 87px;
       bottom: 0;
       left: 0;
       right: 0;
-
     }
   }
 
@@ -236,14 +200,12 @@ $widthCardImage: 87px;
             width: $widthCardImage/1.1;
           }
         }
-
         .images {
           right: -$widthCardImage/1.1;
           width: $widthCardImage/1.1;
         }
       }
     }
-
     &.additional-information-open-left {
       .content {
         .text-size-wrapper {
@@ -251,14 +213,12 @@ $widthCardImage: 87px;
             left: -$widthCardImage/1.1;
           }
         }
-
         .images {
           left: -$widthCardImage/1.1;
         }
       }
     }
   }
-
   @media (max-width: $tablet-breakpoint) {
     .root {
       .main-title {
@@ -274,7 +234,6 @@ $widthCardImage: 87px;
       text-transform: capitalize;
       margin-bottom: 3px;
     }
-
     .description {
       font-weight: normal;
       font-size: 11px;

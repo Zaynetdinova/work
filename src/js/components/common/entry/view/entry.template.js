@@ -1,12 +1,11 @@
-import close from "../../../../../images/icons/close-regisr.svg";
+
 import {titleRegistration} from "../../titleRegistration";
 import {buttonRegistration} from "../../buttonRegistration";
 
 export function entryTemplate() {
     return `
        
-            <div id="test" class="wrapper-Entry">
-                <div class="close"><article class="close-icon"  id="closeImg-entry"><img src="${close}" alt=""></article></div>
+            
                 ${titleRegistration('Вход')}
                 <div class="wrap-input">
                     <input style="margin-bottom: 15px" class="input-name"  placeholder="Логин (Э-почта)*" type="text" name="name">
@@ -29,7 +28,7 @@ export function entryTemplate() {
                        зарегистрируйтесь 
                     </article>
                 </div>     
-            </div>
+         
        
     `
 }

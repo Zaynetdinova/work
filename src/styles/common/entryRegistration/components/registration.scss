@@ -1,0 +1,51 @@
+.wrapper-btn-enter {
+      display: flex;
+      justify-content: space-between;
+      margin: 57px auto 0 auto;
+      width: 366px;
+      .buyForMe,
+      .buyForSale {
+        width: 168px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 21px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(243, 242, 240, 0.5);
+        cursor: pointer;
+        &:hover {
+          border-bottom: 1px solid #F3F2F0;
+        }
+      }
+    }
+
+  //@media (max-width: 1024px) {
+  //  .wrapper-Registration {
+  //    .wrapper-btn-enter {
+  //      .buyForMe,
+  //      .buyForSale {
+  //        border-bottom: 1px solid #F3F2F0;
+  //      }
+  //    }
+  //  }
+  //}
+  @media (max-width: 550px) {
+
+      .wrapper-btn-enter {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 30px auto 0 auto;
+        width: 100%;
+        .buyForMe,
+        .buyForSale {
+          width: 100%;
+          text-align: left;
+        }
+        .buyForSale {
+          padding-top: 15px;
+        }
+      }
+    }
+

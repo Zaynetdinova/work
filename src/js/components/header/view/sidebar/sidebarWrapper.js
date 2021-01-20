@@ -1,4 +1,3 @@
-// import {sidebar} from './sidebar'
 import {extra} from './extra'
 import icon1 from '../../../../../images/icons/woman.svg'
 import icon2 from '../../../../../images/icons/girl.svg'
@@ -26,8 +25,7 @@ export function sidebarWrapper() {
           </div> 
           <div class="extra-mobile" id="open-mobile-extra-js">
             ${subCategoriesMenu()}
-          </div> 
-          
+          </div>          
           <div class="button-close" data-id="cancel-js"></div>                
       </div>
     </div>

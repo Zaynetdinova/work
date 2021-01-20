@@ -4,7 +4,6 @@ import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInact
 import {UserAgent} from './JS/userAgent'
 import {commonCardFunctions} from '../components/common/commonCard/js/commonCardFunctions'
 import {popupQuickFunctions} from '../components/common/popupQuick/js/popupQuickFunctions'
-import {entryFunctions} from '../components/common/entry/js/entryFunctions'
 import {Entry} from '../components/common/entry/entry'
 
 export class Page {
@@ -23,8 +22,6 @@ export class Page {
 		}
 
 		// problem (импортировать только однк функцию)
-		//
-		entryFunctions()
 		const entry = new Entry()
 		entry.init()
 		///

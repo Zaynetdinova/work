@@ -1,0 +1,42 @@
+.Entry {
+  @import './components/entry';
+  @import './components/registration';
+  @import './components/restorePassword';
+  @import './components/byForMe';
+  @import './components/byForSale';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //problem z-index
+  z-index: 1001;
+  overflow: auto;
+
+
+  .wrap-back {
+
+    .back {
+      display: none;
+
+      &.block {
+        display: block;
+      }
+    }
+  }
+
+  .paranja {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    //problem
+    z-index: -1;
+    background: linear-gradient(90.08deg, rgba(113, 0, 103, 0.95) 3.72%, rgba(207, 9, 62, 0.95) 122.63%);
+    cursor: auto;
+  }
+}

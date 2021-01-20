@@ -1,0 +1,12 @@
+.wrapper-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  .textReg {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    max-width: 714px;
+  }
+}
