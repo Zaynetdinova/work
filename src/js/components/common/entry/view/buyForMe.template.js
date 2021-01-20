@@ -19,7 +19,13 @@ export function buyForMeTemplate() {
                         <a href="#" class="phone-arrow"></a>
                         <a href="#" class="phone-control"></a>
                     </div>
-                </div>             
+                </div>
+                <div class="popup-phone">
+                    <div style="display: flex;justify-content: space-between">
+                        <div class="text">+374</div>
+                        <div class="text">Армения</div>
+                    </div>
+                </div>            
             </div>
             <div class="wrap-input">
                 <input class="input-name" placeholder="Э-почта* (логин)" type="text">

@@ -1,93 +1,109 @@
 .wrapper-buyForMe {
-    max-width: 1020px;
-    margin: 67px auto 67px auto;
-    .box-input {
-      display: flex;
-      justify-content: space-between;
+  max-width: 1020px;
+  margin: 67px auto 67px auto;
+  .box-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrap-input {
+    width: 500px;
+    .password {
+      width: 235px;
     }
-    .wrap-input {
+    .password2 {
+      width: 100%;
+      position: relative;
+      .password-control,
+      .phone-control,
+      .phone-arrow,
+      .phone-arrow2 {
+        position: absolute;
+        top: 21px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      .password-control,
+      .phone-control {
+        right: 10px;
+      }
+      .password-control {
+        background: url("../images/icons/eyes.svg") center no-repeat;
+      }
+      .phone-control {
+        background: url("../images/icons/russia.svg") center no-repeat;
+      }
+      .phone-arrow,
+      .phone-arrow2 {
+        background: url("../images/icons/arrow-back.svg") center no-repeat;
+        transform: rotate(-90deg);
+      }
+      .phone-arrow {
+        right: 35px;
+      }
+      .phone-arrow2 {
+        right: 10px;
+      }
+    }
+    .popup-phone {
+      position: absolute;
+      top: 476px;
       width: 500px;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 16px;
+      border-bottom: 1px solid  #AB064E;;
+      .text {
+        font-size: 14px;
+        line-height: 16px;
+        color: #3D3D3C;
+      }
+    }
+  }
+  .wrapper-button {
+    margin-top: 43px;
+    margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 1090px) {
+    max-width: 820px;
+    .wrap-input {
+      width: 400px;
+      .password {
+        width: 185px;
+      }
+    }
+  }
+  @media (max-width: 890px) {
+    max-width: 500px;
+    .wrap-input {
+      width: 100%;
       .password {
         width: 235px;
       }
-      .password2 {
-        width: 100%;
-        position: relative;
-        .password-control {
-          position: absolute;
-          top: 21px;
-          right: 10px;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          background: url("../images/icons/eyes.svg") center no-repeat;
-        }
-        .phone-control {
-          position: absolute;
-          top: 21px;
-          right: 10px;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          background: url("../images/icons/russia.svg") center no-repeat;
-        }
-        .phone-arrow {
-          position: absolute;
-          top: 21px;
-          right: 35px;
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          background: url("../images/icons/arrow-back.svg") center no-repeat;
-          transform: rotate(-90deg);
-        }
-      }
     }
-    .wrapper-button {
-      margin-top: 43px;
-      margin-bottom: 44px;
+    .box-input {
       display: flex;
-      align-items: center;
-    }
-    @media (max-width: 1090px) {
-      max-width: 820px;
-      .wrap-input {
-        width: 400px;
-        .password {
-          width: 185px;
-        }
-      }
-    }
-    @media (max-width: 890px) {
-      max-width: 500px;
-      .wrap-input {
-        width: 100%;
-        .password {
-          width: 235px;
-        }
-      }
-      .box-input {
-        display: flex;
-        flex-direction: column;
-        justify-content: normal;
-        margin-top: 10px;
-      }
-    }
-    @media (max-width: 550px) {
-      max-width: 354px;
-      .wrap-input {
-        .password {
-          width: 100%;
-        }
-        .wrapper-password {
-          flex-direction: column;
-        }
-      }
-    }
-    @media (max-width: 410px) {
-      max-width: 315px;
-    }
-    @media (max-width: 374px) {
-      max-width: 260px;
+      flex-direction: column;
+      justify-content: normal;
+      margin-top: 10px;
     }
   }
+  @media (max-width: 550px) {
+    max-width: 354px;
+    .wrap-input {
+      .password {
+        width: 100%;
+      }
+      .wrapper-password {
+        flex-direction: column;
+      }
+    }
+  }
+  @media (max-width: 410px) {
+    max-width: 315px;
+  }
+  @media (max-width: 374px) {
+    max-width: 260px;
+  }
+}
