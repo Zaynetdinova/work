@@ -1,13 +1,19 @@
 import {transitionWrapper} from "../common/transitionTitle";
+import {navigation} from './view/navigation'
+import {basketTemplate} from './view/basket.template'
 
 export function personalAreaTemplate() {
     return `
-        <div class="wrapper-personal-area">
+        <div id="personal-area-js" class="wrapper-personal-area">
             ${transitionWrapper(link)}
             <div class="header-personal-area">
                 <div class="title">Личный кабинет</div>
                 <div class="exit">Выйти</div>
             </div>
+            
+            ${navigation()}
+            
+            <div id="personal-area-content-js"></div>
         </div>
     `
 }
