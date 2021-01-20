@@ -45,13 +45,24 @@
         right: 10px;
       }
     }
-    .popup-phone {
+    .wrap-popup-phone {
       position: absolute;
-      top: 476px;
+      top: 462px;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+    }
+    .popup-phone {
       width: 500px;
       background: #FFFFFF;
       padding: 10px 10px 10px 16px;
-      border-bottom: 1px solid  #AB064E;;
+      border-bottom: 1px solid  #AB064E;
+      &:hover {
+        background: #F3F2F0;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
       .text {
         font-size: 14px;
         line-height: 16px;

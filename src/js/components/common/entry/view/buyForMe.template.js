@@ -3,7 +3,12 @@ import {titleBuy} from "../../titleBuy";
 import {checkboxRegistration} from "../../checkboxRegistration";
 import {buttonRegistration} from "../../buttonRegistration";
 import {infoTextRegistration} from "../../infoTextRegistration";
-
+import {popupPhone} from "./popupPhone";
+import Armenia from "../../../../../images/icons/armenia.svg";
+import Belarus from "../../../../../images/icons/belarus.svg";
+import Georgia from "../../../../../images/icons/georgia.svg";
+import Russia from "../../../../../images/icons/russia.svg";
+import Kazakhstan from "../../../../../images/icons/kazakhstan.svg";
 export function buyForMeTemplate() {
     return `
         ${titleRegistration('Регистрация')}
@@ -20,12 +25,7 @@ export function buyForMeTemplate() {
                         <a href="#" class="phone-control"></a>
                     </div>
                 </div>
-                <div class="popup-phone">
-                    <div style="display: flex;justify-content: space-between">
-                        <div class="text">+374</div>
-                        <div class="text">Армения</div>
-                    </div>
-                </div>            
+                <div class="wrap-popup-phone"> ${popupPhone(popup)}</div>        
             </div>
             <div class="wrap-input">
                 <input class="input-name" placeholder="Э-почта* (логин)" type="text">
@@ -45,3 +45,31 @@ export function buyForMeTemplate() {
         ${infoTextRegistration()} 
     `
 }
+
+let popup = [
+    {
+        phone: '+374',
+        country: 'Армения',
+        img: Armenia
+    },
+    {
+        phone: '+375',
+        country: 'Белоруссия',
+        img: Belarus
+    },
+    {
+        phone: '+995',
+        country: 'Грузия',
+        img: Georgia
+    },
+    {
+        phone: '+7',
+        country: 'Казахстан',
+        img: Kazakhstan
+    },
+    {
+        phone: '+7',
+        country: 'Россия',
+        img: Russia
+    },
+]
