@@ -1,7 +1,8 @@
-.buyForSaleReg {
-  .wrapper-buyForSale {
+
+  .wrapper-buyForMe {
     max-width: 1020px;
-    margin: 76px auto 0 auto;
+    margin: 76px auto 76px auto;
+    //height: 1000px;
     .wrap-back {
       display: flex;
       justify-content: space-between;
@@ -129,4 +130,3 @@
       max-width: 260px;
     }
   }
-}

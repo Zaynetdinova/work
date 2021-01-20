@@ -1,15 +1,4 @@
-.buyForMeReg {
-  -webkit-transform: translate3d(0,0,0);
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  background: linear-gradient(90.08deg, rgba(113, 0, 103, 0.95) 3.72%, rgba(207, 9, 62, 0.95) 122.63%);
-  cursor: auto;
-  .wrapper-buyForMe {
+.wrapper-buyForMe {
     max-width: 1020px;
     margin: 76px auto 0 auto;
     .wrap-back {
@@ -107,4 +96,3 @@
       max-width: 260px;
     }
   }
-}
