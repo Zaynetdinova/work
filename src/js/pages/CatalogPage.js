@@ -4,8 +4,6 @@ import {Header} from '../components/header/Header'
 import {Footer} from '../components/footer/Footer'
 import {Catalog} from "../components/catalog/Catalog";
 
-
-
 export class CatalogPage extends Page{
 	getRoot() {
 		this.app = new OptMoyo( {
