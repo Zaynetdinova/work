@@ -1,13 +1,16 @@
 .wrapper-Entry {
   max-width: 500px;
-  margin: 76px auto 76px auto;
+  margin: 67px auto 67px auto;
   .wrap-input {
-    margin-top: 73px;
+    margin-top: 52px;
   }
   .restore-input {
     margin-bottom: 60px;
     .wrap-input {
-      margin-top: 52px;
+      margin-top: 0;
+      .input-name {
+        margin: 0;
+      }
     }
   }
   .title-restorePassword {

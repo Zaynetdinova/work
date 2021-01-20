@@ -13,12 +13,24 @@ export function buyForMeTemplate() {
                 <input class="input-name" placeholder="Фамилия*" type="text">
                 <input class="input-name" placeholder="Имя*" type="text">
                 <input class="input-name" placeholder="Отчество" type="text"> 
-                <input class="input-name" placeholder="Телефон*" type="text">              
+                <div class="password2">
+                    <input class="input-name" placeholder="Телефон*" type="tel">
+                    <div>
+                        <a href="#" class="phone-arrow"></a>
+                        <a href="#" class="phone-control"></a>
+                    </div>
+                </div>             
             </div>
             <div class="wrap-input">
                 <input class="input-name" placeholder="Э-почта* (логин)" type="text">
-                <input class="input-name" placeholder="Пароль*" type="text">
-                <input class="input-name" placeholder="Повторите пароль*" type="text"> 
+                <div class="password2">
+                    <input class="input-name" type="password" id="password-input" placeholder="Пароль*" name="password">
+                    <a href="#" class="password-control"></a>
+                </div>
+                <div class="password2">
+                    <input class="input-name" type="password" id="password-input" placeholder="Повторите пароль*" name="password">
+                    <a href="#" class="password-control"></a>
+                </div>
                 <input class="input-name" placeholder="Город* (город доставки)" type="text">   
             </div>
         </div>

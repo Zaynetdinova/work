@@ -13,7 +13,13 @@ export function buyForSaleTemplate() {
                 <input class="input-name" placeholder="Фамилия*" type="text">
                 <input class="input-name" placeholder="Имя*" type="text">
                 <input class="input-name" placeholder="Отчество" type="text"> 
-                <input class="input-name" placeholder="Телефон*" type="text">  
+                <div class="password2">
+                    <input class="input-name" placeholder="Телефон*" type="tel" pattern="+7 (___) ___-__-__">
+                    <div>
+                        <a href="#" class="phone-arrow"></a>
+                        <a href="#" class="phone-control"></a>
+                    </div>
+                </div> 
                 <input class="input-name" placeholder="Э-почта* (используется как логин)" type="text">           
             </div>
             <div class="wrap-input">
