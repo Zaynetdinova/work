@@ -1,0 +1,132 @@
+.Personal-Data {
+  @import "titleData";
+  @import "buttonData";
+  color: #3D3D3C;
+  font-size: 14px;
+  line-height: 15px;
+  .title-data-main {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+  .wrapper-columns,
+  .wrapper-box,
+  .wrapper-box-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper-columns {
+    margin-bottom: 140px;
+    .first-column,
+    .second-column {
+      display: flex;
+      flex-direction: column;
+      .wrapper-box,
+      .wrapper-box-2,
+      .wrapper-box-3 {
+        align-items: center;
+        padding: 20px;
+        background: #F3F2F0;
+        width: 710px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .wrapper-box-1 {
+          align-items: center;
+          .input-personal-data {
+            font-size: 13px;
+            text-align: center;
+            color: #777777;
+            width: 160px;
+            height: 36px;
+            margin-right: 6px;
+            border: 1px solid #C4C4C4;
+            &:focus {
+              outline: none;
+              border: 1px solid #777777;
+            }
+          }
+          .color {
+            color: #AB064E;
+            margin-left: 10px;
+          }
+          .transport-company {
+            margin-left: 14px;
+          }
+          .password {
+            color: #AB064E;
+            margin-left: 12px;
+          }
+          .organization {
+            margin-left: 10px;
+          }
+        }
+        .checkbox-data {
+          .wrap-checkbox {
+            margin-top: 0;
+            margin-left: 10px;
+            .text-checkbox {
+              font-style: normal;
+              font-size: 14px;
+              line-height: 16px;
+              letter-spacing: normal;
+              text-decoration-line: none;
+              color: #3D3D3C;
+            }
+            input[type="checkbox"]:checked + label:before,
+            input[type="checkbox"]:not(:checked) + label:before {
+              width: 14px;
+              height: 14px;
+              border: 1px solid #C4C4C4;
+              background: #FFFFFF;
+            }
+          }
+        }
+        select {
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #777777;
+          width: 160px;
+          height: 36px;
+          outline: none;
+          border: 1px solid #C4C4C4;
+          option {
+            padding-right: 14px;
+            padding-left: 15px;
+          }
+        }
+      }
+      .wrapper-box-3 {
+        padding: 30px 20px;
+      }
+      .wrapper-box-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 19px 20px 18px 20px;
+        .info-text {
+          font-size: 12px;
+          line-height: 17px;
+        }
+        .tower {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-top: 26px;
+          width: 100%;
+          font-size: 12px;
+          line-height: 17px;
+        }
+        .wrap-close-text {
+          display: flex;
+          align-items: baseline;
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
