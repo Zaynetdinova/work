@@ -19,30 +19,23 @@ export function buyForSaleTemplate() {
                 <input class="input-name" placeholder="Фамилия*" type="text">
                 <input class="input-name" placeholder="Имя*" type="text">
                 <input class="input-name" placeholder="Отчество" type="text"> 
-                <div class="password2">
-                    <input class="input-name" placeholder="Телефон*" type="tel" pattern="+7 (___) ___-__-__">
-                    <div>
-                        <a href="#" class="phone-arrow"></a>
-                        <a href="#" class="phone-control"></a>
-                    </div>
-                </div> 
-                <div class="wrap-popup-phone"> ${popupPhone(popup2)}</div>   
+                
+                <div id="select-phone-registration-js" class="password2 select-organization"></div>
+                
                 <input class="input-name" placeholder="Э-почта* (используется как логин)" type="text">           
             </div>
             <div class="wrap-input">
                 <input class="input-name" placeholder="ИНН*" type="text"> 
-                <div class="password2">
-                    <input class="input-name" placeholder="Форма собственности*" type="text">
-                    <a href="#" class="phone-arrow2"></a>
-                </div>
-                 <div class="wrap-popup-phone" style="top: 366px;"> ${popupPhone(popup)}</div>  
+                
+                <div id="select-test" class="password2 select-organization"></div>
+                
                 <input class="input-name" placeholder="Наименование организации*" type="text">
                 <div class="wrapper-password">
-                    <div class="password">
+                    <div data-input-password-js class="password">
                         <input class="input-name" type="password" id="password-input" placeholder="Пароль*" name="password">
                         <a href="#" class="password-control"></a>
                     </div>
-                    <div class="password">
+                    <div data-input-password-js class="password">
                         <input class="input-name" type="password" id="password-input" placeholder="Повторите пароль*" name="password">
                         <a href="#" class="password-control"></a>
                     </div>

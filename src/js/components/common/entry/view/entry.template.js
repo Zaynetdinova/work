@@ -6,9 +6,9 @@ export function entryTemplate() {
         ${titleRegistration('Вход')}
         <div class="wrap-input">
             <input class="input-name"  placeholder="Логин (Э-почта)*" type="text" name="name">
-            <div class="password">
+            <div class="password" data-input-password-js>
                 <input class="input-name" type="password" id="password-input" placeholder="Пароль*" name="password">
-                <a href="#" class="password-control"></a>
+                <div class="password-control"></div>
             </div>
         </div>
         <div class="wrap-agree">

@@ -4,16 +4,21 @@ import {restorePassword} from './view/restorePassword'
 import {indexTemplate} from './index.template'
 import {buyForMeTemplate} from './view/buyForMe.template'
 import {buyForSaleTemplate} from './view/buyForSale.template'
+import {Select} from '../../../core/JS/selectPlugin'
 
 export class Entry {
 
 	constructor() {
 		this.$body = document.querySelector('body')
+		this.$wrapper = null
 	}
 
 	afterInitialization() {
-		const $wrapper = document.querySelector('#Entry-js')
-		$wrapper.addEventListener('click', (event) => this.handleClick(event))
+		this.$wrapper = document.querySelector('#Entry-js')
+		this.$wrapper.addEventListener('click', (event) => this.handleClick(event))
+
+		this.passwordEye()
+		this.select()
 	}
 
 	init() {
@@ -90,6 +95,55 @@ export class Entry {
 		if($wrapper) {
 			$wrapper.remove()
 		}
+	}
+
+	passwordEye() {
+		const eye = this.$wrapper.querySelectorAll('.password-control')
+
+		eye.forEach((item) => {
+			item.addEventListener('click', () => {
+				const $parent = item.closest('[data-input-password-js]')
+				const input = $parent.querySelector('#password-input');
+				if (input.getAttribute('type') === 'password') {
+					item.classList.add('view');
+					input.setAttribute('type', 'text');
+				} else {
+					item.classList.remove('view');
+					input.setAttribute('type', 'password');
+				}
+				return false;
+			})
+		})
+	}
+
+	select() {
+		new Select('#select-test', {
+			originalText: 'Форма собственности*',
+			// selectedId: '2',
+			placeholder: 'Форма собственности*',
+			type: 'test',
+			data: [
+				{id: '1', value: 'ИП'},
+				{id: '2', value: 'ООО'},
+				{id: '3', value: 'ЗАО'},
+			],
+			onSelect(item) {
+				console.log('Selected Item', item)
+			}
+		})
+
+		new Select('#select-phone-registration-js', {
+			placeholder: 'Телефон*',
+			type: 'input',
+			data: [
+				{id: '1', value: 'ИП'},
+				{id: '2', value: 'ООО'},
+				{id: '3', value: 'ЗАО'},
+			],
+			onSelect(item) {
+				console.log('Selected Item', item)
+			}
+		})
 	}
 
 	// шаблоны
