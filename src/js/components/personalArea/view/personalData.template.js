@@ -14,7 +14,7 @@ export function personalDataTemplate() {
 							${TitleData('Сумма на Вашем депозите')}
 							<div class="color">${TitleData('2 468,00 ₽')}</div>
 						</div>
-						<div class="wrapper-box-1">
+						<div class="wrapper-box-4">
 							<input class="input-personal-data" type="text" placeholder="Введите сумму">
 							${ButtonData('Пополнить')}
 						</div>
@@ -31,7 +31,7 @@ export function personalDataTemplate() {
 							${TitleData('Организация')}
 							<div class="organization">Название организации</div>
 						</div>
-						<div class="info-text">Если Вы хотите изменить форму собственности и/или название компании, позвоните менеджеру: +7 800 301-25-75</div>
+						<div class="info-text">Если Вы хотите изменить форму собственности и/или название компании, позвоните менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
 					</div>
 					<div class="wrapper-box">
 						<div class="wrapper-box-1">
@@ -46,9 +46,9 @@ export function personalDataTemplate() {
 							<div class="transport-company">Название города</div>
 						</div>
 						<div class="tower">
-							<div style="width: 466px">
+							<div class="width-info">
 								<div style="margin-bottom: 16px"><span style="color: #AB064E">Внимание!</span> Указан город, в котором Вы получите груз</div>
-								<div>Информация о городе доставки берется из данных при регистрации на сайте. Если Вы хотите изменить город доставки и у Вас есть оплаченный заказ, позвоните нашему менеджеру: +7 800 301-25-75</div>
+								<div>Информация о городе доставки берется из данных при регистрации на сайте. Если Вы хотите изменить город доставки и у Вас есть оплаченный заказ, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
 							</div>						
 							${ButtonData('Изменить')}
 						</div>						
@@ -71,8 +71,8 @@ export function personalDataTemplate() {
 							<div>108840, Россия, Троицк, ул. Академика Черенкова, 3 (склад сдек)</div>
 						</div>
 						<div class="tower">
-							<div style="width: 466px">
-								<div><span style="color: #AB064E">Внимание!</span> Информация по адресу доставки берется из Вашего первого заказа. Если в дальнейшем Вы хотите изменить адрес доставки и у Вас есть отправленный нам заказ, позвоните нашему менеджеру: +7 800 301-25-75</div>
+							<div class="width-info">
+								<div><span style="color: #AB064E">Внимание!</span> Информация по адресу доставки берется из Вашего первого заказа. Если в дальнейшем Вы хотите изменить адрес доставки и у Вас есть отправленный нам заказ, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
 							</div>						
 							${ButtonData('Изменить')}
 						</div>						
@@ -80,8 +80,10 @@ export function personalDataTemplate() {
 					<div class="wrapper-box">
 						<div class="wrapper-box-1">
 							${TitleData('Гостевые логины')}
-							<img src="${close}" alt="" style="width: 10px; height: 10px; margin-left: 12px;margin-right: 12px">
-							<div>Гостевой логин (наценка 0% + 0)</div>
+							<div class="password-guest">
+								<img src="${close}" alt="" style="width: 10px; height: 10px;margin-right: 12px">
+								<div>Гостевой логин (наценка 0% + 0)</div>
+							</div>
 						</div>
 						${ButtonData('Изменить')}
 					</div>
@@ -99,10 +101,8 @@ export function personalDataTemplate() {
 						</select>
 					</div>
 					<div class="wrapper-box-3">
-						<div class="wrapper-box-1">
-							${TitleData('Рассылка')}
-							<div class="checkbox-data">${checkboxRegistration('Получать рассылку об акциях и новинках')}</div>
-						</div>
+						${TitleData('Рассылка')}
+						<div class="checkbox-data">${checkboxRegistration('Получать рассылку об акциях и новинках')}</div>
 					</div>
 				</div>
 			</div>

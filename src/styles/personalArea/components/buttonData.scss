@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 160px;
+  width: 160px;
   height: 36px;
   background: #B2B2B2;
   color: #FFFFFF;
@@ -12,5 +12,8 @@
   cursor: pointer;
   &:hover {
     background: #AB064E;
+  }
+  @media (max-width: 715px) {
+    width: 100%;
   }
 }

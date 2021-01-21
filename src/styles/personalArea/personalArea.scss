@@ -25,4 +25,12 @@
       }
     }
   }
+  @media (max-width: 1024px) {
+    .wrapper-personal-area {
+      padding: 0 15px;
+    }
+    .transitionWrapper {
+      padding-left: 0;
+    }
+  }
 }
