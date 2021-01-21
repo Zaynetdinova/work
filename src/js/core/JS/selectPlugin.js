@@ -1,8 +1,8 @@
 import arrow from "../../../images/icons/arrow2.svg"
 
-const getTemplate = (data = [], placeholder, selectedId, type = '') => {
+const getTemplate = (data = [], placeholder, originalText, selectedId, type = '') => {
 	let text = placeholder ?? 'Placeholder по умолчанию'
-
+	let mainText = originalText ?? 'На странице'
 	const items = data.map(item => {
 		// let cls = ''
 		// if (item.id === selectedId) {
@@ -18,16 +18,36 @@ const getTemplate = (data = [], placeholder, selectedId, type = '') => {
 
 	if(type === 'test') {
 		return test(items, text)
+	} else if(type === 'input') {
+		return inputSelectedItem(items, text)
 	} else {
-		return defaultSelectedItem(items, text)
+		return defaultSelectedItem(items, text, mainText)
 	}
+
 
 
 }
 
+function inputSelectedItem(items, text) {
+	return `
+    <div class="wrapper-select">
+    
+   		<article data-type="input" class="input-selected-item">
+				<input class="input-name" placeholder="Телефон*">
+				<div class="arrow-wrapper">
+					<img class="arrow" src="${arrow}" alt="">      
+					<span data-type="value" class="value">${text}</span>
+				</div> 
+			</article>
+			
+			<div class="popup-selected-items">  ${items.join('')}</div>        
+		</div> 
+  `
+}
+
 function test(items, text) {
 	return `
-    <div class="">
+    <div class="wrapper-select">
     
    		<article data-type="input" class="input-selected-item">
 				<section class="Com-disp-flex-al-center">
@@ -44,12 +64,12 @@ function test(items, text) {
   `
 }
 
-function defaultSelectedItem(items, text) {
+function defaultSelectedItem(items, text, mainText) {
 	return `
-    <div class="">
+    <div class="wrapper-select">
     
    		<article data-type="input" class="input-selected-item">
-				<div class="title" >На странице</div>
+				<div class="title" >${mainText}</div>
 				<div class="arrow-wrapper">
 					<img class="arrow" src="${arrow}" alt="">      
 					<span data-type="value" class="value">${text}</span>
@@ -72,10 +92,9 @@ export class Select {
 	}
 
 	render() {
-		const {placeholder, data, type} = this.options
-		console.log(type)
+		const {placeholder, originalText, data, type} = this.options
 		this.$el.classList.add('select')
-		this.$el.innerHTML = getTemplate(data, placeholder, this.selectedId, type)
+		this.$el.innerHTML = getTemplate(data, placeholder, originalText,  this.selectedId, type)
 	}
 
 	setup() {

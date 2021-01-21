@@ -103,7 +103,57 @@
         width: 20px;
         height: 20px;
         background: url("../images/icons/eyes.svg") center no-repeat;
+        &.view {
+          background: url("../images/icons/eyes2.svg") center no-repeat;
+        }
       }
+    }
+
+    .select-organization {
+      height: 30px;
+      margin-top: 18px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+
+      .wrapper-select {
+        width: 100%;
+        .input-selected-item {
+          margin-bottom: 4px;
+
+          .title {
+            color: #fff;
+
+          }
+        }
+
+        .popup-selected-items {
+          padding: 0;
+          border-top: none;
+          margin-top: 0;
+
+          .select-item {
+            padding: 10px 16px;
+            border-bottom: 1px solid red;
+          }
+
+          .select-item:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .input-name {
+        font-size: 14px;
+        line-height: 16px;
+        outline: none;
+        height: 30px;
+        background: transparent;
+        width: 100%;
+        border: none;
+      }
+
     }
   }
 }

@@ -29,13 +29,14 @@ export function buyForMeTemplate() {
             </div>
             <div class="wrap-input">
                 <input class="input-name" placeholder="Э-почта* (логин)" type="text">
-                <div class="password2">
+<!--                error password2 переименоать-->
+                <div data-input-password-js class="password password2">
                     <input class="input-name" type="password" id="password-input" placeholder="Пароль*" name="password">
-                    <a href="#" class="password-control"></a>
+                    <div class="password-control"></div>
                 </div>
-                <div class="password2">
+                <div data-input-password-js class="password password2">
                     <input class="input-name" type="password" id="password-input" placeholder="Повторите пароль*" name="password">
-                    <a href="#" class="password-control"></a>
+                    <div class="password-control"></div>
                 </div>
                 <input class="input-name" placeholder="Город* (город доставки)" type="text">   
             </div>
