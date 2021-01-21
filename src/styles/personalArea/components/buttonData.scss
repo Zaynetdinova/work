@@ -1,0 +1,16 @@
+.button-personal-data {
+  font-size: 15px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 36px;
+  background: #B2B2B2;
+  color: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background: #AB064E;
+  }
+}

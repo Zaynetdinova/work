@@ -40,7 +40,7 @@ export function buyForMeTemplate() {
                 <input class="input-name" placeholder="Город* (город доставки)" type="text">   
             </div>
         </div>
-        ${checkboxRegistration()}
+        ${checkboxRegistration('Даю согласие на обработку персональных данных')}
         <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
         ${infoTextRegistration()} 
     `

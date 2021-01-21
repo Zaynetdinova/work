@@ -1,10 +1,10 @@
-export function checkboxRegistration() {
+export function checkboxRegistration(text) {
     return `
         <div class="wrap-checkbox">
-            <input class="checkbox checkbox-filter-js" type="checkbox" id="forMe" data-text="Даю согласие на обработку персональных данных"> 
+            <input class="checkbox checkbox-filter-js" type="checkbox" id="forMe"> 
             <label for="forMe">
                 <div class="text-checkbox">
-                Даю согласие на обработку персональных данных
+                    ${text}
                 </div>
             </label>
         </div> 
