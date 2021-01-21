@@ -4,6 +4,7 @@
   color: #3D3D3C;
   font-size: 14px;
   line-height: 15px;
+
   .title-data-main {
     font-weight: bold;
     font-size: 18px;
@@ -11,18 +12,23 @@
     margin-top: 40px;
     margin-bottom: 22px;
   }
+
   .wrapper-columns,
   .wrapper-box,
-  .wrapper-box-1 {
+  .wrapper-box-1,
+  .wrapper-box-4 {
     display: flex;
     justify-content: space-between;
   }
+
   .wrapper-columns {
     margin-bottom: 140px;
+
     .first-column,
     .second-column {
       display: flex;
       flex-direction: column;
+
       .wrapper-box,
       .wrapper-box-2,
       .wrapper-box-3 {
@@ -31,11 +37,38 @@
         background: #F3F2F0;
         width: 710px;
         margin-bottom: 10px;
+
         &:last-child {
           margin-bottom: 0;
         }
+
         .wrapper-box-1 {
           align-items: center;
+
+          .color {
+            color: #AB064E;
+            margin-left: 10px;
+          }
+
+          .transport-company {
+            margin-left: 14px;
+          }
+
+          .password {
+            color: #AB064E;
+            margin-left: 12px;
+          }
+
+          .organization {
+            margin-left: 10px;
+          }
+          .password-guest {
+            display: flex;
+            align-items: center;
+            margin-left: 12px;
+          }
+        }
+        .wrapper-box-4 {
           .input-personal-data {
             font-size: 13px;
             text-align: center;
@@ -44,30 +77,18 @@
             height: 36px;
             margin-right: 6px;
             border: 1px solid #C4C4C4;
+
             &:focus {
               outline: none;
               border: 1px solid #777777;
             }
-          }
-          .color {
-            color: #AB064E;
-            margin-left: 10px;
-          }
-          .transport-company {
-            margin-left: 14px;
-          }
-          .password {
-            color: #AB064E;
-            margin-left: 12px;
-          }
-          .organization {
-            margin-left: 10px;
           }
         }
         .checkbox-data {
           .wrap-checkbox {
             margin-top: 0;
             margin-left: 10px;
+
             .text-checkbox {
               font-style: normal;
               font-size: 14px;
@@ -76,6 +97,7 @@
               text-decoration-line: none;
               color: #3D3D3C;
             }
+
             input[type="checkbox"]:checked + label:before,
             input[type="checkbox"]:not(:checked) + label:before {
               width: 14px;
@@ -85,6 +107,7 @@
             }
           }
         }
+
         select {
           font-size: 14px;
           line-height: 16px;
@@ -94,24 +117,30 @@
           height: 36px;
           outline: none;
           border: 1px solid #C4C4C4;
+
           option {
             padding-right: 14px;
             padding-left: 15px;
           }
         }
       }
+
       .wrapper-box-3 {
         padding: 30px 20px;
+        display: flex;
       }
+
       .wrapper-box-2 {
         display: flex;
         flex-direction: column;
         align-items: start;
         padding: 19px 20px 18px 20px;
+
         .info-text {
           font-size: 12px;
           line-height: 17px;
         }
+
         .tower {
           display: flex;
           justify-content: space-between;
@@ -120,11 +149,141 @@
           width: 100%;
           font-size: 12px;
           line-height: 17px;
+          .width-info {
+            width: 466px;
+          }
         }
+
         .wrap-close-text {
           display: flex;
           align-items: baseline;
           margin-top: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1470px) {
+    .wrapper-columns {
+      .first-column,
+      .second-column {
+        .wrapper-box,
+        .wrapper-box-2,
+        .wrapper-box-3 {
+          width: 690px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1439px) {
+    .wrapper-columns {
+      flex-direction: column;
+      .first-column,
+      .second-column {
+        .wrapper-box,
+        .wrapper-box-2,
+        .wrapper-box-3 {
+          width: 100%;
+          &:last-child {
+            margin-bottom: 10px;
+          }
+        }
+        .wrapper-box-2 {
+          .tower {
+            .width-info {
+              width: 637px;
+            }
+          }
+          .wrap-close-text {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .wrapper-columns {
+      margin-bottom: 250px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .wrapper-columns {
+      margin-bottom: 240px;
+    }
+  }
+  @media (max-width: 715px) {
+    .wrapper-columns {
+      margin-bottom: 131px;
+      .first-column,
+      .second-column {
+        .wrapper-box,
+        .wrapper-box-2,
+        .wrapper-box-3 {
+          padding: 18px 15px 16px 15px;
+          flex-direction: column;
+          align-items: flex-start;
+          .wrapper-box-1 {
+            flex-direction: column;
+            align-items: flex-start;
+            .color {
+              margin-left: 0;
+              margin-top: 10px;
+              margin-bottom: 12px;
+            }
+            .password {
+              margin-left: 0;
+              margin-top: 10px;
+              margin-bottom: 12px;
+            }
+            .organization {
+              margin-left: 0;
+              margin-top: 10px;
+              margin-bottom: 12px;
+            }
+            .password-guest {
+              margin-left: 0;
+              margin-top: 10px;
+              margin-bottom: 12px;
+            }
+            .transport-company {
+              margin-left: 0;
+              margin-top: 10px;
+              margin-bottom: 12px;
+            }
+          }
+          .wrapper-box-4 {
+            width: 100%;
+            .input-personal-data {
+              width: 100%;
+            }
+          }
+          select {
+            width: 100%;
+            margin-top: 15px;
+          }
+          .checkbox-data {
+            margin-top: 7px;
+            .wrap-checkbox {
+              margin-left: 0;
+            }
+          }
+        }
+        .wrapper-box-2 {
+          .info-text {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          .tower {
+            align-items: normal;
+            flex-direction: column-reverse;
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 20px;
+            .width-info {
+              width: 100%;
+              margin-top: 12px;
+            }
+          }
         }
       }
     }
