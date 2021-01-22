@@ -1,6 +1,7 @@
 .Personal-area {
   @import './components/navigation';
   @import './components/personalData';
+  @import './components/basket';
   .wrapper-personal-area {
     max-width: 1480px;
     margin: 0 auto;
