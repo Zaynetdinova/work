@@ -12,6 +12,7 @@ import Georgia from '../../../../images/icons/georgia.svg'
 import Kazakhstan from '../../../../images/icons/kazakhstan.svg'
 import Russia from '../../../../images/icons/russia.svg'
 import Inputmask from 'inputmask'
+import {inputMaskPhone} from '../../../core/utils/inputMaskPhone'
 
 export class Entry {
 
@@ -23,22 +24,34 @@ export class Entry {
 	afterInitialization() {
 		this.$wrapper = document.querySelector('#Entry-js')
 		this.$wrapper.addEventListener('click', (event) => this.handleClick(event))
-
 		this.passwordEye()
-		// this.select()
 	}
 
 	init() {
+		// объединить mobile и desktop
 		const $button = document.querySelector('#entry-registration-button-js')
 		//mobile
 		const $buttonMobile = document.querySelector('#enter-button-js')
+
 		if($buttonMobile) {
-			$buttonMobile.addEventListener('click', () => this.addElement(this.toEntry()))
+			$buttonMobile.addEventListener('click', () => {
+				this.addElement(this.toEntry())
+			})
 		}
-		$button.addEventListener('click', () => this.addElement(this.toEntry()))
+		$button.addEventListener('click', () => {
+			this.addElement(this.toEntry())
+		})
+
+
 		const $call = document.querySelector('#backCall')
+
 		if ($call) {
-			$call.addEventListener('click', () => this.addElement(this.toBack()))
+			$call.addEventListener('click', () => {
+				this.addElement(this.toBack())
+				this.testSelect('#back-call-js')
+				inputMaskPhone('.test-mask')
+			})
+
 		}
 	}
 
@@ -70,25 +83,15 @@ export class Entry {
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
 			this.select()
-			const selector = document.querySelector(".test-mask");
-			const im = new Inputmask("+7 (999) -999-99-99");
-			im.mask(selector);
+			inputMaskPhone('.test-mask')
 		}
 
 		if(clickElem.closest('#buy-for-me-js')) {
 			this.addElement(this.toBuyForMe())
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
-			this.testSelect()
-			const selector = document.querySelector(".test-mask");
-			const im = new Inputmask("+7 (999) -999-99-99");
-			im.mask(selector);
-		}
-		if(clickElem.closest('#backCall')) {
-			this.selectTest2()
-			const selector = document.querySelector(".test-mask");
-			const im = new Inputmask("+7 (999) -999-99-99");
-			im.mask(selector);
+			this.testSelect('#select-phone-registration-js')
+			inputMaskPhone('.test-mask')
 		}
 
 		//back
@@ -200,8 +203,8 @@ export class Entry {
 		})
 	}
 
-	testSelect() {
-		new Select('#select-phone-registration-js', {
+	testSelect(selector) {
+		new Select(selector, {
 			placeholder: Russia,
 			type: 'input',
 			data: [
@@ -241,47 +244,7 @@ export class Entry {
 			}
 		})
 	}
-	selectTest2() {
-		new Select('#number-js', {
-			placeholder: Russia,
-			type: 'input',
-			data: [
-				{
-					phone: '+374',
-					country: 'Армения',
-					value: Armenia,
-					id: '1'
-				},
-				{
-					phone: '+375',
-					country: 'Белоруссия',
-					value: Belarus,
-					id: '2'
-				},
-				{
-					phone: '+995',
-					country: 'Грузия',
-					value: Georgia,
-					id: '3'
-				},
-				{
-					phone: '+7',
-					country: 'Казахстан',
-					value: Kazakhstan,
-					id: '4'
-				},
-				{
-					phone: '+7',
-					country: 'Россия',
-					value: Russia,
-					id: '5'
-				},
-			],
-			onSelect(item) {
-				console.log('Selected Item', item)
-			}
-		})
-	}
+
 
 	// шаблоны
 	toEntry() {

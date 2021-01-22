@@ -8,7 +8,7 @@ export function backCall() {
         ${titleRegistration('Обратный звонок')}
         <div class="wrap-input">
             <input class="input-name"  placeholder="Имя*" type="text" name="name">
-            <div id="number-js" class="password2 select-organization"></div>
+            <div id="back-call-js" class="password2 select-organization"></div>
         </div>
         <div class="wrapper-phoneBackCall-btnCall">
             <div class="phoneBackCall">
