@@ -1,6 +1,4 @@
 import close from '../../../../images/icons/close-regisr.svg'
-import arrow from '../../../../images/icons/arrow-back.svg'
-
 export function indexTemplate(component) {
 	return `
 		<div id="Entry-js" class="Entry">
@@ -8,11 +6,11 @@ export function indexTemplate(component) {
 			<div id="entry-wrapper-js" class="wrapper-Entry">
 			<div class="wrap-back">
 				<div id="back-js" class="back">
-					<img class="btn" src="${arrow}" alt="">
+					<div class="btn"></div>
 					<span>Назад</span>
 				</div>
 				<span></span>
-				<div class="close"><article class="close-icon"  id="close-entry-registration-js"><img src="${close}" alt=""></article></div>
+				<div class="close"><article class="close-icon"  id="close-entry-registration-js"><div class="btn-close"></div></article></div>
 			</div>
 						
 			${component}

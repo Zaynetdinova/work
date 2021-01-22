@@ -24,10 +24,22 @@
       color: rgba(255, 255, 255, 0.5);
       cursor: pointer;
       .btn {
+        background-image: url("../images/icons/arrow-back.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 21px;
         margin-right: 3px;
       }
       &.block {
-        display: block;
+        display: flex;
+        align-items: center;
+      }
+      &:hover {
+        color: #FFFFFF;
+        .btn {
+          background-image: url("../images/icons/arrow-back-white.svg");
+        }
       }
     }
   }
@@ -53,6 +65,18 @@
       padding: 10px 0 10px 10px;
       cursor: pointer;
     }
+    .btn-close {
+      background-image: url("../images/icons/close-regisr.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+    &:hover {
+      .btn-close {
+        background-image: url("../images/icons/close_popup_white.svg");
+      }
+    }
   }
   .wrap-input {
     display: flex;
@@ -64,8 +88,13 @@
     input:focus::placeholder, {
       color: #FFFFFF;
     }
-
-
+    input:-webkit-autofill {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+      -webkit-text-fill-color: #FFFFFF;
+      -webkit-box-shadow: 0 0 0 1000px transparent inset;
+      transition: background-color 5000s ease-in-out 0s;
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+    }
     input {
       color: #FFFFFF;
       border-top: none;
@@ -120,7 +149,6 @@
 
           .title {
             color: #fff;
-
           }
         }
 
@@ -165,7 +193,6 @@
         border: none;
         color: #ffffff;
       }
-
     }
   }
 }
