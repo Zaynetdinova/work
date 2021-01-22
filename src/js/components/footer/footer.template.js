@@ -6,8 +6,6 @@ import schema  from '../../../images/footer/shema.svg'
 import card from '../../../images/footer/card_bank.svg'
 import phone from '../../../images/icons/icon_phone_black.svg'
 import {sidebarPoint} from "../common/sidebarPoint";
-import {backCall} from "../backСall/backСall.template";
-
 
 export function footerTemplate() {
   return `
@@ -86,7 +84,6 @@ export function footerTemplate() {
                                 <article class="btnRequestCall" id="backCallFooter">
                                     <div class="textCall">ЗАКАЗАТЬ ЗВОНОК</div>
                                     <img class="imgPhone" src="${phone}" alt="">
-                                    ${backCall()}
                                 </article>
                             </div>
                             <div class='mode'>

@@ -41,31 +41,3 @@ export function buyForMeTemplate() {
         ${infoTextRegistration()} 
     `
 }
-
-let popup = [
-    {
-        phone: '+374',
-        country: 'Армения',
-        img: Armenia
-    },
-    {
-        phone: '+375',
-        country: 'Белоруссия',
-        img: Belarus
-    },
-    {
-        phone: '+995',
-        country: 'Грузия',
-        img: Georgia
-    },
-    {
-        phone: '+7',
-        country: 'Казахстан',
-        img: Kazakhstan
-    },
-    {
-        phone: '+7',
-        country: 'Россия',
-        img: Russia
-    },
-]

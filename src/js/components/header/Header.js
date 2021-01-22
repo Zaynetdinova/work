@@ -96,24 +96,6 @@ function spreaderClick(e) {
         info('close')
         showRegistryUserData()
         break;
-      case 'backCall':
-        showBackCall()
-        break;
-      case 'closeImg-backCall':
-        showBackCall('close')
-        break;
-      case 'entry':
-        showEntry()
-        break;
-      case 'closeImg-entry':
-        showEntry('close')
-        showEntry2('close')
-        break;
-      case 'restore':
-        showRestorePassword()
-        showRestorePassword2()
-        break;
-
     }
   }
 }

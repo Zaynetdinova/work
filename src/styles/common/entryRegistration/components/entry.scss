@@ -1,18 +1,23 @@
 .wrapper-Entry {
   max-width: 500px;
   margin: 67px auto 67px auto;
+
   .wrap-input {
     margin-top: 52px;
   }
+
   .restore-input {
     margin-bottom: 60px;
+
     .wrap-input {
       margin-top: 0;
+
       .input-name {
         margin: 0;
       }
     }
   }
+
   .title-restorePassword {
     font-weight: bold;
     font-size: 15px;
@@ -22,6 +27,7 @@
     border-bottom: 1px solid #F3F2F0;
     margin-top: 57px;
   }
+
   .text-email {
     font-style: italic;
     font-size: 14px;
@@ -41,12 +47,14 @@
     line-height: 100%;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+
     .restore {
       font-style: italic;
       color: rgba(255, 255, 255, 0.5);
       text-decoration: underline;
       margin-left: 6px;
       cursor: pointer;
+
       &:hover {
         color: #FFFFFF;
       }
@@ -59,25 +67,123 @@
     line-height: 16px;
     color: #FFFFFF;
     text-align: center;
+
     .sign-up {
       font-style: italic;
       color: rgba(255, 255, 255, 0.5);
       text-decoration: underline;
       cursor: pointer;
+
       &:hover {
         color: #FFFFFF;
       }
     }
   }
 
-  @media (max-width: 550px) {
+  .wrapper-phoneBackCall-btnCall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .phoneBackCall {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 44px;
+      margin-bottom: 38px;
+
+      .wrapper-number-BackCall {
+        margin-left: 6px;
+
+        .number {
+          font-size: 14px;
+          line-height: 100%;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .bottom-wrapperBackCall {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+
+    .leftBackCall,
+    .rightBackCall {
+      display: flex;
+      align-items: start;
+
+      .address {
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 128%;
+        color: #FFFFFF;
+
+        a {
+          text-decoration-line: underline;
+          font-style: italic;
+          color: rgba(255, 255, 255, 0.5);
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.9);
+          }
+        }
+      }
+    }
+
+    .rightBackCall {
+      .address {
+        margin-left: 7px;
+      }
+    }
+
+    @media (max-width: 550px) {
       max-width: 354px;
-  }
-  @media (max-width: 410px) {
+      .wrapper-phoneBackCall-btnCall {
+        .phoneBackCall {
+          justify-content: normal;
+          align-items: start;
+          .wrapper-number-BackCall {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .number {
+            }
+          }
+        }
+      }
+      .bottom-wrapperBackCall {
+        margin-top: 0;
+        margin-left: 5px;
+        flex-direction: column;
+        .leftBackCall,
+        .rightBackCall {
+          .address {
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .wrapper-phoneBackCall-btnCall {
+        align-items: start;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+        .phoneBackCall {
+          margin: 0;
+        }
+      }
+    }
+    @media (max-width: 410px) {
       max-width: 315px;
-  }
-  @media (max-width: 374px) {
+    }
+    @media (max-width: 374px) {
       max-width: 260px;
+    }
   }
 }
 //problem
@@ -85,7 +191,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 
 

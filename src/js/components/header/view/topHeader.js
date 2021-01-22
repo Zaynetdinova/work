@@ -1,4 +1,4 @@
-import {backCall} from '../../backСall/backСall.template'
+import {backCall} from '../../common/entry/view/backСall.template'
 
 export function topHeader() {
     return `
@@ -25,9 +25,7 @@ export function topHeader() {
                             <a href='tel:+74996088925'>8 (499) 608-89-25,</a>
                             <a class='lk_link2' href='tel:+78003012575'> (800) 301-25-75</a>
                         </span>
-                        <article id="backCall" class='lk_link'>Заказать звонок
-                            ${backCall()}
-                        </article>
+                        <article id="backCall" class='lk_link'>Заказать звонок</article>
                     </nav>
                 </div> 
             </div>

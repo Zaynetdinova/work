@@ -4,6 +4,7 @@ import {restorePassword} from './view/restorePassword'
 import {indexTemplate} from './index.template'
 import {buyForMeTemplate} from './view/buyForMe.template'
 import {buyForSaleTemplate} from './view/buyForSale.template'
+import {backCall} from "./view/backСall.template";
 import {Select} from '../../../core/JS/selectPlugin'
 import Armenia from '../../../../images/icons/armenia.svg'
 import Belarus from '../../../../images/icons/belarus.svg'
@@ -35,6 +36,10 @@ export class Entry {
 			$buttonMobile.addEventListener('click', () => this.addElement(this.toEntry()))
 		}
 		$button.addEventListener('click', () => this.addElement(this.toEntry()))
+		const $call = document.querySelector('#backCall')
+		if ($call) {
+			$call.addEventListener('click', () => this.addElement(this.toBack()))
+		}
 	}
 
 	addElement($el) {
@@ -66,18 +71,23 @@ export class Entry {
 			this.controlBack('restore-className-js')
 			this.select()
 			const selector = document.querySelector(".test-mask");
-			const im = new Inputmask("999-999-99-99");
+			const im = new Inputmask("+7 (999) -999-99-99");
 			im.mask(selector);
 		}
 
 		if(clickElem.closest('#buy-for-me-js')) {
-
 			this.addElement(this.toBuyForMe())
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
 			this.testSelect()
 			const selector = document.querySelector(".test-mask");
-			const im = new Inputmask("999-999-99-99");
+			const im = new Inputmask("+7 (999) -999-99-99");
+			im.mask(selector);
+		}
+		if(clickElem.closest('#backCall')) {
+			this.selectTest2()
+			const selector = document.querySelector(".test-mask");
+			const im = new Inputmask("+7 (999) -999-99-99");
 			im.mask(selector);
 		}
 
@@ -231,6 +241,47 @@ export class Entry {
 			}
 		})
 	}
+	selectTest2() {
+		new Select('#number-js', {
+			placeholder: Russia,
+			type: 'input',
+			data: [
+				{
+					phone: '+374',
+					country: 'Армения',
+					value: Armenia,
+					id: '1'
+				},
+				{
+					phone: '+375',
+					country: 'Белоруссия',
+					value: Belarus,
+					id: '2'
+				},
+				{
+					phone: '+995',
+					country: 'Грузия',
+					value: Georgia,
+					id: '3'
+				},
+				{
+					phone: '+7',
+					country: 'Казахстан',
+					value: Kazakhstan,
+					id: '4'
+				},
+				{
+					phone: '+7',
+					country: 'Россия',
+					value: Russia,
+					id: '5'
+				},
+			],
+			onSelect(item) {
+				console.log('Selected Item', item)
+			}
+		})
+	}
 
 	// шаблоны
 	toEntry() {
@@ -251,5 +302,8 @@ export class Entry {
 
 	toBuyForSale() {
 		return buyForSaleTemplate()
+	}
+	toBack() {
+		return backCall()
 	}
 }

@@ -70,6 +70,12 @@
   input[type="checkbox"]:checked + label:after {
     opacity: 1;
   }
+  &:hover {
+    input[type="checkbox"]:checked + label:before,
+    input[type="checkbox"]:not(:checked) + label:before {
+      background: #FFFFFF;
+    }
+  }
   @media (max-width: 890px) {
     margin-top: 40px;
   }
