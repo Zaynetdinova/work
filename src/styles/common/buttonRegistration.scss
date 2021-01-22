@@ -10,6 +10,10 @@
   padding: 8px 0 9px 0;
   cursor: pointer;
   margin: 0 auto;
+  &:hover {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+  }
   @media (max-width: 550px) {
       margin-bottom: 50px;
   }

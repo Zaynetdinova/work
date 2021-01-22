@@ -1,4 +1,4 @@
-import arrow from "../../../images/icons/arrow2.svg"
+import arrow from "../../../images/icons/arrow3.svg"
 import {popupPhone} from '../../components/common/entry/view/popupPhone'
 import Inputmask from "inputmask";
 
