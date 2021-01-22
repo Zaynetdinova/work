@@ -3,12 +3,6 @@ import {titleBuy} from "../../titleBuy";
 import {checkboxRegistration} from "../../checkboxRegistration";
 import {infoTextRegistration} from "../../infoTextRegistration";
 import {buttonRegistration} from "../../buttonRegistration";
-import {popupPhone} from "./popupPhone";
-import Armenia from "../../../../../images/icons/armenia.svg";
-import Belarus from "../../../../../images/icons/belarus.svg";
-import Georgia from "../../../../../images/icons/georgia.svg";
-import Kazakhstan from "../../../../../images/icons/kazakhstan.svg";
-import Russia from "../../../../../images/icons/russia.svg";
 
 export function buyForSaleTemplate() {
     return `
@@ -50,48 +44,3 @@ export function buyForSaleTemplate() {
     `
 }
 
-let popup = [
-    {
-        phone: 'ИП',
-        img:'',
-        country: ''
-    },
-    {
-        phone: 'ООО',
-        img:'',
-        country: ''
-    },
-    {
-        phone: 'ЗАО',
-        img:'',
-        country: ''
-    },
-]
-
-let popup2 = [
-    {
-        phone: '+374',
-        country: 'Армения',
-        img: Armenia
-    },
-    {
-        phone: '+375',
-        country: 'Белоруссия',
-        img: Belarus
-    },
-    {
-        phone: '+995',
-        country: 'Грузия',
-        img: Georgia
-    },
-    {
-        phone: '+7',
-        country: 'Казахстан',
-        img: Kazakhstan
-    },
-    {
-        phone: '+7',
-        country: 'Россия',
-        img: Russia
-    },
-]
