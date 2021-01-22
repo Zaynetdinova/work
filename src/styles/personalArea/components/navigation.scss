@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
 
-
   .item {
     width: 25%;
     text-align: center;
@@ -15,7 +14,8 @@
     line-height: 13px;
 
     &.active {
-      border-bottom: 4px solid #AB064E;;
+      border-bottom: 4px solid #AB064E;
+      font-weight: bold;
     }
   }
 }
