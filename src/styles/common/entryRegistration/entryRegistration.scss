@@ -57,6 +57,23 @@
     background: linear-gradient(90.08deg, rgba(113, 0, 103, 0.95) 3.72%, rgba(207, 9, 62, 0.95) 122.63%);
     cursor: auto;
   }
+  .popup-phone {
+    background: #FFFFFF;
+    padding: 10px 10px 10px 16px;
+    border-bottom: 1px solid  #AB064E;
+    cursor: pointer;
+    &:hover {
+      background: #F3F2F0;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    .text {
+      font-size: 14px;
+      line-height: 16px;
+      color: #3D3D3C;
+    }
+  }
   .close {
     display: flex;
     justify-content: flex-end;

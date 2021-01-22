@@ -52,23 +52,6 @@
       flex-direction: column;
       z-index: 10;
     }
-    .popup-phone {
-      background: #FFFFFF;
-      padding: 10px 10px 10px 16px;
-      border-bottom: 1px solid  #AB064E;
-      cursor: pointer;
-      &:hover {
-        background: #F3F2F0;
-      }
-      &:last-child {
-        border-bottom: none;
-      }
-      .text {
-        font-size: 14px;
-        line-height: 16px;
-        color: #3D3D3C;
-      }
-    }
   }
   .wrapper-button {
     margin-top: 43px;
