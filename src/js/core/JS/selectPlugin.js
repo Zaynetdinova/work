@@ -1,4 +1,6 @@
 import arrow from "../../../images/icons/arrow2.svg"
+import {popupPhone} from '../../components/common/entry/view/popupPhone'
+import Inputmask from "inputmask";
 
 const getTemplate = (data = [], placeholder, originalText, selectedId, type = '') => {
 	let text = placeholder ?? 'Placeholder по умолчанию'
@@ -19,7 +21,7 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 	if(type === 'test') {
 		return test(items, text)
 	} else if(type === 'input') {
-		return inputSelectedItem(items, text)
+		return inputSelectedItem(data, text)
 	} else {
 		return defaultSelectedItem(items, text, mainText)
 	}
@@ -28,19 +30,24 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 
 }
 
-function inputSelectedItem(items, text) {
+function inputSelectedItem(data, text) {
+
 	return `
-    <div class="wrapper-select">
+    <div class="wrapper-select wrapper-select-input">
     
-   		<article data-type="input" class="input-selected-item">
-				<input class="input-name" placeholder="Телефон*">
-				<div class="arrow-wrapper">
+   		<div class="input-selected-item">
+				<input class="input-name test-mask" placeholder="Телефон*">
+				<article data-type="input" class="arrow-wrapper">
 					<img class="arrow" src="${arrow}" alt="">      
-					<span data-type="value" class="value">${text}</span>
-				</div> 
-			</article>
+					<span data-type="value" class="value">
+						<img src="${text}">
+					</span>
+				</article> 
+			</div>
 			
-			<div class="popup-selected-items">  ${items.join('')}</div>        
+			<div class="popup-selected-items">  
+					${popupPhone(data)}
+				</div>        
 		</div> 
   `
 }
@@ -95,6 +102,7 @@ export class Select {
 		const {placeholder, originalText, data, type} = this.options
 		this.$el.classList.add('select')
 		this.$el.innerHTML = getTemplate(data, placeholder, originalText,  this.selectedId, type)
+
 	}
 
 	setup() {
@@ -102,6 +110,8 @@ export class Select {
 		this.$el.addEventListener('click', this.clickHandler)
 		this.$value = this.$el.querySelector('[data-type="value"]')
 	}
+
+
 
 	clickHandler(event) {
 		if(event.target.closest('article')) {
@@ -115,6 +125,9 @@ export class Select {
 				case 'item':
 					const id = event.target.dataset.id
 					this.select(id)
+					break
+				case 'input-item':
+					this.inputSelect(element)
 			}
 		}
 	}
@@ -127,9 +140,38 @@ export class Select {
 		return this.options.data.find(item => item.id === this.selectedId)
 	}
 
+	inputSelect(element) {
+
+
+			//error
+			// const selector = document.querySelector(".test-mask");
+			// const im = new Inputmask("999-999-99-99");
+			// im.mask(selector);
+
+		this.selectedId = element.dataset.id
+
+		this.$value.innerHTML = `
+		<span data-type="value" class="value">
+						<img src="${this.current.value}">
+					</span>
+		
+		`
+
+		// this.$el.querySelectorAll('[data-type="item"]').forEach(el => {
+		// 	el.classList.remove('selected')
+		// })
+		// this.$el.querySelector(`[data-id="${id}"]`).classList.add('selected')
+		//
+		// this.options.onSelect ? this.options.onSelect(this.current) : null
+
+		this.close()
+
+	}
+
 	select(id) {
 		this.selectedId = id
 		this.$value.textContent = this.current.value
+		console.log(this.current)
 
 		this.$el.querySelectorAll('[data-type="item"]').forEach(el => {
 			el.classList.remove('selected')

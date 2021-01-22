@@ -5,6 +5,12 @@ import {indexTemplate} from './index.template'
 import {buyForMeTemplate} from './view/buyForMe.template'
 import {buyForSaleTemplate} from './view/buyForSale.template'
 import {Select} from '../../../core/JS/selectPlugin'
+import Armenia from '../../../../images/icons/armenia.svg'
+import Belarus from '../../../../images/icons/belarus.svg'
+import Georgia from '../../../../images/icons/georgia.svg'
+import Kazakhstan from '../../../../images/icons/kazakhstan.svg'
+import Russia from '../../../../images/icons/russia.svg'
+import Inputmask from 'inputmask'
 
 export class Entry {
 
@@ -18,7 +24,7 @@ export class Entry {
 		this.$wrapper.addEventListener('click', (event) => this.handleClick(event))
 
 		this.passwordEye()
-		this.select()
+		// this.select()
 	}
 
 	init() {
@@ -54,16 +60,25 @@ export class Entry {
 			this.controlBack('password-className-js')
 		}
 
-		if(clickElem.closest('#buy-for-me-js')) {
-			this.addElement(this.toBuyForMe())
-			this.controlStylingWrapper()
-			this.controlBack('restore-className-js')
-		}
-
 		if(clickElem.closest('#buy-for-sale-js')) {
 			this.addElement(this.toBuyForSale())
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
+			this.select()
+			const selector = document.querySelector(".test-mask");
+			const im = new Inputmask("999-999-99-99");
+			im.mask(selector);
+		}
+
+		if(clickElem.closest('#buy-for-me-js')) {
+
+			this.addElement(this.toBuyForMe())
+			this.controlStylingWrapper()
+			this.controlBack('restore-className-js')
+			this.testSelect()
+			const selector = document.querySelector(".test-mask");
+			const im = new Inputmask("999-999-99-99");
+			im.mask(selector);
 		}
 
 		//back
@@ -83,8 +98,10 @@ export class Entry {
 
 	}
 
+
 	controlStylingWrapper() {
 		const test = document.querySelector('#entry-wrapper-js')
+
 		test.classList.remove('wrapper-Entry')
 		test.classList.add('wrapper-buyForMe')
 	}
@@ -133,12 +150,81 @@ export class Entry {
 		})
 
 		new Select('#select-phone-registration-js', {
-			placeholder: 'Телефон*',
+			placeholder: Russia,
 			type: 'input',
 			data: [
-				{id: '1', value: 'ИП'},
-				{id: '2', value: 'ООО'},
-				{id: '3', value: 'ЗАО'},
+				{
+					phone: '+374',
+					country: 'Армения',
+					value: Armenia,
+					id: '1'
+				},
+				{
+					phone: '+375',
+					country: 'Белоруссия',
+					value: Belarus,
+					id: '2'
+				},
+				{
+					phone: '+995',
+					country: 'Грузия',
+					value: Georgia,
+					id: '3'
+				},
+				{
+					phone: '+7',
+					country: 'Казахстан',
+					value: Kazakhstan,
+					id: '4'
+				},
+				{
+					phone: '+7',
+					country: 'Россия',
+					value: Russia,
+					id: '5'
+				},
+			],
+			onSelect(item) {
+				console.log('Selected Item', item)
+			}
+		})
+	}
+
+	testSelect() {
+		new Select('#select-phone-registration-js', {
+			placeholder: Russia,
+			type: 'input',
+			data: [
+				{
+					phone: '+374',
+					country: 'Армения',
+					value: Armenia,
+					id: '1'
+				},
+				{
+					phone: '+375',
+					country: 'Белоруссия',
+					value: Belarus,
+					id: '2'
+				},
+				{
+					phone: '+995',
+					country: 'Грузия',
+					value: Georgia,
+					id: '3'
+				},
+				{
+					phone: '+7',
+					country: 'Казахстан',
+					value: Kazakhstan,
+					id: '4'
+				},
+				{
+					phone: '+7',
+					country: 'Россия',
+					value: Russia,
+					id: '5'
+				},
 			],
 			onSelect(item) {
 				console.log('Selected Item', item)
