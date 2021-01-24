@@ -145,6 +145,7 @@
         width: 20px;
         height: 20px;
         background: url("../images/icons/eyes.svg") center no-repeat;
+        cursor: pointer;
         &.view {
           background: url("../images/icons/eyes2.svg") center no-repeat;
         }
