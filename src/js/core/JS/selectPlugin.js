@@ -36,7 +36,7 @@ function inputSelectedItem(data, text) {
     <div class="wrapper-select wrapper-select-input">
     
    		<div class="input-selected-item">
-				<input class="input-name test-mask" placeholder="Телефон*">
+				<input class="input-name test-mask" required placeholder="Телефон*">
 				<article data-type="input" class="arrow-wrapper">
 					<img class="arrow" src="${arrow}" alt="">      
 					<span data-type="value" class="value">
@@ -141,29 +141,15 @@ export class Select {
 	}
 
 	inputSelect(element) {
-
-
-			//error
-			// const selector = document.querySelector(".test-mask");
-			// const im = new Inputmask("999-999-99-99");
-			// im.mask(selector);
-
 		this.selectedId = element.dataset.id
-
 		this.$value.innerHTML = `
-		<span data-type="value" class="value">
-						<img src="${this.current.value}">
-					</span>
-		
+			<span data-type="value" class="value">
+				<img src="${this.current.value}">
+			</span>
 		`
 
-		// this.$el.querySelectorAll('[data-type="item"]').forEach(el => {
-		// 	el.classList.remove('selected')
-		// })
-		// this.$el.querySelector(`[data-id="${id}"]`).classList.add('selected')
-		//
-		// this.options.onSelect ? this.options.onSelect(this.current) : null
 
+		this.options.onSelect ? this.options.onSelect(this.current) : null
 		this.close()
 
 	}
@@ -171,7 +157,6 @@ export class Select {
 	select(id) {
 		this.selectedId = id
 		this.$value.textContent = this.current.value
-		console.log(this.current)
 
 		this.$el.querySelectorAll('[data-type="item"]').forEach(el => {
 			el.classList.remove('selected')

@@ -11,7 +11,6 @@ import Belarus from '../../../../images/icons/belarus.svg'
 import Georgia from '../../../../images/icons/georgia.svg'
 import Kazakhstan from '../../../../images/icons/kazakhstan.svg'
 import Russia from '../../../../images/icons/russia.svg'
-import Inputmask from 'inputmask'
 import {inputMaskPhone} from '../../../core/utils/inputMaskPhone'
 import {initialForm} from './js/initialForm'
 
@@ -46,14 +45,18 @@ export class Entry {
 		})
 
 
-		const $call = document.querySelector('#backCall')
+		const $calls = document.querySelectorAll('.backCall-js')
 
-		if ($call) {
-			$call.addEventListener('click', () => {
-				this.addElement(this.toBack())
-				this.testSelect('#back-call-js')
-				inputMaskPhone('.test-mask')
+		if ($calls) {
+			$calls.forEach((call) => {
+				call.addEventListener('click', () => {
+					window.scrollTo(0,0)
+					this.addElement(this.toBack())
+					this.testSelect('#back-call-js')
+					inputMaskPhone('.test-mask')
+				})
 			})
+
 
 		}
 	}
@@ -86,6 +89,7 @@ export class Entry {
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
 			this.select()
+			this.testSelect('#select-phone-registration-js')
 			inputMaskPhone('.test-mask')
 		}
 
@@ -152,53 +156,12 @@ export class Entry {
 	select() {
 		new Select('#select-test', {
 			originalText: 'Форма собственности*',
-			// selectedId: '2',
 			placeholder: 'Форма собственности*',
 			type: 'test',
 			data: [
 				{id: '1', value: 'ИП'},
 				{id: '2', value: 'ООО'},
 				{id: '3', value: 'ЗАО'},
-			],
-			onSelect(item) {
-				console.log('Selected Item', item)
-			}
-		})
-
-		new Select('#select-phone-registration-js', {
-			placeholder: Russia,
-			type: 'input',
-			data: [
-				{
-					phone: '+374',
-					country: 'Армения',
-					value: Armenia,
-					id: '1'
-				},
-				{
-					phone: '+375',
-					country: 'Белоруссия',
-					value: Belarus,
-					id: '2'
-				},
-				{
-					phone: '+995',
-					country: 'Грузия',
-					value: Georgia,
-					id: '3'
-				},
-				{
-					phone: '+7',
-					country: 'Казахстан',
-					value: Kazakhstan,
-					id: '4'
-				},
-				{
-					phone: '+7',
-					country: 'Россия',
-					value: Russia,
-					id: '5'
-				},
 			],
 			onSelect(item) {
 				console.log('Selected Item', item)
@@ -215,35 +178,35 @@ export class Entry {
 					phone: '+374',
 					country: 'Армения',
 					value: Armenia,
-					id: '1'
+					id: 'Armenia'
 				},
 				{
 					phone: '+375',
 					country: 'Белоруссия',
 					value: Belarus,
-					id: '2'
+					id: 'Belarus'
 				},
 				{
 					phone: '+995',
 					country: 'Грузия',
 					value: Georgia,
-					id: '3'
+					id: 'Georgia'
 				},
 				{
 					phone: '+7',
 					country: 'Казахстан',
 					value: Kazakhstan,
-					id: '4'
+					id: 'Kazakhstan'
 				},
 				{
 					phone: '+7',
 					country: 'Россия',
 					value: Russia,
-					id: '5'
+					id: 'Russia'
 				},
 			],
 			onSelect(item) {
-				console.log('Selected Item', item)
+				inputMaskPhone('.test-mask', item.id)
 			}
 		})
 	}

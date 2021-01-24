@@ -81,7 +81,7 @@ export function footerTemplate() {
                             <div class='phone'>
                                 <a class="footer-phone" href='tel:+74996088925'>8 (499) 608-89-25</a>
                                 <a href='tel:+78003012575'>8 (800) 301-25-75</a>
-                                <article class="btnRequestCall" id="backCallFooter">
+                                <article class="btnRequestCall backCall-js">
                                     <div class="textCall">ЗАКАЗАТЬ ЗВОНОК</div>
                                     <img class="imgPhone" src="${phone}" alt="">
                                 </article>

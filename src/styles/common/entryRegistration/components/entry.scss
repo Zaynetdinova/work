@@ -140,50 +140,49 @@
         margin-left: 7px;
       }
     }
-
-    @media (max-width: 550px) {
-      max-width: 354px;
-      .wrapper-phoneBackCall-btnCall {
-        .phoneBackCall {
-          justify-content: normal;
-          align-items: start;
-          .wrapper-number-BackCall {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            .number {
-            }
-          }
-        }
-      }
-      .bottom-wrapperBackCall {
-        margin-top: 0;
-        margin-left: 5px;
-        flex-direction: column;
-        .leftBackCall,
-        .rightBackCall {
-          .address {
-            margin-bottom: 30px;
-          }
-        }
-      }
-      .wrapper-phoneBackCall-btnCall {
+  }
+  @media (max-width: 550px) {
+    max-width: 354px;
+    .wrapper-phoneBackCall-btnCall {
+      .phoneBackCall {
+        justify-content: normal;
         align-items: start;
-        flex-direction: column-reverse;
-        margin-top: 50px;
-        margin-bottom: 40px;
-
-        .phoneBackCall {
-          margin: 0;
+        .wrapper-number-BackCall {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          .number {
+          }
         }
       }
     }
-    @media (max-width: 410px) {
-      max-width: 315px;
+    .bottom-wrapperBackCall {
+      margin-top: 0;
+      margin-left: 5px;
+      flex-direction: column;
+      .leftBackCall,
+      .rightBackCall {
+        .address {
+          margin-bottom: 30px;
+        }
+      }
     }
-    @media (max-width: 374px) {
-      max-width: 260px;
+    .wrapper-phoneBackCall-btnCall {
+      align-items: start;
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      margin-bottom: 40px;
+
+      .phoneBackCall {
+        margin: 0;
+      }
     }
+  }
+  @media (max-width: 410px) {
+    max-width: 315px;
+  }
+  @media (max-width: 374px) {
+    max-width: 260px;
   }
 }
 //problem
