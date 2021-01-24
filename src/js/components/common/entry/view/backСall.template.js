@@ -6,20 +6,23 @@ import {titleRegistration} from "../../titleRegistration";
 export function backCall() {
     return `
         ${titleRegistration('Обратный звонок')}
-        <div class="wrap-input">
-            <input class="input-name"  placeholder="Имя*" type="text" name="name">
-            <div id="back-call-js" class="password2 select-organization"></div>
-        </div>
-        <div class="wrapper-phoneBackCall-btnCall">
-            <div class="phoneBackCall">
-                <img src="${phone}" alt="">
-                <span class="wrapper-number-BackCall">
-                    <a class="number" href='tel:+78003012575'>8 (800) 301-25-75,</a>
-                    <a class="number" href='tel:+74996088925'>8 (499) 608-89-25 </a>
-                </span>
+        
+        <form class="form-js">
+            <div class="wrap-input">
+                <input required class="input-name"  placeholder="Имя*" type="text" name="name">
+                <div id="back-call-js" class="password2 select-organization"></div>
             </div>
-            ${buttonRegistration('Позвоните мне')}
-        </div>
+            <div class="wrapper-phoneBackCall-btnCall">
+                <div class="phoneBackCall">
+                    <img src="${phone}" alt="">
+                    <span class="wrapper-number-BackCall">
+                        <a class="number" href='tel:+78003012575'>8 (800) 301-25-75,</a>
+                        <a class="number" href='tel:+74996088925'>8 (499) 608-89-25 </a>
+                    </span>
+                </div>
+                ${buttonRegistration('Позвоните мне')}
+            </div>
+        </form>
         <div class="bottom-wrapperBackCall">
             <div class="leftBackCall">
                 <img src="${schema}" alt="">

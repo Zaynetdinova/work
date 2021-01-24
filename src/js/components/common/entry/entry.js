@@ -13,6 +13,7 @@ import Kazakhstan from '../../../../images/icons/kazakhstan.svg'
 import Russia from '../../../../images/icons/russia.svg'
 import Inputmask from 'inputmask'
 import {inputMaskPhone} from '../../../core/utils/inputMaskPhone'
+import {initialForm} from './js/initialForm'
 
 export class Entry {
 
@@ -25,7 +26,9 @@ export class Entry {
 		this.$wrapper = document.querySelector('#Entry-js')
 		this.$wrapper.addEventListener('click', (event) => this.handleClick(event))
 		this.passwordEye()
+		initialForm(this.$wrapper)
 	}
+
 
 	init() {
 		// объединить mobile и desktop
