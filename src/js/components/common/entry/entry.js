@@ -56,8 +56,6 @@ export class Entry {
 					inputMaskPhone('.test-mask')
 				})
 			})
-
-
 		}
 	}
 
@@ -118,10 +116,8 @@ export class Entry {
 
 	}
 
-
 	controlStylingWrapper() {
 		const test = document.querySelector('#entry-wrapper-js')
-
 		test.classList.remove('wrapper-Entry')
 		test.classList.add('wrapper-buyForMe')
 	}

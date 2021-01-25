@@ -3,15 +3,17 @@ import schema from '../../../../../images/icons/schema.svg'
 import time from '../../../../../images/icons/time.svg'
 import {buttonRegistration} from "../../buttonRegistration";
 import {titleRegistration} from "../../titleRegistration";
+import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 export function backCall() {
     return `
         ${titleRegistration('Обратный звонок')}
         
         <form class="form-js">
             <div class="wrap-input">
-                <input required class="input-name"  placeholder="Имя*" type="text" name="name">
+                <input class="input-name"  placeholder="Имя*" type="text" name="name">
                 <div id="back-call-js" class="password2 select-organization"></div>
             </div>
+            ${nesessaryFildsTemplate()}
             <div class="wrapper-phoneBackCall-btnCall">
                 <div class="phoneBackCall">
                     <img src="${phone}" alt="">
