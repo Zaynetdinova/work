@@ -1,5 +1,6 @@
 import {titleRegistration} from "../../titleRegistration";
 import {buttonRegistration} from "../../buttonRegistration";
+import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
 
 export function restorePassword() {
@@ -10,8 +11,9 @@ export function restorePassword() {
             <div class="text-email">Пожалуйста, введите адрес электронной почты, на который мы вышлем Ваш новый пароль.</div>
             <div class="restore-input">
                 <div class="wrap-input">
-                <input required class="input-name" placeholder="Э-почта" type="text" name="name">
+                <input class="input-name" placeholder="Э-почта" type="email" name="email">
             </div>
+            ${nesessaryFildsTemplate()}
             </div>
             <div class="wrapper-phoneBackCall-btnCall">
                 ${buttonRegistration('Восстановить')}

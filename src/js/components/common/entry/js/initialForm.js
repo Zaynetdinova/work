@@ -55,6 +55,19 @@ function verificationInput(activeInputs, form) {
 				break
 			case 'password':
 				changeState(input)
+				break
+			case 'passwordRepeat':
+				changeState(input)
+				break
+			case 'name':
+				changeState(input)
+				break
+			case 'surname':
+				changeState(input)
+				break
+			case 'city':
+				changeState(input)
+				break
 		}
 	})
 

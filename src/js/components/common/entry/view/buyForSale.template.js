@@ -3,6 +3,7 @@ import {titleBuy} from "../../titleBuy";
 import {checkboxRegistration} from "../../checkboxRegistration";
 import {infoTextRegistration} from "../../infoTextRegistration";
 import {buttonRegistration} from "../../buttonRegistration";
+import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
 export function buyForSaleTemplate() {
     return `
@@ -39,7 +40,7 @@ export function buyForSaleTemplate() {
                 </div>
             </div>
             
-            
+            ${nesessaryFildsTemplate()}
             ${checkboxRegistration('Даю согласие на обработку персональных данных')}
             <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
         </form> 
