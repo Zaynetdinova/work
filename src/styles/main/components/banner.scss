@@ -1,0 +1,264 @@
+
+
+.Banner {
+  position: sticky;
+  top: 0;
+  .root {
+    position: relative;
+  }
+
+  .navigation-wrapper {
+    max-width: 1480px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .wrapper-navigation-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+  .bg-main {
+    background-image: url('../images/main/slider2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-main2 {
+    background-image: url('../images/main/slider.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .wrapper {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .content {
+    height: 500px;
+  }
+
+  .box {
+    position: absolute;
+    top: 78px;
+    left: 20px;
+    z-index: 2;
+    width: 588px;
+    height: 344px;
+    background: rgba(0, 0, 0, 0.8);
+    color: $baseColor;
+    padding: 52px 40px 43px 45px;
+
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 95%;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 24px 0 58px 0;
+    }
+
+    button {
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      box-sizing: border-box;
+      border-radius: 4px;
+      background: transparent;
+      color: $baseColor;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.07em;
+      padding: 8px 30px 9px 30px;
+      cursor: pointer;
+      bottom: 0;
+
+      &:hover {
+        background: #AB064E;
+        border: 2px solid #AB064E;
+      }
+    }
+  }
+
+  .bg {
+    display: none;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    .content {
+      height: 356px;
+    }
+
+    .wrapper {
+      padding: 0 15px;
+    }
+    .box {
+      top: 40px;
+      width: 405px;
+      height: 276px;
+      padding: 40px 40px 38px 40px;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      button {
+        border: 0;
+        padding: 0;
+        font-size: 10px;
+        line-height: 11px;
+
+        &:hover {
+          border: none;
+        }
+
+        &:after {
+          content: '';
+          background: url('../images/icons/arrow.svg') no-repeat;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    .content {
+      height: 266px;
+    }
+
+    .navigation-wrapper {
+      .navigation {
+        bottom: 20%;
+        left: 280px;
+      }
+    }
+
+    .box {
+      top: 23px;
+      width: 303px;
+      height: 220px;
+      padding: 20px 15px 21px 15px;
+    }
+  }
+
+
+  @media (max-width: $width-414) {
+    .wrapper {
+      padding: 0;
+    }
+
+    .navigation-wrapper {
+      width: 100%;
+      position: relative;
+      top: -23px;
+    }
+
+    .box {
+      left: 0;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      padding: 20px 15px 27px 15px;
+
+      h1 {
+        font-size: 18px;
+        line-height: 95%;
+        margin-right: 104px;
+      }
+
+      p {
+        margin: 15px 46px 50px 0;
+      }
+    }
+
+    .bg-main {
+      background-image: none;
+    }
+
+    .bg {
+      display: block;
+      background-image: url('../images/main/slider-mobail.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 207px;
+
+      &.bg-main2 {
+        background-image: url('../images/main/slider-mobail2.jpg');
+      }
+    }
+
+    .content {
+      height: auto;
+    }
+
+    .banner-box {
+      background: #3D3D3C;
+      color: $baseColor;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $portrait-breakpoint) {
+    .box {
+      h1 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 95%;
+        margin-right: 30px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .bg-main {
+      background-image: none;
+    }
+
+    .bg {
+      display: block;
+      background-image: url('../images/main/slider-mobail.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 187px;
+    }
+    .content {
+      padding: 0;
+    }
+    .banner-box {
+      background: #3D3D3C;
+      color: $baseColor;
+      width: 100%;
+    }
+  }
+
+  .box-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

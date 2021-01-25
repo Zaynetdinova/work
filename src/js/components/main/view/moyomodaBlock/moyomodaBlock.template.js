@@ -1,16 +1,17 @@
-import MOYOmoda from '../../../images/moyo/MOYOmoda.svg'
-import {desktop} from "./view/desktop";
-import {mobile} from "./view/mobile";
-import img1 from "../../../images/moyo/women.png";
-import img2 from "../../../images/moyo/girl.png";
-import img3 from "../../../images/moyo/men.png";
-import img4 from "../../../images/moyo/boy.png";
-import img5 from "../../../images/moyo/home.png";
-import img6 from "../../../images/moyo/toy.png";
-import {Title} from "./view/title";
+import {Title} from "../../../common/moyomodaBlock/title";
+import {desktop} from "../../../common/moyomodaBlock/desktop";
+import {mobile} from "../../../common/moyomodaBlock/mobile";
+
+import img1 from "../../../../../images/moyo/women.png";
+import img2 from "../../../../../images/moyo/girl.png";
+import img3 from "../../../../../images/moyo/men.png";
+import img4 from "../../../../../images/moyo/boy.png";
+import img5 from "../../../../../images/moyo/home.png";
+import img6 from "../../../../../images/moyo/toy.png";
+import MOYOmoda from '../../../../../images/moyo/MOYOmoda.svg'
 
 
-export function moyomodaBlock() {
+export function moyomodaBlockTemplate() {
   return `
     <section class="root">
         ${Title(title)}      

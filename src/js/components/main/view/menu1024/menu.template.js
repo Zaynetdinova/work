@@ -1,4 +1,5 @@
-export function menuCategories(item) {
+
+export function menuCategoriesTemplate(item) {
     const items = item.map((item) => {
         return `           
             <a class="wrapper swiper-slide" href="${item.link}">

@@ -1,6 +1,6 @@
-import {sliderPointerTemplate} from "../common/sliderPointer.template";
+import {sliderPointerTemplate} from '../../../common/sliderPointer.template';
 
-export function createMain(data) {
+export function bannerTemplate(data) {
 
   return `
       <div class="root">

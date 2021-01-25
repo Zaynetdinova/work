@@ -1,10 +1,10 @@
-import {categoriesTitle} from '../common/categoriesTitle'
-import {button} from '../common/button'
-import {cardBanner} from "../common/cardBanner";
-import {sliderPointerTemplate} from '../common/sliderPointer.template'
+import {categoriesTitle} from '../../../common/categoriesTitle'
+import {button} from '../../../common/button'
+import {cardBanner} from "../../../common/cardBanner";
+import {sliderPointerTemplate} from '../../../common/sliderPointer.template'
 
 
-export function sharesBlock(data) {
+export function sharesBlockTemplate(data) {
     const cards = (className = '') => {
         return data.map(card => {
             return `

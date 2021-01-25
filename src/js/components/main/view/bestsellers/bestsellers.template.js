@@ -1,8 +1,8 @@
-import {categoriesTitle} from '../common/categoriesTitle'
-import {commonCard} from '../common/commonCard/commonCards'
+import {categoriesTitle} from '../../../common/categoriesTitle'
+import {commonCard} from '../../../common/commonCard/commonCards'
 
 
-export function createBestsellers({woman, child, man, home, toy}) {
+export function bestsellersTemplate({woman, child, man, home, toy}) {
   return `
    <section class="root">
      <div class="main-title">

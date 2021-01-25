@@ -1,20 +1,13 @@
-import {Component} from '../../core/Component'
-import {popularBrand} from './popularBrand.template'
-import img1 from '../../../images/popular-brand/1.png'
-import img2 from '../../../images/popular-brand/2.png'
-import img3 from '../../../images/popular-brand/3.png'
-import img4 from '../../../images/popular-brand/4.png'
+
+import img1 from '../../../../../images/popular-brand/1.png'
+import img2 from '../../../../../images/popular-brand/2.png'
+import img3 from '../../../../../images/popular-brand/3.png'
+import img4 from '../../../../../images/popular-brand/4.png'
 import Swiper from 'swiper/bundle'
+import {popularBrandTemplate} from './popularBrand.template'
 
 
-export class PopularBrand extends Component {
-  static className = 'Popular-brand'
-  constructor($root) {
-    super($root, {
-      name: 'PopularBrand',
-      listeners: []
-    });
-  }
+export class PopularBrand  {
 
   slider() {
     let popularBrand = new Swiper('.swiper-container2', {
@@ -36,8 +29,13 @@ export class PopularBrand extends Component {
       }
     })
   }
+
   toHTML() {
-    return popularBrand(cards)
+    return `
+      <div class="PopularBrand">
+       ${popularBrandTemplate(cards)}
+      </div>
+    `
   }
 }
 
