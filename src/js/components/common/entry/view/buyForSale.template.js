@@ -43,8 +43,7 @@ export function buyForSaleTemplate() {
             ${checkboxRegistration('Даю согласие на обработку персональных данных')}
             <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
         </form> 
-        ${infoTextRegistration()}
-        
+        ${infoTextRegistration()}       
     `
 }
 
