@@ -1,8 +1,8 @@
-import {categoriesTitle} from '../common/categoriesTitle'
-import {button} from '../common/button'
-import {sliderPointerTemplate} from '../common/sliderPointer.template'
+import {categoriesTitle} from '../../../common/categoriesTitle'
+import {button} from '../../../common/button'
+import {sliderPointerTemplate} from '../../../common/sliderPointer.template'
 
-export function popularBrand(data) {
+export function popularBrandTemplate(data) {
   const cards = (className = '') => {
     return data.map(card => {
       return `        

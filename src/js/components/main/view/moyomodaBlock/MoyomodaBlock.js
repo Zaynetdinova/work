@@ -1,15 +1,10 @@
-import {Component} from "../../core/Component";
-import {moyomodaBlock} from "./moyomodaBlock.template";
+
+import {moyomodaBlockTemplate} from './moyomodaBlock.template'
 import Swiper from "swiper";
 
-export class MoyomodaBlock extends Component {
-    static className = 'Moyomoda-Block'
-    constructor($root) {
-        super($root, {
-            name: 'MoyomodaBlock',
-        });
-    }
-    slider() {
+export class MoyomodaBlock {
+
+  slider() {
         let moyomodaBlock = new Swiper('.swiper-container4', {
             slidesPerView: 1.9,
             slidesPerGroup: 1,
@@ -26,8 +21,13 @@ export class MoyomodaBlock extends Component {
           }
         })
     }
+
     toHTML() {
-        return moyomodaBlock()
+        return `
+        <div class="Moyomoda-Block">
+            ${moyomodaBlockTemplate()}
+        </div>
+        `
     }
 }
 

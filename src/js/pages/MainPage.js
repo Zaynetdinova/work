@@ -1,13 +1,8 @@
 import {Page} from '../core/Page'
 import {Header} from '../components/header/Header'
-import {Main} from '../components/main/Main'
 import {OptMoyo} from '../components/OptMoyo/OptMoyo'
-import {PopularBrand} from '../components/popularBrand/PopularBrand'
-import {SharesBlock} from '../components/sharesBlock/sharesBlock'
-import {MoyomodaBlock} from '../components/moyomodaBlock/MoyomodaBlock'
-import {Bestsellers} from '../components/bestsellers/Bestsellers'
 import {Footer} from '../components/footer/Footer'
-import {Menu} from "../components/menu1024/Menu";
+import {Main} from '../components/main/Main'
 
 export class MainPage extends Page {
 	getRoot() {
@@ -15,11 +10,6 @@ export class MainPage extends Page {
   	components: [
     Header,
     Main,
-	Menu,
-    PopularBrand,
-    SharesBlock,
-    MoyomodaBlock,
-    Bestsellers,
     Footer
   ]
 	})

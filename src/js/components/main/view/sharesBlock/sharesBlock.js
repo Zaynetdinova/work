@@ -1,21 +1,13 @@
-import {Component} from '../../core/Component'
-import {sharesBlock} from './sharesBlock.template'
-import img1 from '../../../images/shares/img1.png'
-import img2 from '../../../images/shares/img2.png'
-import img3 from '../../../images/shares/img3.png'
+import {sharesBlockTemplate} from './sharesBlock.template'
+import img1 from '../../../../../images/shares/img1.png'
+import img2 from '../../../../../images/shares/img2.png'
+import img3 from '../../../../../images/shares/img3.png'
 import Swiper from 'swiper/bundle'
 
 
-export class SharesBlock extends Component {
+export class SharesBlock  {
   static className = 'Shares-block'
-  constructor($root) {
-    super($root, {
-      name: 'SharesBlock',
-      listeners: ['click']
-    });
 
-
-  }
   slider() {
     let sharesBlock = new Swiper('.swiper-container3', {
       slidesPerView: 1,
@@ -30,12 +22,13 @@ export class SharesBlock extends Component {
     })
   }
   toHTML() {
-    return sharesBlock(cards)
+    return `
+      <div class="Shares-block">
+        ${sharesBlockTemplate(cards)}
+      </div>
+    `
   }
 
-  onClick(e) {
-
-  }
 }
 
 const cards = [
