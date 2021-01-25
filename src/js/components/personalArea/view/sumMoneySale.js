@@ -2,8 +2,8 @@ export function SumMoneySale(item) {
     const items = item.map((item) => {
     return `
         <div class="Sum-money-sale">
-            <span class="title-sum">${item.title}</span>
-            <span>${item.sum}</span>
+            <span class="title-sum"><b>${item.title}</b></span>
+            <span class="money-sum">${item.sum}</span>
         </div>
     `
     })

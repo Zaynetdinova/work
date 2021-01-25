@@ -1,11 +1,19 @@
 .Sum-money-sale {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 15px;
   .title-sum {
     position: relative;
+    width: 90%;
+    b {
+      padding-right: 8px;
+      z-index: 1;
+    }
     &:after {
       border-bottom: 1px dashed #777777;
-      bottom: 5px;
+      bottom: 1px;
       content: '';
       display: block;
       height: 20px;
@@ -14,11 +22,11 @@
       width: 100%;
     }
   }
-  .line-dotted {
-    background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 4px 2px;
-    background-repeat: repeat-x;
-    width: 60%;
+  .money-sum {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 10%;
   }
 }
