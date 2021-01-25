@@ -23,32 +23,6 @@
       margin-right: 10px;
     }
   }
-  .popup {
-    width: 181px;
-    background: #3D3D3C;
-    border-radius: 4px;
-    padding: 6px 8px 10px 10px;
-    font-size: 12px;
-    line-height: 150%;
-    color: #FFFFFF;
-    position: absolute;
-    top: -96px;
-    left: -7px;
-    display: none;
-    z-index: 2;
-  }
-  .popup::after, .popup::before {
-    content: '';
-    position: absolute;
-    background: #3D3D3C;
-    left: 10px;
-    bottom: -4px;
-    width: 8px;
-    height: 8px;
-    z-index: -1;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
   table {
     font-size: 14px;
     line-height: 20px;
@@ -69,65 +43,6 @@
     }
     .td-common {
       padding: 4px 0;
-    }
-    .quantity {
-      display: flex;
-      text-align: center;
-      .quantity-number {
-        display: flex;
-        align-items: center;
-        margin-right: 10px;
-        margin-left: 10px;
-        color: #3D3D3C;
-      }
-      .minus,
-      .plus {
-        cursor: pointer;
-        width: 32px;
-        height: 32px;
-        background-repeat: no-repeat;
-      }
-      .plus {
-        background-image: url("../images/cardProduct/plus.svg");
-        &:hover {
-          background-image: url("../images/cardProduct/plus-black.svg");
-        }
-      }
-      .minus {
-        background-image: url("../images/cardProduct/minus.svg");
-        &:hover {
-          background-image: url("../images/cardProduct/minus-black.svg");
-        }
-      }
-
-    }
-    .size {
-      display: flex;
-      align-items: center;
-      padding-left: 12px;
-      .td-size {
-        margin-right: 20px;
-      }
-
-      .img-size-wrapper {
-        position: relative;
-
-        &:hover {
-          .popup {
-           display: block;
-          }
-        }
-      }
-      .img-size {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        &:hover {
-          .popup {
-            display: block;
-          }
-        }
-      }
     }
     .price {
       padding-left: 12px;

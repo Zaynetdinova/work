@@ -1,0 +1,38 @@
+.quantity {
+  display: flex;
+  text-align: center;
+  .quantity-number {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #3D3D3C;
+  }
+  .input-count-number {
+    max-width: 53px;
+    border: none;
+    background: none;
+    text-align: center;
+    outline: none;
+    cursor: default;
+  }
+  .minus,
+  .plus {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+  .plus {
+    background-image: url("../images/cardProduct/plus.svg");
+    &:hover {
+      background-image: url("../images/cardProduct/plus-black.svg");
+    }
+  }
+  .minus {
+    background-image: url("../images/cardProduct/minus.svg");
+    &:hover {
+      background-image: url("../images/cardProduct/minus-black.svg");
+    }
+  }
+}

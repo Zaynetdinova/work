@@ -1,5 +1,6 @@
 import info from '../../../images/cardProduct/info.svg'
 import {Sale} from './sale'
+import {quantity} from "./quantity";
 
 const testArrSizes = [
     {size: '40', oldPrice: '1 234,00 ₽', price: false, sale: true},
@@ -101,7 +102,7 @@ function dataTable2(data) {
 function size(data) {
     const {size} = data
     return `
-        <table>
+        <table class="Size-info">
             <tr class="size">
                 <td class="td-size">${size}</td>
                 <td class="img-size-wrapper">
@@ -118,23 +119,6 @@ function size(data) {
     `
 }
 
-function quantity() {
-    return `
-        <table>
-            <tr class="quantity">
-                <td>
-                    <div class="minus" data-button-name="minus"></div>
-                </td>
-                <td class="quantity-number">
-                    <input class="input-count-js input-count-number"  maxlength="2" type="text" readonly value="0">
-                </td>
-                <td>
-                    <div class="plus" data-button-name="plus"></div>
-                </td>
-            </tr>
-        </table>       
-    `
-}
 
 function price(data) {
     const {oldPrice, price, sale} = data
