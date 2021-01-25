@@ -1,5 +1,6 @@
 import {titleRegistration} from "../../titleRegistration";
 import {buttonRegistration} from "../../buttonRegistration";
+import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
 export function entryTemplate() {
     return `  
@@ -7,12 +8,16 @@ export function entryTemplate() {
         
         <form class="form-js">
             <div class="wrap-input">
-            <input required class="input-name"  placeholder="Логин (Э-почта)*" id="login-name" type="text" name="name">
-            <div class="password" data-input-password-js>
-                <input required class="input-name" type="password" id="password-input" placeholder="Пароль*" name="password">
-                <div class="password-control"></div>
+              <input name="email" class="input-name"  placeholder="Логин (Э-почта)*" type="email">
+              
+              <div class="password" data-input-password-js>
+                  <input name="password" class="input-name password-control-eye-js" type="password" placeholder="Пароль*">
+                  <div class="password-control"></div>
+              </div>
             </div>
-            </div>
+            
+            ${nesessaryFildsTemplate()}
+            
             <div class="wrap-agree">
                 <div>Забыли пароль?</div>
                 <article class="restore" id="restore-password-button-js">Восстановить</article>
