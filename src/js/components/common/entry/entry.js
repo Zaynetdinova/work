@@ -140,7 +140,7 @@ export class Entry {
 		eye.forEach((item) => {
 			item.addEventListener('click', () => {
 				const $parent = item.closest('[data-input-password-js]')
-				const input = $parent.querySelector('#password-input');
+				const input = $parent.querySelector('.password-control-eye-js');
 				if (input.getAttribute('type') === 'password') {
 					item.classList.add('view');
 					input.setAttribute('type', 'text');

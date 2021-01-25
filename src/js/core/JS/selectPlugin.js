@@ -36,7 +36,7 @@ function inputSelectedItem(data, text) {
     <div class="wrapper-select wrapper-select-input">
     
    		<div class="input-selected-item">
-				<input class="input-name test-mask" required placeholder="Телефон*">
+				<input class="input-name test-mask" placeholder="Телефон*">
 				<article data-type="input" class="arrow-wrapper">
 					<img class="arrow" src="${arrow}" alt="">      
 					<span data-type="value" class="value">

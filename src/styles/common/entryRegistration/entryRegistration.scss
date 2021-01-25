@@ -122,6 +122,11 @@
       &:focus {
         border-bottom: 1px dashed #FFFFFF;
       }
+
+      &.not-necessary-fields {
+        border-bottom: 1px dashed red;
+      }
+
     }
     .input-name {
       font-size: 14px;
@@ -211,6 +216,19 @@
         border: none;
         color: #ffffff;
       }
+    }
+  }
+
+  .nesessary-filds {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 24px;
+    color: #fff;
+    opacity: 0;
+
+    &.error-input-text-active {
+      opacity: 1;
     }
   }
 }
