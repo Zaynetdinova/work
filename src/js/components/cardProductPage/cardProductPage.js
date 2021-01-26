@@ -1,16 +1,12 @@
 import {Component} from '../../core/Component'
 import {cardProductPageTemplate} from './cardProductPage.template'
-import {inputFile} from '../catalog/js/inputFile'
-import {anotherColorButton} from './js/anotherColorBorder'
-import {infoProductShow, testInfo} from './js/infoProductShow'
-import {favoritesProduct} from './js/favoritesProduct'
-import {openForm} from './js/openForm'
-import {viewPhotoZoom} from './js/viewPhotoZoom'
+
 import {showForm} from './js/showForm'
-import {popupSliderPhoto} from './js/popupSliderPhoto'
-import {changeSizeCount} from '../common/js/changeSizeCount'
-import {changeFavoritesProduct} from '../common/js/changeFavoritesProduct'
 import Swiper from 'swiper'
+import {ChangeSizeCount} from '../common/js/changeSizeCount'
+import {UtilsCardProductPage} from './js/utilsCardProductPage'
+import {inputFile} from './js/inputFile'
+import {TestDataCardProductPage} from './js/testDataCardProductPage'
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -20,10 +16,16 @@ export class CardProductPage extends Component {
 			name: 'CardProductPage',
 			listeners: ['click']
 		});
+		this.utils
+		this.testData = new TestDataCardProductPage()
 	}
 
 	toHTML() {
-		return cardProductPageTemplate()
+		return cardProductPageTemplate(
+			this.testData.cards(),
+			this.testData.cards2(),
+			this.testData.color(),
+			this.testData.info())
 	}
 
 	slider() {
@@ -89,52 +91,51 @@ export class CardProductPage extends Component {
 	}
 
 	afterInitComponent() {
-		viewPhotoZoom()
+		this.utils = new UtilsCardProductPage()
+		this.utils.viewPhotoZoom()
 		inputFile()
+
 	}
 
-	//переделать
 	onClick(e) {
 		if(e.target.closest('article')) {
 			const element = e.target.closest('article');
 
 			switch (element.id) {
 				case 'info-table':
-					changeSizeCount(e)
+					const size = new ChangeSizeCount()
+					size.init(e, true)
 					break;
 				case 'another-color-js':
-					anotherColorButton(e)
+					this.utils.anotherColorButton(e)
 					break;
 				case 'title-description-js':
-					infoProductShow(element, e)
+					this.utils.infoProductShow('.description-module-js')
 					break;
 				case 'title-dop-info-js':
-					testInfo(element, e)
+					this.utils.infoProductShow('.dop-info-js')
 					break;
 				case 'favorites-product-js':
-					changeFavoritesProduct(element)
+					this.utils.changeFavoritesProduct(element)
 					break;
 				case 'form-js':
-					openForm(element)
-					break
+					this.utils.openForm(element)
+					break;
 				case 'show-form-js':
 					showForm()
-					break
+					break;
 				case 'cancel-form-js':
 					showForm('cancel')
-					break
+					break;
 				case 'send-form-js':
 					showForm('send')
-					break
+					break;
 				case 'zoom-photo-js':
-					popupSliderPhoto()
-					break
+					this.utils.popupPhotos()
+					break;
         case 'zoom-photo-js-mobile':
-          popupSliderPhoto()
-          break
-				case 'close-popup-js':
-					popupSliderPhoto('close')
-					break
+					this.utils.popupPhotos()
+          break;
 			}
 		}
 	}
