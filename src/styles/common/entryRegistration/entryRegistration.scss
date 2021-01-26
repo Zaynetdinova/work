@@ -132,7 +132,7 @@
       font-size: 14px;
       line-height: 16px;
       outline: none;
-      height: 30px;
+      height: 60px;
       background: transparent;
       width: 100%;
     }
@@ -144,7 +144,7 @@
       position: relative;
       .password-control {
         position: absolute;
-        top: 21px;
+        top: 38px;
         right: 10px;
         display: inline-block;
         width: 20px;
@@ -158,18 +158,18 @@
     }
 
     .select-organization {
-      height: 30px;
+      height: 60px;
       margin-top: 18px;
       border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       width: 100%;
 
       .wrapper-select {
         width: 100%;
         .input-selected-item {
           margin-bottom: 4px;
-
+          height: 55px;
           .title {
             color: #fff;
           }
@@ -207,14 +207,10 @@
       }
 
       .input-name {
-        font-size: 14px;
-        line-height: 16px;
-        outline: none;
-        height: 30px;
-        background: transparent;
-        width: 100%;
         border: none;
-        color: #ffffff;
+      }
+      input {
+        margin-top: 0;
       }
     }
   }

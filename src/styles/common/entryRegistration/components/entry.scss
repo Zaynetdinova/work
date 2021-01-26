@@ -62,24 +62,15 @@
   }
 
   .wrap-registration {
-    margin: 44px auto 0 auto;
+    margin: 44px auto 44px auto;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
     text-align: center;
-
-    .sign-up {
-      font-style: italic;
-      color: rgba(255, 255, 255, 0.5);
-      text-decoration: underline;
-      cursor: pointer;
-
-      &:hover {
-        color: #FFFFFF;
-      }
-    }
   }
-
+  .sign-up {
+    display: flex;
+  }
   .wrapper-phoneBackCall-btnCall {
     display: flex;
     flex-direction: column;
