@@ -21,6 +21,7 @@ export class OptMoyo {
 
   init() {
     this.components.forEach(component => component.init())
+    // под вопросом ???
     this.components.forEach(component => component.slider())
     this.components.forEach(component => component.afterInitComponent())
   }

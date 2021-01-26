@@ -13,7 +13,10 @@ export class UserAgent {
 
 	actionsForApple() {
 		const $el = document.querySelector('#style-for-apple-js')
-		$el.classList.add('style-apple-padding')
+		if ($el) {
+			$el.classList.add('style-apple-padding')
+		}
+
 	}
 
 	actionsForAll() {

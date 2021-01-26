@@ -1,6 +1,6 @@
 import {size} from '../../size'
 
-export function additionalInformation(title, description, img, index) {
+export function additionalInformation(title, description, img, index, sizeElements) {
 	return `
   <div class="additional-information">
      <div class="content">
@@ -13,7 +13,7 @@ export function additionalInformation(title, description, img, index) {
 												</div>`}
 					 
 					 
-							${size()}
+							${size(sizeElements)}
 							<div class="block-under-image"></div>
 				</div>
         
