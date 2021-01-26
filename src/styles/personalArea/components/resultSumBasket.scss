@@ -13,6 +13,9 @@
         margin-top: 30px;
         font-size: 18px;
         line-height: 18px;
+        b {
+          margin-left: 8px;
+        }
       }
     }
     .line-promo {
@@ -47,6 +50,10 @@
       }
       .sale {
         padding: 9px 0 9px 10px;
+      }
+      .margin {
+        font-weight: bold;
+        margin-left: 6px;
       }
     }
   }
@@ -83,6 +90,70 @@
         background: #AB064E;
         border: 1px solid #AB064E;
       }
+    }
+  }
+  @media (max-width: 1024px) {
+    .promo-code {
+      padding: 20px;
+    }
+    .button-buy-arrange {
+      margin-bottom: 230px;
+      .arrange-button {
+        background: #AB064E;
+        border: 1px solid #AB064E;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .promo-code {
+      .line-promo {
+        .wrap-button-data {
+          .button-personal-data {
+            min-width: 118px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    .promo-code {
+      padding: 0;
+      flex-direction: column;
+      background: none;
+      .line-promo {
+        .wrap-button-data {
+          .button-personal-data {
+            min-width: 102px;
+          }
+        }
+      }
+      .column {
+        width: 100%;
+        padding: 25px 15px;
+        background: #F3F2F0;
+        &:first-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .button-buy-arrange {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .continue-button,
+      .arrange-button {
+        width: 290px;
+      }
+      .arrange-button {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .promo-code {
+      margin-left: -15px;
+      margin-right: -15px;
     }
   }
 }

@@ -11,18 +11,18 @@ export function resultSumBasket() {
                             <div class="wrap-button-data">${ButtonData('Применить')}</div>
                         </div>
                         <div class="line-promo">
-                            <div class="bonus">Бонус за выкуп: <span>1 234,00 ₽</span></div>
+                            <div class="bonus">Бонус за выкуп: <span class="margin">1 234,00 ₽</span></div>
                             <div class="wrap-button-data">${ButtonData('Применить')}</div>
                         </div>
                         <div class="line-promo">
-                            <div class="bonus sale">Накопленная Вами скидка: <span style="color: #009295">10%</span></div>
+                            <div class="bonus sale">Накопленная Вами скидка: <span class="margin" style="color: #009295">10%</span></div>
                         </div>   
                     </div>
-                    <div class="result">На дипозите:  <b>1 234,00</b></div>              
+                    <div class="result">На дипозите:  <b>1 234,00 ₽</b></div>              
                 </div>
                 <div class="column">
                     <div>${SumMoneySale(sumMoney)}</div>
-                    <div class="result">Итого:  <b>1 234,00</b></div>
+                    <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>
             </div>
             <div class="button-buy-arrange">

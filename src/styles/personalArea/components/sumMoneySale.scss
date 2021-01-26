@@ -4,32 +4,16 @@
   margin-bottom: 15px;
   font-size: 14px;
   line-height: 15px;
-  .title-sum {
-    position: relative;
-    width: 90%;
-    b {
-      padding-right: 8px;
-      z-index: 1;
-    }
-    &:after {
-      border-bottom: 1px dashed #777777;
-      bottom: 1px;
-      content: '';
-      display: block;
-      height: 20px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-    }
-  }
-  .money-sum {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    display: inline-block;
-    vertical-align: bottom;
-    width: 10%;
+  .money-sum  {
+    font-weight: bold;
+    color: #AB064E;
   }
   &:last-child {
     margin-bottom: 0;
+  }
+  &:first-child {
+    .money-sum {
+      color: #3D3D3C;
+    }
   }
 }
