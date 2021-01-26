@@ -2,7 +2,7 @@
   @import './components/buttonData';
   @import './components/navigation';
   @import './components/personalData';
-  @import './components/basket';
+  @import 'basketTemplate/basket';
   .wrapper-personal-area {
     max-width: 1480px;
     margin: 0 auto;

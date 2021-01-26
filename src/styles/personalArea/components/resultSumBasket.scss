@@ -1,0 +1,88 @@
+.wrapper-result {
+  .promo-code {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #F3F2F0;
+    margin-bottom: 30px;
+    .column {
+      width: 49%;
+      .result {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+    .line-promo {
+      display: flex;
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .wrap-button-data {
+        .button-personal-data {
+          border-radius: 0 4px 4px 0;
+        }
+      }
+      .bonus {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        border-bottom: 1px solid #B2B2B2;
+        border-top: 1px solid #B2B2B2;
+        padding-left: 10px;
+        width: 100%;
+      }
+      .input-promo-cod {
+        background: #FFFFFF;
+        border: 1px dashed #777777;
+        border-right: none;
+        padding-left: 10px;
+        outline: none;
+        width: 100%;
+      }
+      .sale {
+        padding: 9px 0 9px 10px;
+      }
+    }
+  }
+  .button-buy-arrange {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    .continue-button,
+    .arrange-button {
+      padding: 8.5px 0;
+      min-width: 167px;
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 17px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .continue-button {
+      color: #3D3D3C;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      &:hover {
+        color: #AB064E;
+        border: 1px solid #AB064E;
+      }
+    }
+    .arrange-button {
+      color: #FFFFFF;
+      background: #8F8F8F;
+      border: 1px solid #8F8F8F;
+      outline: none;
+      margin-left: 6px;
+      &:hover {
+        background: #AB064E;
+        border: 1px solid #AB064E;
+      }
+    }
+  }
+}
