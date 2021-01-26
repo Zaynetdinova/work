@@ -29,4 +29,7 @@
     vertical-align: bottom;
     width: 10%;
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
