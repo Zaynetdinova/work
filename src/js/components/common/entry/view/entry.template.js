@@ -29,10 +29,10 @@ export function entryTemplate() {
         </form>
           
         <div class="wrap-registration">
-            <div>Если Вы не зарегистрированы в нашем магазине, пожалуйста,</div>
-            <article id="sign-up-js" class="sign-up"> 
-               зарегистрируйтесь 
-            </article>
-        </div>     
+            <div>Если Вы не зарегистрированы в нашем магазине, пожалуйста, зарегистрируйтесь!</div>
+        </div>  
+        <article id="sign-up-js" class="sign-up"> 
+             ${buttonRegistration('Зарегистрироваться')}  
+        </article>   
     `
 }
