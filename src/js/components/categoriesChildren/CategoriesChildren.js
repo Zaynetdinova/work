@@ -1,12 +1,7 @@
 import {Component} from '../../core/Component'
 import {categoriesChildren} from "./categoriesChildren.template";
-import img1 from "../../../images/bestsellers/1/img1.png";
-import img2 from "../../../images/bestsellers/1/img2.png";
-import img3 from "../../../images/bestsellers/1/img3.png";
-import img4 from "../../../images/bestsellers/1/img4.png";
-import img5 from "../../../images/bestsellers/1/img5.png";
-import img6 from "../../../images/bestsellers/1/img6.png";
 import {sidebarChildren} from './js/sidebarChildren'
+import {testDataCategoriesChildren} from './js/testDataCategoriesChildren'
 
 export class CategoriesChildren extends Component {
     static className = 'CategoriesChildren'
@@ -18,10 +13,33 @@ export class CategoriesChildren extends Component {
     }
 
     toHTML() {
-        return categoriesChildren()
+        return categoriesChildren(testDataCategoriesChildren(), pageForChildren, dataSidebarGirl)
     }
 
     onClick(e) {
         sidebarChildren(e)
     }
 }
+
+let pageForChildren = [
+    {
+        link: '/#categories-children',
+        title: 'Девочкам',
+        value: '1000 товаров'
+    }
+]
+
+let dataSidebarGirl = [
+    {
+        id: 'children-baby',
+        img: 'baby',
+        name: 'Новорожденным',
+        month: '(12 мес. - 17 лет)'
+    },
+    {
+        id: 'children-girl',
+        img: 'girl',
+        name: 'Девочкам',
+        month: '(12 мес. - 17 лет)'
+    },
+]

@@ -5,12 +5,11 @@ export function IconImg(item) {
 }
 
 function icon(item) {
-
     const items = item.map((item) => {
         return `
         <a class="box" href="${item.link}">
             <img src=${item.img} alt="">
-			<div class="title">${item.title}</div>
+			      <div class="title">${item.title}</div>
         </a>    
             
         `

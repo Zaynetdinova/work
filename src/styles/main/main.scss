@@ -2,8 +2,9 @@
 @import '../var';
 
 .Main {
-  @import "./components/banner";
-  @import "./components/popularBrand";
+  @import './components/banner';
+  @import './components/popularBrand';
   @import './components/sharesBlock';
   @import './components/menu';
+  @import './components/bestsellers';
 }

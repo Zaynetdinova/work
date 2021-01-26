@@ -27,7 +27,7 @@ export class Router {
 
 		let Page
 		switch (ActiveRoute.path) {
-			case 'categories':
+			case 'categories-women':
 				Page = this.routes.viewCategoriesPage
 				break;
 			case 'catalog':

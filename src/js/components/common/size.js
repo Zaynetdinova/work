@@ -1,5 +1,5 @@
-export function size() {
-  const block = sizes.map(item => {
+export function size(item) {
+  const block = item.map(item => {
     return `
       <div class="size">
         ${item}
@@ -14,6 +14,6 @@ export function size() {
   `
 }
 
-const sizes = [
-  '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
-]
+// const sizes = [
+//   '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+// ]

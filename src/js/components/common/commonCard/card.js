@@ -5,7 +5,18 @@ import {infoCard} from './view/infoCard'
 import {additionalInformation} from './view/additionalInformation'
 
 export function card(i, infoType = 'price') {
-	const {sale = false, id, img, banner, title, description, oldPrice = '', newPrice = '', price = '', bannerPosition = 'bottom', link='/#card-product'} = i
+	const {
+		sale = false,
+		id, img,
+		banner,
+		title,
+		description,
+		oldPrice = '',
+		newPrice = '',
+		price = '',
+		bannerPosition = 'bottom',
+		link='/#card-product',
+		size = []} = i
 	return `
 		<a href="${link}" style="text-decoration: none">
 			<article class="Card card-bestsellers-js" id="${id}" data-id="${id}">
@@ -20,7 +31,7 @@ export function card(i, infoType = 'price') {
 				${infoType == 'price'
 				? priceContent(oldPrice, newPrice, price, sale)
 				: infoCard(title, description)}
-				${additionalInformation(title, description, img, id)}
+				${additionalInformation(title, description, img, id, size)}
 			</article>
 		</a>
 	`
