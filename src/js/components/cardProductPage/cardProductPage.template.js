@@ -8,8 +8,6 @@ import tw from '../../../images/social/tvitter.svg'
 import pen from '../../../images/social/pen.svg'
 import mail from '../../../images/social/mail.svg'
 import od from '../../../images/social/odnoklassniki.svg'
-import photo1 from '../../../images/cardProduct/photo1.png'
-import photo2 from '../../../images/cardProduct/photo2.png'
 import {favorites} from "../common/favorites";
 import {goodStock, transitionBrand} from "./view/transitionBrand";
 import {priceContent} from "../common/priceContent";
@@ -22,20 +20,24 @@ import {descriptionModule} from "../common/description";
 import {dopInfo} from "./view/dopInfo";
 import {form} from "./view/form";
 import {commonCard} from "../common/commonCard/commonCards";
-import img3 from "../../../images/bestsellers/1/img3.png";
-import img4 from "../../../images/bestsellers/1/img4.png";
-import img5 from "../../../images/bestsellers/1/img5.png";
-import img6 from "../../../images/bestsellers/1/img6.png";
 
-export function cardProductPageTemplate() {
+export function cardProductPageTemplate(
+	cards = [],
+	cards2 = [],
+	testColor = [],
+	testInfo = []) {
 	return `
 		<div class="root">
+			
 			${transitionTitleProduct(productCategory)}
+			
 			<div class="wrapper">
+			
 				<section class="photos">
 					${viewPhotosBlock()}
 					${viewPhotosBlockMobile()}
 				</section>
+				
 				<section class="product-description">
 					<div class="first-line">
 						<div class="right-wrap">
@@ -48,13 +50,13 @@ export function cardProductPageTemplate() {
 					${goodStock()}
 					<div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
 					<div class="info">
-						<div class="info-1">${infoProduct(info)}</div>
+						<div class="info-1">${infoProduct(testInfo)}</div>
 						<div style="margin-bottom: 4px;">
 							<div class="social">${socialProduct(social)}</div>
 							<div class="buttonAnotherGoods">${buttonProduct('Другие товары этого бренда')}</div>
 						</div>
 					</div>
-					<div class="wrapper-another-color">${anotherColor(color)}</div>
+					<div class="wrapper-another-color">${anotherColor(testColor)}</div>
 					${infoTable(table)}
 					<div class="wrapper-attention">${attention()}</div>
 					${descriptionModule()}
@@ -64,11 +66,13 @@ export function cardProductPageTemplate() {
 					
 					${form()}
 				</section>
+				
 			</div>
 		</div>
+		
 		<div class="wrapper-card">
-			${commonCard(woman2, 'price')}
-			${commonCard(woman, 'price')}
+			${commonCard(cards, 'price')}
+			${commonCard(cards2, 'price')}
 		</div>
 	`
 }
@@ -95,29 +99,6 @@ let brand = [
 	}
 ]
 
-let info = [
-	{
-		infoType: 'Арт:',
-		infoResult: '1-20-2-2-02-52291'
-	},
-	{
-		infoType: 'ID:',
-		infoResult: '247355'
-	},
-	{
-		infoType: 'Цвет:',
-		infoResult: 'Коричневый'
-	},
-	{
-		infoType: 'Состав:',
-		infoResult: '100% Полиэстер'
-	},
-	{
-		infoType: 'Сезон:',
-		infoResult: 'Весна-Лето'
-	},
-]
-
 let social = [
 	{
 		img: vk,
@@ -139,32 +120,7 @@ let social = [
 	},
 ]
 
-let color = [
-	{
-		photo: photo1,
-		classColor: 'active-color'
-	},
-	{
-		photo: photo2,
-		classColor: ''
-	},
-	{
-		photo: photo1,
-		classColor: ''
-	},
-	{
-		photo: photo1,
-		classColor: ''
-	},
-	{
-		photo: photo1,
-		classColor: ''
-	},
-	{
-		photo: photo1,
-		classColor: ''
-	},
-]
+
 
 let table = [
 	{
@@ -180,6 +136,7 @@ let table = [
 		id: 'col3'
 	},
 ]
+
 
 const woman = {
 	title: 'Вы недавно смотрели',
@@ -380,5 +337,4 @@ const woman2 = {
 		},
 	],
 }
-
 

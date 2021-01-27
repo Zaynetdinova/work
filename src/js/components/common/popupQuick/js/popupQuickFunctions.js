@@ -1,7 +1,8 @@
 import {popupQuick} from '../popupQuick'
-import {changeSizeCount} from '../../js/changeSizeCount'
+// import {changeSizeCount} from '../../js/changeSizeCount'
 import {changeFavoritesProduct} from '../../js/changeFavoritesProduct'
 import Swiper from 'swiper'
+import {ChangeSizeCount} from '../../js/changeSizeCount'
 
 export function popupQuickFunctions() {
 	const $buttons = document.querySelectorAll('.quick-view-js')
@@ -25,12 +26,13 @@ function openQuickView(e) {
 	const $like = $popup.querySelector('#favorites-product-js')
 
 
+	const size = new ChangeSizeCount()
 	// problem удаление прослушки событий
 	close.addEventListener('click', closePopupQuick)
 	$paranja.addEventListener('click', closePopupQuick)
 	$closeButton.addEventListener('click', closePopupQuick)
 	$colorCard.addEventListener('click', anotherColorButton)
-	$countSize.addEventListener('click', changeSizeCount)
+	$countSize.addEventListener('click', (e) => size.init(e))
 	$like.addEventListener('click', () => changeFavoritesProduct($like))
 
 	const $test = $popup.querySelector('#popup-js')
