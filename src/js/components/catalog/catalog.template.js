@@ -1,5 +1,5 @@
 import {titleCatalog, transitionTitleCatalog} from "./view/transitionTitleCatalog";
-import {number, pagination} from "./view/pagination";
+import {number, pagination} from "../common/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./view/navCatalog";
 import {filter} from "./view/filter";
@@ -20,7 +20,7 @@ export function catalog()  {
                     
         <div class="wrapper-pagination">
             ${titleCatalog(catalogCategory)}      
-            ${pagination()}
+            ${pagination('Предыдущая страница', 'Следующая страница')}
             ${number()}
         </div>
                    
@@ -57,7 +57,7 @@ export function catalog()  {
                     `}).join('')}
                 </div>                                  
                  <div class="bottom-pagination">                                             
-                    <div class="box">${pagination()}</div>
+                    <div class="box">${pagination('Предыдущая страница','Следующая страница')}</div>
                     <div class="box-number">${number()}</div>
                  </div>  
                  <div class="wrapper-number">

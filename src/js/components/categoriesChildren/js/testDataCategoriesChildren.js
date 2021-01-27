@@ -20,7 +20,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w2',
@@ -30,7 +33,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w3',
@@ -40,7 +46,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w4',
@@ -50,7 +59,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w5',
@@ -60,7 +72,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w6',
@@ -70,7 +85,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w7',
@@ -80,7 +98,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 			{
 				id: 'w8',
@@ -92,7 +113,10 @@ export function testDataCategoriesChildren() {
 				oldPrice: '1 234,00 &#8381',
 				newPrice: '-234,00 &#8381;',
 				price: '1 243,00 &#8381; ',
-				sale: true
+				sale: true,
+				size: [
+					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+				],
 			},
 
 		],

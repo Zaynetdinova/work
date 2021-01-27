@@ -159,7 +159,6 @@ export function testDataBestsellers() {
 			_id: 'child',
 			title: 'детям',
 			data: [
-
 				{
 					id: 'ch1',
 					img: ch1,
@@ -168,7 +167,10 @@ export function testDataBestsellers() {
 					banner: 'НОВИНКА',
 					price: '1 243,00 &#8381;',
 					bannerPosition: 'bottom',
-					link: '/#card-product'
+					link: '/#card-product',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch2',
@@ -178,14 +180,20 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch3',
 					img: ch3,
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch4',
@@ -195,7 +203,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch5',
@@ -204,7 +215,10 @@ export function testDataBestsellers() {
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
 					price: '1 243,00 &#8381',
-					bannerPosition: 'bottom'
+					bannerPosition: 'bottom',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch6',
@@ -214,7 +228,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch7',
@@ -224,7 +241,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'ch8',
@@ -234,7 +254,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				}
 
 			],
@@ -253,7 +276,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men2',
@@ -263,7 +289,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men3',
@@ -271,7 +300,10 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men4',
@@ -281,7 +313,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men5',
@@ -289,7 +324,10 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men6',
@@ -299,7 +337,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men7',
@@ -307,7 +348,10 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'men8',
@@ -318,10 +362,12 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 			],
-
 		},
 		home: {
 			_id: 'home',
@@ -333,7 +379,10 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil2',
@@ -343,14 +392,20 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil3',
 					img: pil3,
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil4',
@@ -360,7 +415,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil5',
@@ -371,7 +429,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil6',
@@ -381,7 +442,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil7',
@@ -392,7 +456,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'pil8',
@@ -402,9 +469,12 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				}
-			]
+			],
 		},
 		toy: {
 			_id: 'toy',
@@ -416,7 +486,10 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy2',
@@ -426,14 +499,20 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy3',
 					img: toy3,
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy4',
@@ -443,7 +522,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy5',
@@ -451,7 +533,10 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy6',
@@ -461,7 +546,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy7',
@@ -471,7 +559,10 @@ export function testDataBestsellers() {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381',
-					sale: true
+					sale: true,
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
 				{
 					id: 'toy8',
@@ -479,9 +570,12 @@ export function testDataBestsellers() {
 					title: 'Vittoria Vicci',
 					description: 'Наименование товара ',
 					banner: 'НОВИНКА',
-					price: '1 243,00 &#8381'
+					price: '1 243,00 &#8381',
+					size: [
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+					],
 				},
-			]
+			],
 		}
 
 	}

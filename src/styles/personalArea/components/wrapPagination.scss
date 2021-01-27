@@ -1,0 +1,51 @@
+.wrapper-pagination {
+  display: flex;
+  justify-content: center;
+  .pagination {
+    .wrapper-button-pagination {
+      .next,
+      .prev {
+        &:hover {
+          background: #AB064E;
+          .arrow-prev,
+          .arrow-next {
+            background: url("../images/icons/arrow-white2.svg") no-repeat;
+          }
+          .text {
+            color: #FFFFFF;
+          }
+        }
+      }
+      .prev {
+        padding: 8.5px 113px 8.5px 13px;
+      }
+      .next {
+        padding: 8.5px 13px 8.5px 117px;
+      }
+      .arrow-prev,
+      .arrow-next {
+        background: url("../images/icons/arrow.svg") no-repeat;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      .wrapper-button-pagination {
+        width: 100%;
+        .next,
+        .prev {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 0 9px 0;
+          width: 100%;
+          .arrow-prev,
+          .arrow-next {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,24 +1,15 @@
 .Delivery-page {
   @import "../components/basketSteps";
+  @import "../components/basketDeliveryBlocks";
+  @import "../components/deliveryAdress";
+  @import "../components/wrapPagination";
+  margin-bottom: 110px;
   .basket-delivery {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    .basketDeliveryBlock {
-      background: #F3F2F0;
-      width: 32%;
-      height: 346px;
-      cursor: pointer;
-      transition: .2s;
-      border-bottom: 4px solid transparent;
-      &:hover {
-        background: #FFFFFF;
-        border-bottom: 4px solid #AB064E;
-      }
-      //&.active {
-      //  background: #FFFFFF;
-      //  border-bottom: 4px solid #AB064E;
-      //}
-    }
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 210px;
   }
 }

@@ -21,7 +21,7 @@ const cards = [
     {
         img: img1,
         title: 'женщинам',
-        link: '/#categories'
+        link: '/#categories-women'
     },
     {
         img: img2,

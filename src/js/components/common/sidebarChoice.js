@@ -20,18 +20,18 @@ export function sidebarChoice(li = [], subcategory, arrow) {
 
   const itemsSubCategories = li.map((item) => {
     return `
-            <figure data-category data-subcategory class='sub-category-wrapper' data-id=${item.id}>
-                <a class='item'>
-                <div>
-                    <span>${item.name}</span>
-                    <span class="sub-title">${item.subtitle}</span>
-                </div>
-                <img class="sub-arrow arrow-transform-js" src=${arrowIcon}>
-                </a>
-                <div class="sub-category">
-                    ${items(item.categories)}
-                </div>
-            </figure>
+        <figure data-category data-subcategory class='sub-category-wrapper' data-id=${item.id}>
+            <a class='item'>
+            <div>
+                <span>${item.name}</span>
+                <span class="sub-title">${item.subtitle}</span>
+            </div>
+            <img class="sub-arrow arrow-transform-js" src=${arrowIcon}>
+            </a>
+            <div class="sub-category">
+                ${items(item.categories)}
+            </div>
+        </figure>
         `
   })
 

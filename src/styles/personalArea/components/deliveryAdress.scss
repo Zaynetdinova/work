@@ -1,0 +1,73 @@
+.delivery-address {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  .left-column,
+  .right-column {
+    width: 49.3%;
+    .title {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      background: #F3F2F0;
+      padding: 10px 20px;
+      img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .right-column {
+    .wrap-sum {
+      padding: 0 0 0 20px;
+      margin-top: 28px;
+    }
+    .result {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 18px;
+      b {
+        margin-left: 8px;
+      }
+    }
+  }
+  .left-column {
+    .wrap-close-text {
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 23px;
+      margin-top: 28px;
+      padding-left: 25px;
+      img {
+        width: 10px;
+        height: 10px;
+        margin-right: 12px;
+      }
+    }
+    .button-add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 17px;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 200px;
+      height: 36px;
+      margin-left: 20px;
+      &:hover {
+        background: #AB064E;
+        color: #FFFFFF;
+        border: 1px solid #AB064E;
+      }
+    }
+  }
+}

@@ -2,7 +2,6 @@
   @import 'components/titleWrapper';
   @import 'components/transitionWrapper';
   @import 'components/sidebar-page-categories';
-  @import 'components/pagination';
   @import 'components/number';
   @import 'components/navCatalog';
   @import 'components/popup';
@@ -79,6 +78,13 @@
       left: 0;
       overflow: auto;
       display: none;
+    }
+  }
+  @media (max-width: 1130px) {
+    .wrapper-pagination {
+      .pagination {
+        display: none;
+      }
     }
   }
   @media (max-width: 768px) {
