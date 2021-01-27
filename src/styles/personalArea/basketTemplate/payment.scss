@@ -1,0 +1,48 @@
+.Payment-Page {
+  @import "../components/basketSteps";
+  @import "../components/basketDeliveryBlocks";
+  @import "../components/deliveryAdress";
+  @import "../components/wrapPagination";
+  margin-bottom: 110px;
+  .Steps {
+    .basket-steps {
+      .pointer-grey {
+        background-image: url("../images/icons/pointer.svg");
+      }
+      .icon-text {
+        .pay-icon {
+          background-image: url("../images/icons/pay-puple.svg");
+        }
+      }
+    }
+    .line-delivery {
+      border: 2px solid #D9D9D9;
+      margin-bottom: 20px;
+    }
+  }
+  .basket-delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .basketDeliveryBlock {
+      width: 24%;
+      height: 250px;
+    }
+  }
+  .delivery-address {
+    .left-column {
+      background: rgba(255, 255, 255, 0.6);
+      border: 2px solid #F3F2F0;
+      .comment {
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 30px 0 0 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    margin-bottom: 210px;
+  }
+}

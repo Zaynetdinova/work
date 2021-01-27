@@ -1,24 +1,22 @@
 import basket from '../../../../../images/icons/basket.svg'
 import delivery from '../../../../../images/icons/delivery.svg'
-import payment from '../../../../../images/icons/pay.svg'
-import pointer from '../../../../../images/icons/pointer.svg'
-import pointerGrey from '../../../../../images/icons/pointer-grey.svg'
+
 export function basketSteps() {
     return `
         <div class="Steps">
             <div class="basket-steps">
-                <div class="icon-text">
+                <div class="icon-text" style="cursor: pointer">
                     <img src="${basket}" alt="">
                     <div class="active">Корзина</div>
                 </div>
-                <img src="${pointer}" alt="">
+                <div class="pointer-arrow"></div>
                 <div class="icon-text">
                     <img src="${delivery}" alt="">
                     <div class="active">Доставка</div>
                 </div>
-                <img src="${pointerGrey}" alt="">
+                <div class="pointer-grey"></div>
                 <div class="icon-text">
-                    <img src="${payment}" alt="">
+                    <div class="pay-icon"></div>
                     <div class="active">Оплата</div>
                 </div>
             </div>

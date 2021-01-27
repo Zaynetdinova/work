@@ -1,13 +1,13 @@
-export function pagination() {
+export function pagination(prev, next) {
     return `
         <div class="pagination">
             <div class="wrapper-button-pagination">
                 <div class="prev">
                     <div class="arrow-prev"></div>
-                    <div class="text">Предыдущая страница</div>
+                    <div class="text">${prev}</div>
                 </div>
                 <div class="next">               
-                    <div class="text">Следующая страница</div>
+                    <div class="text">${next}</div>
                     <div class="arrow-next"></div>
                 </div>
             </div>          

@@ -12,10 +12,48 @@
         line-height: 17px;
         margin-left: 13px;
       }
+      .pay-icon {
+        background-image: url("../images/icons/pay.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 22px;
+        height: 22px;
+      }
+    }
+    .pointer-arrow,
+    .pointer-grey {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 163px;
+      height: 24px;
+    }
+    .pointer-arrow {
+      background-image: url("../images/icons/pointer.svg");
+    }
+    .pointer-grey {
+      background-image: url("../images/icons/pointer-grey.svg");
     }
   }
   .line-delivery {
     border: 2px solid #D9D9D9;
     margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    .basket-steps {
+      max-width: 289px;
+      .icon-text {
+        flex-direction: column;
+        .active {
+          margin-left: 0;
+          margin-top: 15px;
+        }
+      }
+      .pointer-arrow,
+      .pointer-grey {
+        width: 70px;
+      }
+    }
   }
 }

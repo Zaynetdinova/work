@@ -8,11 +8,12 @@
     .next,
     .prev {
       display: flex;
+      justify-content: space-between;
       align-items: center;
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
       cursor: pointer;
-      min-width: 340px;
+      width: 340px;
       &:hover {
         .arrow-prev,
         .arrow-next {
@@ -24,14 +25,12 @@
     .prev {
       border-radius: 4px 0 0 4px;
       padding: 8.5px 82px 8.5px 13px;
-      cursor: pointer;
     }
 
     .next {
       border-radius: 0 4px 4px 0;
       border-left: none;
       padding: 8.5px 13px 8.5px 90px;
-      cursor: pointer;
     }
 
     .arrow-prev,
@@ -54,9 +53,6 @@
       font-size: 15px;
       line-height: 17px;
       color: #3D3D3C;
-    }
-    @media (max-width: 1130px) {
-      display: none;
     }
   }
 }
