@@ -6,7 +6,7 @@ import {paymentPageTemplate} from "./basketTemplate/paymentPage.template";
 export function basketTemplate() {
 	return `
 		<div class="Basket">
-			 ${basketPageTemplate()}
+			${deliveryPageTemplate()}
 		</div>
 	`
 }
