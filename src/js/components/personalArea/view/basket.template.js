@@ -6,10 +6,11 @@ import {paymentPageTemplate} from "./basketTemplate/paymentPage.template";
 export function basketTemplate() {
 	return `
 		<div class="Basket">
-			${paymentPageTemplate()}
+			 ${basketPageTemplate()}
 		</div>
 	`
 }
 
 // ${basketPageTemplate()}
 // ${deliveryPageTemplate()}
+// ${paymentPageTemplate()}

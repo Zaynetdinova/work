@@ -3,6 +3,8 @@
   @import "../components/basketDeliveryBlocks";
   @import "../components/deliveryAdress";
   @import "../components/wrapPagination";
+  @import "../components/waysOfPayment";
+  @import "../components/orderCommentPayment";
   margin-bottom: 110px;
   .Steps {
     .basket-steps {
@@ -42,7 +44,52 @@
       }
     }
   }
+  .wrapper-sum-mobile {
+    display: none;
+    margin-bottom: 35px;
+    .title {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 17px;
+      margin-bottom: 20px;
+    }
+    .result {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 18px;
+      b {
+        margin-left: 8px;
+      }
+    }
+  }
   @media (max-width: 1024px) {
     margin-bottom: 210px;
+    .basket-delivery {
+      .basketDeliveryBlock {
+        height: 220px;
+        .wrap {
+          .choice {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .basket-delivery {
+      .basketDeliveryBlock {
+        height: 279px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .basket-delivery {
+      display: none;
+    }
+    .wrapper-sum-mobile {
+      display: block;
+    }
   }
 }

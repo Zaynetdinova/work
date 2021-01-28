@@ -45,15 +45,19 @@
       max-width: 289px;
       .icon-text {
         flex-direction: column;
+        height: 50px;
+        justify-content: space-between;
         .active {
           margin-left: 0;
-          margin-top: 15px;
         }
       }
       .pointer-arrow,
       .pointer-grey {
         width: 70px;
       }
+    }
+    .line-delivery {
+      display: none;
     }
   }
 }

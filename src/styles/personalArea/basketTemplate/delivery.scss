@@ -3,13 +3,67 @@
   @import "../components/basketDeliveryBlocks";
   @import "../components/deliveryAdress";
   @import "../components/wrapPagination";
+  @import "../components/leftColumnAddress.scss";
+  @import "../components/titleImg.scss";
   margin-bottom: 110px;
   .basket-delivery {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
   }
+  .wrapper-sum-mobile {
+    display: none;
+    margin-bottom: 35px;
+    .title {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 17px;
+      margin-bottom: 20px;
+    }
+    .result {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 18px;
+      b {
+        margin-left: 8px;
+      }
+    }
+  }
+  .wrapper-left-column {
+    display: none;
+    .left-column-address {
+      width: 100%;
+      .title-img {
+        margin-left: -15px;
+        margin-bottom: -15px;
+      }
+      .wrap-close-text {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .button-add {
+        margin-left: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
   @media (max-width: 1024px) {
     margin-bottom: 210px;
+  }
+  @media (max-width: 767px) {
+    .wrapper-sum-mobile {
+      display: block;
+    }
+    .basket-delivery {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    .wrapper-left-column {
+      display: block;
+    }
   }
 }

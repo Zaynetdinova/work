@@ -8,11 +8,20 @@ import comment from '../../../../../images/icons/comment.svg'
 import money from '../../../../../images/icons/money.svg'
 import {SumMoneySale} from "../components/sumMoneySale";
 import {pagination} from "../../../common/pagination";
+import {waysOfPayment} from "../components/waysOfPayment";
+import {orderCommentPayment} from "../components/orderСommentPayment";
 
 export function paymentPageTemplate() {
     return ` 
         <div class="Payment-Page">
             ${basketSteps()}
+            ${waysOfPayment()}
+            ${orderCommentPayment()}
+            <div class="wrapper-sum-mobile">
+                <div class="title">Стоимость заказа</div>
+                <div>${SumMoneySale(sumMoney)}</div>
+                 <div class="result">Итого:  <b>1 234,00 ₽</b></div>
+            </div>
             <div class="basket-delivery">
                 ${basketDeliveryBlock(data)}
             </div>
@@ -56,7 +65,7 @@ let data = [
     },
     {
         imgIcon: deposit,
-        title: 'Оплатить с депозита',
+        title: 'Оплата с депозита',
         text: 'Оплата заказа с депозита на сайте',
     },
 ]

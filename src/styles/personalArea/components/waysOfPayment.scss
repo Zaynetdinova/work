@@ -1,0 +1,26 @@
+.ways-of-payment {
+  @import "inputChoice";
+  display: none;
+  margin-bottom: 30px;
+  .title {
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    background: #F3F2F0;
+    padding: 10px 15px;
+    margin: 0 -15px;
+    img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .wrapper-choice-input {
+    padding-left: 5px;
+    margin-top: 20px;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
