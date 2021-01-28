@@ -1,0 +1,36 @@
+.choice {
+  display: flex;
+  flex-direction: column;
+  .radio {
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #777777;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    input {
+      display: none;
+    }
+    span {
+      position: relative;
+      display: inline-block;
+      min-width: 14px;
+      min-height: 14px;
+      background: #FFFFFF;
+      border: 1px solid #C4C4C4;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    input:checked + span::before {
+      content: '';
+      position: absolute;
+      left: 2px; top: 2px;
+      background: #AB064E;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+    }
+  }
+}

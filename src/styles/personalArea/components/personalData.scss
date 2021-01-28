@@ -65,6 +65,19 @@
             display: flex;
             align-items: center;
             margin-left: 12px;
+            .img {
+              width: 10px;
+              height: 10px;
+              margin-right: 12px;
+              background-image: url("../images/icons/exit.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              cursor: pointer;
+              &:hover {
+                background-image: url("../images/icons/exit-purple.svg");
+              }
+            }
           }
         }
         .wrapper-box-4 {
@@ -116,7 +129,7 @@
           height: 36px;
           outline: none;
           border: 1px solid #C4C4C4;
-
+          background: #FFFFFF;
           option {
             padding-right: 14px;
             padding-left: 15px;
@@ -157,6 +170,19 @@
           display: flex;
           align-items: baseline;
           margin-top: 18px;
+          .img {
+            width: 10px;
+            height: 10px;
+            margin-right: 12px;
+            background-image: url("../images/icons/exit.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            cursor: pointer;
+            &:hover {
+              background-image: url("../images/icons/exit-purple.svg");
+            }
+          }
         }
       }
     }

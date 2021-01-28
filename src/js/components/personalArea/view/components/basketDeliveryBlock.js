@@ -1,3 +1,5 @@
+import {inputChoice} from "./inputChoice";
+
 export function basketDeliveryBlock(item) {
     const items = item.map((item) => {
         return `
@@ -8,10 +10,7 @@ export function basketDeliveryBlock(item) {
                         ${item.title}
                     </div>
                     <p class="text">${item.text}</p>
-                    <div class="choice">
-                        <label class="radio"><input type="radio" name="g"><span></span>г. Москва, Окружной проезд, 30А</label>
-                        <label class="radio"><input type="radio" name="g"><span></span>СДЭК</label>
-                    </div>
+                    ${inputChoice()}
                 </div>
             </div>               
         `

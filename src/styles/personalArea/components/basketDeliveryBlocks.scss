@@ -1,4 +1,5 @@
 .basketDeliveryBlock {
+  @import "inputChoice";
   background: #F3F2F0;
   width: 32.362%;
   height: 346px;
@@ -31,36 +32,32 @@
       margin-bottom: 30px;
       margin-top: 20px;
     }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    &:hover {
+      background: transparent;
+      border-bottom: 4px solid transparent;
+    }
+    &.active {
+      background: transparent;
+      border-bottom: 4px solid transparent;
+    }
     .choice {
-      display: flex;
-      flex-direction: column;
-      color: #777777;
-      .radio {
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        input {
-          display: none;
-        }
-        span {
-          position: relative;
-          display: inline-block;
-          min-width: 14px;
-          min-height: 14px;
-          background: #FFFFFF;
-          border: 1px solid #C4C4C4;
-          border-radius: 50%;
-          margin-right: 10px;
-        }
-        input:checked + span::before {
-          content: '';
-          position: absolute;
-          left: 2px; top: 2px;
-          background: #AB064E;
-          width: 8px; height: 8px;
-          border-radius: 50%;
-        }
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+    .wrap {
+      padding: 0;
+      margin: 0 -15px;
+      .text {
+        padding: 0 15px;
+      }
+      .title {
+        background: #F3F2F0;
+        padding: 10px 20px;
       }
     }
   }

@@ -8,6 +8,8 @@ import money from '../../../../../images/icons/money.svg'
 import {basketDeliveryBlock} from "../components/basketDeliveryBlock";
 import {pagination} from "../../../common/pagination";
 import {SumMoneySale} from "../components/sumMoneySale";
+import {titleImg} from "../components/titleImg";
+import {leftColumnAddress} from "../components/leftColumnAddress";
 
 export function deliveryPageTemplate() {
     return `
@@ -16,23 +18,16 @@ export function deliveryPageTemplate() {
             <div class="basket-delivery">
                 ${basketDeliveryBlock(data)}
             </div>
+            <div class="wrapper-left-column">${leftColumnAddress()}</div>
+            <div class="wrapper-sum-mobile">
+                <div class="title">Стоимость заказа</div>
+                <div>${SumMoneySale(sumMoney)}</div>
+                <div class="result">Итого:  <b>1 234,00 ₽</b></div>
+            </div>
             <div class="delivery-address">
-                <div class="left-column">
-                    <div class="title">
-                        <img src="${place}" alt="">
-                        Выберите адрес доставки
-                    </div>
-                    <div class="wrap-close-text">
-                        <img src="${close}" alt="">
-                        105187, г. Москва, ул. Окружной проезд, 30А
-					</div>
-					<div class="button-add">Добавить новый адрес</div>
-                </div>
+                ${leftColumnAddress()}
                 <div class="right-column">
-                    <div class="title">
-                        <img src="${money}" alt="">
-                        Стоимость заказа
-                    </div>
+                    ${titleImg(money,'Стоимость заказа')}
                     <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
                     <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>

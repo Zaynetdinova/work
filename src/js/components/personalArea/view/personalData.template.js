@@ -67,7 +67,7 @@ export function personalDataTemplate() {
 							${TitleData('Адреса доставки')}
 						</div>
 						<div class="wrap-close-text">
-							<img src="${close}" alt="" style="width: 10px; height: 10px;margin-right: 12px">
+							<div class="img"></div>
 							<div>108840, Россия, Троицк, ул. Академика Черенкова, 3 (склад сдек)</div>
 						</div>
 						<div class="tower">
@@ -81,7 +81,7 @@ export function personalDataTemplate() {
 						<div class="wrapper-box-1">
 							${TitleData('Гостевые логины')}
 							<div class="password-guest">
-								<img src="${close}" alt="" style="width: 10px; height: 10px;margin-right: 12px">
+								<div class="img"></div>
 								<div>Гостевой логин (наценка 0% + 0)</div>
 							</div>
 						</div>
