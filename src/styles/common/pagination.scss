@@ -15,9 +15,13 @@
       cursor: pointer;
       width: 340px;
       &:hover {
+        background: #AB064E;
         .arrow-prev,
         .arrow-next {
-          background: url("../images/icons/arrow.svg") no-repeat;
+          background: url("../images/icons/arrow-white2.svg") no-repeat;
+        }
+        .text {
+          color: #FFFFFF;
         }
       }
     }
@@ -35,7 +39,7 @@
 
     .arrow-prev,
     .arrow-next {
-      background: url("../images/icons/arrow2.svg") no-repeat;
+      background: url("../images/icons/arrow.svg") no-repeat;
       width: 10px;
       height: 10px;
     }
