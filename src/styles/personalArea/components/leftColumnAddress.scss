@@ -1,6 +1,8 @@
 .left-column-address {
   width: 49.3%;
   .wrap-close-text {
+    display: flex;
+    align-items: baseline;
     font-size: 14px;
     line-height: 15px;
     margin-bottom: 23px;

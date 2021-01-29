@@ -15,7 +15,7 @@ export function restorePassword() {
             </div>
             ${nesessaryFildsTemplate()}
             </div>
-            <div class="wrapper-phoneBackCall-btnCall">
+            <div class="wrapper-restore">
                 ${buttonRegistration('Восстановить')}
             </div>  
         </form>

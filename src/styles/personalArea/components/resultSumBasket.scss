@@ -17,12 +17,16 @@
           margin-left: 8px;
         }
       }
+      .wrap-sum {
+        width: 100%;
+      }
     }
     .line-promo {
       display: flex;
       margin-bottom: 13px;
       font-size: 14px;
       line-height: 15px;
+      position: relative;
       &:last-child {
         margin-bottom: 0;
       }
@@ -30,6 +34,11 @@
         .button-personal-data {
           border-radius: 0 4px 4px 0;
         }
+      }
+      .cut {
+        position: absolute;
+        top: -8px;
+        right: 185px;
       }
       .bonus {
         display: flex;
@@ -111,6 +120,9 @@
           .button-personal-data {
             min-width: 118px;
           }
+        }
+        .cut {
+          right: 40%;
         }
       }
     }

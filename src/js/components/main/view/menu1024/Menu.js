@@ -31,21 +31,21 @@ const cards = [
     {
         img: img3,
         title: 'мужчинам',
-        link: '/#categories'
+        link: '/'
     },
     {
         img: img4,
         title: 'мальчикам',
-        link: '/#categories-children'
+        link: '/'
     },
     {
         img: img5,
         title: 'для дома',
-        link: '/#categories'
+        link: '/'
     },
     {
         img: img6,
         title: 'игрушки',
-        link: '/#categories'
+        link: '/'
     },
 ]

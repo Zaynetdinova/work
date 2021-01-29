@@ -23,7 +23,7 @@ export function topHeader() {
                     <nav>
                         <span>
                             <a href='tel:+74996088925'>8 (499) 608-89-25,</a>
-                            <a class='lk_link2' href='tel:+78003012575'> (800) 301-25-75</a>
+                            <a class='lk_link2' href='tel:+78003012575'>8 (800) 301-25-75</a>
                         </span>
                         <article class='lk_link backCall-js'>Заказать звонок</article>
                     </nav>

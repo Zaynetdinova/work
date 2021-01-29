@@ -1,5 +1,6 @@
 import {SumMoneySale} from './sumMoneySale';
 import {ButtonData} from './buttonData'
+import cut from '../../../../../images/icons/cut.svg'
 export function resultSumBasket() {
     return `
         <div class="wrapper-result">
@@ -8,7 +9,8 @@ export function resultSumBasket() {
                     <div>
                         <div class="line-promo">
                             <input class="input-promo-cod" type="text" placeholder="Промокод">
-                            <div class="wrap-button-data">${ButtonData('Применить')}</div>
+                            <img class="cut" src="${cut}" alt="cut">
+                            <div class="wrap-button-data">${ButtonData('Применить')}</div>        
                         </div>
                         <div class="line-promo">
                             <div class="bonus">Бонус за выкуп: <span class="margin">1 234,00 ₽</span></div>
@@ -21,7 +23,7 @@ export function resultSumBasket() {
                     <div class="result">На дипозите:  <b>1 234,00 ₽</b></div>              
                 </div>
                 <div class="column">
-                    <div>${SumMoneySale(sumMoney)}</div>
+                    <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
                     <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 .wrapper-buyForMe {
   max-width: 1020px;
-  margin: 67px auto 67px auto;
+  margin: 76px auto 67px auto;
   .box-input {
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@
       .phone-arrow,
       .phone-arrow2 {
         position: absolute;
-        top: 38px;
+        top: 22px;
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -54,7 +54,7 @@
     }
   }
   .wrapper-button {
-    margin-top: 43px;
+    margin-top: 44px;
     margin-bottom: 44px;
     display: flex;
     align-items: center;
@@ -66,6 +66,9 @@
       .password {
         width: 185px;
       }
+      .password2 {
+        width: 100%;
+      }
     }
   }
   @media (max-width: 890px) {
@@ -74,6 +77,9 @@
       width: 100%;
       .password {
         width: 235px;
+      }
+      .password2 {
+        width: 100%;
       }
     }
     .box-input {
@@ -85,6 +91,7 @@
   }
   @media (max-width: 550px) {
     max-width: 354px;
+    margin: 30px auto 30px auto;
     .wrap-input {
       .password {
         width: 100%;

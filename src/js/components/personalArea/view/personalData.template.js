@@ -2,6 +2,7 @@ import {TitleData} from "./components/titleData";
 import {ButtonData} from "./components/buttonData";
 import close from '../../../../images/icons/exit.svg'
 import {checkboxRegistration} from "../../common/checkboxRegistration";
+import {imgCloseIcon} from "./components/imgCloseIcon";
 
 export function personalDataTemplate() {
 	return `
@@ -67,7 +68,7 @@ export function personalDataTemplate() {
 							${TitleData('Адреса доставки')}
 						</div>
 						<div class="wrap-close-text">
-							<div class="img"></div>
+							${imgCloseIcon()}
 							<div>108840, Россия, Троицк, ул. Академика Черенкова, 3 (склад сдек)</div>
 						</div>
 						<div class="tower">
@@ -81,7 +82,7 @@ export function personalDataTemplate() {
 						<div class="wrapper-box-1">
 							${TitleData('Гостевые логины')}
 							<div class="password-guest">
-								<div class="img"></div>
+								${imgCloseIcon()}
 								<div>Гостевой логин (наценка 0% + 0)</div>
 							</div>
 						</div>
