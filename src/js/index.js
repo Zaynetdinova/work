@@ -10,7 +10,7 @@ import 'nouislider/distribute/nouislider.css';
 import {PersonalAreaPage} from "./pages/PersonalAreaPage";
 
 
-window.userRegistry = true
+window.userRegistry = false
 
 new Router('#app', {
   mainPage: MainPage,

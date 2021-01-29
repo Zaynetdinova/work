@@ -5,6 +5,7 @@
   @import "../components/wrapPagination";
   @import "../components/leftColumnAddress.scss";
   @import "../components/titleImg.scss";
+  @import "../components/imgCloseIcon";
   margin-bottom: 110px;
   .basket-delivery {
     display: flex;
@@ -19,6 +20,13 @@
       font-size: 15px;
       line-height: 17px;
       margin-bottom: 20px;
+    }
+    .Sum-money-sale {
+      .title-sum {
+        b {
+          background: #f9f9f9;
+        }
+      }
     }
     .result {
       display: flex;

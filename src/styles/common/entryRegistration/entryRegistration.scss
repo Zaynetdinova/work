@@ -79,7 +79,7 @@
     justify-content: flex-end;
     .close-icon {
       display: flex;
-      padding: 10px 0 10px 10px;
+      padding: 0 0 0 10px;
       cursor: pointer;
     }
     .btn-close {
@@ -87,7 +87,7 @@
       background-position: center center;
       background-repeat: no-repeat;
       width: 16px;
-      height: 16px;
+      height: 21px;
     }
     &:hover {
       .btn-close {
@@ -118,7 +118,6 @@
       border-right: none;
       border-left: none;
       border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-      margin-top: 18px;
       &:focus {
         border-bottom: 1px dashed #FFFFFF;
       }
@@ -144,7 +143,7 @@
       position: relative;
       .password-control {
         position: absolute;
-        top: 38px;
+        top: 21px;
         right: 10px;
         display: inline-block;
         width: 20px;
@@ -159,27 +158,22 @@
 
     .select-organization {
       height: 60px;
-      margin-top: 18px;
       border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
       display: flex;
       align-items: center;
       width: 100%;
-
       .wrapper-select {
         width: 100%;
         .input-selected-item {
-          margin-bottom: 4px;
           height: 55px;
           .title {
             color: #fff;
           }
         }
-
         .popup-selected-items {
           padding: 0;
           border-top: none;
           margin-top: 0;
-
           .select-item {
             padding: 10px 16px;
             border-bottom: 1px solid #AB064E;
@@ -188,13 +182,11 @@
               color: #555555;
             }
           }
-
           .select-item:last-child {
             border-bottom: none;
           }
         }
       }
-
       .wrapper-select-input {
         .input-selected-item {
           margin-bottom: 0;
@@ -205,7 +197,6 @@
           }
         }
       }
-
       .input-name {
         border: none;
       }
@@ -218,13 +209,40 @@
   .nesessary-filds {
     text-align: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 24px;
     color: #fff;
     opacity: 0;
 
     &.error-input-text-active {
       opacity: 1;
+    }
+  }
+  @media (max-width: 374px) {
+    .wrap-input {
+      .input-name {
+        height: 30px;
+      }
+      input {
+        margin-top: 18px;
+      }
+      .select-organization {
+        height: 30px;
+        display: block;
+        margin-top: 18px;
+        .wrapper-select {
+          .popup-selected-items {
+            margin-top: -5px;
+          }
+          .input-selected-item {
+            margin-bottom: 4px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .nesessary-filds {
+      margin-top: 20px;
     }
   }
 }

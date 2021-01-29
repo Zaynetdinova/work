@@ -10,6 +10,7 @@ import {SumMoneySale} from "../components/sumMoneySale";
 import {pagination} from "../../../common/pagination";
 import {waysOfPayment} from "../components/waysOfPayment";
 import {orderCommentPayment} from "../components/orderСommentPayment";
+import {titleImg} from "../components/titleImg";
 
 export function paymentPageTemplate() {
     return ` 
@@ -27,17 +28,11 @@ export function paymentPageTemplate() {
             </div>
             <div class="delivery-address">
                 <div class="left-column">
-                    <div class="title">
-                        <img src="${comment}" alt="">
-                        Комментарий к заказу
-                    </div>
-                    <input class="comment" type="text" placeholder="Ваш комментарий к заказу (не обязательно)">
+                    ${titleImg(comment,'Комментарий к заказу')}
+                    <textarea class="comment" placeholder="Ваш комментарий к заказу (не обязательно)"></textarea>
                 </div>
                 <div class="right-column">
-                    <div class="title">
-                        <img src="${money}" alt="">
-                        Стоимость заказа
-                    </div>
+                    ${titleImg(money,'Стоимость заказа')}
                     <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
                     <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>

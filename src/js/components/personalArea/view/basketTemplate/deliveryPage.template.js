@@ -2,15 +2,12 @@ import {basketSteps} from "../components/basketSteps";
 import pickup from '../../../../../images/icons/pickup.svg';
 import transport from '../../../../../images/icons/transportCompany.svg'
 import email from '../../../../../images/icons/mailDelivery.svg'
-import place from '../../../../../images/icons/place.svg'
-import close from '../../../../../images/icons/exit.svg'
 import money from '../../../../../images/icons/money.svg'
 import {basketDeliveryBlock} from "../components/basketDeliveryBlock";
 import {pagination} from "../../../common/pagination";
 import {SumMoneySale} from "../components/sumMoneySale";
 import {titleImg} from "../components/titleImg";
 import {leftColumnAddress} from "../components/leftColumnAddress";
-
 export function deliveryPageTemplate() {
     return `
         <div class="Delivery-page">
@@ -21,7 +18,7 @@ export function deliveryPageTemplate() {
             <div class="wrapper-left-column">${leftColumnAddress()}</div>
             <div class="wrapper-sum-mobile">
                 <div class="title">Стоимость заказа</div>
-                <div>${SumMoneySale(sumMoney)}</div>
+                <div class="wrap-sum-sale">${SumMoneySale(sumMoney)}</div>
                 <div class="result">Итого:  <b>1 234,00 ₽</b></div>
             </div>
             <div class="delivery-address">

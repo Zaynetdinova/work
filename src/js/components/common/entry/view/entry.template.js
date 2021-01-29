@@ -23,7 +23,7 @@ export function entryTemplate() {
                 <article class="restore" id="restore-password-button-js">Восстановить</article>
             </div>
        
-            <div class="wrapper-phoneBackCall-btnCall">
+            <div class="wrapper-entry-button">
                 ${buttonRegistration('Войти')}
             </div>
         </form>

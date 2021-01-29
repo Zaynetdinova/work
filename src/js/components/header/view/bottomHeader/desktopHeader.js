@@ -27,16 +27,16 @@ export function desktopHeader() {
                         <a href="/#categories-children">Девочкам</a>
                     </li>
                     <li>
-                        <a href="/#categories"">Мужчинам</a>
+                        <a href="">Мужчинам</a>
                     </li>
                     <li>
-                        <a href="/#categories-children">Мальчикам</a>
+                        <a href="">Мальчикам</a>
                     </li>
                     <li>
-                        <a href="/#categories"">Для дома</a>
+                        <a href="">Для дома</a>
                     </li>
                     <li>
-                        <a href="/#categories"">Игрушки</a>
+                        <a href="">Игрушки</a>
                     </li>               
                 </ul>
             </nav>

@@ -20,11 +20,11 @@ export function buyForMeTemplate() {
                 <div class="wrap-input">
                     <input name="email"  class="input-name" placeholder="Э-почта* (логин)" type="text">
     <!--                error password2 переименоать password???-->
-                    <div data-input-password-js class="password password2">
+                    <div data-input-password-js class="password2 password">
                         <input class="input-name password-control-eye-js" type="password" placeholder="Пароль*" name="password">
                         <div class="password-control"></div>
                     </div>
-                    <div data-input-password-js class="password password2">
+                    <div data-input-password-js class="password2 password">
                         <input class="input-name password-control-eye-js" type="password" placeholder="Повторите пароль*" name="passwordRepeat">
                         <div class="password-control"></div>
                     </div>

@@ -1,8 +1,11 @@
 .titleRegistration {
-    margin-top: 42px;
+    margin-top: 52px;
     font-size: 28px;
     line-height: 32px;;
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    @media (max-width: 414px) {
+        margin-top: 35px;
+    }
 }

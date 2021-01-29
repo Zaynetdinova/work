@@ -1,23 +1,22 @@
 .wrapper-Entry {
   max-width: 500px;
-  margin: 67px auto 67px auto;
-
+  margin: 76px auto 67px auto;
   .wrap-input {
-    margin-top: 52px;
+    margin-top: 38px;
   }
-
   .restore-input {
-    margin-bottom: 60px;
-
     .wrap-input {
       margin-top: 0;
-
       .input-name {
         margin: 0;
       }
     }
   }
-
+  .wrapper-restore {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
   .title-restorePassword {
     font-weight: bold;
     font-size: 15px;
@@ -60,6 +59,10 @@
       }
     }
   }
+  .wrapper-entry-button {
+    display: flex;
+    justify-content: center;
+  }
 
   .wrap-registration {
     margin: 44px auto 44px auto;
@@ -70,6 +73,9 @@
   }
   .sign-up {
     display: flex;
+    .btnCall {
+      margin-bottom: 0;
+    }
   }
   .wrapper-phoneBackCall-btnCall {
     display: flex;
@@ -85,9 +91,8 @@
 
       .wrapper-number-BackCall {
         margin-left: 6px;
-
         .number {
-          font-size: 14px;
+          font-size: 13px;
           line-height: 100%;
           text-align: center;
           letter-spacing: 0.05em;
@@ -107,18 +112,15 @@
     .rightBackCall {
       display: flex;
       align-items: start;
-
       .address {
         margin-left: 10px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 128%;
         color: #FFFFFF;
-
         a {
           text-decoration-line: underline;
           font-style: italic;
           color: rgba(255, 255, 255, 0.5);
-
           &:hover {
             color: rgba(255, 255, 255, 0.9);
           }
@@ -134,16 +136,22 @@
   }
   @media (max-width: 550px) {
     max-width: 354px;
+    margin: 30px auto 30px auto;
+    .wrap-input {
+      margin-top: 0;
+    }
     .wrapper-phoneBackCall-btnCall {
+      align-items: start;
+      flex-direction: column-reverse;
+      margin-top: 24px;
       .phoneBackCall {
         justify-content: normal;
         align-items: start;
+        margin-bottom: 33px;
         .wrapper-number-BackCall {
           display: flex;
           flex-direction: column;
           align-items: start;
-          .number {
-          }
         }
       }
     }
@@ -157,15 +165,10 @@
           margin-bottom: 30px;
         }
       }
-    }
-    .wrapper-phoneBackCall-btnCall {
-      align-items: start;
-      flex-direction: column-reverse;
-      margin-top: 50px;
-      margin-bottom: 40px;
-
-      .phoneBackCall {
-        margin: 0;
+      .rightBackCall {
+        .address {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -174,6 +177,20 @@
   }
   @media (max-width: 374px) {
     max-width: 260px;
+    .wrapper-phoneBackCall-btnCall {
+      margin-top: 20px;
+      .phoneBackCall {
+        margin-bottom: 25px;
+        margin-top: 45px;
+      }
+    }
+    .bottom-wrapperBackCall {
+      .leftBackCall {
+        .address {
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 }
 //problem

@@ -1,5 +1,6 @@
 .Personal-Data {
   @import "titleData";
+  @import "imgCloseIcon";
   color: #3D3D3C;
   font-size: 14px;
   line-height: 15px;
@@ -65,19 +66,6 @@
             display: flex;
             align-items: center;
             margin-left: 12px;
-            .img {
-              width: 10px;
-              height: 10px;
-              margin-right: 12px;
-              background-image: url("../images/icons/exit.svg");
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: contain;
-              cursor: pointer;
-              &:hover {
-                background-image: url("../images/icons/exit-purple.svg");
-              }
-            }
           }
         }
         .wrapper-box-4 {
@@ -170,19 +158,6 @@
           display: flex;
           align-items: baseline;
           margin-top: 18px;
-          .img {
-            width: 10px;
-            height: 10px;
-            margin-right: 12px;
-            background-image: url("../images/icons/exit.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            cursor: pointer;
-            &:hover {
-              background-image: url("../images/icons/exit-purple.svg");
-            }
-          }
         }
       }
     }
@@ -224,11 +199,6 @@
           }
         }
       }
-    }
-  }
-  @media (max-width: 1024px) {
-    .wrapper-columns {
-      margin-bottom: 250px;
     }
   }
   @media (max-width: 1024px) {

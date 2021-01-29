@@ -3,7 +3,7 @@ export function transitionWrapper(item) {
         return `
             <div class="transitionWrapper">
                 <span class="home"><a href="/">Главная</a></span>
-                <span>/</span>
+                <span class="line-span">/</span>
                 <span class="title"><a href=${item.link}>${item.title}</a></span>                   
             </div>                
         `
