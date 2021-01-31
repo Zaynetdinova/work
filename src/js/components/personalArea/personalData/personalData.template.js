@@ -85,9 +85,9 @@ ${ButtonData('Изменить')}
 <div class="tower">
   <div class="width-info">
   <div><span style="color: #AB064E">Внимание!</span> Информация по адресу доставки берется из Вашего первого заказа. Если в дальнейшем Вы хотите изменить адрес доставки и у Вас есть отправленный нам заказ, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
-</div>\t\t\t\t\t\t
+</div>
 ${ButtonData('Изменить')}
-</div>\t\t\t\t\t\t
+</div>
 </div>
 <div class="wrapper-box">
   <div class="wrapper-box-1">
