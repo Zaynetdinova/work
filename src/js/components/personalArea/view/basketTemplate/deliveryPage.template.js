@@ -6,8 +6,8 @@ import money from '../../../../../images/icons/money.svg'
 import {basketDeliveryBlock} from "../components/basketDeliveryBlock";
 import {pagination} from "../../../common/pagination";
 import {SumMoneySale} from "../components/sumMoneySale";
-import {titleImg} from "../components/titleImg";
 import {leftColumnAddress} from "../components/leftColumnAddress";
+import {titleImg} from '../../../common/titleImg'
 export function deliveryPageTemplate() {
     return `
         <div class="Delivery-page">

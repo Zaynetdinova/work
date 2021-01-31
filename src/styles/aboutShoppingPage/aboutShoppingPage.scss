@@ -1,0 +1,14 @@
+.About-shopping {
+  @import "components/titleShopping";
+  @import "components/shoppingDelivery";
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (max-width: 1024px) {
+    padding: 0 15px;
+    margin-bottom: 130px;
+    .transitionWrapper {
+      padding-left: 0;
+    }
+  }
+}

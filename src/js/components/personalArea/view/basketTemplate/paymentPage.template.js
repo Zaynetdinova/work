@@ -10,7 +10,7 @@ import {SumMoneySale} from "../components/sumMoneySale";
 import {pagination} from "../../../common/pagination";
 import {waysOfPayment} from "../components/waysOfPayment";
 import {orderCommentPayment} from "../components/orderСommentPayment";
-import {titleImg} from "../components/titleImg";
+import {titleImg} from '../../../common/titleImg'
 
 export function paymentPageTemplate() {
     return ` 

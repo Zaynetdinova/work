@@ -8,6 +8,7 @@ import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
 import {CardProduct} from './pages/CardProduct'
 import 'nouislider/distribute/nouislider.css';
 import {PersonalAreaPage} from "./pages/PersonalAreaPage";
+import {AboutShopping} from './pages/AboutShopping'
 
 
 window.userRegistry = false
@@ -19,6 +20,7 @@ new Router('#app', {
   viewCategoriesChildren: ViewCategoriesChildren,
   cardProduct: CardProduct,
   personalAreaPage: PersonalAreaPage,
+  aboutShoppingPage: AboutShopping,
 })
 
 
