@@ -1,8 +1,6 @@
 import {transitionWrapper} from "../../common/transitionTitle";
 import {navigation} from '../view/navigation'
 import {basketPageTemplate} from "./view/basketPage.template";
-import {deliveryPageTemplate} from "./view/deliveryPage.template";
-import {paymentPageTemplate} from "./view/paymentPage.template";
 
 export function basketTemplate() {
   return `
@@ -22,8 +20,6 @@ export function basketTemplate() {
     `
 }
 
-// ${basketPageTemplate()}
-// ${deliveryPageTemplate()}
 
 let link = [
   {

@@ -1,5 +1,4 @@
 import women from '../../../../../images/bestsellers/1/img1.png'
-import close from '../../../../../images/icons/close_popup_black.svg'
 import {sizeInfo} from "../../../common/sizeInfo";
 import {infoProduct} from "../../../common/infoProduct";
 import {Sale} from "../../../common/sale";

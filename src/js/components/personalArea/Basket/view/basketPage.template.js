@@ -4,9 +4,8 @@ import {resultSumBasket} from "./resultSumBasket";
 export function basketPageTemplate() {
     return `
     <div id="basket-page-js">
-     ${tableProductsBasket()}
+        ${tableProductsBasket()}
         ${resultSumBasket()}
-    
     </div>
        
     `
