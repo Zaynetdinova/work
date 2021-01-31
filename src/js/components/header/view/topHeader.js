@@ -9,16 +9,16 @@ export function topHeader() {
                         <span class='span'>Оптовая торговля</span>
                         <article id="entry-registration-button-js" class='lk_link'>Вход / Регистрация</article>
                         
-                        <a class='info' href='#'>О покупках
+                        <div class='info'>О покупках
                             <div class="wrapper-tooltip"><div class="tooltip">${tooltip(buy)}</div></div>
-                        </a>                
+                        </div>                
                        
-                        <a class='info' href='#'>О магазине
+                        <div class='info'>О магазине
                             <div class="wrapper-tooltip"><div class="tooltip">${tooltip(score)}</div></div>
-                        </a>
-                        <a class='info' href='#'>Сотрудничество
+                        </div>
+                        <div class='info'>Сотрудничество
                             <div class="wrapper-tooltip"><div class="tooltip">${tooltip(cooperation)}</div></div>
-                        </a>
+                        </div>
                     </nav>
                     <nav>
                         <span>
@@ -36,7 +36,7 @@ export function topHeader() {
 function tooltip(item) {
     const items = item.map((item) => {
         return `
-            <div class="item">${item.title}</div>
+            <a href="${item.link}" class="item">${item.title}</a>
         `
     })
     return `${items.join('')}`
@@ -44,33 +44,41 @@ function tooltip(item) {
 
 const buy = [
     {
-        title: 'Размеры'
+        title: 'Размеры',
+        link: '/#about-shopping'
     },
     {
-        title: 'Доставка'
+        title: 'Доставка',
+        link: '/#about-shopping'
     },
     {
-        title: 'Оплата'
+        title: 'Оплата',
+        link: '/#about-shopping'
     },
     {
-        title: 'Ответы на вопросы'
+        title: 'Ответы на вопросы',
+        link: '/#about-shopping'
     }
 ]
 
 const score = [
     {
-        title: 'О нас'
+        title: 'О нас',
+        link: '/#about-shopping'
     },
     {
-        title: 'Условия работы'
+        title: 'Условия работы',
+        link: '/#about-shopping'
     },
     {
-        title: 'Контакты'
+        title: 'Контакты',
+        link: '/#about-shopping'
     },
 ]
 
 const cooperation = [
     {
-        title: 'Поставщикам'
+        title: 'Поставщикам',
+        link: '/#about-shopping'
     },
 ]

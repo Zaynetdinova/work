@@ -45,6 +45,9 @@ export class Router {
       case 'personal-area/personal-data':
         Page = this.routes.personalAreaData
         break;
+			case 'about-shopping':
+				Page = this.routes.aboutShoppingPage
+				break;
 			default:
 				Page = this.routes.mainPage
 		}

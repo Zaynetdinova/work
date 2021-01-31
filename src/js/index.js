@@ -11,6 +11,9 @@ import {BasketPage} from "./pages/PersonalAreaPage/BasketPage";
 import {PersonalDataPage} from "./pages/PersonalAreaPage/PersonalData";
 
 
+import {AboutShopping} from './pages/AboutShopping';
+
+
 
 window.userRegistry = false
 
@@ -21,7 +24,8 @@ new Router('#app', {
   viewCategoriesChildren: ViewCategoriesChildren,
   cardProduct: CardProduct,
   personalAreaBasket: BasketPage,
-  personalAreaData: PersonalDataPage
+  personalAreaData: PersonalDataPage,
+  aboutShoppingPage: AboutShopping,
 })
 
 

@@ -5,10 +5,10 @@ import email from '../../../../../images/icons/mailDelivery.svg'
 import money from '../../../../../images/icons/money.svg'
 import {basketDeliveryBlock} from "./basketDeliveryBlock";
 import {pagination} from "../../../common/pagination";
-import {SumMoneySale} from "./sumMoneySale";
-import {titleImg} from "./titleImg";
-import {leftColumnAddress} from "./leftColumnAddress";
 
+import {SumMoneySale} from "sumMoneySale";
+import {leftColumnAddress} from "leftColumnAddress";
+import {titleImg} from '../../../common/titleImg'
 export function deliveryPageTemplate() {
     return `
         <div class="Delivery-page">

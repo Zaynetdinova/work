@@ -26,7 +26,7 @@ export function footerTemplate() {
                             <ul>
                                 <li><a href="#">О нас</a></li>
                                 <li><a href="#">Условия работы</a></li>
-                                <li><a href="#">Доставка</a></li>
+                                <li><a href="/#about-shopping">Доставка</a></li>
                                 <li><a href="">Оплата</a></li>
                                 <li><a href="#">Ответы на вопросы</a></li>
                                 <li><a href="#">Контакты</a></li>
