@@ -7,8 +7,12 @@ import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
 import {CardProduct} from './pages/CardProduct'
 import 'nouislider/distribute/nouislider.css';
-import {PersonalAreaPage} from "./pages/PersonalAreaPage";
-import {AboutShopping} from './pages/AboutShopping'
+import {BasketPage} from "./pages/PersonalAreaPage/BasketPage";
+import {PersonalDataPage} from "./pages/PersonalAreaPage/PersonalData";
+
+
+import {AboutShopping} from './pages/AboutShopping';
+
 
 
 window.userRegistry = false
@@ -19,7 +23,8 @@ new Router('#app', {
   viewCategoriesIndex: CatalogPage,
   viewCategoriesChildren: ViewCategoriesChildren,
   cardProduct: CardProduct,
-  personalAreaPage: PersonalAreaPage,
+  personalAreaBasket: BasketPage,
+  personalAreaData: PersonalDataPage,
   aboutShoppingPage: AboutShopping,
 })
 

@@ -1,10 +1,9 @@
 import {Component} from "../../core/Component";
 import {personalAreaTemplate} from "./personalArea.template";
-import {basketTemplate} from './view/basket.template'
-import {personalDataTemplate} from './view/personalData.template'
 import {orderHistoryTemplate} from './view/orderHistory.template'
 import {discountAndBonusesTemplate} from './view/discountAndBonuses.template'
 import {favoritesTemplate} from './view/favorites.template'
+
 
 export class PersonalArea extends Component {
     static className = 'Personal-area'
@@ -43,17 +42,22 @@ export class PersonalArea extends Component {
             return
         }
 
+
+
+
+
         const $idElem = event.target
+
 
         if($idElem.closest('#personal-data-js')) {
             const root = $idElem.closest('#personal-data-js')
-            this.addComponent(root, personalDataTemplate())
+            // this.addComponent(root, personalDataTemplate())
             return
         }
 
         if($idElem.closest('#basket-js')){
             const root = $idElem.closest('#basket-js')
-            this.addComponent(root, basketTemplate())
+            // this.addComponent(root, basketTemplate())
             return
         }
 
