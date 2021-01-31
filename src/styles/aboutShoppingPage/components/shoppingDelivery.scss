@@ -1,0 +1,123 @@
+.shopping-delivery {
+  font-size: 14px;
+  line-height: 20px;
+  .title-delivery {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .text {
+    margin-top: 17px;
+    margin-bottom: 22px;
+    padding-right: 435px;
+    a {
+      color: #AB064E;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .wrapper-column {
+    display: flex;
+    justify-content: space-between;
+    .one-column,
+    .two-column {
+      width: 49.3%;
+      background: #FFFFFF;
+      padding: 24px 20px 26px 24px;
+      .title-img {
+        background: transparent;
+        padding: 0;
+      }
+      p {
+        margin-top: 20px;
+      }
+      .items {
+        margin: 20px 0;
+      }
+    }
+    .one-column {
+      .title-img {
+        img {
+          width: 27px;
+        }
+      }
+      .text-italic {
+        font-style: italic;
+      }
+    }
+  }
+  .wrapper-footer-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    p {
+      font-style: italic;
+      text-align: right;
+      margin-right: 12px;
+      white-space: pre;
+    }
+    img {
+      margin-top: -40px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .text {
+      padding: 0;
+    }
+  }
+  @media (max-width: 1024px) {
+    .wrapper-column {
+      .one-column,
+      .two-column {
+        height: 500px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .wrapper-column {
+      .one-column,
+      .two-column {
+        height: 362px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .wrapper-column {
+      flex-direction: column;
+      .one-column,
+      .two-column {
+        width: 100%;
+        height: 100%;
+      }
+      .one-column {
+        margin-bottom: 10px;
+      }
+    }
+    .wrapper-footer-delivery {
+      p {
+        white-space: normal;
+      }
+      img {
+        margin-top: -20px;
+        margin-right: -8px;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .wrapper-footer-delivery {
+      p {
+        margin-right: 6px;
+        font-size: 12px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .wrapper-footer-delivery {
+      p {
+        margin-right: 7px;
+        font-size: 11px;
+      }
+    }
+  }
+}
