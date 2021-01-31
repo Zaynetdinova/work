@@ -1,6 +1,6 @@
 import {transitionWrapper} from "../common/transitionTitle";
 import {navigation} from './view/navigation'
-import {basketTemplate} from './view/basket.template'
+
 
 export function personalAreaTemplate() {
     return `

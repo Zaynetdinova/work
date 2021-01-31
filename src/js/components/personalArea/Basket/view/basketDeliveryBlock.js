@@ -1,16 +1,21 @@
 import {inputChoice} from "./inputChoice";
 
-export function basketDeliveryBlock(item) {
-    const items = item.map((item) => {
+export function basketDeliveryBlock(data) {
+
+    const items = data.map((item) => {
+      const {imgIcon, title, text, inputs = [] } =item
         return `
             <div class="basketDeliveryBlock">
                 <div class="wrap">
                     <div class="title">
-                        <img src="${item.imgIcon}" alt="">
-                        ${item.title}
+                        <img src="${imgIcon}" alt="">
+                        ${title}
                     </div>
-                    <p class="text">${item.text}</p>
-                    ${inputChoice()}
+                    <p class="text">${text}</p>
+                    ${inputs.map((item) => {
+                       return  inputChoice()
+                    } ).join('') }
+                    
                 </div>
             </div>               
         `

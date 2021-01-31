@@ -1,16 +1,16 @@
-import {basketSteps} from "../components/basketSteps";
-import {basketDeliveryBlock} from "../components/basketDeliveryBlock";
+import {basketSteps} from "./basketSteps";
+import {basketDeliveryBlock} from "./basketDeliveryBlock";
 import cash from "../../../../../images/icons/cash.svg";
 import nonCash from "../../../../../images/icons/non-cash.svg";
 import card from "../../../../../images/icons/payment-by-card.svg";
 import deposit from '../../../../../images/icons/payment-from-deposit.svg'
 import comment from '../../../../../images/icons/comment.svg'
 import money from '../../../../../images/icons/money.svg'
-import {SumMoneySale} from "../components/sumMoneySale";
+import {SumMoneySale} from "./sumMoneySale";
 import {pagination} from "../../../common/pagination";
-import {waysOfPayment} from "../components/waysOfPayment";
-import {orderCommentPayment} from "../components/orderСommentPayment";
-import {titleImg} from "../components/titleImg";
+import {waysOfPayment} from "./waysOfPayment";
+import {orderCommentPayment} from "./orderСommentPayment";
+import {titleImg} from "./titleImg";
 
 export function paymentPageTemplate() {
     return ` 
@@ -47,21 +47,61 @@ let data = [
         imgIcon: cash,
         title: 'Оплата наличными',
         text: 'Оплата наличными или картой при получении заказа в офисе',
+        inputs: [
+          {
+            titleCheckbox: 'test',
+          },{
+            titleCheckbox: 'test',
+          },{
+            titleCheckbox: 'test',
+          },{
+            titleCheckbox: 'test',
+          }
+        ]
     },
     {
         imgIcon: nonCash,
         title: 'Безналичная оплата',
         text: 'Будет выставлен счет (на сайте в личном кабинете и по электронной почте)',
+      inputs: [
+        {
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'test',
+        }
+      ]
     },
     {
         imgIcon: card,
         title: 'Оплата картой',
         text: 'Оплата картой без процентов на сайте через платёжную систему (после подтверждения заказа поставщиками)',
+      inputs: [
+        {
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'test',
+        }
+      ]
     },
     {
         imgIcon: deposit,
         title: 'Оплата с депозита',
         text: 'Оплата заказа с депозита на сайте',
+      inputs: [
+        {
+          titleCheckbox: 'test',
+        },{
+          titleCheckbox: 'super',
+        }
+      ]
     },
 ]
 let sumMoney = [

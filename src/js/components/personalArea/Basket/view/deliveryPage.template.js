@@ -1,13 +1,14 @@
-import {basketSteps} from "../components/basketSteps";
+import {basketSteps} from "./basketSteps";
 import pickup from '../../../../../images/icons/pickup.svg';
 import transport from '../../../../../images/icons/transportCompany.svg'
 import email from '../../../../../images/icons/mailDelivery.svg'
 import money from '../../../../../images/icons/money.svg'
-import {basketDeliveryBlock} from "../components/basketDeliveryBlock";
+import {basketDeliveryBlock} from "./basketDeliveryBlock";
 import {pagination} from "../../../common/pagination";
-import {SumMoneySale} from "../components/sumMoneySale";
-import {titleImg} from "../components/titleImg";
-import {leftColumnAddress} from "../components/leftColumnAddress";
+import {SumMoneySale} from "./sumMoneySale";
+import {titleImg} from "./titleImg";
+import {leftColumnAddress} from "./leftColumnAddress";
+
 export function deliveryPageTemplate() {
     return `
         <div class="Delivery-page">

@@ -1,6 +1,7 @@
-.Personal-area {
+.Basket, .Personal-Data-test {
   @import './components/buttonData';
   @import './components/navigation';
+  @import 'basketTemplate/basket';
   @import './components/personalData';
   @import 'basketTemplate/basket';
   .wrapper-personal-area {
@@ -36,3 +37,5 @@
     }
   }
 }
+@import 'basketTemplate/basket';
+//@import './components/personalData';

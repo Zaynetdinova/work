@@ -39,9 +39,12 @@ export class Router {
 			case 'card-product':
 				Page = this.routes.cardProduct
 				break;
-			case 'personal-area':
-				Page = this.routes.personalAreaPage
-				break;
+      case 'personal-area/basket':
+        Page = this.routes.personalAreaBasket
+        break;
+      case 'personal-area/personal-data':
+        Page = this.routes.personalAreaData
+        break;
 			default:
 				Page = this.routes.mainPage
 		}
