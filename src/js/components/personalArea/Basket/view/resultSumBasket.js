@@ -29,7 +29,7 @@ export function resultSumBasket() {
             </div>
             <div class="button-buy-arrange">
                 <article class="continue-button">Продолжить покупки</article>
-                <article id="test-js" class="arrange-button">Оформить заказ</article>
+                <div data-parent-js id="checkout-order-delivery-js" class="arrange-button">Оформить заказ</div>
             </div>
 		</div>
     `
