@@ -1,3 +1,9 @@
 .discount-and-bonuses {
   @import "components/wrapperBox";
+  @import "components/bottomBox";
+  @import "components/tableDiscount";
+  margin-bottom: 160px;
+  @media (max-width: 1024px) {
+    margin-bottom: 167px;
+  }
 }
