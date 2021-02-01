@@ -49,59 +49,39 @@ let data = [
         text: 'Оплата наличными или картой при получении заказа в офисе',
         inputs: [
           {
-            titleCheckbox: 'test',
-          },{
-            titleCheckbox: 'test',
-          },{
-            titleCheckbox: 'test',
-          },{
-            titleCheckbox: 'test',
-          }
+            titleCheckbox: 'Оплата наличными',
+          },
         ]
     },
     {
         imgIcon: nonCash,
         title: 'Безналичная оплата',
         text: 'Будет выставлен счет (на сайте в личном кабинете и по электронной почте)',
-      inputs: [
-        {
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'test',
-        }
-      ]
+        inputs: [
+            {
+              titleCheckbox: 'Безналичная оплата',
+            },
+        ]
     },
     {
         imgIcon: card,
         title: 'Оплата картой',
         text: 'Оплата картой без процентов на сайте через платёжную систему (после подтверждения заказа поставщиками)',
-      inputs: [
+        inputs: [
         {
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'test',
-        }
-      ]
+          titleCheckbox: 'Оплата картой на сайте',
+        },
+        ]
     },
     {
         imgIcon: deposit,
         title: 'Оплата с депозита',
         text: 'Оплата заказа с депозита на сайте',
-      inputs: [
-        {
-          titleCheckbox: 'test',
-        },{
-          titleCheckbox: 'super',
-        }
-      ]
+        inputs: [
+            {
+              titleCheckbox: 'Оплата с депозита',
+            },
+        ]
     },
 ]
 let sumMoney = [

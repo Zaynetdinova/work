@@ -12,6 +12,8 @@ import {PersonalDataPage} from "./pages/PersonalAreaPage/PersonalData";
 
 
 import {AboutShopping} from './pages/AboutShopping';
+import {DiscountAndBonuses} from "./components/personalArea/discountAndBonuses/discountAndBonuses";
+import {BonusesPage} from "./pages/PersonalAreaPage/BonusesPage";
 
 
 
@@ -25,6 +27,7 @@ new Router('#app', {
   cardProduct: CardProduct,
   personalAreaBasket: BasketPage,
   personalAreaData: PersonalDataPage,
+  personalAreaBonusesPage: BonusesPage,
   aboutShoppingPage: AboutShopping,
 })
 

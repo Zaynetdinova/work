@@ -1,0 +1,74 @@
+.Wrapper-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  .box-first {
+    width: 66.48%;
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      padding-top: 12px;
+      padding-bottom: 10px;
+    }
+    p {
+      width: 587px;
+      margin-bottom: 65px;
+    }
+    .wrapper-money {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .img1, .img2, .img3, .img4, .img5 {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 166px;
+      }
+      .img1 {
+        background-image: url("../images/bonuses/money1.svg");
+        height: 79px;
+      }
+      .img2 {
+        background-image: url("../images/bonuses/money2.svg");
+        height: 92px;
+      }
+      .img3 {
+        background-image: url("../images/bonuses/money3.svg");
+        height: 134px;
+      }
+      .img4 {
+        background-image: url("../images/bonuses/money4.svg");
+        height: 182px;
+      }
+      .img5 {
+        background-image: url("../images/bonuses/money5.svg");
+        height: 256px;
+      }
+    }
+    .text-bonuses {
+      margin-top: 45px;
+      .title-bonuses {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 10px;
+      }
+
+    }
+  }
+  .box-second {
+    width: 29.73%;
+    .title-volume {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 17px;
+      padding: 12px 0 11px 20px;
+      background: #AB064E;
+      color: #FFFFFF;
+    }
+  }
+}
