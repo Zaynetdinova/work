@@ -1,9 +1,11 @@
-import {WrapperBox} from "./wrapperBox";
+import {wrapperBox} from "./wrapperBox";
+import {bottomBox} from "./bottomBox";
 
 export function discountAndBonusesPageTemplate() {
     return `
         <div class="discount-and-bonuses">
-            ${WrapperBox()}
+            ${wrapperBox()}
+            ${bottomBox()}
         </div>
     `
 }

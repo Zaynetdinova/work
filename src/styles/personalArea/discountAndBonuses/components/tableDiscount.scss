@@ -1,0 +1,57 @@
+.Table-discount {
+  width: 100%;
+  background-color: transparent;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 15px;
+  tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .left-title-td {
+      flex-grow: 1;
+      width: auto;
+      position: relative;
+      overflow: hidden;
+      vertical-align: top;
+      .left-title {
+        position: relative;
+        .left-title-name-wrapper {
+          max-width: 90%;
+          display: inline-block;
+          &:before {
+            content: '';
+            background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 4px 2px;
+            background-repeat: repeat-x;
+            display: inline-block;
+            position: absolute;
+            bottom: 3px;
+            height: 1px;
+            width: 100%;
+            right: 2px;
+          }
+          .left-title-name {
+            background: #F3F2F0;
+            position: relative;
+            padding-right: 6px;
+          }
+        }
+      }
+    }
+    .right-money-sum {
+      text-align: right;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 400px) {
+    font-size: 13px;
+  }
+  @media (max-width: 365px) {
+    font-size: 11px;
+  }
+}
