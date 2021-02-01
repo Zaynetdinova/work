@@ -11,7 +11,7 @@ import {leftColumnAddress} from "./leftColumnAddress";
 import {titleImg} from '../../../common/titleImg'
 export function deliveryPageTemplate() {
     return `
-        <div class="Delivery-page">
+        <div id="delivery-page-js" class="Delivery-page">
             ${basketSteps()}
             <div class="basket-delivery">
                 ${basketDeliveryBlock(data)}
@@ -30,7 +30,8 @@ export function deliveryPageTemplate() {
                     <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>
             </div>
-            <div class="wrapper-pagination">${pagination('Назад к корзине','Далее к оплате')}</div>
+            <div class="wrapper-pagination">
+                ${pagination('Назад к корзине','Далее к оплате')}</div>
         </div>
     `
 }
