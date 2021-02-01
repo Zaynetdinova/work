@@ -4,16 +4,21 @@ export function basketDeliveryBlock(data) {
     const items = data.map((item) => {
         const {imgIcon, title, text, inputs = [] } = item
         return `
-            <div class="basketDeliveryBlock">
+            <div data-parent-delivery-block-js class="basketDeliveryBlock">
                 <div class="wrap">
-                    <div class="title">
-                        <img src="${imgIcon}" alt="">
-                        ${title}
-                    </div>
-                    <p class="text">${text}</p>
-                    ${inputs.map(() => {
-                       return  inputChoice()
-                    }).join('')}                
+                
+                  <section data-open-section-js class="title">
+                      <img src="${imgIcon}" alt="">
+                      ${title}
+                  </section>
+                  
+                  <section data-content-js class="content">
+                     <p class="text">${text}</p>
+                        ${inputs.map((item) => {
+                        return  inputChoice(item)
+                        }).join('')} 
+                  </section>
+                                  
                 </div>
             </div>               
         `

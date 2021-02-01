@@ -4,6 +4,7 @@ import {deliveryPageTemplate} from "./view/deliveryPage.template";
 import {paymentPageTemplate} from './view/paymentPage.template'
 import {basketPageTemplate} from './view/basketPage.template'
 import {ActiveRoute} from '../../../core/routes/ActiveRoute'
+import {deliveryPage} from './js/deliveryPage'
 
 
 
@@ -21,11 +22,34 @@ export class Basket extends Component {
     return basketTemplate()
   }
 
+  afterInitComponent() {
+
+  }
+
   showDeliverySection() {
     const $root = document.querySelector('#personal-area-content-js')
     const basketSection = document.querySelector('#basket-page-js')
     basketSection.remove()
     $root.insertAdjacentHTML('afterbegin', deliveryPageTemplate());
+    initialRadioButtons()
+    ///
+    function initialRadioButtons() {
+      const radioButtons = document.querySelectorAll('.radio-button-delivery-js')
+      const parentBlocks = document.querySelectorAll('[data-parent-delivery-block-js]')
+
+      radioButtons.forEach((radio) => {
+        radio.addEventListener('click', (e) => {
+          if(e.target.checked) {
+            parentBlocks.forEach((block) => {
+              block.classList.remove('active')
+            })
+            console.log(e.target)
+            const thisParent = e.target.closest('[data-parent-delivery-block-js]')
+            thisParent.classList.add('active')
+          }
+        })
+      })
+    }
   }
 
   showPaymentSection() {
@@ -44,6 +68,11 @@ export class Basket extends Component {
   }
 
   onClick(e) {
+    if(e.target.closest('[data-delivery-page-event-js]')) {
+      deliveryPage(e)
+      return
+    }
+
     if(e.target.closest('[data-parent-js]')) {
       const element = e.target.closest('[data-parent-js]');
 

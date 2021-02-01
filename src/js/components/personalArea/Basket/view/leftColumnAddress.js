@@ -4,13 +4,18 @@ import {titleImg} from '../../../common/titleImg'
 
 export function leftColumnAddress() {
     return `
-    <div class="left-column-address">                 
-        ${titleImg(place,'Выберите адрес доставки')}
-        <div class="wrap-close-text">
-            ${imgCloseIcon()}
-            105187, г. Москва, ул. Окружной проезд, 30А
-        </div>
-        <div class="button-add">Добавить новый адрес</div>
+    <div data-parent-delivery-block-js class="left-column-address">
+        <section data-open-section-js>
+            ${titleImg(place,'Выберите адрес доставки')}
+        </section>                 
+        
+        <section data-content-js class="content">
+            <div class="wrap-close-text">
+                ${imgCloseIcon()}
+                <span>105187, г. Москва, ул. Окружной проезд, 30А</span>
+            </div>
+            <div class="button-add">Добавить новый адрес</div>
+        </section>
     </div>
     `
 }

@@ -1,5 +1,5 @@
 .left-column-address {
-  width: 49.3%;
+
   .wrap-close-text {
     display: flex;
     align-items: baseline;
@@ -33,6 +33,16 @@
       background: #AB064E;
       color: #FFFFFF;
       border: 1px solid #AB064E;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      display: none;
+
+      &.show-content {
+        display: block;
+      }
     }
   }
 }
