@@ -3,11 +3,14 @@
   margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
-  .left-column,
-  .right-column {
-    width: 49.3%;
+
+  .address {
+    width: 50%;
+    margin-right: 8px;
   }
   .right-column {
+    width: 50%;
+    margin-left: 8px;
     .wrap-sum {
       padding: 0 0 0 20px;
       margin-top: 28px;
@@ -31,6 +34,12 @@
     }
   }
   @media (max-width: 767px) {
-    display: none;
+    .address {
+      display: none;
+    }
+
+    .right-column {
+      width: 100%;
+    }
   }
 }

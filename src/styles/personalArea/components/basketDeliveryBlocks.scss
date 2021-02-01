@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: .2s;
   border-bottom: 4px solid transparent;
+
   &:hover {
     background: #FFFFFF;
     border-bottom: 4px solid #AB064E;
@@ -58,6 +59,14 @@
       .title {
         background: #F3F2F0;
         padding: 10px 20px;
+      }
+    }
+
+    .content {
+      display: none;
+
+      &.show-content {
+        display: block;
       }
     }
   }

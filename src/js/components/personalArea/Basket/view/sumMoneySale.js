@@ -3,6 +3,7 @@ export function SumMoneySale(item) {
     return `
         <div class="Sum-money-sale">
             <span class="title-sum"><b>${item.title}</b></span>
+            <span class="line"></span>
             <span class="money-sum">${item.sum}</span>
         </div>
     `

@@ -4,25 +4,36 @@
   line-height: 15px;
   width: 100%;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+
   .money-sum  {
     font-weight: bold;
     color: #AB064E;
+    white-space: nowrap;
+    display: inline-block;
   }
+
+  .line {
+    border-bottom: 1px dashed #ccc;
+    bottom: 3px;
+    display: block;
+    width: 100%;
+    margin: 0 6px 2px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
+
   &:first-child {
     .money-sum {
       color: #3D3D3C;
     }
   }
-  .money-sum {
-    white-space: nowrap;
-    display: inline-block;
-  }
+
   .title-sum {
     position: relative;
-    width: 89%;
     display: inline-flex;
     b {
       background: #F3F2F0;
@@ -30,16 +41,6 @@
       padding: 0 5px 0 0;
       position: relative;
       z-index: 1;
-    }
-    &:after {
-      border-bottom: 1px dashed #ccc;
-      bottom: 3px;
-      content: '';
-      display: block;
-      height: 16px;
-      left: 0;
-      position: absolute;
-      width: 100%;
     }
   }
 }

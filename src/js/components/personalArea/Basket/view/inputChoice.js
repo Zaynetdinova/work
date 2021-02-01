@@ -1,7 +1,11 @@
-export function inputChoice() {
+export function inputChoice(data) {
     return `
         <div class="choice">
-            <label class="radio"><input type="radio" name="g"><span></span><div>test</div></label>
+            <label class="radio">
+                <input class="radio-button-delivery-js" type="radio" name="g">
+                <span></span>
+                <div>${data.titleCheckbox}</div>
+            </label>
         </div>
     `
 }
