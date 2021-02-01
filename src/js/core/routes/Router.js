@@ -39,12 +39,15 @@ export class Router {
 			case 'card-product':
 				Page = this.routes.cardProduct
 				break;
-      case 'personal-area/basket':
-        Page = this.routes.personalAreaBasket
-        break;
-      case 'personal-area/personal-data':
-        Page = this.routes.personalAreaData
-        break;
+      		case 'personal-area/basket':
+        		Page = this.routes.personalAreaBasket
+        		break;
+      		case 'personal-area/personal-data':
+        		Page = this.routes.personalAreaData
+        		break;
+			case 'personal-area/discount-and-bonuses':
+				Page = this.routes.personalAreaBonusesPage
+				break;
 			case 'about-shopping':
 				Page = this.routes.aboutShoppingPage
 				break;
@@ -52,7 +55,6 @@ export class Router {
 				Page = this.routes.mainPage
 		}
 		this.page = new Page(ActiveRoute.param)
-
 		this.$placeholder.append(this.page.getRoot())
 		this.page.afterRender()
 	}

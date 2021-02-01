@@ -5,7 +5,6 @@ import email from '../../../../../images/icons/mailDelivery.svg'
 import money from '../../../../../images/icons/money.svg'
 import {basketDeliveryBlock} from "./basketDeliveryBlock";
 import {pagination} from "../../../common/pagination";
-
 import {SumMoneySale} from "./sumMoneySale";
 import {leftColumnAddress} from "./leftColumnAddress";
 import {titleImg} from '../../../common/titleImg'
@@ -41,11 +40,37 @@ let data = [
         imgIcon: pickup,
         title: 'Самовывоз',
         text: 'Забрать заказ самостоятельно',
+        inputs: [
+            {
+                titleCheckbox: 'г. Москва, Окружной проезд, 30А',
+            },
+        ]
+
     },
     {
         imgIcon: transport,
         title: 'Транспортная компания',
         text: 'Доставка до транспортной компании бесплатно',
+        inputs: [
+            {
+                titleCheckbox: 'Байкал-Сервис',
+            },
+            {
+                titleCheckbox: 'Возовоз',
+            },
+            {
+                titleCheckbox: 'Деловые линии',
+            },
+            {
+                titleCheckbox: 'Желдорэкспедиция',
+            },
+            {
+                titleCheckbox: 'ПЭК',
+            },
+            {
+                titleCheckbox: 'Энергия',
+            },
+        ]
     },
     {
         imgIcon: email,
@@ -53,6 +78,20 @@ let data = [
         text: 'Доставка до вашего города оплачивается отдельно. ' +
             'Согласно тарифам почтовой организации. ' +
             'Будет выставлен отдельный счет на доставку.',
+        inputs: [
+            {
+                titleCheckbox: 'EMS'
+            },
+            {
+                titleCheckbox: 'СДЭК'
+            },
+            {
+                titleCheckbox: 'Почта России'
+            },
+            {
+                titleCheckbox: 'DPD'
+            },
+        ]
     }
 ]
 let sumMoney = [

@@ -1,0 +1,28 @@
+import {navigation} from "../view/navigation";
+import {transitionWrapper} from "../../common/transitionTitle";
+import {discountAndBonusesPageTemplate} from "./view/discountAndBonusesPageTemplate";
+
+export function discountAndBonusesTemplate() {
+    return `
+	    <div id="personal-area-js" class="wrapper-personal-area">
+            ${transitionWrapper(link)}
+            <div class="header-personal-area">
+                <div class="title">Личный кабинет</div>
+                <div class="exit">Выйти</div>
+            </div>
+            
+            ${navigation('discount')}
+            
+            <div id="personal-area-content-js">
+                ${discountAndBonusesPageTemplate()}
+            </div>
+        </div>
+	`
+}
+
+let link = [
+    {
+        title: 'Личный кабинет',
+        link: '/#personal-area'
+    }
+]
