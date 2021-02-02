@@ -15,15 +15,11 @@
   }
 
   .line {
-    background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 4px 1px;
-    background-repeat: repeat-x;;
+    border-bottom: 1px dashed #ccc;
     bottom: 3px;
     display: block;
     width: 100%;
-    margin-left: 6px;
-    margin-bottom: 2px;
+    margin: 0 6px 2px;
   }
 
   &:last-child {
@@ -42,6 +38,7 @@
     b {
       background: #F3F2F0;
       font-weight: 400;
+      padding: 0 5px 0 0;
       position: relative;
       z-index: 1;
     }
