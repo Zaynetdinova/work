@@ -1,6 +1,6 @@
-import {transitionWrapper} from '../common/transitionTitle'
-import {navigation} from '../personalArea/view/navigation'
-import {titleShopping} from './view/components/titleShopping'
+import {transitionWrapper} from '../../common/transitionTitle'
+import {navigation} from '../../personalArea/view/navigation'
+import {titleShopping} from '../components/titleShopping'
 import {shoppingDelivery} from './view/shoppingDelivery'
 
 export function aboutShoppingPageTemplate() {

@@ -1,5 +1,3 @@
-import {backCall} from '../../common/entry/view/backСall.template'
-
 export function topHeader() {
     return `
         <div class='topHeader'>
@@ -45,40 +43,40 @@ function tooltip(item) {
 const buy = [
     {
         title: 'Размеры',
-        link: '/#about-shopping'
+        link: '/#information/'
     },
     {
         title: 'Доставка',
-        link: '/#about-shopping'
+        link: '/#information/about-shopping'
     },
     {
         title: 'Оплата',
-        link: '/#about-shopping'
+        link: '/#information/about-payment'
     },
     {
         title: 'Ответы на вопросы',
-        link: '/#about-shopping'
+        link: '/#information/'
     }
 ]
 
 const score = [
     {
         title: 'О нас',
-        link: '/#about-shopping'
+        link: ''
     },
     {
         title: 'Условия работы',
-        link: '/#about-shopping'
+        link: ''
     },
     {
         title: 'Контакты',
-        link: '/#about-shopping'
+        link: ''
     },
 ]
 
 const cooperation = [
     {
         title: 'Поставщикам',
-        link: '/#about-shopping'
+        link: ''
     },
 ]
