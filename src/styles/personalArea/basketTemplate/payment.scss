@@ -1,10 +1,10 @@
 .Payment-Page {
-  @import "../components/basketSteps";
-  @import "../components/basketDeliveryBlocks";
-  @import "../components/deliveryAdress";
-  @import "../components/wrapPagination";
-  @import "../components/waysOfPayment";
-  @import "../components/orderCommentPayment";
+  @import "./components/basketSteps";
+  @import "./components/basketDeliveryBlocks";
+  @import "./components/deliveryAdress";
+  @import "./components/wrapPagination";
+  @import "./components/waysOfPayment";
+  @import "./components/orderCommentPayment";
   margin-bottom: 110px;
   .Steps {
     .basket-steps {

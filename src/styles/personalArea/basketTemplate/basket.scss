@@ -1,7 +1,27 @@
 .Basket {
-  @import '../components/sumMoneySale';
-  @import '../components/tableProductsBasket';
-  @import '../components/resultSumBasket';
+  @import './components/sumMoneySale';
+  @import './components/tableProductsBasket';
+  @import './components/resultSumBasket';
   @import 'delivery';
   @import 'payment';
+
+  .root {
+    .desktop {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
+    }
+  }
 }

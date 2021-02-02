@@ -1,8 +1,9 @@
 .Basket, .Personal-Data-test, .Discount-and-bonuses {
-  @import './components/buttonData';
-  @import './components/navigation';
+  @import '../common/buttonData';
+  @import '../common/navigation';
   @import 'basketTemplate/basket';
-  @import './components/personalData';
+  //personalData перенести стили
+  @import './basketTemplate/components/personalData';
   @import 'discountAndBonuses/discountAndBonuses';
   .wrapper-personal-area {
     max-width: 1480px;
@@ -27,6 +28,7 @@
       }
     }
   }
+
   @media (max-width: 1024px) {
     .wrapper-personal-area {
       padding: 0 15px;

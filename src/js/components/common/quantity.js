@@ -1,7 +1,7 @@
-export function quantity() {
+export function quantity(id = '') {
     return `
         <table>
-            <tr class="quantity">
+            <tr id="${id}" class="quantity">
                 <td>
                     <div class="minus" data-button-name="minus"></div>
                 </td>
