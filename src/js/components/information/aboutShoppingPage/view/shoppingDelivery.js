@@ -1,7 +1,7 @@
-import {titleImg} from '../../common/titleImg'
-import transport from '../../../../images/icons/transport-color.svg'
-import mail from '../../../../images/icons/mail-color.svg'
-import man from '../../../../images/information/man-mail.png'
+import {titleImg} from '../../../common/titleImg'
+import transport from '../../../../../images/icons/transport-color.svg'
+import mail from '../../../../../images/icons/mail-color.svg'
+import man from '../../../../../images/information/man-mail.png'
 
 export function shoppingDelivery() {
 	return `

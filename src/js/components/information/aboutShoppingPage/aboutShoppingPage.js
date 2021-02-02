@@ -1,4 +1,4 @@
-import {Component} from '../../core/Component'
+import {Component} from '../../../core/Component'
 import {aboutShoppingPageTemplate} from './aboutShoppingPage.template'
 
 export class AboutShoppingPage extends Component {
