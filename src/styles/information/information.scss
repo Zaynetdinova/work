@@ -1,6 +1,5 @@
-.About-shopping {
+.About-shopping, .About-payment {
   @import "components/titleShopping";
-  @import "components/shoppingDelivery";
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
@@ -12,3 +11,6 @@
     }
   }
 }
+
+@import 'aboutShoppingPage/aboutShoppingPage';
+@import 'aboutPaymentPage/aboutPaymentPage';
