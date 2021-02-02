@@ -46,11 +46,11 @@ export function mobileHeader() {
                                 </article>
                             </div>
                         ` }                        
-                        <div class="buy-phone">
+                        <a href="/#personal-area/basket" class="buy-phone">
                             <div class="content">
                                 <img class='icon-img' id='basket' src=${basket} alt='basket'>
                             </div>
-                        </div>                   
+                        </a>                   
                     </div>                          
                 </div>                                        
             </div> 

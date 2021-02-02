@@ -13,6 +13,9 @@
   &:hover {
     background: #AB064E;
   }
+  @media (max-width: 1024px) {
+    background: #AB064E;
+  }
   @media (max-width: 715px) {
     width: 100%;
   }

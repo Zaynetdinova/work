@@ -8,7 +8,7 @@ export function entryTemplate() {
         
         <form class="form-js">
             <div class="wrap-input">
-              <input name="email" class="input-name"  placeholder="Логин (Э-почта)*" type="email">
+              <input name="email" class="input-name"  placeholder="Логин (Эл. Почта)*" type="email">
               
               <div class="password" data-input-password-js>
                   <input name="password" class="input-name password-control-eye-js" type="password" placeholder="Пароль*">

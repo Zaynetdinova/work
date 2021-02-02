@@ -8,7 +8,7 @@ export function basketTemplate() {
             ${transitionWrapper(link)}
             <div class="header-personal-area">
                 <div class="title">Личный кабинет</div>
-                <div class="exit">Выйти</div>
+                <a href="/" class="exit">Выйти</a>
             </div>
             
             ${navigation('basket')}

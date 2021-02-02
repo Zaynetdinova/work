@@ -18,7 +18,7 @@ export function buyForSaleTemplate() {
                     
                     <div id="select-phone-registration-js" class="password2 select-organization"></div>
                     
-                    <input name="email" class="input-name" placeholder="Э-почта* (используется как логин)" type="email">           
+                    <input name="email" class="input-name" placeholder="Эл. Почта* (используется как логин)" type="email">           
                 </div>
                 <div class="wrap-input">
                     <input name="iin" class="input-name" placeholder="ИНН*" type="text"> 

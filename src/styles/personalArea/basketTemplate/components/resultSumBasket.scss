@@ -11,10 +11,12 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 30px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 18px;
         b {
           margin-left: 8px;
+          font-size: 18px;
+          line-height: 18px;
         }
       }
       .wrap-sum {

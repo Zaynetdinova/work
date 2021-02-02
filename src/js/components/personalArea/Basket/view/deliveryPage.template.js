@@ -15,7 +15,7 @@ export function deliveryPageTemplate() {
             <div class="basket-delivery">
                 ${basketDeliveryBlock(data)}
             </div>
-            <div class="wrapper-left-column">${leftColumnAddress()}</div>
+            
            
             <div class="delivery-address">
                 <div class="address">
