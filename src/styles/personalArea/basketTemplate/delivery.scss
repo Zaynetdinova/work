@@ -1,10 +1,10 @@
 .Delivery-page {
-  @import "../components/basketSteps";
-  @import "../components/basketDeliveryBlocks";
-  @import "../components/deliveryAdress";
-  @import "../components/wrapPagination";
-  @import "../components/leftColumnAddress.scss";
-  @import "../components/imgCloseIcon";
+  @import "./components/basketSteps";
+  @import "./components/basketDeliveryBlocks";
+  @import "./components/deliveryAdress";
+  @import "./components/wrapPagination";
+  @import "./components/leftColumnAddress.scss";
+  @import "./components/imgCloseIcon";
   margin-bottom: 110px;
   .basket-delivery {
     display: flex;

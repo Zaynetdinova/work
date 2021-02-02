@@ -27,7 +27,10 @@ export function tableProductsBasket() {
                 </td>
             </tr>
             
-            <tr class="good">
+            ${goodsTest.map((item) => {
+              const {info, sizes} = item
+              return `
+                <tr class="good">
                 
                 <td class="name-product">
                     <div class="wrapper-product">
@@ -42,19 +45,21 @@ export function tableProductsBasket() {
                 </td>
                 
                 <td class="size-product">
-                    ${sizeInfo(ArrSizes)}
+                    ${sizeInfo(sizes)}
                 </td>
                 
                 <td class="quantity-product">
-                    ${quantity()}
-                    ${quantity()}
-                    ${quantity()}
+                    ${sizes.map(({id}) => {
+                      return quantity(id)
+                    }).join('')}
                 </td>
                 
                 <td class="price-product">
-                    <div class="number-sum">1 234,00 ₽</div>
-                    <div class="number-sum">1 234,00 ₽</div>
-                    <div class="number-sum">1 234,00 ₽</div>
+                    ${sizes.map(({id, price}) => {
+                      return `
+                        <div class="number-sum" id="${id}">${price},00 ₽</div>
+                      `
+                    }).join('')}
                 </td>
                 
                 <td class="sale-product">
@@ -65,9 +70,11 @@ export function tableProductsBasket() {
                 </td>
                 
                 <td class="sum-product">
-                    <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
-                    <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
-                    <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
+                    ${sizes.map(({id, price}) => {
+                      return `
+                              <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
+                            `
+                    }).join('')}
                 </td>
                 
                 <td class="selected-dimensions-product">
@@ -82,22 +89,31 @@ export function tableProductsBasket() {
                     </div>
                 </td>
             </tr>
+              `
+            })}
+            
+            
 			</table>
     `
 }
 
-let info = [
-    {
+const goodsTest = [
+  {
+    info: [
+      {
         infoType: 'ID:',
         infoResult: '247355'
-    },
-    {
+      },
+      {
         infoType: 'Цвет:',
         infoResult: 'Коричневый'
-    },
-]
-const ArrSizes = [
-    {size: '40'},
-    {size: '42'},
-    {size: '44'},
+      },
+    ],
+
+    sizes: [
+      {size: '40', price: '1 200', id: 'size40'},
+      {size: '42', price: '1 200', id: 'size42'},
+      {size: '44', price: '1 200', id: 'size44'},
+    ]
+  }
 ]
