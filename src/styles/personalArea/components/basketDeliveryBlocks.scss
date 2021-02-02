@@ -24,9 +24,22 @@
       font-size: 15px;
       line-height: 17px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      img {
-        padding-right: 15px;
+      .img-title {
+        display: flex;
+        img {
+          padding-right: 15px;
+        }
+      }
+      .arrow {
+        background-image: url("../images/icons/arrow5.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 10px;
+        height: 10px;
+        transform: rotate(90deg);
+        display: none;
       }
     }
     .text {
@@ -59,6 +72,9 @@
       .title {
         background: #F3F2F0;
         padding: 10px 20px;
+        .arrow {
+          display: block;
+        }
       }
     }
 
