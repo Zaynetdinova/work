@@ -11,7 +11,7 @@ export function restorePassword() {
             <div class="text-email">Пожалуйста, введите адрес электронной почты, на который мы вышлем Ваш новый пароль.</div>
             <div class="restore-input">
                 <div class="wrap-input">
-                <input class="input-name" placeholder="Э-почта" type="email" name="email">
+                <input class="input-name" placeholder="Эл. Почта" type="email" name="email">
             </div>
             ${nesessaryFildsTemplate()}
             </div>

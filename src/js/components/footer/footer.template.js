@@ -26,8 +26,8 @@ export function footerTemplate() {
                             <ul>
                                 <li><a href="#">О нас</a></li>
                                 <li><a href="#">Условия работы</a></li>
-                                <li><a href="/#about-shopping">Доставка</a></li>
-                                <li><a href="">Оплата</a></li>
+                                <li><a href="/#information/about-shopping">Доставка</a></li>
+                                <li><a href="/#information/about-payment">Оплата</a></li>
                                 <li><a href="#">Ответы на вопросы</a></li>
                                 <li><a href="#">Контакты</a></li>
                             </ul>
@@ -37,8 +37,8 @@ export function footerTemplate() {
                         <div class="title-footer">для клиентов</div>
                         <nav>
                             <ul>
-                                <li><a href="#">Личный кабинет</a></li>
-                                <li><a href="#">Корзина</a></li>
+                                <li><a href="/#personal-area/personal-data">Личный кабинет</a></li>
+                                <li><a href="/#personal-area/basket">Корзина</a></li>
                                 <li><a href="#">Избранное</a></li>
                                 <li><a href="#">Заказы и их статус</a></li>
                                 <li><a href="">Возврат</a></li>
@@ -50,7 +50,6 @@ export function footerTemplate() {
                         <nav>
                             <ul>
                                 <li><a href="#">Таблица размеров</a></li>
-                                <li><a href="#">Заказать звонок</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -166,9 +165,6 @@ let point = [
     category: [
       {
         category: 'Таблица размеров'
-      },
-      {
-        category: 'Заказать звонок'
       },
     ]
   },

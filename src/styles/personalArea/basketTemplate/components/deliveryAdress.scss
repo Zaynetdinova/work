@@ -26,20 +26,29 @@
       display: flex;
       justify-content: flex-end;
       margin-top: 30px;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 18px;
       b {
+        font-size: 18px;
         margin-left: 8px;
       }
     }
   }
   @media (max-width: 767px) {
+    flex-direction: column;
+    margin: 0 -15px;
     .address {
-      display: none;
+      width: 100%;
     }
-
     .right-column {
       width: 100%;
+      margin-left: 0;
+      .wrap-sum {
+        padding-right: 20px;
+      }
+      .result {
+        padding-right: 20px;
+      }
     }
   }
 }

@@ -53,10 +53,10 @@ export function desktopHeader() {
                 : '' }   
                                 
             <div class='buy'>
-                <div class="content">
+                <a href="/#personal-area/basket" class="content">
                     <img class='basket' id='basket' src=${basket} alt='basket'>
                     <div class='basket-price' id='basket-price'>Корзина <br> пуста</div>
-                </div>
+                </a>
             </div>                              
         </div> 
      </div>

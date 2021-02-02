@@ -38,24 +38,7 @@
       }
     }
   }
-  .wrapper-left-column {
-    display: none;
-    .left-column-address {
-      width: 100%;
-      .title-img {
-        margin-left: -15px;
-        margin-bottom: -15px;
-      }
-      .wrap-close-text {
-        margin-left: -15px;
-        margin-right: -15px;
-      }
-      .button-add {
-        margin-left: 0;
-        margin-bottom: 50px;
-      }
-    }
-  }
+
   @media (max-width: 1024px) {
     margin-bottom: 210px;
   }
@@ -68,9 +51,6 @@
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: 0;
-    }
-    .wrapper-left-column {
-      display: block;
     }
   }
 }

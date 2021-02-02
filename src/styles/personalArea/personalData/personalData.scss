@@ -283,4 +283,17 @@
       }
     }
   }
+  @media (max-width: 390px) {
+    .wrapper-columns {
+      .first-column {
+        .wrapper-box {
+          .wrapper-box-4 {
+            .button-personal-data {
+              min-width: 126px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -18,7 +18,7 @@ export function buyForMeTemplate() {
                     <div id="select-phone-registration-js" class="password2 select-organization"></div>
                 </div>
                 <div class="wrap-input">
-                    <input name="email"  class="input-name" placeholder="Э-почта* (логин)" type="text">
+                    <input name="email"  class="input-name" placeholder="Эл. Почта* (используется как логин)" type="text">
     <!--                error password2 переименоать password???-->
                     <div data-input-password-js class="password2 password">
                         <input class="input-name password-control-eye-js" type="password" placeholder="Пароль*" name="password">
