@@ -4,7 +4,7 @@ import {mobileTableProductsBasket} from './mobileTableProductsBasket'
 
 export function basketPageTemplate() {
     return `
-    <div class="root" id="basket-page-js">
+    <div class="basket-page" id="basket-page-js">
         <section class="desktop">
             ${tableProductsBasket()}
         </section>

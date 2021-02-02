@@ -1,10 +1,9 @@
-.Basket, .Personal-Data-test, .Discount-and-bonuses {
+.Basket,
+.Personal-Data,
+.Discount-and-bonuses {
   @import '../common/buttonData';
   @import '../common/navigation';
-  @import 'basketTemplate/basket';
-  //personalData перенести стили
-  @import './basketTemplate/components/personalData';
-  @import 'discountAndBonuses/discountAndBonuses';
+
   .wrapper-personal-area {
     max-width: 1480px;
     margin: 0 auto;
@@ -38,4 +37,9 @@
     }
   }
 }
-@import 'basketTemplate/basket';
+
+
+@import 'basketTemplate/basketCommon';
+@import './personalData/personalData';
+@import 'discountAndBonuses/discountAndBonuses';
+

@@ -1,11 +1,4 @@
-.Basket {
-  @import './components/sumMoneySale';
-  @import './components/tableProductsBasket';
-  @import './components/resultSumBasket';
-  @import 'delivery';
-  @import 'payment';
-
-  .root {
+.basket-page {
     .desktop {
       display: block;
     }
@@ -24,4 +17,4 @@
       }
     }
   }
-}
+
