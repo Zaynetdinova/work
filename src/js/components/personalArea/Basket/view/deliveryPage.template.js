@@ -42,6 +42,7 @@ let data = [
         inputs: [
             {
                 titleCheckbox: 'г. Москва, Окружной проезд, 30А',
+                id: 'pickup-js'
             },
         ]
 
@@ -53,21 +54,27 @@ let data = [
         inputs: [
             {
                 titleCheckbox: 'Байкал-Сервис',
+                id: 'transport-baikal-service-js'
             },
             {
                 titleCheckbox: 'Возовоз',
+                id: 'transport-vozovoz-js'
             },
             {
                 titleCheckbox: 'Деловые линии',
+                id: 'transport-business-line-js'
             },
             {
                 titleCheckbox: 'Желдорэкспедиция',
+                id: 'transport-zheldorexpedition-js'
             },
             {
                 titleCheckbox: 'ПЭК',
+                id: 'transport-pec-js'
             },
             {
                 titleCheckbox: 'Энергия',
+                id: 'transport-energy-js'
             },
         ]
     },
@@ -79,16 +86,21 @@ let data = [
             'Будет выставлен отдельный счет на доставку.',
         inputs: [
             {
-                titleCheckbox: 'EMS'
+                titleCheckbox: 'EMS',
+                id: 'email-ems-js'
             },
             {
-                titleCheckbox: 'СДЭК'
+                titleCheckbox: 'СДЭК',
+                id: 'email-sdek-js'
             },
             {
-                titleCheckbox: 'Почта России'
+                titleCheckbox: 'Почта России',
+                id: 'email-post-office-js'
+
             },
             {
-                titleCheckbox: 'DPD'
+                titleCheckbox: 'DPD',
+                id: 'email-dpd-js'
             },
         ]
     }

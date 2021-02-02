@@ -50,6 +50,7 @@ let data = [
         inputs: [
           {
             titleCheckbox: 'Оплата наличными',
+            id: 'cash-js'
           },
         ]
     },
@@ -60,6 +61,7 @@ let data = [
         inputs: [
             {
               titleCheckbox: 'Безналичная оплата',
+              id: 'nonCash-js'
             },
         ]
     },
@@ -70,6 +72,7 @@ let data = [
         inputs: [
         {
           titleCheckbox: 'Оплата картой на сайте',
+          id: 'card-js'
         },
         ]
     },
@@ -80,6 +83,7 @@ let data = [
         inputs: [
             {
               titleCheckbox: 'Оплата с депозита',
+              id: 'deposit-js'
             },
         ]
     },

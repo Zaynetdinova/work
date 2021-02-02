@@ -4,16 +4,21 @@
   font-size: 14px;
   line-height: 15px;
   .title-main-string {
+
+    td {
+     padding-bottom: 10px;
+    }
     .first-string {
       font-size: 14px;
       font-weight: normal;
       line-height: 20px;
       text-align: center;
       &.name-percent {
-        width: 21%;
+        width: 24%;
+
       }
       &.size-percent {
-        width: 17%;
+        width: 14%;
       }
       &.quantity-percent {
         width: 8%
@@ -22,7 +27,8 @@
         width: 18%
       }
       &.sale-percent {
-        width: 8%
+        width: 8%;
+        min-width: 100px;
       }
       &.sum-percent {
         width: 17%
@@ -33,18 +39,19 @@
     }
   }
   .good {
-    height: 223px;
-    background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+    //height: 223px;
+    //background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
     background-position: bottom;
     background-size: 4px 2px;
     background-repeat: repeat-x;
     .name-product {
       .wrapper-product {
         display: flex;
-        justify-content: space-between;
+
         .img-product {
           width: 128px;
           height: 193px;
+          margin-right: 18px;
         }
         .wrapper-info {
           .wrapper-favorites {
@@ -133,6 +140,49 @@
           }
         }
       }
+    }
+  }
+
+  .auxiliary-unit-top {
+    height: 30px;
+    .line-top {
+      border-top: 2px solid #D9D9D9;
+    }
+  }
+
+  .auxiliary-unit-bottom {
+    height: 32px;
+    td {
+      background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 4px 2px;
+      background-repeat: repeat-x;
+
+    }
+  }
+  .selected-dimensions-product-mobile {
+    .change-selected-dimensions {
+      display: none;
+      font-size: 14px;
+      color: #777777;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .selected-dimensions-product-title, .selected-dimensions-product {
+      display: none;
+    }
+
+    .selected-dimensions-product-mobile {
+      .change-selected-dimensions {
+        display: block;
+      }
+    }
+
+    .auxiliary-unit-bottom {
+      height: 38px;
     }
   }
 }

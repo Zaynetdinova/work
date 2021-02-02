@@ -8,6 +8,7 @@ import {favorites} from "../../../common/favorites";
 export function tableProductsBasket() {
     return `
         <table class="wrapper-basket">
+        
             <tr class="title-main-string">
                 <td class="first-string name-percent">Наименование</td>
                 <td class="first-string size-percent">Размер</td>
@@ -15,9 +16,19 @@ export function tableProductsBasket() {
                 <td class="first-string price-percent">Цена</td>
                 <td class="first-string sale-percent">Скидка</td>
                 <td class="first-string sum-percent">Сумма</td>
-                <td class="first-string" style="width: 12%"></td>
+                <td class="first-string selected-dimensions-product-title" style="width: 12%"></td>
             </tr>
+            
+             <tr class="auxiliary-unit-top">
+               <td class="line-top" colspan="7">
+                    <div class="">
+                        <span></span>
+                    </div>
+                </td>
+            </tr>
+            
             <tr class="good">
+                
                 <td class="name-product">
                     <div class="wrapper-product">
                         <img class="img-product" src="${women}" alt="">
@@ -29,32 +40,46 @@ export function tableProductsBasket() {
                         </div>
                     </div>
                 </td>
+                
                 <td class="size-product">
                     ${sizeInfo(ArrSizes)}
                 </td>
+                
                 <td class="quantity-product">
                     ${quantity()}
                     ${quantity()}
                     ${quantity()}
                 </td>
+                
                 <td class="price-product">
                     <div class="number-sum">1 234,00 ₽</div>
                     <div class="number-sum">1 234,00 ₽</div>
                     <div class="number-sum">1 234,00 ₽</div>
                 </td>
+                
                 <td class="sale-product">
                     <div class="wrapper-sale-product">
                         ${Sale()}
                         <div class="sale-sum">234,00 ₽</div>
                     </div>
                 </td>
+                
                 <td class="sum-product">
                     <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
                     <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
                     <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
                 </td>
+                
                 <td class="selected-dimensions-product">
                     <div class="change-selected-dimensions">Изменить выбранные размеры</div>
+                </td>
+            </tr>
+            
+            <tr class="auxiliary-unit-bottom">
+               <td colspan="7">
+                    <div class="selected-dimensions-product-mobile">
+                        <span class="change-selected-dimensions">Изменить выбранные размеры</span>
+                    </div>
                 </td>
             </tr>
 			</table>
