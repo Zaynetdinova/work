@@ -4,7 +4,7 @@ import {personalDataTemplate} from "./personalData.template";
 
 
 export class PersonalData extends Component {
-  static className = 'Personal-Data-test'
+  static className = 'Personal-Data'
 
   constructor($root) {
     super($root, {
