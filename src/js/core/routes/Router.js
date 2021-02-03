@@ -54,6 +54,9 @@ export class Router {
 			case 'information/about-payment':
 				Page =this.routes.aboutPaymentPage
 				break;
+			case 'information/question-answers':
+				Page = this.routes.aboutQuestionAnswers
+				break;
 			default:
 				Page = this.routes.mainPage
 		}

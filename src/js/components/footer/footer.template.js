@@ -28,7 +28,7 @@ export function footerTemplate() {
                                 <li><a href="#">Условия работы</a></li>
                                 <li><a href="/#information/about-shopping">Доставка</a></li>
                                 <li><a href="/#information/about-payment">Оплата</a></li>
-                                <li><a href="#">Ответы на вопросы</a></li>
+                                <li><a href="/#information/question-answers">Ответы на вопросы</a></li>
                                 <li><a href="#">Контакты</a></li>
                             </ul>
                         </nav>

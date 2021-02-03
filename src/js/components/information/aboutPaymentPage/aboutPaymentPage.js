@@ -15,9 +15,6 @@ export class AboutPaymentPage extends Component {
     toHTML() {
         return aboutPaymentPageTemplate()
     }
-    afterInitComponent() {
-
-    }
 
     onClick(e) {
         if(e.target.closest('[data-parent-button-js]')) {

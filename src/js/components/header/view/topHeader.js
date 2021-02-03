@@ -55,7 +55,7 @@ const buy = [
     },
     {
         title: 'Ответы на вопросы',
-        link: '/#information/'
+        link: '/#information/question-answers'
     }
 ]
 

@@ -1,12 +1,11 @@
 import {transitionWrapper} from "../../common/transitionTitle";
-import {titleShopping} from "../components/titleShopping";
 import {paymentPage} from "./view/PaymentPage";
 
 export function aboutPaymentPageTemplate() {
     return `
         <div>
             ${transitionWrapper(link)}
-            ${titleShopping()}
+            <div class="title-shopping">О покупках</div>
             ${paymentPage()}
         </div>
     `
@@ -15,6 +14,6 @@ export function aboutPaymentPageTemplate() {
 let link = [
     {
         title: 'Хлебные крошки',
-        link: '/#about-shopping'
+        link: '/#information/about-payment'
     }
 ]
