@@ -5,3 +5,8 @@ export function capitalize(string) {
 
   return  string.charAt(0).toUpperCase() + string.slice(1)
 }
+
+export function toggleShowInformation(className) {
+  const $mainElem = document.querySelector(className)
+  $mainElem.classList.toggle('show-info')
+}

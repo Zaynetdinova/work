@@ -1,6 +1,6 @@
 import {Component} from "../../../core/Component";
 import {aboutPaymentPageTemplate} from "./aboutPaymentPage.template";
-import {UtilsCardProductPage} from "../../cardProductPage/js/utilsCardProductPage";
+import {toggleShowInformation} from '../../../core/utils/utils'
 
 export class AboutPaymentPage extends Component {
     static className = 'About-payment'
@@ -16,19 +16,19 @@ export class AboutPaymentPage extends Component {
         return aboutPaymentPageTemplate()
     }
     afterInitComponent() {
-        this.utils = new UtilsCardProductPage()
+
     }
 
     onClick(e) {
-        if(e.target.closest('article')) {
-            const element = e.target.closest('article');
+        if(e.target.closest('[data-parent-button-js]')) {
+            const element = e.target.closest('[data-parent-button-js]');
 
             switch (element.id) {
                 case 'top-box-js':
-                    this.utils.infoProductShow('.top-box')
+                    toggleShowInformation('[data-payment-page-top-box-js]')
                     break;
                 case 'bottom-box-js':
-                    this.utils.infoProductShow('.bottom-box')
+                    toggleShowInformation('[data-payment-page-bottom-box-js]')
                     break;
             }
         }
