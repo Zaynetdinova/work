@@ -24,14 +24,14 @@ export function paymentPage() {
                     </div>
                 </div>
                 <div class="column-two">
-                    <div class="top-box">
-                        <article class="box-title" id="top-box-js">
+                    <section data-payment-page-top-box-js class="top-box">
+                        <div data-parent-button-js class="box-title" id="top-box-js">
                             <div class="img-title">
                                 <img src="${cash}" alt="">
                                 <div>Способы оплаты</div>
                             </div>
                             <div class="arrow"></div>
-                        </article>
+                        </div>
                         <div class="wrapper-text-column">
                             <p class="text">После получения вами счета, его необходимо оплатить в течение 3-х рабочих дней. 
                             Если заказ не будет оплачен в данный срок, он будет аннулирован и расформирован.</p>
@@ -40,15 +40,17 @@ export function paymentPage() {
                             - банковской картой без процентов на сайте<br>
                             - наличными или банковской картой в офисе</p>
                         </div>                      
-                    </div>
-                    <div class="bottom-box">
-                        <article class="box-title" id="bottom-box-js">
+                    </section>
+                    <section data-payment-page-bottom-box-js class="bottom-box">
+                    
+                        <div data-parent-button-js class="box-title" id="bottom-box-js">
                             <div class="img-title">
                                 <img src="${noncash}" alt="">
                                 <div>Оплата банковской картой</div>
                             </div>
                             <div class="arrow"></div>
-                        </article>
+                        </div>
+                        
                         <div class="wrapper-text-column">
                             <p class="text">Для оплаты товара с помощью банковской карты необходимо 
                             при оформлении заказа выбрать “Оплата картой”.</p>
@@ -64,7 +66,7 @@ export function paymentPage() {
                             банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa Int., 
                             MasterCard Europe Sprl, JCB.</p>
                         </div> 
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>

@@ -47,7 +47,6 @@
     .name-product {
       .wrapper-product {
         display: flex;
-
         .img-product {
           width: 128px;
           height: 193px;
@@ -170,7 +169,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     .selected-dimensions-product-title, .selected-dimensions-product {
       display: none;
     }
