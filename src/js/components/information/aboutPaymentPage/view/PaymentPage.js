@@ -41,8 +41,7 @@ export function paymentPage() {
                             - наличными или банковской картой в офисе</p>
                         </div>                      
                     </section>
-                    <section data-payment-page-bottom-box-js class="bottom-box">
-                    
+                    <section data-payment-page-bottom-box-js class="bottom-box">                   
                         <div data-parent-button-js class="box-title" id="bottom-box-js">
                             <div class="img-title">
                                 <img src="${noncash}" alt="">
@@ -50,7 +49,6 @@ export function paymentPage() {
                             </div>
                             <div class="arrow"></div>
                         </div>
-                        
                         <div class="wrapper-text-column">
                             <p class="text">Для оплаты товара с помощью банковской карты необходимо 
                             при оформлении заказа выбрать “Оплата картой”.</p>

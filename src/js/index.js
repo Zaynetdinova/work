@@ -12,9 +12,9 @@ import {PersonalDataPage} from "./pages/PersonalAreaPage/PersonalData";
 
 
 import {AboutShopping} from './pages/informationPage/AboutShopping';
-import {DiscountAndBonuses} from "./components/personalArea/discountAndBonuses/discountAndBonuses";
 import {BonusesPage} from "./pages/PersonalAreaPage/BonusesPage";
 import {AboutPayment} from "./pages/informationPage/AboutPayment";
+import {AboutQuestionsAnswers} from "./pages/informationPage/AboutQuestionsAnswers";
 
 
 
@@ -31,6 +31,7 @@ new Router('#app', {
   personalAreaBonusesPage: BonusesPage,
   aboutShoppingPage: AboutShopping,
   aboutPaymentPage: AboutPayment,
+  aboutQuestionAnswers: AboutQuestionsAnswers,
 })
 
 

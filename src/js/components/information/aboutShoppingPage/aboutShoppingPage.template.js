@@ -1,13 +1,11 @@
 import {transitionWrapper} from '../../common/transitionTitle'
-import {navigation} from '../../personalArea/view/navigation'
-import {titleShopping} from '../components/titleShopping'
 import {shoppingDelivery} from './view/shoppingDelivery'
 
 export function aboutShoppingPageTemplate() {
 	return `
         <div>
             ${transitionWrapper(link)}
-            ${titleShopping()}
+           	<div class="title-shopping">О покупках</div>
             ${shoppingDelivery()}
         </div>
     `
@@ -16,6 +14,6 @@ export function aboutShoppingPageTemplate() {
 let link = [
 	{
 		title: 'Хлебные крошки',
-		link: '/#about-shopping'
+		link: '/#information/about-shopping'
 	}
 ]
