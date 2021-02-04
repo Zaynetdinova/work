@@ -44,7 +44,7 @@ function tooltip(item) {
 const buy = [
     {
         title: 'Размеры',
-        link: '/#information/'
+        link: '/#information/size'
     },
     {
         title: 'Доставка',
@@ -57,27 +57,31 @@ const buy = [
     {
         title: 'Ответы на вопросы',
         link: '/#information/question-answers'
+    },
+    {
+        title: 'Возврат',
+        link: '/#information/return'
     }
 ]
 
 const score = [
     {
         title: 'О нас',
-        link: ''
+        link: '/#information/about-us'
     },
     {
         title: 'Условия работы',
-        link: ''
+        link: '/#information/working-condition'
     },
     {
         title: 'Контакты',
-        link: ''
+        link: '/#information/contacts'
     },
 ]
 
 const cooperation = [
     {
         title: 'Поставщикам',
-        link: ''
+        link: '/#information/cooperation'
     },
 ]

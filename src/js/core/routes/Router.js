@@ -57,6 +57,24 @@ export class Router {
 			case 'information/question-answers':
 				Page = this.routes.aboutQuestionAnswers
 				break;
+			case 'information/cooperation':
+				Page = this.routes.aboutCooperation
+				break;
+			case 'information/size':
+				Page = this.routes.aboutSize
+				break;
+			case 'information/return':
+				Page = this.routes.aboutReturn
+				break;
+			case 'information/contacts':
+				Page = this.routes.aboutContacts
+				break;
+			case 'information/about-us':
+				Page = this.routes.aboutUs
+				break;
+			case 'information/working-condition':
+				Page = this.routes.aboutWorkingCondition
+				break;
 			default:
 				Page = this.routes.mainPage
 		}
