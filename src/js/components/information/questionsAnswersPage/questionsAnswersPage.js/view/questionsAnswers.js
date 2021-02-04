@@ -193,9 +193,13 @@ export function questionsAnswers() {
                         <p>Доставка до ТК осуществляется бесплатно при соблюдении условия минимального заказа 
                         15000 ₽. Возможна, в некоторых случаях, отправка груза и на меньшую сумму, но тогда 
                         доставка до ТК будет стоить 500 ₽.</p>
-                        <p>Мы работаем со следующими ТК: <span class="transport">Байкал Сервис,</span> <span class="transport">Возовоз,</span>  
-                        <span class="transport">Деловые линии,</span> <span class="transport">ЖелДорЭкспедиция,</span> <span class="transport">ПЭК,
-                        </span> <span class="transport">Энергия.</span></p>
+                        <p>Мы работаем со следующими ТК: 
+                        <a href="https://www.baikalsr.ru/" target="_blank">Байкал Сервис,</a> 
+                        <a href="https://vozovoz.ru/" target="_blank">Возовоз,</a>  
+                        <a href="https://www.dellin.ru/" target="_blank">Деловые линии,</a> 
+                        <a href="https://www.jde.ru/" target="_blank">ЖелДорЭкспедиция,</a> 
+                        <a href="https://pecom.ru/" target="_blank">ПЭК,</a> 
+                        <a href="https://nrg-tk.ru/" target="_blank">Энергия.</a></p>
                     </div>
                 </section>
             </div>

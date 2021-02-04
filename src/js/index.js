@@ -18,7 +18,7 @@ import {AboutQuestionsAnswers} from "./pages/informationPage/AboutQuestionsAnswe
 
 
 
-window.userRegistry = false
+window.userRegistry = true
 
 new Router('#app', {
   mainPage: MainPage,
