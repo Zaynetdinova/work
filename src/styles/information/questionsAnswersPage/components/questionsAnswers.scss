@@ -61,17 +61,28 @@
             td {
               width: 25%;
             }
-            .line-status {
-              display: flex;
-              align-items: center;
-              img {
-                margin-right: 9px;
-              }
-            }
           }
           .text-italic {
             font-style: italic;
             margin-top: 30px;
+          }
+          .grid {
+            display: grid;
+            grid-gap: 20px 0;
+            .grid-item {
+              display: grid;
+              align-items: center;
+              grid-template-columns: repeat(4, 1fr);
+              grid-gap: 0 22px;
+              .line-status {
+                display: flex;
+                align-items: center;
+                line-height: 14px;
+                img {
+                  margin-right: 9px;
+                }
+              }
+            }
           }
         }
         .wrapper-img-fourth,
@@ -141,6 +152,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            .img-sberbank-mobile {
+              display: none;
+            }
             .wrapper-box-one {
               width: 345px;
             }
@@ -216,6 +230,9 @@
                 width: 189px;
               }
             }
+            .text-italic {
+              width: 574px;
+            }
           }
           .wrapper-img-fourth {
             padding-bottom: 29%;
@@ -283,6 +300,119 @@
             padding-bottom: 62%;
             .img-sixth {
               background-image: url("../images/information/card-product-768.png");
+            }
+          }
+          .wrapper-status {
+            .grid {
+              .grid-item {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 10px 22px;
+                .bold {
+                  grid-row: 1;
+                  grid-column: 1;
+                }
+                .line-status-1 {
+                  grid-row: 2;
+                  grid-column: 1;
+                }
+                .line-status-2 {
+                  grid-row: 2;
+                  grid-column: 2;
+                }
+                .line-status-3 {
+                  grid-row: 2;
+                  grid-column: 3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .wrapper-questions {
+      .number-question {
+        .wrapper-answers {
+          .text {
+            width: 100%;
+          }
+          .answer-box {
+            .text {
+              width: 100%;
+              margin-bottom: 25px;
+            }
+          }
+          .answer-text {
+            margin-bottom: 5px;
+          }
+          .columns {
+            flex-direction: column;
+            .img-sberbank {
+              display: none;
+
+            }
+            .wrapper-box-text {
+              .img-sberbank-mobile {
+                display: block;
+                margin-bottom: 35px;
+              }
+              .wrapper-box-one {
+                width: 100%;
+              }
+            }
+          }
+          .wrapper-img-fourth {
+            padding-bottom: 75%;
+            .img-fourth {
+              background-image: url("../images/information/good-414.png");
+            }
+          }
+          .wrapper-img-fifth {
+            padding-bottom: 89%;
+            .img-fifth {
+              background-image: url("../images/information/payment-414.png");
+            }
+          }
+          .wrapper-img-fifth-2 {
+            padding-bottom: 140%;
+            .img-fifth-2 {
+              background-image: url("../images/information/payment-online-414.png");
+            }
+          }
+          .wrapper-img-sixth {
+            padding-bottom: 92%;
+            .img-sixth {
+              background-image: url("../images/information/card-product-414.png");
+            }
+          }
+          .wrapper-status {
+            .text-italic {
+              width: 100%;
+            }
+            .grid {
+              .grid-item {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-gap: 15px 0;
+                .bold {
+                  grid-row: 1;
+                  grid-column: 1;
+                }
+                .line-status-1 {
+                  grid-row: 2;
+                  grid-column: 1;
+                }
+                .line-status-2 {
+                  grid-row: 3;
+                  grid-column: 1;
+                }
+                .line-status-3 {
+                  grid-row: 4;
+                  grid-column: 1;
+                }
+              }
             }
           }
         }

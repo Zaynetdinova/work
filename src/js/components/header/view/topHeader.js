@@ -35,6 +35,7 @@ function tooltip(item) {
     const items = item.map((item) => {
         return `
             <a href="${item.link}" class="item">${item.title}</a>
+            <div class="tooltip-line"></div>
         `
     })
     return `${items.join('')}`
