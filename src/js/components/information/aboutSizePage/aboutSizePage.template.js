@@ -12,7 +12,7 @@ export function aboutSizePageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Размеры',
         link: '/#information/size'
     }
 ]

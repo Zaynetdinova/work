@@ -13,7 +13,7 @@ export function aboutShoppingPageTemplate() {
 
 let link = [
 	{
-		title: 'Хлебные крошки',
+		title: 'Доставка',
 		link: '/#information/about-shopping'
 	}
 ]

@@ -13,7 +13,7 @@ export function aboutPaymentPageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Оплата',
         link: '/#information/about-payment'
     }
 ]

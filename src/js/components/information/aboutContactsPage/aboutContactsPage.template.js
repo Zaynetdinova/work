@@ -5,13 +5,13 @@ export function aboutContactsPageTemplate() {
         <div>
             ${transitionWrapper(link)}
            	<div class="title-shopping">О магазине</div>
-            
+            <div class="title-contacts">Контактная информация</div>
         </div>
     `
 }
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Контакты',
         link: '/#information/contacts'
     }
 ]
