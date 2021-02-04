@@ -12,7 +12,7 @@ export function  workingConditionsPageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Условия работы',
         link: '/#information/working-condition'
     }
 ]

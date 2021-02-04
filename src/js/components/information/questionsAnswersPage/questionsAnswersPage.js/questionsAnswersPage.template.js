@@ -13,7 +13,7 @@ export function QuestionsAnswersPageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Ответы на вопросы',
         link: '/#information/question-answers'
     }
 ]

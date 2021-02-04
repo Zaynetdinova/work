@@ -12,7 +12,7 @@ export function  aboutReturnsPageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Возврат',
         link: '/#information/return'
     }
 ]

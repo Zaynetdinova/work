@@ -46,7 +46,7 @@ export function cooperationPageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'Поставщикам',
         link: '/#information/cooperation'
     }
 ]

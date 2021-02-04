@@ -12,7 +12,7 @@ export function aboutUsPageTemplate() {
 
 let link = [
     {
-        title: 'Хлебные крошки',
+        title: 'О нас',
         link: '/#information/about-us'
     }
 ]
