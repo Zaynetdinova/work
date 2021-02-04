@@ -69,20 +69,20 @@ export function questionsAnswers() {
                             <div class="img-fourth"></div>
                         </div>
                         <div class="wrapper-status">
-                            <table class="line-one">
-                                <tr>
-                                    <td><div class="bold">Наличие на складе поставщика</div></td>
-                                    <td><div class="line-status"><img src="${status}" alt="">товар в обработке</div></td>
-                                    <td> <div class="line-status"><img src="${statusGreen}" alt="">товар подтвержден поставщиком</div></td>
-                                    <td><div class="line-status"><img src="${statusRed}" alt="">товар закончился на складе поставщика</div></td>
-                                </tr>
-                                <tr>
-                                    <td><div class="bold">Наличие на складе поставщика</div></td>
-                                    <td><div class="line-status"><img src="${box}" alt="">ожидаем поступление к нам на склад</div></td>
-                                    <td><div class="line-status"><img src="${boxGreen}" alt="">товар собран в вашу коробку</div></td>
-                                    <td><div class="line-status"><img src="${boxRed}" alt="">товара нет в наличии</div></td>
-                                </tr>
-                            </table>
+                            <div class="grid">
+                                <div class="grid-item">
+                                    <div class="bold">Наличие на складе поставщика</div>
+                                    <div class="line-status line-status-1"><img src="${status}" alt="">товар в обработке</div>
+                                    <div class="line-status line-status-2"><img src="${statusGreen}" alt="">товар подтвержден поставщиком</div>
+                                    <div class="line-status line-status-3"><img src="${statusRed}" alt="">товар закончился на складе поставщика</div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="bold">Наличие на нашем складе</div>
+                                    <div class="line-status line-status-1"><img src="${box}" alt="">ожидаем поступление к нам на склад</div>
+                                    <div class="line-status line-status-2"><img src="${boxGreen}" alt="">товар собран в вашу коробку</div>
+                                    <div class="line-status line-status-3"><img src="${boxRed}" alt="">товара нет в наличии</div>
+                                </div>
+                            </div>
                             <div class="text-italic">В случае отсутствия каких-либо позиций, вы можете оперативно оформить новый заказ, который "прицепится" 
                             к текущему, пока по нему не выставлен счёт.</div>
                         </div>
@@ -116,6 +116,7 @@ export function questionsAnswers() {
                                     в личном кабинете, в истории заказов появится кнопка "Оплатить онлайн".</div>
                                     <div class="box-text">После ввода данных автоматически спишется сумма заказа БЕЗ взимания комиссии за перевод.</div>
                                 </div>
+                                <img class="img-sberbank-mobile" src="${sberbank}" alt="">
                                 <div class="wrapper-box-two">
                                     <div class="attention">ВАЖНО!</div>
                                     <div>В связи с маркировкой товара и передачей данных в “Честный знак”, хотим 
@@ -206,3 +207,18 @@ export function questionsAnswers() {
         </div>
     `
 }
+
+// <table class="line-one">
+//     <tr>
+//         <td><div class="bold">Наличие на складе поставщика</div></td>
+//         <td><div class="line-status"><img src="${status}" alt="">товар в обработке</div></td>
+//         <td> <div class="line-status"><img src="${statusGreen}" alt="">товар подтвержден поставщиком</div></td>
+//         <td><div class="line-status"><img src="${statusRed}" alt="">товар закончился на складе поставщика</div></td>
+//     </tr>
+//     <tr>
+//         <td><div class="bold">Наличие на нашем складе</div></td>
+//         <td><div class="line-status"><img src="${box}" alt="">ожидаем поступление к нам на склад</div></td>
+//         <td><div class="line-status"><img src="${boxGreen}" alt="">товар собран в вашу коробку</div></td>
+//         <td><div class="line-status"><img src="${boxRed}" alt="">товара нет в наличии</div></td>
+//     </tr>
+// </table>

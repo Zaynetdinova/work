@@ -80,7 +80,6 @@
       background: #FFFFFF;
       border: 1px solid #EAE7E1;
       color: black;
-      padding: 0 10px 0 10px;
       width: 199px;
       .item {
         cursor: pointer;
@@ -89,15 +88,17 @@
         letter-spacing: 0.05em;
         color: #555555;
         text-decoration: none;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        border-bottom: 1px dotted #D9D9D9;
+        padding: 11px 17px 11px 15px;
         &:hover {
           background: #F3F2F0;
         }
         &:last-child {
           border-bottom: none;
         }
+      }
+      .tooltip-line {
+        border-bottom: 1px dotted #D9D9D9;
+        margin: 0 10px;
       }
     }
   }
