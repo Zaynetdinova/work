@@ -24,12 +24,12 @@ export function footerTemplate() {
                         <div class="title-footer">ИНФОРМАЦИЯ</div>
                         <nav>
                             <ul>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Условия работы</a></li>
+                                <li><a href="/#information/about-us">О нас</a></li>
+                                <li><a href="/#information/working-condition">Условия работы</a></li>
                                 <li><a href="/#information/about-shopping">Доставка</a></li>
                                 <li><a href="/#information/about-payment">Оплата</a></li>
                                 <li><a href="/#information/question-answers">Ответы на вопросы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="/#information/contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -41,7 +41,7 @@ export function footerTemplate() {
                                 <li><a href="/#personal-area/basket">Корзина</a></li>
                                 <li><a href="#">Избранное</a></li>
                                 <li><a href="#">Заказы и их статус</a></li>
-                                <li><a href="">Возврат</a></li>
+                                <li><a href="/#information/return">Возврат</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -49,7 +49,7 @@ export function footerTemplate() {
                         <div class="title-footer">сервис</div>
                         <nav>
                             <ul>
-                                <li><a href="#">Таблица размеров</a></li>
+                                <li><a href="/#information/size">Таблица размеров</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -57,7 +57,7 @@ export function footerTemplate() {
                         <div class="title-footer">СОТРУДНИЧЕСТВО</div>
                         <nav>
                             <ul>
-                                <li><a href="#">Поставщикам</a></li>
+                                <li><a href="/#information/cooperation">Поставщикам</a></li>
                             </ul>
                         </nav>
                     </div>     

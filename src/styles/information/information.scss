@@ -1,6 +1,12 @@
 .About-shopping,
 .About-payment,
-.Questions-answers {
+.Questions-answers,
+.Cooperation-page,
+.About-size-page,
+.About-returns-page,
+.About-contacts-page,
+.About-us-page,
+.Working-conditions-page {
   .title-shopping {
     font-size: 24px;
     line-height: 28px;
@@ -22,3 +28,9 @@
 @import 'aboutShoppingPage/aboutShoppingPage';
 @import 'aboutPaymentPage/aboutPaymentPage';
 @import 'questionsAnswersPage/questionsAnswersPage';
+@import 'cooperationPage/cooperationPage';
+@import 'aboutSizePage/aboutSizePage';
+@import 'aboutReturnsPage/aboutReturnsPage';
+@import 'aboutContactsPage/aboutContactsPage';
+@import 'aboutUsPage/aboutUsPage';
+@import 'workingСonditionsPage/workingСonditionsPage';

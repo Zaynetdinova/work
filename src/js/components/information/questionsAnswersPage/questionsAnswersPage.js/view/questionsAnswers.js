@@ -140,8 +140,8 @@ export function questionsAnswers() {
                         <div class="arrow"></div>
                     </div>
                     <div class="wrapper-answers">
-                        <div class="answer-text">Обычно заказ собирается за 2-4 дня, если склад поставщика находится в Москве, и 8-14 дней, 
-                        если склад в другом городе (информация размещена внутри каждой карточки товара).</div>
+                        <div class="answer-text">Обычно заказ собирается за <span class="no-wrap">2-4 дня,</span> если склад поставщика находится в Москве, 
+                        и <span class="no-wrap">8-14 дней, </span> если склад в другом городе (информация размещена внутри каждой карточки товара).</div>
                         <div class="wrapper-img-sixth">
                             <div class="img-sixth"></div>
                         </div>
@@ -153,10 +153,10 @@ export function questionsAnswers() {
                         <div class="arrow"></div>
                     </div>
                     <div class="wrapper-answers">
-                        <div class="text">Корректировка заказа возможна в личном кабинете до 5:00 МСК, нажав 
-                        на крестик напротив позиции которую хотите удалить. После 5:00 МСК корректировка 
+                        <div class="text">Корректировка заказа возможна в личном кабинете до <span class="no-wrap">5:00 МСК,</span> нажав 
+                        на крестик напротив позиции которую хотите удалить. После <span class="no-wrap">5:00 МСК </span> корректировка 
                         заказа возможна через звонок менеджеру в случаях если поставщик ещё не начал 
-                        обработку заказа. Как правило поставщики начинают обработку заказов после 10:00 МСК, 
+                        обработку заказа. Как правило поставщики начинают обработку заказов после <span class="no-wrap">10:00 МСК,</span>
                         но есть поставщики, которые начинают обрабатку заказов раньше.</div>
                     </div>
                 </section>
@@ -166,7 +166,7 @@ export function questionsAnswers() {
                         <div class="arrow"></div>
                     </div>
                     <div class="wrapper-answers">
-                        <div class="text">1 июня 2020 года вступила в силу маркировка товаров. Движение 
+                        <div class="text"><span class="no-wrap">1 июня 2020 года</span> вступила в силу маркировка товаров. Движение 
                         товара отслеживает организация “Честный знак” и вся попадаемая под маркировку 
                         продукция является продукцией строгой отчётности. Поэтому, важно изначально правильно 
                         заполнить все поля при регистрации. От юридических лиц, мы просим больше информации, 
@@ -192,8 +192,8 @@ export function questionsAnswers() {
                     </div>
                     <div class="wrapper-answers">
                         <p>Доставка до ТК осуществляется бесплатно при соблюдении условия минимального заказа 
-                        15000 ₽. Возможна, в некоторых случаях, отправка груза и на меньшую сумму, но тогда 
-                        доставка до ТК будет стоить 500 ₽.</p>
+                        <span class="no-wrap">15000 ₽.</span> Возможна, в некоторых случаях, отправка груза и на меньшую сумму, но тогда 
+                        доставка до ТК будет стоить  <span class="no-wrap">500 ₽.</span></p>
                         <p>Мы работаем со следующими ТК: 
                         <a href="https://www.baikalsr.ru/" target="_blank">Байкал Сервис,</a> 
                         <a href="https://vozovoz.ru/" target="_blank">Возовоз,</a>  
@@ -207,18 +207,3 @@ export function questionsAnswers() {
         </div>
     `
 }
-
-// <table class="line-one">
-//     <tr>
-//         <td><div class="bold">Наличие на складе поставщика</div></td>
-//         <td><div class="line-status"><img src="${status}" alt="">товар в обработке</div></td>
-//         <td> <div class="line-status"><img src="${statusGreen}" alt="">товар подтвержден поставщиком</div></td>
-//         <td><div class="line-status"><img src="${statusRed}" alt="">товар закончился на складе поставщика</div></td>
-//     </tr>
-//     <tr>
-//         <td><div class="bold">Наличие на нашем складе</div></td>
-//         <td><div class="line-status"><img src="${box}" alt="">ожидаем поступление к нам на склад</div></td>
-//         <td><div class="line-status"><img src="${boxGreen}" alt="">товар собран в вашу коробку</div></td>
-//         <td><div class="line-status"><img src="${boxRed}" alt="">товара нет в наличии</div></td>
-//     </tr>
-// </table>
