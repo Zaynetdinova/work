@@ -1,3 +1,100 @@
 .About-contacts-page {
-
+  .wrapper-contact {
+    margin-bottom: 88px;
+    .title-contacts {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 43px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10px 20px;
+      margin-bottom: 50px;
+      .item-grid {
+        display: grid;
+        grid-template-columns: 125px 275px;
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        background: #FFFFFF;
+        height: 100px;
+        font-size: 14px;
+        line-height: 20px;
+        img {
+          margin: 0 auto;
+        }
+        a {
+          color: #AB064E;
+          white-space: nowrap;
+        }
+      }
+    }
+    span {
+      white-space: nowrap;
+    }
+    .title-requisites {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 17px;
+    }
+    .text-requisites {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      line-height: 14px;
+      width: 467px;
+    }
+    @media (max-width: 1439px) {
+      margin-bottom: 355px;
+      .title-shopping {
+        margin-bottom: 13px;
+      }
+      .title-cooperation {
+        margin-bottom: 52px;
+      }
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 5px 15px;
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 1023px) {
+      margin-bottom: 182px;
+      .grid {
+        margin-bottom: 50px;
+        .item-grid {
+          grid-template-columns: 85px 220px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .title-cooperation {
+        margin-bottom: 24px;
+      }
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 5px 0;
+        margin-bottom: 30px;
+        .item-grid {
+          height: 90px;
+        }
+      }
+      .text-requisites {
+        width: 100%;
+      }
+    }
+    @media (max-width: 374px) {
+      .grid {
+        .item-grid {
+          font-size: 13px;
+          line-height: 18px;
+          grid-template-columns: 75px 202px;
+        }
+      }
+    }
+  }
 }

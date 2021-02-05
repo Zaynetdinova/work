@@ -1,3 +1,132 @@
 .About-us-page {
-
+  .wrapper-aboutUs {
+    margin-bottom: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    .title-aboutUs {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 30px;
+      width: 730px;
+    }
+    p {
+      font-style: italic;
+      width: 953px;
+      margin-bottom: 40px;
+    }
+    .wrapper-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      .flex-one ,
+      .flex-two {
+        width: 49.5%;
+        .flex-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 20px;
+          img {
+            margin-right: 30px;
+            margin-top: 5px;
+          }
+          a {
+            color: #AB064E;
+          }
+          .item-title {
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 21px;
+          }
+        }
+      }
+      .flex-one {
+        margin-right: 124px;
+      }
+    }
+    .text-about-us {
+      margin-bottom: 30px;
+    }
+    .business-text {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: right;
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 200px;
+      p {
+        width: 100%;
+      }
+      .wrapper-flex {
+        margin-left: 15px;
+        .flex-one {
+          margin-right: 28px;
+        }
+      }
+      .text-about-us {
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      .wrapper-flex {
+        margin-left: 6px;
+        .flex-one {
+          margin-right: 18px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 180px;
+      .title-aboutUs {
+        width: 100%;
+      }
+      p {
+        font-size: 15px;
+        line-height: 21px;
+        padding: 20px 0;
+        border-bottom: 3px solid #DDDDDD;
+        border-top: 3px solid #DDDDDD;
+        margin-bottom: 36px;
+      }
+      .wrapper-flex {
+        margin-left: 6px;
+        margin-right: 15px;
+        flex-direction: column;
+        .flex-one {
+          margin-right: 0;
+        }
+        .flex-two {
+          padding-bottom: 30px;
+          border-bottom: 2px dotted #777777;
+        }
+        .flex-one,
+        .flex-two {
+          width: 100%;
+          .flex-item {
+            img {
+              margin-right: 22px;
+            }
+          }
+        }
+      }
+      .text-about-us {
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 374px) {
+      .wrapper-flex {
+        margin-left: 0;
+        .flex-one,
+        .flex-two {
+          .flex-item {
+            img {
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
