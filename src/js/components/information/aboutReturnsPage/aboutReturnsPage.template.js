@@ -28,7 +28,7 @@ export function  aboutReturnsPageTemplate() {
                                 причине недовложения/пересорта для физ. и юр. лиц</div>
                             </div>
                         </div>                
-                        <div>Заявления отправлять на почту <a href="mailto:vozvrat@optmoyo.ru">vozvrat@optmoyo.ru</a></div>        
+                        <div class="statement-email">Заявления отправлять на почту <a href="mailto:vozvrat@optmoyo.ru">vozvrat@optmoyo.ru</a></div>        
                     </div>
                 </div>
                 <div class="flex-item">
