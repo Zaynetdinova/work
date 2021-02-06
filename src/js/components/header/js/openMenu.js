@@ -1,5 +1,3 @@
-import {closeSidebarCloseMenu} from '../../../core/JS/openSidebar'
-
 export function openMenu(type = '') {
 
   const sidebar = document.getElementById('sidebar-js')
@@ -34,7 +32,8 @@ export function openMenu(type = '') {
     burgerMenu.classList.remove('show')
     sidebar.classList.remove('Sidebar-open-js')
     document.body.classList.remove('Com-over-hidden')
-    closeSidebarCloseMenu()
+    // closeSidebarCloseMenu()
+    // написать функцию
   }
 
 }

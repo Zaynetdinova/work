@@ -1,4 +1,4 @@
-import {openSidebar} from './JS/openSidebar'
+import {openSidebar, openSidebarTest} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
 import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
 import {UserAgent} from './JS/userAgent'
@@ -26,7 +26,10 @@ export class Page {
 		entry.init()
 		///
 		popupQuickFunctions()
-		openSidebar()
+		// extra sidebar
+		new openSidebarTest()
+
+		// openSidebar()
 		initialSliders()
 		if(window.userRegistry) {
 			commonCardFunctions()

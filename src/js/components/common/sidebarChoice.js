@@ -1,12 +1,13 @@
 import arrowIcon from '../../../images/icons/arrow2.svg'
 
+// исправить data атрибуты
 export function sidebarChoice(li = [], subcategory, arrow) {
   const items = (arr = []) => {
     return  arr.map((item) => {
       const {category, id = ''} = item
 
       return `
-        <figure data-category class='category' id="${id}">
+        <figure data-parent-category data-category class='category' id="${id}">
             <a class='choice' id="choice" href="${item.link}">
                 ${category}
                 ${arrow == 'notArrow' ? '' : `<div class="arrow"></div>`}
@@ -20,7 +21,7 @@ export function sidebarChoice(li = [], subcategory, arrow) {
 
   const itemsSubCategories = li.map((item) => {
     return `
-        <figure data-category data-subcategory class='sub-category-wrapper' data-id=${item.id}>
+        <figure data-parent-category data-category data-subcategory class='sub-category-wrapper' data-id=${item.id}>
             <a class='item'>
             <div>
                 <span>${item.name}</span>

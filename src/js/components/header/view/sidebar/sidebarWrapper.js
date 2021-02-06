@@ -1,4 +1,4 @@
-import {extra} from './extra'
+
 import icon1 from '../../../../../images/icons/woman.svg'
 import icon2 from '../../../../../images/icons/girl.svg'
 import icon3 from '../../../../../images/icons/man.svg'
@@ -6,27 +6,34 @@ import icon4 from '../../../../../images/icons/boys.svg'
 import icon5 from '../../../../../images/icons/house.svg'
 import icon6 from '../../../../../images/icons/toy.svg'
 import {sidebarPoint} from '../../../common/sidebarPoint'
-import {subCategoriesMenu} from "../../../common/subCategoriesMenu";
+import {subCategoriesMenu} from './subCategoriesMenu'
+
 
 export function sidebarWrapper() {
   return `
   <section class="Sidebar" id='sidebar-js'>
     <div class='menu'>
       <div class='wrapper-sidebar'>
-          <div class='points-wrapper'>
+          
+          <div data-parent-point class='points-wrapper'>
             <div class='points'>
                 <div class="points-header">
                     ${sidebarPoint(point)}
                 </div>
             </div>
           </div>   
-          <div class='extra'>
-              ${extra()}
-          </div> 
+          
+          <div id="sidebar-extra-wrapper-js">
+          
+          </div>
+          
+           
           <div class="extra-mobile" id="open-mobile-extra-js">
             ${subCategoriesMenu()}
-          </div>          
-          <div class="button-close" data-id="cancel-js"></div>                
+          </div>
+                    
+          <div class="button-close" data-id="cancel-js"></div>  
+                        
       </div>
     </div>
     <div class="background" data-id="background-js"></div>  
@@ -42,59 +49,89 @@ let point =
       img: icon1,
       category: [
         {
-          id: 'dress',
+          id: 'dressWomen',
           category: 'Платья',
           link: '/#catalog'
         },
         {
-          id: 'jersey',
+          id: 'jerseyWoman',
           category: 'Трикотаж',
           link: '/#catalog'
         },
         {
+          id: 'topWomen',
           category: 'Верха',
           link: '/#catalog'
         },
         {
-          category: 'Низы'
+          id: 'bottomWomen',
+          link: '',
+          category: 'Низы',
+
         },
         {
+          id: 'skirtsWomen',
+          link: '',
           category: 'Юбки'
         },
         {
+          id: 'outerwearWomen',
+          link: '',
           category: 'Верхняя одежда'
         },
         {
+          id: 'costumesWomen',
+          link: '',
           category: 'Костюмы'
         },
         {
+          id: 'forHomeWomen',
+          link: '',
           category: 'Для дома'
         },
         {
+          id: 'sportWomen',
+          link: '',
           category: 'Спорт'
         },
         {
+          id: 'underwearWomen',
+          link: '',
           category: 'Нижнее белье'
         },
         {
+          id: 'swimwearWomen',
+          link: '',
           category: 'Купальники'
         },
         {
+          id: 'tightsSocksWomen',
+          link: '',
           category: 'Колготки и Носки'
         },
         {
+          id: 'bigSizesWomen',
+          link: '',
           category: 'Большие размеры'
         },
         {
+          id: 'accessoriesWomen',
+          link: '',
           category: 'Аксессуары'
         },
         {
+          id: 'newItemsWomen',
+          link: '',
           category: 'Новинки'
         },
         {
+          id: 'promotionsWomen',
+          link: '',
           category: 'Акции'
         },
         {
+          id: 'discountsWomen',
+          link: '',
           category: 'Скидки'
         },
       ],

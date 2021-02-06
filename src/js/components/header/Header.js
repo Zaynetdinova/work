@@ -4,12 +4,9 @@ import {openMenu} from './js/openMenu'
 import {mobileSearch} from './js/mobileSearch'
 import {desktopSearch} from './js/desktopSearch'
 import {showRegistryUserData} from './js/showRegistryUserData'
-import {mobileSearchInput} from './js/mobileSearchInput'
-import {showExtra} from './js/showExtra'
-import {info} from "./js/info";
-import {showBackCall} from "./js/showBackCall";
 
-import {showRestorePassword, showRestorePassword2} from "./js/showRestorePassword";
+import {info} from "./js/info";
+import {ExtraMenuItemShow} from './js/ExtraMenuItemShow'
 
 
 export class Header extends Component {
@@ -34,15 +31,12 @@ export class Header extends Component {
   }
 
   onMouseenter(e) {
-    // console.log(e.target)
+
   }
 
   onMouseover(e) {
-    // на будущее
-    const el = e.target.closest('figure')
-    if(el != undefined) {
-      showExtra(el.id)
-    }
+    const extraMenu = new ExtraMenuItemShow()
+    extraMenu.init(e)
   }
 
 }
@@ -64,6 +58,7 @@ function spreaderOnInput(e) {
 
 }
 
+// переделать
 function spreaderClick(e) {
   if(e.target.closest('article')) {
     const element = e.target.closest('article');
