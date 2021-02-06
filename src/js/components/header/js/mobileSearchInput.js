@@ -1,5 +1,3 @@
-import result from 'postcss/lib/result'
-
 export function mobileSearchInput(e, element, type = '') {
 	if(type === 'click') {
 		element.classList.add('input-header-active')

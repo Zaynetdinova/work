@@ -1,22 +1,28 @@
 import img from '../../../../../images/sidebar/img.png'
 import sale from '../../../../../images/sidebar/sale.svg'
 
-export function extra() {
-    return `
-        <div class='More'>
+export function extra(elementsMenu) {
+    const {firstColumn, secondColumn = []} = elementsMenu
+
+  return `
+        <div class="extra">
+            <div class='More'>
+            
             <div class="first-col">
                 <div class='first-content'>                  
-                    ${pick(more)}
+                    ${pick(firstColumn)}
                 </div>
             </div>
+            
             <div class="second-col">
                 <div class='second-content'>
-                    ${alternative(options)}
+                    ${secondColumn ? pick(secondColumn) : null}
                     <a href="#">
                         <img src=${sale} alt="sale">
                     </a>
                 </div>
             </div>
+            
             <div class='card'>
                 <img src=${img} alt='img'>
                 <div class='intro'>
@@ -26,38 +32,27 @@ export function extra() {
                 </div>
             </div>
         </div>
+        </div>
     `
 }
 
-function pick(more) {
-  const items = more.map((item) => {
+export function pick(elementsMenu) {
+  const items = elementsMenu.map((item) => {
+    const {title, subElements = []} = item
     return `
             <div class='selection-second'>
-                <a href="#">${item.title}</a>
+                <a href="#">${title}</a>
             </div>
-            ${pick2(item.elem)}
-            
-        `
-  })
-  return `${items.join('')}`
-}
-function pick2(more) {
-    const items = more.map((item) => {
-        return `           
-            <div class="selection-first">
-                <a href="#">${item.pick}</a>
-            </div>
-        `
-    })
-    return `${items.join('')}`
-}
-
-function alternative(options) {
-  const items = options.map((item) => {
-    return `
-            <div class="selection-second">
-                <a href="#">${item.alternative}</a>
-            </div>
+            ${subElements 
+              ? subElements.map((item) => {
+                return `
+                    <div class="selection-first">
+                        <a href="#">${item.pick}</a>
+                    </div>
+                `
+              }).join('')
+              :  null
+        }
         `
   })
   return `${items.join('')}`
@@ -65,95 +60,5 @@ function alternative(options) {
 
 
 
-let more = [
-    {title: 'Колготки',
-        elem: [
-            {
-                pick: 'Классические'
-            },
-            {
-                pick: 'Фантазийные'
-            },
-            {
-                pick: 'Эротические'
-            },
-            {
-                pick: 'Для беременных'
-            },
-            {
-                pick: 'Conte Elegant'
-            },
-            {
-                pick: 'Elledue'
-            },
-            {
-                pick: 'Filodoro'
-            },
-            {
-                pick: 'Fiore'
-            },
-            {
-                pick: 'Giulia'
-            },
-            {
-                pick: 'Giulietta'
-            },
-            {
-                pick: 'Golden Lady'
-            },
-            {
-                pick: 'Gatta'
-            },
-            {
-                pick: 'Levante'
-            },
-            {
-                pick: 'Marilyn'
-            },
-            {
-                pick: 'Minimi'
-            },
-            {
-                pick: 'Mirey'
-            },
-            {
-                pick: 'My'
-            },
-            {
-                pick: 'Omsa'
-            },
-            {
-                pick: 'Omero'
-            },
-            {
-                pick: 'Philippe Matignon'
-            },
-            {
-                pick: 'Sisi'
-            },
-        ]
-    }
-]
-
-let options = [
-    {
-        alternative: 'Чулки'
-    },
-    {
-        alternative: 'Гольфы'
-    },
-    {
-        alternative: 'Пояса для чулок'
-    },
-    {
-        alternative: 'Подследники'
-    },
-    {
-        alternative: 'Носки'
-    },
-    {
-        alternative: 'Ботфорты'
-    },
-]
 
 

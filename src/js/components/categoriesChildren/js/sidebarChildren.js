@@ -7,6 +7,7 @@ export function sidebarChildren(e) {
 		const mainElement = document.querySelector('#sidebar-children')
 		const mainElementMobile = document.querySelector('#sidebar-children-mobile')
 
+		// error
 		sidebarChoice(mainElement, id)
 		sidebarChoice(mainElementMobile, id)
 
