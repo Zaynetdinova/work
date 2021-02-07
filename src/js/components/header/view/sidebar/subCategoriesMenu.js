@@ -1,6 +1,4 @@
-// import {sidebarChoice} from "./sidebarChoice";
-import {extraDataWomen} from './extraData'
-import {extra, pick} from './extra'
+import {pick} from './extra'
 import {sidebarChoice} from '../../../common/sidebarChoice'
 
 export function subCategoriesMenu() {
@@ -15,7 +13,7 @@ export function subCategoriesMenu() {
         
       </div> 
       <div id="sidebar-extra-mobile-wrapper-js" class="categories">
-        ${sidebarChoice()}
+        
       </div>
     </div>
   `

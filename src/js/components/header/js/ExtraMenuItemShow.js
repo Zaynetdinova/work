@@ -55,6 +55,6 @@ export class ExtraMenuItemShow {
 	initialCategory(menuExtra) {
 		console.log(this.$extraRoot)
 		this.$extraRoot.innerHTML = `${extra(extraDataWomen[menuExtra])}`
-		this.$extraRootMobile.innerHTML = `${extra(extraDataWomen[menuExtra])}`
+		this.$extraRootMobile.innerHTML = `${newTest(extraDataWomen[menuExtra])}`
 	}
 }
