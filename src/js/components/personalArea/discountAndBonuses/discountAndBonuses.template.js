@@ -1,4 +1,4 @@
-import {navigation} from "../view/navigation";
+import {navigation} from "../../common/navigation";
 import {transitionWrapper} from "../../common/transitionTitle";
 import {discountAndBonusesPageTemplate} from "./view/discountAndBonusesPageTemplate";
 

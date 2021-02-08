@@ -1,5 +1,5 @@
 import {transitionWrapper} from "../common/transitionTitle";
-import {navigation} from './view/navigation'
+import {navigation} from "../../common/navigation";
 
 
 export function personalAreaTemplate() {

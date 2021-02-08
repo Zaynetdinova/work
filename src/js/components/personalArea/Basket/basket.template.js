@@ -1,6 +1,6 @@
 import {transitionWrapper} from "../../common/transitionTitle";
-import {navigation} from '../view/navigation'
 import {basketPageTemplate} from "./view/basketPage.template";
+import {navigation} from "../../common/navigation";
 
 export function basketTemplate() {
   return `

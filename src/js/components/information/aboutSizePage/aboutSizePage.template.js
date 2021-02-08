@@ -1,5 +1,7 @@
 import {transitionWrapper} from "../../common/transitionTitle";
 
+import {navigationInformation} from "../../common/navigationInformation";
+
 
 
 export function aboutSizePageTemplate() {
@@ -7,6 +9,11 @@ export function aboutSizePageTemplate() {
         <div class="wrapper-size-page">
             ${transitionWrapper(link)}
            	<div class="title-shopping">О покупках</div>
+           	
+           	<div>
+           	    ${navigationInformation('size')}
+            </div>
+           	
            	<div class="wrapper-size-main-one">
            	    <div class="title-size-page">Таблица основных размеров</div>
            	    <section class="wrapper-table">

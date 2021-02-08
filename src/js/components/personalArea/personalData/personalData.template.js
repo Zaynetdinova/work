@@ -3,7 +3,7 @@ import {ButtonData} from "../Basket/view/buttonData";
 import {checkboxRegistration} from "../../common/checkboxRegistration";
 import {imgCloseIcon} from "../Basket/view/imgCloseIcon";
 import {transitionWrapper} from "../../common/transitionTitle";
-import {navigation} from "../view/navigation";
+import {navigation} from "../../common/navigation";
 
 export function personalDataTemplate() {
 	return `
