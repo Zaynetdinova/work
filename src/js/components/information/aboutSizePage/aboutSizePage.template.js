@@ -312,7 +312,7 @@ export function aboutSizePageTemplate() {
                         <td>82</td>
                         <td>85</td>
                     </tr>
-                    <tr>
+                    <tr class="white-line">
                         <td class="title">Обхват талии</td>
                         <td>43</td>
                         <td>44,5</td>
