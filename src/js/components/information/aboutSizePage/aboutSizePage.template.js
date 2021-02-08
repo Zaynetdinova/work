@@ -10,7 +10,7 @@ export function aboutSizePageTemplate() {
            	<div class="wrapper-size-main-one">
            	    <div class="title-size-page">Таблица основных размеров</div>
            	    <section class="wrapper-table">
-           	   <table >
+           	        <table>
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>38</td>
@@ -108,14 +108,14 @@ export function aboutSizePageTemplate() {
                         <td>156</td>
                     </tr>
                 </table> 
-</section>
-                
+                </section>
             </div>
+            
             <div class="wrapper-size-kinds">
                 <div class="title-size-page">Детская одежда</div>
                 <div class="title-category">Определение размеров детской одежды</div>
                 <section class="wrapper-table">
-                 <table class="kinds-one">
+                    <table class="kinds-one">
                     <tr class="one-line">
                         <td>Возраст (г.)</td>
                         <td>Рост (см.)</td>
@@ -207,8 +207,8 @@ export function aboutSizePageTemplate() {
                 </table>
                 </section>
                
-               <section class="wrapper-table">
-                 <table class="kinds-two">
+                <section class="wrapper-table">
+                    <table class="kinds-two">
                     <tr class="one-line">
                         <td class="one">Возраст</td>
                         <td class="one">Рост (см.)</td>
@@ -276,7 +276,8 @@ export function aboutSizePageTemplate() {
                 </section>
                
                 <div class="title-category">Детские размеры</div>
-                <table class="kinds-tree">
+                <section class="wrapper-table">
+                    <table class="kinds-tree">
                     <tr class="one-line">
                         <td class="title">Рост / Размер</td>
                         <td>56</td>
@@ -367,8 +368,10 @@ export function aboutSizePageTemplate() {
                     </tr>
                     
                 </table>
+                </section>
                 <div class="title-category">Детские шапки</div>
-                <table class="kinds-four">
+                <section class="wrapper-table">
+                    <table class="kinds-four">
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>XS</td>
@@ -384,8 +387,11 @@ export function aboutSizePageTemplate() {
                         <td>54</td>
                     </tr>
                 </table>
+                </section>
                 <div class="title-category">Детские шарфы, перчатки</div>
-                <table class="kinds-four">
+                
+                <section class="wrapper-table">
+                    <table class="kinds-four">
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>XS</td>
@@ -401,8 +407,11 @@ export function aboutSizePageTemplate() {
                         <td>10 – 12</td>
                     </tr>
                 </table>
+                </section>
+                
                 <div class="title-category">Детские носки и гольфы</div>
-                <table class="kinds-five">
+                <section class="wrapper-table">
+                    <table class="kinds-five">
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>18 – 20</td>
@@ -431,8 +440,10 @@ export function aboutSizePageTemplate() {
                         <td>10 – 11 лет</td>
                     </tr>
                 </table>
+                </section>
                 <div class="title-category">Детская обувь</div>
-                <table class="kinds-six">
+                <section class="wrapper-table">
+                    <table class="kinds-six">
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>24</td>
@@ -472,11 +483,13 @@ export function aboutSizePageTemplate() {
                         <td>25,5</td>
                     </tr>
                 </table>
+                </section>
             </div>
             <div class="wrapper-size-women">
                 <div class="title-size-page">Женское бельё и купальники</div>
                 <div class="title-category">Таблица соответствия размеров купальников</div>
-                <table class="woman-one">
+                <section class="wrapper-table">
+                    <table class="woman-one">
                     <tr class="one-line">
                         <td class="title">Размер трусов</td>
                         <td>XS</td>
@@ -523,9 +536,12 @@ export function aboutSizePageTemplate() {
                         <td>–</td>
                     </tr>
                 </table>
+                </section>
                 <div class="text">*Модели купальников с PUSH-UP BRA размером 75B комплектуются трусами размера S</div>
                 <div class="title-category">Трусы</div>
-                <table class="woman-two">
+                
+                <section class="wrapper-table">
+                    <table class="woman-two">
                     <tr class="one-line">
                         <td class="title">Обхват бёдер</td>
                         <td>88 – 92</td>
@@ -569,8 +585,12 @@ export function aboutSizePageTemplate() {
                         <td>62</td>
                     </tr>
                 </table>
+                </section>
+                
                 <div class="title-category">Обхват груди</div>
-                <table class="woman-tree">
+                
+                <section class="wrapper-table">
+                    <table class="woman-tree">
                     <tr class="one-line">
                         <td class="title">Размер чашки</td>
                         <td>65</td>
@@ -652,8 +672,12 @@ export function aboutSizePageTemplate() {
                         <td>117 – 119</td>
                     </tr>
                 </table>
+                </section>
+                
                 <div class="title-category">Обхват под грудью</div>
-                <table class="woman-four">
+                
+                <section class="wrapper-table">
+                    <table class="woman-four">
                     <tr class="white-line">
                         <td class="title">Россия</td>
                         <td>63 – 67</td>
@@ -676,8 +700,12 @@ export function aboutSizePageTemplate() {
                         <td>7</td>
                     </tr>
                 </table>
+                </section>
+                
                 <div class="title-category">Соответствие размеров</div>
-                <table class="woman-five">
+                
+                <section class="wrapper-table">
+                    <table class="woman-five">
                     <tr class="white-line">
                         <td class="title">Россия</td>
                         <td>40</td>
@@ -720,10 +748,13 @@ export function aboutSizePageTemplate() {
                         <td>10</td>
                     </tr>
                 </table>
+                </section>               
             </div>
             <div class="wrapper-jeans">
                 <div class="title-size-page">Джинсы</div>
-                <table>
+                
+                <section class="wrapper-table">
+                    <table>
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>24</td>
@@ -773,7 +804,10 @@ export function aboutSizePageTemplate() {
                         <td>102 – 104</td>
                     </tr>
                 </table>
-                <table class="jeans-size">
+                </section>
+                
+                <section class="wrapper-table">
+                    <table class="jeans-size">
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>33</td>
@@ -823,10 +857,12 @@ export function aboutSizePageTemplate() {
                         <td>–</td>
                     </tr>
                 </table>
+                </section>
             </div>
             <div class="wrapper-jeans-two">
                 <div class="title-size-page">Джинсы FEIMAILIS</div>
-                <table>
+                <section class="wrapper-table">
+                    <table>
                     <tr class="one-line">
                         <td class="title">Размер на эткетке</td>
                         <td>25</td>
@@ -892,10 +928,12 @@ export function aboutSizePageTemplate() {
                         <td>138 – 142</td>
                     </tr>
                 </table>
+                </section>
             </div>
             <div class="wrapper-man">
                 <div class="title-size-page">Мужское бельё</div>
-                <table>
+                <section class="wrapper-table">
+                    <table>
                     <tr class="one-line">
                         <td class="title">Международный размер</td>
                         <td>XS</td>
@@ -957,10 +995,12 @@ export function aboutSizePageTemplate() {
                         <td>123 – 126</td>
                     </tr>
                 </table>
+                </section>
             </div>
             <div class="wrapper-man-two">
                 <div class="title-size-page">Мужское бельё GRIFF BASIC UOMO</div>
-                <table>
+                <section class="wrapper-table">
+                    <table>
                     <tr class="one-line">
                         <td class="title">Международный размер</td>
                         <td>S</td>
@@ -1008,6 +1048,7 @@ export function aboutSizePageTemplate() {
                         <td>111 – 114</td>                  
                     </tr>
                 </table>
+                </section>
             </div>
         </div>
     `
