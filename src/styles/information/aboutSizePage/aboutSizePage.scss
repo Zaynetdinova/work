@@ -1,11 +1,258 @@
 .About-size-page {
   .wrapper-size-page {
     margin-bottom: 200px;
+    font-size: 13px;
+    line-height: 14px;
     .title-size-page {
       color: #AB064E;
       font-size: 18px;
       line-height: 18px;
       margin-bottom: 32px;
+    }
+    .title-category {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      td {
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+      }
+      .title {
+        text-align: start;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .one-line {
+        background: #F3F2F0;
+      }
+      .white-line {
+        background: #FFFFFF;
+      }
+    }
+    .wrapper-size-main-one {
+      margin-bottom: 70px;
+      table {
+        td {
+          width: 4%;
+        }
+        .title {
+          width: 9%;
+        }
+      }
+    }
+    .wrapper-size-kinds {
+      margin-bottom: 70px;
+      table {
+        margin-bottom: 40px;
+      }
+      .kinds-one {
+        td {
+          width: 17.5%;
+        }
+      }
+      .kinds-tree {
+        td {
+          width: 4%;
+        }
+        .title {
+          width: 9%;
+        }
+      }
+      .kinds-four {
+        td {
+          width: 24%;
+        }
+        .title {
+          width: 16%;
+        }
+      }
+      .kinds-five {
+        td {
+          width: 15%;
+        }
+      }
+      .kinds-six {
+        td {
+          width: 4%;
+        }
+        .title {
+          width: 10%;
+        }
+      }
+    }
+    .wrapper-size-women {
+      margin-bottom: 70px;
+      .text {
+        font-style: italic;
+        font-size: 13px;
+        line-height: 14px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+      }
+      .woman-one {
+        td {
+          width: 9%;
+        }
+      }
+      .woman-two {
+        td {
+          width: 5%;
+        }
+        .title {
+          width: 12%;
+        }
+      }
+      .woman-tree {
+        td {
+          width: 1%;
+        }
+        .title {
+          text-align: center;
+          padding-right: 6px;
+        }
+      }
+      .woman-four {
+        td {
+          width: 8%;
+        }
+        .title {
+          width: 10%;
+        }
+        .line {
+          height: 3px;
+        }
+      }
+      .woman-five {
+        .line {
+          height: 3px;
+        }
+        td {
+          width: 8%;
+        }
+        .title {
+          width: 16%;
+        }
+      }
+    }
+    .woman-four,
+    .woman-tree,
+    .woman-two,
+    {
+      margin-bottom: 40px;
+    }
+    .wrapper-jeans,
+    .wrapper-jeans-two,
+    .wrapper-man,
+    {
+        margin-bottom: 70px;
+    }
+    .wrapper-jeans {
+      td {
+        width: 5%;
+      }
+      .title {
+        width: 13%;
+      }
+      .jeans-size {
+        margin-top: 40px;
+      }
+    }
+    .wrapper-jeans-two {
+      td {
+        width: 5%;
+      }
+      .title {
+        width: 10%;
+      }
+    }
+    .wrapper-man {
+      td {
+        width: 5%;
+      }
+      .title {
+        width: 8%;
+      }
+    }
+    .wrapper-man-two {
+      td {
+        width: 15%;
+      }
+      .title {
+        width: 17%;
+      }
+    }
+    @media (max-width: 1210px) {
+      margin-bottom: 210px;
+      font-size: 11px;
+      line-height: 12px;
+      .title-size-page {
+        font-size: 17px;
+        line-height: 17px;
+        margin-bottom: 17px;
+      }
+      .title-category {
+        font-size: 14px;
+        line-height: 14px;
+      }
+      table {
+        td {
+          padding-top: 9px;
+          padding-bottom: 9px;
+        }
+        .title {
+          padding-left: 15px;
+        }
+      }
+      .wrapper-size-kinds {
+        table {
+          margin-bottom: 30px;
+        }
+      }
+      .wrapper-size-women {
+        margin-bottom: 70px;
+        .text {
+          font-size: 11px;
+          line-height: 12px;
+          margin-bottom: 30px;
+          padding-left: 0;
+        }
+      }
+      .wrapper-size-main-one,
+      .wrapper-size-kinds,
+      .wrapper-size-women,
+      .wrapper-jeans,
+      .wrapper-jeans-two,
+      .wrapper-man {
+        margin-bottom: 40px;
+      }
+      .woman-four,
+      .woman-tree,
+      .woman-two,
+      {
+        margin-bottom: 30px;
+      }
+      .wrapper-jeans {
+        .jeans-size {
+          margin-top: 30px;
+        }
+      }
+    }
+    @media (max-width: 1023px) {
+      font-size: 10px;
+      table {
+        .title {
+          padding-left: 10px;
+          padding-right: 0;
+        }
+      }
     }
   }
 }
