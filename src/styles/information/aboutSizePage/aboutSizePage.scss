@@ -255,4 +255,19 @@
       }
     }
   }
+
+  .wrapper-table {
+    overflow-x: scroll;
+
+    table {
+      min-width: 768px;
+    }
+  }
+
+  /* хром, сафари */
+  .wrapper-table::-webkit-scrollbar { height: 0; }
+  /* ie 10+ */
+  .wrapper-table { -ms-overflow-style: none; }
+  /* фф (свойство больше не работает, других способов тоже нет)*/
+  .wrapper-table { overflow: -moz-scrollbars-none; }
 }

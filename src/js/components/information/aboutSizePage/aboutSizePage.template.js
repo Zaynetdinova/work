@@ -9,7 +9,8 @@ export function aboutSizePageTemplate() {
            	<div class="title-shopping">О покупках</div>
            	<div class="wrapper-size-main-one">
            	    <div class="title-size-page">Таблица основных размеров</div>
-                <table>
+           	    <section class="wrapper-table">
+           	   <table >
                     <tr class="one-line">
                         <td class="title">Размер</td>
                         <td>38</td>
@@ -106,12 +107,15 @@ export function aboutSizePageTemplate() {
                         <td>152</td>
                         <td>156</td>
                     </tr>
-                </table>
+                </table> 
+</section>
+                
             </div>
             <div class="wrapper-size-kinds">
                 <div class="title-size-page">Детская одежда</div>
                 <div class="title-category">Определение размеров детской одежды</div>
-                <table class="kinds-one">
+                <section class="wrapper-table">
+                 <table class="kinds-one">
                     <tr class="one-line">
                         <td>Возраст (г.)</td>
                         <td>Рост (см.)</td>
@@ -201,7 +205,10 @@ export function aboutSizePageTemplate() {
                         <td>39</td>                     
                     </tr>
                 </table>
-                <table class="kinds-two">
+                </section>
+               
+               <section class="wrapper-table">
+                 <table class="kinds-two">
                     <tr class="one-line">
                         <td class="one">Возраст</td>
                         <td class="one">Рост (см.)</td>
@@ -266,6 +273,8 @@ export function aboutSizePageTemplate() {
                         <td>66 – 68</td>                       
                     </tr>
                 </table>
+                </section>
+               
                 <div class="title-category">Детские размеры</div>
                 <table class="kinds-tree">
                     <tr class="one-line">
