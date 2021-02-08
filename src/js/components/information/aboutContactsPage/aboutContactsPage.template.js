@@ -38,6 +38,9 @@ export function aboutContactsPageTemplate() {
            	        <div>Возвраты по браку отправляйте <span>Почтой России</span> на адрес: 105077, Москва, до востребования, <span>ИП Потапов Л.В.</span></div>
                 </div>
             </div>
+            <div class="cards-yandex">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A09b2d380371657f940bc3ede14d34d5fff94f9aaf4a80a95630ee5ee28a50817&amp;source=constructor" width="1240" height="400" frameborder="0"></iframe>
+            </div>
             <div class="title-requisites">Реквизиты</div>
             <div class="text-requisites">ИП Потапов Леонид Викторович, <span>ОГРНИП 317774600234987, ИНН 771550104400,</span> <span>Фактический адрес: г. Москва,</span> Окружной проезд, 30А</div>
         </div>

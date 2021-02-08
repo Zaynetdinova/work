@@ -27,7 +27,7 @@ export function mobileTableProductsBasket() {
                     					</div>
 													</div>
 											</div>
-											<img src="${close}" alt="">
+											<img class="close" src="${close}" alt="">
 									</div>
 							</td>						
 					</tr>

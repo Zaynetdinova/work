@@ -31,6 +31,11 @@
         }
       }
     }
+    .cards-yandex {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
     span {
       white-space: nowrap;
     }
@@ -83,6 +88,11 @@
           height: 90px;
         }
       }
+      .cards-yandex {
+        iframe {
+          height: 280px;
+        }
+      }
       .text-requisites {
         width: 100%;
       }
@@ -93,6 +103,11 @@
           font-size: 13px;
           line-height: 18px;
           grid-template-columns: 75px 202px;
+        }
+      }
+      .cards-yandex {
+        iframe {
+          height: 212px;
         }
       }
     }
