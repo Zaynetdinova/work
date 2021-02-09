@@ -7,7 +7,6 @@ import {sidebarWrapper} from "./view/sidebar/sidebarWrapper";
 export function createHeader(data) {
   return `
         ${topHeader()}
-        <hr class="line-header">
         ${bottomHeader()}
         ${sidebarWrapper()}
        `
