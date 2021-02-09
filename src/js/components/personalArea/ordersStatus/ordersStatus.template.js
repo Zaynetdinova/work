@@ -1,10 +1,9 @@
 import {transitionWrapper} from "../../common/transitionTitle";
-import {basketPageTemplate} from "./view/basketPage.template";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
 
-export function basketTemplate() {
-  return `
+export  function ordersStatusTemplate() {
+    return `
         <div id="personal-area-js" class="wrapper-personal-area">
             ${transitionWrapper(link)}
             <div class="header-personal-area">
@@ -12,21 +11,21 @@ export function basketTemplate() {
                 <a href="/" class="exit">Выйти</a>
             </div>
             <div class="wrapper-navigation-personal-area">
-                ${navigation('basket')}
-                ${navigationMobile('/#personal-area/favorites','Корзина','/#personal-area/personal-data')}
+                ${navigation('order-status')}
+                ${navigationMobile('/#personal-area/personal-data','история заказов','/#personal-area/discount-and-bonuses')}
             </div>
-
+          
+            
             <div id="personal-area-content-js">
-                ${basketPageTemplate()}
+                
             </div>
         </div>
     `
 }
 
-
 let link = [
-  {
-    title: 'Личный кабинет',
-    link: '/#personal-area'
-  }
+    {
+        title: 'Личный кабинет',
+        link: '/#personal-area'
+    }
 ]

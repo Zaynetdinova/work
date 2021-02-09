@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 20px 0 23px 0;
+    padding: 21.5px 0;
   }
   .wrapper-b {
     max-width: 1480px;
@@ -41,7 +41,7 @@
   }
   .show {
     .burger-menu {
-      background-image: url(../images/icons/cancel.svg);
+      background-image: url("../images/icons/cancel.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }

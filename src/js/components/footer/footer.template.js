@@ -39,8 +39,8 @@ export function footerTemplate() {
                             <ul>
                                 <li><a href="/#personal-area/personal-data">Личный кабинет</a></li>
                                 <li><a href="/#personal-area/basket">Корзина</a></li>
-                                <li><a href="#">Избранное</a></li>
-                                <li><a href="#">Заказы и их статус</a></li>
+                                <li><a href="/#personal-area/favorites">Избранное</a></li>
+                                <li><a href="/#personal-area/order-status">Заказы и их статус</a></li>
                                 <li><a href="/#information/return">Возврат</a></li>
                             </ul>
                         </nav>
@@ -148,16 +148,19 @@ let point = [
     category: [
       {
         category: 'Личный кабинет',
-        link: ''
+        link: '/#personal-area/personal-data'
       },
       {
-        category: 'Корзина'
+        category: 'Корзина',
+        link:'/#personal-area/basket'
       },
       {
-        category: 'Избранное'
+        category: 'Избранное',
+        link: '/#personal-area/favorites'
       },
       {
-        category: 'Заказы и их статус'
+        category: 'Заказы и их статус',
+        link: '/#personal-area/order-status'
       },
       {
         category: ' Возврат',

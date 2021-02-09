@@ -20,6 +20,8 @@ import {AboutReturn} from "./pages/informationPage/AboutReturn";
 import {AboutContacts} from "./pages/informationPage/AboutContacts";
 import {AboutUs} from "./pages/informationPage/AboutUs";
 import {AboutWorkingCondition} from "./pages/informationPage/AboutWorkingCondition";
+import {Chosen} from "./pages/PersonalAreaPage/Chosen";
+import {OrderStatusPage} from "./pages/PersonalAreaPage/OrderStatusPage";
 
 
 
@@ -34,6 +36,8 @@ new Router('#app', {
   personalAreaBasket: BasketPage,
   personalAreaData: PersonalDataPage,
   personalAreaBonusesPage: BonusesPage,
+  personalAreaChosen: Chosen,
+  personalAreaOrdersStatus: OrderStatusPage,
   aboutShoppingPage: AboutShopping,
   aboutPaymentPage: AboutPayment,
   aboutQuestionAnswers: AboutQuestionsAnswers,
