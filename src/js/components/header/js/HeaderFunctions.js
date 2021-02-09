@@ -1,3 +1,5 @@
+import {headerStorage} from '../../../core/storage/header'
+
 export class HeaderFunctions {
 	constructor() {
 		this.deleteValue = document.querySelector('#desktop-search-delete-js')
@@ -13,8 +15,10 @@ export class HeaderFunctions {
 		this.sidebar = document.getElementById('sidebar-js')
 		this.cancelMenu = this.sidebar.querySelector(`[data-id='cancel-js']`)
 		this.buttonMenu = document.querySelector('#burger-menu')
-
+		this.$parentExtraMobile = document.querySelector('#open-mobile-extra-js')
+		this.$cancelButton = document.querySelector('#sub-categories-menu-close')
 		//
+
 		this.userData = document.querySelector('#wrapper-user-data-view-js')
 
 		//
@@ -26,6 +30,9 @@ export class HeaderFunctions {
 	eventListeners() {
 		this.deleteValue.addEventListener('click', () => this.clearInput())
 		this.cancelMenu.addEventListener('click', () => this.menuClose())
+
+		console.log(this.$cancelButton, this.$parentExtraMobile)
+		this.$cancelButton.addEventListener('click', () => this.showMobileExtraMenu())
 	}
 
 
@@ -115,14 +122,24 @@ export class HeaderFunctions {
 		this.buttonMenu.classList.remove('show')
 		this.sidebar.classList.remove('Sidebar-open-js')
 		document.body.classList.remove('Com-over-hidden')
-		// closeSidebarCloseMenu()
-		// написать функцию
+		this.closeMobileExtraMenu()
+		headerStorage.openSidebar().close()
 	}
 
 	classListAdd() {
 		this.buttonMenu.classList.add('show')
 		this.sidebar.classList.add('Sidebar-open-js')
 		document.body.classList.add('Com-over-hidden')
+	}
+
+	showMobileExtraMenu() {
+		this.$parentExtraMobile.classList.remove('show-extra-mobile')
+		this.$parentExtraMobile.classList.add('show-extra-cancel')
+	}
+
+	closeMobileExtraMenu() {
+		this.$parentExtraMobile.classList.remove('show-extra-mobile')
+		this.$parentExtraMobile.classList.remove('show-extra-cancel')
 	}
 
 	//

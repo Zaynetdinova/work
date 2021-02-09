@@ -8,7 +8,10 @@ export class ExtraMenuItemShow {
 		this.$extraRoot = document.querySelector('#sidebar-extra-wrapper-js')
 		this.$extraRootMobile = document.querySelector('#sidebar-extra-mobile-wrapper-js')
 		this.menuExtra = null
+
 	}
+
+
 
 	init(e) {
 		const el = e.target.closest('[data-parent-category]')
@@ -53,7 +56,6 @@ export class ExtraMenuItemShow {
 	}
 
 	initialCategory(menuExtra) {
-		console.log(this.$extraRoot)
 		this.$extraRoot.innerHTML = `${extra(extraDataWomen[menuExtra])}`
 		this.$extraRootMobile.innerHTML = `${newTest(extraDataWomen[menuExtra])}`
 	}
