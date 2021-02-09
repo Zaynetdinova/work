@@ -6,8 +6,10 @@
   @import "bottomHeaderMobile";
   font-size: 13px;
   color: $baseColor;
-  background: $bg-bottomHeader;
-
+  background-image: url("../images/header/2600-80-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   .mobile-header {
     display: none;
   }
@@ -18,7 +20,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: 20px 0;
+    padding: 20px 0 23px 0;
   }
   .wrapper-b {
     max-width: 1480px;

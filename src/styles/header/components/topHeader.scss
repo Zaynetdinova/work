@@ -6,7 +6,10 @@
   font-size: 12px;
   line-height: 14px;
   color: $baseColor;
-  background: $bg-topHeader;
+  background-image: url("../images/header/2600-40-top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   nav {
     display: flex;
   }
