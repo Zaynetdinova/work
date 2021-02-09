@@ -4,6 +4,7 @@ import {checkboxRegistration} from "../../common/checkboxRegistration";
 import {imgCloseIcon} from "../Basket/view/imgCloseIcon";
 import {transitionWrapper} from "../../common/transitionTitle";
 import {navigation} from "../../common/navigation";
+import {navigationMobile} from "../../common/navigation-mobile";
 
 export function personalDataTemplate() {
 	return `
@@ -13,8 +14,11 @@ export function personalDataTemplate() {
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>
             </div>
+            <div class="wrapper-navigation-personal-area">
+                ${navigation('personal-data')}
+                ${navigationMobile('/#personal-area/basket','Личные данные','/#personal-area/order-status')}
+            </div>
             
-            ${navigation('personal-data')}
             
             <div id="personal-area-content-js">
                 <div class="Personal-Data">

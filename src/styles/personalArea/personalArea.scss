@@ -1,6 +1,8 @@
 .Basket,
 .Personal-Data,
-.Discount-and-bonuses {
+.Discount-and-bonuses,
+.Chosen-page,
+.Orders-status {
   @import '../common/buttonData';
 
   .wrapper-personal-area {
@@ -25,6 +27,12 @@
         cursor: pointer;
       }
     }
+    .wrapper-navigation-personal-area {
+      margin-bottom: 20px;
+      .navigation-mobile {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 1024px) {
@@ -35,10 +43,26 @@
       padding-left: 0;
     }
   }
+  @media (max-width: 767px) {
+    .wrapper-navigation-personal-area {
+      .navigation-mobile {
+        display: flex;
+      }
+    }
+    .wrapper-personal-area {
+      .wrapper-navigation-personal-area {
+        .navigation-mobile {
+          display: flex;
+        }
+      }
+    }
+  }
 }
 
 
 @import 'basketTemplate/basketCommon';
 @import './personalData/personalData';
 @import 'discountAndBonuses/discountAndBonuses';
+@import 'chosenPage/chosenPage';
+@import 'ordersStatus/ordersStatus';
 

@@ -1,6 +1,7 @@
 import {navigation} from "../../common/navigation";
 import {transitionWrapper} from "../../common/transitionTitle";
 import {discountAndBonusesPageTemplate} from "./view/discountAndBonusesPageTemplate";
+import {navigationMobile} from "../../common/navigation-mobile";
 
 export function discountAndBonusesTemplate() {
     return `
@@ -10,11 +11,14 @@ export function discountAndBonusesTemplate() {
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>
             </div>
+            <div class="wrapper-navigation-personal-area">
+                ${navigation('discount')}
+                ${navigationMobile('/#personal-area/order-status','Скидки и Бонусы','/#personal-area/favorites')}
+            </div>
             
-            ${navigation('discount')}
             
             <div id="personal-area-content-js">
-                ${discountAndBonusesPageTemplate()}
+                ${discountAndBonusesPageTemplate()} 
             </div>
         </div>
 	`

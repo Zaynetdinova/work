@@ -1,0 +1,29 @@
+.Chosen-page {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+  }
+  .wrapper-favorite {
+    padding: 0 20px;
+    margin-bottom: 180px;
+  }
+  @media (max-width: 1024px) {
+    .wrapper-favorite {
+      padding: 0 15px;
+      margin-bottom: 210px;
+    }
+  }
+  @media (max-width: 1023px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      padding-top: 36px;
+    }
+  }
+  @media (max-width: 700px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

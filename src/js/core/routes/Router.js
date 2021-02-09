@@ -48,6 +48,12 @@ export class Router {
 			case 'personal-area/discount-and-bonuses':
 				Page = this.routes.personalAreaBonusesPage
 				break;
+			case 'personal-area/favorites':
+				Page = this.routes.personalAreaChosen
+				break;
+			case 'personal-area/order-status':
+				Page = this.routes.personalAreaOrdersStatus
+				break;
 			case 'information/about-shopping':
 				Page = this.routes.aboutShoppingPage
 				break;
