@@ -7,6 +7,7 @@ import img5 from '../../../../images/icons/aboutUs/5.svg'
 import img6 from '../../../../images/icons/aboutUs/6.svg'
 import img7 from '../../../../images/icons/aboutUs/7.svg'
 import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
+import {navigationMobile} from "../../common/navigation-mobile";
 
 export function aboutUsPageTemplate() {
     return `
@@ -15,6 +16,7 @@ export function aboutUsPageTemplate() {
            	<div class="title-shopping">О магазине</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutStore('about-us')}
+           	    ${navigationMobile('/#information/contacts','о нас','#information/working-condition')}
             </div>
             <div class="title-aboutUs">OptMoyo.Ru – это удобная платформа оптовой 
             интернет торговли, соединяющая производителей с потребителями.</div>

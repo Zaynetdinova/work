@@ -1,5 +1,6 @@
 import {transitionWrapper} from "../../common/transitionTitle";
 import {navigationInformationAboutShopping} from "../../common/navigationInformationAboutShopping";
+import {navigationMobile} from "../../common/navigation-mobile";
 
 
 export function aboutSizePageTemplate() {
@@ -10,6 +11,7 @@ export function aboutSizePageTemplate() {
            	
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutShopping('size')}
+           	    ${navigationMobile('/#information/return','размеры','/#information/about-payment')}
             </div>
            	
            	<div class="wrapper-size-main-one">

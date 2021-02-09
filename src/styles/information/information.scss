@@ -15,6 +15,9 @@
   }
   .wrapper-navigation-info {
     margin-bottom: 40px;
+    .navigation-mobile {
+      display: none;
+    }
   }
   max-width: 1480px;
   margin: 0 auto;
@@ -30,6 +33,13 @@
     }
     .title-shopping {
       margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .wrapper-navigation-info {
+      .navigation-mobile {
+        display: flex;
+      }
     }
   }
 }
