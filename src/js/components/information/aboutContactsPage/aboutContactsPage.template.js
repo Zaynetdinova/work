@@ -5,12 +5,16 @@ import img3 from '../../../../images/icons/contactPage/3.svg';
 import img4 from '../../../../images/icons/contactPage/4.svg';
 import img5 from '../../../../images/icons/contactPage/5.svg';
 import img6 from '../../../../images/icons/contactPage/6.svg';
+import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
 
 export function aboutContactsPageTemplate() {
     return `
         <div class="wrapper-contact">
             ${transitionWrapper(link)}
            	<div class="title-shopping">О магазине</div>
+           	<div class="wrapper-navigation-info">
+           	    ${navigationInformationAboutStore('about-contacts')}
+            </div>
             <div class="title-contacts">Контактная информация</div>
             <div class="grid">
            	    <div class="item-grid">
@@ -39,7 +43,7 @@ export function aboutContactsPageTemplate() {
                 </div>
             </div>
             <div class="cards-yandex">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A09b2d380371657f940bc3ede14d34d5fff94f9aaf4a80a95630ee5ee28a50817&amp;source=constructor" width="1240" height="400" frameborder="0"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b95151388946ccd55daa8ed9c1a691decfa225cf634ad636c4ebb46682649d4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
             </div>
             <div class="title-requisites">Реквизиты</div>
             <div class="text-requisites">ИП Потапов Леонид Викторович, <span>ОГРНИП 317774600234987, ИНН 771550104400,</span> <span>Фактический адрес: г. Москва,</span> Окружной проезд, 30А</div>

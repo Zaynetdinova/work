@@ -115,22 +115,28 @@ let point = [
     id: 'info',
     img: false,
     category: [{
-      category: 'О нас'
+      category: 'О нас',
+      link: '/#information/about-us'
     },
       {
-        category: 'Условия работы'
+        category: 'Условия работы',
+        link: '/#information/working-condition'
       },
       {
-        category: 'Доставка'
+        category: 'Доставка',
+        link: '/#information/about-shopping'
       },
       {
-        category: 'Оплата'
+        category: 'Оплата',
+        link: '/#information/about-payment'
       },
       {
-        category: 'Ответы на вопросы'
+        category: 'Ответы на вопросы',
+        link: '/#information/question-answers'
       },
       {
-        category: 'Контакты'
+        category: 'Контакты',
+        link: '/#information/contacts'
       }
       ]
   },
@@ -141,7 +147,8 @@ let point = [
     img: false,
     category: [
       {
-        category: 'Личный кабинет'
+        category: 'Личный кабинет',
+        link: ''
       },
       {
         category: 'Корзина'
@@ -153,7 +160,8 @@ let point = [
         category: 'Заказы и их статус'
       },
       {
-        category: ' Возврат'
+        category: ' Возврат',
+        link: '/#information/return'
       },
     ]
   },
@@ -164,7 +172,8 @@ let point = [
     img: false,
     category: [
       {
-        category: 'Таблица размеров'
+        category: 'Таблица размеров',
+        link: '/#information/size'
       },
     ]
   },
@@ -175,7 +184,8 @@ let point = [
     img: false,
     category: [
       {
-        category: 'Поставщикам'
+        category: 'Поставщикам',
+        link: '/#information/cooperation'
       },
     ]
   },

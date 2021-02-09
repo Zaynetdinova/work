@@ -6,12 +6,16 @@ import img4 from '../../../../images/icons/aboutUs/4.svg'
 import img5 from '../../../../images/icons/aboutUs/5.svg'
 import img6 from '../../../../images/icons/aboutUs/6.svg'
 import img7 from '../../../../images/icons/aboutUs/7.svg'
+import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
 
 export function aboutUsPageTemplate() {
     return `
          <div class="wrapper-aboutUs">
             ${transitionWrapper(link)}
            	<div class="title-shopping">О магазине</div>
+           	<div class="wrapper-navigation-info">
+           	    ${navigationInformationAboutStore('about-us')}
+            </div>
             <div class="title-aboutUs">OptMoyo.Ru – это удобная платформа оптовой 
             интернет торговли, соединяющая производителей с потребителями.</div>
             <p>Вы “Совместная покупка”, владелец бутика или интернет-магазина? 

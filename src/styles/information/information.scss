@@ -13,6 +13,9 @@
     letter-spacing: 0.02em;
     margin-bottom: 45px;
   }
+  .wrapper-navigation-info {
+    margin-bottom: 40px;
+  }
   max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
@@ -21,6 +24,21 @@
     margin-bottom: 130px;
     .transitionWrapper {
       padding-left: 0;
+    }
+    .wrapper-navigation-info {
+      margin-bottom: 30px;
+    }
+    .title-shopping {
+      margin-bottom: 30px;
+    }
+  }
+}
+.About-contacts-page,
+.About-us-page,
+.Working-conditions-page {
+  .wrapper-navigation-info {
+    .Navigation .item {
+      width: 33.33%;
     }
   }
 }
