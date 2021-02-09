@@ -1,10 +1,14 @@
 import {transitionWrapper} from "../../common/transitionTitle";
+import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
 
 export function  workingConditionsPageTemplate() {
     return `
         <div class="wrapper-working-condition">
             ${transitionWrapper(link)}
            	<div class="title-shopping">О магазине</div>
+           	<div class="wrapper-navigation-info">
+           	    ${navigationInformationAboutStore('about-working-condition')}
+            </div>
             <div class="title-working-condition">Как стать нашим клиентом</div>
             <p>Сотрудничаем с организациями любых форм собственности, 
             а так же с “Совместными закупками”.</p>

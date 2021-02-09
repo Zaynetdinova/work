@@ -43,7 +43,7 @@
           width: 4%;
         }
         .title {
-          width: 9%;
+          width: 11%;
         }
       }
     }
@@ -62,7 +62,7 @@
           width: 4%;
         }
         .title {
-          width: 9%;
+          width: 11%;
         }
       }
       .kinds-four {
@@ -70,7 +70,7 @@
           width: 21%;
         }
         .title {
-          width: 16%;
+          width: 17%;
         }
       }
       .kinds-five {
@@ -83,7 +83,7 @@
           width: 4%;
         }
         .title {
-          width: 10%;
+          width: 12%;
         }
       }
     }
@@ -178,7 +178,7 @@
         width: 5%;
       }
       .title {
-        width: 8%;
+        width: 9%;
       }
     }
     .wrapper-man-two {
@@ -254,13 +254,31 @@
         }
       }
     }
+    @media (max-width: 767px) {
+      font-size: 13px;
+      line-height: 14px;
+      table {
+        min-width: 1440px;
+        td {
+          padding-top: 13px;
+          padding-bottom: 13px;
+        }
+      }
+    }
   }
 
   .wrapper-table {
     overflow-x: scroll;
 
     table {
-      min-width: 768px;
+      min-width: 738px;
+    }
+  }
+  @media (max-width: 767px) {
+    .wrapper-table {
+      table {
+        min-width: 1000px;
+      }
     }
   }
 

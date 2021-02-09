@@ -1,7 +1,5 @@
 import {transitionWrapper} from "../../common/transitionTitle";
-
-import {navigationInformation} from "../../common/navigationInformation";
-
+import {navigationInformationAboutShopping} from "../../common/navigationInformationAboutShopping";
 
 
 export function aboutSizePageTemplate() {
@@ -10,8 +8,8 @@ export function aboutSizePageTemplate() {
             ${transitionWrapper(link)}
            	<div class="title-shopping">О покупках</div>
            	
-           	<div>
-           	    ${navigationInformation('size')}
+           	<div class="wrapper-navigation-info">
+           	    ${navigationInformationAboutShopping('size')}
             </div>
            	
            	<div class="wrapper-size-main-one">
