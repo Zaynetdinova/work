@@ -6,6 +6,7 @@ import img4 from '../../../../images/icons/contactPage/4.svg';
 import img5 from '../../../../images/icons/contactPage/5.svg';
 import img6 from '../../../../images/icons/contactPage/6.svg';
 import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
+import {navigationMobile} from "../../common/navigation-mobile";
 
 export function aboutContactsPageTemplate() {
     return `
@@ -14,6 +15,7 @@ export function aboutContactsPageTemplate() {
            	<div class="title-shopping">О магазине</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutStore('about-contacts')}
+           	    ${navigationMobile('/#information/working-condition','контакты','/#information/about-us')}
             </div>
             <div class="title-contacts">Контактная информация</div>
             <div class="grid">

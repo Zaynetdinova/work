@@ -1,5 +1,6 @@
 import {transitionWrapper} from "../../common/transitionTitle";
 import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
+import {navigationMobile} from "../../common/navigation-mobile";
 
 export function  workingConditionsPageTemplate() {
     return `
@@ -8,6 +9,7 @@ export function  workingConditionsPageTemplate() {
            	<div class="title-shopping">О магазине</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutStore('about-working-condition')}
+           	    ${navigationMobile('/#information/about-us','условия работы','/#information/contacts')}
             </div>
             <div class="title-working-condition">Как стать нашим клиентом</div>
             <p>Сотрудничаем с организациями любых форм собственности, 
