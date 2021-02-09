@@ -6,6 +6,7 @@ import {commonCardFunctions} from '../components/common/commonCard/js/commonCard
 import {popupQuickFunctions} from '../components/common/popupQuick/js/popupQuickFunctions'
 import {Entry} from '../components/common/entry/entry'
 
+
 export class Page {
 	constructor(params) {
 		this.params = params
@@ -30,6 +31,7 @@ export class Page {
 		new openSidebarTest()
 
 		// openSidebar()
+
 		initialSliders()
 		if(window.userRegistry) {
 			commonCardFunctions()

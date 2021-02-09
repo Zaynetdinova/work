@@ -1,10 +1,9 @@
 import {ExtraMenuItemShow} from '../../components/header/js/ExtraMenuItemShow'
 
-export class openSidebarTest extends ExtraMenuItemShow {
+export class openSidebarTest {
   constructor() {
-    super()
     this.$points = document.querySelectorAll('.point-js')
-    this.$cancelButton = document.querySelector('#sub-categories-menu-close')
+    this.extraInit = new ExtraMenuItemShow()
 
     this.initListening()
   }
@@ -14,7 +13,7 @@ export class openSidebarTest extends ExtraMenuItemShow {
       item.addEventListener('click', (e) =>  this.defineCategories(e, item.dataset.type))
     })
 
-    this.$cancelButton.addEventListener('click', this.closeSubCategories)
+
   }
 
   defineCategories(e, category) {
@@ -56,33 +55,19 @@ export class openSidebarTest extends ExtraMenuItemShow {
     })
   }
 
-  closeSidebarCloseMenu() {
-    close()
-    this.closeSubCategories('close')
-  }
 
   handleClickMobileMenu(id) {
     // попробовать перенести в конструктор
     const extra = document.querySelector('#open-mobile-extra-js')
     //
-    super.defineCategory(id)
+    this.extraInit.defineCategory(id)
     // testData
 
     extra.classList.remove( 'show-extra-cancel')
     extra.classList.add('show-extra-mobile')
   }
 
-  closeSubCategories(type) {
-    const extra = document.querySelector('#open-mobile-extra-js')
 
-    if(type === 'close') {
-      extra.classList.remove('show-extra-mobile')
-      extra.classList.remove('show-extra-cancel')
-    } else {
-      extra.classList.remove('show-extra-mobile')
-      extra.classList.add('show-extra-cancel')
-    }
-  }
 
 }
 

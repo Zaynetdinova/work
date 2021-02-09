@@ -1,9 +1,6 @@
 import {Component} from '../../core/Component'
 import {createHeader} from './header.template'
-
-import {ExtraMenuItemShow} from './js/ExtraMenuItemShow'
-import {HeaderFunctions} from './js/HeaderFunctions'
-
+import {headerStorage} from '../../core/storage/header'
 
 export class Header extends Component {
   static className = 'Header'
@@ -19,7 +16,7 @@ export class Header extends Component {
   }
 
   afterInitComponent() {
-    this.header = new HeaderFunctions()
+    this.header = headerStorage.headerFunctions()
   }
 
   onClick(e) {
@@ -75,7 +72,7 @@ export class Header extends Component {
   }
 
   onMouseover(e) {
-    const extraMenu = new ExtraMenuItemShow()
+    const extraMenu = headerStorage.extraMenuShow()
     extraMenu.init(e)
   }
 
