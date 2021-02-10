@@ -1,8 +1,159 @@
 .Orders-status {
   .wrapper-orders-status {
     margin-bottom: 110px;
+    table {
+      width: 100%;
+      .first-string {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+        &.status-1 {
+          width: 1%;
+        }
+        //&.status-2 {
+        //  width: 10%;
+        //}
+        //&.status-3 {
+        //  width: 5%;
+        //}
+        &.status-4 {
+          width: 35%;
+        }
+        //&.status-5 {
+        //  width: 6%;
+        //}
+        //&.status-6 {
+        //  width: 6%;
+        //}
+      }
+
+      .img-order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+      .wrapper-order-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        .order-name {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 12px;
+          .order-title {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            .data {
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              color: #777777;
+            }
+            .order-delivery {
+              font-weight: normal;
+            }
+          }
+          .order-title-delivery {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            .order-delivery {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+      .link-see-order {
+        color: #AB064E;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .quantity-order {
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+      }
+      .wrapper-icon-title {
+        display: flex;
+        justify-content: center;
+        .icon-title {
+          font-size: 12px;
+          line-height: 12px;
+          text-align: center;
+          width: 92px;
+          margin: 0 10px;
+          img {
+            margin-bottom: 15px;
+          }
+          a {
+            color: #3D3D3C;
+          }
+        }
+      }
+      .summa {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+      }
+      .pay-order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .way-pay {
+          font-size: 14px;
+          line-height: 15px;
+          margin-bottom: 15px;
+        }
+        .way-pay-green {
+          color: #009295;
+          font-size: 14px;
+          line-height: 15px;
+        }
+        .pay-online {
+          font-size: 14px;
+          line-height: 14px;
+          text-align: center;
+          text-decoration-line: underline;
+          color: #AB064E;
+          width: 106px;
+        }
+      }
+
+    }
+    .auxiliary-unit-top {
+      height: 40px;
+      .line-top {
+        border-top: 2px solid #D9D9D9;
+      }
+    }
+
+    .auxiliary-unit-bottom {
+      height: 40px;
+      td {
+        background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 4px 2px;
+        background-repeat: repeat-x;
+
+      }
+    }
     @media (max-width: 1024px) {
       margin-bottom: 170px;
+      table {
+
+      }
     }
   }
 }

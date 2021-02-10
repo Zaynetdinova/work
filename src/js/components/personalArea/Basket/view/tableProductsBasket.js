@@ -19,8 +19,8 @@ export function tableProductsBasket() {
                 <td class="first-string selected-dimensions-product-title" style="width: 12%"></td>
             </tr>
             
-             <tr class="auxiliary-unit-top">
-               <td class="line-top" colspan="7">
+            <tr class="auxiliary-unit-top">
+                <td class="line-top" colspan="7">
                     <div class="">
                         <span></span>
                     </div>
@@ -28,8 +28,8 @@ export function tableProductsBasket() {
             </tr>
             
             ${goodsTest.map((item) => {
-              const {info, sizes} = item
-              return `
+                const {info, sizes} = item
+                return `
                 <tr class="good">
                 
                 <td class="name-product">
@@ -71,7 +71,7 @@ export function tableProductsBasket() {
                 
                 <td class="sum-product">
                     ${sizes.map(({id, price}) => {
-                      return `
+                        return `
                               <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
                             `
                     }).join('')}
@@ -83,17 +83,15 @@ export function tableProductsBasket() {
             </tr>
             
             <tr class="auxiliary-unit-bottom">
-               <td colspan="7">
+                <td colspan="7">
                     <div class="selected-dimensions-product-mobile">
                         <span class="change-selected-dimensions">Изменить выбранные размеры</span>
                     </div>
                 </td>
             </tr>
               `
-            })}
-            
-            
-			</table>
+        })}  
+        </table>
     `
 }
 
