@@ -9,6 +9,13 @@
     max-width: 1480px;
     margin: 0 auto;
     padding: 0 20px;
+    .name-user {
+      display: none;
+      font-size: 11px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
     .header-personal-area {
       display: flex;
       justify-content: space-between;
@@ -38,6 +45,12 @@
   @media (max-width: 1024px) {
     .wrapper-personal-area {
       padding: 0 15px;
+      .name-user {
+        display: block;
+      }
+      .header-personal-area {
+        margin-bottom: 0;
+      }
     }
     .transitionWrapper {
       padding-left: 0;

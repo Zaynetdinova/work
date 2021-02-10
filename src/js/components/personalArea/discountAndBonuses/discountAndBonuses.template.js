@@ -11,6 +11,7 @@ export function discountAndBonusesTemplate() {
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>
             </div>
+            <div class="name-user">Имя пользователя</div>
             <div class="wrapper-navigation-personal-area">
                 ${navigation('discount')}
                 ${navigationMobile('/#personal-area/order-status','Скидки и Бонусы','/#personal-area/favorites')}
@@ -26,7 +27,7 @@ export function discountAndBonusesTemplate() {
 
 let link = [
     {
-        title: 'Личный кабинет',
-        link: '/#personal-area'
+        title: 'Скидки и бонусы',
+        link: '/#personal-area/discount-and-bonuses'
     }
 ]

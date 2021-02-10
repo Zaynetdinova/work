@@ -14,6 +14,7 @@ export function personalDataTemplate() {
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>
             </div>
+            <div class="name-user">Имя пользователя</div>
             <div class="wrapper-navigation-personal-area">
                 ${navigation('personal-data')}
                 ${navigationMobile('/#personal-area/basket','Личные данные','/#personal-area/order-status')}
@@ -133,7 +134,7 @@ export function personalDataTemplate() {
 
 let link = [
   {
-    title: 'Личный кабинет',
-    link: '/#personal-area'
+    title: 'Личные данные',
+    link: '/#personal-area/personal-data'
   }
 ]

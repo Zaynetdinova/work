@@ -17,6 +17,7 @@ export  function chosenPageTemplate() {
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>
             </div>
+            <div class="name-user">Имя пользователя</div>
             <div class="wrapper-navigation-personal-area">
                 ${navigation('favorites')}
                 ${navigationMobile('/#personal-area/discount-and-bonuses','избранное','/#personal-area/basket')}

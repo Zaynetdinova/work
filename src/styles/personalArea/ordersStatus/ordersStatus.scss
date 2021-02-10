@@ -1,3 +1,8 @@
 .Orders-status {
-
+  .wrapper-orders-status {
+    margin-bottom: 110px;
+    @media (max-width: 1024px) {
+      margin-bottom: 170px;
+    }
+  }
 }
