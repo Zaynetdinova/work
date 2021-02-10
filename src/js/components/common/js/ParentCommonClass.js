@@ -1,4 +1,0 @@
-export class ParentCommonClass {
-	constructor() {
-	}
-}

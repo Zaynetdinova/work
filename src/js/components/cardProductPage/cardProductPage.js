@@ -1,7 +1,5 @@
 import {Component} from '../../core/Component'
 import {cardProductPageTemplate} from './cardProductPage.template'
-
-import {showForm} from './js/showForm'
 import Swiper from 'swiper'
 import {ChangeSizeCount} from '../common/js/changeSizeCount'
 import {UtilsCardProductPage} from './js/utilsCardProductPage'
@@ -94,7 +92,6 @@ export class CardProductPage extends Component {
 		this.utils = new UtilsCardProductPage()
 		this.utils.viewPhotoZoom()
 		inputFile()
-
 	}
 
 	onClick(e) {
@@ -122,13 +119,13 @@ export class CardProductPage extends Component {
 					this.utils.openForm(element)
 					break;
 				case 'show-form-js':
-					showForm()
+					this.utils.showForm()
 					break;
 				case 'cancel-form-js':
-					showForm('cancel')
+					this.utils.cancelForm()
 					break;
 				case 'send-form-js':
-					showForm('send')
+					this.utils.sendForm()
 					break;
 				case 'zoom-photo-js':
 					this.utils.popupPhotos()
