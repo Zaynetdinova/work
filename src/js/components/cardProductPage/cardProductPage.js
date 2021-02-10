@@ -91,6 +91,7 @@ export class CardProductPage extends Component {
 	afterInitComponent() {
 		this.utils = new UtilsCardProductPage()
 		this.utils.viewPhotoZoom()
+		this.utils.transitionTitleScroll()
 		inputFile()
 	}
 

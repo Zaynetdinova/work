@@ -1,5 +1,4 @@
 import {popupQuick} from '../popupQuick'
-// import {changeSizeCount} from '../../js/changeSizeCount'
 import {changeFavoritesProduct} from '../../js/changeFavoritesProduct'
 import Swiper from 'swiper'
 import {ChangeSizeCount} from '../../js/changeSizeCount'

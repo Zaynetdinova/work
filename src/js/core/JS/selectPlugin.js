@@ -1,6 +1,6 @@
 import arrow from "../../../images/icons/arrow3.svg"
 import {popupPhone} from '../../components/common/entry/view/popupPhone'
-import Inputmask from "inputmask";
+import {selectFilterPopularMobileTemplate} from '../../components/catalog/view/selectFilterPopularMobile'
 
 const getTemplate = (data = [], placeholder, originalText, selectedId, type = '') => {
 	let text = placeholder ?? 'Placeholder по умолчанию'
@@ -18,20 +18,37 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
     `
 	})
 
-	if(type === 'test') {
-		return test(items, text)
-	} else if(type === 'input') {
-		return inputSelectedItem(data, text)
-	} else {
-		return defaultSelectedItem(items, text, mainText)
+	switch (type) {
+		case 'numberOfItemsPerPage':
+			return defaultTemplate(items, text, mainText)
+			break;
+		case 'selectFilterPopularMobile':
+			return selectFilterPopularMobileTemplate(items, text)
+			break;
+		case 'input':
+			return inputSelectedItem(data, text)
+			break;
 	}
 
-
-
+	function defaultTemplate(items, text, mainText) {
+		return `
+    <div class="wrapper-select">
+    
+   		<article data-type="input" class="input-selected-item">
+				<div class="title" >${mainText}</div>
+				<div class="arrow-wrapper">
+					<img class="arrow" src="${arrow}" alt="">      
+					<span data-type="value" class="value">${text}</span>
+				</div>
+			</article>
+			
+			<div class="popup-selected-items">  ${items.join('')}</div>        
+		</div> 
+  `
+	}
 }
 
 function inputSelectedItem(data, text) {
-
 	return `
     <div class="wrapper-select wrapper-select-input">
     
@@ -48,42 +65,6 @@ function inputSelectedItem(data, text) {
 			<div class="popup-selected-items">  
 					${popupPhone(data)}
 				</div>        
-		</div> 
-  `
-}
-
-function test(items, text) {
-	return `
-    <div class="wrapper-select">
-    
-   		<article data-type="input" class="input-selected-item">
-				<section class="Com-disp-flex-al-center">
-					<div class="test-img"></div>
-					<div data-type="value" class="title" >${text}</div>
-				</section>
-				<section class="arrow-wrapper">
-						<img class="arrow" src="${arrow}" alt="">   
-				</section>   
-			</article>
-			
-			<div class="popup-selected-items">  ${items.join('')}</div>        
-		</div> 
-  `
-}
-
-function defaultSelectedItem(items, text, mainText) {
-	return `
-    <div class="wrapper-select">
-    
-   		<article data-type="input" class="input-selected-item">
-				<div class="title" >${mainText}</div>
-				<div class="arrow-wrapper">
-					<img class="arrow" src="${arrow}" alt="">      
-					<span data-type="value" class="value">${text}</span>
-				</div>
-			</article>
-			
-			<div class="popup-selected-items">  ${items.join('')}</div>        
 		</div> 
   `
 }

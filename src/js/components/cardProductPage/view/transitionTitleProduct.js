@@ -1,7 +1,8 @@
 export function transitionTitleProduct(item) {
+    // переименовать name
     const items = item.map((item) => {
         return `
-            <div class="test1">
+            <div data-transition-title-js class="test1">
                 <div class="transitionWrapper">
                 <div class="test-block"></div>
                 <span class="home"><a href="/">Главная</a></span>

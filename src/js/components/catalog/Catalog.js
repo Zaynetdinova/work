@@ -1,14 +1,11 @@
 import {Component} from "../../core/Component";
 import {catalog} from "./catalog.template";
-import {choiceFilter} from './js/choiceFilter'
-import {choiceFilters, deleteFilterGroup} from './js/choiceFilters'
 import {stateFilterMobile} from './js/stateFilterMobile'
-
-import {filterBy} from './js/filterBy'
-import {PriceFilterRange} from './js/priceFilterRange'
 import {pointsCatalogOpen} from './js/pointsCatalogOpen'
 import {select} from './js/select'
 import {numberPages} from './js/numberPages'
+
+import {catalogStorage} from '../../core/storage/storages'
 
 export class Catalog extends Component {
     static className = 'Catalog'
@@ -19,6 +16,9 @@ export class Catalog extends Component {
             listeners: ['click', 'input']
         });
         this.activeFilter = []
+        this.catalog = null
+        this.catalogFilters = null
+        this.range = null
     }
 
     toHTML() {
@@ -26,21 +26,24 @@ export class Catalog extends Component {
     }
 
     afterInitComponent() {
-        new PriceFilterRange()
+        this.catalog = catalogStorage.catalogFunctions()
+        this.catalogFilters = catalogStorage.choiceFilters()
+        this.range = catalogStorage.priceFilterRange()
+        this.range.init()
         pointsCatalogOpen()
         select()
     }
 
     onClick(e) {
-        if(e.target.closest('article')) {
-            const element = e.target.closest('article');
+        if(e.target.closest('[data-catalog-parent-event-js]')) {
+            const element = e.target.closest('[data-catalog-parent-event-js]');
 
             switch (element.id) {
                 case 'filter-catalog':
-                    choiceFilter(e, element)
+                    this.catalogFilters.toggleFilter(element)
                     break
                 case 'delete-filter-js':
-                    deleteFilterGroup(element.dataset._id)
+                    this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
                     break
                 case 'button-filter-mobile-js':
                     stateFilterMobile()
@@ -49,10 +52,10 @@ export class Catalog extends Component {
                     stateFilterMobile('close')
                     break
                 case 'filter-by':
-                    filterBy(element)
+                    // под вопросом
                     break
                 case 'clear-filter-list':
-                    deleteFilterGroup()
+                    this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
                     break
                 case 'number-pages-js':
                     numberPages(e)
@@ -62,7 +65,6 @@ export class Catalog extends Component {
     }
 
     onInput(e) {
-        choiceFilters(e)
-
+        this.catalogFilters.choiceFilter(e)
     }
 }

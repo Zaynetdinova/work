@@ -8,7 +8,7 @@ export function navCatalog(item) {
 function jumpCatalog(item) {
     const items = item.map((item) => {
         return `
-            <article id="page-number-js">
+            <article data-catalog-parent-event-js id="page-number-js">
                 <div class="nav-text ${item.class}" id="${item.id}">${item.title}</div>
             </article>        
         `
