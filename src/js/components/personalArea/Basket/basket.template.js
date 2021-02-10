@@ -11,6 +11,7 @@ export function basketTemplate() {
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>
             </div>
+            <div class="name-user">Имя пользователя</div>
             <div class="wrapper-navigation-personal-area">
                 ${navigation('basket')}
                 ${navigationMobile('/#personal-area/favorites','Корзина','/#personal-area/personal-data')}
@@ -26,7 +27,7 @@ export function basketTemplate() {
 
 let link = [
   {
-    title: 'Личный кабинет',
-    link: '/#personal-area'
+    title: 'Корзина',
+    link: '/#personal-area/basket'
   }
 ]
