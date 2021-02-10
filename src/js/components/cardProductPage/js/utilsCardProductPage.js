@@ -2,6 +2,11 @@ import {popupPhoto} from '../../common/popupPhoto/popupPhoto'
 
 export class UtilsCardProductPage {
 
+	constructor() {
+		this.$body = document.querySelector('body')
+		this.$form = document.querySelector('#regulate-form-and-statistics-js')
+	}
+
 	infoProductShow(className) {
 		const $mainElem = document.querySelector(className)
 		$mainElem.classList.toggle('show-info')
@@ -29,15 +34,30 @@ export class UtilsCardProductPage {
 	}
 
 	popupPhotos() {
-		const $body = document.querySelector('body')
-
 		const $popup = new popupPhoto()
 
-		$body.insertAdjacentHTML('afterbegin', $popup.toHTML());
+		this.$body.insertAdjacentHTML('afterbegin', $popup.toHTML());
 		$popup.initialSlider()
 		$popup.eventClose()
 
 	}
+
+	// Form
+	showForm() {
+		this.$form.classList.add('show-form')
+		this.$form.classList.remove('gratitude-form')
+	}
+
+	cancelForm() {
+		this.$form.classList.remove('show-form')
+
+	}
+
+	sendForm() {
+		this.$form.classList.add('gratitude-form')
+		this.$form.classList.remove('show-form')
+	}
+
 
 	viewPhotoZoom() {
 		const $zoomContent = document.querySelector('#zoom-photo-js')
@@ -52,7 +72,5 @@ export class UtilsCardProductPage {
 			const y = event.clientY - bounds.top;
 			$img.setAttribute("style", `top: -${y}px; left: -${x}px;`);
 		}
-
-
 	}
 }

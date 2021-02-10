@@ -3,7 +3,7 @@ import {catalog} from "./catalog.template";
 import {choiceFilter} from './js/choiceFilter'
 import {choiceFilters, deleteFilterGroup} from './js/choiceFilters'
 import {stateFilterMobile} from './js/stateFilterMobile'
-import {stateNumberOfCardsPerPage} from './js/stateNumberOfCardsPerPage'
+
 import {filterBy} from './js/filterBy'
 import {PriceFilterRange} from './js/priceFilterRange'
 import {pointsCatalogOpen} from './js/pointsCatalogOpen'
