@@ -5,6 +5,7 @@ export class UtilsCardProductPage {
 	constructor() {
 		this.$body = document.querySelector('body')
 		this.$form = document.querySelector('#regulate-form-and-statistics-js')
+		this.$transitionTitle = document.querySelector('[data-transition-title-js]')
 	}
 
 	infoProductShow(className) {
@@ -56,6 +57,12 @@ export class UtilsCardProductPage {
 	sendForm() {
 		this.$form.classList.add('gratitude-form')
 		this.$form.classList.remove('show-form')
+	}
+
+	transitionTitleScroll() {
+		if(this.$transitionTitle) {
+			this.$transitionTitle.scrollLeft = this.$transitionTitle.scrollWidth
+		}
 	}
 
 

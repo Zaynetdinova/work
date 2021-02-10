@@ -7,13 +7,15 @@ export function filter() {
         <div class="filter">        
             <div class="wrapper-title">
                 <div class="title">Фильтры</div>
-                <article class="mobile-title" id="mobile-filter-close-js">
+                
+                <article data-catalog-parent-event-js class="mobile-title" id="mobile-filter-close-js">
                 	<div class="close-filter">
-						<img class="arrow" src="${arrow}" alt="arrow">
-						<div class="close-title">Фильтры</div>
-					</div>
+										<img class="arrow" src="${arrow}" alt="arrow">
+										<div class="close-title">Фильтры</div>
+									</div>
                 </article>
-                <article class="cancel" id="clear-filter-list">
+                
+                <article data-catalog-parent-event-js class="cancel" id="clear-filter-list">
                    <div class="clear">Очистить</div>
                    <img src="${exit}" alt="exit">
                 </article>
@@ -27,7 +29,7 @@ export function filter() {
 					const {title, categories, id} = filter
 					return `
 						<div id="parents-filter-js" data-_id=${id} class="box">
-							<article id="filter-catalog" class="wrapper-material">
+							<article data-catalog-parent-event-js id="filter-catalog" class="wrapper-material">
 								<div class="title2">${title}</div>
 								<img class="arrow" src="${arrow}" alt="arrow">
 							</article>
@@ -40,7 +42,7 @@ export function filter() {
 				}).join('')}
 				
 				<div id="parents-filter-js" data-_id='price' class="box">
-					<article id="filter-catalog" class="wrapper-material">
+					<article data-catalog-parent-event-js id="filter-catalog" class="wrapper-material">
 						<div class="title2">Цена</div>
 						<img class="arrow" src="${arrow}" alt="arrow">
 					</article>
@@ -63,8 +65,8 @@ function filterPhone(item) {
 
 	const items = item.map((item) => {
 		return `
-            <div id="parents-filter-js" data-_id=${item.id} class="box">
-				<article id="filter-catalog" class="wrapper-material">
+       <div id="parents-filter-js" data-_id=${item.id} class="box">
+				<article data-catalog-parent-event-js id="filter-catalog" class="wrapper-material">
 					<div class="title2">${item.title}</div>
 					<img class="arrow" src="${arrow}" alt="arrow">
 				</article>
@@ -133,6 +135,7 @@ let filter_phone = [
 			},
 		]},
 ]
+
 let filters = [
 	{title: 'Материал', id: 'material', categories: [
 		{

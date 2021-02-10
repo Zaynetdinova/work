@@ -1,4 +1,4 @@
-import {openSidebar, openSidebarTest} from './JS/openSidebar'
+import {openSidebarTest} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
 import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
 import {UserAgent} from './JS/userAgent'
@@ -10,6 +10,7 @@ import {Entry} from '../components/common/entry/entry'
 export class Page {
 	constructor(params) {
 		this.params = params
+		this.entry = new Entry()
 	}
 
 	getRoot() {
@@ -17,22 +18,19 @@ export class Page {
 	}
 
 	afterRender() {
-		const test = document.querySelector('.test1')
-		if(test) {
-			test.scrollLeft = test.scrollWidth
-		}
+		this.entry.init()
 
-		// problem (импортировать только однк функцию)
-		const entry = new Entry()
-		entry.init()
-		///
 		popupQuickFunctions()
+
 		// extra sidebar
 		new openSidebarTest()
 
 		// openSidebar()
 
+		// delete then
 		initialSliders()
+		//
+
 		if(window.userRegistry) {
 			commonCardFunctions()
 		}

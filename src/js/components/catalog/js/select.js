@@ -1,9 +1,10 @@
 import {Select} from '../../../core/JS/selectPlugin'
 
+
 export function select() {
 	new Select('#select-filter', {
 		placeholder: '100',
-		// selectedId: '2',
+		type: 'numberOfItemsPerPage',
 		data: [
 			{id: '1', value: '60'},
 			{id: '2', value: '100'}
@@ -15,7 +16,7 @@ export function select() {
 
 	new Select('#select-filter-mobile', {
 		placeholder: '100',
-		// selectedId: '2',
+		type: 'numberOfItemsPerPage',
 		data: [
 			{id: '1', value: '60'},
 			{id: '2', value: '100'}
@@ -27,7 +28,7 @@ export function select() {
 
 	new Select('#select-filter-popular-mobile', {
 		placeholder: 'Популярные',
-		type: 'test',
+		type: 'selectFilterPopularMobile',
 		// selectedId: '2',
 		data: [
 			{id: '1', value: 'Наш выбор'},

@@ -3,12 +3,14 @@ import noUiSlider from 'nouislider'
 export class PriceFilterRange {
 	constructor() {
 		this.rangeFilter = document.getElementById('price');
-
-		this.init()
-		this.dotsChange()
 	}
 
 	init() {
+		this.create()
+		this.dotsChange()
+	}
+
+	create() {
 		noUiSlider.create(this.rangeFilter, {
 			start: [20000, 80000],
 			connect: true,
