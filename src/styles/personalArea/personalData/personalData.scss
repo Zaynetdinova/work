@@ -203,6 +203,21 @@
   @media (max-width: 1024px) {
     .wrapper-columns {
       margin-bottom: 240px;
+      .first-column,
+      .second-column {
+        .wrapper-box,
+        .wrapper-box-2,
+        .wrapper-box-3 {
+          select {
+            height: 40px;
+          }
+          .wrapper-box-4 {
+            .input-personal-data {
+              height: 40px;
+            }
+          }
+        }
+      }
     }
   }
   @media (max-width: 715px) {

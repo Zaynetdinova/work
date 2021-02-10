@@ -60,7 +60,7 @@
         width: 100%;
       }
       .sale {
-        padding: 9px 0 9px 10px;
+        padding: 9px 0 10px 10px;
       }
       .margin {
         font-weight: bold;
@@ -106,12 +106,22 @@
   @media (max-width: 1024px) {
     .promo-code {
       padding: 20px;
+      .line-promo {
+        .sale {
+          padding: 11px 0 12px 10px;
+        }
+      }
     }
     .button-buy-arrange {
       margin-bottom: 230px;
       .arrange-button {
         background: #AB064E;
         border: 1px solid #AB064E;
+      }
+      .continue-button,
+      .arrange-button {
+        padding: 10.5px 0;
+        min-width: 167px;
       }
     }
   }
