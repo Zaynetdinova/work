@@ -47,9 +47,9 @@ export function desktopHeader() {
             </article> 
             
              ${window.userRegistry
-                ?   `<div class="registry-user favorites">
+                ?   `<a href="/#personal-area/favorites" class="registry-user favorites">
                                 <img src=${like}>
-                      </div> `
+                      </a> `
                 : '' }   
                                 
             <div class='buy'>

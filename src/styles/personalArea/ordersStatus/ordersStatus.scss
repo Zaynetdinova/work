@@ -1,84 +1,11 @@
 .Orders-status {
+  @import "components/nameOrder";
+  @import "components/headerOrder";
   .wrapper-orders-status {
     margin-bottom: 110px;
     table {
       width: 100%;
-      .first-string {
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 20px;
-        text-align: center;
-        padding-bottom: 20px;
-        &.status-1 {
-          width: 1%;
-        }
-        //&.status-2 {
-        //  width: 10%;
-        //}
-        //&.status-3 {
-        //  width: 5%;
-        //}
-        &.status-4 {
-          width: 35%;
-        }
-        //&.status-5 {
-        //  width: 6%;
-        //}
-        //&.status-6 {
-        //  width: 6%;
-        //}
-      }
 
-      .img-order {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .title {
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 14px;
-          text-align: center;
-          margin-top: 20px;
-        }
-      }
-      .wrapper-order-name {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: 20px;
-        .order-name {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 12px;
-          .order-title {
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 16px;
-            .data {
-              font-weight: normal;
-              font-size: 12px;
-              line-height: 16px;
-              color: #777777;
-            }
-            .order-delivery {
-              font-weight: normal;
-            }
-          }
-          .order-title-delivery {
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 16px;
-            .order-delivery {
-              font-weight: normal;
-            }
-          }
-        }
-      }
-      .link-see-order {
-        color: #AB064E;
-        font-size: 14px;
-        line-height: 16px;
-      }
       .quantity-order {
         font-size: 14px;
         line-height: 14px;
@@ -106,6 +33,14 @@
         font-size: 14px;
         line-height: 15px;
         text-align: center;
+        .summa-return-title {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 17px;
+        }
+        .summa-return {
+          color: #AB064E;
+        }
       }
       .pay-order {
         display: flex;
@@ -132,6 +67,18 @@
       }
 
     }
+    .auxiliary-unit {
+      height: 30px;
+    }
+    .auxiliary-unit-line {
+      height: 2px;
+      td {
+        background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 4px 2px;
+        background-repeat: repeat-x;
+      }
+    }
     .auxiliary-unit-top {
       height: 40px;
       .line-top {
@@ -146,7 +93,24 @@
         background-position: bottom;
         background-size: 4px 2px;
         background-repeat: repeat-x;
+      }
+    }
 
+    .additional-order {
+      .title-add {
+        font-size: 13px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        background: #F3F2F0;
+        img {
+          margin-right: 8px;
+        }
+        a {
+          color: #3D3D3C;
+        }
       }
     }
     @media (max-width: 1024px) {
