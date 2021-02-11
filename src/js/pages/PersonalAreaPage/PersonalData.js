@@ -5,19 +5,19 @@ import {Footer} from "../../components/footer/Footer";
 import {PersonalData} from '../../components/personalArea/personalData/personalData'
 
 export class PersonalDataPage extends Page{
-  getRoot() {
-    this.app = new OptMoyo( {
-      components: [
-        Header,
-        PersonalData,
-        Footer,
-      ]
-    })
-    return this.app.getRoot()
+    getRoot() {
+        this.app = new OptMoyo( {
+            components: [
+                Header,
+                PersonalData,
+                Footer,
+            ]
+        })
+        return this.app.getRoot()
   }
 
-  afterRender() {
-    this.app.init()
-    super.afterRender()
-  }
+    afterRender() {
+        this.app.init()
+        super.afterRender()
+    }
 }

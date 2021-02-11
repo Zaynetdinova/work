@@ -32,6 +32,9 @@
         text-decoration-line: underline;
         color: #AB064E;
         cursor: pointer;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     .wrapper-navigation-personal-area {

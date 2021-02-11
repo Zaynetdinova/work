@@ -26,25 +26,16 @@
     }
     .column-one {
       width: 32.45%;
+      background: #F3F2F0;
       .wrap-column-one {
-        background: #F3F2F0;
         padding: 20px;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 97%;
         .wrapper-text {
           display: block;
           text-align: start;
-        }
-        .wrapper-img {
-          position: absolute;
-          right: 0;
-          bottom: -34px;
-          img {
-            margin-right: 15px;
-          }
         }
       }
     }
@@ -119,13 +110,10 @@
           .wrapper-text {
             margin-bottom: 50px;
           }
-          .wrapper-img {
-            bottom: -70px;
-          }
         }
       }
       .column-two {
-        padding-top: 80px;
+        padding-top: 30px;
         .top-box,
         .bottom-box {
           .box-title {

@@ -56,8 +56,8 @@
             margin-bottom: 30px;
             .favoritesProduct {
               .img-like {
-                width: 16px;
-                height: 14px;
+                width: 14px;
+                height: 12px;
                 background-size: contain;
               }
             }
@@ -116,6 +116,15 @@
         &:hover {
           text-decoration-line: none;
         }
+      }
+    }
+    .img-close {
+      display: flex;
+      align-items: start;
+      img {
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
       }
     }
   }

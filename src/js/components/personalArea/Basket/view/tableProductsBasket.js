@@ -1,4 +1,5 @@
 import women from '../../../../../images/bestsellers/1/img1.png'
+import close from '../../../../../images/icons/close_popup_black.svg'
 import {sizeInfo} from "../../../common/sizeInfo";
 import {infoProduct} from "../../../common/infoProduct";
 import {Sale} from "../../../common/sale";
@@ -17,10 +18,11 @@ export function tableProductsBasket() {
                 <td class="first-string sale-percent">Скидка</td>
                 <td class="first-string sum-percent">Сумма</td>
                 <td class="first-string selected-dimensions-product-title" style="width: 12%"></td>
+                <td class="first-string" style="width: 5%"></td>
             </tr>
             
             <tr class="auxiliary-unit-top">
-                <td class="line-top" colspan="7">
+                <td class="line-top" colspan="8">
                     <div class="">
                         <span></span>
                     </div>
@@ -80,10 +82,14 @@ export function tableProductsBasket() {
                 <td class="selected-dimensions-product">
                     <div class="change-selected-dimensions">Изменить выбранные размеры</div>
                 </td>
+                
+                <td class="img-close">
+                    <img class="close" src="${close}" alt="">
+                </td>
             </tr>
             
             <tr class="auxiliary-unit-bottom">
-                <td colspan="7">
+                <td colspan="8">
                     <div class="selected-dimensions-product-mobile">
                         <span class="change-selected-dimensions">Изменить выбранные размеры</span>
                     </div>

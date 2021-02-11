@@ -4,7 +4,6 @@ import {Header} from "../../components/header/Header";
 import {QuestionsAnswersPage} from "../../components/information/questionsAnswersPage/questionsAnswersPage.js/questionsAnswersPage";
 import {Footer} from "../../components/footer/Footer";
 
-
 export class AboutQuestionsAnswers extends Page{
     getRoot() {
         this.app = new OptMoyo( {

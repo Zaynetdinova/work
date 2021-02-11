@@ -4,21 +4,20 @@ import {Header} from "../../components/header/Header";
 import {Footer} from "../../components/footer/Footer";
 import {Basket} from '../../components/personalArea/Basket/Basket'
 
-
 export class BasketPage extends Page{
-  getRoot() {
-    this.app = new OptMoyo( {
-      components: [
-        Header,
-        Basket,
-        Footer,
-      ]
-    })
-    return this.app.getRoot()
-  }
+    getRoot() {
+        this.app = new OptMoyo( {
+            components: [
+                Header,
+                Basket,
+                Footer,
+            ]
+        })
+        return this.app.getRoot()
+    }
 
-  afterRender() {
-    this.app.init()
-    super.afterRender()
-  }
+    afterRender() {
+        this.app.init()
+        super.afterRender()
+    }
 }
