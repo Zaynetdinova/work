@@ -5,9 +5,29 @@
     .wrapper-button-pagination {
       .prev {
         padding: 8.5px 113px 8.5px 13px;
+        &:hover {
+          background: transparent;
+          border: 1px solid #AB064E;
+          .text {
+            color: #AB064E;
+          }
+          .arrow-prev {
+            background: url("../images/icons/arrow.svg") no-repeat;
+          }
+        }
       }
       .next {
         padding: 8.5px 13px 8.5px 117px;
+        background: #AB064E;
+        .text {
+          color: #FFFFFF;
+        }
+        .arrow-next {
+          background: url("../images/icons/arrow-white2.svg") no-repeat;
+        }
+        &:hover {
+          background: #C00A5A;
+        }
       }
     }
     @media (max-width: 767px) {

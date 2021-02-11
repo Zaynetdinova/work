@@ -2,6 +2,7 @@ import {transitionWrapper} from "../../common/transitionTitle";
 import {basketPageTemplate} from "./view/basketPage.template";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {orderDone} from "./view/orderDone";
 
 export function basketTemplate() {
   return `
@@ -31,3 +32,6 @@ let link = [
     link: '/#personal-area/basket'
   }
 ]
+
+// ${basketPageTemplate()}
+// ${orderDone()}

@@ -1,0 +1,26 @@
+.order-done {
+  margin-bottom: 140px;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  .wrapper-title {
+    display: flex;
+    align-items: center;
+    .title {
+      margin-left: 15px;
+      .order-done-title {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+  p {
+    width: 640px;
+    margin-top: 24px;
+    a {
+      color: #AB064E;
+      white-space: nowrap;
+    }
+  }
+}
