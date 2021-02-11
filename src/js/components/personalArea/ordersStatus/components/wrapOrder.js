@@ -1,70 +1,36 @@
 import img1 from '../../../../../images/icons/new-order.svg'
 import img2 from '../../../../../images/icons/processed-order.svg'
 import img3 from '../../../../../images/icons/send-order.svg'
+import img4 from '../../../../../images/icons/paid-order.svg'
+import img5 from '../../../../../images/icons/canceled-order.svg'
+import img6 from '../../../../../images/icons/package-order.svg'
+import img7 from '../../../../../images/icons/done-order.svg'
+import plus from '../../../../../images/icons/orderStatus/plus.svg'
 import invoiceArgument from '../../../../../images/icons/orderStatus/Invoice-agreement.svg'
 import invoice from '../../../../../images/icons/orderStatus/Invoice.svg'
 import confirm from '../../../../../images/icons/orderStatus/confirm.svg'
 import nonConfirm from '../../../../../images/icons/orderStatus/not-c.svg'
+import {nameOrder, orderName} from "./nameOrder";
+import {iconTitle} from "./iconTitle";
+import {headerOrder} from "./headerOrder";
 
 export function wrapOrder() {
     return `
         <div class="wrapper-orders-status">
             <table>
-                <tr>
-                    <td class="first-string status-1">Заказ</td>
-                    <td class="first-string status-2"></td>
-                    <td class="first-string status-3">Количество</td>
-                    <td class="first-string status-4">Статус</td>
-                    <td class="first-string status-5">Сумма</td>
-                    <td class="first-string status-6">Оплата</td>
-                </tr>
+                ${headerOrder()}      
                 <tr class="auxiliary-unit-top">
                     <td class="line-top" colspan="7">
                          <span></span>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="img-order">
-                            <img src="${img1}" alt="">
-                            <div class="title">Новый</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="wrapper-order-name">
-                            <div class="order-name">
-                                <span class="order-title">Заказ № 12345 <span class="data">от 01.12.2020</span></span>
-                                <span class="order-title-delivery">Доставка: <span class="order-delivery">Самовывоз</span></span>
-                                <span class="order-title-delivery">Получатель: <span class="order-delivery">ИП Получатель</span></span>
-                            </div>
-                            <div>
-                                <a href="" class="link-see-order">
-                                    Посмотреть заказ
-                                </a>
-                            </div>
-                        </div>
-                    </td>
+                    ${nameOrder(img1, 'Новый')}
+                    ${orderName(order)}
                     <td>
                         <div class="quantity-order">1 шт.</div>
                     </td>
-                    <td class="wrapper-icon-title">
-                        <div class="icon-title">
-                            <img src="${invoiceArgument}" alt="">
-                            <div><a href="">Счёт-договор</a></div>
-                        </div>
-                        <div class="icon-title">
-                            <img src="${invoice}" alt="">
-                            <div><a href="">Накладная Торг12</a></div>
-                        </div>
-                        <div class="icon-title">
-                            <img src="${confirm}" alt="">
-                            <div>Товар подтвердил поставщик</div>
-                        </div>
-                        <div class="icon-title">
-                            <img src="${nonConfirm}" alt="">
-                            <div>Товар собран на складе</div>
-                        </div>
-                    </td>
+                    ${iconTitle(exampleOne)}
                     <td>
                         <div class="summa">1 234,00 ₽</div>
                     </td>
@@ -86,38 +52,12 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="img-order">
-                            <img src="${img2}" alt="">
-                            <div class="title">Обрабатывается</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="wrapper-order-name">
-                            <div class="order-name">
-                                <span class="order-title">Заказ № 12345 <span class="data">от 01.12.2020</span></span>
-                                <span class="order-title-delivery">Доставка: <span class="order-delivery">Самовывоз</span></span>
-                                <span class="order-title-delivery">Получатель: <span class="order-delivery">ИП Получатель</span></span>
-                            </div>
-                            <div>
-                                <a href="" class="link-see-order">
-                                    Посмотреть заказ
-                                </a>
-                            </div>
-                        </div>
-                    </td>
+                    ${nameOrder(img2,'Обрабатывается')}
+                    ${orderName(order)}
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
-                    <td class="wrapper-icon-title">
-                        <div class="icon-title"></div>
-                        <div class="icon-title"></div>
-                        <div class="icon-title">
-                            <img src="${confirm}" alt="">
-                            <div>Товар подтвердил поставщик</div>
-                        </div>
-                        <div class="icon-title"></div>
-                    </td>
+                    ${iconTitle(exampleTwo)}
                     <td>
                         <div class="summa">1 234,00 ₽</div>
                     </td>
@@ -139,48 +79,172 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <div class="img-order">
-                            <img src="${img3}" alt="">
-                            <div class="title">Отправлен</div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="wrapper-order-name">
-                            <div class="order-name">
-                                <span class="order-title">Заказ № 12345 <span class="data">от 01.12.2020</span></span>
-                                <span class="order-title-delivery">Доставка: <span class="order-delivery">Самовывоз</span></span>
-                                <span class="order-title-delivery">Получатель: <span class="order-delivery">ИП Получатель</span></span>
-                            </div>
-                            <div>
-                                <a href="" class="link-see-order">
-                                    Посмотреть заказ
-                                </a>
-                            </div>
-                        </div>
-                    </td>
+                    ${nameOrder(img3,'Отправлен')}
+                    ${orderName(order)}
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
-                    <td class="wrapper-icon-title">
-                        <div class="icon-title">
-                            <img src="${invoiceArgument}" alt="">
-                            <div><a href="">Счёт-договор</a></div>
+                    ${iconTitle(exampleThree)}
+                    <td>
+                        <div class="summa">1 234,00 ₽</div>
+                    </td>
+                    <td>
+                        <div class="pay-order">
+                            <div class="way-pay-green">Заказ оплачен</div>
                         </div>
-                        <div class="icon-title">
-                            
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-bottom">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-top">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    ${nameOrder(img4,'Оплачен')}
+                    ${orderName(order)}
+                    <td>
+                        <div class="quantity-order">2 шт.</div>
+                    </td>
+                    ${iconTitle(exampleFour)}
+                    <td>
+                        <div class="summa">1 234,00 ₽</div>
+                    </td>
+                    <td>
+                        <div class="pay-order">
+                            <div class="way-pay-green">Заказ оплачен</div>
                         </div>
-                        <div class="icon-title">
-                            <img src="${confirm}" alt="">
-                            <div>Товар подтвердил поставщик</div>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-bottom">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-top">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    ${nameOrder(img5,'Отменен')}
+                    ${orderName(order)}
+                    <td>
+                        <div class="quantity-order">2 шт.</div>
+                    </td>
+                    ${iconTitle(exampleOne)}
+                    <td>
+                        <div class="summa">1 234,00 ₽</div>
+                    </td>
+                    <td>
+                        <div class="pay-order">
+                            <div class="way-pay-green">Заказ оплачен</div>
                         </div>
-                        <div class="icon-title">
-                            <img src="${nonConfirm}" alt="">
-                            <div>Товар собран на складе</div>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-bottom">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-top">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    ${nameOrder(img3,'Отправлен')}
+                    ${orderName(orderTwo)}
+                    <td>
+                        <div class="quantity-order">2 шт.</div>
+                    </td>
+                    ${iconTitle(exampleOne)}
+                    <td>
+                        <div class="summa">
+                            <div class="summa-return-title">К возврату</div>
+                            <div class="summa-return">-1 234,00 ₽</div>
                         </div>
                     </td>
                     <td>
+                        <div class="pay-order">
+                            <div class="way-pay-green">Заказ оплачен</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr class="additional-order">
+                    <td colspan="7">
+                        <div class="title-add">
+                            <img src="${plus}" alt="">
+                            <div><a href="#">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="additional-order">
+                    <td colspan="7">
+                        <div class="title-add">
+                            <img src="${plus}" alt="">
+                            <div><a href="#">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-line">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                
+                <tr class="auxiliary-unit-top">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    ${nameOrder(img6,'На упаковке')}
+                    ${orderName(order)}
+                    <td>
+                        <div class="quantity-order">2 шт.</div>
+                    </td>
+                    ${iconTitle(exampleOne)}
+                    <td>
                         <div class="summa">1 234,00 ₽</div>
+                    </td>
+                    <td>
+                        <div class="pay-order">
+                            <div class="way-pay-green">Заказ оплачен</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-bottom">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr class="auxiliary-unit-top">
+                    <td colspan="7">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    ${nameOrder(img7,'Упакован')}
+                    ${orderName(orderTwo)}
+                    <td>
+                        <div class="quantity-order">2 шт.</div>
+                    </td>
+                    ${iconTitle(exampleOne)}
+                    <td>
+                        <div class="summa">
+                            <div class="summa-return-title">К возврату</div>
+                            <div class="summa-return">-1 234,00 ₽</div>
+                        </div>
                     </td>
                     <td>
                         <div class="pay-order">
@@ -202,3 +266,106 @@ export function wrapOrder() {
         </div>
     `
 }
+
+
+let exampleOne = [
+    {
+        icon: invoiceArgument,
+        title: '<a href="">Счёт-договор</a>'
+    },
+    {
+        icon: invoice,
+        title: '<a href="">Накладная Торг12</a>'
+    },
+    {
+        icon: confirm,
+        title: 'Товар подтвердил поставщик'
+    },
+    {
+        icon: nonConfirm,
+        title: 'Товар собран на складе'
+    },
+]
+
+let exampleTwo = [
+    {
+        icon: '',
+        title: ''
+    },
+    {
+        icon: '',
+        title: ''
+    },
+    {
+        icon: confirm,
+        title: 'Товар подтвердил поставщик'
+    },
+    {
+        icon: '',
+        title: ''
+    },
+]
+
+let exampleThree = [
+    {
+        icon: invoiceArgument,
+        title: '<a href="">Счёт-договор</a>'
+    },
+    {
+        icon: '',
+        title: ''
+    },
+    {
+        icon: confirm,
+        title: 'Товар подтвердил поставщик'
+    },
+    {
+        icon: nonConfirm,
+        title: 'Товар собран на складе'
+    },
+]
+
+let exampleFour = [
+    {
+        icon: '',
+        title: ''
+    },
+    {
+        icon: '',
+        title: ''
+    },
+    {
+        icon: confirm,
+        title: 'Товар подтвердил поставщик'
+    },
+    {
+        icon: nonConfirm,
+        title: 'Товар собран на складе'
+    },
+]
+
+let order = [
+    {
+        title: 'Доставка:',
+        name: 'Самовывоз'
+    },
+    {
+        title: 'Получатель:',
+        name: 'ИП Получатель'
+    }
+]
+
+let orderTwo = [
+    {
+        title: 'Транспортная компания:',
+        name: 'Желдорэкспедиция'
+    },
+    {
+        title: 'Номер отправления:',
+        name: 'БАБШВИМ-2/1310'
+    },
+    {
+        title: 'Получатель: ',
+        name: 'ИП Овчинникова Людмила Витальевна'
+    }
+]

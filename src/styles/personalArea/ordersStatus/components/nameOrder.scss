@@ -1,0 +1,51 @@
+.img-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.wrapper-order-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  .order-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    .order-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      .data {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #777777;
+      }
+      .order-delivery {
+        font-weight: normal;
+      }
+    }
+    .order-title-delivery {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      .order-delivery {
+        font-weight: normal;
+      }
+    }
+  }
+  .link-see-order {
+    color: #AB064E;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+

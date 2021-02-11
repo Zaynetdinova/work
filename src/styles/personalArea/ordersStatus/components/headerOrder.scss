@@ -1,0 +1,16 @@
+.header-order {
+  .first-string {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    &.status-1 {
+      width: 1%;
+    }
+    &.status-4 {
+      width: 35%;
+    }
+  }
+}
+
