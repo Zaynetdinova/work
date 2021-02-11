@@ -46,6 +46,9 @@
     color: #AB064E;
     font-size: 14px;
     line-height: 16px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

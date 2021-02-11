@@ -25,6 +25,9 @@
           }
           a {
             color: #3D3D3C;
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }
@@ -63,6 +66,9 @@
           text-decoration-line: underline;
           color: #AB064E;
           width: 106px;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
 
@@ -110,6 +116,9 @@
         }
         a {
           color: #3D3D3C;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }

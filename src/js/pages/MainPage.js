@@ -6,12 +6,12 @@ import {Main} from '../components/main/Main'
 
 export class MainPage extends Page {
 	getRoot() {
-	this.app = new OptMoyo( {
-  	components: [
-    Header,
-    Main,
-    Footer
-  ]
+		this.app = new OptMoyo( {
+			components: [
+				Header,
+				Main,
+				Footer
+			]
 	})
 		return this.app.getRoot()
 	}

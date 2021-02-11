@@ -17,7 +17,6 @@
     width: 19px;
     height: 18px;
     background: url("../images/icons/star_empty.svg") no-repeat;
-
   }
 
   & > input:checked ~ label {
@@ -37,8 +36,6 @@
     background: url("../images/icons/star.svg") no-repeat;
   }
 }
-
-
 
 .rating-result {
   min-height: 18px;

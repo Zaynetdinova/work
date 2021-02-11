@@ -66,9 +66,6 @@ export class openSidebarTest {
     extra.classList.remove( 'show-extra-cancel')
     extra.classList.add('show-extra-mobile')
   }
-
-
-
 }
 
 

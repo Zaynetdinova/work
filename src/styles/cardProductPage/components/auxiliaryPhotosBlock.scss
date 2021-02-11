@@ -4,7 +4,6 @@
   background: #555555;
   padding: 5px 6px;
 
-
   .button {
     justify-content: center;
     align-items: center;
@@ -17,15 +16,12 @@
     cursor: pointer;
     display: none;
 
-
     .arrow {
       background-image: url("../images/icons/arrow-slider.svg");
       background-repeat: no-repeat;
       width: 17px;
       height: 9px;
     }
-
-
     &.button-prev {
       top: 0;
     }
@@ -35,7 +31,6 @@
       .arrow {
         transform: rotate(180deg);
       }
-
     }
   }
 

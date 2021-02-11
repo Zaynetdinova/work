@@ -1,12 +1,12 @@
 import '../styles/style.scss'
 import 'swiper/swiper-bundle.css';
+import 'nouislider/distribute/nouislider.css';
 import {Router} from './core/routes/Router'
 import {MainPage} from './pages/MainPage'
 import {ViewCategoriesPage} from './pages/ViewCategoriesPage'
 import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
 import {CardProduct} from './pages/CardProduct'
-import 'nouislider/distribute/nouislider.css';
 import {BasketPage} from "./pages/PersonalAreaPage/BasketPage";
 import {PersonalDataPage} from "./pages/PersonalAreaPage/PersonalData";
 import {BonusesPage} from "./pages/PersonalAreaPage/BonusesPage";

@@ -184,7 +184,7 @@ export function wrapOrder() {
                     <td colspan="7">
                         <div class="title-add">
                             <img src="${plus}" alt="">
-                            <div><a href="#">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
+                            <div><a href="">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
                         </div>
                     </td>
                 </tr>
@@ -192,7 +192,7 @@ export function wrapOrder() {
                     <td colspan="7">
                         <div class="title-add">
                             <img src="${plus}" alt="">
-                            <div><a href="#">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
+                            <div><a href="">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
                         </div>
                     </td>
                 </tr>
