@@ -1,132 +1,83 @@
 .Orders-status {
   @import "components/nameOrder";
   @import "components/headerOrder";
-  .wrapper-orders-status {
-    margin-bottom: 110px;
-    table {
-      width: 100%;
-
-      .quantity-order {
-        font-size: 14px;
-        line-height: 14px;
-        text-align: center;
-      }
-      .wrapper-icon-title {
-        display: flex;
-        justify-content: center;
-        .icon-title {
-          font-size: 12px;
-          line-height: 12px;
-          text-align: center;
-          width: 92px;
-          margin: 0 10px;
-          img {
-            margin-bottom: 15px;
-          }
-          a {
-            color: #3D3D3C;
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      .summa {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: center;
-        .summa-return-title {
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 17px;
-        }
-        .summa-return {
-          color: #AB064E;
-        }
-      }
-      .pay-order {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .way-pay {
-          font-size: 14px;
-          line-height: 15px;
-          margin-bottom: 15px;
-        }
-        .way-pay-green {
-          color: #009295;
-          font-size: 14px;
-          line-height: 15px;
-        }
-        .pay-online {
-          font-size: 14px;
-          line-height: 14px;
-          text-align: center;
-          text-decoration-line: underline;
-          color: #AB064E;
-          width: 106px;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-
+  @import "components/wrapOrder";
+  @import "components/wrapOrderMobail";
+  .mobail {
+    display: none;
+  }
+  .pay-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .way-pay {
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 15px;
+      text-align: center;
     }
-    .auxiliary-unit {
-      height: 30px;
+    .way-pay-green {
+      color: #009295;
+      font-size: 14px;
+      line-height: 15px;
+      text-align: center;
     }
-    .auxiliary-unit-line {
-      height: 2px;
-      td {
-        background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
-        background-position: bottom;
-        background-size: 4px 2px;
-        background-repeat: repeat-x;
+    .pay-online {
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #AB064E;
+      width: 106px;
+      &:hover {
+        text-decoration: none;
       }
     }
-    .auxiliary-unit-top {
-      height: 40px;
-      .line-top {
-        border-top: 2px solid #D9D9D9;
+  }
+  .wrapper-icon-title {
+    display: flex;
+    justify-content: center;
+    .icon-title {
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center;
+      width: 92px;
+      margin: 0 10px;
+      img {
+        margin-bottom: 15px;
       }
-    }
-
-    .auxiliary-unit-bottom {
-      height: 40px;
-      td {
-        background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
-        background-position: bottom;
-        background-size: 4px 2px;
-        background-repeat: repeat-x;
-      }
-    }
-
-    .additional-order {
-      .title-add {
-        font-size: 13px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 10px 20px;
-        background: #F3F2F0;
-        img {
-          margin-right: 8px;
-        }
-        a {
-          color: #3D3D3C;
-          &:hover {
-            text-decoration: none;
-          }
+      a {
+        color: #3D3D3C;
+        &:hover {
+          text-decoration: none;
         }
       }
     }
-    @media (max-width: 1024px) {
-      margin-bottom: 170px;
-      table {
-
+  }
+  .title-add {
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: #F3F2F0;
+    img {
+      margin-right: 8px;
+    }
+    a {
+      color: #3D3D3C;
+      &:hover {
+        text-decoration: none;
       }
+    }
+  }
+  @media (max-width: 767px) {
+    .desktop {
+      display: none;
+    }
+    .mobail {
+      display: block;
     }
   }
 }

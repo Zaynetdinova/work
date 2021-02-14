@@ -2,12 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 118px;
+  height: 79px;
   .title {
     font-weight: bold;
     font-size: 14px;
     line-height: 14px;
     text-align: center;
     margin-top: 20px;
+  }
+  @media (max-width: 1200px) {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+    .title {
+      margin-top: 0;
+      margin-left: 9px;
+    }
   }
 }
 .wrapper-order-name {
@@ -49,6 +61,9 @@
     &:hover {
       text-decoration: none;
     }
+  }
+  @media (max-width: 1200px) {
+    margin-left: 0;
   }
 }
 
