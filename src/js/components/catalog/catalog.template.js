@@ -1,5 +1,5 @@
 import {titleCatalog, transitionTitleCatalog} from "./view/transitionTitleCatalog";
-import {number, pagination} from "../common/pagination";
+import {numberPages, pagination} from "../common/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./view/navCatalog";
 import {filter} from "./view/filter";
@@ -21,11 +21,11 @@ export function catalog()  {
         <div class="wrapper-pagination">
             ${titleCatalog(catalogCategory)}      
             ${pagination('Предыдущая страница', 'Следующая страница')}
-            ${number()}
+            ${numberPages()}
         </div>
                    
         <div class="wrapper-number">
-            ${number()}            
+            ${numberPages()}            
         </div>
         
         <div class="wrapper-sort">
@@ -58,10 +58,10 @@ export function catalog()  {
                 </div>                                  
                  <div class="bottom-pagination">                                             
                     <div class="box">${pagination('Предыдущая страница','Следующая страница')}</div>
-                    <div class="box-number">${number()}</div>
+                    <div class="box-number">${numberPages()}</div>
                  </div>  
                  <div class="wrapper-number">
-                    ${number()}
+                    ${numberPages()}
                  </div>               
                 <div class="wrap-card-see" id="style-for-apple-js">
                     ${commonCard(woman2, 'price')}

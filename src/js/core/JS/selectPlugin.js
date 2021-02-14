@@ -6,11 +6,6 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 	let text = placeholder ?? 'Placeholder по умолчанию'
 	let mainText = originalText ?? 'На странице'
 	const items = data.map(item => {
-		// let cls = ''
-		// if (item.id === selectedId) {
-		// 	text = item.value
-		// 	cls = 'selected'
-		// }
 		return `
 				<article data-type="item" data-id="${item.id}" class="select-item">
 					${item.value} 

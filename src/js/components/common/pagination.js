@@ -16,9 +16,9 @@ export function pagination(prev, next) {
 }
 
 
-export function number() {
+export function numberPages() {
     return `
-        <article id="number-pages-js" class="number">
+        <article data-catalog-parent-event-js id="number-pages-js" class="number">
             <div class="wrap-button">
                 <div class="button-prev"><div class="arrow-prev"></div></div>
             </div>

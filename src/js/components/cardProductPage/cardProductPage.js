@@ -1,10 +1,11 @@
 import {Component} from '../../core/Component'
 import {cardProductPageTemplate} from './cardProductPage.template'
-import Swiper from 'swiper'
 import {ChangeSizeCount} from '../common/js/changeSizeCount'
 import {UtilsCardProductPage} from './js/utilsCardProductPage'
 import {inputFile} from './js/inputFile'
 import {TestDataCardProductPage} from './js/testDataCardProductPage'
+import {CardProductPageSliders} from './js/CardProductPageSliders'
+
 
 export class CardProductPage extends Component {
 	static className = 'Card-product-page'
@@ -26,73 +27,15 @@ export class CardProductPage extends Component {
 			this.testData.info())
 	}
 
-	slider() {
-		const options = {
-			slidesPerView: 1.9,
-			spaceBetween: 15,
-			centeredSlides: false,
-			loop: false,
-			slidesOffsetAfter: 16,
-
-			on: {
-				slideChange: function () {
-
-				},
-
-				init: function () {
-
-					if(this.slides.length >= 8) {
-
-					}
-				}
-			},
-
-			pagination: {
-				el: '.swiper-pagination',
-			},
-			navigation: {
-				nextEl: '.swiper-button-next-main',
-				prevEl: '.swiper-button-prev-main',
-			},
-			breakpoints: {
-				1025: {
-					spaceBetween: 20,
-					slidesPerView: 6,
-				},
-				1024: {
-					slidesPerView: 6,
-					centeredSlides: false,
-					loop: false,
-					spaceBetween: 15,
-				},
-				768: {
-					slidesPerView: 4,
-					centeredSlides: false,
-					loop: false,
-					slidesOffsetAfter: 0,
-				},
-				700: {
-					slidesPerView: 3,
-					slidesOffsetAfter: 0,
-				},
-				600: {
-					slidesPerView: 2.5,
-				},
-				374: {
-					slidesPerView: 2.27,
-				}
-			}
-		}
-
-		new Swiper('.bestseller-product',options)
-		new Swiper('.bestseller-product2',options)
-	}
 
 	afterInitComponent() {
 		this.utils = new UtilsCardProductPage()
+    const sliders = new CardProductPageSliders()
 		this.utils.viewPhotoZoom()
 		this.utils.transitionTitleScroll()
 		inputFile()
+    // cardProductPage()
+    sliders.init()
 	}
 
 	onClick(e) {
@@ -138,3 +81,5 @@ export class CardProductPage extends Component {
 		}
 	}
 }
+
+

@@ -1,9 +1,6 @@
 import {Component} from "../../core/Component";
 import {catalog} from "./catalog.template";
-import {stateFilterMobile} from './js/stateFilterMobile'
-import {pointsCatalogOpen} from './js/pointsCatalogOpen'
 import {select} from './js/select'
-import {numberPages} from './js/numberPages'
 
 import {catalogStorage} from '../../core/storage/storages'
 
@@ -30,7 +27,7 @@ export class Catalog extends Component {
         this.catalogFilters = catalogStorage.choiceFilters()
         this.range = catalogStorage.priceFilterRange()
         this.range.init()
-        pointsCatalogOpen()
+        this.catalog.pointsCatalogOpen()
         select()
     }
 
@@ -46,19 +43,16 @@ export class Catalog extends Component {
                     this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
                     break
                 case 'button-filter-mobile-js':
-                    stateFilterMobile()
+                  this.catalog.openFilterMobile()
                     break
                 case 'mobile-filter-close-js':
-                    stateFilterMobile('close')
-                    break
-                case 'filter-by':
-                    // под вопросом
+                  this.catalog.closeFilterMobile()
                     break
                 case 'clear-filter-list':
                     this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
                     break
                 case 'number-pages-js':
-                    numberPages(e)
+                  this.catalog.changeNumberPage(e)
                     break
             }
         }
