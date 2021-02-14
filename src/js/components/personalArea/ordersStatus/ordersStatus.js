@@ -1,5 +1,6 @@
 import {Component} from "../../../core/Component";
 import {ordersStatusTemplate} from "./ordersStatus.template";
+import {toggleShowInformation} from '../../../core/utils/utils'
 
 export class OrdersStatus extends Component {
     static className = 'Orders-status'
@@ -12,5 +13,16 @@ export class OrdersStatus extends Component {
     }
     toHTML() {
         return ordersStatusTemplate()
+    }
+    onClick(e) {
+        if(e.target.closest('[data-parent-order-js]')) {
+            const element = e.target.closest('[data-parent-order-js]');
+
+            switch (element.id) {
+                case 'more-details':
+                    toggleShowInformation('[data-oder-name-page]')
+                    break;
+            }
+        }
     }
 }

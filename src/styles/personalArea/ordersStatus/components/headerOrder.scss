@@ -1,15 +1,47 @@
 .header-order {
   .first-string {
     font-size: 14px;
-    font-weight: normal;
     line-height: 20px;
     text-align: center;
     padding-bottom: 20px;
     &.status-1 {
-      width: 1%;
+      width: 34%;
+      text-align: left;
+      padding-left: 35px;
     }
     &.status-4 {
       width: 35%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .first-string {
+      &.status-1 {
+        padding-left: 0;
+      }
+      &.status-4 {
+        width: 20%;
+      }
+      &.status-5 {
+        width: 20%;
+      }
+      &.status-6 {
+        width: 20%;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .first-string {
+      font-size: 13px;
+      line-height: 18px;
+      &.status-4 {
+        width: 20%;
+      }
+      &.status-5 {
+        width: 20%;
+      }
+      &.status-6 {
+        width: 20%;
+      }
     }
   }
 }

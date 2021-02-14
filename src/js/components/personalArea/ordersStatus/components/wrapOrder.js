@@ -25,8 +25,12 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img1, 'Новый')}
-                    ${orderName(order)}
+                    <td>
+                        <div class="one-td">
+                            ${nameOrder(img1, 'Новый')}
+                            ${orderName(order)}
+                        </div>
+                    </td>
                     <td>
                         <div class="quantity-order">1 шт.</div>
                     </td>
@@ -52,8 +56,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img2,'Обрабатывается')}
-                    ${orderName(order)}
+                    <td class="one-td">
+                        ${nameOrder(img2,'Обрабатывается')}
+                        ${orderName(order)}
+                    </td>                 
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
@@ -79,8 +85,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img3,'Отправлен')}
-                    ${orderName(order)}
+                    <td class="one-td">
+                        ${nameOrder(img3,'Отправлен')}
+                        ${orderName(order)}
+                    </td>                   
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
@@ -105,8 +113,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img4,'Оплачен')}
-                    ${orderName(order)}
+                    <td class="one-td">
+                        ${nameOrder(img4,'Оплачен')}
+                        ${orderName(order)}
+                    </td>
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
@@ -131,8 +141,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img5,'Отменен')}
-                    ${orderName(order)}
+                    <td class="one-td">
+                        ${nameOrder(img5,'Отменен')}
+                        ${orderName(order)}
+                    </td>                    
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
@@ -157,8 +169,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img3,'Отправлен')}
-                    ${orderName(orderTwo)}
+                    <td class="one-td">
+                        ${nameOrder(img3,'Отправлен')}
+                        ${orderName(orderTwo)}
+                    </td>
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
@@ -208,8 +222,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img6,'На упаковке')}
-                    ${orderName(order)}
+                    <td class="one-td">
+                        ${nameOrder(img6,'На упаковке')}
+                        ${orderName(order)}
+                    </td>                   
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>
@@ -234,8 +250,10 @@ export function wrapOrder() {
                     </td>
                 </tr>
                 <tr>
-                    ${nameOrder(img7,'Упакован')}
-                    ${orderName(orderTwo)}
+                    <td class="one-td">
+                        ${nameOrder(img7,'Упакован')}
+                        ${orderName(orderTwo)}
+                    </td>                    
                     <td>
                         <div class="quantity-order">2 шт.</div>
                     </td>

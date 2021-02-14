@@ -2,6 +2,7 @@ import {transitionWrapper} from "../../common/transitionTitle";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
 import {wrapOrder} from "./components/wrapOrder";
+import {wrapOrderMobail} from './components/wrapOrderMobail'
 
 export  function ordersStatusTemplate() {
     return `
@@ -19,7 +20,12 @@ export  function ordersStatusTemplate() {
           
             
             <div id="personal-area-content-js">
-                ${wrapOrder()}
+                <div class="desktop">
+                    ${wrapOrder()}
+                </div>
+                <div class="mobail">
+                    ${wrapOrderMobail()}              
+                </div>
             </div>
         </div>
     `
