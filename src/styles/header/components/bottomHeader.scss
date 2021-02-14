@@ -73,6 +73,7 @@
     }
   }
   @media (max-width: $tablet-breakpoint) {
+    background-image: url("../images/header/1024-46.jpg");
     .mobile-header {
       display: block;
     }
@@ -96,7 +97,9 @@
     .logo-img {
       height: 27px;
     }
-
+  }
+  @media (max-width: 414px) {
+    background-image: url("../images/header/414-46.jpg");
   }
 }
 
