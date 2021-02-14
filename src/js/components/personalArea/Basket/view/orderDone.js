@@ -16,8 +16,8 @@ export function orderDone() {
                 <p>Если у Вас остались вопросы, свяжитесь с нами по телефонам <a href="">8 (800) 301-25-75 </a>
                 <br>или <a href="">8 (499) 608-89-25</a>  в рабочее время.</p>
                 <div class="wrapper-button">
-                    <div>На главную</div>
-                    <div>История заказов</div>
+                    <a href="/" class="main-button">На главную</a>
+                    <a href="/#personal-area/order-status" class="history-order-button">История заказов</a>
                 </div>
             </div>
             <img src="${call}" alt="">

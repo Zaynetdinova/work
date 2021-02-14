@@ -23,4 +23,39 @@
       white-space: nowrap;
     }
   }
+  .wrapper-button {
+    display: flex;
+    margin-top: 30px;
+    .main-button,
+    .history-order-button {
+      border-radius: 4px;
+      font-size: 15px;
+      line-height: 17px;
+      width: 167px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .main-button {
+      background: #FFFFFF;
+      color: #3D3D3C;
+      border: 1px solid #CDCDCD;
+      margin-right: 5px;
+      &:hover {
+        border: 1px solid #AB064E;
+        color: #AB064E;
+      }
+    }
+    .history-order-button {
+      background: #AB064E;
+      color: #FFFFFF;
+      &:hover {
+        background: #C00A5A;
+        border: 1px solid #C00A5A;
+      }
+    }
+  }
 }

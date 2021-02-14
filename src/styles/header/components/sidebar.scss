@@ -62,9 +62,8 @@
   }
   .extra {
     background: $baseColor;
-    max-width: 800px;
+    min-width: 800px;
     width: 100%;
-    //display: none;
   }
   .extra-mobile {
     background: $baseColor;

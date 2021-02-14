@@ -3,10 +3,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px 40px 40px 30px;
-    overflow: auto;
+    padding: 34px 40px 40px 30px;
     height: 100vh;
-
+    overflow-y: scroll;
 
     .card {
       display: flex;

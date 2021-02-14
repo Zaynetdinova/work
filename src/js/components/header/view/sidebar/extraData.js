@@ -11,7 +11,9 @@ export const extraDataWomen = {
 			{title: 'Летние', href: ''},
 			{title: 'Короткие', href: ''},
 			{title: 'Выпускные', href: ''},
-			{title: 'Повседневные', href: ''},
+			{title: 'Кружевные', href: ''},
+			{title: 'Пляжные', href: ''},
+			{title: 'Свадебные', href: ''},
 		]
 	},
 
@@ -118,14 +120,13 @@ export const extraDataWomen = {
 			{title: 'Блузы', href: ''},
 			{title: 'Джемпера', href: ''},
 			{title: 'Праздничное', href: ''},
-			{title: 'Коктейльные', href: ''},
-			{title: 'Вечерние', href: ''},
-			{title: 'Длинные', href: ''},
-			{title: 'Сарафаны', href: ''},
-			{title: 'Летние', href: ''},
-			{title: 'Короткие', href: ''},
-			{title: 'Выпускные', href: ''},
-			{title: 'Повседневные', href: ''},
+			{title: 'Кофточки', href: ''},
+			{title: 'Рубашки', href: ''},
+			{title: 'Поло', href: ''},
+			{title: 'Водолазки', href: ''},
+			{title: 'Топы и майки', href: ''},
+			{title: 'Лонгсливы', href: ''},
+			{title: 'Туники', href: ''},
 		]
 	},
 
@@ -136,12 +137,9 @@ export const extraDataWomen = {
 			{title: 'Бриджи, капри', href: ''},
 			{title: 'Леггинсы', href: ''},
 			{title: 'Шорты', href: ''},
-			{title: 'Длинные', href: ''},
-			{title: 'Сарафаны', href: ''},
-			{title: 'Летние', href: ''},
-			{title: 'Короткие', href: ''},
-			{title: 'Выпускные', href: ''},
-			{title: 'Повседневные', href: ''},
+			{title: 'Кюлоты', href: ''},
+			{title: 'Тайтсы', href: ''},
+			{title: 'Велосипедки', href: ''},
 		]
 	}
 }

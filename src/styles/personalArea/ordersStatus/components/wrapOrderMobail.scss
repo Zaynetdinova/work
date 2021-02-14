@@ -30,6 +30,7 @@
         color: #777777;
         display: flex;
         align-items: center;
+        cursor: pointer;
         .arrow {
           background-image: url("../images/icons/arrow5.svg");
           background-repeat: no-repeat;
@@ -38,6 +39,9 @@
           height: 10px;
           transform: rotate(90deg);
           margin-left: 7px;
+        }
+        .hide {
+          display: none;
         }
       }
     }
@@ -104,6 +108,19 @@
       background-repeat: repeat-x;
     }
     &.show-info {
+      .wrap-common {
+        .more-details {
+          .hide {
+            display: block;
+          }
+          .more {
+            display: none;
+          }
+          .arrow {
+            transform: rotate(-90deg);
+          }
+        }
+      }
       .see-more-details {
         display: block;
       }

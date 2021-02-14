@@ -27,7 +27,8 @@ export function wrapOrderMobail() {
 											</div>
 									</div>
 									<div data-parent-order-js class="more-details" id="more-details">
-											<div>Подробнее</div>
+											<span class="more">Подробнее</span>
+											<span class="hide">Скрыть</span>
 											<div class="arrow"></div>
 									</div>
 							</div>

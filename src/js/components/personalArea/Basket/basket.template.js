@@ -19,7 +19,7 @@ export function basketTemplate() {
             </div>
 
             <div id="personal-area-content-js">
-                ${basketPageTemplate()}
+                ${orderDone()}
             </div>
         </div>
     `
