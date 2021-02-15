@@ -5,8 +5,9 @@
 
     .mobile {
       display: none;
-      table {
+      .wrapper-basket-mobile {
         width: 100%;
+        margin-bottom: 20px;
       }
       .wrapper-product {
         display: flex;
@@ -27,6 +28,13 @@
           justify-content: space-between;
           .wrapper-favorites {
             margin-bottom: 35px;
+            .favoritesProduct {
+              .img-like {
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+              }
+            }
           }
           .name-brand {
             font-weight: bold;
@@ -57,6 +65,80 @@
         .close {
           width: 10px;
           height: 10px;
+        }
+      }
+      .wrapper-characteristics-good {
+        display: flex;
+        margin-bottom: 50px;
+        .post1 {
+          width: 20%;
+        }
+        .post2 {
+          width: 40%;
+        }
+        .post3 {
+          width: 40%;
+        }
+        .post1,
+        .post2,
+        .post3 {
+          .col {
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 0;
+            border-top: 2px solid #D9D9D9;
+            border-bottom: 2px solid #D9D9D9;
+          }
+          .size-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 68px;
+            background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 4px 2px;
+            background-repeat: repeat-x;
+            .quantity {
+              .quantity-number {
+                margin: 0;
+              }
+              .input-count-number {
+                max-width: 32px;
+              }
+            }
+            .wrap-sum-pay {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              font-size: 14px;
+              line-height: 15px;
+              width: 95px;
+              .wrapper-sale {
+                display: flex;
+                margin-bottom: 2px;
+                .sale-sum {
+                  color: #AB064E;
+                  font-size: 12px;
+                  line-height: 13px;
+                  margin-left: 5px;
+                }
+              }
+              .number-sum {
+                font-weight: bold;
+              }
+              .sum {
+                padding-bottom: 2px;
+                border-bottom: 0.5px solid #B7B7B7;
+                margin-bottom: 3px;
+              }
+            }
+
+            &:last-child {
+              background-image: none;
+              border-bottom: 2px solid #D9D9D9;
+            }
+          }
         }
       }
     }

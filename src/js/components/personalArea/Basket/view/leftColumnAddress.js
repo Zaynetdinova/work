@@ -6,7 +6,13 @@ export function leftColumnAddress() {
     return `
     <div data-parent-delivery-block-js class="left-column-address">
         <section data-open-section-js>
-            ${titleImg(place,'Выберите адрес доставки')}
+            <div class="title-img">
+                <div class="img-wrapper">
+                    <img src="${place}" alt="">
+                    <div>Выберите адрес доставки</div>
+                </div>
+                <div class="arrow"></div>
+            </div>
         </section>                 
         
         <section data-content-js class="content">
