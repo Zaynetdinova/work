@@ -1,5 +1,22 @@
 .left-column-address {
-
+  .title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .arrow {
+      background-image: url("../images/icons/arrow5.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 10px;
+      height: 10px;
+      transform: rotate(90deg);
+      display: none;
+    }
+  }
   .wrap-close-text {
     display: flex;
     align-items: baseline;
@@ -36,11 +53,16 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .content {
       display: none;
 
       &.show-content {
+        display: block;
+      }
+    }
+    .title-img {
+      .arrow {
         display: block;
       }
     }

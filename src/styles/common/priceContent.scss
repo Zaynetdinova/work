@@ -24,7 +24,7 @@
       font-size: 12px;
       line-height: 106.8%;
       color: #AB064E;
-      margin-left: 6px;
+      margin-left: 5px;
     }
   }
   .sale-price {
@@ -38,5 +38,16 @@
   }
   @media (max-width: 1200px) {
     padding: 11px 0 11px 10px;
+    .action {
+      .old-price,
+      .new-price {
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
+    .price {
+      font-size: 13px;
+      line-height: 14px;
+    }
   }
 }

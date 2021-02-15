@@ -15,51 +15,50 @@ import {status} from './iconTitle'
 
 export function wrapOrderMobail() {
 	return `
-			<div class="wrap-order-mobail">
-					<div data-oder-name-page class="order-name-mobail">
-							<div class="wrap-common">
-									<div>
-											${nameOrder(img1, 'Новый')}
-											${orderName(order)}
-											<div class="pay-order">
-													<div class="way-pay">Ожидается оплата</div>
-													<a class="pay-online" href="">Оплатить онлайн</a>
-											</div>
-									</div>
-									<div data-parent-order-js class="more-details" id="more-details">
-											<span class="more">Подробнее</span>
-											<span class="hide">Скрыть</span>
-											<div class="arrow"></div>
-									</div>
-							</div>
-							<div class="see-more-details">
-									<div class="wrap-sum-col">
-											<div class="post">
-													<div class="col">Количество</div>
-													<div class="sum">2 шт.</div>
-											</div>
-											<div class="post">
-													<div class="col">Сумма</div>
-													<div class="sum">2 468,00 ₽</div>
-											</div>
-									</div>
-									<div class="wrapper-icon-title">
-											${status(exampleOne)}
-									</div>
-									<div class="button-see-order">Посмотреть заказ</div>
-							</div>
-							<div class="title-add">
-									<img src="${plus}" alt="">
-									<div><a href="">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
-              </div>
-              <div class="title-add">
-									<img src="${plus}" alt="">
-									<div><a href="">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
-              </div>
-							<div class="line"></div>
+		<div class="wrap-order-mobail">
+			<div data-oder-name-page class="order-name-mobail">
+				<div class="wrap-common">
+					<div>
+						${nameOrder(img1, 'Новый')}
+						${orderName(order)}
+						<div class="pay-order">
+							<div class="way-pay">Ожидается оплата</div>
+							<a class="pay-online" href="">Оплатить онлайн</a>
+						</div>
 					</div>
-					
-			</div>
+					<div data-parent-order-js class="more-details" id="more-details">
+						<span class="more">Подробнее</span>
+						<span class="hide">Скрыть</span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+				<div class="see-more-details">
+					<div class="wrap-sum-col">
+						<div class="post">
+							<div class="col">Количество</div>
+							<div class="sum">2 шт.</div>
+						</div>
+						<div class="post">
+							<div class="col">Сумма</div>
+							<div class="sum">2 468,00 ₽</div>
+						</div>
+					</div>
+					<div class="wrapper-icon-title">
+						${status(exampleOne)}
+					</div>
+					<div class="button-see-order">Посмотреть заказ</div>
+				</div>
+				<div class="title-add">
+					<img src="${plus}" alt="">
+					<div><a href="">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
+				</div>
+				<div class="title-add">
+					<img src="${plus}" alt="">
+					<div><a href="">Дозаказ #12345 от 01.12.2020</a> – <b>186 шт. / 12 345,67 ₽</b></div>
+				</div>
+				<div class="line"></div>
+			</div>	
+		</div>
 	`
 }
 

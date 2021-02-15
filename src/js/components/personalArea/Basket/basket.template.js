@@ -1,8 +1,8 @@
 import {transitionWrapper} from "../../common/transitionTitle";
-import {basketPageTemplate} from "./view/basketPage.template";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
-import {orderDone} from "./view/orderDone";
+import {basketPageTemplate} from "./view/basketPage.template";
+
 
 export function basketTemplate() {
   return `
@@ -19,7 +19,7 @@ export function basketTemplate() {
             </div>
 
             <div id="personal-area-content-js">
-                ${orderDone()}
+                ${basketPageTemplate()}
             </div>
         </div>
     `
@@ -33,5 +33,3 @@ let link = [
   }
 ]
 
-// ${basketPageTemplate()}
-// ${orderDone()}

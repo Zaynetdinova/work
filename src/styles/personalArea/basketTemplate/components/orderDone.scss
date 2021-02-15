@@ -2,7 +2,11 @@
   margin-bottom: 140px;
   font-size: 14px;
   line-height: 20px;
-  display: flex;
+  .flex-order-done {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   .wrapper-title {
     display: flex;
     align-items: center;
@@ -55,6 +59,89 @@
       &:hover {
         background: #C00A5A;
         border: 1px solid #C00A5A;
+      }
+    }
+  }
+  .img-order-mobile,
+  .img-order {
+    background-image: url("../images/icons/call.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-order {
+    width: 703px;
+    height: 383px;
+  }
+  .img-order-mobile {
+    display: none;
+    width: 304px;
+    height: 200px;
+    margin: 25px auto 0 auto;
+    background-position: 50% 0;
+  }
+  .wrapper-card {
+    margin-top: 70px;
+    .Common-card {
+      .slider-pointer {
+        display: none;
+      }
+      .Bestsellers-header .line {
+        width: 16px;
+        border-bottom: 2px solid #C8C8C8;
+        transform: rotate(90deg);
+        margin: 0;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    margin-bottom: 190px;
+    .img-order {
+      background-image: url("../images/icons/call.png");
+      background-position: 25%;
+      width: 435px;
+      height: 291px;
+    }
+
+  }
+  @media (max-width: 1000px) {
+    .img-order {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 200px;
+    .img-order-mobile {
+      display: block;
+      background-position: -85%;
+    }
+    p {
+      width: 100%;
+      padding-right: 15px;
+    }
+    .wrapper-button {
+      justify-content: center;
+      .main-button,
+      .history-order-button {
+        width: 155px;
+        height: 40px;
+      }
+    }
+  }
+  @media (max-width: 374px) {
+    .img-order-mobile {
+      background-position: -30%;
+    }
+    p {
+      padding-right: 0;
+    }
+    .wrapper-button {
+      width: 100%;
+      justify-content: normal;
+      .main-button,
+      .history-order-button {
+        width: 142px;
+        height: 40px;
       }
     }
   }
