@@ -31,7 +31,10 @@ export class ExtraMenuItemShow {
 		if (id.toLowerCase().indexOf("women") != -1) {
 			this.women(id)
 		}
+	}
 
+	closeExtraMenu() {
+		this.$extraRoot.innerHTML = ''
 	}
 
 	women(id) {
