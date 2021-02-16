@@ -1,4 +1,5 @@
 import {headerStorage} from '../../../core/storage/header'
+import {disableBodyScroll, resolveBodyScroll} from '../../../core/utils/utils'
 
 export class HeaderFunctions {
 	constructor() {
@@ -11,14 +12,6 @@ export class HeaderFunctions {
 		this.inputMobile = document.querySelector('#mobile-search-input-js')
 		this.result = document.querySelector('#mobile-search-result')
 
-		//
-		this.sidebar = document.getElementById('sidebar-js')
-		this.cancelMenu = this.sidebar.querySelector(`[data-id='cancel-js']`)
-		this.buttonMenu = document.querySelector('#burger-menu')
-		this.$parentExtraMobile = document.querySelector('#open-mobile-extra-js')
-		this.$cancelButton = document.querySelector('#sub-categories-menu-close')
-		//
-
 		this.userData = document.querySelector('#wrapper-user-data-view-js')
 
 		//
@@ -29,10 +22,6 @@ export class HeaderFunctions {
 
 	eventListeners() {
 		this.deleteValue.addEventListener('click', () => this.clearInput())
-		this.cancelMenu.addEventListener('click', () => this.menuClose())
-
-		console.log(this.$cancelButton, this.$parentExtraMobile)
-		this.$cancelButton.addEventListener('click', () => this.showMobileExtraMenu())
 	}
 
 
@@ -59,16 +48,16 @@ export class HeaderFunctions {
 	mobileSearchOpen() {
 		if(this.$mobileSearch.classList.contains('display-block')) {
 			this.$mobileSearch.classList.remove('display-block')
-			document.body.classList.remove('Com-over-hidden')
+			resolveBodyScroll()
 		} else {
 			this.$mobileSearch.classList.add('display-block')
-			document.body.classList.add('Com-over-hidden')
+			disableBodyScroll()
 		}
 	}
 
 	mobileSearchClose() {
 		this.$mobileSearch.classList.remove('display-block')
-		document.body.classList.remove('Com-over-hidden')
+		resolveBodyScroll()
 	}
 
 	mobileSearchInput(e) {
@@ -93,19 +82,50 @@ export class HeaderFunctions {
 	infoOpen() {
 		if(this.$infoButton.classList.contains('info-mobail-active-js')) {
 			this.$infoButton.classList.remove('info-mobail-active-js')
-			document.body.classList.remove('Com-over-hidden')
+			resolveBodyScroll()
 		} else {
 			this.$infoButton.classList.add('info-mobail-active-js')
-			document.body.classList.add('Com-over-hidden')
+			disableBodyScroll()
 		}
 	}
 
 	infoClose() {
 		this.$infoButton.classList.remove('info-mobail-active-js')
-		document.body.classList.remove('Com-over-hidden')
+		resolveBodyScroll()
 	}
 
-	// menu Open
+	//
+	showRegistryUserData() {
+		this.userData.classList.toggle('wrapper-user-data-view-show')
+	}
+
+	closeRegistryUserData() {
+		this.userData.classList.remove('wrapper-user-data-view-show')
+	}
+}
+
+export class HeaderMenu {
+	constructor() {
+		this.header = headerStorage.extraMenuShow()
+		//
+		this.sidebar = document.getElementById('sidebar-js')
+		this.cancelMenu = this.sidebar.querySelector(`[data-id='cancel-js']`)
+		this.buttonMenu = document.querySelector('#burger-menu')
+		this.$parentExtraMobile = document.querySelector('#open-mobile-extra-js')
+		this.$cancelButton = document.querySelector('#sub-categories-menu-close')
+
+		// закрытие при нажатие на background (реализовать)
+		this.$closeBackground = document.querySelector('#menu-background-js')
+
+		this.eventListeners()
+	}
+
+	eventListeners() {
+		this.cancelMenu.addEventListener('click', () => this.menuClose())
+		this.$cancelButton.addEventListener('click', () => this.showMobileExtraMenu())
+		this.$closeBackground.addEventListener('click', () => this.classListRemove())
+	}
+
 	menuOpen() {
 		if(this.buttonMenu.classList.contains('show')) {
 			this.classListRemove()
@@ -121,15 +141,23 @@ export class HeaderFunctions {
 	classListRemove () {
 		this.buttonMenu.classList.remove('show')
 		this.sidebar.classList.remove('Sidebar-open-js')
-		document.body.classList.remove('Com-over-hidden')
+		resolveBodyScroll()
 		this.closeMobileExtraMenu()
-		headerStorage.openSidebar().close()
+		this.header.closeExtraMenu()
+
+		// тестовый вариант
+		const elements = document.querySelectorAll('#point-js')
+		elements.forEach((item) => {
+			item.classList.remove('open-category-js')
+		})
+		//
+		console.log('test')
 	}
 
 	classListAdd() {
 		this.buttonMenu.classList.add('show')
 		this.sidebar.classList.add('Sidebar-open-js')
-		document.body.classList.add('Com-over-hidden')
+		disableBodyScroll()
 	}
 
 	showMobileExtraMenu() {
@@ -143,11 +171,5 @@ export class HeaderFunctions {
 	}
 
 	//
-	showRegistryUserData() {
-		this.userData.classList.toggle('wrapper-user-data-view-show')
-	}
 
-	closeRegistryUserData() {
-		this.userData.classList.remove('wrapper-user-data-view-show')
-	}
 }

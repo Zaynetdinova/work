@@ -1,10 +1,11 @@
 import {ExtraMenuItemShow} from '../../components/header/js/ExtraMenuItemShow'
+import {headerStorage} from '../storage/header'
 
 export class openSidebarTest {
   constructor() {
     this.$points = document.querySelectorAll('.point-js')
     this.extraInit = new ExtraMenuItemShow()
-
+    this.header = headerStorage.headerMenu()
     this.initListening()
   }
 
@@ -12,33 +13,22 @@ export class openSidebarTest {
     this.$points.forEach((item) => {
       item.addEventListener('click', (e) =>  this.defineCategories(e, item.dataset.type))
     })
-
-
   }
 
-  defineCategories(e, category) {
-    e.preventDefault()
+  defineCategories(e) {
     const subCategories = e.target.closest('[data-parent-category]')
-    const mainCategory = document.querySelector(`[data-type=${category}]`)
+    const mainCategory = e.target.closest('[data-point-parent]')
 
     subCategories ? this.openSubcategories(subCategories) : this.openMainCategories(mainCategory)
   }
 
   openSubcategories(subCategories) {
-
-    // mobile (open extra)
-    if(document.documentElement.clientWidth <= 768 && subCategories && subCategories.dataset.subcategory == undefined) {
-      this.handleClickMobileMenu(subCategories.id)
-      return
-    }
-
-    if (subCategories !== null && subCategories.dataset.category != undefined) {
-      subCategories.classList.toggle('show')
-      return
-    }
+    console.log(subCategories.closest('[data-point-header]'))
+    subCategories.classList.toggle('show')
   }
 
   openMainCategories(mainCategory) {
+    console.log('open')
     if (mainCategory.classList.contains('open-category-js')) {
       this.close()
     } else {

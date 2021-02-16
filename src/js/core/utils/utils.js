@@ -10,3 +10,12 @@ export function toggleShowInformation(className) {
   const $mainElem = document.querySelector(className)
   $mainElem.classList.toggle('show-info')
 }
+
+export function disableBodyScroll() {
+  console.log('Com-over-hidden')
+  document.body.classList.add('Com-over-hidden')
+}
+
+export function resolveBodyScroll() {
+  document.body.classList.remove('Com-over-hidden')
+}

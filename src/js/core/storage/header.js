@@ -1,6 +1,7 @@
-import {HeaderFunctions} from '../../components/header/js/HeaderFunctions'
+import {HeaderFunctions, HeaderMenu} from '../../components/header/js/HeaderFunctions'
 import {ExtraMenuItemShow} from '../../components/header/js/ExtraMenuItemShow'
-import {openSidebarTest} from '../JS/openSidebar'
+
+import {HeaderStateRegulation} from '../../components/header/js/headerStateRegulation'
 
 export const headerStorage = {
 	headerFunctions: () => {
@@ -9,8 +10,11 @@ export const headerStorage = {
 	extraMenuShow: () => {
 		return new ExtraMenuItemShow()
 	},
-	openSidebar: () => {
-		return new openSidebarTest()
+	headerMenu: () => {
+		return new HeaderMenu()
+	},
+	headerStateRegulation: () => {
+		return new HeaderStateRegulation()
 	}
 }
 

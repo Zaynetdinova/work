@@ -17,6 +17,8 @@ export class Header extends Component {
 
   afterInitComponent() {
     this.header = headerStorage.headerFunctions()
+    this.headerMenu = headerStorage.headerMenu()
+    this.headerStateRegulation = headerStorage.headerStateRegulation()
   }
 
   onClick(e) {
@@ -26,31 +28,19 @@ export class Header extends Component {
 
       switch (element.id) {
         case 'burger-menu':
-          this.header.mobileSearchClose()
-          this.header.closeRegistryUserData()
-          this.header.infoClose()
-          this.header.menuOpen()
+          this.headerStateRegulation.init('menuOpen')
           break;
         case 'mobile-search-button-js':
-         this.header.menuClose()
-          this.header.closeRegistryUserData()
-          this.header.infoClose()
-          this.header.mobileSearchOpen()
+         this.headerStateRegulation.init('mobileSearchOpen')
           break;
         case 'desktop-search-js':
           this.header.desktopSearchActive(element)
           break;
         case 'icon-info-button-js':
-          this.header.mobileSearchClose()
-          this.header.menuClose()
-          this.header.closeRegistryUserData()
-          this.header.infoOpen()
+          this.headerStateRegulation.init('infoOpen')
           break;
         case 'registry-user-mobile-button-js':
-          this.header.menuClose()
-          this.header.mobileSearchClose()
-          this.header.infoClose()
-          this.header.showRegistryUserData()
+          this.headerStateRegulation.init('showRegistry')
           break;
       }
     }
@@ -77,6 +67,8 @@ export class Header extends Component {
   }
 
 }
+
+
 
 
 

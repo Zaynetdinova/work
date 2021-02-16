@@ -1,10 +1,11 @@
 import {sidebarChoice} from "./sidebarChoice";
 
-export function sidebarPoint(point, arrow = '') {
+export function sidebarPoint(point, arrow = '', type = '') {
   const items = point.map((item) => {
     const {category, subcategory = false, img} = item
     return `
-        <article id="point-js" class="point-js" data-type="${item.id}">
+        <article data-point-parent data-point-${type}
+        id="point-js" class="point-js" data-type="${item.id}">
             <div class="point">
                 <div class='name'>
                     ${img ? `<img class="sidebar-img" src=${img} alt='icon'>` : ''}

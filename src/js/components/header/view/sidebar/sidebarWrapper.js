@@ -1,4 +1,3 @@
-
 import icon1 from '../../../../../images/icons/woman.svg'
 import icon2 from '../../../../../images/icons/girl.svg'
 import icon3 from '../../../../../images/icons/man.svg'
@@ -18,7 +17,7 @@ export function sidebarWrapper() {
           <div data-parent-point class='points-wrapper'>
             <div class='points'>
                 <div class="points-header">
-                    ${sidebarPoint(point)}
+                    ${sidebarPoint(point, '', 'header')}
                 </div>
             </div>
           </div>   
@@ -36,7 +35,7 @@ export function sidebarWrapper() {
                         
       </div>
     </div>
-    <div class="background" data-id="background-js"></div>  
+    <div id="menu-background-js" class="background" data-id="background-js"></div>  
   </section>
   `
 }
