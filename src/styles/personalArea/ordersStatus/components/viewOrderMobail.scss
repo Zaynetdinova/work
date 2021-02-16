@@ -1,0 +1,110 @@
+.view-order-mobile {
+  margin-bottom: 165px;
+  font-size: 14px;
+  line-height: 20px;
+  .wrapper-order-number {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .wrapper-text {
+      text-align: start;
+      align-items: normal;
+      .order {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+      }
+      .assembled {
+        color: #009295;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 145px;
+      }
+      .invoice-contract {
+        text-decoration-line: underline;
+        color: #777777;
+        display: flex;
+        align-items: flex-end;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .two-string {
+        margin-top: 15px;
+      }
+      .wrapper-refund-amount {
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        .refund-amount-text {
+          margin-bottom: 3px;
+        }
+        .refund-amount-sum {
+          color: #AB064E;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .wrapper-order-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .wrapper-product {
+    display: flex;
+    .img-product {
+      width: 87px;
+      height: 131px;
+      margin-right: 10px;
+    }
+    .wrapper-info {
+      .example-wrapper {
+        display: none;
+      }
+      .infoProduct {
+        line-height: 17px;
+        .infoType {
+          line-height: 14px;
+          font-size: 12px;
+        }
+      }
+      .name-brand {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: capitalize;
+      }
+      .name-product {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 12px;
+      }
+      .example-wrapper {
+        display: block;
+        .icon-title-status {
+          .wrapper-icon-title {
+            margin-top: 5px;
+            .icon-title {
+              margin: 0 5px 0 0;
+              width: 100%;
+              img {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .more-text {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #777777;
+  }
+}

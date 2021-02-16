@@ -1,0 +1,50 @@
+.not-included-table {
+  width: 100%;
+  .title-main-string {
+    td {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    .first-string {
+      text-align: center;
+      &.name-percent {
+        text-align: start;
+        width: 25%;
+      }
+      &.no-order {
+        width: 52%;
+      }
+    }
+  }
+  .auxiliary-unit-top {
+    height: 30px;
+    .line-top {
+      border-top: 2px solid #AB064E;
+    }
+  }
+  .auxiliary-unit-bottom {
+    height: 28px;
+    td {
+      background-image: linear-gradient(to right, #AB064E 33%, rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 4px 2px;
+      background-repeat: repeat-x;
+    }
+  }
+  @media (max-width: 768px) {
+    .title-main-string {
+      .first-string {
+        &.name-percent {
+          text-align: start;
+          width: 25%;
+        }
+        &.no-order {
+          width: 43%;
+        }
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

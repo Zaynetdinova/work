@@ -3,7 +3,9 @@
   @import "components/headerOrder";
   @import "components/wrapOrder";
   @import "components/wrapOrderMobail";
-  .mobail {
+  @import "components/viewOrder";
+  @import "components/viewOrderMobail";
+  .mobile {
     display: none;
   }
   .pay-order {
@@ -76,7 +78,7 @@
     .desktop {
       display: none;
     }
-    .mobail {
+    .mobile {
       display: block;
     }
   }

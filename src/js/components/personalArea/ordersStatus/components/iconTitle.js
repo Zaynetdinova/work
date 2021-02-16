@@ -1,6 +1,6 @@
 export function iconTitle(data) {
     return `
-        <td>
+        <td class="icon-title-status">
             <div class="wrapper-icon-title">
                 ${status(data)}
             </div>
