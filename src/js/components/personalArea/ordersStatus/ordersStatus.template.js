@@ -2,7 +2,9 @@ import {transitionWrapper} from "../../common/transitionTitle";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
 import {wrapOrder} from "./components/wrapOrder";
-import {wrapOrderMobail} from './components/wrapOrderMobail'
+import {wrapOrderMobile} from './components/wrapOrderMobail'
+import {viewOrder} from "./components/viewOrder";
+import {viewOrderMobile} from "./components/viewOrderMobail";
 
 export  function ordersStatusTemplate() {
     return `
@@ -18,13 +20,12 @@ export  function ordersStatusTemplate() {
                 ${navigationMobile('/#personal-area/personal-data','история заказов','/#personal-area/discount-and-bonuses')}
             </div>
           
-            
             <div id="personal-area-content-js">
                 <div class="desktop">
-                    ${wrapOrder()}
+                    ${viewOrder()}
                 </div>
-                <div class="mobail">
-                    ${wrapOrderMobail()}              
+                <div class="mobile">
+                    ${viewOrderMobile()}
                 </div>
             </div>
         </div>
@@ -37,3 +38,14 @@ let link = [
         link: '/#personal-area/order-status'
     }
 ]
+
+
+
+
+
+//     <div class="desktop">
+//     ${wrapOrder()}
+//     </div>
+// <div class="mobile">
+//     ${wrapOrderMobile()}
+// </div>

@@ -13,7 +13,7 @@ import confirm from '../../../../../images/icons/orderStatus/confirm.svg'
 import nonConfirm from '../../../../../images/icons/orderStatus/not-c.svg'
 import {status} from './iconTitle'
 
-export function wrapOrderMobail() {
+export function wrapOrderMobile() {
 	return `
 		<div class="wrap-order-mobail">
 			<div data-oder-name-page class="order-name-mobail">

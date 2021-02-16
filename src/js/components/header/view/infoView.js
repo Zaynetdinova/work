@@ -16,17 +16,26 @@ let point = [
     title: 'О ПОКУПКАХ',
     id: 'purchases',
     img: false,
-    category: [{
-      category: 'Размеры'
-    },
+    category: [
       {
-        category: 'Доставка'
+        category: 'Размеры',
+        link: '/#information/size'
       },
       {
-        category: 'Оплата'
+        category: 'Доставка',
+        link: '/#information/about-shopping'
       },
       {
-        category: 'Ответы на вопросы'
+        category: 'Оплата',
+        link: '/#information/about-payment'
+      },
+      {
+        category: 'Ответы на вопросы',
+        link: '/#information/question-answers'
+      },
+      {
+        category: 'Возврат',
+        link: '/#information/cooperation'
       },
     ]
   },
@@ -37,13 +46,16 @@ let point = [
     img: false,
     category: [
       {
-        category: 'О нас'
+        category: 'О нас',
+        link: '/#information/about-us'
       },
       {
-        category: 'Условия работы'
+        category: 'Условия работы',
+        link: '/#information/working-condition'
       },
       {
-        category: 'Контакты'
+        category: 'Контакты',
+        link: '/#information/contacts'
       },
     ]
   },
@@ -53,7 +65,8 @@ let point = [
     img: false,
     category: [
       {
-        category: 'Поставщикам'
+        category: 'Поставщикам',
+        link: '/#information/cooperation'
       },
     ]
   },
