@@ -16,6 +16,11 @@ export class openSidebarTest {
   }
 
   defineCategories(e) {
+    const $element = e.target.closest('[data-point-element-choice-js]')
+    if($element && $element.closest('[data-point-header]')) {
+      this.header.pointHandler(e)
+      return
+    }
     const subCategories = e.target.closest('[data-parent-category]')
     const mainCategory = e.target.closest('[data-point-parent]')
 
@@ -45,17 +50,6 @@ export class openSidebarTest {
     })
   }
 
-
-  handleClickMobileMenu(id) {
-    // попробовать перенести в конструктор
-    const extra = document.querySelector('#open-mobile-extra-js')
-    //
-    this.extraInit.defineCategory(id)
-    // testData
-
-    extra.classList.remove( 'show-extra-cancel')
-    extra.classList.add('show-extra-mobile')
-  }
 }
 
 
