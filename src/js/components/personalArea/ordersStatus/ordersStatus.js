@@ -22,6 +22,12 @@ export class OrdersStatus extends Component {
                 case 'more-details':
                     toggleShowInformation('[data-oder-name-page]')
                     break;
+                case 'more-details-view-order-page':
+                    toggleShowInformation('[data-view-oder-page]')
+                    break;
+                case 'more-details-not-included-table':
+                    toggleShowInformation('[data-not-included-page]')
+                    break;
             }
         }
     }
