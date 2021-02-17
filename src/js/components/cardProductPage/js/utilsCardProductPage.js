@@ -76,8 +76,18 @@ export class UtilsCardProductPage {
 			const $img = imgWrapper.querySelector('.zoom-img-js')
 			const bounds = imgWrapper.getBoundingClientRect();
 			const x = event.clientX - bounds.left;
-			const y = event.clientY - bounds.top;
-			$img.setAttribute("style", `top: -${y}px; left: -${x}px;`);
+			const y = event.clientY - bounds.top
+
+			const topSize = defineSize($img.clientHeight, bounds.height, y)
+			const leftSize = defineSize($img.clientWidth, bounds.width, x)
+
+			$img.setAttribute("style", `top: -${topSize}px; left: -${leftSize}px; height: ${imgWrapper.clientHeight * 2}px;`);
+		}
+
+		function defineSize(img, wrapper, type) {
+			const difference = img - wrapper
+			const size = type * 100 / wrapper
+			return  size * difference / 100
 		}
 	}
 }
