@@ -1,4 +1,3 @@
-import card from '../../../../../images/information/card.png'
 import cash from '../../../../../images/icons/cash-color.svg'
 import noncash from '../../../../../images/icons/noncash-color.svg'
 
