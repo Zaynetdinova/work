@@ -54,13 +54,6 @@
   }
 
   @media (max-width: 767px) {
-    .content {
-      display: none;
-
-      &.show-content {
-        display: block;
-      }
-    }
     .title-img {
       .arrow {
         display: block;

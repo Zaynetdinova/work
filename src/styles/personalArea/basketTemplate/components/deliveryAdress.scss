@@ -7,6 +7,21 @@
   .address {
     width: 50%;
     margin-right: 8px;
+    .left-column-address {
+      .content {
+        display: none;
+      }
+      &.show-content {
+        .content {
+          display: block;
+        }
+        .title-img {
+          .arrow {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
   }
   .right-column {
     width: 50%;

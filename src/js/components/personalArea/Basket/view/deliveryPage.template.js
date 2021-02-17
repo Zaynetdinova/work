@@ -16,7 +16,7 @@ export function deliveryPageTemplate() {
                 ${basketDeliveryBlock(data)}
             </div>
             <div class="delivery-address">
-                <div class="address">
+                <div data-parent-delivery-block-js class="address">
                     ${leftColumnAddress()}
                 </div>
                 

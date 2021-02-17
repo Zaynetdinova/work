@@ -5,7 +5,7 @@ export function basketDeliveryBlock(data) {
         const {imgIcon, title, text, inputs = [] } = item
         return `
             <div data-parent-delivery-block-js class="basketDeliveryBlock">
-                <div class="wrap">
+                <div data-content-js class="wrap">
                     <section data-open-section-js class="title">
                         <div class="img-title">
                             <img src="${imgIcon}" alt="">
@@ -14,7 +14,7 @@ export function basketDeliveryBlock(data) {
                         <div class="arrow"></div>
                     </section>
                     
-                    <section data-content-js class="content">
+                    <section  class="content">
                        <p class="text">${text}</p>
                           ${inputs.map((item) => {
                           return  inputChoice(item)

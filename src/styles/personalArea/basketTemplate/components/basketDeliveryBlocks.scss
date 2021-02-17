@@ -48,6 +48,7 @@
     }
   }
   @media (max-width: 1024px) {
+    cursor: none;
     .wrap {
       .text {
         margin-bottom: 15px;
@@ -83,13 +84,18 @@
           display: block;
         }
       }
-    }
-
-    .content {
-      display: none;
-
+      .content {
+        display: none;
+      }
       &.show-content {
-        display: block;
+        .content {
+          display: block;
+        }
+        .title {
+          .arrow {
+            transform: rotate(-90deg);
+          }
+        }
       }
     }
   }

@@ -108,13 +108,13 @@
         .wrapper-img-fourth {
           padding-bottom: 24%;
           .img-fourth {
-            background-image: url("../images/information/good1.png");
+            background-image: url("../images/information/good.jpg");
           }
         }
         .wrapper-img-fifth {
           padding-bottom: 30%;
           .img-fifth {
-            background-image: url("../images/information/payment.png");
+            background-image: url("../images/information/payment.jpg");
           }
         }
         .wrapper-img-fifth-2 {
@@ -124,9 +124,9 @@
           }
         }
         .wrapper-img-sixth {
-          padding-bottom: 34%;
+          padding-bottom: 27%;
           .img-sixth {
-            background-image: url("../images/information/card-product.png");
+            background-image: url("../images/information/card-product.jpg");
           }
         }
         p {
@@ -237,13 +237,13 @@
           .wrapper-img-fourth {
             padding-bottom: 29%;
             .img-fourth {
-              background-image: url("../images/information/good-1024.png");
+              background-image: url("../images/information/good-1024.jpg");
             }
           }
           .wrapper-img-fifth {
             padding-bottom: 37%;
             .img-fifth {
-              background-image: url("../images/information/payment-1024.png");
+              background-image: url("../images/information/payment-1024.jpg");
             }
           }
           .wrapper-img-fifth-2 {
@@ -255,7 +255,7 @@
           .wrapper-img-sixth {
             padding-bottom: 45%;
             .img-sixth {
-              background-image: url("../images/information/card-product-1024.png");
+              background-image: url("../images/information/card-product-1024.jpg");
             }
           }
         }
@@ -281,13 +281,13 @@
           .wrapper-img-fourth {
             padding-bottom: 36%;
             .img-fourth {
-              background-image: url("../images/information/good-768.png");
+              background-image: url("../images/information/good-768.jpg");
             }
           }
           .wrapper-img-fifth {
             padding-bottom: 56%;
             .img-fifth {
-              background-image: url("../images/information/payment-768.png");
+              background-image: url("../images/information/payment-768.jpg");
             }
           }
           .wrapper-img-fifth-2 {
@@ -299,7 +299,7 @@
           .wrapper-img-sixth {
             padding-bottom: 62%;
             .img-sixth {
-              background-image: url("../images/information/card-product-768.png");
+              background-image: url("../images/information/card-product-768.jpg");
             }
           }
           .wrapper-status {
@@ -366,13 +366,13 @@
           .wrapper-img-fourth {
             padding-bottom: 75%;
             .img-fourth {
-              background-image: url("../images/information/good-414.png");
+              background-image: url("../images/information/good-414.jpg");
             }
           }
           .wrapper-img-fifth {
             padding-bottom: 89%;
             .img-fifth {
-              background-image: url("../images/information/payment-414.png");
+              background-image: url("../images/information/payment-414.jpg");
             }
           }
           .wrapper-img-fifth-2 {
@@ -384,7 +384,7 @@
           .wrapper-img-sixth {
             padding-bottom: 92%;
             .img-sixth {
-              background-image: url("../images/information/card-product-414.png");
+              background-image: url("../images/information/card-product-414.jpg");
             }
           }
           .wrapper-status {
@@ -413,6 +413,70 @@
                   grid-column: 1;
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .wrapper-questions {
+      .number-question {
+        .wrapper-answers {
+          .wrapper-img-fourth {
+            padding-bottom: 95%;
+            .img-fourth {
+              background-image: url("../images/information/good-375.jpg");
+            }
+          }
+          .wrapper-img-fifth {
+            padding-bottom: 95%;
+            .img-fifth {
+              background-image: url("../images/information/payment-375.jpg");
+            }
+          }
+          .wrapper-img-fifth-2 {
+            padding-bottom: 152%;
+            .img-fifth-2 {
+              background-image: url("../images/information/payment-online-375.jpg");
+            }
+          }
+          .wrapper-img-sixth {
+            padding-bottom: 102%;
+            .img-sixth {
+              background-image: url("../images/information/card-product-375.jpg");
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .wrapper-questions {
+      .number-question {
+        .wrapper-answers {
+          .wrapper-img-fourth {
+            padding-bottom: 95%;
+            .img-fourth {
+              background-image: url("../images/information/good-320.jpg");
+            }
+          }
+          .wrapper-img-fifth {
+            padding-bottom: 111%;
+            .img-fifth {
+              background-image: url("../images/information/payment-320.jpg");
+            }
+          }
+          .wrapper-img-fifth-2 {
+            padding-bottom: 175%;
+            .img-fifth-2 {
+              background-image: url("../images/information/payment-online-320.jpg");
+            }
+          }
+          .wrapper-img-sixth {
+            padding-bottom: 121%;
+            .img-sixth {
+              background-image: url("../images/information/card-product-320.jpg");
             }
           }
         }
