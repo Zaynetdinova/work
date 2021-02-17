@@ -1,4 +1,4 @@
-import close from '../../../../images/icons/close_popup.svg'
+import close from '../../../../images/icons/close_popup_black.svg'
 import {favorites} from "../favorites";
 import {priceContent} from "../priceContent";
 import {infoProduct} from "../infoProduct";
@@ -16,16 +16,6 @@ import {star} from '../../cardProductPage/view/star'
 export function popupQuickTemplate() {
 	return `
     <div id="popup-js" class="root">
-        <div class="header-popup">
-            <div class="wrapper-header">
-                ${transitionBrand(brand)}
-                <img id="close-popup" src="${close}" alt="">
-            </div>
-            <div class="wrapper-star-goodStock">
-                <div class="star-popup">${star()}</div>
-                ${goodStock()}
-            </div>
-        </div>
         <div class="main-popup">
             <div style="display: flex; justify-content: space-between;">
                 <section class="photos">
@@ -33,15 +23,23 @@ export function popupQuickTemplate() {
                 </section>
                 <section class="product-description">
                     <div class="first-line">
-                        <div class="wrapper-button-new"><img src="${saleBtn}" alt=""></div>							
-                        ${favorites()}
+                        <div class="wrapper-button-new"><img src="${saleBtn}" alt=""></div>		
+                        <div class="wrapper-close-like">
+							${favorites()}
+							 <img id="close-popup" src="${close}" alt="">
+						</div>					
                     </div>
+                    ${transitionBrand(brand)}
+                     <div class="wrapper-star-goodStock">
+						<div class="star-popup">${star()}</div>
+						${goodStock()}
+            		</div>
                     <div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
                     <div class="info">
                         <div class="info-1">${infoProduct(info)}</div>
                         <div class="buttonAnotherGoods" id="close-popup-quick-button-js">
-													${buttonProduct('На страницу с товаром','/#card-product')}
-												</div>	
+							${buttonProduct('На страницу с товаром','/#card-product')}
+						</div>	
                     </div>
                     <div class="wrapper-description">${descriptionModule()}</div>
                     <div class="wrapper-another-color">${anotherColorPopup(color)}</div>

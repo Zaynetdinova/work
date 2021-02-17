@@ -25,47 +25,34 @@
 
   @import "components/product-description";
   @import "components/viewPhotosBlockPopup";
-  @import "components/anotherColorPopup";
-  @import "components/popupSizes";
   .root {
     position: absolute;
-    max-width: 1000px;
+    max-width: 1130px;
     width: 100%;
     margin: 20px auto 0 auto;
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
   }
-  .header-popup {
-    background: #AB064E;
-    padding: 20px;
-    .wrapper-header {
-      display: flex;
-      justify-content: space-between;
-      img {
-        cursor: pointer;
-      }
-      .transitionBrand .brand a,
-      .transitionBrand .category {
-        color: #FFFFFF;
-        font-size: 28px;
-        line-height: 31px;
-      }
-      .transitionBrand  .category a {
-        color: rgba(255, 255, 255, 0.7);
-      }
-    }
+  .transitionBrand .brand a,
+  .transitionBrand .category {
+    font-size: 28px;
+    line-height: 31px;
+  }
+  .transitionBrand .category,
+  .transitionBrand  .category a {
+    color: #B2B2B2;
   }
   .main-popup {
     padding: 20px 20px 41px 20px;
     background: #FFFFFF;
     .photos {
-      max-width: 470px;
+      max-width: 546px;
     }
     .wrapper-description {
       .description-module {
         .text {
-          padding-bottom: 19px;
+          padding-bottom: 26px;
         }
       }
     }
@@ -95,14 +82,12 @@
   }
   .wrapper-star-goodStock {
     display: flex;
+    margin-bottom: 15px;
     .star-popup {
       margin-right: 10px;
     }
     .goodStock {
       margin: 0;
-      .stock {
-        color: #FFFFFF;
-      }
     }
   }
 }
