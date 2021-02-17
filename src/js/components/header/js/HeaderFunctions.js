@@ -1,5 +1,6 @@
 import {headerStorage} from '../../../core/storage/header'
 import {disableBodyScroll, resolveBodyScroll} from '../../../core/utils/utils'
+import {ExtraMenuItemShow} from './ExtraMenuItemShow'
 
 export class HeaderFunctions {
 	constructor() {
@@ -16,6 +17,8 @@ export class HeaderFunctions {
 
 		//
 		this.$infoButton = document.querySelector('#info-mobile-view-js')
+
+
 
 		this.eventListeners()
 	}
@@ -116,6 +119,7 @@ export class HeaderMenu {
 
 		// закрытие при нажатие на background (реализовать)
 		this.$closeBackground = document.querySelector('#menu-background-js')
+		this.extraInit = new ExtraMenuItemShow()
 
 		this.eventListeners()
 	}
@@ -138,6 +142,18 @@ export class HeaderMenu {
 		this.classListRemove()
 	}
 
+	pointHandler(event) {
+		if(document.documentElement.clientWidth <= 1024) {
+			event.preventDefault()
+
+			const extra = document.querySelector('#open-mobile-extra-js')
+			this.extraInit.defineCategory(event.target.id)
+
+			extra.classList.remove( 'show-extra-cancel')
+			extra.classList.add('show-extra-mobile')
+		}
+	}
+
 	classListRemove () {
 		this.buttonMenu.classList.remove('show')
 		this.sidebar.classList.remove('Sidebar-open-js')
@@ -151,7 +167,6 @@ export class HeaderMenu {
 			item.classList.remove('open-category-js')
 		})
 		//
-		console.log('test')
 	}
 
 	classListAdd() {
