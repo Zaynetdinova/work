@@ -1,8 +1,8 @@
 .View-photos-block-popup {
   display: flex;
   .view-big-photos-block {
-    width: 370px;
-    height: 559px;
+    width: 429px;
+    height: 649px;
 
     .button {
       position: absolute;
@@ -28,7 +28,7 @@
       }
 
       &.button-next {
-        top: 512px;
+        top: 603px;
 
         .arrow {
           transform: rotate(180deg);
@@ -42,8 +42,8 @@
     }
   }
   .view-photos-block {
-    width: 100px;
-    height: 559px;
+    width: 116px;
+    height: 649px;
     background: #555555;
     padding: 5px 6px;
 
