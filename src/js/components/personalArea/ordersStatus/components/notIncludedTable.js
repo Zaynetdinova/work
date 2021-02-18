@@ -40,7 +40,7 @@ export function notIncludedTable() {
                     </td>
                     
                     <td>
-                        <div class="product-out">Товара нет в наличии</div>
+                        <div class="product-out">Нет в наличии</div>
                     </td>
                     <td class="quantity-product">
                         ${sizes.map(({col}) => {

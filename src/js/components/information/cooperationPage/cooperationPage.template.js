@@ -5,12 +5,16 @@ import img3 from '../../../../images/icons/3.svg'
 import img4 from '../../../../images/icons/4.svg'
 import img5 from '../../../../images/icons/5.svg'
 import img6 from '../../../../images/icons/6.svg'
+import {navigationInformationCooperation} from "../../common/navigationInformationCooperation";
 
 export function cooperationPageTemplate() {
     return `
         <div class="wrapper-cooperation">
             ${transitionWrapper(link)}
            	<div class="title-shopping">Сотрудничество</div>
+           	<div class="wrapper-navigation-info">
+           	    ${navigationInformationCooperation('suppliers')}
+           	</div>
            	<div class="title-cooperation">Приглашаем к сотрудничеству производителей одежды и аксессуаров.</div>
            	<div class="grid">
            	    <div class="item-grid">
