@@ -70,10 +70,6 @@ const score = [
         link: '/#information/about-us'
     },
     {
-        title: 'Условия работы',
-        link: '/#information/working-condition'
-    },
-    {
         title: 'Контакты',
         link: '/#information/contacts'
     },
@@ -83,5 +79,9 @@ const cooperation = [
     {
         title: 'Поставщикам',
         link: '/#information/cooperation'
+    },
+    {
+        title: 'Условия работы',
+        link: '/#information/working-condition'
     },
 ]

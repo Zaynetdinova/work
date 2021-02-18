@@ -1,14 +1,14 @@
 import {transitionWrapper} from "../../common/transitionTitle";
-import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {navigationInformationCooperation} from "../../common/navigationInformationCooperation";
 
 export function  workingConditionsPageTemplate() {
     return `
         <div class="wrapper-working-condition">
             ${transitionWrapper(link)}
-           	<div class="title-shopping">О магазине</div>
+           	<div class="title-shopping">Сотрудничество</div>
            	<div class="wrapper-navigation-info">
-           	    ${navigationInformationAboutStore('about-working-condition')}
+           	    ${navigationInformationCooperation('about-working-condition')}
            	    ${navigationMobile('/#information/about-us','условия работы','/#information/contacts')}
             </div>
             <div class="title-working-condition">Как стать нашим клиентом</div>

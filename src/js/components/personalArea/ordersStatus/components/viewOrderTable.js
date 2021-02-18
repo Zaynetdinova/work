@@ -128,8 +128,4 @@ let exampleOne = [
         icon: box,
         title: ''
     },
-    {
-        icon: noCancel,
-        title: ''
-    },
 ]
