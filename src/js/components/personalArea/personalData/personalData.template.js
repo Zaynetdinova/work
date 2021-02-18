@@ -32,8 +32,10 @@ export function personalDataTemplate() {
                                     <div class="color">${TitleData('2 468,00 ₽')}</div>
                                 </div>
                                 <div class="wrapper-box-4">
-                                    <input class="input-personal-data" type="text" placeholder="Введите сумму">
-                                    ${ButtonData('Пополнить')}
+                                    <form>
+                                        <input class="input-personal-data" type="text" placeholder="Введите сумму">
+                                    </form>
+                                    ${ButtonData('Пополнить', 'personal-replenish-account')}
                                 </div>
                             </div>
                             <div class="wrapper-box">
@@ -41,7 +43,7 @@ export function personalDataTemplate() {
                                 ${TitleData('Логин и пароль')}
                                 <div class="password">Логин: ххххх@mail.ru</div>
                                 </div>
-                                ${ButtonData('Изменить пароль')}
+                                ${ButtonData('Изменить пароль', 'personal-change-password-js')}
                             </div>
                             <div class="wrapper-box-2">
                                 <div class="wrapper-box-1" style="margin-bottom: 7px">

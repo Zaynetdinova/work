@@ -1,6 +1,6 @@
-export function indexTemplate(component) {
+export function popupDefaultTemplate(component) {
 	return `
-		<div id="Entry-js" class="Entry">
+	<div id="Entry-js" class="Entry">
 			<div class="paranja"></div>
 			<div id="entry-wrapper-js" class="wrapper-Entry">
 			<div class="wrap-back">
