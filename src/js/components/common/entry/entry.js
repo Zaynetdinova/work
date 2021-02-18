@@ -12,22 +12,14 @@ import Georgia from '../../../../images/icons/georgia.svg'
 import Kazakhstan from '../../../../images/icons/kazakhstan.svg'
 import Russia from '../../../../images/icons/russia.svg'
 import {inputMaskPhone} from '../../../core/utils/inputMaskPhone'
-import {initialForm} from './js/initialForm'
+import {Popup} from '../js/Popup'
 
 export class Entry {
 
 	constructor() {
 		this.$body = document.querySelector('body')
-		this.$wrapper = null
+		this.popup = new Popup(indexTemplate)
 	}
-
-	afterInitialization() {
-		this.$wrapper = document.querySelector('#Entry-js')
-		this.$wrapper.addEventListener('click', (event) => this.handleClick(event))
-		this.passwordEye()
-		initialForm(this.$wrapper)
-	}
-
 
 	init() {
 		// объединить mobile и desktop
@@ -37,11 +29,11 @@ export class Entry {
 
 		if($buttonMobile) {
 			$buttonMobile.addEventListener('click', () => {
-				this.addElement(this.toEntry())
+				this.popup.addElement(this.toEntry(), this)
 			})
 		}
 		$button.addEventListener('click', () => {
-			this.addElement(this.toEntry())
+			this.popup.addElement(this.toEntry(), this)
 		})
 
 
@@ -51,7 +43,7 @@ export class Entry {
 			$calls.forEach((call) => {
 				call.addEventListener('click', () => {
 					window.scrollTo(0,0)
-					this.addElement(this.toBack())
+					this.popup.addElement(this.toBack(), this)
 					this.testSelect('#back-call-js')
 					inputMaskPhone('.test-mask')
 				})
@@ -59,14 +51,8 @@ export class Entry {
 		}
 	}
 
-	addElement($el) {
-		this.closeEntry()
-		this.$body.style = 'overflow: hidden'
-		this.$body.insertAdjacentHTML('afterbegin', indexTemplate($el));
-		this.afterInitialization()
-	}
-
 	handleClick(event) {
+		console.log('super')
 		const clickElem = event.target
 
 		if(clickElem.closest('#close-entry-registration-js')) {
@@ -74,16 +60,17 @@ export class Entry {
 		}
 
 		if(clickElem.closest('#sign-up-js')) {
-			this.addElement(this.toRegistration())
+			console.log('this')
+			this.popup.addElement(this.toRegistration(), this)
 		}
 
 		if(clickElem.closest('#restore-password-button-js')) {
-			this.addElement(this.toRestorePassword())
+			this.popup.addElement(this.toRestorePassword(), this)
 			this.controlBack('password-className-js')
 		}
 
 		if(clickElem.closest('#buy-for-sale-js')) {
-			this.addElement(this.toBuyForSale())
+			this.popup.addElement(this.toBuyForSale(), this)
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
 			this.select()
@@ -92,7 +79,7 @@ export class Entry {
 		}
 
 		if(clickElem.closest('#buy-for-me-js')) {
-			this.addElement(this.toBuyForMe())
+			this.popup.addElement(this.toBuyForMe(), this)
 			this.controlStylingWrapper()
 			this.controlBack('restore-className-js')
 			this.testSelect('#select-phone-registration-js')
@@ -101,11 +88,11 @@ export class Entry {
 
 		//back
 		if(clickElem.closest('.password-className-js')) {
-			this.addElement(this.toEntry())
+			this.popup.addElement(this.toEntry(), this)
 		}
 
 		if(clickElem.closest('.restore-className-js')) {
-			this.addElement(this.toRegistration())
+			this.popup.addElement(this.toRegistration(), this)
 		}
 	}
 
@@ -128,25 +115,6 @@ export class Entry {
 		if($wrapper) {
 			$wrapper.remove()
 		}
-	}
-
-	passwordEye() {
-		const eye = this.$wrapper.querySelectorAll('.password-control')
-
-		eye.forEach((item) => {
-			item.addEventListener('click', () => {
-				const $parent = item.closest('[data-input-password-js]')
-				const input = $parent.querySelector('.password-control-eye-js');
-				if (input.getAttribute('type') === 'password') {
-					item.classList.add('view');
-					input.setAttribute('type', 'text');
-				} else {
-					item.classList.remove('view');
-					input.setAttribute('type', 'password');
-				}
-				return false;
-			})
-		})
 	}
 
 	select() {
