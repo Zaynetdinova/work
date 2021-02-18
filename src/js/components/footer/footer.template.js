@@ -1,6 +1,3 @@
-import vk from '../../../images/footer/1.svg'
-import fb from '../../../images/footer/2.svg'
-import instagram from '../../../images/footer/Instagram.svg'
 import partner from '../../../images/footer/partner.svg'
 import schema  from '../../../images/footer/shema.svg'
 import card from '../../../images/footer/card_bank.svg'
@@ -66,14 +63,20 @@ export function footerTemplate() {
                             <div class='social'>
                                 <span class='s-title'>СОЦСЕТИ</span>
                                 <div class='s-img'>
-                                    <a class="instagram" href="#"><img src=${instagram} alt='tw' width="30px" height="30px"></a>
-                                    <a href="https://vk.com/optmoyo" target="_blank"><img src=${vk} alt='vk'></a>                                  
-                                    <a href="https://www.facebook.com/OptMoyo.Ru/" target="_blank"><img src=${fb} alt='fb'></a>
+                                    <div class="wrapper-social">
+                                        <a href="https://vk.com/optmoyo" target="_blank"><div class="vk"></div></a>              
+                                    </div>   
+                                    <div class="wrapper-social">
+                                        <a href="https://www.facebook.com/OptMoyo.Ru/" target="_blank"><div class="fb"></div></a>
+                                    </div>                
+                                    <div class="wrapper-social">
+                                        <a class="instagram" href="#"><div class="tw"></div></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class='partners'>
                                 <div class='s-title'>ПАРТНЕРЫ</div>
-                                <div class='s-img'><a href="https://moyo.moda/" target="_blank"><img src=${partner} alt='partner'></a></div>
+                                <div class='s-partners'><a href="https://moyo.moda/" target="_blank"><img src=${partner} alt='partner'></a></div>
                             </div>
                         </div>
                         <div class='right'>
@@ -89,7 +92,7 @@ export function footerTemplate() {
                                 ПОНЕДЕЛЬНИК – ПЯТНИЦА: <span class='redact'> С 10:00 ДО 20:00 </span> <br> СУББОТА, ВОСКРЕСЕНЬЕ – <span class='redact'>ВЫХОДНЫЕ ДНИ </span> <br> МОСКВА <span class='line-footer'></span> ОКРУЖНОЙ ПРОЕЗД <span class='line-footer'></span> 30А
                             </div>
                             <div class='schema'>
-                                <a class="a-schema" href="https://yandex.ru/maps/?from=api-maps&ll=37.968130%2C55.503040&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AWBTjAg5GRe0kP9x5FU3LeB13aYBomqUm&z=10" target="_blank">СХЕМА ПРОЕЗДА</a>
+                                <a class="a-schema" href="http://localhost:3000/#information/contacts" target="_blank">СХЕМА ПРОЕЗДА</a>
                                 <img class="schema-img" src=${schema} alt='schema'>
                             </div>
                             <div class='bank_card'>
@@ -102,7 +105,7 @@ export function footerTemplate() {
         </div>
         <div class='bg-down'>
             <div class='wrapper'>
-                <div class='text'>2020 © OPTMOYO.RU</div>
+                <div class='text'>2021 © OPTMOYO.RU</div>
             </div>
         </div>
     </footer>

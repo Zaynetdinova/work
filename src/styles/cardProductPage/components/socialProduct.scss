@@ -1,12 +1,63 @@
 .socialProduct {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-left: 1px solid #C8C8C8;
   min-width: 40px;
+  height: 17px;
+  .vk, .fb, .tw, .pen, .mail, .od {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .vk {
+    background-image: url("../images/social/vk.svg");
+    width: 18px;
+    height: 10px;
+    &:hover {
+      background-image: url("../images/footer/1.svg");
+    }
+  }
+  .fb {
+    background-image: url("../images/footer/2.svg");
+    width: 10px;
+    height: 17px;
+    &:hover {
+      background-image: url("../images/footer/fb.svg");
+    }
+  }
+  .tw {
+    background-image: url("../images/footer/3.svg");
+    width: 15px;
+    height: 12px;
+    &:hover {
+      background-image: url("../images/footer/tw.svg");
+    }
+  }
+  .pen {
+    background-image: url("../images/social/pen.svg");
+    width: 15px;
+    height: 15px;
+    &:hover {
+      background-image: url("../images/social/pen-hover.svg");
+    }
+  }
+  .mail {
+    background-image: url("../images/social/mail.svg");
+    width: 14px;
+    height: 14px;
+    &:hover {
+      background-image: url("../images/social/mail-hover.svg");
+    }
+  }
+  .od {
+    background-image: url("../images/social/odnoklassniki.svg");
+    width: 10px;
+    height: 16px;
+    &:hover {
+      background-image: url("../images/social/odnoklassniki-hover.svg");
+    }
+  }
   &:last-child {
     border-right: 1px solid #C8C8C8;
-  }
-  .socialImg {
-    cursor: pointer;
   }
 }

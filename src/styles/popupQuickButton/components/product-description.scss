@@ -3,12 +3,27 @@
   .first-line {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
+    .wrapper-button-new {
+      display: flex;
+      align-items: center;
+    }
     .wrapper-close-like {
       display: flex;
-      img {
+      align-items: center;
+      .close-quick {
         cursor: pointer;
         margin-left: 20px;
+        background-image: url("../images/icons/close-quiq-white.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+        &:hover {
+          background-image: url("../images/icons/close-quiq.svg");
+        }
       }
     }
   }
@@ -16,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 13.3px;
+    margin-top: 18px;
     margin-bottom: 30px;
   }
   .price {

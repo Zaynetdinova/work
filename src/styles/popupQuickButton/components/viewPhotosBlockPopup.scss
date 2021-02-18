@@ -6,8 +6,8 @@
 
     .button {
       position: absolute;
-      width: 46px;
-      height: 46px;
+      width: 38px;
+      height: 38px;
       top: 0;
       background: rgba(61, 61, 60, 0.1);
       z-index: 2;
@@ -19,8 +19,9 @@
       .arrow {
         background-image: url("../images/icons/arrow-slider.svg");
         background-repeat: no-repeat;
-        width: 17px;
-        height: 9px;
+        background-position: center;
+        width: 100%;
+        height: 8px;
       }
 
       &.button-prev {
@@ -28,7 +29,7 @@
       }
 
       &.button-next {
-        top: 603px;
+        top: 611px;
 
         .arrow {
           transform: rotate(180deg);
@@ -38,6 +39,12 @@
       &:hover {
         cursor: pointer;
         background: rgba(61, 61, 60, 0.2);
+      }
+      &.swiper-button-disabled {
+        &:hover {
+          cursor: default;
+          background: rgba(61, 61, 60, 0.1);
+        }
       }
     }
   }

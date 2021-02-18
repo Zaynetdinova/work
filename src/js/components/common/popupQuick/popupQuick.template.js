@@ -1,4 +1,4 @@
-import close from '../../../../images/icons/close_popup_black.svg'
+import close from '../../../../images/icons/close-quiq.svg'
 import {favorites} from "../favorites";
 import {priceContent} from "../priceContent";
 import {infoProduct} from "../infoProduct";
@@ -26,7 +26,7 @@ export function popupQuickTemplate() {
                         <div class="wrapper-button-new"><img src="${saleBtn}" alt=""></div>		
                         <div class="wrapper-close-like">
 							${favorites()}
-							 <img id="close-popup" src="${close}" alt="">
+							 <div class="close-quick" id="close-popup"></div>
 						</div>					
                     </div>
                     ${transitionBrand(brand)}
