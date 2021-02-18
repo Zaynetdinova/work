@@ -22,6 +22,9 @@
     padding: 40px 0 212px 0;
     display: flex;
     justify-content: space-between;
+    .left {
+      width: 114px;
+    }
   }
   .box {
     font-size: 14px;
@@ -54,7 +57,7 @@
   }
 
   .social {
-    margin-bottom: 33px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,17 +65,59 @@
   .s-title{
     font-weight: 700;
     font-size: 10px;
-    line-height: 14px;
+    line-height: 11px;
   }
   .s-img {
-    margin-top: 11px;
+    margin-top: 12px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 104px;
+    .wrapper-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid #C8C8C8;
+      min-width: 40px;
+      height: 17px;
+      &:last-child {
+        border-right: 1px solid #C8C8C8;
+      }
+    }
+    .vk {
+      background-image: url("../images/footer/vk.svg");
+      background-position: center;
+      background-size: contain;
+      width: 18px;
+      height: 10px;
+      &:hover {
+        background-image: url("../images/footer/1.svg");
+      }
+    }
+    .fb {
+      background-image: url("../images/footer/2.svg");
+      background-position: center;
+      background-size: contain;
+      width: 10px;
+      height: 17px;
+      &:hover {
+        background-image: url("../images/footer/fb.svg");
+      }
+    }
+    .tw {
+      background-image: url("../images/footer/3.svg");
+      background-position: center;
+      background-size: contain;
+      width: 15px;
+      height: 12px;
+      &:hover {
+        background-image: url("../images/footer/tw.svg");
+      }
+    }
   }
   .s-img a {
     display: flex;
+  }
+  .s-partners {
+    margin-top: 10px;
   }
 
   .nav {
@@ -88,7 +133,7 @@
       display: flex;
       align-items: flex-end;
       cursor: pointer;
-      margin-top: 11px;
+      margin-top: 15px;
       .textCall {
         font-weight: bold;
         font-size: 10px;
@@ -118,8 +163,8 @@
 
   .phone a {
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     text-decoration: none;
     color: $color-footer;
 
@@ -128,7 +173,7 @@
     }
   }
   .mode {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 10px;
     line-height: 14px;
@@ -137,13 +182,17 @@
     font-weight: normal;
   }
   .line-footer {
-    border-left: 2px solid #C8C8C8;
-    margin-left: 3px;
+    border-left: 1px solid #555555;
+    margin-left: 4px;
     margin-right: 4px;
   }
   .schema {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
+  }
+  .bank_card {
+    display: flex;
+    align-items: center;
   }
   .schema-img {
     margin-bottom: -3px;
