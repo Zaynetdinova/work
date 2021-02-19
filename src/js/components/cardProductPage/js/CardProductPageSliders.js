@@ -2,7 +2,6 @@ import Swiper from "swiper";
 
 export class CardProductPageSliders {
   constructor() {
-
     this.optionsTest = {
       slidesPerView: 1.9,
       spaceBetween: 15,
@@ -79,7 +78,6 @@ export class CardProductPageSliders {
         nextEl: '.swiper-button-next-main',
         prevEl: '.swiper-button-prev-main',
       },
-      cssMode: true,
     }
 
     this.optionsTopSlider = {

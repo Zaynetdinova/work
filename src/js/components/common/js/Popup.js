@@ -12,6 +12,7 @@ export class Popup {
 
 	afterInitialization(context) {
 		this.$wrapper = document.querySelector('#Entry-js')
+		this.$wrapper.style.top = `${window.pageYOffset}px`
 		this.$wrapper.addEventListener('click', (event) => context.handleClick(event))
 		passwordEye(this.$wrapper)
 		this.sendForm.init(this.$wrapper)
