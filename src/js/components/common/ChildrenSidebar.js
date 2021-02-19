@@ -45,105 +45,265 @@ function templateSidebarChildren(item) {
 let pointGirl = [
     {
         title: 'Платья',
-        id: 'info',
+        id: 'dress-girl',
         img: false,
         category: [
             {
                 category: 'Повседневные'
             },
             {
-                category: 'Офисные'
+                category: 'Нарядные'
             },
             {
                 category: 'Трикотажные'
             },
             {
-                category: 'Коктейльные'
+                category: 'Летние'
             },
             {
-                category: 'Вечерние'
-            },
-            {
-                category: 'Длинные'
-            },
-            {
-                category: 'Костюмы'
+                category: 'Школа'
             },
             {
                 category: 'Сарафаны'
             },
+        ]
+    },
+    {
+        title: 'Блузки',
+        id: 'blouses-girl',
+        img: false,
+        category: [
             {
-                category: 'Летние'
+                category: 'Блузы'
             },
             {
-                category: 'Короткие'
+                category: 'Топы'
+            },
+            {
+                category: 'Водолазки'
+            },
+            {
+                category: 'Рубашки'
+            },
+            {
+                category: 'Толстовки'
+            },
+            {
+                category: 'Кофточки'
+            },
+            {
+                category: 'Футболки'
+            },
+            {
+                category: 'Туники'
+            },
+            {
+                category: 'Джемперы'
+            },
+            {
+                category: 'Жилеты'
             },
         ]
     },
-
     {
         title: 'Трикотаж',
         id: 'client',
         img: false,
         category: [
             {
-                category: 'Повседневные'
+                category: 'Кардиганы'
             },
             {
-                category: 'Офисные'
+                category: 'Свитера'
             },
             {
-                category: 'Трикотажные'
+                category: 'Джемперы'
             },
             {
-                category: 'Коктейльные'
+                category: 'Жакеты'
             },
             {
-                category: 'Вечерние'
+                category: 'Жилеты'
             },
             {
-                category: 'Длинные'
+                category: 'Платья'
             },
             {
-                category: 'Костюмы'
+                category: 'Комплекты'
+            },
+        ]
+    },
+    {
+        title: 'Брюки',
+        id: 'trousers-girl',
+        img: false,
+        category: [
+            {
+                category: 'Брюки'
+            },
+            {
+                category: 'Шорты'
+            },
+            {
+                category: 'Джинсы'
+            },
+            {
+                category: 'Легинсы'
+            },
+            {
+                category: 'Ползунки'
+            },
+        ]
+    },
+    {
+        title: 'Юбки',
+        id: 'skirts-girl',
+        img: false,
+        category: [
+            {
+                category: 'Юбки'
+            },
+        ]
+    },
+    {
+        title: 'Школа',
+        id: 'school-girl',
+        img: false,
+        category: [
+            {
+                category: 'Платья'
             },
             {
                 category: 'Сарафаны'
             },
             {
-                category: 'Летние'
+                category: 'Блузы'
             },
             {
-                category: 'Короткие'
+                category: 'Жилеты'
+            },
+            {
+                category: 'Жакеты'
+            },
+            {
+                category: 'Брюки'
+            },
+            {
+                category: 'Юбки'
+            },
+            {
+                category: 'Комплекты'
             },
         ]
     },
-
     {
-        title: 'Верха',
-        id: 'service',
+        title: 'Жакеты',
+        id: 'jackets-girl',
         img: false,
         category: [
             {
-                category: 'Таблица размеров'
-            },
-            {
-                category: 'Заказать звонок'
+                category: 'Жакеты'
             },
         ]
     },
-
     {
-        title: 'Низы',
-        id: 'cooperation',
+        title: 'Верх.одежда',
+        id: 'outerwear-girl',
         img: false,
         category: [
             {
-                category: 'Поставщикам'
+                category: 'Жакеты'
+            },
+            {
+                category: 'Куртки'
+            },
+            {
+                category: 'Плащи'
+            },
+            {
+                category: 'Пуховики'
+            },
+            {
+                category: 'Жилеты'
+            },
+            {
+                category: 'Комплекты'
+            },
+            {
+                category: 'Пальто'
+            },
+            {
+                category: 'Комбинезоны'
             },
         ]
-    }
-    ]
+    },
+    {
+        title: 'Колготки, носки',
+        id: 'socks-girl',
+        img: false,
+        category: [
+            {
+                category: 'Классические колготки'
+            },
+            {
+                category: 'Фантазийные колготки'
+            },
+            {
+                category: 'Носки'
+            },
+            {
+                category: 'Гольфы'
+            },
+            {
+                category: 'CONTE ELEGANT'
+            },
+            {
+                category: 'CONTE KIDS'
+            },
+            {
+                category: 'GIULIA'
+            },
+            {
+                category: 'MONA'
+            },
+            {
+                category: 'MARK FORMELLE'
+            },
+            {
+                category: 'GATTA'
+            },
+        ]
+    },
+    {
+        title: 'Белье',
+        id: 'underwear-girl',
+        img: false,
+        category: [
+            {
+                category: 'Трусы'
+            },
+            {
+                category: 'Термобелье'
+            },
+            {
+                category: 'Комплекты'
+            },
+            {
+                category: 'Майки'
+            },
+        ]
+    },
+    {
+        title: 'Купальники',
+        id: 'swimwear-girl',
+        img: false,
+        category: [
+            {
+                category: 'Купальники'
+            },
+        ]
+    },
+]
 
 let pointBaby = [
     {
