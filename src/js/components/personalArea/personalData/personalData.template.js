@@ -47,10 +47,10 @@ export function personalDataTemplate() {
                             </div>
                             <div class="wrapper-box-2">
                                 <div class="wrapper-box-1" style="margin-bottom: 7px">
-                                    ${TitleData('Организация')}
-                                    <div class="organization">Название организации</div>
+                                    ${TitleData('ФИО')}
+                                    <div class="organization">Фамилия Имя Отчество</div>
                                 </div>
-                                <div class="info-text">Если Вы хотите изменить форму собственности и/или название компании, позвоните менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
+                                <div class="info-text">Если Вы хотите изменить эти данные, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                             </div>
                             <div class="wrapper-box">
                                 <div class="wrapper-box-1">

@@ -95,17 +95,12 @@ export function cardProductPageTemplate(
 
 
 
-
-
 let brand = [
 	{
 		brand: 'Vittoria Vicci',
 		category: 'Платье'
 	}
 ]
-
-
-
 
 
 let table = [

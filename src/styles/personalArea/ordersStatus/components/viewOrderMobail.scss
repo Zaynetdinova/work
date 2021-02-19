@@ -56,6 +56,13 @@
     align-items: flex-end;
     margin-bottom: 15px;
     width: 100%;
+    .product-out {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 12px;
+      color: #AB064E;
+      margin-top: 10px;
+    }
   }
   .wrapper-product {
     display: flex;

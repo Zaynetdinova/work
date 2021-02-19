@@ -36,7 +36,7 @@ export function wrapOrderMobile() {
 					<div class="wrap-sum-col">
 						<div class="post">
 							<div class="col">Количество</div>
-							<div class="sum">2 шт.</div>
+							<div class="sum">2</div>
 						</div>
 						<div class="post">
 							<div class="col">Сумма</div>

@@ -107,7 +107,6 @@
   }
 
   @media (max-width: 768px) {
-    //position: absolute;
     .wrapper-slider {
       height: 90%;
     }
@@ -123,11 +122,6 @@
       text-align: center;
       -webkit-box-pack: center;
       -webkit-box-align: center;
-    }
-
-
-    .swiper-button {
-      //display: none;
     }
 
     .popup-photo {
@@ -148,14 +142,7 @@
       .wrapper-close-popup {
         margin-top: 15px;
         margin-right: 15px;
-        //.close-popup {
-        //  background: url("../images/icons/close_popup_black.svg") center no-repeat;
-        //}
       }
     }
-    //.paranja {
-    //  background: #fff;
-    //  opacity: 1;
-    //}
   }
 }
