@@ -105,7 +105,8 @@ export function viewOrderMobile() {
                         <div class="wrapper-info">
                             <div class="name-brand">Vittoria Vicci</div>
                             <div class="name-product">Наименование товара</div>
-                            ${infoProduct(info)} 
+                            ${infoProduct(info)}
+                            <div class="product-out">Нет в наличии</div>
                             <div data-parent-order-js class="more-details" id="more-details-not-included-table">
                                 <span class="more">Подробнее</span>
                                 <span class="hide">Скрыть</span>
@@ -121,7 +122,7 @@ export function viewOrderMobile() {
                     </div>
                     <div class="post">
                         <div class="col">Количество</div>
-                        <div class="sum">2 шт.</div>
+                        <div class="sum">2</div>
                     </div>
 				</div>
             </div>

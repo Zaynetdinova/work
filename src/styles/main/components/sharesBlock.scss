@@ -1,3 +1,5 @@
+@import "../../color";
+@import "../../var";
 .Shares-block {
   -webkit-transform: translate3d(0,0,0);
   position: relative;
@@ -33,7 +35,7 @@
         width: 80px;
         font-size: 17px;
         padding: 4.2px;
-        background: #009295;
+        background: $bg-button-sale;
         &.banner-bottom {
           margin-bottom: -13px;
         }

@@ -1,10 +1,10 @@
 @import '../color';
 @import '../var';
+
+
 .bestsellers-header-wrapper {
   margin-bottom: 34px;
-}
-@media(max-width: 1024px) {
-  .bestsellers-header-wrapper {
+  @media(max-width: 1024px) {
     margin-bottom: 23px;
   }
 }
@@ -19,7 +19,7 @@
     align-items: center;
   }
 
-  .categories a{
+  .categories a {
     font-weight: bold;
     font-size: 14px;
     line-height: 106.8%;
@@ -31,7 +31,7 @@
   }
 
   .categories:hover {
-    color: #E64747;
+    color: #AB064E;
   }
 
   .line {
@@ -49,18 +49,8 @@
     color: #3D3D3C;
     text-transform: uppercase;
     cursor: pointer;
-  }
-  .see-all:hover {
-    color: #E64747;
-  }
-
-  @media(max-width: 1024px) {
-    .bestsellers-header-wrapper {
-      margin-bottom: 23px;
-    }
-
-    .see-all:hover {
-      color: #E64747;
+    &:hover {
+      color: #AB064E;
     }
   }
 }
