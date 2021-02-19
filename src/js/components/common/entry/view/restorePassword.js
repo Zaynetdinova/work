@@ -1,12 +1,12 @@
-import {titleRegistration} from "../../titleRegistration";
-import {buttonRegistration} from "../../buttonRegistration";
+import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
+import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
 
 export function restorePassword() {
     return `
+        ${titleRegistration('Вход')}
         <form class="form-js">
-            ${titleRegistration('Вход')}
             <div class="title-restorePassword">Восстановление пароля</div>
             <div class="text-email">Пожалуйста, введите адрес электронной почты, на который мы вышлем Ваш новый пароль.</div>
             <div class="restore-input">

@@ -1,6 +1,6 @@
 .wrapper-buyForMe {
   max-width: 1020px;
-  margin: 76px auto 67px auto;
+  margin: 76px auto;
   .box-input {
     display: flex;
     justify-content: space-between;
@@ -52,12 +52,6 @@
       flex-direction: column;
       z-index: 10;
     }
-  }
-  .wrapper-button {
-    margin-top: 44px;
-    margin-bottom: 44px;
-    display: flex;
-    align-items: center;
   }
   @media (max-width: 1090px) {
     max-width: 820px;

@@ -1,10 +1,12 @@
 import {Component} from "../../../core/Component";
 import {personalDataTemplate} from "./personalData.template";
 import {Popup} from '../../common/js/Popup'
-import {popupDefaultTemplate} from '../../common/popupDefault.template'
+import {popupDefaultTemplate} from '../../common/popupDefaultTemplate/popupDefault.template'
 import {changePasswordTemplate} from './view/changePasswordTemplate'
 import {changePhoneTemplate} from './view/changePhoneTemplate'
 import {changeTransportTemplate} from './view/changeTransportTemplate'
+import {changeAddressTemplate} from "./view/changeAddressTemplate";
+import {changeGuestLoginTemplate} from "./view/changeGuestLoginTemplate";
 
 
 
@@ -53,6 +55,15 @@ export class PersonalData extends Component {
         case 'personal-change-transport-js':
           this.changeTransportTemplate()
           break
+        case 'personal-change-city-js':
+          this.changePhoneTemplate()
+          break
+        case 'personal-change-address-js':
+          this.changeAddressTemplate()
+          break
+        case 'personal-change-guest-login-js':
+          this.changeGuestLoginTemplate()
+          break
       }
     }
   }
@@ -60,11 +71,16 @@ export class PersonalData extends Component {
   changePasswordTemplate() {
     this.popup.addElement(changePasswordTemplate(), this)
   }
-
   changePhoneTemplate() {
     this.popup.addElement(changePhoneTemplate(), this)
   }
   changeTransportTemplate() {
-    this.popup.addElement(changeTransportTemplate(),this)
+    this.popup.addElement(changeTransportTemplate(), this)
+  }
+  changeAddressTemplate() {
+    this.popup.addElement(changeAddressTemplate(), this)
+  }
+  changeGuestLoginTemplate() {
+    this.popup.addElement(changeGuestLoginTemplate(), this)
   }
 }

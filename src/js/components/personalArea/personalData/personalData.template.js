@@ -1,6 +1,6 @@
 import {TitleData} from "../Basket/view/titleData";
 import {ButtonData} from "../Basket/view/buttonData";
-import {checkboxRegistration} from "../../common/checkboxRegistration";
+import {checkboxRegistration} from "../../common/popupDefaultTemplate/checkboxRegistration";
 import {imgCloseIcon} from "../Basket/view/imgCloseIcon";
 import {transitionWrapper} from "../../common/transitionTitle";
 import {navigation} from "../../common/navigation";
@@ -69,7 +69,7 @@ export function personalDataTemplate() {
                                         <div style="margin-bottom: 16px"><span style="color: #AB064E">Внимание!</span> Указан город, в котором Вы получите груз</div>
                                         <div>Информация о городе доставки берется из данных при регистрации на сайте. Если Вы хотите изменить город доставки и у Вас есть оплаченный заказ, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                                     </div>
-                                    ${ButtonData('Изменить')}
+                                    ${ButtonData('Изменить','personal-change-city-js')}
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export function personalDataTemplate() {
                                         Если в дальнейшем Вы хотите изменить адрес доставки и у Вас есть отправленный нам заказ, 
                                         позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                                     </div>
-                                    ${ButtonData('Изменить')}
+                                    ${ButtonData('Изменить','personal-change-address-js')}
                                 </div>
                             </div>
                             <div class="wrapper-box">
@@ -106,7 +106,7 @@ export function personalDataTemplate() {
                                         <div>Гостевой логин (наценка 0% + 0)</div>
                                     </div>
                                 </div>
-                                ${ButtonData('Изменить')}
+                                ${ButtonData('Изменить','personal-change-guest-login-js')}
                             </div>
                             <div class="wrapper-box">
                                 <div class="wrapper-box-1">

@@ -1,4 +1,4 @@
-import {checkboxRegistration} from "../../../common/checkboxRegistration";
+import {checkboxRegistration} from "../../../common/popupDefaultTemplate/checkboxRegistration";
 
 export function onlinePayOrder() {
     return `

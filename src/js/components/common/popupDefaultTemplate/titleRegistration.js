@@ -1,5 +1,5 @@
 export function titleRegistration(name) {
     return `
-      <div class="titleRegistration">${name}</div>
+      <div class="title-registration">${name}</div>
   `
 }

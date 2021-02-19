@@ -1,8 +1,8 @@
 import phone from '../../../../../images/icons/icon_phone.svg'
 import schema from '../../../../../images/icons/schema.svg'
 import time from '../../../../../images/icons/time.svg'
-import {buttonRegistration} from "../../buttonRegistration";
-import {titleRegistration} from "../../titleRegistration";
+import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
+import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 export function backCall() {
     return `
