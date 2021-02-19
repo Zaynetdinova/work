@@ -22,9 +22,10 @@
 @import './infoTable';
 @import './anotherColor';
 @import './popupPhoto/popupPhoto';
-@import 'buttonRegistration';
-@import 'titleRegistration';
-@import 'checkboxRegistration';
+@import 'popupDefaultTemplate/buttonRegistration';
+@import 'popupDefaultTemplate/titleRegistration';
+@import 'popupDefaultTemplate/checkboxRegistration';
+@import 'popupDefaultTemplate/popupDefaultTemplate';
 @import 'infoTextRegistration';
 @import 'titleBuy';
 @import './entryRegistration/entryRegistration';

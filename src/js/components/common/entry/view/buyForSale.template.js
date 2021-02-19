@@ -1,8 +1,8 @@
-import {titleRegistration} from "../../titleRegistration";
+import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
 import {titleBuy} from "../../titleBuy";
-import {checkboxRegistration} from "../../checkboxRegistration";
+import {checkboxRegistration} from "../../popupDefaultTemplate/checkboxRegistration";
 import {infoTextRegistration} from "../../infoTextRegistration";
-import {buttonRegistration} from "../../buttonRegistration";
+import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
 export function buyForSaleTemplate() {

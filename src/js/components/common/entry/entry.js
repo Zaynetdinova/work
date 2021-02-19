@@ -1,7 +1,6 @@
 import {entryTemplate} from './view/entry.template'
 import {registrationTemplate} from './view/registration.template'
 import {restorePassword} from './view/restorePassword'
-import {indexTemplate} from './index.template'
 import {buyForMeTemplate} from './view/buyForMe.template'
 import {buyForSaleTemplate} from './view/buyForSale.template'
 import {backCall} from "./view/backСall.template";
@@ -13,12 +12,13 @@ import Kazakhstan from '../../../../images/icons/kazakhstan.svg'
 import Russia from '../../../../images/icons/russia.svg'
 import {inputMaskPhone} from '../../../core/utils/inputMaskPhone'
 import {Popup} from '../js/Popup'
+import {popupDefaultTemplate} from "../popupDefaultTemplate/popupDefault.template";
 
 export class Entry {
 
 	constructor() {
 		this.$body = document.querySelector('body')
-		this.popup = new Popup(indexTemplate)
+		this.popup = new Popup(popupDefaultTemplate)
 	}
 
 	init() {

@@ -1,19 +1,20 @@
-import {titleRegistration} from '../../../common/titleRegistration'
+import {titleRegistration} from '../../../common/popupDefaultTemplate/titleRegistration'
 import {nesessaryFildsTemplate} from '../../../common/entry/view/nesesaryFilds.template'
-import {buttonRegistration} from '../../../common/buttonRegistration'
+import {buttonRegistration} from '../../../common/popupDefaultTemplate/buttonRegistration'
 
 export function changeTransportTemplate() {
 	return `
-
-	${titleRegistration('Изменение транспортной компании')}
-	<form class="form-js" id="personal-change-transport-form-js">
-	 <div class="wrap-input">
-		<h1>transport</h1>
+		${titleRegistration('Изменение <br> транспортной компании')}
+		<form class="form-js" id="personal-change-transport-form-js">
+			<div class="wrap-input">
 			
-			${nesessaryFildsTemplate()}
-			${buttonRegistration('Сохранить')} 
-      </div>
-	</form>
+				
+				${nesessaryFildsTemplate()}
+			</div>
+			<div class="wrapper-restore">
+				${buttonRegistration('Сохранить')}
+			</div>
+		</form>
 	
 	`
 }

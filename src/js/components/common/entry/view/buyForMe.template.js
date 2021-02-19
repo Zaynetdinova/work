@@ -1,7 +1,7 @@
-import {titleRegistration} from "../../titleRegistration";
+import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
 import {titleBuy} from "../../titleBuy";
-import {checkboxRegistration} from "../../checkboxRegistration";
-import {buttonRegistration} from "../../buttonRegistration";
+import {checkboxRegistration} from "../../popupDefaultTemplate/checkboxRegistration";
+import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {infoTextRegistration} from "../../infoTextRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
