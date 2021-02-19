@@ -1,19 +1,20 @@
-import {titleRegistration} from "../../titleRegistration";
-import {buttonRegistration} from "../../buttonRegistration";
+import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
+import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 
 export function entryTemplate() {
     return `  
+        
         ${titleRegistration('Вход')}
         
         <form class="form-js">
             <div class="wrap-input">
-              <input name="email" class="input-name"  placeholder="Логин (Эл. Почта)*" type="email">
+                <input name="email" class="input-name"  placeholder="Логин (Эл. Почта)*" type="email">
               
-              <div class="password" data-input-password-js>
-                  <input name="password" class="input-name password-control-eye-js" type="password" placeholder="Пароль*">
-                  <div class="password-control"></div>
-              </div>
+                <div class="password" data-input-password-js>
+                    <input name="password" class="input-name password-control-eye-js" type="password" placeholder="Пароль*">
+                    <div class="password-control"></div>
+                </div>
             </div>
             
             ${nesessaryFildsTemplate()}
@@ -30,7 +31,7 @@ export function entryTemplate() {
           
         <div class="wrap-registration">
             <div>Если Вы не зарегистрированы в нашем магазине, пожалуйста, зарегистрируйтесь!</div>
-        </div>  
+        </div>
         <article id="sign-up-js" class="sign-up"> 
              ${buttonRegistration('Зарегистрироваться')}  
         </article>   

@@ -1,4 +1,4 @@
-import {titleRegistration} from '../../titleRegistration'
+import {titleRegistration} from '../../popupDefaultTemplate/titleRegistration'
 
 export function registrationTemplate() {
     return `

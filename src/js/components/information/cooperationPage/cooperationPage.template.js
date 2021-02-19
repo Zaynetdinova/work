@@ -15,7 +15,8 @@ export function cooperationPageTemplate() {
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationCooperation('suppliers')}
            	</div>
-           	<div class="title-cooperation">Приглашаем к сотрудничеству производителей одежды и аксессуаров.</div>
+           	<div class="title-cooperation">Приглашаем к сотрудничеству производителей одежды и аксессуаров.<br>
+           	Для успешной совместной работы от вас требуются:</div>
            	<div class="grid">
            	    <div class="item-grid">
            	        <img src="${img1}" alt="">
