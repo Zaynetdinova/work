@@ -1,9 +1,9 @@
-import img3 from '../../../../images/bestsellers/1/img3.png'
-import img4 from '../../../../images/bestsellers/1/img4.png'
-import img5 from '../../../../images/bestsellers/1/img5.png'
-import img6 from '../../../../images/bestsellers/1/img6.png'
-import photo1 from '../../../../images/cardProduct/photo1.png'
-import photo2 from '../../../../images/cardProduct/photo2.png'
+import img3 from '../images/bestsellers/1/img3.png'
+import img4 from '../images/bestsellers/1/img4.png'
+import img5 from '../images/bestsellers/1/img5.png'
+import img6 from '../images/bestsellers/1/img6.png'
+import photo1 from '../images/cardProduct/photo1.png'
+import photo2 from '../images/cardProduct/photo2.png'
 
 export class TestDataCardProductPage {
 
@@ -37,23 +37,26 @@ export class TestDataCardProductPage {
 			{
 				photo: photo1,
 				classColor: 'active-color',
-				testColorId: 1
+				testColorId: 'red'
 			},
 			{
 				photo: photo2,
-				classColor: ''
+				classColor: '',
+				testColorId: 'yellow',
 			},
 			{
 				photo: photo1,
-				classColor: ''
+				classColor: '',
+				testColorId: 'blue',
 			},
 			{
 				photo: photo1,
-				classColor: ''
+				classColor: '',
+				testColorId: 'black'
 			},
 			{
 				photo: photo1,
-				classColor: ''
+				classColor: '',
 			},
 			{
 				photo: photo1,

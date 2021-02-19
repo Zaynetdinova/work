@@ -43,3 +43,37 @@ function validateEmail(email) {
 
   return pattern.test(email);
 }
+
+export class UserAgent {
+  constructor() {
+    this.OSName = 'Unknown'
+    this.operatingSystemDetection()
+  }
+
+  operatingSystemDetection() {
+    if (window.navigator.userAgent.indexOf("Mac") != -1) {
+      this.actionsForApple()
+    }
+  }
+
+  actionsForApple() {
+    const $el = document.querySelector('#style-for-apple-js')
+    if ($el) {
+      $el.classList.add('style-apple-padding')
+    }
+
+  }
+}
+
+// переделать
+export function closeWhenClickingInAnInactiveZone() {
+  const inputSearch = document.querySelector('#desktop-search-js')
+
+  document.body.addEventListener('click', (e) => {
+    let article = e.target.closest('article');
+    if (!article) {
+      inputSearch.classList.remove('input-header-active')
+    };
+
+  })
+}

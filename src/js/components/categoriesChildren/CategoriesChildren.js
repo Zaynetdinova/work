@@ -1,7 +1,7 @@
 import {Component} from '../../core/Component'
 import {categoriesChildren} from "./categoriesChildren.template";
 import {sidebarChildren} from './js/sidebarChildren'
-import {testDataCategoriesChildren} from './js/testDataCategoriesChildren'
+import {testDataCategoriesChildren} from '../../../testData/testDataCategoriesChildren'
 
 export class CategoriesChildren extends Component {
     static className = 'CategoriesChildren'
@@ -13,7 +13,7 @@ export class CategoriesChildren extends Component {
     }
 
     toHTML() {
-        return categoriesChildren(testDataCategoriesChildren(), pageForChildren, dataSidebarGirl)
+        return categoriesChildren(testDataCategoriesChildren, pageForChildren, dataSidebarGirl)
     }
 
     onClick(e) {
