@@ -1,6 +1,8 @@
 import {Component} from "../../core/Component";
 import {catalog} from "./catalog.template";
 import {select} from './js/select'
+import {testDataCatalog} from '../../../testData/testDataCatalog'
+import {testDataYouRecentlyViewed} from '../../../testData/testDataYouRecentlyViewed'
 
 import {catalogStorage} from '../../core/storage/storages'
 
@@ -16,10 +18,29 @@ export class Catalog extends Component {
         this.catalog = null
         this.catalogFilters = null
         this.range = null
+
+        this.catalogCategory = [
+            {
+                link: '/#categories',
+                title: 'Женщинам',
+                value: '1000 товаров',
+                titleCategory: 'Платья',
+                linkCategory: '/#catalog'
+            }
+        ]
+
+        this.testGoods = testDataCatalog.goods
     }
 
+
+
     toHTML() {
-        return catalog()
+        return catalog(
+          this.catalogCategory,
+          point,
+          filters,
+          this.testGoods,
+          testDataYouRecentlyViewed)
     }
 
     afterInitComponent() {
@@ -62,3 +83,87 @@ export class Catalog extends Component {
         this.catalogFilters.choiceFilter(e)
     }
 }
+
+let point =
+  [
+      {
+          title: 'Платья',
+          id: 'new1',
+          img: false,
+          category: [
+              {
+                  category: 'Повседневные'
+              },
+              {
+                  category: 'Офисные'
+              },
+              {
+                  category: 'Трикотажные'
+              },
+              {
+                  category: 'Коктейльные'
+              },
+              {
+                  category: 'Вечерние'
+              },
+              {
+                  category: 'Длинные'
+              },
+              {
+                  category: 'Костюмы'
+              },
+              {
+                  category: 'Сарафаны'
+              },
+              {
+                  category: 'Летние'
+              },
+              {
+                  category: 'Короткие'
+              },
+          ],
+      },
+  ]
+
+let filters = [
+    {
+        title: 'Наш выбор',
+        id: 'active1',
+        class: 'active-number'
+    },
+    {
+        title: 'Дешевые',
+        id: 'active2',
+        class: ''
+    },
+    {
+        title: 'Дорогие',
+        id: 'active3',
+        class: ''
+    },
+    {
+        title: 'Новые',
+        id: 'active4',
+        class: ''
+    },
+    {
+        title: 'Старые',
+        id: 'active5',
+        class: ''
+    },
+    {
+        title: 'Скидки',
+        id: 'active6',
+        class: ''
+    },
+    {
+        title: 'Акции',
+        id: 'active7',
+        class: ''
+    },
+    {
+        title: 'Популярные',
+        id: 'active8',
+        class: ''
+    },
+]

@@ -1,4 +1,4 @@
-import {sidebarPoint} from "./sidebarPoint";
+import {sidebarPoint} from '../../common/sidebarPoint'
 
 
 export  function categoriesMenuSidebar() {
@@ -12,6 +12,7 @@ export  function categoriesMenuSidebar() {
         </div>
     `
 }
+
 let point =
     [
         {

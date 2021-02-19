@@ -65,6 +65,22 @@ export class UtilsCardProductPage {
 		}
 	}
 
+	star(quantityStars = 5) {
+		if(quantityStars > 5) {
+			return
+		}
+		const maxCount = 5
+		const star = document.querySelector('#card-product-page-star-js')
+		for(let i = 0; i < quantityStars; i++) {
+			star.insertAdjacentHTML('afterbegin', '<span class="active"></span>')
+		}
+
+		for(let i = 0; i < maxCount - quantityStars; i++) {
+			star.insertAdjacentHTML('beforeend', '<span class="inactive"></span>')
+		}
+
+	}
+
 
 	viewPhotoZoom() {
 		const $zoomContent = document.querySelector('#zoom-photo-js')

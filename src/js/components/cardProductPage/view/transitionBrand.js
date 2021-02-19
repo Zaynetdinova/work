@@ -11,12 +11,12 @@ export function transitionBrand(item) {
     return `${items.join('')}`
 }
 
-export function goodStock() {
+export function goodStock(text = '', count = 0) {
     return `
         <div class="goodStock">
-            <span class="stock">товар в наличии</span>
+            <span class="stock">${text}</span>
             <span class="stock">/</span>
-            <span class="stock">купили 1 раз</span>     
+            <span class="stock">купили ${count} раз</span>     
         </div>                
     `
 }

@@ -2,7 +2,7 @@ import {Component} from '../../core/Component'
 import Swiper from 'swiper/bundle'
 
 import {categoriesWomen} from './categoriesWomen.template'
-import {testDataCategoriesWomen} from './js/testDataCategoriesWomen'
+
 import img1 from '../../../images/Categories/woman/img1.svg'
 import img2 from '../../../images/Categories/woman/img2.svg'
 import img3 from '../../../images/Categories/woman/img3.svg'
@@ -20,6 +20,8 @@ import img14 from '../../../images/Categories/woman/img14.svg'
 import img15 from '../../../images/Categories/woman/img15.svg'
 import img16 from '../../../images/Categories/woman/img16.svg'
 import img17 from '../../../images/Categories/woman/img17.svg'
+
+import {testDataCategoriesWomen} from '../../../testData/testDataCategoriesWomen'
 
 
 export class CategoriesWomen extends Component {
@@ -104,7 +106,7 @@ export class CategoriesWomen extends Component {
 	}
 
 	toHTML() {
-		return categoriesWomen(testDataCategoriesWomen(), item, pageForWomen)
+		return categoriesWomen(testDataCategoriesWomen, item, pageForWomen)
 	}
 }
 

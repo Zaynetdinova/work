@@ -3,8 +3,9 @@ import {cardProductPageTemplate} from './cardProductPage.template'
 import {ChangeSizeCount} from '../common/js/changeSizeCount'
 import {UtilsCardProductPage} from './js/utilsCardProductPage'
 import {inputFile} from './js/inputFile'
-import {TestDataCardProductPage} from './js/testDataCardProductPage'
 import {CardProductPageSliders} from './js/CardProductPageSliders'
+
+import {TestDataCardProductPage} from '../../../testData/testDataCardProductPage'
 
 
 export class CardProductPage extends Component {
@@ -17,6 +18,20 @@ export class CardProductPage extends Component {
 		});
 		this.utils
 		this.testData = new TestDataCardProductPage()
+		this.productPageTitle = [
+			{
+				link: '/#categories',
+				title: 'Женщинам',
+				titleCategory: 'Платья',
+				linkCategory: '/#catalog',
+				titleType: 'Тип платья',
+				titleProduct: 'Наименование товара',
+				linkProduct: '/#card-product',
+				linkType: '/#catalog',
+			}
+		]
+
+		this.testQuantityStars = 3
 	}
 
 	toHTML() {
@@ -24,7 +39,8 @@ export class CardProductPage extends Component {
 			this.testData.cards(),
 			this.testData.cards2(),
 			this.testData.color(),
-			this.testData.info())
+			this.testData.info(),
+			this.productPageTitle)
 	}
 
 
@@ -33,6 +49,7 @@ export class CardProductPage extends Component {
     const sliders = new CardProductPageSliders()
 		this.utils.viewPhotoZoom()
 		this.utils.transitionTitleScroll()
+		this.utils.star(this.testQuantityStars)
 		inputFile()
     // cardProductPage()
     sliders.init()

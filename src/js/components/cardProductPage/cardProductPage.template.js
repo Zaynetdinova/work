@@ -14,16 +14,18 @@ import {descriptionModule} from "../common/description";
 import {dopInfo} from "./view/dopInfo";
 import {form} from "./view/form";
 import {commonCard} from "../common/commonCard/commonCards";
+import {socialNetworks} from '../../core/utils/social'
 
 export function cardProductPageTemplate(
 	cards = [],
 	cards2 = [],
 	testColor = [],
-	testInfo = []) {
+	testInfo = [],
+	title) {
 	return `
 		<div class="root">
 			
-			${transitionTitleProduct(productCategory)}
+			${transitionTitleProduct(title)}
 			
 			<div class="wrapper">
 			
@@ -35,25 +37,45 @@ export function cardProductPageTemplate(
 				<section class="product-description">
 					<div class="first-line">
 						<div class="right-wrap">
-							<div class="wrapper-button-new">${buttonProduct('Новинка')}</div>							
+							<div class="wrapper-button-new">
+								${buttonProduct('Новинка')}
+							</div>
+														
 							${star()}
+							
 						</div>
+						
 						${favorites()}
+						
 					</div>
+					
 					${transitionBrand(brand)}
-					${goodStock()}
+					
+					${goodStock('товар в наличии', '16')}
+					
 					<div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
+					
 					<div class="info">
 						<div class="info-1">${infoProduct(testInfo)}</div>
+						
 						<div style="margin-bottom: 4px;">
-							<div class="social">${socialProduct(social)}</div>
+							<div class="social">${socialProduct(socialNetworks)}</div>
 							<div class="buttonAnotherGoods">${buttonProduct('Другие товары этого бренда')}</div>
 						</div>
+						
 					</div>
-					<div class="wrapper-another-color">${anotherColor(testColor)}</div>
+					<div class="wrapper-another-color">
+						${anotherColor(testColor)}
+					</div>
+					
 					${infoTable(table)}
-					<div class="wrapper-attention">${attention()}</div>
+					
+					<div class="wrapper-attention">
+						${attention()}
+						</div>
+					
 					${descriptionModule()}
+					
 					<div class="wrapper-dop-info">
 						${dopInfo()}
 					</div>
@@ -71,19 +93,6 @@ export function cardProductPageTemplate(
 	`
 }
 
-let productCategory = [
-	{
-		link: '/#categories',
-		title: 'Женщинам',
-		titleCategory: 'Платья',
-		linkCategory: '/#catalog',
-		titleType: 'Тип платья',
-		titleProduct: 'Наименование товара',
-		linkProduct: '/#card-product',
-		linkType: '/#catalog',
-	}
-]
-
 
 
 let brand = [
@@ -92,34 +101,6 @@ let brand = [
 		category: 'Платье'
 	}
 ]
-
-let social = [
-	{
-		class: 'vk',
-		href: 'https://vk.com/optmoyo'
-	},
-	{
-		class: 'fb',
-		href: 'https://www.facebook.com/OptMoyo.Ru/'
-	},
-	{
-		class: 'tw',
-		href: ''
-	},
-	{
-		class: 'pen',
-		href: ''
-	},
-	{
-		class: 'mail',
-		href: ''
-	},
-	{
-		class: 'od',
-		href: ''
-	},
-]
-
 
 
 let table = [

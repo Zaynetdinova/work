@@ -1,10 +1,11 @@
 import {commonCard} from '../common/commonCard/commonCards'
-import {categoriesMenuSidebar} from '../common/categoriesMenuSidebar'
+
 import video from '../../../video/1.mp4'
 import {partnerOffers} from '../common/partnerOffers'
 import {titleWrapper, transitionWrapper} from '../common/transitionTitle'
 import {IconImg} from "../common/icon";
 import {bannerBlockWomen} from "./view/banner";
+import {categoriesMenuSidebar} from './view/categoriesMenuSidebar'
 
 export function categoriesWomen(testDataWoman, item, pageForWomen) {
 	return `
