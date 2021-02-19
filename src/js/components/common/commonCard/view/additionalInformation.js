@@ -1,6 +1,6 @@
 import {size} from '../../size'
 
-export function additionalInformation(title, description, img, index, sizeElements) {
+export function additionalInformation(title, description, img, index, sizeElements, secondaryImg) {
 	return `
   <div class="additional-information">
      <div class="content">
@@ -21,16 +21,24 @@ export function additionalInformation(title, description, img, index, sizeElemen
 				<div class='images'>
 						<div class="swiper-container photos-block-common-block photos-block-common-block-js">
 							<div class="swiper-wrapper">
-								<img src="${img}" class="swiper-slide">
-								<img src="${img}" class="swiper-slide">
-								<img src="${img}" class="swiper-slide">
-								<img src="${img}" class="swiper-slide">
-								<img src="${img}" class="swiper-slide">
-								<img src="${img}" class="swiper-slide">
+							${secondaryImg.map((img) => {
+									return `
+										<div 
+											data-common-card-main-secondImg-js 
+											style="background-image: url(${img});" 
+											class="swiper-slide image">
+										</div>
+									`
+							}).join('')}
 							</div>
 							
-								${buttonPhotos('prev')}
-								${buttonPhotos('next')}
+							${secondaryImg.length <= 4 
+								? ''
+								: `
+									${buttonPhotos('prev')}
+									${buttonPhotos('next')}
+								`}
+							
 						</div>
 				</div>
       </div>

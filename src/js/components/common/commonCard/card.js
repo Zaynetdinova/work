@@ -7,9 +7,11 @@ import {additionalInformation} from './view/additionalInformation'
 export function card(i, infoType = 'price') {
 	const {
 		sale = false,
-		id, img,
+		id,
+		img,
 		banner,
 		title,
+		secondaryImg = [],
 		description,
 		oldPrice = '',
 		newPrice = '',
@@ -17,11 +19,12 @@ export function card(i, infoType = 'price') {
 		bannerPosition = 'bottom',
 		link='/#card-product',
 		size = []} = i
+
 	return `
 		<a href="${link}" style="text-decoration: none">
-			<article class="Card card-bestsellers-js" id="${id}" data-id="${id}">
+			<article data-common-card-js class="Card" id="${id}" data-id="${id}">
 				<div class="img-wrapper">
-					<div class="img" style="background-image: url(${img});">
+					<div data-common-card-main-img-js class="img" style="background-image: url(${img});">
 						${banner ? cardBanner('новинка', bannerPosition) : ''}
 					</div>
 					<div class="quick-view"> 
@@ -31,7 +34,7 @@ export function card(i, infoType = 'price') {
 				${infoType == 'price'
 				? priceContent(oldPrice, newPrice, price, sale)
 				: infoCard(title, description)}
-				${additionalInformation(title, description, img, id, size)}
+				${additionalInformation(title, description, img, id, size, secondaryImg)}
 			</article>
 		</a>
 	`

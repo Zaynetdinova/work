@@ -94,6 +94,11 @@ $widthCardImage: 87px;
       width: $widthCardImage;
       background: #555555;
       padding: 5px;
+
+      .image {
+        background-size: cover;
+        background-position: center;
+      }
       .photos-block-common-block {
         height: 490px;
         @media (max-width: 1200px) {
