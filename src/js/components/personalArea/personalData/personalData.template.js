@@ -57,7 +57,7 @@ export function personalDataTemplate() {
                                     ${TitleData('Телефон')}
                                     <div class="transport-company">+7 123 456-78-90</div>
                                 </div>
-                                ${ButtonData('Изменить')}
+                                ${ButtonData('Изменить', 'personal-change-phone-js')}
                             </div>
                             <div class="wrapper-box-2">
                                 <div class="wrapper-box-1">
@@ -79,7 +79,7 @@ export function personalDataTemplate() {
                                     ${TitleData('Транспортная компания')}
                                     <div class="transport-company">ПЭК</div>
                                 </div>
-                                ${ButtonData('Изменить')}
+                                ${ButtonData('Изменить', 'personal-change-transport-js')}
                             </div>
                             <div class="wrapper-box-2">
                                 <div class="wrapper-box-1">
