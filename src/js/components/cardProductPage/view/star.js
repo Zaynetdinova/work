@@ -1,11 +1,7 @@
 export function star() {
     return `
-        <div class="rating-result">
-            <span class="active"></span>
-            <span class="active"></span>    
-            <span class="active"></span>  
-            <span class="active"></span>     
-            <span class="inactive"></span>
+        <div id="card-product-page-star-js" class="rating-result">
+           
         </div>
    
     `

@@ -15,7 +15,7 @@ export function categoriesChildren(testData, pageForChildren, dataSidebarGirl) {
 				<div class="flex-wrap">	
 				
 					<section class="sidebar-page-categories sidebar-page-categoriesChildren">
-                        ${childrenSidebar(dataSidebarGirl)}
+             ${childrenSidebar(dataSidebarGirl)}
 					</section>
 					
 					<section class="content-page-categories">

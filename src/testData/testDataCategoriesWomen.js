@@ -1,13 +1,12 @@
-import img18 from '../../../../images/bestsellers/1/img1.png'
-import img19 from '../../../../images/bestsellers/1/img2.png'
-import img20 from '../../../../images/bestsellers/1/img3.png'
-import img21 from '../../../../images/bestsellers/1/img4.png'
-import img22 from '../../../../images/bestsellers/1/img5.png'
-import img23 from '../../../../images/bestsellers/1/img6.png'
+import img18 from '../images/bestsellers/1/img1.png'
+import img19 from '../images/bestsellers/1/img2.png'
+import img20 from '../images/bestsellers/1/img3.png'
+import img21 from '../images/bestsellers/1/img4.png'
+import img22 from '../images/bestsellers/1/img5.png'
+import img23 from '../images/bestsellers/1/img6.png'
 
 
-export function testDataCategoriesWomen() {
-	return {
+export let testDataCategoriesWomen = {
 		_id: 'goods',
 		title: 'Категория',
 		data: [
@@ -121,5 +120,4 @@ export function testDataCategoriesWomen() {
 			},
 
 		],
-	}
 }

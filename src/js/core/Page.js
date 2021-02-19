@@ -1,12 +1,10 @@
 import {openSidebarTest} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
-import {closeWhenClickingInAnInactiveZone} from './JS/closeWhenClickingInAnInactiveZone'
-import {UserAgent} from './JS/userAgent'
-
 import {popupQuickFunctions} from '../components/common/popupQuick/js/popupQuickFunctions'
 import {Entry} from '../components/common/entry/entry'
 
 import {commonCardStorage} from './storage/storages'
+import {closeWhenClickingInAnInactiveZone, UserAgent} from './utils/utils'
 
 
 export class Page {
@@ -24,22 +22,18 @@ export class Page {
 
 		popupQuickFunctions()
 
-		// extra sidebar
 		new openSidebarTest()
 
-		// openSidebar()
-
-		// delete then
 		initialSliders()
-		//
+
 
 		if(window.userRegistry) {
 			new commonCardStorage.commonCard()
 		}
 
 		closeWhenClickingInAnInactiveZone()
-		const userAgent = new UserAgent()
-		userAgent.operatingSystemDetection()
+		new UserAgent()
+
 
 	}
 

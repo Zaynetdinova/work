@@ -3,17 +3,11 @@ import {numberPages, pagination} from "../common/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./view/navCatalog";
 import {filter} from "./view/filter";
-import img1 from '../../../images/bestsellers/1/img1.png'
-import img2 from '../../../images/bestsellers/1/img2.png'
-import img3 from '../../../images/bestsellers/1/img3.png'
-import img4 from '../../../images/bestsellers/1/img4.png'
-import img5 from '../../../images/bestsellers/1/img5.png'
-import img6 from '../../../images/bestsellers/1/img6.png'
 import {card} from '../common/commonCard/card'
 import {commonCard} from "../common/commonCard/commonCards";
 
 
-export function catalog()  {
+export function catalog(catalogCategory, point, filters, testGoods, testDataYouRecentlyViewed)  {
     return `
     <div class="wrapper-catalog">
         ${transitionTitleCatalog(catalogCategory)}
@@ -43,7 +37,7 @@ export function catalog()  {
             
             <section class="cards-wrapper">               
                 <div class="container">
-                    ${navCatalog(item)}
+                    ${navCatalog(filters)}
                     <div class="wrapper-filter-desktop-ilmira">
                         <div id="select-filter"></div>
                     </div>
@@ -51,7 +45,7 @@ export function catalog()  {
                 </div>                
                 <div id="selected-filters-js" class="selected-filters"></div>			                   
                 <div class="cards">
-                    ${woman.data.map(i => {
+                    ${testGoods.map(i => {
                     return `
                     ${card(i)}
                     `}).join('')}
@@ -64,7 +58,7 @@ export function catalog()  {
                     ${numberPages()}
                  </div>               
                 <div class="wrap-card-see" id="style-for-apple-js">
-                    ${commonCard(woman2, 'price')}
+                    ${commonCard(testDataYouRecentlyViewed, 'price')}
                 </div>               
             </section>        
         </div>                     
@@ -72,349 +66,4 @@ export function catalog()  {
     `
 }
 
-
-
-let catalogCategory = [
-    {
-        link: '/#categories',
-        title: 'Женщинам',
-        value: '1000 товаров',
-        titleCategory: 'Платья',
-        linkCategory: '/#catalog'
-    }
-]
-
-let point =
-    [
-        {
-            title: 'Платья',
-            id: 'new1',
-            img: false,
-            category: [
-                {
-                    category: 'Повседневные'
-                },
-                {
-                    category: 'Офисные'
-                },
-                {
-                    category: 'Трикотажные'
-                },
-                {
-                    category: 'Коктейльные'
-                },
-                {
-                    category: 'Вечерние'
-                },
-                {
-                    category: 'Длинные'
-                },
-                {
-                    category: 'Костюмы'
-                },
-                {
-                    category: 'Сарафаны'
-                },
-                {
-                    category: 'Летние'
-                },
-                {
-                    category: 'Короткие'
-                },
-            ],
-        },
-]
-
-let item = [
-    {
-        title: 'Наш выбор',
-        id: 'active1',
-        class: 'active-number'
-    },
-    {
-        title: 'Дешевые',
-        id: 'active2',
-        class: ''
-    },
-    {
-        title: 'Дорогие',
-        id: 'active3',
-        class: ''
-    },
-    {
-        title: 'Новые',
-        id: 'active4',
-        class: ''
-    },
-    {
-        title: 'Старые',
-        id: 'active5',
-        class: ''
-    },
-    {
-        title: 'Скидки',
-        id: 'active6',
-        class: ''
-    },
-    {
-        title: 'Акции',
-        id: 'active7',
-        class: ''
-    },
-    {
-        title: 'Популярные',
-        id: 'active8',
-        class: ''
-    },
-]
-
-
-const woman = {
-    data: [
-        {
-            id: 'woman1',
-            img: img1,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            banner: 'НОВИНКА',
-            bannerPosition: 'bottom',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman2',
-            img: img2,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman3',
-            img: img3,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman4',
-            img: img4,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman5',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman6',
-            img: img6,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman7',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman8',
-            img: img6,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman9',
-            img: img1,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            banner: 'НОВИНКА',
-            bannerPosition: 'bottom',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman10',
-            img: img2,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman11',
-            img: img3,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman12',
-            img: img4,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman13',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman14',
-            img: img6,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'woman15',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-    ],
-}
-
-
-const woman2 = {
-    title: 'Вы недавно смотрели',
-    _id: 'catalog',
-    data: [
-        {
-            id: 'test1',
-            img: img1,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            banner: 'НОВИНКА',
-            bannerPosition: 'bottom',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test2',
-            img: img2,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test3',
-            img: img3,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test4',
-            img: img4,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test5',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test6',
-            img: img6,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test7',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-        {
-            id: 'test8',
-            img: img5,
-            title: 'Vittoria Vicci',
-            description: 'Наименование товара ',
-            oldPrice: '1 234,00 &#8381',
-            newPrice: '-234,00 &#8381;',
-            price: '1 243,00 &#8381; ',
-            sale: true
-        },
-    ],
-}
 
