@@ -62,20 +62,27 @@ export function desktopHeader() {
                                         <div class="wrapper-product">
                                             <img class="img-product" src="${women}" alt="">
                                             <div class="wrapper-info">
-                                                <div class="name-brand">Бренд</div>
-                                                <div class="name-product">Наименование товара</div>
-                                                ${infoProduct(infoFavorite)}
+                                                <div>
+                                                    <div class="name-brand">Бренд</div>
+                                                    <div class="name-product">Наименование товара</div>
+                                                    ${infoProduct(infoFavorite)}
+                                                </div>
                                                 <div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="wrapper-product">
-                                            <img class="img-product" src="${women}" alt="">
+                                            <div class="wrapper-img"">
+                                                <img class="img-product" src="${women}" alt="">
+                                                <div class="Card-banner banner-bottom">новинка</div>
+                                            </div>
                                             <div class="wrapper-info">
-                                                <div class="name-brand">Бренд</div>
-                                                <div class="name-product">Наименование товара</div>
-                                                ${infoProduct(infoFavorite)}
+                                                <div>
+                                                    <div class="name-brand">Бренд</div>
+                                                    <div class="name-product">Наименование товара</div>
+                                                    ${infoProduct(infoFavorite)}
+                                                </div>
                                                 <div class="price">${priceContent('','', '1 234,00 ₽', false)}</div>
                                             </div>
                                         </div>
@@ -84,9 +91,11 @@ export function desktopHeader() {
                                         <div class="wrapper-product">
                                             <img class="img-product" src="${women}" alt="">
                                             <div class="wrapper-info">
-                                                <div class="name-brand">Бренд</div>
-                                                <div class="name-product">Наименование товара</div>
-                                                ${infoProduct(infoFavorite)}
+                                                <div>
+                                                    <div class="name-brand">Бренд</div>
+                                                    <div class="name-product">Наименование товара</div>
+                                                    ${infoProduct(infoFavorite)}
+                                                </div>
                                                 <div class="price">${priceContent('','', '1 234,00 ₽', false)}</div>
                                             </div>
                                         </div>
@@ -95,9 +104,11 @@ export function desktopHeader() {
                                         <div class="wrapper-product">
                                             <img class="img-product" src="${women}" alt="">
                                             <div class="wrapper-info">
-                                                <div class="name-brand">Бренд</div>
-                                                <div class="name-product">Наименование товара</div>
-                                                ${infoProduct(infoFavorite)}
+                                                <div>
+                                                    <div class="name-brand">Бренд</div>
+                                                    <div class="name-product">Наименование товара</div>
+                                                    ${infoProduct(infoFavorite)}
+                                                </div>
                                                 <div class="price">${priceContent('','', '1 234,00 ₽', false)}</div>
                                             </div>
                                         </div>
@@ -115,7 +126,7 @@ export function desktopHeader() {
             <div class='buy'>
                 <a href="/#personal-area/basket" class="content">
                     <img class='basket' id='basket' src=${basket} alt='basket'>
-                    <div class='basket-price' id='basket-price'>88 шт. /<br> 888 000 ₽</div>
+                    <div class='basket-price' id='basket-price'>88 шт. / 888 000 ₽</div>
                 </a>
                 <div class="basket-dropdown">
                     <div class="basket-dropdown-wrap">
@@ -127,20 +138,28 @@ export function desktopHeader() {
                                 <div class="wrapper-product">
                                     <img class="img-product" src="${women}" alt="">
                                     <div class="wrapper-info">
-                                        <div class="name-brand">Бренд</div>
-                                        <div class="name-product">Наименование товара</div>
-                                        ${infoProduct(info)}
+                                        <div>
+                                            <div class="name-brand">Бренд</div>
+                                            <div class="name-product">Наименование товара</div>
+                                            ${infoProduct(info)}
+                                        </div>
+                                       
                                         <div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="wrapper-product">
-                                    <img class="img-product" src="${women}" alt="">
+                                    <div class="wrapper-img"">
+                                        <img class="img-product" src="${women}" alt="">
+                                        <div class="Card-banner banner-bottom">новинка</div>
+                                    </div>
                                     <div class="wrapper-info">
-                                        <div class="name-brand">Бренд</div>
-                                        <div class="name-product">Наименование товара</div>
-                                        ${infoProduct(info)}
+                                        <div>
+                                            <div class="name-brand">Бренд</div>
+                                            <div class="name-product">Наименование товара</div>
+                                            ${infoProduct(info)}
+                                        </div>
                                         <div class="price">${priceContent('','', '1 234,00 ₽', false)}</div>
                                     </div>
                                 </div>
@@ -149,9 +168,11 @@ export function desktopHeader() {
                                 <div class="wrapper-product">
                                     <img class="img-product" src="${women}" alt="">
                                     <div class="wrapper-info">
-                                        <div class="name-brand">Бренд</div>
-                                        <div class="name-product">Наименование товара</div>
-                                        ${infoProduct(info)}
+                                        <div>
+                                            <div class="name-brand">Бренд</div>
+                                            <div class="name-product">Наименование товара</div>
+                                            ${infoProduct(info)}
+                                        </div>
                                         <div class="price">${priceContent('','', '1 234,00 ₽', false)}</div>
                                     </div>
                                 </div>
@@ -160,9 +181,11 @@ export function desktopHeader() {
                                 <div class="wrapper-product">
                                     <img class="img-product" src="${women}" alt="">
                                     <div class="wrapper-info">
-                                        <div class="name-brand">Бренд</div>
-                                        <div class="name-product">Наименование товара</div>
-                                        ${infoProduct(info)}
+                                        <div>
+                                            <div class="name-brand">Бренд</div>
+                                            <div class="name-product">Наименование товара</div>
+                                            ${infoProduct(info)}
+                                        </div>
                                         <div class="price">${priceContent('','', '1 234,00 ₽', false)}</div>
                                     </div>
                                 </div>
