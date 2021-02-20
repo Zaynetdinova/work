@@ -1,7 +1,6 @@
 .wrap-checkbox {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 70px;
   .text-checkbox {
     font-style: italic;
@@ -10,6 +9,10 @@
     letter-spacing: 0.05em;
     text-decoration-line: underline;
     color: #FFFFFF;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
   }
   input[type="checkbox"]:checked,
   input[type="checkbox"]:not(:checked) {

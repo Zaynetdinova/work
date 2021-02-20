@@ -36,7 +36,10 @@ export function notIncludedTable() {
                     </td>
                     
                     <td class="size-product">
-                        ${sizeInfo(sizes)}
+                       ${sizes.map(({size}) => {
+                        return  `
+                            <div class="col">${size}</div>
+                        `}).join('')}
                     </td>
                     
                     <td>

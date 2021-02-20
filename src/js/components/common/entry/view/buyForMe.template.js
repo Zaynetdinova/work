@@ -1,6 +1,5 @@
 import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
 import {titleBuy} from "../../titleBuy";
-import {checkboxRegistration} from "../../popupDefaultTemplate/checkboxRegistration";
 import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {infoTextRegistration} from "../../infoTextRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
@@ -33,7 +32,13 @@ export function buyForMeTemplate() {
             </div>
 
             ${nesessaryFildsTemplate()}
-            ${checkboxRegistration('Даю согласие на обработку персональных данных')}
+            <div class="wrap-checkbox">
+                <input  checked class="checkbox checkbox-filter-js" type="checkbox" id="forMe"> 
+                <label for="forMe"></label>
+                <div class="text-checkbox">
+                       Даю согласие на обработку персональных данных
+                </div>
+            </div> 
             <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
 
         </form>
