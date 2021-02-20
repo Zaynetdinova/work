@@ -5,7 +5,8 @@ import {UtilsCardProductPage} from './js/utilsCardProductPage'
 import {inputFile} from './js/inputFile'
 import {CardProductPageSliders} from './js/CardProductPageSliders'
 
-import {TestDataCardProductPage} from '../../../testData/testDataCardProductPage'
+import {testDataCardProductPage} from '../../../testData/testDataCardProductPage'
+import {ChangeFavoritesProduct, changeFavoritesProduct} from '../../core/utils/utils'
 
 
 export class CardProductPage extends Component {
@@ -17,7 +18,7 @@ export class CardProductPage extends Component {
 			listeners: ['click']
 		});
 		this.utils
-		this.testData = new TestDataCardProductPage()
+
 		this.productPageTitle = [
 			{
 				link: '/#categories',
@@ -36,10 +37,10 @@ export class CardProductPage extends Component {
 
 	toHTML() {
 		return cardProductPageTemplate(
-			this.testData.cards(),
-			this.testData.cards2(),
-			this.testData.color(),
-			this.testData.info(),
+			testDataCardProductPage.cards,
+			testDataCardProductPage.cards2,
+			testDataCardProductPage.color,
+			testDataCardProductPage.info,
 			this.productPageTitle)
 	}
 
@@ -53,6 +54,7 @@ export class CardProductPage extends Component {
 		inputFile()
     // cardProductPage()
     sliders.init()
+		new ChangeFavoritesProduct().init()
 	}
 
 	onClick(e) {
@@ -72,9 +74,6 @@ export class CardProductPage extends Component {
 					break;
 				case 'title-dop-info-js':
 					this.utils.infoProductShow('.dop-info-js')
-					break;
-				case 'favorites-product-js':
-					this.utils.changeFavoritesProduct(element)
 					break;
 				case 'form-js':
 					this.utils.openForm(element)

@@ -2,6 +2,7 @@ import info from '../../../images/cardProduct/info.svg'
 import {Sale} from './sale'
 import {quantity} from "./quantity";
 
+// error
 const testArrSizes = [
     {size: '40', oldPrice: '1 234,00 ₽', price: false, sale: true},
     {size: '42', oldPrice: '1 234,00 ₽', price: '1 234,00 ₽', sale: true},

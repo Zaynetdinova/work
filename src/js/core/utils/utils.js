@@ -65,6 +65,27 @@ export class UserAgent {
   }
 }
 
+
+export class ChangeFavoritesProduct {
+  constructor() {
+    this.health = null
+  }
+
+  init() {
+    this.health = document.querySelector('[data-favorites-product-js]')
+    this.eventInitial()
+  }
+
+  eventInitial() {
+    this.health.addEventListener('click', () => this.stateFavorites())
+  }
+
+  stateFavorites() {
+    this.health.classList.toggle('favorite-product-active')
+    console.log(this.health.id)
+  }
+}
+
 // переделать
 export function closeWhenClickingInAnInactiveZone() {
   const inputSearch = document.querySelector('#desktop-search-js')

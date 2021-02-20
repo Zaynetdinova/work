@@ -5,10 +5,16 @@ import img6 from '../images/bestsellers/1/img6.png'
 import photo1 from '../images/cardProduct/photo1.png'
 import photo2 from '../images/cardProduct/photo2.png'
 
-export class TestDataCardProductPage {
+export let testDataCardProductPage = {
 
-	info() {
-		return [
+	brand: [
+		{
+			brand: 'Vittoria Vicci',
+			category: 'Платье'
+		}
+	],
+
+	info: [
 			{
 				infoType: 'Арт:',
 				infoResult: '1-20-2-2-02-52291'
@@ -29,11 +35,9 @@ export class TestDataCardProductPage {
 				infoType: 'Сезон:',
 				infoResult: 'Весна-Лето'
 			},
-		]
-	}
+		],
 
-	color() {
-		return [
+	color: [
 			{
 				photo: photo1,
 				classColor: 'active-color',
@@ -62,11 +66,9 @@ export class TestDataCardProductPage {
 				photo: photo1,
 				classColor: ''
 			},
-		]
-	}
+		],
 
-	cards() {
-		return  {
+	cards: {
 			title: 'Вы недавно смотрели',
 			_id: 'product2',
 			data: [
@@ -133,13 +135,9 @@ export class TestDataCardProductPage {
 					sale: true
 				},
 			],
-		}
+		},
 
-
-	}
-
-	cards2() {
-		return  {
+	cards2: {
 			title: 'Вам может понравиться',
 			_id: 'product',
 			data: [
@@ -226,6 +224,5 @@ export class TestDataCardProductPage {
 					sale: true
 				},
 			],
-		}
-	}
+		},
 }

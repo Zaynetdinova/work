@@ -1,9 +1,4 @@
-import testBig1 from "../../../../images/cardProduct/test-big1.png";
-import testBig2 from "../../../../images/cardProduct/test-big2.png";
-import testBig3 from "../../../../images/cardProduct/test-big3.png";
-import testBig4 from "../../../../images/cardProduct/test-big4.png";
-
-export function popupPhotoTemplate() {
+export function popupPhotoTemplate(testDataPopupPhoto) {
   return `
   <section class="view-big-photos-popup-block">
     <div class="paranja"></div>
@@ -13,7 +8,7 @@ export function popupPhotoTemplate() {
       </div>
       <div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
         <div class="swiper-wrapper">
-          ${popupPhoto(dataPhotos)}
+          ${popupPhoto(testDataPopupPhoto)}
         </div>
         <div class="swiper-button-next-main swiper-button button-next"></div>
         <div class="swiper-button-prev-main swiper-button button-prev"></div>
@@ -32,27 +27,3 @@ function popupPhoto(data) {
 		`
   }).join('')
 }
-
-
-const dataPhotos = [
-  {
-    original: testBig1,
-    compressedImg: testBig1,
-  },
-  {
-    original: testBig2,
-    compressedImg: testBig2,
-  },
-  {
-    original: testBig3,
-    compressedImg: testBig3,
-  },
-  {
-    original: testBig4,
-    compressedImg: testBig4,
-  },
-  {
-    original: testBig1,
-    compressedImg: testBig1,
-  }
-]

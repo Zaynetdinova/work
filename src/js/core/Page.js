@@ -1,16 +1,18 @@
 import {openSidebarTest} from './JS/openSidebar'
 import {initialSliders} from './JS/initialSliders'
-import {popupQuickFunctions} from '../components/common/popupQuick/js/popupQuickFunctions'
+
 import {Entry} from '../components/common/entry/entry'
 
 import {commonCardStorage} from './storage/storages'
 import {closeWhenClickingInAnInactiveZone, UserAgent} from './utils/utils'
+import {PopupQuick} from '../components/common/popupQuick/js/popupQuickFunctions'
 
 
 export class Page {
 	constructor(params) {
 		this.params = params
 		this.entry = new Entry()
+
 	}
 
 	getRoot() {
@@ -19,8 +21,9 @@ export class Page {
 
 	afterRender() {
 		this.entry.init()
+		new PopupQuick().init()
 
-		popupQuickFunctions()
+
 
 		new openSidebarTest()
 
