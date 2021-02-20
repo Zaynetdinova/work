@@ -67,8 +67,18 @@ export function viewOrderMobile() {
                     </div>
                     <div class="post2">
                         <div class="col">Количество</div>
-                        <div class="size-col">88</div>
-                        <div class="size-col">88</div>
+                        <div class="size-col">
+                            <div class="wrap-size">
+                                <div>88</div>      
+                                <div class="crest"></div>
+                            </div>
+                        </div>
+                        <div class="size-col">
+                            <div class="wrap-size">
+                                <div>88</div>      
+                                <div class="crest"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="post3">
                         <div class="col">Цена/Сумма</div>

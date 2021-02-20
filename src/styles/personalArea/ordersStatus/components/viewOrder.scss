@@ -20,6 +20,7 @@
       .result {
         display: flex;
         justify-content: flex-end;
+        align-items: baseline;
         margin-top: 30px;
         font-size: 16px;
         line-height: 18px;
@@ -162,29 +163,28 @@
       }
     }
     .size-product {
-      .Size-info {
-        margin: 0 auto;
-        height: 32px;
-        .size {
-          padding-left: 0;
-          height: 32px;
-          .img-size-wrapper {
-            display: none;
+      .wrap-size {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .crest {
+          background-image: url("../images/icons/crest.svg");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 15px;
+          height: 15px;
+          margin-left: 10px;
+          cursor: pointer;
+          &:hover {
+            background-image: url("../images/icons/crest-hover.svg");
           }
-          .td-size {
-            margin: 0;
-          }
-        }
-        &:last-child {
-          margin-bottom: 0;
         }
       }
     }
-    .quantity-product {
-      .col {
-        line-height: 36px;
-        text-align: center;
-      }
+    .col {
+      line-height: 36px;
+      text-align: center;
     }
     .wrapper-icon-title {
       .icon-title {

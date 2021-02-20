@@ -5,7 +5,7 @@ import {Sale} from "../../../common/sale";
 import {iconTitle} from "./iconTitle";
 import box from "../../../../../images/icons/box.svg";
 import orderProcessing from '../../../../../images/icons/order-processing.svg';
-import noCancel from '../../../../../images/icons/no-cancel.svg'
+import crest from '../../../../../images/icons/crest.svg'
 
 export function viewOrderTable() {
     return `
@@ -47,7 +47,13 @@ export function viewOrderTable() {
                     </td>
                     
                     <td class="size-product">
-                        ${sizeInfo(sizes)}
+                        ${sizes.map(({size}) => {
+                        return  ` <div class="wrap-size">
+                                    <div class="col">${size}</div>
+                                    <div class="crest"></div>
+                                  </div>
+                                  `
+                        }).join('')}
                     </td>
                     
                     <td class="quantity-product">

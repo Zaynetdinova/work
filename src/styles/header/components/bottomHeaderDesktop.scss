@@ -128,7 +128,6 @@
     }
     .favorite-dropdown {
       right: -3%;
-      z-index: 5;
       padding: 16px 15px 50px 15px;
     }
   }
@@ -161,7 +160,6 @@
     }
     .basket-dropdown {
       right: -8%;
-      z-index: 6;
       padding: 15px 15px 50px 15px;
       .basket-title {
         font-size: 15px;
@@ -183,6 +181,7 @@
   .basket-dropdown,
   .favorite-dropdown {
     position: absolute;
+    z-index: 6;
     top: 85%;
     background: #FFFFFF;
     width: 320px;
