@@ -1,5 +1,6 @@
 import {popupPhotoTemplate} from './popupPhoto.template'
 import Swiper from "swiper";
+import {testDataPopupPhoto} from '../../../../testData/testDataPopupPhoto'
 
 export class popupPhoto {
 
@@ -9,7 +10,7 @@ export class popupPhoto {
 
 
   toHTML() {
-    return popupPhotoTemplate()
+    return popupPhotoTemplate(testDataPopupPhoto)
   }
 
   initialSlider() {

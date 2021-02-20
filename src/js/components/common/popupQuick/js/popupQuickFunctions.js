@@ -1,51 +1,81 @@
 import {popupQuick} from '../popupQuick'
-import {changeFavoritesProduct} from '../../js/changeFavoritesProduct'
 import Swiper from 'swiper'
 import {ChangeSizeCount} from '../../js/changeSizeCount'
+import {ChangeFavoritesProduct} from '../../../../core/utils/utils'
 
-export function popupQuickFunctions() {
-	const $buttons = document.querySelectorAll('.quick-view-js')
-	$buttons.forEach((button) => {
-		button.addEventListener('click', openQuickView)
-	})
-}
+export class PopupQuick {
+	constructor() {
+		this.$body = document.querySelector('body')
+		this.$buttons = document.querySelectorAll('.quick-view-js')
+		this.size = new ChangeSizeCount()
+		this.$popup = null
+		this.close = null
+		this.$paranja = null
+		this.$closeButton = null
+		this.$colorCard = null
+		this.$countSize = null
+		this.$like = null
+		this.$rootPopup = null
+		this.sliders = new PopupInitialSliders()
+	}
 
-// problem
-function openQuickView(e) {
-	e.preventDefault()
-	const $body = document.querySelector('body')
-	$body.insertAdjacentHTML('afterbegin', popupQuick());
-
-	const $popup = document.querySelector('#Popup-quick-js')
-	const close = $popup.querySelector('#close-popup')
-	const $paranja = $popup.querySelector('#paranja-click-js')
-	const $closeButton = $popup.querySelector('#close-popup-quick-button-js')
-	const $colorCard = document.querySelector('#popup-another-color-js-test')
-	const $countSize = document.querySelector('#info-table')
-	const $like = $popup.querySelector('#favorites-product-js')
-
-
-	const size = new ChangeSizeCount()
-	// problem удаление прослушки событий
-	close.addEventListener('click', closePopupQuick)
-	$paranja.addEventListener('click', closePopupQuick)
-	$closeButton.addEventListener('click', closePopupQuick)
-	$colorCard.addEventListener('click', anotherColorButton)
-	$countSize.addEventListener('click', (e) => size.init(e))
-	$like.addEventListener('click', () => changeFavoritesProduct($like))
-
-	const $test = $popup.querySelector('#popup-js')
-
-	positionPopup()
-
-	initialSlider()
+	init() {
+		this.$buttons.forEach((button) => {
+			button.addEventListener('click', (event) => this.openQuickView(event))
+		})
+	}
 
 
+	openQuickView(event) {
+		event.preventDefault()
+		console.log(event.target)
+		this.$body.insertAdjacentHTML('afterbegin', popupQuick());
+		this.findAllElementsPopup()
+		this.initialEvent()
+		this.positionPopup()
+		this.sliders.init()
+		new ChangeFavoritesProduct().init()
+	}
 
+	findAllElementsPopup() {
+		this.$popup = document.querySelector('#Popup-quick-js')
+		this.$rootPopup = this.$popup.querySelector('#popup-js')
+		this.close = this.$popup.querySelector('#close-popup')
+		this.$paranja = this.$popup.querySelector('#paranja-click-js')
+		this.$closeButton = this.$popup.querySelector('#close-popup-quick-button-js')
+		this.$colorCard = this.$popup.querySelector('#popup-another-color-js-test')
+		this.$countSize = this.$popup.querySelector('#info-table')
+		this.$like = this.$popup.querySelector('#favorites-product-js')
+	}
 
+	initialEvent() {
+		this.close.addEventListener('click', () => this.closePopupQuick())
+		this.$paranja.addEventListener('click',() =>  this.closePopupQuick())
+		this.$closeButton.addEventListener('click',() => this.closePopupQuick())
+		this.$colorCard.addEventListener('click', (event) => this.anotherColorButton(event))
+		this.$countSize.addEventListener('click', (event) => this.size.init(event))
+	}
 
+	positionPopup() {
+		const scroll = document.documentElement.scrollHeight
+		const popupHeight = this.$rootPopup.clientHeight
+		const viewWindow = window.pageYOffset + popupHeight
 
-	function anotherColorButton(e) {
+		if (scroll < viewWindow) {
+			const number = scroll - popupHeight
+			this.$rootPopup.setAttribute("style", `top: ${number}px`);
+			window.scrollTo({top: number})
+			return
+		}
+
+		this.$rootPopup.setAttribute("style", `top: ${window.pageYOffset}px`);
+	}
+
+	closePopupQuick() {
+		this.$popup.remove()
+	}
+
+	anotherColorButton(e) {
 		if(e.target.dataset.color) {
 			document.querySelectorAll('.color-card-product-js').forEach((item) => {
 				item.classList.remove('active-color')
@@ -55,37 +85,18 @@ function openQuickView(e) {
 		}
 	}
 
-	function closePopupQuick() {
-		$popup.remove()
-	}
+}
 
-	// problem
-	function positionPopup() {
-		const s = window.pageYOffset + $test.clientHeight
-		if (document.documentElement.scrollHeight < s) {
-			const number = document.documentElement.scrollHeight - $test.clientHeight
-			$test.setAttribute("style", `top: ${number}px`);
-			window.scrollTo({top: number})
-			return
-		}
-		$test.setAttribute("style", `top: ${window.pageYOffset}px`);
-
-
-
-		function isHidden(elem) {
-			return !elem.offsetWidth && !elem.offsetHeight;
-		}
-	}
-
-	function initialSlider() {
-		new Swiper('#another-color-popup-js', {
+class PopupInitialSliders {
+	constructor() {
+		this.colorOptions = {
 			observer: true,
 			observeParents: true,
 			slidesPerView: 6,
 			spaceBetween: 5,
-		})
+		}
 
-		new Swiper('#view-photos-block-swiper-popup-js', {
+		this.verticalPhotoOptions = {
 			slidesPerView: 4,
 			direction: 'vertical',
 			observer: true,
@@ -95,9 +106,9 @@ function openQuickView(e) {
 				nextEl: '.swiper-button-next-main',
 				prevEl: '.swiper-button-prev-main',
 			},
-		})
+		}
 
-		new Swiper('#view-big-photos-block-swiper-popup-js', {
+		this.verticalBigPhotoOptions = {
 			slidesPerView: 1,
 			direction: 'vertical',
 			observer: true,
@@ -106,8 +117,14 @@ function openQuickView(e) {
 				nextEl: '.swiper-button-next-main',
 				prevEl: '.swiper-button-prev-main',
 			},
-		})
-
+		}
 	}
 
+	init() {
+		new Swiper('#another-color-popup-js', this.colorOptions)
+		new Swiper('#view-photos-block-swiper-popup-js', this.verticalPhotoOptions)
+		new Swiper('#view-big-photos-block-swiper-popup-js', this.verticalBigPhotoOptions)
+	}
 }
+
+

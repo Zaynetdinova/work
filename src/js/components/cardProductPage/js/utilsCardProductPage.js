@@ -23,10 +23,6 @@ export class UtilsCardProductPage {
 		}
 	}
 
-	changeFavoritesProduct(element) {
-		element.classList.toggle('favorite-product-active')
-	}
-
 	openForm(element) {
 		if(element.closest('form')) {
 			const $el = element.closest('form')

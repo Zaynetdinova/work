@@ -1,6 +1,6 @@
 export function favorites() {
     return `
-        <article id="favorites-product-js" class="favoritesProduct">          
+        <article data-favorites-product-js id="test-id-product" class="favoritesProduct">          
             <div class="img-like"></div>
         </article>            
     `
