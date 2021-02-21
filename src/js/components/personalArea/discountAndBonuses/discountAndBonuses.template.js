@@ -1,12 +1,12 @@
 import {navigation} from "../../common/navigation";
-import {transitionWrapper} from "../../common/transitionTitle";
 import {discountAndBonusesPageTemplate} from "./view/discountAndBonusesPageTemplate";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export function discountAndBonusesTemplate() {
     return `
 	    <div id="personal-area-js" class="wrapper-personal-area">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
             <div class="header-personal-area">
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>

@@ -1,12 +1,12 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import {paymentPage} from "./view/PaymentPage";
 import {navigationInformationAboutShopping} from "../../common/navigationInformationAboutShopping";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export function aboutPaymentPageTemplate() {
     return `
         <div>
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
             <div class="title-shopping">О покупках</div>
             <div class="wrapper-navigation-info">
            	    ${navigationInformationAboutShopping('about-payment')}

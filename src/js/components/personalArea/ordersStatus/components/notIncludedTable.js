@@ -1,4 +1,3 @@
-import {sizeInfo} from "../../../common/sizeInfo";
 import {infoProduct} from "../../../common/infoProduct";
 import women from '../../../../../images/bestsellers/1/img1.png'
 

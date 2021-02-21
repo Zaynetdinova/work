@@ -48,22 +48,22 @@
     .wrapper-card {
       padding: 0 15px;
     }
-    .test1 {
+    .bread-crumbs-product {
       overflow: scroll;
       margin-left: -15px;
 
-      .test-block {
+      .auxiliary-block {
         display: table;
         width: 15px;
         background: #ffffff;
       }
     }
     /* хром, сафари */
-    .test1::-webkit-scrollbar { height: 0; }
+    .bread-crumbs-product::-webkit-scrollbar { height: 0; }
     /* ie 10+ */
-    .test1 { -ms-overflow-style: none; }
+    .bread-crumbs-product { -ms-overflow-style: none; }
     /* фф (свойство больше не работает, других способов тоже нет)*/
-    .test1 { overflow: -moz-scrollbars-none; }
+    .bread-crumbs-product { overflow: -moz-scrollbars-none; }
     .transitionWrapper {
       padding: 10px 0;
       display: flex;

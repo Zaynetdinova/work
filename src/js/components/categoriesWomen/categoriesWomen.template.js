@@ -2,15 +2,16 @@ import {commonCard} from '../common/commonCard/commonCards'
 
 import video from '../../../video/1.mp4'
 import {partnerOffers} from '../common/partnerOffers'
-import {titleWrapper, transitionWrapper} from '../common/transitionTitle'
 import {IconImg} from "../common/icon";
 import {bannerBlockWomen} from "./view/banner";
 import {categoriesMenuSidebar} from './view/categoriesMenuSidebar'
+import {titleWrapper} from '../common/titleWrapper'
+import {breadCrumbs} from '../common/breadCrumbs'
 
 export function categoriesWomen(testDataWoman, item, pageForWomen) {
 	return `
 		<div class="wrapper-categories">	
-			${transitionWrapper(pageForWomen)}
+			${breadCrumbs(pageForWomen)}
 			${titleWrapper(pageForWomen)}
 			<div class="flex-wrap">	
 				<div class="sidebar-page-categories-women">				

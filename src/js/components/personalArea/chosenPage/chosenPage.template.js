@@ -6,13 +6,13 @@ import img5 from "../../../../images/bestsellers/1/img5.png";
 import img6 from "../../../../images/bestsellers/1/img6.png";
 import {card} from "../../common/commonCard/card";
 import {navigation} from "../../common/navigation";
-import {transitionWrapper} from "../../common/transitionTitle";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export  function chosenPageTemplate() {
     return `
         <div id="personal-area-js" class="wrapper-personal-area">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
             <div class="header-personal-area">
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>

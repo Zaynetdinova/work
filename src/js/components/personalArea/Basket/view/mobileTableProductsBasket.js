@@ -2,7 +2,6 @@ import {infoProduct} from '../../../common/infoProduct'
 import {favorites} from '../../../common/favorites'
 import women from '../../../../../images/bestsellers/1/img1.png'
 import close from '../../../../../images/icons/close_popup_black.svg'
-import {sizeInfo} from "../../../common/sizeInfo";
 import {quantity} from "../../../common/quantity";
 import {Sale} from "../../../common/sale";
 
@@ -11,7 +10,7 @@ export function mobileTableProductsBasket() {
 	return `
 		<table class="wrapper-basket-mobile">
 			${goodsTest.map((item) => {
-			const {info, sizes} = item
+			const {info} = item
 			return `
 				<tr class="good">						
 					<td class="name-product">

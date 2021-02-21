@@ -1,11 +1,9 @@
-import {sizeInfo} from "../../../common/sizeInfo";
 import {infoProduct} from "../../../common/infoProduct";
 import women from '../../../../../images/bestsellers/1/img1.png'
 import {Sale} from "../../../common/sale";
 import {iconTitle} from "./iconTitle";
 import box from "../../../../../images/icons/box.svg";
 import orderProcessing from '../../../../../images/icons/order-processing.svg';
-import crest from '../../../../../images/icons/crest.svg'
 
 export function viewOrderTable() {
     return `

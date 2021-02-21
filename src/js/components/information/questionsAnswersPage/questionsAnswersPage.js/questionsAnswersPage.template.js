@@ -1,12 +1,12 @@
-import {transitionWrapper} from "../../../common/transitionTitle";
 import {questionsAnswers} from "./view/questionsAnswers";
 import {navigationInformationAboutShopping} from "../../../common/navigationInformationAboutShopping";
 import {navigationMobile} from "../../../common/navigation-mobile";
+import {breadCrumbs} from '../../../common/breadCrumbs'
 
 export function QuestionsAnswersPageTemplate() {
     return `
         <div>
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
             <div class="title-shopping">О покупках</div>
             <div class="wrapper-navigation-info">
            	    ${navigationInformationAboutShopping('answer')}

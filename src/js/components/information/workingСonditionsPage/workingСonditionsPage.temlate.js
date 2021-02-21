@@ -1,11 +1,11 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import {navigationMobile} from "../../common/navigation-mobile";
 import {navigationInformationCooperation} from "../../common/navigationInformationCooperation";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export function  workingConditionsPageTemplate() {
     return `
         <div class="wrapper-working-condition">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
            	<div class="title-shopping">Сотрудничество</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationCooperation('about-working-condition')}

@@ -1,5 +1,4 @@
 import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
-import {titleBuy} from "../../titleBuy";
 import {infoTextRegistration} from "../../infoTextRegistration";
 import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
@@ -7,7 +6,7 @@ import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 export function buyForSaleTemplate() {
     return `
         ${titleRegistration('Регистрация')}
-        ${titleBuy('Покупаю для продажи')}
+        <div class="wrap-title-buy">Покупаю для продажи</div>
         <form class="form-js">
             <div class="box-input">
                 <div class="wrap-input">

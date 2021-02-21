@@ -1,12 +1,12 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import {navigationInformationAboutShopping} from "../../common/navigationInformationAboutShopping";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 
 export function aboutSizePageTemplate() {
     return `
         <div class="wrapper-size-page">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
            	<div class="title-shopping">О покупках</div>
            	
            	<div class="wrapper-navigation-info">
