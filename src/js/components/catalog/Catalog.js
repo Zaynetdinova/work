@@ -5,6 +5,7 @@ import {testDataCatalog} from '../../../testData/testDataCatalog'
 import {testDataYouRecentlyViewed} from '../../../testData/testDataYouRecentlyViewed'
 
 import {catalogStorage} from '../../core/storage/storages'
+import Swiper from "swiper";
 
 export class Catalog extends Component {
     static className = 'Catalog'
@@ -50,6 +51,57 @@ export class Catalog extends Component {
         this.range.init()
         this.catalog.pointsCatalogOpen()
         select()
+      //
+      const options = {
+        slidesPerView: 1.9,
+        spaceBetween: 15,
+        centeredSlides: false,
+        loop: false,
+        slidesOffsetAfter: 16,
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next-main',
+          prevEl: '.swiper-button-prev-main',
+        },
+        breakpoints: {
+
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+          1025: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 6,
+            centeredSlides: false,
+            loop: false,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 4,
+            centeredSlides: false,
+            loop: false,
+            slidesOffsetAfter: 0,
+          },
+          700: {
+            slidesPerView: 3,
+            slidesOffsetAfter: 0,
+          },
+          600: {
+            slidesPerView: 2.5,
+          },
+          374: {
+            slidesPerView: 2.27,
+          }
+        }
+      }
+
+      new Swiper('[data-common-card-slider-catalog]', options)
     }
 
     onClick(e) {

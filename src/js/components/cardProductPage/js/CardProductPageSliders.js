@@ -134,8 +134,8 @@ export class CardProductPageSliders {
     const auxiliarySlider = new Swiper('#view-photos-block-swiper-js', this.optionsAuxiliarySlider)
 
 
-    new Swiper('.bestseller-product', this.optionsTest)
-    new Swiper('.bestseller-product2', this.optionsTest)
+    new Swiper('[data-common-card-slider-product]', this.optionsTest)
+    new Swiper('[data-common-card-slider-product2]', this.optionsTest)
 
     new Swiper('.test-mobile', this.mobileMainSlider)
 

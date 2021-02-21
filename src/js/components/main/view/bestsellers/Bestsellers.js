@@ -63,11 +63,11 @@ export class Bestsellers  {
       }
     }
 
-    new Swiper('.bestseller-woman', options)
-    new Swiper('.bestseller-child', options)
-    new Swiper('.bestseller-man', options)
-    new Swiper('.bestseller-home', options)
-    new Swiper('.bestseller-toy', options)
+    new Swiper('[data-common-card-slider-main-woman]', options)
+    new Swiper('[data-common-card-slider-main-child]', options)
+    new Swiper('[data-common-card-slider-main-man]', options)
+    new Swiper('[data-common-card-slider-main-home]', options)
+    new Swiper('[data-common-card-slider-main-toy]', options)
   }
 
   toHTML() {

@@ -2,6 +2,7 @@ import img1 from '../../../images/offers/img1.png'
 import img2 from '../../../images/offers/img2.png'
 import img3 from '../../../images/offers/img3.png'
 import img4 from '../../../images/offers/img4.png'
+
 import {categoriesTitle} from './categoriesTitle'
 
 export function partnerOffers() {

@@ -18,7 +18,7 @@ export class CategoriesChildren extends Component {
     }
 
     afterInitComponent() {
-        const options = {
+      const options = {
             slidesPerView: 1.9,
             spaceBetween: 15,
             centeredSlides: false,
@@ -66,9 +66,26 @@ export class CategoriesChildren extends Component {
                 }
             }
         }
+      const partnerOptions = {
+        slidesPerView: 1.9,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        loop: true,
+        initialSlide: 1,
 
-        let childrenSwiper = new Swiper('.bestseller-children', options)
-        let childrenSwiper2 = new Swiper('.bestseller-children2', options)
+        breakpoints: {
+          321: {
+            slidesPerView: 2.5,
+          },
+          415: {
+            slidesPerView: 3,
+          }
+        }
+      }
+
+
+      new Swiper('[data-common-card-slider-children]', options)
+      new Swiper('[data-slider-partner-js]',  partnerOptions)
     }
 
     onClick(e) {

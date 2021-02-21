@@ -12,6 +12,8 @@ export class CommonCard {
 		this.size.init(this.cards)
 		new SliderCommonCard().init()
 
+    this.stateShowInformation = true
+
 
 	}
 
@@ -61,23 +63,19 @@ export class CommonCard {
 	windowResize() {
 		window.addEventListener('resize', () => {
 			const clientWidth = document.documentElement.clientWidth
-			console.log(clientWidth)
+
 			if(clientWidth < this.minWidthNotSlider) {
-				console.log('clientWidth')
-				this.cards.forEach((item) => {
-					item.removeEventListener('mouseenter', () => this.showCard())
-				})
-				return
+				this.stateShowInformation = false
 			} else {
-				console.log('none')
-				this.cards.forEach((item) => {
-					item.addEventListener('mouseenter', (event) => this.showCard(event))
-				})
+        this.stateShowInformation = true
 			}
 		})
 	}
 
 	viewMaterial(id) {
+	  if(!this.stateShowInformation) {
+	    return
+    }
 		const comWidth = document.documentElement.clientWidth
 		const card = document.querySelector(`#${id}`)
 		const parent = card.closest('[data-parent-common-cards-js]')

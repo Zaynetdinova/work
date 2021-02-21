@@ -6,7 +6,7 @@ import img5 from '../images/bestsellers/1/img5.png'
 import img6 from '../images/bestsellers/1/img6.png'
 
 export let testDataCategoriesChildren = {
-		_id: 'children2',
+		_id: 'children',
 		title: 'Категория',
 		data: [
 			{

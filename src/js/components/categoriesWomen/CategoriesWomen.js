@@ -84,25 +84,26 @@ export class CategoriesWomen extends Component {
 				}
 			}
 		}
-		new Swiper('.bestseller-goods', options)
-		new Swiper('.bestseller-goods22', options)
+    const partnerOptions = {
+      slidesPerView: 1.9,
+      slidesPerGroup: 1,
+      centeredSlides: true,
+      loop: true,
+      initialSlide: 1,
 
-		new Swiper('.swiper-container4', {
-			slidesPerView: 1.9,
-			slidesPerGroup: 1,
-			centeredSlides: true,
-			loop: true,
-			initialSlide: 1,
+      breakpoints: {
+        321: {
+          slidesPerView: 2.5,
+        },
+        415: {
+          slidesPerView: 3,
+        }
+      }
+    }
 
-			breakpoints: {
-				321: {
-					slidesPerView: 2.5,
-				},
-				415: {
-					slidesPerView: 3,
-				}
-			}
-		})
+
+		new Swiper('[data-common-card-slider-goods]', options)
+    new Swiper('[data-slider-partner-js]',  partnerOptions)
 	}
 
 	toHTML() {
