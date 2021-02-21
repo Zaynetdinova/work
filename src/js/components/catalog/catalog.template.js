@@ -1,16 +1,17 @@
-import {titleCatalog, transitionTitleCatalog} from "./view/transitionTitleCatalog";
 import {numberPages, pagination} from "../common/pagination";
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./view/navCatalog";
 import {filter} from "./view/filter";
 import {card} from '../common/commonCard/card'
 import {commonCard} from "../common/commonCard/commonCards";
+import {titleCatalog} from './view/titleCatalog'
+import {breadCrumbsCatalog} from './view/breadCrumbsCatalog'
 
 
 export function catalog(catalogCategory, point, filters, testGoods, testDataYouRecentlyViewed)  {
     return `
     <div class="wrapper-catalog">
-        ${transitionTitleCatalog(catalogCategory)}
+        ${breadCrumbsCatalog(catalogCategory)}
                     
         <div class="wrapper-pagination">
             ${titleCatalog(catalogCategory)}      

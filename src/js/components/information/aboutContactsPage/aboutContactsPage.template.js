@@ -1,4 +1,3 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import img1 from '../../../../images/icons/contactPage/1.svg';
 import img2 from '../../../../images/icons/contactPage/2.svg';
 import img3 from '../../../../images/icons/contactPage/3.svg';
@@ -7,11 +6,12 @@ import img5 from '../../../../images/icons/contactPage/5.svg';
 import img6 from '../../../../images/icons/contactPage/6.svg';
 import {navigationInformationAboutStore} from "../../common/navigationInformationAboutStore";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export function aboutContactsPageTemplate() {
     return `
         <div class="wrapper-contact">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
            	<div class="title-shopping">О магазине</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutStore('about-contacts')}
