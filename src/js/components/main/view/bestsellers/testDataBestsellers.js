@@ -42,7 +42,7 @@ import testSecondaryImg6 from '../../../../../images/testImg/6.jpeg'
 export function testDataBestsellers() {
 	return  {
 		woman: {
-			_id: 'woman',
+			_id: 'main-woman',
 			title: 'женщинам',
 			data: [
 				{
@@ -99,7 +99,8 @@ export function testDataBestsellers() {
 					sale: true,
 					link: '/#card-product',
 					size: [
-						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+            '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
 					secondaryImg: [
 						testSecondaryImg1,
@@ -182,7 +183,7 @@ export function testDataBestsellers() {
 			link: '/#categories',
 		},
 		child: {
-			_id: 'child',
+			_id: 'main-child',
 			title: 'детям',
 			data: [
 				{
@@ -290,7 +291,7 @@ export function testDataBestsellers() {
 			link: '/#categories-children',
 		},
 		man: {
-			_id: 'man',
+			_id: 'main-man',
 			title: 'МУЖЧИНАМ',
 			data:   [
 				{
@@ -396,7 +397,7 @@ export function testDataBestsellers() {
 			],
 		},
 		home: {
-			_id: 'home',
+			_id: 'main-home',
 			title: 'для дома',
 			data:   [
 				{
@@ -503,7 +504,7 @@ export function testDataBestsellers() {
 			],
 		},
 		toy: {
-			_id: 'toy',
+			_id: 'main-toy',
 			title: 'игрушки',
 			data:   [
 				{

@@ -5,7 +5,7 @@ import Swiper from "swiper";
 export class MoyomodaBlock {
 
   slider() {
-        let moyomodaBlock = new Swiper('.swiper-container4', {
+        let moyomodaBlock = new Swiper('[data-slider-partner-js]', {
             slidesPerView: 1.9,
             slidesPerGroup: 1,
             centeredSlides: true,

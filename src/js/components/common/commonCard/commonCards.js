@@ -7,8 +7,8 @@ export function commonCard(elem, infoType) {
 	return `
 	<div class="Common-card">
 			<figure data-parent-common-cards-js 
-							class="swiper-container bestseller-${_id}" 
-							id="bestseller-${_id}">
+			        data-common-card-slider-${_id}
+							class="swiper-container ${_id}" >
 					<div class="bestsellers-header-wrapper">
 						${commonCardHeader(title, link)}
 						<div class="test-dots"></div>

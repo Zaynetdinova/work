@@ -20,7 +20,7 @@ export function mobile(data) {
 
   return `
       <div class="mobile">
-          <div class="swiper-container4 swiper-container">
+          <div data-slider-partner-js class="swiper-container">
               <div class="swiper-wrapper">
                    ${mobile('swiper-slide')}                
               </div>

@@ -1,6 +1,5 @@
 import {updateSelectedFilters} from '../view/updateSelectedFilters'
 
-
 export class ChoiceFilters  {
 	constructor() {
 		this.filters = []
