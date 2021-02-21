@@ -9,7 +9,7 @@ export function menuCategoriesTemplate(item) {
         `
     })
     return `
-    <div class="swiper-container test-Ilmira">
+    <div data-slider-1024-menu-js class="swiper-container">
         <div class="swiper-wrapper">
             ${items.join('')}
         </div>

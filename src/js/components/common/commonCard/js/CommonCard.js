@@ -1,4 +1,5 @@
 import {commonCardStorage} from '../../../../core/storage/storages'
+import Swiper from 'swiper'
 
 export class CommonCard {
 	constructor() {
@@ -9,6 +10,7 @@ export class CommonCard {
 		this.eventInitial()
 		this.size = commonCardStorage.sizeCommonCard()
 		this.size.init(this.cards)
+		new SliderCommonCard().init()
 
 
 	}
@@ -124,6 +126,96 @@ export class SizeCommonCard {
 	}
 }
 
-export class ChangePhotoCommonCard {
+export class SliderCommonCard {
 
+	constructor() {
+		this.cardsOptions = {
+			slidesPerView: 1.9,
+			spaceBetween: 15,
+			centeredSlides: false,
+			loop: false,
+			slidesOffsetAfter: 15,
+			slidesOffsetBefore: 15,
+
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next-main',
+				prevEl: '.swiper-button-prev-main',
+			},
+			breakpoints: {
+				2400: {
+					slidesPerView: 11,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				2100: {
+					slidesPerView: 10,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				1601: {
+					slidesPerView: 7,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				1040: {
+					slidesPerView: 5,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				1025: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				960: {
+					slidesPerView: 6,
+					centeredSlides: false,
+					loop: false,
+					spaceBetween: 15,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				700: {
+					slidesPerView: 4,
+					centeredSlides: false,
+					loop: false,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0,
+				},
+				411: {
+					slidesOffsetAfter: 15,
+					slidesPerView: 2.5,
+				},
+				374: {
+					slidesPerView: 2.27,
+					slidesOffsetAfter: 15,
+				}
+			}
+		}
+
+		this.cardsPhotoOptions = {
+			slidesPerView: 4,
+			direction: 'vertical',
+			observer: true,
+			observeParents: true,
+			spaceBetween: 5,
+			navigation: {
+				nextEl: '.swiper-button-next-main-au',
+				prevEl: '.swiper-button-prev-main-au',
+			},
+		}
+	}
+
+	init() {
+		new Swiper('.photos-block-common-block-js', this.cardsPhotoOptions)
+		new Swiper('.bestseller-catalog', this.cardsOptions)
+	}
 }

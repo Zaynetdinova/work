@@ -1,6 +1,4 @@
 import {openSidebarTest} from './JS/openSidebar'
-import {initialSliders} from './JS/initialSliders'
-
 import {Entry} from '../components/common/entry/entry'
 
 import {commonCardStorage} from './storage/storages'
@@ -23,21 +21,13 @@ export class Page {
 		this.entry.init()
 		new PopupQuick().init()
 
-
-
 		new openSidebarTest()
-
-		initialSliders()
-
 
 		if(window.userRegistry) {
 			new commonCardStorage.commonCard()
 		}
-
 		closeWhenClickingInAnInactiveZone()
 		new UserAgent()
-
-
 	}
 
 	destroy() {
