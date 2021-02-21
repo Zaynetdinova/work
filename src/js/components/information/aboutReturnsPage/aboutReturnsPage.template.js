@@ -1,15 +1,15 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import img1 from '../../../../images/icons/return/1.svg'
 import img2 from '../../../../images/icons/return/2.svg'
 import img3 from '../../../../images/icons/return/3.svg'
 import img4 from '../../../../images/icons/return/4.svg'
 import {navigationInformationAboutShopping} from "../../common/navigationInformationAboutShopping";
 import {navigationMobile} from "../../common/navigation-mobile";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export function  aboutReturnsPageTemplate() {
     return `
         <div class="wrapper-return">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
            	<div class="title-shopping">О покупках</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutShopping('return')}

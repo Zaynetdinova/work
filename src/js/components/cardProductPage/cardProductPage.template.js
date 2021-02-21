@@ -1,5 +1,4 @@
 import {viewPhotosBlock, viewPhotosBlockMobile} from './view/viewPhotosBlock'
-import {transitionTitleProduct} from "./view/transitionTitleProduct";
 import {buttonProduct} from "../common/buttonProduct";
 import {star} from "./view/star";
 import {favorites} from "../common/favorites";
@@ -15,6 +14,7 @@ import {dopInfo} from "./view/dopInfo";
 import {form} from "./view/form";
 import {commonCard} from "../common/commonCard/commonCards";
 import {socialNetworks} from '../../core/utils/social'
+import {breadCrumbsProduct} from './view/breadCrumbsProduct'
 
 export function cardProductPageTemplate(
 	cards = [],
@@ -25,7 +25,7 @@ export function cardProductPageTemplate(
 	return `
 		<div class="root">
 			
-			${transitionTitleProduct(title)}
+			${breadCrumbsProduct(title)}
 			
 			<div class="wrapper">
 			

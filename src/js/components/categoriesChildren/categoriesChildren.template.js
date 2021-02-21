@@ -1,16 +1,17 @@
-import {titleWrapper, transitionWrapper} from "../common/transitionTitle";
 import video from '../../../video/2.mp4'
 import {childrenSidebar} from "../common/ChildrenSidebar";
 import {partnerOffers} from "../common/partnerOffers";
 import {commonCard} from '../common/commonCard/commonCards'
 import {IconChildren} from './view/iconChildren'
 import {bannerBlockChildren} from "./view/banner";
+import {titleWrapper} from '../common/titleWrapper'
+import {breadCrumbs} from '../common/breadCrumbs'
 
 
 export function categoriesChildren(testData, pageForChildren, dataSidebarGirl) {
     return `
 		<div class="wrapper-categories">	
-				${transitionWrapper(pageForChildren)}
+				${breadCrumbs(pageForChildren)}
                 ${titleWrapper(pageForChildren)}
 				<div class="flex-wrap">	
 				

@@ -1,0 +1,22 @@
+.titleWrapper {
+  padding: 0 0 20px;
+  display: flex;
+  align-items: baseline;
+  letter-spacing: 0.05em;
+  color: #3D3D3C;
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+  .value {
+    font-size: 12px;
+    line-height: 13px;
+    color: #777777;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 15px 14px 15px;
+  }
+}

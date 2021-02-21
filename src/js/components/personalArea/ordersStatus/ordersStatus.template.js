@@ -1,15 +1,15 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
 import {wrapOrder} from "./components/wrapOrder";
 import {wrapOrderMobile} from './components/wrapOrderMobail'
 import {viewOrder} from "./components/viewOrder";
 import {viewOrderMobile} from "./components/viewOrderMobail";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export  function ordersStatusTemplate() {
     return `
         <div id="personal-area-js" class="wrapper-personal-area">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
             <div class="header-personal-area">
                 <div class="title">Личный кабинет</div>
                 <a href="/" class="exit">Выйти</a>

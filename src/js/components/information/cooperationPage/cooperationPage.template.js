@@ -1,4 +1,3 @@
-import {transitionWrapper} from "../../common/transitionTitle";
 import img1 from '../../../../images/icons/1.svg'
 import img2 from '../../../../images/icons/2.svg'
 import img3 from '../../../../images/icons/3.svg'
@@ -6,11 +5,12 @@ import img4 from '../../../../images/icons/4.svg'
 import img5 from '../../../../images/icons/5.svg'
 import img6 from '../../../../images/icons/6.svg'
 import {navigationInformationCooperation} from "../../common/navigationInformationCooperation";
+import {breadCrumbs} from '../../common/breadCrumbs'
 
 export function cooperationPageTemplate() {
     return `
         <div class="wrapper-cooperation">
-            ${transitionWrapper(link)}
+            ${breadCrumbs(link)}
            	<div class="title-shopping">Сотрудничество</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationCooperation('suppliers')}

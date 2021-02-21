@@ -1,6 +1,5 @@
 import place from '../../../../../images/icons/place.svg'
 import {imgCloseIcon} from "./imgCloseIcon";
-import {titleImg} from '../../../common/titleImg'
 
 export function leftColumnAddress() {
     return `

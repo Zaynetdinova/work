@@ -27,7 +27,6 @@
 @import 'popupDefaultTemplate/checkboxRegistration';
 @import 'popupDefaultTemplate/popupDefaultTemplate';
 @import 'infoTextRegistration';
-@import 'titleBuy';
 @import './entryRegistration/entryRegistration';
 @import 'sizeInfo';
 @import 'quantity';
@@ -38,3 +37,5 @@
 @import './navigation';
 @import './navigation-mobile';
 @import './sumMoneySale';
+@import "./breadCrumbs";
+@import "./titleWrapper";
