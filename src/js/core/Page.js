@@ -1,9 +1,9 @@
-import {openSidebarTest} from './JS/openSidebar'
 import {Entry} from '../components/common/entry/entry'
 
 import {commonCardStorage} from './storage/storages'
 import {closeWhenClickingInAnInactiveZone, UserAgent} from './utils/utils'
 import {PopupQuick} from '../components/common/popupQuick/js/popupQuickFunctions'
+import {openSidebarTest} from "./utils/openSidebar";
 
 
 export class Page {
@@ -20,8 +20,7 @@ export class Page {
 	afterRender() {
 		this.entry.init()
 		new PopupQuick().init()
-
-		new openSidebarTest()
+    new openSidebarTest()
 
 		if(window.userRegistry) {
 			new commonCardStorage.commonCard()

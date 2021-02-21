@@ -7,7 +7,6 @@ export class ChangeSizeCount {
 
 	init(e, calculateTheAmount = false) {
 		if(e.target.dataset.buttonName) {
-			console.log('super')
 			const buttonType = e.target.dataset.buttonName
 			const $size = e.target.closest('[data-size]')
 			const count = $size.querySelector('.input-count-js')

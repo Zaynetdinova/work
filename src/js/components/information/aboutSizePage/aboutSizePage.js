@@ -7,13 +7,11 @@ export class AboutSizePage extends Component {
     constructor($root) {
         super($root, {
             name: 'AboutSizePage',
-            listeners: ['click']
+            listeners: []
         });
     }
 
     toHTML() {
         return aboutSizePageTemplate()
     }
-
-    onClick() {}
 }
