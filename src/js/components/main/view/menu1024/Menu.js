@@ -6,14 +6,50 @@ import img5 from "../../../../../images/menu/5.svg";
 import img6 from "../../../../../images/menu/6.svg";
 
 import {menuCategoriesTemplate} from './menu.template'
+import Swiper from 'swiper'
 
 export class Menu {
+    constructor() {
+        this.options = {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            slidesOffsetAfter: 0,
+            breakpoints: {
+                600: {
+                    slidesPerView: 6,
+                    slidesOffsetAfter: 0,
+                },
+                485: {
+                    slidesOffsetAfter: 0,
+                },
+                411: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 10,
+                    slidesOffsetAfter: 10,
+                },
+                350: {
+                    slidesPerView: 3.9,
+                    spaceBetween: 10,
+                    slidesOffsetAfter: 15,
+                },
+                320: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 10,
+                    slidesOffsetAfter: 15
+                }
+            }
+        }
+    }
     toHTML() {
         return `
             <div class="Menu">
                 ${menuCategoriesTemplate(cards)}
             </div>
         `
+    }
+
+    slider() {
+        new Swiper('[data-slider-1024-menu-js]', this.options)
     }
 }
 

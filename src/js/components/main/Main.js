@@ -18,23 +18,29 @@ export class Main extends Component {
 			listeners: []
 		});
 		this.activeFilter = []
+		this.banner = new Banner()
+		this.popularBrand = new PopularBrand()
+		this.sharesBlock = new SharesBlock()
+		this.moyomodaBlock = new MoyomodaBlock()
+		this.bestsellers = new Bestsellers()
+		this.menu24 = new Menu()
 	}
 
 	afterInitComponent() {
-		const banner = new Banner()
-		const popularBrand = new PopularBrand()
-		const sharesBlock = new SharesBlock()
-		const moyomodaBlock = new MoyomodaBlock()
-		const bestsellers = new Bestsellers()
-
-		banner.slider()
-		popularBrand.slider()
-		sharesBlock.slider()
-		moyomodaBlock.slider()
-		bestsellers.slider()
+		this.banner.slider()
+		this.popularBrand.slider()
+		this.sharesBlock.slider()
+		this.moyomodaBlock.slider()
+		this.bestsellers.slider()
+		this.menu24.slider()
 	}
 
 	toHTML() {
-		return MainTemplate()
+		return MainTemplate(this.banner,
+												this.menu24,
+												this.popularBrand,
+												this.sharesBlock,
+												this.moyomodaBlock,
+												this.bestsellers)
 	}
 }
