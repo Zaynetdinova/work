@@ -1,10 +1,10 @@
-import women from '../../../../../images/bestsellers/1/img1.png'
-import close from '../../../../../images/icons/close_popup_black.svg'
-import {sizeInfo} from "../../../common/sizeInfo";
-import {infoProduct} from "../../../common/infoProduct";
-import {Sale} from "../../../common/sale";
-import {quantity} from "../../../common/quantity";
-import {favorites} from "../../../common/favorites";
+import women from '../../../../../../images/bestsellers/1/img1.png'
+import close from '../../../../../../images/icons/close_popup_black.svg'
+import {sizeInfo} from '../../../../common/sizeInfo'
+import {infoProduct} from '../../../../common/infoProduct'
+import {Sale} from '../../../../common/sale'
+import {quantity} from '../../../../common/quantity'
+import {favorites} from '../../../../common/favorites'
 
 export function tableProductsBasket() {
     return `
@@ -102,6 +102,24 @@ export function tableProductsBasket() {
 }
 
 const goodsTest = [
+  {
+    info: [
+      {
+        infoType: 'ID:',
+        infoResult: '247355'
+      },
+      {
+        infoType: 'Цвет:',
+        infoResult: 'Коричневый'
+      },
+    ],
+
+    sizes: [
+      {size: '40', price: '1 200', id: 'size40'},
+      {size: '42', price: '1 200', id: 'size42'},
+      {size: '44', price: '1 200', id: 'size44'},
+    ]
+  },
   {
     info: [
       {

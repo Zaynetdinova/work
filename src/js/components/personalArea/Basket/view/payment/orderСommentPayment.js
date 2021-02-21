@@ -1,4 +1,5 @@
-import comment from '../../../../../images/icons/comment.svg'
+import comment from '../../../../../../images/icons/comment.svg'
+
 export function orderCommentPayment() {
     return `
         <div class="Order-comment">

@@ -1,5 +1,4 @@
-import place from '../../../../../images/icons/place.svg'
-import {imgCloseIcon} from "./imgCloseIcon";
+import place from '../../../../../../images/icons/place.svg'
 
 export function leftColumnAddress() {
     return `
@@ -16,7 +15,7 @@ export function leftColumnAddress() {
         
         <section class="content">
             <div class="wrap-close-text">
-                ${imgCloseIcon()}
+               <div class="img-close-icon"></div>
                 <span>105187, г. Москва, ул. Окружной проезд, 30А</span>
             </div>
             <div class="button-add">Добавить новый адрес</div>

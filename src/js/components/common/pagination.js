@@ -1,4 +1,4 @@
-export function pagination(prev, next) {
+export function pagination(prev, next, id) {
     return `
         <div class="pagination">
             <div class="wrapper-button-pagination">
