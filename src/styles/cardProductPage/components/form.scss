@@ -1,4 +1,19 @@
 .form {
+  .button-write-feedback {
+    background: #8F8F8F;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 232px;
+    margin: 0 auto 40px auto;
+    padding: 8px 0 11px;
+    cursor: pointer;
+    &:hover {
+      background: #AB064E;
+    }
+  }
   .wrapper-title {
     display: flex;
     justify-content: space-between;

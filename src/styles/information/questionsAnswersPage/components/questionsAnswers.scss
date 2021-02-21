@@ -1,3 +1,4 @@
+@import "../../../color";
 .questions-answers {
   font-size: 14px;
   line-height: 20px;
@@ -133,7 +134,10 @@
           width: 832px;
           margin-bottom: 10px;
           a {
-            color: #AB064E;
+            color: $color-link-information;
+            &:hover {
+              text-decoration: none;
+            }
           }
           .transport {
             color: #AB064E;

@@ -1,3 +1,4 @@
+@import "../../color";
 .About-contacts-page {
   .wrapper-contact {
     margin-bottom: 88px;
@@ -26,8 +27,11 @@
           margin: 0 auto;
         }
         a {
-          color: #AB064E;
+          color: $color-link-information;
           white-space: nowrap;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }

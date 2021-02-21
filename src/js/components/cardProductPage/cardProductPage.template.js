@@ -58,9 +58,9 @@ export function cardProductPageTemplate(
 					<div class="info">
 						<div class="info-1">${infoProduct(testInfo)}</div>
 						
-						<div style="margin-bottom: 4px;">
+						<div class="wrapper-right-info">
 							<div class="social">${socialProduct(socialNetworks)}</div>
-							<div class="buttonAnotherGoods">${buttonProduct('Другие товары этого бренда')}</div>
+							<div class="buttonAnotherGoods">Другие товары этого бренда</div>
 						</div>
 						
 					</div>

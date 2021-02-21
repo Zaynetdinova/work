@@ -1,3 +1,4 @@
+@import "../../color";
 .About-us-page {
   .wrapper-aboutUs {
     margin-bottom: 80px;
@@ -32,7 +33,10 @@
             margin-top: 5px;
           }
           a {
-            color: #AB064E;
+            color: $color-link-information;
+            &:hover {
+              text-decoration: none;
+            }
           }
           .item-title {
             font-weight: bold;

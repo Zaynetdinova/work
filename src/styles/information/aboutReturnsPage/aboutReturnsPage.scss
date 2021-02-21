@@ -1,3 +1,4 @@
+@import "../../color";
 .About-returns-page {
   .wrapper-return {
     margin-bottom: 161px;
@@ -11,7 +12,10 @@
         background: #FFFFFF;
         width: 32.5%;
         a {
-          color: #AB064E;
+          color: $color-link-information;
+          &:hover {
+            text-decoration: none;
+          }
         }
         .title {
           display: flex;
@@ -35,6 +39,9 @@
               color: #777777;
               margin-bottom: 20px;
               cursor: pointer;
+              &:hover {
+                text-decoration: none;
+              }
               &:last-child {
                 margin-bottom: 0;
               }

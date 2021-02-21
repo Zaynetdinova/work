@@ -13,14 +13,12 @@ export function dopInfo() {
 }
 
 
-export function dopInfoItem(item) {
-
+function dopInfoItem(item) {
     const items = item.map((item) => {
         return `
             <div class="common-dop-info">
                 <span class="dop-info-title">${item.dopInfoTitle}</span> <span class="dop-info-inform">${item.dopInfo}</span>
-            </div>
-                   
+            </div>  
         `
     })
     return `${items.join('')}`

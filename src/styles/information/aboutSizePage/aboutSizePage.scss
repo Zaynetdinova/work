@@ -1,10 +1,11 @@
+@import "../../color";
 .About-size-page {
   .wrapper-size-page {
     margin-bottom: 200px;
     font-size: 13px;
     line-height: 14px;
     .title-size-page {
-      color: #AB064E;
+      color: $color-link-information;
       font-size: 18px;
       line-height: 18px;
       margin-bottom: 32px;

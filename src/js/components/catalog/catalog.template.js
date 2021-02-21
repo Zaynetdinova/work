@@ -1,4 +1,5 @@
-import {numberPages, pagination} from "../common/pagination";
+import {pagination} from "../common/pagination";
+import {numberPages} from '../common/numperPages'
 import {sidebarPoint} from "../common/sidebarPoint";
 import {navCatalog} from "./view/navCatalog";
 import {filter} from "./view/filter";
