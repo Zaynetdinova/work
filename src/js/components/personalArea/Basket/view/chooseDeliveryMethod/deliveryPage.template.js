@@ -1,4 +1,3 @@
-
 import pickup from '../../../../../../images/icons/pickup.svg';
 import transport from '../../../../../../images/icons/transportCompany.svg'
 import email from '../../../../../../images/icons/mailDelivery.svg'
@@ -41,6 +40,8 @@ export function deliveryPageTemplate() {
 
 let data = [
     {
+        id: 'delivery-page-1-js',
+        dataAtr: 'data-content-1-js',
         imgIcon: pickup,
         title: 'Самовывоз',
         text: 'Забрать заказ самостоятельно',
@@ -54,6 +55,8 @@ let data = [
     },
 
     {
+        id: 'delivery-page-2-js',
+        dataAtr: 'data-content-2-js',
         imgIcon: transport,
         title: 'Транспортная компания',
         text: 'Доставка до транспортной компании бесплатно',
@@ -86,6 +89,8 @@ let data = [
     },
 
     {
+        id: 'delivery-page-3-js',
+        dataAtr: 'data-content-3-js',
         imgIcon: email,
         title: 'Доставка почтой',
         text: 'Доставка до вашего города оплачивается отдельно. ' +

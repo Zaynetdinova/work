@@ -2,8 +2,8 @@ import place from '../../../../../../images/icons/place.svg'
 
 export function leftColumnAddress() {
     return `
-    <div data-content-js class="left-column-address">
-        <section data-open-section-js>
+    <div data-content-js class="left-column-address" id="data-content-4-js">
+        <section data-open-section-js id="delivery-page-4-js">
             <div class="title-img">
                 <div class="img-wrapper">
                     <img src="${place}" alt="">

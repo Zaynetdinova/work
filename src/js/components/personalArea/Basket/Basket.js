@@ -3,6 +3,7 @@ import {paymentPageTemplate} from './view/payment/paymentPage.template'
 import {Component} from '../../../core/Component'
 
 import {BasketFunctions} from './js/BasketFunctions'
+import {toggleShowInformation} from '../../../core/utils/utils'
 
 
 
@@ -35,6 +36,11 @@ export class Basket extends Component {
 
 
   onClick(e) {
+    if(e.target.closest('[data-delivery-page-event-js]')) {
+      this.basket.deliveryHandleClick(e)
+      return
+    }
+
     if(e.target.closest('[data-parent-js]')) {
       const element = e.target.closest('[data-parent-js]');
 
