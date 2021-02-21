@@ -20,11 +20,6 @@ export function paymentPageTemplate() {
             ${basketSteps()}
             ${waysOfPayment()}
             ${orderCommentPayment()}
-            <div class="wrapper-sum-mobile">
-                <div class="title">Стоимость заказа</div>
-                <div>${SumMoneySale(sumMoney)}</div>
-                 <div class="result">Итого:  <b>1 234,00 ₽</b></div>
-            </div>
             <div class="basket-delivery">
                 ${personalCheckedOptions(data)}
             </div>

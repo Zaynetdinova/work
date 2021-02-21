@@ -2,6 +2,7 @@ import {deliveryPageTemplate} from '../view/chooseDeliveryMethod/deliveryPage.te
 import {paymentPageTemplate} from '../view/payment/paymentPage.template'
 import {basketPageTemplate} from '../view/goodsInBaskets/basketPage.template'
 import {orderDone} from "../view/payment/orderDone";
+import {toggleShowInformation} from '../../../../core/utils/utils'
 
 export class BasketFunctions {
   constructor() {
@@ -52,6 +53,24 @@ export class BasketFunctions {
           }
         })
       })
+    }
+  }
+
+  deliveryHandleClick(e) {
+    const element = e.target.closest('[data-open-section-js]');
+    switch (element.id) {
+      case 'delivery-page-1-js':
+        toggleShowInformation('#data-content-1-js')
+        break;
+      case 'delivery-page-2-js':
+        toggleShowInformation('#data-content-2-js')
+        break;
+      case 'delivery-page-3-js':
+        toggleShowInformation('#data-content-3-js')
+        break;
+      case 'delivery-page-4-js':
+        toggleShowInformation('#data-content-4-js')
+        break;
     }
   }
 }
