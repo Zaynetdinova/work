@@ -2,10 +2,14 @@ import Swiper from 'swiper/bundle'
 import {bannerTemplate} from './banner.template'
 
 const cards = {
-  first:  { title: 'BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*',
-    description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'},
-  second:  { title: 'Сезонная распродажа поднимет вам настроение этой осенью',
-    description: '*Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'},
+  first:  {
+    title: 'BLACK FRIDAY<br> <span style="font-weight: normal">СКИДКИ ДО</span> 70%*',
+    description: '*Акция продлится с 27 НОЯБРЯ по 23:59 30 НОЯБРЯ 2020 г.'
+  },
+  second:  {
+    title: 'Сезонная распродажа поднимет вам настроение этой осенью',
+    description: '*Дизайнеры Counte предлогают вам гамму которая добавит в вашу осень ярчайших цветов и приятных оттенков.'
+  },
 }
 
 export class Banner {
@@ -14,7 +18,7 @@ export class Banner {
   slider() {
     const title = document.querySelector('#title')
     const description = document.querySelector('#description')
-    let mySwiper = new Swiper('.swiper-container1', {
+    const options = {
       loop: true,
       speed: 800,
       autoplay: {
@@ -53,7 +57,9 @@ export class Banner {
         nextEl: '.swiper-button-next-main',
         prevEl: '.swiper-button-prev-main',
       },
-    })
+    }
+
+    new Swiper('.swiper-container1', options)
   }
 
   toHTML() {
@@ -62,10 +68,6 @@ export class Banner {
         ${bannerTemplate()}
       </div>
     `
-
-  }
-
-  onClick(e) {
 
   }
 

@@ -1,6 +1,7 @@
 import {bestsellersTemplate} from './bestsellers.template'
-import {testDataBestsellers} from './testDataBestsellers'
+
 import Swiper from 'swiper'
+import {testDataBestsellers} from "../../../../../testData/testDataBestsellers";
 
 
 export class Bestsellers  {
@@ -73,7 +74,7 @@ export class Bestsellers  {
   toHTML() {
     return `
     <div class="Bestsellers">
-        ${bestsellersTemplate(testDataBestsellers())}
+        ${bestsellersTemplate(testDataBestsellers)}
     </div>
     `
   }

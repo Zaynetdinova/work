@@ -10,7 +10,7 @@ import Swiper from 'swiper'
 
 export class Menu {
     constructor() {
-        this.options = {
+      this.options = {
             slidesPerView: 5,
             spaceBetween: 10,
             slidesOffsetAfter: 0,
@@ -39,49 +39,54 @@ export class Menu {
                 }
             }
         }
+
+      this.menuItems = [
+        {
+          img: img1,
+          title: 'женщинам',
+          link: '/#categories-women'
+        },
+        {
+          img: img2,
+          title: 'девочкам',
+          link: '/#categories-children'
+        },
+        {
+          img: img3,
+          title: 'мужчинам',
+          link: '/'
+        },
+        {
+          img: img4,
+          title: 'мальчикам',
+          link: '/'
+        },
+        {
+          img: img5,
+          title: 'для дома',
+          link: '/'
+        },
+        {
+          img: img6,
+          title: 'игрушки',
+          link: '/'
+        },
+      ]
     }
+
+    slider() {
+      new Swiper('[data-slider-1024-menu-js]', this.options)
+    }
+
     toHTML() {
         return `
             <div class="Menu">
-                ${menuCategoriesTemplate(cards)}
+                ${menuCategoriesTemplate(this.menuItems)}
             </div>
         `
     }
 
-    slider() {
-        new Swiper('[data-slider-1024-menu-js]', this.options)
-    }
+
 }
 
-const cards = [
-    {
-        img: img1,
-        title: 'женщинам',
-        link: '/#categories-women'
-    },
-    {
-        img: img2,
-        title: 'девочкам',
-        link: '/#categories-children'
-    },
-    {
-        img: img3,
-        title: 'мужчинам',
-        link: '/'
-    },
-    {
-        img: img4,
-        title: 'мальчикам',
-        link: '/'
-    },
-    {
-        img: img5,
-        title: 'для дома',
-        link: '/'
-    },
-    {
-        img: img6,
-        title: 'игрушки',
-        link: '/'
-    },
-]
+

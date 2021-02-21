@@ -1,46 +1,46 @@
-import img1 from '../../../../../images/bestsellers/1/img1.png'
-import img2 from '../../../../../images/bestsellers/1/img2.png'
-import img3 from '../../../../../images/bestsellers/1/img3.png'
-import img4 from '../../../../../images/bestsellers/1/img4.png'
-import img5 from '../../../../../images/bestsellers/1/img5.png'
-import img6 from '../../../../../images/bestsellers/1/img6.png'
+import img1 from '../images/bestsellers/1/img1.png'
+import img2 from '../images/bestsellers/1/img2.png'
+import img3 from '../images/bestsellers/1/img3.png'
+import img4 from '../images/bestsellers/1/img4.png'
+import img5 from '../images/bestsellers/1/img5.png'
+import img6 from '../images/bestsellers/1/img6.png'
 
-import ch1 from '../../../../../images/bestsellers/2/img1.png'
-import ch2 from '../../../../../images/bestsellers/2/img2.png'
-import ch3 from '../../../../../images/bestsellers/2/img3.png'
-import ch4 from '../../../../../images/bestsellers/2/img4.png'
-import ch5 from '../../../../../images/bestsellers/2/img5.png'
-import ch6 from '../../../../../images/bestsellers/2/img6.png'
+import ch1 from '../images/bestsellers/2/img1.png'
+import ch2 from '../images/bestsellers/2/img2.png'
+import ch3 from '../images/bestsellers/2/img3.png'
+import ch4 from '../images/bestsellers/2/img4.png'
+import ch5 from '../images/bestsellers/2/img5.png'
+import ch6 from '../images/bestsellers/2/img6.png'
 
-import men1 from '../../../../../images/bestsellers/3/img1.png'
-import men2 from '../../../../../images/bestsellers/3/img2.png'
-import men3 from '../../../../../images/bestsellers/3/img3.png'
-import men4 from '../../../../../images/bestsellers/3/img4.png'
-import men5 from '../../../../../images/bestsellers/3/img5.png'
-import men6 from '../../../../../images/bestsellers/3/img6.png'
+import men1 from '../images/bestsellers/3/img1.png'
+import men2 from '../images/bestsellers/3/img2.png'
+import men3 from '../images/bestsellers/3/img3.png'
+import men4 from '../images/bestsellers/3/img4.png'
+import men5 from '../images/bestsellers/3/img5.png'
+import men6 from '../images/bestsellers/3/img6.png'
 
-import pil1 from '../../../../../images/bestsellers/4/img1.png'
-import pil2 from '../../../../../images/bestsellers/4/img2.png'
-import pil3 from '../../../../../images/bestsellers/4/img3.png'
-import pil4 from '../../../../../images/bestsellers/4/img4.png'
-import pil5 from '../../../../../images/bestsellers/4/img5.png'
-import pil6 from '../../../../../images/bestsellers/4/img6.png'
+import pil1 from '../images/bestsellers/4/img1.png'
+import pil2 from '../images/bestsellers/4/img2.png'
+import pil3 from '../images/bestsellers/4/img3.png'
+import pil4 from '../images/bestsellers/4/img4.png'
+import pil5 from '../images/bestsellers/4/img5.png'
+import pil6 from '../images/bestsellers/4/img6.png'
 
-import toy1 from '../../../../../images/bestsellers/5/img1.png'
-import toy2 from '../../../../../images/bestsellers/5/img2.png'
-import toy3 from '../../../../../images/bestsellers/5/img3.png'
-import toy4 from '../../../../../images/bestsellers/5/img4.png'
-import toy5 from '../../../../../images/bestsellers/5/img5.png'
-import toy6 from '../../../../../images/bestsellers/5/img6.png'
+import toy1 from '../images/bestsellers/5/img1.png'
+import toy2 from '../images/bestsellers/5/img2.png'
+import toy3 from '../images/bestsellers/5/img3.png'
+import toy4 from '../images/bestsellers/5/img4.png'
+import toy5 from '../images/bestsellers/5/img5.png'
+import toy6 from '../images/bestsellers/5/img6.png'
 
-import testSecondaryImg1 from '../../../../../images/testImg/1.jpg'
-import testSecondaryImg2 from '../../../../../images/testImg/2.jpeg'
-import testSecondaryImg3 from '../../../../../images/testImg/3.jpeg'
-import testSecondaryImg4 from '../../../../../images/testImg/4.jpeg'
-import testSecondaryImg5 from '../../../../../images/testImg/5.jpg'
-import testSecondaryImg6 from '../../../../../images/testImg/6.jpeg'
-export function testDataBestsellers() {
-	return  {
+import testSecondaryImg1 from '../images/testImg/1.jpg'
+import testSecondaryImg2 from '../images/testImg/2.jpeg'
+import testSecondaryImg3 from '../images/testImg/3.jpeg'
+import testSecondaryImg4 from '../images/testImg/4.jpeg'
+import testSecondaryImg5 from '../images/testImg/5.jpg'
+import testSecondaryImg6 from '../images/testImg/6.jpeg'
+
+export let testDataBestsellers = {
 		woman: {
 			_id: 'main-woman',
 			title: 'женщинам',
@@ -604,6 +604,4 @@ export function testDataBestsellers() {
 				},
 			],
 		}
-
-	}
 }
