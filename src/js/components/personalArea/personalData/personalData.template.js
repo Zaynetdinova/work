@@ -1,7 +1,6 @@
 import {TitleData} from "../Basket/view/titleData";
 import {ButtonData} from "../Basket/view/buttonData";
 import {checkboxRegistration} from "../../common/popupDefaultTemplate/checkboxRegistration";
-import {imgCloseIcon} from "../Basket/view/imgCloseIcon";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
@@ -86,7 +85,7 @@ export function personalDataTemplate() {
                                     ${TitleData('Адреса доставки')}
                                 </div>
                                 <div class="wrap-close-text">
-                                    ${imgCloseIcon()}
+                                   <div class="img-close-icon"></div>
                                     <div>108840, Россия, Троицк, ул. Академика Черенкова, 3 (склад сдек)</div>
                                 </div>
                                 <div class="tower">
@@ -102,7 +101,7 @@ export function personalDataTemplate() {
                                 <div class="wrapper-box-1">
                                     ${TitleData('Гостевые логины')}
                                     <div class="password-guest">
-                                        ${imgCloseIcon()}
+                                        <div class="img-close-icon"></div>
                                         <div>Гостевой логин (наценка 0% + 0)</div>
                                     </div>
                                 </div>

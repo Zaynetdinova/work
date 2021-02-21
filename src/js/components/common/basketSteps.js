@@ -1,5 +1,5 @@
-import basket from '../../../../../images/icons/basket.svg'
-import delivery from '../../../../../images/icons/delivery.svg'
+import basket from '../../../images/icons/basket.svg'
+import delivery from '../../../images/icons/delivery.svg'
 
 export function basketSteps() {
     return `

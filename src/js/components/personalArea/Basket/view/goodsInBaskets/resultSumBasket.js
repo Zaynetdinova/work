@@ -1,6 +1,7 @@
-import {SumMoneySale} from './sumMoneySale';
-import {ButtonData} from './buttonData'
-import cut from '../../../../../images/icons/cut.svg'
+import {SumMoneySale} from '../sumMoneySale'
+import {ButtonData} from '../buttonData'
+import cut from '../../../../../../images/icons/cut.svg'
+
 export function resultSumBasket() {
     return `
         <div class="wrapper-result">
@@ -26,10 +27,6 @@ export function resultSumBasket() {
                     <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
                     <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>
-            </div>
-            <div class="button-buy-arrange">
-                <article class="continue-button">Продолжить покупки</article>
-                <div data-parent-js id="checkout-order-delivery-js" class="arrange-button">Оформить заказ</div>
             </div>
 		</div>
     `

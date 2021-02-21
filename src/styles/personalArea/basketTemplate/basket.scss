@@ -143,6 +143,42 @@
       }
     }
 
+  .button-buy-arrange {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    .continue-button,
+    .arrange-button {
+      padding: 8.5px 0;
+      min-width: 167px;
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 17px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .continue-button {
+      color: #3D3D3C;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      &:hover {
+        color: #AB064E;
+        border: 1px solid #AB064E;
+      }
+    }
+    .arrange-button {
+      color: #FFFFFF;
+      background: #AB064E;
+      border: 1px solid #AB064E;
+      outline: none;
+      margin-left: 6px;
+      &:hover {
+        background: #C00A5A;
+        border: 1px solid #C00A5A;
+      }
+    }
+  }
+
     @media (max-width: 767px) {
       .desktop {
         display: none;

@@ -1,5 +1,5 @@
-import cash from "../../../../../images/icons/cash.svg";
-import {inputChoice} from "./inputChoice";
+import cash from '../../../../../../images/icons/cash.svg'
+
 export function waysOfPayment() {
     return `
         <div class="ways-of-payment">
@@ -7,7 +7,7 @@ export function waysOfPayment() {
                 <img src="${cash}" alt="">
                 Способы оплаты
             </div>
-            <div class="wrapper-choice-input">${inputChoice()}</div>
+            <div class="wrapper-choice-input"></div>
         </div>
     `
 }

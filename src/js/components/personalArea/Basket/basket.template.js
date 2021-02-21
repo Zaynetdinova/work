@@ -1,6 +1,6 @@
-import {navigation} from "../../common/navigation";
-import {navigationMobile} from "../../common/navigation-mobile";
-import {basketPageTemplate} from "./view/basketPage.template";
+import {navigation} from '../../common/navigation'
+import {navigationMobile} from '../../common/navigation-mobile'
+import {basketPageTemplate} from './view/goodsInBaskets/basketPage.template'
 import {breadCrumbs} from '../../common/breadCrumbs'
 
 

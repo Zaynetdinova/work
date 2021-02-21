@@ -1,20 +1,25 @@
-import {basketSteps} from "./basketSteps";
-import pickup from '../../../../../images/icons/pickup.svg';
-import transport from '../../../../../images/icons/transportCompany.svg'
-import email from '../../../../../images/icons/mailDelivery.svg'
-import money from '../../../../../images/icons/money.svg'
-import {basketDeliveryBlock} from "./basketDeliveryBlock";
-import {pagination} from "../../../common/pagination";
-import {SumMoneySale} from "./sumMoneySale";
-import {leftColumnAddress} from "./leftColumnAddress";
-import {titleImg} from '../../../common/titleImg'
+
+import pickup from '../../../../../../images/icons/pickup.svg';
+import transport from '../../../../../../images/icons/transportCompany.svg'
+import email from '../../../../../../images/icons/mailDelivery.svg'
+import money from '../../../../../../images/icons/money.svg'
+import {pagination} from '../../../../common/pagination'
+import {SumMoneySale} from '../sumMoneySale'
+import {leftColumnAddress} from './leftColumnAddress'
+import {titleImg} from '../../../../common/titleImg'
+import {personalCheckedOptions} from '../../../../common/personalCheckedOptions'
+import {basketSteps} from '../../../../common/basketSteps'
+
 export function deliveryPageTemplate() {
     return `
-        <div data-delivery-page-event-js id="delivery-page-js" class="Delivery-page">
+        <div data-parent-basket-component-js 
+             data-delivery-page-event-js id="delivery-page-js" class="Delivery-page">
             ${basketSteps()}
+            
             <div class="basket-delivery">
-                ${basketDeliveryBlock(data)}
+                ${personalCheckedOptions(data)}
             </div>
+            
             <div class="delivery-address">
                 <div data-parent-delivery-block-js class="address">
                     ${leftColumnAddress()}
@@ -26,8 +31,10 @@ export function deliveryPageTemplate() {
                     <div class="result">Итого:  <b>1 234,00 ₽</b></div>
                 </div>
             </div>
+            
             <div class="wrapper-pagination">
-                ${pagination('Назад к корзине','Далее к оплате')}</div>
+                ${pagination('Назад к корзине','Далее к оплате', )}
+            </div>
         </div>
     `
 }
@@ -45,6 +52,7 @@ let data = [
         ]
 
     },
+
     {
         imgIcon: transport,
         title: 'Транспортная компания',
@@ -76,6 +84,7 @@ let data = [
             },
         ]
     },
+
     {
         imgIcon: email,
         title: 'Доставка почтой',
@@ -103,6 +112,7 @@ let data = [
         ]
     }
 ]
+
 let sumMoney = [
     {
         title: 'Общая стоимость товаров',

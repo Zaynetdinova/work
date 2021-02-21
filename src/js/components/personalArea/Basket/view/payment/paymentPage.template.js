@@ -1,20 +1,22 @@
-import {basketSteps} from "./basketSteps";
-import {basketDeliveryBlock} from "./basketDeliveryBlock";
-import cash from "../../../../../images/icons/cash.svg";
-import nonCash from "../../../../../images/icons/non-cash.svg";
-import card from "../../../../../images/icons/payment-by-card.svg";
-import deposit from '../../../../../images/icons/payment-from-deposit.svg'
-import comment from '../../../../../images/icons/comment.svg'
-import money from '../../../../../images/icons/money.svg'
-import {SumMoneySale} from "./sumMoneySale";
-import {pagination} from "../../../common/pagination";
-import {waysOfPayment} from "./waysOfPayment";
-import {orderCommentPayment} from "./orderСommentPayment";
-import {titleImg} from '../../../common/titleImg';
+import cash from '../../../../../../images/icons/cash.svg'
+import nonCash from '../../../../../../images/icons/non-cash.svg'
+import card from '../../../../../../images/icons/payment-by-card.svg'
+import deposit from '../../../../../../images/icons/payment-from-deposit.svg'
+import comment from '../../../../../../images/icons/comment.svg'
+import money from '../../../../../../images/icons/money.svg'
+import {SumMoneySale} from '../sumMoneySale'
+import {pagination} from '../../../../common/pagination'
+import {waysOfPayment} from './waysOfPayment'
+import {orderCommentPayment} from './orderСommentPayment'
+import {titleImg} from '../../../../common/titleImg'
+import {personalCheckedOptions} from '../../../../common/personalCheckedOptions'
+import {basketSteps} from '../../../../common/basketSteps'
 
 export function paymentPageTemplate() {
     return ` 
-        <div class="Payment-Page">
+        <div data-parent-basket-component-js 
+             id="personal-area-basket-payment-js"
+             class="Payment-Page">
             ${basketSteps()}
             ${waysOfPayment()}
             ${orderCommentPayment()}
@@ -24,7 +26,7 @@ export function paymentPageTemplate() {
                  <div class="result">Итого:  <b>1 234,00 ₽</b></div>
             </div>
             <div class="basket-delivery">
-                ${basketDeliveryBlock(data)}
+                ${personalCheckedOptions(data)}
             </div>
             <div class="delivery-address">
                 <div class="left-column">
