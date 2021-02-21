@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrapper-payment-page {
   font-size: 14px;
   line-height: 20px;
@@ -15,7 +16,7 @@
     .column-two {
       .text {
         span {
-          color: #AB064E;
+          color: $color-link-information;
           font-weight: bold;
         }
       }

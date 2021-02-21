@@ -1,3 +1,4 @@
+@import "../../../color";
 .shopping-delivery {
   font-size: 14px;
   line-height: 20px;
@@ -11,7 +12,7 @@
     margin-bottom: 22px;
     padding-right: 435px;
     a {
-      color: #AB064E;
+      color: $color-link-information;
       &:hover {
         text-decoration: none;
       }

@@ -1,3 +1,4 @@
+@import "../../color";
 .Cooperation-page {
   .title-shopping {
     margin-bottom: 45px;
@@ -39,7 +40,10 @@
     }
     .text-cooperation {
       a {
-        color: #AB064E;
+        color: $color-link-information;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     @media (max-width: 1439px) {

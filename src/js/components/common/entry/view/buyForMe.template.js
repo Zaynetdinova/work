@@ -1,7 +1,7 @@
 import {titleRegistration} from '../../popupDefaultTemplate/titleRegistration';
 import {buttonRegistration} from '../../popupDefaultTemplate/buttonRegistration';
-import {infoTextRegistration} from '../../infoTextRegistration';
 import {nesessaryFildsTemplate} from './nesesaryFilds.template';
+import {infoTextRegistration} from '../../popupDefaultTemplate/infoTextRegistration'
 
 export function buyForMeTemplate() {
     return `

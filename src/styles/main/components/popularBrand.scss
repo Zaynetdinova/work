@@ -1,7 +1,6 @@
 .PopularBrand {
   -webkit-transform: translate3d(0,0,0);
   background: #f9f9f9;
-  color: $color-Blocks;
   position: relative;
   z-index: 2;
   .root {
@@ -73,7 +72,7 @@
       .Com-img {
         transform: scale(1.1);
       }
-      .Button {
+      .button-more-details {
         .text {
           color: #AB064E;
         }

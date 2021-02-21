@@ -1,3 +1,4 @@
+@import "../../color";
 .Working-conditions-page {
   .wrapper-working-condition {
     margin-bottom: 55px;
@@ -20,7 +21,10 @@
       .flex-one,
       .flex-two {
         a {
-          color: #AB064E;
+          color: $color-link-information;
+          &:hover {
+            text-decoration: none;
+          }
         }
         .no-wrap {
           white-space: nowrap;

@@ -120,10 +120,7 @@
   .favorite-header {
     &:hover {
       .favorite-dropdown {
-        visibility: visible;
-        transform: translateY(0);
-        opacity: 1;
-        transition: .4s 0s;
+        display: block;
       }
     }
     .favorite-dropdown {
@@ -152,10 +149,7 @@
     }
     &:hover {
       .basket-dropdown {
-        visibility: visible;
-        transform: translateY(0);
-        opacity: 1;
-        transition: .4s 0s;
+        display: block;
       }
     }
     .basket-dropdown {
@@ -186,10 +180,7 @@
     background: #FFFFFF;
     width: 320px;
     cursor: default;
-    visibility: hidden;
-    transition: .4s .4s;
-    opacity: 0;
-    transform: translateY(10px);
+    display: none;
     &:after {
       width: 0;
       height: 0;

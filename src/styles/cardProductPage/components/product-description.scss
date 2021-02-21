@@ -24,6 +24,24 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 20px;
+    .wrapper-right-info {
+      margin-bottom: 4px;
+      .buttonAnotherGoods {
+        margin-top: 20px;
+        cursor: pointer;
+        max-width: 240px;
+        background: #8F8F8F;
+        border-radius: 4px;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px 0;
+        &:hover {
+          background: #AB064E;
+        }
+      }
+    }
   }
   .social {
     display: flex;

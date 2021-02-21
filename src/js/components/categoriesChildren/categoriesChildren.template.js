@@ -11,38 +11,34 @@ import {breadCrumbs} from '../common/breadCrumbs'
 export function categoriesChildren(testData, pageForChildren, dataSidebarGirl) {
     return `
 		<div class="wrapper-categories">	
-				${breadCrumbs(pageForChildren)}
-                ${titleWrapper(pageForChildren)}
-				<div class="flex-wrap">	
+			${breadCrumbs(pageForChildren)}
+			${titleWrapper(pageForChildren)}
+			<div class="flex-wrap">	
+				<section class="sidebar-page-categories sidebar-page-categoriesChildren">
+					${childrenSidebar(dataSidebarGirl)}
+				</section>
 				
-					<section class="sidebar-page-categories sidebar-page-categoriesChildren">
-             ${childrenSidebar(dataSidebarGirl)}
-					</section>
+				<section class="content-page-categories">
+					<div class="banner-video">
+						<video class="video" autoplay muted loop src=${video} </video>
+					</div>
 					
-					<section class="content-page-categories">
-						<div class="banner-video">
-							<video class="video" autoplay muted loop src=${video} </video>
-						</div>
-						
-						<div class="wrap-ImgChildren">
-							${IconChildren()}
-						</div>
-						
-						
-						
-						<div class="wrap-card Moyomoda-Block BannerBlockChildren">
-						    ${bannerBlockChildren()}
-					    </div>
+					<div class="wrap-ImgChildren">
+						${IconChildren()}
+					</div>						
 					
-						<div class="wrap-partnerOffers">
-							${partnerOffers()}
-						</div>
-						<div class="wrap-card-2">
-							${commonCard(testData, 'price')}
-						</div>	
-					</section>
-					
-				</div>
+					<div class="wrap-card Moyomoda-Block BannerBlockChildren">
+						${bannerBlockChildren()}
+					</div>
+				
+					<div class="wrap-partnerOffers">
+						${partnerOffers()}
+					</div>
+					<div class="wrap-card-2">
+						${commonCard(testData, 'price')}
+					</div>	
+				</section>	
+			</div>
 		</div>
 	`
 }

@@ -1,8 +1,8 @@
 import {cardBanner} from '../cardBanner'
-import {quickViewButton} from '../quickViewButton'
 import {priceContent} from '../priceContent'
 import {infoCard} from './view/infoCard'
 import {additionalInformation} from './view/additionalInformation'
+import {quickViewButton} from './view/quickViewButton'
 
 export function card(i, infoType = 'price') {
 	const {

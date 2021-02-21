@@ -1,6 +1,3 @@
-@import '../color';
-@import '../var';
-
 .Quick-view-button {
   padding: 10px;
   background: rgba(255, 255, 255, 0.5);
@@ -10,11 +7,9 @@
   bottom: 40px;
   justify-content: center;
 
-
   .text {
     font-size: 13px;
     line-height: 134.5%;
-
     color: #3D3D3C;
   }
 
@@ -28,9 +23,6 @@
   &:hover {
     cursor: pointer;
     background:   rgba(255, 255, 255, 0.8);
-
-
-
   }
   @media (max-width: 1400px)  {
     .text {
