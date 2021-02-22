@@ -22,7 +22,7 @@ export function sidebarWrapper() {
             </div>
           </div>   
           
-          <div id="sidebar-extra-wrapper-js">
+          <div class="sidebar-extra-wrapper" id="sidebar-extra-wrapper-js">
           
           </div>
           

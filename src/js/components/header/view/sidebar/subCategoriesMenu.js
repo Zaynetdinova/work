@@ -28,5 +28,3 @@ export function newTest({firstColumn, secondColumn}) {
     </div>
   `
 }
-
-// ${sidebarChoice(category)}

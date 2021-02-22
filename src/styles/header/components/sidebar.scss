@@ -60,9 +60,13 @@
       display: flex;
     }
   }
+
+  .sidebar-extra-wrapper {
+    max-width: 800px;
+    width: 100%;
+  }
   .extra {
     background: $baseColor;
-    min-width: 800px;
     width: 100%;
   }
   .extra-mobile {
@@ -72,7 +76,9 @@
     height: 100vh;
     width: 0%;
     right: 0;
+
     &.show-extra-mobile {
+      z-index: 1;
       width: 100%;
       animation: width 0.5s;
     }
@@ -97,6 +103,10 @@
     }
   }
   @media (max-width: 1024px) {
+    .extra {
+      display: none;
+    }
+
     .wrapper-sidebar {
       width: 100%;
       padding: 0;

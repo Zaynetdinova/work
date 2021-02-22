@@ -18,7 +18,7 @@ export function card(i, infoType = 'price') {
 		price = '',
 		bannerPosition = 'bottom',
 		link='/#card-product',
-		size = []} = i
+		size} = i
 
 	return `
 		<a href="${link}" style="text-decoration: none">

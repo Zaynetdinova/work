@@ -54,6 +54,11 @@ $widthCardImage: 87px;
     display: none;
   }
   .additional-information {
+
+    .size-wrapper {
+      max-height: 100px;
+      overflow: scroll;
+    }
     padding-top: 0;
     .quick-view {
       display: flex;
@@ -66,13 +71,13 @@ $widthCardImage: 87px;
       border: 1px solid #555555;
       position: absolute;
       background: #fff;
-      padding: 0 19px 33px 19px;
+      padding: 0 19px 20px 19px;
       z-index: 2;
       margin-top: -10px;
       right: -1px;
       left: -1px;
       border-top: none;
-      height: 115px;
+      //height: 115px;
       .text {
         padding-bottom: 10px;
         color: #3D3D3C;

@@ -12,7 +12,9 @@ export function additionalInformation(title, description, img, index, sizeElemen
 							<div class="description">${description}</div>
 						</div>`}
 				
-					${size(sizeElements)}
+				<div class="size-wrapper">
+				    ${size(sizeElements)}
+        </div>
 					<div class="block-under-image"></div>
 				</div>
 			
