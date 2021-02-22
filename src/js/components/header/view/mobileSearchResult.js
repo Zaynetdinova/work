@@ -1,4 +1,3 @@
-import search_img from '../../../../images/header/search.svg'
 import women from '../../../../images/bestsellers/1/img1.png'
 export function mobileSearchResult() {
   return `
