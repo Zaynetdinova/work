@@ -4,7 +4,6 @@ import {restorePassword} from './view/restorePassword'
 import {buyForMeTemplate} from './view/buyForMe.template'
 import {buyForSaleTemplate} from './view/buyForSale.template'
 import {backCall} from './view/backСall.template'
-import {Select} from '../../../core/utils/selectPlugin'
 import Armenia from '../../../../images/icons/armenia.svg'
 import Belarus from '../../../../images/icons/belarus.svg'
 import Georgia from '../../../../images/icons/georgia.svg'
@@ -14,6 +13,7 @@ import {inputMaskPhone} from '../../../core/utils/inputMaskPhone'
 import {Popup} from '../js/Popup'
 import {popupDefaultTemplate} from '../popupDefaultTemplate/popupDefault.template'
 import {entryStorage} from '../../../core/storage/storages'
+import {Select} from '../../../core/utils/selectPlugin'
 
 export class Entry {
   constructor() {
