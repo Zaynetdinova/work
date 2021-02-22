@@ -1,4 +1,4 @@
-import info from '../../../images/cardProduct/info.svg'
+import info from '../../../images/icons/info.svg'
 import {Sale} from './sale'
 import {quantity} from "./quantity";
 

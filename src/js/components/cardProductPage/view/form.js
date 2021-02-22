@@ -1,5 +1,5 @@
 import {star, star2} from './star'
-import load from '../../../../images/cardProduct/load.svg'
+import load from '../../../../images/icons/load.svg'
 import arrow from '../../../../images/icons/arrow2.svg'
 import {Statistics} from "./statistics";
 import photo1 from '../../../../images/cardProduct/photo1.png'

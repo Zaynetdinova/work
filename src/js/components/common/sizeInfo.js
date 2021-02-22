@@ -1,4 +1,4 @@
-import info from "../../../images/cardProduct/info.svg";
+import info from "../../../images/icons/info.svg";
 
 export function sizeInfo(item) {
     const items = item.map((item) => {
