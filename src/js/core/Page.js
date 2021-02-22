@@ -1,6 +1,4 @@
-import {Entry} from '../components/common/entry/entry'
-
-import {commonCardStorage} from './storage/storages'
+import {commonCardStorage, entryStorage} from './storage/storages'
 import {closeWhenClickingInAnInactiveZone, UserAgent} from './utils/utils'
 import {PopupQuick} from '../components/common/popupQuick/js/popupQuickFunctions'
 import {openSidebarTest} from "./utils/openSidebar";
@@ -9,7 +7,7 @@ import {openSidebarTest} from "./utils/openSidebar";
 export class Page {
 	constructor(params) {
 		this.params = params
-		this.entry = new Entry()
+
 
 	}
 
@@ -18,7 +16,7 @@ export class Page {
 	}
 
 	afterRender() {
-		this.entry.init()
+		new entryStorage.entry()
 		new PopupQuick().init()
     new openSidebarTest()
 

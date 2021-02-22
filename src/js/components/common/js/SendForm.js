@@ -7,6 +7,7 @@ export class SendForm {
 	init(root) {
 		this.forms = root.querySelectorAll('.form-js')
 		if(this.forms) {
+		  console.log(this.forms)
 			this.forms.forEach((form) => {
 				form.addEventListener('submit', async (e) => {
 					e.preventDefault()
@@ -19,6 +20,9 @@ export class SendForm {
 					const city = form.city
 					const newPassword = form.newPassword
 					const repeatNewPassword = form.repeatNewPassword
+          const phone = form.phone
+          const organization = form.querySelector('#form-value-organization')
+          console.log(organization.textContent)
 
 
 					//
@@ -32,7 +36,8 @@ export class SendForm {
 						passwordRepeat,
 						city,
 						newPassword,
-						repeatNewPassword
+						repeatNewPassword,
+            phone
 					]
 
 					const activeInputs = this.filterInput(inputs)
@@ -74,6 +79,9 @@ export class SendForm {
 				case 'city':
 					changeState(input)
 					break
+        case 'phone':
+          changeState(input)
+          break
 			}
 		})
 
