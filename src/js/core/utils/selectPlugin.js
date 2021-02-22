@@ -1,6 +1,8 @@
 import arrow from "../../../images/icons/arrow3.svg"
-import {popupPhone} from '../../components/common/entry/view/popupPhone'
+
 import {selectFilterPopularMobileTemplate} from '../../components/catalog/view/selectFilterPopularMobile'
+import {selectChoicePhoneType} from '../../components/common/selectChoicePhoneType'
+import {selectOrganizationType} from '../../components/common/selectOrganizationType'
 
 const getTemplate = (data = [], placeholder, originalText, selectedId, type = '') => {
 	let text = placeholder ?? 'Placeholder по умолчанию'
@@ -13,6 +15,7 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
     `
 	})
 
+  // переделать
 	switch (type) {
 		case 'numberOfItemsPerPage':
 			return defaultTemplate(items, text, mainText)
@@ -20,9 +23,12 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 		case 'selectFilterPopularMobile':
 			return selectFilterPopularMobileTemplate(items, text)
 			break;
-		case 'input':
-			return inputSelectedItem(data, text)
+		case 'select-phone-type':
+      return selectChoicePhoneType(data, text)
 			break;
+    case 'form-organization-select-js':
+      return selectOrganizationType(items, text)
+      break;
 	}
 
 	function defaultTemplate(items, text, mainText) {
@@ -43,26 +49,7 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 	}
 }
 
-function inputSelectedItem(data, text) {
-	return `
-    <div class="wrapper-select wrapper-select-input">
-    
-   		<div class="input-selected-item">
-				<input class="input-name test-mask" placeholder="Телефон*">
-				<article data-type="input" class="arrow-wrapper">
-					<img class="arrow" src="${arrow}" alt="">      
-					<span data-type="value" class="value">
-						<img src="${text}">
-					</span>
-				</article> 
-			</div>
-			
-			<div class="popup-selected-items">  
-					${popupPhone(data)}
-				</div>        
-		</div> 
-  `
-}
+
 
 export class Select {
 	constructor(selector, options) {

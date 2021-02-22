@@ -1,4 +1,4 @@
-import {Select} from '../../../core/JS/selectPlugin'
+import {Select} from '../../../core/utils/selectPlugin'
 
 
 export function select() {

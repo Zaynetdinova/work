@@ -21,7 +21,7 @@ export function buyForSaleTemplate() {
                 <div class="wrap-input">
                     <input name="iin" class="input-name" placeholder="ИНН*" type="text"> 
                     
-                    <div id="select-test" class="password2 select-organization"></div>
+                    <div id="form-organization-select-js" class="password2 select-organization"></div>
                     
                     <input name="nameOrganization" class="input-name" placeholder="Наименование организации*" type="text">
                     <div class="wrapper-password">

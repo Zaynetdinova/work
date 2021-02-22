@@ -7,7 +7,7 @@ export function selectFilterPopularMobileTemplate (items, text) {
    		<article data-type="input" class="input-selected-item">
 				<section class="Com-disp-flex-al-center">
 					<div class="test-img"></div>
-					<div data-type="value" class="title" >${text}</div>
+					<div data-type="value" class="title">${text}</div>
 				</section>
 				<section class="arrow-wrapper">
 						<img class="arrow" src="${arrow}" alt="">   
