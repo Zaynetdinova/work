@@ -63,7 +63,7 @@ export class CommonCard {
 	windowResize() {
 		window.addEventListener('resize', () => {
 			const clientWidth = document.documentElement.clientWidth
-
+      console.log(clientWidth)
 			if(clientWidth < this.minWidthNotSlider) {
 				this.stateShowInformation = false
 			} else {

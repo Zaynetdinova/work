@@ -1,0 +1,170 @@
+$widthCardImage: 87px;
+
+.size-wrapper {
+  max-height: 100px;
+}
+
+.additional-information {
+
+  .size-wrapper {
+    max-height: 100px;
+    overflow: scroll;
+  }
+  padding-top: 0;
+  .quick-view {
+    display: flex;
+    justify-content: center;
+  }
+  .content {
+    display: none;
+  }
+  .text-size-wrapper {
+    border: 1px solid #555555;
+    position: absolute;
+    background: #fff;
+    padding: 0 19px 20px 19px;
+    z-index: 2;
+    margin-top: -10px;
+    right: -1px;
+    left: -1px;
+    border-top: none;
+    //height: 115px;
+    .text {
+      padding-bottom: 10px;
+      color: #3D3D3C;
+    }
+    .block-under-image {
+      position: absolute;
+      bottom: -1px;
+      background: #555555;
+      height: 100%;
+      width: $widthCardImage;
+      left: 100%;
+      border-bottom: 1px solid #555555;
+    }
+  }
+  .images {
+    z-index: 2;
+    position: absolute;
+    top: -1px;
+    right: -$widthCardImage;
+    width: $widthCardImage;
+    background: #555555;
+    padding: 5px;
+
+    .image {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .photos-block-common-block {
+      height: 490px;
+
+      @media (max-width: 1500px) {
+        height: 445px;
+      }
+
+      @media (max-width: 1300px) {
+        height: 430px;
+      }
+      @media (max-width: 1200px) {
+        height: 390px;
+      }
+    }
+
+    .button {
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 120%;
+      background: rgba(61, 61, 60, 0.4);
+      z-index: 2;
+      height: 15px;
+      left: -10%;
+      cursor: pointer;
+      display: none;
+      .arrow {
+        background-image: url("../images/icons/arrow-card.svg");
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 6px;
+      }
+      &.button-prev {
+        top: 0;
+      }
+      &.button-next {
+        bottom: 0;
+        .arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &:hover {
+      .button {
+        display: flex;
+      }
+    }
+  }
+}
+&.additional-information-open {
+  border: 1px solid #555555;
+  .quick-view {
+    display: flex;
+    justify-content: center;
+  }
+  .content {
+    display: block;
+  }
+  .Health {
+    display: block;
+  }
+}
+&.additional-information-open-left {
+  border: 1px solid #555555;
+  .quick-view {
+    display: flex;
+    justify-content: center;
+  }
+  .content {
+    display: block;
+    .text-size-wrapper {
+      .block-under-image {
+        left: -$widthCardImage;
+      }
+    }
+    .images {
+      left: -$widthCardImage;
+    }
+  }
+  .Health {
+    display: block;
+  }
+}
+
+@media (max-width: 1280px) {
+  .additional-information {
+    .content {
+      .text-size-wrapper {
+        .block-under-image {
+          width: $widthCardImage/1.1;
+        }
+      }
+      .images {
+        right: -$widthCardImage/1.1;
+        width: $widthCardImage/1.1;
+      }
+    }
+  }
+  &.additional-information-open-left {
+    .content {
+      .text-size-wrapper {
+        .block-under-image {
+          left: -$widthCardImage/1.1;
+        }
+      }
+      .images {
+        left: -$widthCardImage/1.1;
+      }
+    }
+  }
+}
