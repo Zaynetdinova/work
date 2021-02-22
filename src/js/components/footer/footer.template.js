@@ -1,7 +1,7 @@
-import partner from '../../../images/footer/partner.svg'
-import schema  from '../../../images/footer/shema.svg'
-import card from '../../../images/footer/card_bank.svg'
-import phone from '../../../images/icons/icon_phone_black.svg'
+import partner from '../../../images/icons/partner-moyomoda.svg'
+import schema  from '../../../images/icons/footer/footer-shema.svg'
+import card from '../../../images/icons/footer/footer-card-bank.svg'
+import phone from '../../../images/icons/footer/footer-phone.svg'
 import {sidebarPoint} from "../common/sidebarPoint";
 
 export function footerTemplate() {

@@ -6,7 +6,7 @@ import img2 from "../../../../images/moyo/2.png";
 import img3 from "../../../../images/moyo/3.png";
 import img4 from "../../../../images/moyo/4.png";
 import img5 from "../../../../images/moyo/5.png";
-import MOYOmoda from '../../../../images/moyo/MOYOmoda2.svg'
+import MOYOmoda from '../../../../images/icons/partner-moyomoda.svg'
 
 export function bannerBlockWomen() {
     return `

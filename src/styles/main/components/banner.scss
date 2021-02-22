@@ -1,3 +1,5 @@
+@import "../../color";
+@import "../../var";
 .Banner {
   position: sticky;
   top: 0;
@@ -29,14 +31,14 @@
 
 
   .bg-main {
-    background-image: url('../images/main/slider2.jpeg');
+    background-image: url('../images/banner-main/banner2.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .bg-main2 {
-    background-image: url('../images/main/slider.jpg');
+    background-image: url('../images/banner-main/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -196,14 +198,14 @@
 
     .bg {
       display: block;
-      background-image: url('../images/main/slider-mobail.png');
+      background-image: url('../images/banner-main/banner-mobail.png');
       background-repeat: no-repeat;
       background-position: center;
       width: 100%;
       height: 207px;
 
       &.bg-main2 {
-        background-image: url('../images/main/slider-mobail2.jpg');
+        background-image: url('../images/banner-main/banner-mobail2.jpg');
       }
     }
 
@@ -238,11 +240,6 @@
     }
 
     .bg {
-      display: block;
-      background-image: url('../images/main/slider-mobail.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
       height: 187px;
     }
     .content {

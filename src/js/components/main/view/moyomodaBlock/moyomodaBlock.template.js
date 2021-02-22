@@ -8,7 +8,7 @@ import img3 from "../../../../../images/moyo/men.png";
 import img4 from "../../../../../images/moyo/boy.png";
 import img5 from "../../../../../images/moyo/home.png";
 import img6 from "../../../../../images/moyo/toy.png";
-import MOYOmoda from '../../../../../images/footer/partner.svg';
+import MOYOmoda from '../../../../../images/icons/partner-moyomoda.svg';
 
 
 export function moyomodaBlockTemplate() {
