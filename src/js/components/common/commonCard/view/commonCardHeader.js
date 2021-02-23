@@ -12,21 +12,9 @@ export function commonCardHeader(text,link) {
             СМОТРЕТЬ ВСЕ
         </div>
       </section>
-      <section class="slider-pointer">
-         ${sliderPointerTemplate('slider-pointer-bestseller')}
-         ${r()}
+      <section data-slider-pointer-cards-js class="slider-pointer">
+         
       </section>
-    </div>
-  `
-}
-
-export function r () {
-  return `
-    <div class="dots">
-        <span class="dots-bestseller active"></span>
-        <span class="dots-bestseller"></span>
-        <span class="dots-bestseller"></span>
-        <span class="dots-bestseller"></span>
     </div>
   `
 }

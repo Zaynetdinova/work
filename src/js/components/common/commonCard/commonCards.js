@@ -3,7 +3,6 @@ import {card} from './card'
 
 export function commonCard(elem, infoType) {
 	const {data, title, _id, link} = elem
-
 	return `
 	<div class="Common-card">
 			<figure data-parent-common-cards-js 
@@ -11,7 +10,6 @@ export function commonCard(elem, infoType) {
 							class="swiper-container ${_id}" >
 					<div class="bestsellers-header-wrapper">
 						${commonCardHeader(title, link)}
-						<div class="test-dots"></div>
 					</div>
 					<div class="swiper-wrapper">
 							${data.map(i => {
