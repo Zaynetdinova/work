@@ -8,13 +8,19 @@ export class AboutContactsPage extends Component {
     constructor($root) {
         super($root, {
             name: 'AboutContactsPage',
-            listeners: ['click']
+            listeners: []
         });
+
+      this.link = [
+        {
+          title: 'Контакты',
+          link: '/#information/contacts'
+        }
+      ]
     }
 
     toHTML() {
-        return aboutContactsPageTemplate()
+        return aboutContactsPageTemplate(this.link)
     }
 
-    onClick() {}
 }

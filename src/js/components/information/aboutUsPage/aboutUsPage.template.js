@@ -9,7 +9,7 @@ import {navigationInformationAboutStore} from "../../common/navigationInformatio
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function aboutUsPageTemplate() {
+export function aboutUsPageTemplate(link) {
     return `
          <div class="wrapper-aboutUs">
             ${breadCrumbs(link)}
@@ -116,10 +116,3 @@ export function aboutUsPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'О нас',
-        link: '/#information/about-us'
-    }
-]

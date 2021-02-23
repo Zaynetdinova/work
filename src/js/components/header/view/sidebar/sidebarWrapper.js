@@ -145,7 +145,7 @@ let point =
           id: 'newBornSub',
           categories: [
             {
-              id: 'dress',
+              id: 'dressGirlNewBorn',
               category: 'Платья'
             },
             {

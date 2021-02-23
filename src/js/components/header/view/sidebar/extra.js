@@ -2,8 +2,13 @@ import img from '../../../../../images/sidebar/img.png'
 import sale from '../../../../../images/sidebar/sale.svg'
 
 export function extra(elementsMenu) {
-    const {firstColumn, secondColumn = []} = elementsMenu
+    const {firstColumn, secondColumn} = elementsMenu
 
+    const saleBlock = `
+     <a href="#">
+        <img src=${sale} alt="sale">
+     </a>
+    `
     return `
         <div class="extra">
             <div class='More'>
@@ -12,16 +17,18 @@ export function extra(elementsMenu) {
                         <div class='first-content'>                  
                             ${pick(firstColumn)}
                         </div>
+                        ${!secondColumn ? saleBlock : ''}
                     </div>
-                    
-                    <div class="second-col">
-                        <div class='second-content'>
-                            ${secondColumn ? pick(secondColumn) : null}
-                            <a href="#">
-                                <img src=${sale} alt="sale">
-                            </a>
+                    ${secondColumn 
+                      ? `<div class="second-col">
+                          <div class='second-content'>
+                              ${pick(secondColumn)}
+                          </div>
+                          ${saleBlock}
                         </div>
-                    </div>
+                        
+                      ` : ''}
+                    
                 </div>
                 
                 <div class='card'>
@@ -59,7 +66,9 @@ export function pick(elementsMenu) {
   return `${items.join('')}`
 }
 
-
-
+//
+// <a href="#">
+//   <img src=${sale} alt="sale">
+//   </a>
 
 

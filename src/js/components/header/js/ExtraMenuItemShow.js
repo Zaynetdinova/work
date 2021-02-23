@@ -1,5 +1,5 @@
 import {extra} from '../view/sidebar/extra'
-import {extraDataWomen} from '../view/sidebar/extraData'
+import {extraDataGirlNewBorn, extraDataWomen} from '../view/sidebar/extraData'
 import {newTest} from '../view/sidebar/subCategoriesMenu'
 
 export class ExtraMenuItemShow {
@@ -14,6 +14,11 @@ export class ExtraMenuItemShow {
 
 
 	init(e) {
+	  console.log('init', e.target)
+    if(e.target.closest('.point')){
+       this.$extraRoot.innerHTML = ''
+      return
+    }
 		const el = e.target.closest('[data-parent-category]')
 
 
@@ -31,11 +36,26 @@ export class ExtraMenuItemShow {
 		if (id.toLowerCase().indexOf("women") != -1) {
 			this.women(id)
 		}
+    if (id.toLowerCase().indexOf("newborn") != -1) {
+      this.girlNewBorn(id)
+    }
 	}
 
 	closeExtraMenu() {
 		this.$extraRoot.innerHTML = ''
 	}
+
+	girlNewBorn(id) {
+	  switch(id) {
+      case 'dressGirlNewBorn':
+        this.menuExtra = 'dress'
+        break
+      default:
+        this.menuExtra = 'dress'
+	  }
+
+    this.initialCategory(this.menuExtra, extraDataGirlNewBorn)
+  }
 
 	women(id) {
 		switch (id) {
@@ -55,11 +75,11 @@ export class ExtraMenuItemShow {
 				this.menuExtra = 'tightsSocks'
 		}
 
-		this.initialCategory(this.menuExtra)
+		this.initialCategory(this.menuExtra, extraDataWomen)
 	}
 
-	initialCategory(menuExtra) {
-		this.$extraRoot.innerHTML = `${extra(extraDataWomen[menuExtra])}`
-		this.$extraRootMobile.innerHTML = `${newTest(extraDataWomen[menuExtra])}`
+	initialCategory(menuExtra, typeExtra) {
+		this.$extraRoot.innerHTML = `${extra(typeExtra[menuExtra])}`
+		this.$extraRootMobile.innerHTML = `${newTest(typeExtra[menuExtra])}`
 	}
 }
