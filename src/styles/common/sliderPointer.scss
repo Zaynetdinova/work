@@ -152,7 +152,7 @@
   }
 }
 .dots {
-  display: none;
+  display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
@@ -165,6 +165,9 @@
     margin-left: 9px;
     cursor: pointer;
     opacity: 1;
+    &:first-child {
+      margin-left: 0;
+    }
 
     &.active {
       border: 2px solid #3D3D3C;
