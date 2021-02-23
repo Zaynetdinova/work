@@ -9,7 +9,7 @@ export function  workingConditionsPageTemplate() {
            	<div class="title-shopping">Сотрудничество</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationCooperation('about-working-condition')}
-           	    ${navigationMobile('/#information/about-us','условия работы','/#information/contacts')}
+           	    ${navigationMobile('/#information/cooperation','условия работы','/#information/cooperation')}
             </div>
             <div class="title-working-condition">Как стать нашим клиентом</div>
             <p>Сотрудничаем с организациями любых форм собственности, 

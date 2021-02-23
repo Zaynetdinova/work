@@ -16,7 +16,7 @@ export function aboutUsPageTemplate() {
            	<div class="title-shopping">О магазине</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutStore('about-us')}
-           	    ${navigationMobile('/#information/contacts','о нас','#information/working-condition')}
+           	    ${navigationMobile('/#information/contacts','о нас','#information/contacts')}
             </div>
             <div class="title-aboutUs">OptMoyo.Ru – это удобная платформа оптовой 
             интернет торговли, соединяющая производителей с потребителями.</div>

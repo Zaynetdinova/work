@@ -21,7 +21,7 @@ export function tableProductsBasket() {
                 <td class="first-string" style="width: 5%"></td>
             </tr>
             
-            <tr class="auxiliary-unit-top">
+            <tr class="auxiliary-unit-line">
                 <td class="line-top" colspan="8">
                     <div class="">
                         <span></span>
@@ -29,11 +29,19 @@ export function tableProductsBasket() {
                 </td>
             </tr>
             
-            ${goodsTest.map((item) => {
-                const {info, sizes} = item
-                return `
-                <tr class="good">
-                
+        ${goodsTest.map((item) => {
+        const {info, sizes} = item
+        return `
+
+            <tr class="auxiliary-unit-top">
+                <td colspan="8">
+                    <div class="">
+                        <span></span>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="good">
                 <td class="name-product">
                     <div class="wrapper-product">
                         <img class="img-product" src="${women}" alt="">
@@ -95,8 +103,8 @@ export function tableProductsBasket() {
                     </div>
                 </td>
             </tr>
-              `
-        })}  
+        `
+        }).join('')}  
         </table>
     `
 }
@@ -111,7 +119,7 @@ const goodsTest = [
       {
         infoType: 'Цвет:',
         infoResult: 'Коричневый'
-      },
+      }
     ],
 
     sizes: [
@@ -129,7 +137,7 @@ const goodsTest = [
       {
         infoType: 'Цвет:',
         infoResult: 'Коричневый'
-      },
+      }
     ],
 
     sizes: [
@@ -137,5 +145,5 @@ const goodsTest = [
       {size: '42', price: '1 200', id: 'size42'},
       {size: '44', price: '1 200', id: 'size44'},
     ]
-  }
+  },
 ]

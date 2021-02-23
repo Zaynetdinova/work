@@ -19,7 +19,7 @@ export function viewOrderTable() {
                 <td class="first-string sum-percent">Сумма</td>
             </tr>
             
-            <tr class="auxiliary-unit-top">
+            <tr class="auxiliary-unit">
                 <td class="line-top" colspan="8">
                     <span></span>
                 </td>
@@ -28,6 +28,11 @@ export function viewOrderTable() {
             ${goodsTest.map((item) => {
             const {info, sizes} = item
             return `
+                <tr class="auxiliary-unit-top">
+                    <td colspan="8">
+                        <span></span>
+                    </td>
+                </tr>
                 <tr class="good">
                     <td class="wrap-num"><div class="num">1</div></td>
                     <td class="name-product">
@@ -93,7 +98,7 @@ export function viewOrderTable() {
                     </td>
                 </tr>
               `
-    })} 
+    }).join('')} 
         </table>
     `
 }
@@ -120,7 +125,29 @@ const goodsTest = [
             {size: '42', price: '1 200', id: 'size42', col: '88'},
             {size: '44', price: '1 200', id: 'size44', col: '88'},
         ]
-    }
+    },
+    {
+        info: [
+            {
+                infoType: 'Артикул:',
+                infoResult: '01.2345/678'
+            },
+            {
+                infoType: 'ID:',
+                infoResult: '247355'
+            },
+            {
+                infoType: 'Цвет:',
+                infoResult: 'Коричневый'
+            },
+        ],
+
+        sizes: [
+            {size: '40', price: '1 200', id: 'size40', col: '2'},
+            {size: '42', price: '1 200', id: 'size42', col: '88'},
+            {size: '44', price: '1 200', id: 'size44', col: '88'},
+        ]
+    },
 ]
 
 let exampleOne = [

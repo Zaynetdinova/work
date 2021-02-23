@@ -53,7 +53,7 @@ export class Basket extends Component {
           break;
         case 'pagination-prev-js':
           this.basket.prevBasketSection()
-          break
+          break;
       }
     }
   }

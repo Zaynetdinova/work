@@ -6,6 +6,7 @@ import img5 from '../../../../images/icons/5.svg'
 import img6 from '../../../../images/icons/6.svg'
 import {navigationInformationCooperation} from "../../common/navigationInformationCooperation";
 import {breadCrumbs} from '../../common/breadCrumbs'
+import {navigationMobile} from '../../common/navigation-mobile'
 
 export function cooperationPageTemplate() {
     return `
@@ -14,6 +15,7 @@ export function cooperationPageTemplate() {
            	<div class="title-shopping">Сотрудничество</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationCooperation('suppliers')}
+           	    ${navigationMobile('/#information/working-condition','Сотрудничество','/#information/working-condition')}
            	</div>
            	<div class="title-cooperation">Приглашаем к сотрудничеству производителей одежды и аксессуаров.<br>
            	Для успешной совместной работы от вас требуются:</div>

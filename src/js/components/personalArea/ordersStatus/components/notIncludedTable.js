@@ -12,7 +12,7 @@ export function notIncludedTable() {
                 <td class="first-string quantity-percent">Количество</td>
             </tr>
             
-            <tr class="auxiliary-unit-top">
+            <tr class="auxiliary-unit">
                 <td class="line-top" colspan="5">
                     <span></span>
                 </td>
@@ -21,6 +21,11 @@ export function notIncludedTable() {
             ${goodsTest.map((item) => {
             const {info, sizes} = item
             return `
+                <tr class="auxiliary-unit-top">
+                    <td colspan="5">
+                        <span></span>
+                    </td>
+                </tr>
                 <tr class="good">
                     <td class="wrap-num"><div class="num">1</div></td>
                     <td class="name-product">
@@ -58,7 +63,7 @@ export function notIncludedTable() {
                     </td>
                 </tr>
               `
-            })} 
+            }).join('')} 
         </table>
     `
 }
@@ -85,5 +90,27 @@ const goodsTest = [
             {size: '42', price: '1 200', id: 'size42', col: '88'},
             {size: '44', price: '1 200', id: 'size44', col: '88'},
         ]
-    }
+    },
+    {
+        info: [
+            {
+                infoType: 'Артикул:',
+                infoResult: '01.2345/678'
+            },
+            {
+                infoType: 'ID:',
+                infoResult: '247355'
+            },
+            {
+                infoType: 'Цвет:',
+                infoResult: 'Коричневый'
+            },
+        ],
+
+        sizes: [
+            {size: '40', price: '1 200', id: 'size40', col: '2'},
+            {size: '42', price: '1 200', id: 'size42', col: '88'},
+            {size: '44', price: '1 200', id: 'size44', col: '88'},
+        ]
+    },
 ]

@@ -1,8 +1,5 @@
 @import "../../color";
 .Cooperation-page {
-  .title-shopping {
-    margin-bottom: 45px;
-  }
   .wrapper-cooperation {
     margin-bottom: 130px;
     font-size: 14px;
@@ -48,9 +45,6 @@
     }
     @media (max-width: 1439px) {
       margin-bottom: 355px;
-      .title-shopping {
-        margin-bottom: 13px;
-      }
       .title-cooperation {
         margin-bottom: 52px;
       }

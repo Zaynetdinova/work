@@ -7,21 +7,6 @@
   .address {
     width: 50%;
     margin-right: 8px;
-    .left-column-address {
-      .content {
-        display: none;
-      }
-      &.show-info {
-        .content {
-          display: block;
-        }
-        .title-img {
-          .arrow {
-            transform: rotate(-90deg);
-          }
-        }
-      }
-    }
   }
   .right-column {
     width: 49.5%;
@@ -54,6 +39,21 @@
     margin: 0 -15px 30px -15px;
     .address {
       width: 100%;
+      .left-column-address {
+        .content {
+          display: none;
+        }
+        &.show-info {
+          .content {
+            display: block;
+          }
+          .title-img {
+            .arrow {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
       .title-img {
         margin-bottom: 20px;
       }
