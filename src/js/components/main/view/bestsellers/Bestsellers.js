@@ -2,6 +2,7 @@ import {bestsellersTemplate} from './bestsellers.template'
 
 import Swiper from 'swiper'
 import {testDataBestsellers} from "../../../../../testData/testDataBestsellers";
+import {DotsSlider} from "../../../../core/utils/DotsSlider";
 
 
 export class Bestsellers  {
@@ -16,14 +17,15 @@ export class Bestsellers  {
 
       on: {
         slideChange: function () {
-
+          console.log('super', this.activeIndex)
         },
 
         init: function () {
-
-          if(this.slides.length >= 8) {
-
-          }
+          DotsSlider(this.params.el,
+            this.slides.length,
+            this.params.breakpoints[1024].slidesPerView,
+            this.params.breakpoints[768].slidesPerView
+            )
         }
       },
 
@@ -35,15 +37,11 @@ export class Bestsellers  {
         prevEl: '.swiper-button-prev-main',
       },
       breakpoints: {
-        1025: {
+        1024: {
           spaceBetween: 20,
           slidesPerView: 6,
-        },
-        1024: {
-          slidesPerView: 6,
-          centeredSlides: false,
           loop: false,
-          spaceBetween: 15,
+          slidesOffsetAfter: 0,
         },
         768: {
           slidesPerView: 4,
