@@ -13,7 +13,6 @@ export function sidebarChoice(li = [], subcategory, arrow) {
                         ${category}
                         ${arrow == 'notArrow' ? '' : `<div class="arrow"></div>`}
                     </a>
-                    <div class='line'></div>
                 </figure>
             `
         }).join('')

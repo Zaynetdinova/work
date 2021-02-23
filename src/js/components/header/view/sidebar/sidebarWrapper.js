@@ -15,18 +15,15 @@ export function sidebarWrapper() {
       <div class='wrapper-sidebar'>
           
           <div data-parent-point class='points-wrapper'>
-            <div class='points'>
-                <div class="points-header">
-                    ${sidebarPoint(point, '', 'header')}
-                </div>
-            </div>
+              <div class='points'>
+                  <div class="points-header">
+                      ${sidebarPoint(point, '', 'header')}
+                  </div>
+              </div>
           </div>   
           
-          <div class="sidebar-extra-wrapper" id="sidebar-extra-wrapper-js">
-          
-          </div>
-          
-           
+          <div class="sidebar-extra-wrapper" id="sidebar-extra-wrapper-js"></div>
+                     
           <div class="extra-mobile" id="open-mobile-extra-js">
             ${subCategoriesMenu()}
           </div>
