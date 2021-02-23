@@ -3,7 +3,7 @@
 
 .BannerBlock {
   background-image: url("../images/moyo/6.png");
-  background-position: 50% 53%;
+  background-position: 50% 46%;
   background-size: contain;
 
   .root {
@@ -44,12 +44,9 @@
       }
     }
     &:hover {
-      .line {
-        border-left: 2px solid #C8C8C8;
-      }
       .text {
         .title {
-          color: #0196AB;
+          color: #89028D;
         }
       }
     }
