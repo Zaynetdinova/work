@@ -2,7 +2,7 @@ import {bestsellersTemplate} from './bestsellers.template'
 
 import Swiper from 'swiper'
 import {testDataBestsellers} from "../../../../../testData/testDataBestsellers";
-import {DotsSlider} from "../../../../core/utils/DotsSlider";
+import {changeSlideDots, DotsSlider} from "../../../../core/utils/DotsSlider";
 
 
 export class Bestsellers  {
@@ -17,7 +17,8 @@ export class Bestsellers  {
 
       on: {
         slideChange: function () {
-          console.log('super', this.activeIndex)
+
+          changeSlideDots(this.params.el, this.slides.length, this.activeIndex)
         },
 
         init: function () {

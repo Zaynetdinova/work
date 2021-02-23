@@ -207,6 +207,20 @@ export let testDataBestsellers = {
             '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
           ],
         },
+        {
+          id: 'woman11',
+          img: img6,
+          title: 'Vittoria Vicci',
+          description: 'Наименование товара ',
+          oldPrice: '1 234,00 &#8381',
+          newPrice: '-234,00 &#8381;',
+          price: '1 243,00 &#8381; ',
+          sale: true,
+          link: '/#card-product',
+          size: [
+            '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+          ],
+        },
 			],
 			link: '/#categories',
 		},
