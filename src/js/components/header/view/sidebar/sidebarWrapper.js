@@ -61,23 +61,23 @@ let point =
         },
         {
           id: 'bottomWomen',
-          link: '',
+          link: '/#catalog',
           category: 'Низы',
 
         },
         {
           id: 'skirtsWomen',
-          link: '',
+          link: '/#catalog',
           category: 'Юбки'
         },
         {
           id: 'outerwearWomen',
-          link: '',
+          link: '/#catalog',
           category: 'Верхняя одежда'
         },
         {
           id: 'costumesWomen',
-          link: '',
+          link: '/#catalog',
           category: 'Костюмы'
         },
         {
@@ -261,59 +261,84 @@ let point =
       title: 'мужчинам',
       id: 'men',
       img: icon3,
-      categories: [
+      category: [
         {
-          category: 'Платья'
+          id: 't-shirtsMen',
+          category: 'Майки, футболки',
+          link: '/#catalog'
         },
         {
-          category: 'Трикотаж'
+          id: 'shirtsMen',
+          category: 'Рубашки',
+          link: '/#catalog'
         },
         {
-          category: 'Верха'
+          id: 'jerseyMen',
+          category: 'Трикотаж',
+          link: '/#catalog'
         },
         {
-          category: 'Низы'
+          id: 'topMen',
+          link: '/#catalog',
+          category: 'Верха',
+
         },
         {
-          category: 'Юбки'
-        },
-        {
+          id: 'outerwearMen',
+          link: '/#catalog',
           category: 'Верхняя одежда'
         },
         {
+          id: 'shortsMen',
+          link: '/#catalog',
+          category: 'Брюки, джинсы, шорты'
+        },
+        {
+          id: 'costumesMen',
+          link: '',
           category: 'Костюмы'
         },
         {
+          id: 'forHomeMen',
+          link: '',
           category: 'Для дома'
         },
         {
-          category: 'Спорт'
-        },
-        {
+          id: 'underwearMen',
+          link: '',
           category: 'Нижнее белье'
         },
         {
-          category: 'Купальники'
+          id: 'tightsSocksMen',
+          link: '',
+          category: 'Носки'
         },
         {
-          category: 'Колготки и Носки'
-        },
-        {
-          category: 'Большие размеры'
-        },
-        {
+          id: 'accessoriesMen',
+          link: '',
           category: 'Аксессуары'
         },
         {
+          id: 'footwearMen',
+          link: '',
+          category: 'Обувь'
+        },
+        {
+          id: 'newItemsMen',
+          link: '',
           category: 'Новинки'
         },
         {
+          id: 'promotionsMen',
+          link: '',
           category: 'Акции'
         },
         {
+          id: 'discountsMen',
+          link: '',
           category: 'Скидки'
         },
-      ]
+      ],
     },
     {
       title: 'мальчикам',
