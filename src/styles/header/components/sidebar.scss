@@ -61,20 +61,17 @@
     }
   }
 
-  .sidebar-extra-wrapper {
-    max-width: 800px;
-    width: 100%;
-  }
   .extra {
     background: $baseColor;
     width: 100%;
   }
   .extra-mobile {
+    display: none;
     background: $baseColor;
     overflow-y: auto;
     position: absolute;
     height: 100vh;
-    width: 0%;
+    width: 0;
     right: 0;
 
     &.show-extra-mobile {
@@ -103,10 +100,12 @@
     }
   }
   @media (max-width: 1024px) {
-    .extra {
+    .sidebar-extra-wrapper {
       display: none;
     }
-
+    .extra-mobile {
+      display: block;
+    }
     .wrapper-sidebar {
       width: 100%;
       padding: 0;
@@ -115,6 +114,9 @@
   @media (max-width: 768px) {
     .points-wrapper {
       width: 100%;
+      .points {
+        width: 100%;
+      }
     }
     .menu {
       position: absolute;
@@ -125,10 +127,6 @@
     }
     .background {
       height: 0;
-    }
-    .wrapper-sidebar {
-      width: 100%;
-      padding: 0;
     }
     .extra {
       display: none;

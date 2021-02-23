@@ -59,11 +59,12 @@ $widthCardImage: 87px;
 
     .photos-block-common-block {
       height: 490px;
-
-      @media (max-width: 1500px) {
+      @media (max-width: 1440px) {
+        height: 483px;
+      }
+      @media (max-width: 1400px) {
         height: 445px;
       }
-
       @media (max-width: 1300px) {
         height: 430px;
       }

@@ -50,9 +50,14 @@
   padding: 0 !important;
 
   .sub-category-wrapper {
-    padding: 13px 32px 14px 27px;
+    padding: 16px 32px 17px 27px;
     border-bottom: 2px solid #F3F2F0;
-
+    cursor: pointer;
+    &:hover {
+      .item {
+        color: #AB064E;
+      }
+    }
     .category {
       .choice {
         padding: 0 0 0 30px;
