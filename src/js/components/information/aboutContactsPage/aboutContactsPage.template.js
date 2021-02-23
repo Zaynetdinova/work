@@ -8,7 +8,7 @@ import {navigationInformationAboutStore} from "../../common/navigationInformatio
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function aboutContactsPageTemplate() {
+export function aboutContactsPageTemplate(link) {
     return `
         <div class="wrapper-contact">
             ${breadCrumbs(link)}
@@ -52,9 +52,4 @@ export function aboutContactsPageTemplate() {
         </div>
     `
 }
-let link = [
-    {
-        title: 'Контакты',
-        link: '/#information/contacts'
-    }
-]
+

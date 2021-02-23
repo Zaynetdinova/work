@@ -8,13 +8,19 @@ export class AboutUsPage extends Component {
     constructor($root) {
         super($root, {
             name: 'AboutUsPage',
-            listeners: ['click']
+            listeners: []
         });
+
+
+      this.link = [
+        {
+          title: 'О нас',
+          link: '/#information/about-us'
+        }
+      ]
     }
 
     toHTML() {
-        return aboutUsPageTemplate()
+        return aboutUsPageTemplate(this.link)
     }
-
-    onClick() {}
 }

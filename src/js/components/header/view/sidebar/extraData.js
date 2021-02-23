@@ -143,3 +143,23 @@ export const extraDataWomen = {
 		]
 	}
 }
+
+export const extraDataGirlNewBorn = {
+  dress: {
+    firstColumn: [
+      {title: 'Повседневные', href: ''},
+      {title: 'Офисные', href: ''},
+      {title: 'Трикотажные', href: ''},
+      {title: 'Коктейльные', href: ''},
+      {title: 'Вечерние', href: ''},
+      {title: 'Длинные', href: ''},
+      {title: 'Сарафаны', href: ''},
+      {title: 'Летние', href: ''},
+      {title: 'Короткие', href: ''},
+      {title: 'Выпускные', href: ''},
+      {title: 'Кружевные', href: ''},
+      {title: 'Пляжные', href: ''},
+      {title: 'Свадебные', href: ''},
+    ]
+  }
+}
