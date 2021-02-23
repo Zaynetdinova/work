@@ -15,7 +15,7 @@ export function aboutContactsPageTemplate() {
            	<div class="title-shopping">О магазине</div>
            	<div class="wrapper-navigation-info">
            	    ${navigationInformationAboutStore('about-contacts')}
-           	    ${navigationMobile('/#information/working-condition','контакты','/#information/about-us')}
+           	    ${navigationMobile('/#information/about-us','контакты','/#information/about-us')}
             </div>
             <div class="title-contacts">Контактная информация</div>
             <div class="grid">

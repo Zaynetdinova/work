@@ -51,7 +51,6 @@ let data = [
                 id: 'pickup-js'
             },
         ]
-
     },
 
     {
