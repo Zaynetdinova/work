@@ -42,19 +42,64 @@
           flex-direction: column;
           padding: 0;
           width: 100%;
-          .bank-details {
-            display: flex;
-            justify-content: space-between;
+          .wrap-bank-details {
             width: 100%;
             padding-bottom: 20px;
             padding-top: 20px;
             border-bottom: 2px dotted #DDDDDD;
           }
+          .bank-details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .button-personal-data {
+              display: none;
+            }
+          }
+          .number-bank-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 10px;
+            table {
+              font-size: 14px;
+              line-height: 15px;
+              .wrap-title-number {
+               height: 20px;
+              }
+              .title {
+                font-weight: bold;
+                width: 40px;
+              }
+            }
+          }
+          .wrap-legal-address {
+            width: 100%;
+            padding-top: 20px;
+          }
           .legal-address {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            padding-top: 20px;
+            .button-personal-data {
+              display: none;
+            }
+          }
+          .address {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .wrapper-legal-address {
+              width: 100%;
+            }
+            p {
+              padding-top: 10px;
+              font-size: 14px;
+              line-height: 20px;
+            }
+            .fact-address {
+              padding-top: 20px;
+            }
           }
         }
       }
@@ -256,6 +301,12 @@
             }
           }
         }
+        .legal-entities {
+          margin-bottom: 0;
+          .wrapper-box-2 {
+            height: 100%;
+          }
+        }
       }
     }
   }
@@ -269,8 +320,27 @@
             .bank-details {
               flex-direction: column;
             }
+            .number-bank-details {
+              flex-direction: column;
+              table {
+                width: 100%;
+                margin-bottom: 12px;
+                .title {
+                  width: 15%;
+                }
+              }
+            }
+            .address {
+              flex-direction: column;
+              .button-personal-data {
+                margin-top: 12px;
+              }
+            }
             .legal-address {
               flex-direction: column;
+              .wrapper-box-1 {
+                margin-bottom: 0;
+              }
             }
             .wrapper-box-1 {
               margin-bottom: 12px;

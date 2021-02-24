@@ -15,7 +15,7 @@ export function orderName(data) {
                 ${characteristicOrder(data)}
             </div>
             <div>
-                <a href="" class="link-see-order">
+                <a href="/#personal-area/view-order" class="link-see-order">
                     Посмотреть заказ
                 </a>
             </div>

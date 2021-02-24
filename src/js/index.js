@@ -22,6 +22,7 @@ import {AboutUs} from "./pages/informationPage/AboutUs";
 import {AboutWorkingCondition} from "./pages/informationPage/AboutWorkingCondition";
 import {Chosen} from "./pages/PersonalAreaPage/Chosen";
 import {OrderStatusPage} from "./pages/PersonalAreaPage/OrderStatusPage";
+import {ViewOrderPage} from "./pages/PersonalAreaPage/ViewOrderPage";
 
 
 
@@ -38,6 +39,7 @@ new Router('#app', {
   personalAreaBonusesPage: BonusesPage,
   personalAreaChosen: Chosen,
   personalAreaOrdersStatus: OrderStatusPage,
+  personalAreaViewOrder: ViewOrderPage,
   aboutShoppingPage: AboutShopping,
   aboutPaymentPage: AboutPayment,
   aboutQuestionAnswers: AboutQuestionsAnswers,
