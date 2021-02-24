@@ -130,6 +130,11 @@ let point =
           link: '',
           category: 'Скидки'
         },
+        {
+          id: 'brandWomen',
+          link: '',
+          category: 'Бренды'
+        },
       ],
     },
 
@@ -340,6 +345,11 @@ let point =
           link: '',
           category: 'Скидки'
         },
+        {
+          id: 'brandMen',
+          link: '',
+          category: 'Бренды'
+        },
       ],
     },
     {
@@ -351,57 +361,91 @@ let point =
       title: 'для дома',
       id: 'home',
       img: icon5,
-      categories: [
+      category: [
         {
-          category: 'Платья'
+          id: 'linensHome',
+          category: 'Постельное белье',
+          link: ''
         },
         {
-          category: 'Трикотаж'
+          id: 'blanketsHome',
+          category: 'Пледы',
+          link: ''
         },
         {
-          category: 'Верха'
+          id: 'bedspreadsHome',
+          category: 'Покрывала',
+          link: ''
         },
         {
-          category: 'Низы'
+          id: 'towelsHome',
+          category: 'Полотенца',
+          link: ''
         },
         {
-          category: 'Юбки'
+          id: 'apronsHome',
+          category: 'Фартуки',
+          link: ''
         },
         {
-          category: 'Верхняя одежда'
+          id: 'forKitchenHome',
+          category: 'Для кухни',
+          link: ''
         },
         {
-          category: 'Костюмы'
+          id: 'forBathroomHome',
+          category: 'Для ванной',
+          link: ''
         },
         {
-          category: 'Для дома'
+          id: 'curtainsHome',
+          category: 'Шторы',
+          link: ''
         },
         {
-          category: 'Спорт'
+          id: 'cushionsHome',
+          category: 'Подушки',
+          link: ''
         },
         {
-          category: 'Нижнее белье'
+          id: 'fittingsHome',
+          category: 'Фурнитура',
+          link: ''
         },
         {
-          category: 'Купальники'
+          id: 'furnitureHome',
+          category: 'Мебель',
+          link: ''
         },
         {
-          category: 'Колготки и Носки'
+          id: 'floraHome',
+          category:  'Флористика',
+          link: ''
         },
         {
-          category: 'Большие размеры'
+          id: 'animalsHome',
+          category:  'Дом. животным',
+          link: ''
         },
         {
-          category: 'Аксессуары'
+          id: 'newHome',
+          category: 'Новинки',
+          link: ''
         },
         {
-          category: 'Новинки'
+          id: 'promotionsHome',
+          category: 'Акции',
+          link: ''
         },
         {
-          category: 'Акции'
+          id: 'saleHome',
+          category: 'Скидки',
+          link: ''
         },
         {
-          category: 'Скидки'
+          id: 'brandHome',
+          category: 'Бренды',
+          link: ''
         },
       ]
     },
@@ -409,57 +453,81 @@ let point =
       title: 'игрушки',
       id: 'game',
       img: icon6,
-      categories: [
+      category: [
         {
-          category: 'Платья'
+          id: 'accessoriesGame',
+          category: 'Аксессуары',
+          link: ''
         },
         {
-          category: 'Трикотаж'
+          id: 'constructionGame',
+          category: 'Конструирование',
+          link: ''
         },
         {
-          category: 'Верха'
+          id: 'dollGame',
+          category: 'Куклы',
+          link: ''
         },
         {
-          category: 'Низы'
+          id: 'logicalGame',
+          category: 'Логические игры',
+          link: ''
         },
         {
-          category: 'Юбки'
+          id: 'tabletopGame',
+          category: 'Настольные',
+          link: ''
         },
         {
-          category: 'Верхняя одежда'
+          id: 'experimentsGame',
+          category: 'Опыты',
+          link: ''
         },
         {
-          category: 'Костюмы'
+          id: 'entertainmentGame',
+          category: 'Развлечение',
+          link: ''
         },
         {
-          category: 'Для дома'
+          id: 'developmentGame',
+          category: 'Раннее развитие',
+          link: ''
         },
         {
-          category: 'Спорт'
+          id: 'toysGame',
+          category: 'Мягкие игрушки',
+          link: ''
         },
         {
-          category: 'Нижнее белье'
+          id: 'creationGame',
+          category: 'Творчество',
+          link: ''
         },
         {
-          category: 'Купальники'
+          id: 'tricksGame',
+          category: 'Фокусы',
+          link: ''
         },
         {
-          category: 'Колготки и Носки'
+          id: 'newGame',
+          category: 'Новинки',
+          link: ''
         },
         {
-          category: 'Большие размеры'
+          id: 'promotionsGame',
+          category: 'Акции',
+          link: ''
         },
         {
-          category: 'Аксессуары'
+          id: 'saleGame',
+          category: 'Скидки',
+          link: ''
         },
         {
-          category: 'Новинки'
-        },
-        {
-          category: 'Акции'
-        },
-        {
-          category: 'Скидки'
+          id: 'brandGame',
+          category: 'Бренды',
+          link: ''
         },
       ]
     },

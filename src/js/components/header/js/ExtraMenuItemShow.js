@@ -1,5 +1,5 @@
 import {extra} from '../view/sidebar/extra'
-import {extraDataGirlNewBorn, extraDataMen, extraDataWomen} from '../view/sidebar/extraData'
+import {extraDataGirlNewBorn, extraDataHome, extraDataMen, extraDataWomen} from '../view/sidebar/extraData'
 import {newTest} from '../view/sidebar/subCategoriesMenu'
 
 export class ExtraMenuItemShow {
@@ -41,6 +41,9 @@ export class ExtraMenuItemShow {
 		}
 		if (id.toLowerCase().indexOf("men") != -1) {
 			this.men(id)
+		}
+		if (id.toLowerCase().indexOf("home") != -1) {
+			this.home(id)
 		}
 	}
 
@@ -93,9 +96,37 @@ export class ExtraMenuItemShow {
 			case 't-shirtsMen':
 				this.menuExtra = 'tShirts'
 				break;
+			case 'shirtsMen':
+				this.menuExtra = 'shirts'
 		}
 
 		this.initialCategory(this.menuExtra, extraDataMen)
+	}
+
+	home(id) {
+		switch (id) {
+			case 'linensHome':
+				this.menuExtra = 'linens'
+				break;
+			case '':
+				this.menuExtra = 'null'
+				break;
+			case 'newHome':
+				this.menuExtra = 'new'
+				break;
+			case 'promotionsHome':
+				this.menuExtra = 'new'
+				break;
+			case 'saleHome':
+				this.menuExtra = 'new'
+				break;
+			case 'brandHome':
+				this.menuExtra = 'brand'
+				break;
+
+		}
+
+		this.initialCategory(this.menuExtra, extraDataHome)
 	}
 
 	initialCategory(menuExtra, typeExtra) {
