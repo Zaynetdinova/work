@@ -149,9 +149,11 @@ let point =
               category: 'Платья'
             },
             {
+              id: 'jerseyGirlNewBorn',
               category: 'Трикотаж'
             },
             {
+              id: 'topGirlNewBorn',
               category: 'Верха'
             },
             {

@@ -1,5 +1,5 @@
 import {extra} from '../view/sidebar/extra'
-import {extraDataGirlNewBorn, extraDataWomen} from '../view/sidebar/extraData'
+import {extraDataGirlNewBorn, extraDataMen, extraDataWomen} from '../view/sidebar/extraData'
 import {newTest} from '../view/sidebar/subCategoriesMenu'
 
 export class ExtraMenuItemShow {
@@ -36,9 +36,12 @@ export class ExtraMenuItemShow {
 		if (id.toLowerCase().indexOf("women") != -1) {
 			this.women(id)
 		}
-    if (id.toLowerCase().indexOf("newborn") != -1) {
-      this.girlNewBorn(id)
-    }
+		if (id.toLowerCase().indexOf("newborn") != -1) {
+			this.girlNewBorn(id)
+		}
+		if (id.toLowerCase().indexOf("men") != -1) {
+			this.men(id)
+		}
 	}
 
 	closeExtraMenu() {
@@ -49,7 +52,13 @@ export class ExtraMenuItemShow {
 	  switch(id) {
       case 'dressGirlNewBorn':
         this.menuExtra = 'dress'
-        break
+        break;
+	  case 'jerseyGirlNewBorn':
+		this.menuExtra = 'jersey'
+		break;
+	  case 'topGirlNewBorn':
+		this.menuExtra = 'top'
+		break;
       default:
         this.menuExtra = 'dress'
 	  }
@@ -63,7 +72,8 @@ export class ExtraMenuItemShow {
 				this.menuExtra = 'dress'
 				break;
 			case 'jerseyWoman':
-				this.menuExtra = 'dress'
+				console.log('super')
+				this.menuExtra = 'jersey'
 				break;
 			case 'topWomen':
 				this.menuExtra = 'top'
@@ -76,6 +86,16 @@ export class ExtraMenuItemShow {
 		}
 
 		this.initialCategory(this.menuExtra, extraDataWomen)
+	}
+
+	men(id) {
+		switch (id) {
+			case 't-shirtsMen':
+				this.menuExtra = 'tShirts'
+				break;
+		}
+
+		this.initialCategory(this.menuExtra, extraDataMen)
 	}
 
 	initialCategory(menuExtra, typeExtra) {
