@@ -9,8 +9,14 @@ export class ChosenPage extends Component {
             name: 'ChosenPage',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Избранное',
+                link: '/#personal-area/favorites'
+            }
+        ]
     }
     toHTML() {
-        return chosenPageTemplate()
+        return chosenPageTemplate(this.link)
     }
 }

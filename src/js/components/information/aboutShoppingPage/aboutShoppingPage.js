@@ -9,10 +9,16 @@ export class AboutShoppingPage extends Component {
 			name: 'aboutShoppingPage',
 			listeners: ['click']
 		});
+		this.link = [
+			{
+				title: 'Доставка',
+				link: '/#information/about-shopping'
+			}
+		]
 	}
 
 	toHTML() {
-		return aboutShoppingPageTemplate()
+		return aboutShoppingPageTemplate(this.link)
 	}
 
 	onClick() {}

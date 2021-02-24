@@ -8,7 +8,7 @@ import {navigationInformationCooperation} from "../../common/navigationInformati
 import {breadCrumbs} from '../../common/breadCrumbs'
 import {navigationMobile} from '../../common/navigation-mobile'
 
-export function cooperationPageTemplate() {
+export function cooperationPageTemplate(link) {
     return `
         <div class="wrapper-cooperation">
             ${breadCrumbs(link)}
@@ -50,10 +50,3 @@ export function cooperationPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Поставщикам',
-        link: '/#information/cooperation'
-    }
-]

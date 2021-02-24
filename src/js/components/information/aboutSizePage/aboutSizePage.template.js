@@ -3,7 +3,7 @@ import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
 
-export function aboutSizePageTemplate() {
+export function aboutSizePageTemplate(link) {
     return `
         <div class="wrapper-size-page">
             ${breadCrumbs(link)}
@@ -1060,11 +1060,4 @@ export function aboutSizePageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Размеры',
-        link: '/#information/size'
-    }
-]
 

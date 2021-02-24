@@ -13,6 +13,14 @@
   .box-input {
     display: flex;
     justify-content: space-between;
+    &.wrap-title-address {
+      .wrap-input {
+        margin-top: 0;
+        .wrap-address {
+          margin-top: 20px;
+        }
+      }
+    }
   }
   .wrap-input {
     width: 500px;

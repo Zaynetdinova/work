@@ -6,7 +6,7 @@ import {viewOrder} from "./components/viewOrder";
 import {viewOrderMobile} from "./components/viewOrderMobail";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export  function ordersStatusTemplate() {
+export  function ordersStatusTemplate(link) {
     return `
         <div id="personal-area-js" class="wrapper-personal-area">
             ${breadCrumbs(link)}
@@ -32,12 +32,6 @@ export  function ordersStatusTemplate() {
     `
 }
 
-let link = [
-    {
-        title: 'История заказов',
-        link: '/#personal-area/order-status'
-    }
-]
 
 
 

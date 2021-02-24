@@ -11,10 +11,16 @@ export class QuestionsAnswersPage extends Component {
             name: 'QuestionsAnswersPage',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Ответы на вопросы',
+                link: '/#information/question-answers'
+            }
+        ]
     }
 
     toHTML() {
-        return QuestionsAnswersPageTemplate()
+        return QuestionsAnswersPageTemplate(this.link)
     }
 
     onClick(e) {

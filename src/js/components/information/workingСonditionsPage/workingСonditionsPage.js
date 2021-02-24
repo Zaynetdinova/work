@@ -9,10 +9,16 @@ export class WorkingConditionsPage extends Component {
             name: 'WorkingСonditionsPage',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Условия работы',
+                link: '/#information/working-condition'
+            }
+        ]
     }
 
     toHTML() {
-        return workingConditionsPageTemplate()
+        return workingConditionsPageTemplate(this.link)
     }
 
     onClick() {}

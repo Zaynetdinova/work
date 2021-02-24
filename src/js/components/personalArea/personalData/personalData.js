@@ -7,6 +7,9 @@ import {changePhoneTemplate} from './view/changePhoneTemplate'
 import {changeTransportTemplate} from './view/changeTransportTemplate'
 import {changeAddressTemplate} from "./view/changeAddressTemplate";
 import {changeGuestLoginTemplate} from "./view/changeGuestLoginTemplate";
+import {personalDataLegalEntitiesTemplate} from "./personalDataLegalEntities.template";
+import {changeBankDetailsTemplate} from "./view/changeBankDetailsTemplate";
+import {changeLegalAddressTemplate} from "./view/changeLegalAddressTemplate";
 
 
 
@@ -18,12 +21,17 @@ export class PersonalData extends Component {
       name: 'PersonalData',
       listeners: ['click']
     });
-
+    this.link = [
+      {
+        title: 'Личные данные',
+        link: '/#personal-area/personal-data'
+      }
+    ]
     this.popup = new Popup(popupDefaultTemplate)
   }
 
   toHTML() {
-    return personalDataTemplate()
+    return personalDataLegalEntitiesTemplate(this.link)
   }
 
   afterInitComponent() {
@@ -45,25 +53,31 @@ export class PersonalData extends Component {
       switch (id) {
         case 'personal-change-password-js':
           this.changePasswordTemplate()
-          break
+          break;
         case 'personal-replenish-account':
           console.log('personal-replenish-account')
-          break
+          break;
         case 'personal-change-phone-js':
           this.changePhoneTemplate()
-          break
+          break;
         case 'personal-change-transport-js':
           this.changeTransportTemplate()
-          break
+          break;
         case 'personal-change-city-js':
           this.changePhoneTemplate()
-          break
+          break;
         case 'personal-change-address-js':
           this.changeAddressTemplate()
-          break
+          break;
         case 'personal-change-guest-login-js':
           this.changeGuestLoginTemplate()
-          break
+          break;
+        case 'personal-change-bank-details-js':
+          this.changeBankDetailsTemplate()
+          break;
+        case 'personal-change-legal-address-js':
+          this.changeLegalAddressTemplate()
+          break;
       }
     }
   }
@@ -82,5 +96,18 @@ export class PersonalData extends Component {
   }
   changeGuestLoginTemplate() {
     this.popup.addElement(changeGuestLoginTemplate(), this)
+  }
+  changeBankDetailsTemplate() {
+    this.popup.addElement(changeBankDetailsTemplate(), this)
+  }
+  changeLegalAddressTemplate() {
+    this.popup.addElement(changeLegalAddressTemplate(), this)
+    this.controlStylingWrapper()
+  }
+
+  controlStylingWrapper() {
+    const test = document.querySelector('#entry-wrapper-js')
+    test.classList.remove('wrapper-Entry')
+    test.classList.add('wrapper-buyForMe')
   }
 }

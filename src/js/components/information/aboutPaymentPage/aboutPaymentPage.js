@@ -10,10 +10,16 @@ export class AboutPaymentPage extends Component {
             name: 'AboutPaymentPage',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Оплата',
+                link: '/#information/about-payment'
+            }
+        ]
     }
 
     toHTML() {
-        return aboutPaymentPageTemplate()
+        return aboutPaymentPageTemplate(this.link)
     }
 
     onClick(e) {

@@ -4,7 +4,7 @@ import {basketPageTemplate} from './view/goodsInBaskets/basketPage.template'
 import {breadCrumbs} from '../../common/breadCrumbs'
 
 
-export function basketTemplate() {
+export function basketTemplate(link) {
   return `
         <div id="personal-area-js" class="wrapper-personal-area">
             ${breadCrumbs(link)}
@@ -24,12 +24,3 @@ export function basketTemplate() {
         </div>
     `
 }
-
-
-let link = [
-  {
-    title: 'Корзина',
-    link: '/#personal-area/basket'
-  }
-]
-

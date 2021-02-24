@@ -9,10 +9,16 @@ export class AboutReturnsPage extends Component {
             name: 'AboutReturnsPage',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Возврат',
+                link: '/#information/return'
+            }
+        ]
     }
 
     toHTML() {
-        return aboutReturnsPageTemplate()
+        return aboutReturnsPageTemplate(this.link)
     }
 
     onClick() {}

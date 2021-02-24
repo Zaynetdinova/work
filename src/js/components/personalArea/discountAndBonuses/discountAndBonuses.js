@@ -10,8 +10,14 @@ export class DiscountAndBonuses extends Component {
             name: 'DiscountAndBonuses',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Скидки и бонусы',
+                link: '/#personal-area/discount-and-bonuses'
+            }
+        ]
     }
     toHTML() {
-        return discountAndBonusesTemplate()
+        return discountAndBonusesTemplate(this.link)
     }
 }

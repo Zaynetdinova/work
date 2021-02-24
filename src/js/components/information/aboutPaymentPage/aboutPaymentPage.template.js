@@ -3,7 +3,7 @@ import {navigationInformationAboutShopping} from "../../common/navigationInforma
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function aboutPaymentPageTemplate() {
+export function aboutPaymentPageTemplate(link) {
     return `
         <div>
             ${breadCrumbs(link)}
@@ -16,10 +16,3 @@ export function aboutPaymentPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Оплата',
-        link: '/#information/about-payment'
-    }
-]

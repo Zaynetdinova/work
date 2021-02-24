@@ -10,10 +10,16 @@ export class CooperationPage extends Component {
             name: 'CooperationPage',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'Поставщикам',
+                link: '/#information/cooperation'
+            }
+        ]
     }
 
     toHTML() {
-        return cooperationPageTemplate()
+        return cooperationPageTemplate(this.link)
     }
 
     onClick() {}
