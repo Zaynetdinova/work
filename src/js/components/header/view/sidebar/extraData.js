@@ -17,6 +17,25 @@ export const extraDataWomen = {
 		]
 	},
 
+	jersey: {
+		firstColumn: [
+			{title: 'Кардиганы', href: ''},
+			{title: 'Свитера', href: ''},
+			{title: 'Джемперы', href: ''},
+			{title: 'Жакеты', href: ''},
+			{title: 'Жилеты', href: ''},
+			{title: 'Платья', href: ''},
+			{title: 'Комплекты', href: ''},
+			{title: 'Кардиганы', href: ''},
+			{title: 'Свитера', href: ''},
+			{title: 'Джемперы', href: ''},
+			{title: 'Жакеты', href: ''},
+			{title: 'Жилеты', href: ''},
+			{title: 'Платья', href: ''},
+			{title: 'Комплекты', href: ''},
+		]
+	},
+
 	tightsSocks: {
 		firstColumn: [
 			{title: 'Колготки',
@@ -144,6 +163,16 @@ export const extraDataWomen = {
 	}
 }
 
+export const extraDataMen = {
+  tShirts: {
+	  firstColumn: [
+		  {title: 'Майки', href: ''},
+		  {title: 'Футболки', href: ''},
+		  {title: 'Футболки-поло', href: ''},
+	  ]
+  }
+}
+
 export const extraDataGirlNewBorn = {
   dress: {
     firstColumn: [
@@ -161,5 +190,27 @@ export const extraDataGirlNewBorn = {
       {title: 'Пляжные', href: ''},
       {title: 'Свадебные', href: ''},
     ]
-  }
+  },
+  jersey: {
+  	firstColumn: [
+	  {title: 'Кардиганы', href: ''},
+	  {title: 'Свитера', href: ''},
+	  {title: 'Джемперы', href: ''},
+	  {title: 'Жакеты', href: ''},
+	  {title: 'Жилеты', href: ''},
+	  {title: 'Платья', href: ''},
+	  {title: 'Комплекты', href: ''},
+  	]
+  },
+  top: {
+	firstColumn: [
+	  {title: 'test', href: ''},
+	  {title: 'Свитера', href: ''},
+	  {title: 'Джемперы', href: ''},
+	  {title: 'Жакеты', href: ''},
+	  {title: 'Жилеты', href: ''},
+	  {title: 'Платья', href: ''},
+	  {title: 'Комплекты', href: ''},
+	]
+  },
 }
