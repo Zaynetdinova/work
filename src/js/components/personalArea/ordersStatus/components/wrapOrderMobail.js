@@ -23,7 +23,7 @@ export function wrapOrderMobile() {
 						${orderName(order)}
 						<div class="pay-order">
 							<div class="way-pay">Ожидается оплата</div>
-							<a class="pay-online" href="">Оплатить онлайн</a>
+							<a href="" class="pay-online" href="">Оплатить онлайн</a>
 						</div>
 					</div>
 					<div data-parent-order-js class="more-details" id="more-details">
@@ -46,7 +46,7 @@ export function wrapOrderMobile() {
 					<div class="wrapper-icon-title">
 						${status(exampleOne)}
 					</div>
-					<div class="button-see-order">Посмотреть заказ</div>
+					<a href="/#personal-area/view-order" class="button-see-order">Посмотреть заказ</a>
 				</div>
 				<div class="title-add">
 					<img src="${plus}" alt="">
@@ -76,18 +76,22 @@ let order = [
 let exampleOne = [
 	{
 		icon: invoiceArgument,
-		title: '<a href="">Счёт-договор</a>'
+		title: '<a href="">Счёт-договор</a>',
+		popup: ''
 	},
 	{
 		icon: invoice,
-		title: '<a href="">Накладная Торг12</a>'
+		title: '<a href="">Накладная Торг12</a>',
+		popup:''
 	},
 	{
 		icon: confirm,
-		title: 'Товар подтвердил поставщик'
+		title: 'Товар подтвердил поставщик',
+		popup:''
 	},
 	{
 		icon: nonConfirm,
-		title: 'Товар собран на складе'
+		title: 'Товар собран на складе',
+		popup:''
 	},
 ]

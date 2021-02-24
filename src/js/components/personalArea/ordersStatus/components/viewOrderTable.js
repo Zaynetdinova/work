@@ -153,10 +153,12 @@ const goodsTest = [
 let exampleOne = [
     {
         icon: orderProcessing,
-        title: ''
+        title: '',
+        popup: 'товар в обработке'
     },
     {
         icon: box,
-        title: ''
+        title: '',
+        popup: 'ожидаем поступление к нам на склад'
     },
 ]
