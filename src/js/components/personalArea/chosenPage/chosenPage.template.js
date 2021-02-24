@@ -9,7 +9,7 @@ import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export  function chosenPageTemplate() {
+export  function chosenPageTemplate(link) {
     return `
         <div id="personal-area-js" class="wrapper-personal-area">
             ${breadCrumbs(link)}
@@ -33,13 +33,6 @@ export  function chosenPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Избранное',
-        link: '/#personal-area/favorites'
-    }
-]
 
 const woman = {
     data: [

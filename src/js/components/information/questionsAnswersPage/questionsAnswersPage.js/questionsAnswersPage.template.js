@@ -3,7 +3,7 @@ import {navigationInformationAboutShopping} from "../../../common/navigationInfo
 import {navigationMobile} from "../../../common/navigation-mobile";
 import {breadCrumbs} from '../../../common/breadCrumbs'
 
-export function QuestionsAnswersPageTemplate() {
+export function QuestionsAnswersPageTemplate(link) {
     return `
         <div>
             ${breadCrumbs(link)}
@@ -16,10 +16,3 @@ export function QuestionsAnswersPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Ответы на вопросы',
-        link: '/#information/question-answers'
-    }
-]

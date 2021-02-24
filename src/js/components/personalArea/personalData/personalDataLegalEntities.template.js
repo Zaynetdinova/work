@@ -1,12 +1,12 @@
+import {breadCrumbs} from "../../common/breadCrumbs";
+import {navigation} from "../../common/navigation";
+import {navigationMobile} from "../../common/navigation-mobile";
 import {TitleData} from "../Basket/view/titleData";
 import {ButtonData} from "../Basket/view/buttonData";
 import {checkboxRegistration} from "../../common/popupDefaultTemplate/checkboxRegistration";
-import {navigation} from "../../common/navigation";
-import {navigationMobile} from "../../common/navigation-mobile";
-import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function personalDataTemplate(link) {
-	return `
+export function personalDataLegalEntitiesTemplate(link) {
+    return `
         <div id="personal-area-js" class="wrapper-personal-area">
             ${breadCrumbs(link)}
             <div class="header-personal-area">
@@ -31,7 +31,7 @@ export function personalDataTemplate(link) {
                                     <div class="color">${TitleData('2 468,00 ₽')}</div>
                                 </div>
                                 <div class="wrapper-box-4">
-                                    <form>
+                                    <form class="form-input-personal-data">
                                         <input class="input-personal-data" type="text" placeholder="Введите сумму">
                                     </form>
                                     ${ButtonData('Пополнить', 'personal-replenish-account')}
@@ -44,12 +44,28 @@ export function personalDataTemplate(link) {
                                 </div>
                                 ${ButtonData('Изменить пароль', 'personal-change-password-js')}
                             </div>
-                            <div class="wrapper-box-2">
-                                <div class="wrapper-box-1" style="margin-bottom: 7px">
-                                    ${TitleData('ФИО')}
-                                    <div class="organization">Фамилия Имя Отчество</div>
+                            <div class="legal-entities">
+                                <div class="wrapper-box-2">
+                                    <div class="wrapper-box-1" style="margin-bottom: 7px">
+                                        ${TitleData('Организация')}
+                                        <div class="organization">ООО “Название организации”</div>
+                                    </div>
+                                    <div class="info-text">Если хотите изменить форму собственности или название компании, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
+                                    <div class="wrapper-box">
+                                        <div class="bank-details">
+                                            <div class="wrapper-box-1">
+                                                ${TitleData('Банковские реквизиты')}
+                                            </div>
+                                            ${ButtonData('Добавить', 'personal-change-bank-details-js')}
+                                        </div>
+                                        <div class="legal-address">
+                                            <div class="wrapper-box-1">
+                                                ${TitleData('Юридический адрес')}
+                                            </div>
+                                            ${ButtonData('Добавить', 'personal-change-legal-address-js')}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="info-text">Если Вы хотите изменить эти данные, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                             </div>
                             <div class="wrapper-box">
                                 <div class="wrapper-box-1">
@@ -58,6 +74,8 @@ export function personalDataTemplate(link) {
                                 </div>
                                 ${ButtonData('Изменить', 'personal-change-phone-js')}
                             </div>
+                        </div>
+                        <div class="second-column">
                             <div class="wrapper-box-2">
                                 <div class="wrapper-box-1">
                                     ${TitleData('Город доставки')}
@@ -71,8 +89,6 @@ export function personalDataTemplate(link) {
                                     ${ButtonData('Изменить','personal-change-city-js')}
                                 </div>
                             </div>
-                        </div>
-                        <div class="second-column">
                             <div class="wrapper-box">
                                 <div class="wrapper-box-1">
                                     ${TitleData('Транспортная компания')}
@@ -131,4 +147,3 @@ export function personalDataTemplate(link) {
         </div>
 	`
 }
-

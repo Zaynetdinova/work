@@ -3,7 +3,7 @@ import {discountAndBonusesPageTemplate} from "./view/discountAndBonusesPageTempl
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function discountAndBonusesTemplate() {
+export function discountAndBonusesTemplate(link) {
     return `
 	    <div id="personal-area-js" class="wrapper-personal-area">
             ${breadCrumbs(link)}
@@ -24,10 +24,3 @@ export function discountAndBonusesTemplate() {
         </div>
 	`
 }
-
-let link = [
-    {
-        title: 'Скидки и бонусы',
-        link: '/#personal-area/discount-and-bonuses'
-    }
-]

@@ -2,7 +2,7 @@ import {navigationMobile} from "../../common/navigation-mobile";
 import {navigationInformationCooperation} from "../../common/navigationInformationCooperation";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function  workingConditionsPageTemplate() {
+export function  workingConditionsPageTemplate(link) {
     return `
         <div class="wrapper-working-condition">
             ${breadCrumbs(link)}
@@ -139,10 +139,3 @@ export function  workingConditionsPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Условия работы',
-        link: '/#information/working-condition'
-    }
-]

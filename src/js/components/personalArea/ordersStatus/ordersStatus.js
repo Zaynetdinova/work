@@ -10,9 +10,15 @@ export class OrdersStatus extends Component {
             name: 'OrdersStatus',
             listeners: ['click']
         });
+        this.link = [
+            {
+                title: 'История заказов',
+                link: '/#personal-area/order-status'
+            }
+        ]
     }
     toHTML() {
-        return ordersStatusTemplate()
+        return ordersStatusTemplate(this.link)
     }
     onClick(e) {
         if(e.target.closest('[data-parent-order-js]')) {

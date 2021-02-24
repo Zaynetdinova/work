@@ -3,7 +3,6 @@ import {paymentPageTemplate} from './view/payment/paymentPage.template'
 import {Component} from '../../../core/Component'
 
 import {BasketFunctions} from './js/BasketFunctions'
-import {toggleShowInformation} from '../../../core/utils/utils'
 
 
 
@@ -16,10 +15,16 @@ export class Basket extends Component {
       listeners: ['click']
     });
     this.basket = null
+    this.link = [
+      {
+        title: 'Корзина',
+        link: '/#personal-area/basket'
+      }
+    ]
   }
 
   toHTML() {
-    return basketTemplate()
+    return basketTemplate(this.link)
   }
 
   afterInitComponent() {

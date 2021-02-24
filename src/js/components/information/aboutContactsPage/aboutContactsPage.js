@@ -11,16 +11,15 @@ export class AboutContactsPage extends Component {
             listeners: []
         });
 
-      this.link = [
-        {
-          title: 'Контакты',
-          link: '/#information/contacts'
-        }
-      ]
+        this.link = [
+            {
+              title: 'Контакты',
+              link: '/#information/contacts'
+            }
+        ]
     }
 
     toHTML() {
         return aboutContactsPageTemplate(this.link)
     }
-
 }

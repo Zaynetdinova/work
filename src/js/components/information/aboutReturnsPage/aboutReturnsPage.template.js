@@ -6,7 +6,7 @@ import {navigationInformationAboutShopping} from "../../common/navigationInforma
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function  aboutReturnsPageTemplate() {
+export function  aboutReturnsPageTemplate(link) {
     return `
         <div class="wrapper-return">
             ${breadCrumbs(link)}
@@ -64,10 +64,3 @@ export function  aboutReturnsPageTemplate() {
         </div>
     `
 }
-
-let link = [
-    {
-        title: 'Возврат',
-        link: '/#information/return'
-    }
-]

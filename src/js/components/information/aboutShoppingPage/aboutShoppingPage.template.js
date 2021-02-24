@@ -3,7 +3,7 @@ import {navigationInformationAboutShopping} from "../../common/navigationInforma
 import {navigationMobile} from "../../common/navigation-mobile";
 import {breadCrumbs} from '../../common/breadCrumbs'
 
-export function aboutShoppingPageTemplate() {
+export function aboutShoppingPageTemplate(link) {
 	return `
         <div>
             ${breadCrumbs(link)}
@@ -16,10 +16,3 @@ export function aboutShoppingPageTemplate() {
         </div>
     `
 }
-
-let link = [
-	{
-		title: 'Доставка',
-		link: '/#information/about-shopping'
-	}
-]

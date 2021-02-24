@@ -9,9 +9,15 @@ export class AboutSizePage extends Component {
             name: 'AboutSizePage',
             listeners: []
         });
+        this.link = [
+            {
+                title: 'Размеры',
+                link: '/#information/size'
+            }
+        ]
     }
 
     toHTML() {
-        return aboutSizePageTemplate()
+        return aboutSizePageTemplate(this.link)
     }
 }
