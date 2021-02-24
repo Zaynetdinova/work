@@ -1,10 +1,10 @@
+import {breadCrumbs} from "../../common/breadCrumbs";
 import {navigation} from "../../common/navigation";
 import {navigationMobile} from "../../common/navigation-mobile";
-import {wrapOrder} from "./components/wrapOrder";
-import {wrapOrderMobile} from './components/wrapOrderMobail'
-import {breadCrumbs} from '../../common/breadCrumbs'
+import {viewOrder} from "./components/viewOrder";
+import {viewOrderMobile} from "./components/viewOrderMobail";
 
-export  function ordersStatusTemplate(link) {
+export  function viewOrderTemplate(link) {
     return `
         <div id="personal-area-js" class="wrapper-personal-area">
             ${breadCrumbs(link)}
@@ -20,10 +20,10 @@ export  function ordersStatusTemplate(link) {
           
             <div id="personal-area-content-js">
                 <div class="desktop">
-                    ${wrapOrder()}
+                    ${viewOrder()}
                 </div>
                 <div class="mobile">
-                    ${wrapOrderMobile()}
+                    ${viewOrderMobile()}
                 </div>
             </div>
         </div>

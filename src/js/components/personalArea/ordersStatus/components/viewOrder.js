@@ -8,9 +8,9 @@ export function viewOrder() {
             <div class="wrapper-order-number">
                 <div class="wrap-header-order">
                     <div class="wrapper-characteristic-order">
-                        <div class="button-back">
+                        <a href="/#personal-area/order-status" class="button-back">
                             <div class="back-arrow"></div>
-                        </div>
+                        </a>
                         <div class="wrapper-text">
                             <div class="one-string">
                                 <span class="order">Заказ № 12345</span>

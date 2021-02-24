@@ -54,6 +54,9 @@ export class Router {
 			case 'personal-area/order-status':
 				Page = this.routes.personalAreaOrdersStatus
 				break;
+			case 'personal-area/view-order':
+				Page = this.routes.personalAreaViewOrder
+				break;
 			case 'information/about-shopping':
 				Page = this.routes.aboutShoppingPage
 				break;

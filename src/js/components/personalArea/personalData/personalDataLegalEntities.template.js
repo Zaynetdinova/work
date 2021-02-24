@@ -52,17 +52,52 @@ export function personalDataLegalEntitiesTemplate(link) {
                                     </div>
                                     <div class="info-text">Если хотите изменить форму собственности или название компании, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                                     <div class="wrapper-box">
-                                        <div class="bank-details">
-                                            <div class="wrapper-box-1">
-                                                ${TitleData('Банковские реквизиты')}
+                                        <div class="wrap-bank-details">
+                                            <div class="bank-details">
+                                                <div class="wrapper-box-1">
+                                                    ${TitleData('Банковские реквизиты')}
+                                                </div>
+                                                ${ButtonData('Добавить', 'personal-change-bank-details-js')}
                                             </div>
-                                            ${ButtonData('Добавить', 'personal-change-bank-details-js')}
+                                            <div class="number-bank-details">
+                                                <table>
+                                                    <tr class="wrap-title-number">
+                                                        <td class="title">БИК</td>
+                                                        <td class="number">123456789</td>
+                                                    </tr>
+                                                    <tr class="wrap-title-number">
+                                                        <td class="title">Банк</td>
+                                                        <td class="number">Название банк</td>
+                                                    </tr>
+                                                    <tr class="wrap-title-number">
+                                                        <td class="title">К/С</td>
+                                                        <td class="number">00000000000000000123</td>
+                                                    </tr>
+                                                    <tr class="wrap-title-number">
+                                                        <td class="title">Р/С</td>
+                                                        <td colspan="number">00000000000000000123</td>
+                                                    </tr>
+                                                </table>
+                                                ${ButtonData('Изменить', 'personal-change-bank-details-js')}
+                                            </div>
                                         </div>
-                                        <div class="legal-address">
-                                            <div class="wrapper-box-1">
-                                                ${TitleData('Юридический адрес')}
+                                        <div class="wrap-legal-address">
+                                            <div class="legal-address">
+                                                <div class="wrapper-box-1">
+                                                    ${TitleData('Юридический адрес')}
+                                                </div>
+                                                ${ButtonData('Добавить', 'personal-change-legal-address-js')}
                                             </div>
-                                            ${ButtonData('Добавить', 'personal-change-legal-address-js')}
+                                            <div class="address">
+                                                <div class="wrapper-legal-address">
+                                                    <p>123456, Страна, Город, ул. Название улицы, д. 888, стр. 88, оф. 888</p>
+                                                    <div class="fact-address">
+                                                        ${TitleData('Фактический адрес')}
+                                                         <p>123456, Страна, Город, ул. Название улицы, д. 888, стр. 88, оф. 888</p>
+                                                    </div>
+                                                </div>
+                                                ${ButtonData('Изменить', 'personal-change-legal-address-js')}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

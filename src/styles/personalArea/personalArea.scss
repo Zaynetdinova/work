@@ -48,6 +48,9 @@
   @media (max-width: 1024px) {
     .wrapper-personal-area {
       padding: 0 15px;
+      .bread-crumbs {
+        padding-left: 0;
+      }
       .name-user {
         display: block;
       }
