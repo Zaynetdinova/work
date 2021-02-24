@@ -170,7 +170,13 @@ export const extraDataMen = {
 		  {title: 'Футболки', href: ''},
 		  {title: 'Футболки-поло', href: ''},
 	  ]
-  }
+  },
+  shirts: {
+	  firstColumn: [
+		  {title: 'Рубашки с длинным рукавом', href: ''},
+		  {title: 'Рубашки с коротким рукавом', href: ''},
+	  ]
+  },
 }
 
 export const extraDataGirlNewBorn = {
@@ -213,4 +219,47 @@ export const extraDataGirlNewBorn = {
 	  {title: 'Комплекты', href: ''},
 	]
   },
+}
+
+export const extraDataHome = {
+	linens: {
+		firstColumn: [
+			{title: 'Бязь', href: ''},
+			{title: 'Поплин', href: ''},
+			{title: 'Макосатин', href: ''},
+			{title: 'Перкаль', href: ''},
+			{title: 'Сатин', href: ''},
+			{title: 'Наволочки', href: ''},
+			{title: 'Простыни', href: ''},
+		]
+	},
+	null: {
+		firstColumn: [
+
+		]
+	},
+	new: {
+		firstColumn: [
+			{title: 'Постельное белье', href: ''},
+			{title: 'Пледы', href: ''},
+			{title: 'Полотенца', href: ''},
+			{title: 'Фартуки', href: ''},
+			{title: 'Для кухни', href: ''},
+			{title: 'Для ванной', href: ''},
+			{title: 'Шторы', href: ''},
+			{title: 'Подушки', href: ''},
+			{title: 'Фурнитура', href: ''},
+			{title: 'Мебель', href: ''},
+			{title: 'Флористика', href: ''},
+			{title: 'Дом. животным', href: ''},
+		]
+	},
+	brand: {
+		firstColumn: [
+			{title: 'AMORE MIO', href: ''},
+			{title: 'ART HOME TEXTILE', href: ''},
+			{title: 'CLEVER', href: ''},
+			{title: 'НАТАЛИ', href: ''},
+		]
+	}
 }

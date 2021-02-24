@@ -55,5 +55,18 @@
         text-decoration: none;
       }
     }
+    .selection-first {
+      font-size: 14px;
+      height: 40px;
+      letter-spacing: 0.05em;
+      border-bottom: 1px dashed #D9D9D9;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      a {
+        color: #9E9E9E;
+        text-decoration: none;
+      }
+    }
   }
 }

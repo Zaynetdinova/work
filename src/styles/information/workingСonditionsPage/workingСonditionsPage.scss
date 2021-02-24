@@ -83,8 +83,11 @@
     }
     .text-working-condition {
       a {
-        color: #AB064E;
+        color: $color-link-information;
         white-space: nowrap;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     @media (max-width: 1024px) {
