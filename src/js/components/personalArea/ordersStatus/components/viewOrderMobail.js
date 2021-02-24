@@ -4,7 +4,6 @@ import {infoProduct} from "../../../common/infoProduct";
 import {status} from "./iconTitle";
 import orderProcessing from "../../../../../images/icons/order-processing.svg";
 import box from "../../../../../images/icons/box.svg";
-import noCancel from "../../../../../images/icons/no-cancel.svg";
 import women from '../../../../../images/bestsellers/1/img1.png'
 import {Sale} from "../../../common/sale";
 import {SumMoneySale} from "../../Basket/view/sumMoneySale";
@@ -32,7 +31,7 @@ export function viewOrderMobile() {
                         <div class="refund-amount-sum">1 234,00 ₽</div>
                     </div>
                 </div>
-                <img src="${back}" alt="">
+                <a href="/#personal-area/order-status"><img src="${back}" alt=""></a>
             </div>
             <div data-view-oder-page class="wrap-js">
                 <div class="wrapper-order-table">
@@ -143,11 +142,13 @@ export function viewOrderMobile() {
 let exampleOne = [
     {
         icon: orderProcessing,
-        title: ''
+        title: '',
+        popup:''
     },
     {
         icon: box,
-        title: ''
+        title: '',
+        popup:''
     },
 ]
 

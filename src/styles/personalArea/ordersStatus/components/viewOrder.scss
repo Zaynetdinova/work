@@ -188,10 +188,44 @@
     }
     .wrapper-icon-title {
       .icon-title {
+        position: relative;
         margin: 0;
         width: 100%;
+        cursor: pointer;
         img {
           margin: 0;
+        }
+        .popup {
+          width: 145px;
+          background: #3D3D3C;
+          border-radius: 4px;
+          padding: 10px;
+          font-size: 12px;
+          line-height: 12px;
+          text-align: left;
+          color: #FFFFFF;
+          position: absolute;
+          top: -53px;
+          left: 24px;
+          display: none;
+          z-index: 2;
+        }
+        .popup::after, .popup::before {
+          content: '';
+          position: absolute;
+          background: #3D3D3C;
+          left: 10px;
+          bottom: -4px;
+          width: 8px;
+          height: 8px;
+          z-index: -1;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+        &:hover {
+          .popup {
+            display: block;
+          }
         }
       }
     }
@@ -247,6 +281,18 @@
               .infoType {
                 font-size: 12px;
                 line-height: 17px;
+              }
+            }
+          }
+        }
+      }
+      .wrapper-icon-title {
+        .icon-title {
+          .popup {
+            display: none;
+            &:hover {
+              .popup {
+                display: none;
               }
             }
           }

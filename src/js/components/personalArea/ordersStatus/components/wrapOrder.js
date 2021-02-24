@@ -289,87 +289,103 @@ export function wrapOrder() {
 let exampleOne = [
     {
         icon: invoiceArgument,
-        title: '<a href="">Счёт-договор</a>'
+        title: '<a href="">Счёт-договор</a>',
+        popup:''
     },
     {
         icon: invoice,
-        title: '<a href="">Накладная Торг12</a>'
+        title: '<a href="">Накладная Торг12</a>',
+        popup:''
     },
     {
         icon: confirm,
-        title: 'Товар подтвердил поставщик'
+        title: 'Товар подтвердил поставщик',
+        popup:''
     },
     {
         icon: nonConfirm,
-        title: 'Товар собран на складе'
+        title: 'Товар собран на складе',
+        popup:''
     },
 ]
 
 let exampleTwo = [
     {
         icon: '',
-        title: ''
+        title: '',
+        popup:''
     },
     {
         icon: '',
-        title: ''
+        title: '',
+        popup:''
     },
     {
         icon: confirm,
-        title: 'Товар подтвердил поставщик'
+        title: 'Товар подтвердил поставщик',
+        popup:''
     },
     {
         icon: '',
-        title: ''
+        title: '',
+        popup:''
     },
 ]
 
 let exampleThree = [
     {
         icon: invoiceArgument,
-        title: '<a href="">Счёт-договор</a>'
+        title: '<a href="">Счёт-договор</a>',
+        popup:''
     },
     {
         icon: '',
-        title: ''
+        title: '',
+        popup:''
     },
     {
         icon: confirm,
-        title: 'Товар подтвердил поставщик'
+        title: 'Товар подтвердил поставщик',
+        popup:''
     },
     {
         icon: nonConfirm,
-        title: 'Товар собран на складе'
+        title: 'Товар собран на складе',
+        popup:''
     },
 ]
 
 let exampleFour = [
     {
         icon: '',
-        title: ''
+        title: '',
+        popup:''
     },
     {
         icon: '',
-        title: ''
+        title: '',
+        popup:''
     },
     {
         icon: confirm,
-        title: 'Товар подтвердил поставщик'
+        title: 'Товар подтвердил поставщик',
+        popup:''
     },
     {
         icon: nonConfirm,
-        title: 'Товар собран на складе'
+        title: 'Товар собран на складе',
+        popup:''
     },
 ]
 
 let order = [
     {
         title: 'Доставка:',
-        name: 'Самовывоз'
+        name: 'Самовывоз',
     },
     {
         title: 'Получатель:',
-        name: 'ИП Получатель'
+        name: 'ИП Получатель',
     }
 ]
 
