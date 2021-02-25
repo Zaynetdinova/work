@@ -54,7 +54,7 @@ export class Catalog extends Component {
       //
       const options = {
         slidesPerView: 1.9,
-        spaceBetween: 15,
+        spaceBetween: 10,
         centeredSlides: false,
         loop: false,
         slidesOffsetAfter: 16,
@@ -67,20 +67,27 @@ export class Catalog extends Component {
           prevEl: '.swiper-button-prev-main',
         },
         breakpoints: {
-
+          1950: {
+            slidesPerView: 8,
+            spaceBetween: 10,
+          },
+          1601: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
           1200: {
             slidesPerView: 5,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           1025: {
             slidesPerView: 4,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 6,
             centeredSlides: false,
             loop: false,
-            spaceBetween: 15,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 4,
@@ -116,16 +123,24 @@ export class Catalog extends Component {
                     this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
                     break;
                 case 'button-filter-mobile-js':
-                  this.catalog.openFilterMobile()
+                    this.catalog.openFilterMobile()
                     break;
                 case 'mobile-filter-close-js':
-                  this.catalog.closeFilterMobile()
+                    this.catalog.closeFilterMobile()
                     break;
                 case 'clear-filter-list':
                     this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
                     break;
                 case 'number-pages-js':
-                  this.catalog.changeNumberPage(e)
+                    this.catalog.changeNumberPage(e)
+                    break;
+            }
+        }
+        if (e.target.closest('#burger-catalog')) {
+            const element = e.target.closest('#burger-catalog');
+            switch (element.id) {
+                case 'burger-catalog':
+                    this.catalog.openMenuBurger()
                     break;
             }
         }
@@ -154,6 +169,24 @@ let point =
               },
               {
                   category: 'Коктейльные'
+              },
+              {
+                  category: 'Вечерние'
+              },
+              {
+                  category: 'Длинные'
+              },
+              {
+                  category: 'Костюмы'
+              },
+              {
+                  category: 'Сарафаны'
+              },
+              {
+                  category: 'Летние'
+              },
+              {
+                  category: 'Короткие'
               },
               {
                   category: 'Вечерние'

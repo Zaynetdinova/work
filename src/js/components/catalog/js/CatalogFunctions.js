@@ -1,6 +1,7 @@
 export class CatalogFunctions {
 	constructor() {
 	  this.mobileFilter = document.querySelector('#mobile-filter-js')
+      this.menuBurger = document.querySelector('#desktop-filter-js')
 	}
 
 	changeNumberPage(e) {
@@ -29,4 +30,7 @@ export class CatalogFunctions {
     document.body.classList.remove('Com-over-hidden')
   }
 
+  openMenuBurger() {
+    this.menuBurger.classList.toggle('show')
+  }
 }

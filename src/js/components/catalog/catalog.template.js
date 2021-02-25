@@ -24,12 +24,12 @@ export function catalog(catalogCategory, point, filters, testGoods, testDataYouR
             ${pagination('Предыдущая страница', 'Следующая страница')}
             ${numberPages()}
         </div>
-        <section class="sidebar-page-categories">
+        <article class="sidebar-page-categories" id="desktop-filter-js">
             <div class="points" id="points-catalog-open-js">
                 ${sidebarPoint(point,'notArrow')}
             </div>
             <div class="wrapper-filter">${filter()}</div>
-        </section>
+        </article>
         <div class="mobile-filter" id="mobile-filter-js">${filter()}</div>
                    
         <div class="wrapper-number">

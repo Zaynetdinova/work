@@ -10,9 +10,9 @@ export function filter() {
                 
                 <article data-catalog-parent-event-js class="mobile-title" id="mobile-filter-close-js">
                 	<div class="close-filter">
-										<img class="arrow" src="${arrow}" alt="arrow">
-										<div class="close-title">Фильтры</div>
-									</div>
+						<img class="arrow" src="${arrow}" alt="arrow">
+						<div class="close-title">Фильтры</div>
+					</div>
                 </article>
                 
                 <article data-catalog-parent-event-js class="cancel" id="clear-filter-list">
