@@ -33,7 +33,7 @@ import toy4 from '../images/bestsellers/5/img4.png'
 import toy5 from '../images/bestsellers/5/img5.png'
 import toy6 from '../images/bestsellers/5/img6.png'
 
-import testSecondaryImg1 from '../images/testImg/1.jpg'
+import testSecondaryImg1 from '../images/bestsellers/1/img1.png'
 import testSecondaryImg2 from '../images/testImg/2.jpeg'
 import testSecondaryImg3 from '../images/testImg/3.jpeg'
 import testSecondaryImg4 from '../images/testImg/4.jpeg'
@@ -80,7 +80,7 @@ export let testDataBestsellers = {
 					sale: true,
 					link: '/#card-product',
 					size: [
-						'40', '42', '46', '48', '50', '52', '23/22'
+						'40', '42', '46', '48', '50', '52',
 					],
 					secondaryImg: [
 						testSecondaryImg1,
@@ -122,6 +122,11 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						testSecondaryImg1,
+						testSecondaryImg2,
+						testSecondaryImg3,
+					]
 				},
 				{
 					id: 'woman5',
