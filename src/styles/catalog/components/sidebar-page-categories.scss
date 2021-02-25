@@ -6,9 +6,15 @@
   width: 243px;
   background: #FFFFFF;
   padding: 10px 10px 36px 10px;
-  display: block;
+  display: none;
+  &.show {
+    display: block;
+  }
   .points {
     width: 100%;
+    .categories {
+      max-height: 350px;
+    }
   }
   .point {
     padding: 10.5px 10px 10.5px 13px;
@@ -31,10 +37,5 @@
   }
   @media (max-width: 1024px) {
     display: none;
-    //width: 0;
-    //margin-right: 0;
-    //.points {
-    //  display: none;
-    //}
   }
 }
