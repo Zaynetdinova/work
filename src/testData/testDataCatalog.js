@@ -4,6 +4,12 @@ import img3 from '../images/bestsellers/1/img3.png'
 import img4 from '../images/bestsellers/1/img4.png'
 import img5 from '../images/bestsellers/1/img5.png'
 import img6 from '../images/bestsellers/1/img6.png'
+import testSecondaryImg1 from "../images/bestsellers/1/img1.png";
+import testSecondaryImg2 from "../images/testImg/2.jpeg";
+import testSecondaryImg3 from "../images/testImg/3.jpeg";
+import testSecondaryImg4 from "../images/testImg/4.jpeg";
+import testSecondaryImg5 from "../images/testImg/5.jpg";
+import testSecondaryImg6 from "../images/testImg/6.jpeg";
 
 export let testDataCatalog = {
 	goods: [
@@ -17,7 +23,15 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				testSecondaryImg1,
+				testSecondaryImg2,
+				testSecondaryImg3,
+				testSecondaryImg4,
+				testSecondaryImg5,
+				testSecondaryImg6,
+			]
 		},
 		{
 			id: 'woman2',

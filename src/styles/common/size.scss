@@ -8,21 +8,21 @@
     line-height: 100%;
     text-align: center;
     text-transform: capitalize;
-    color: #3D3D3C;
+    color: $color-card-number;
     margin-right: 3px;
     padding: 6px;
-    border: 1px solid #C8C8C8;
+    border: 1px solid $color-card-size;
     margin-top: 3px;
 
     &:hover {
       cursor: pointer;
-      outline: 2px solid #C8C8C8;
+      outline: 2px solid $color-card-size;
       outline-offset: -2px;
     }
 
     &.active {
-      background: #C8C8C8;
-      color: #FFFFFF;
+      background: $color-card-size;
+      color: $color-card-number-active;
     }
   }
   .size:last-child {

@@ -1,3 +1,4 @@
+@import "../color";
 .Catalog {
   @import 'components/titleWrapper';
   @import 'components/sidebar-page-categories';
@@ -16,7 +17,7 @@
   .mobile-filter {
     position: fixed;
     z-index: 6;
-    background: #fff;
+    background: $bg-mobile-filter-catalog;
     top: 46px;
     bottom: 0;
     right: 0;
@@ -29,9 +30,6 @@
     .number {
       justify-content: space-between;
     }
-  }
-  .flex-wrap {
-    //display: flex;
   }
   .bottom-pagination {
     margin-top: 60px;

@@ -1,3 +1,5 @@
+@import "../../color";
+
 $widthCardImage: 87px;
 
 .size-wrapper {
@@ -5,7 +7,6 @@ $widthCardImage: 87px;
 }
 
 .additional-information {
-
   .size-wrapper {
     max-height: 100px;
     overflow: scroll;
@@ -19,7 +20,7 @@ $widthCardImage: 87px;
     display: none;
   }
   .text-size-wrapper {
-    border: 1px solid #555555;
+    border: 1px solid $color-additional-information;
     position: absolute;
     background: #fff;
     padding: 0 19px 20px 19px;
@@ -35,11 +36,11 @@ $widthCardImage: 87px;
     .block-under-image {
       position: absolute;
       bottom: -1px;
-      background: #555555;
+      background: $color-additional-information;
       height: 100%;
       width: $widthCardImage;
       left: 100%;
-      border-bottom: 1px solid #555555;
+      border-bottom: 1px solid $color-additional-information;
     }
   }
   .images {
@@ -48,14 +49,12 @@ $widthCardImage: 87px;
     top: -1px;
     right: -$widthCardImage;
     width: $widthCardImage;
-    background: #555555;
+    background: $color-additional-information;
     padding: 5px;
-
     .image {
       background-size: cover;
       background-position: center;
     }
-
     .photos-block-common-block {
       height: 490px;
       @media (max-width: 1440px) {
@@ -71,7 +70,6 @@ $widthCardImage: 87px;
         height: 390px;
       }
     }
-
     .button {
       justify-content: center;
       align-items: center;
@@ -112,7 +110,7 @@ $widthCardImage: 87px;
   }
 }
 &.additional-information-open {
-  border: 1px solid #555555;
+  border: 1px solid $color-additional-information;
   .quick-view {
     display: flex;
     justify-content: center;
@@ -125,7 +123,7 @@ $widthCardImage: 87px;
   }
 }
 &.additional-information-open-left {
-  border: 1px solid #555555;
+  border: 1px solid $color-additional-information;
   .quick-view {
     display: flex;
     justify-content: center;
