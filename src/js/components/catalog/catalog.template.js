@@ -15,10 +15,22 @@ export function catalog(catalogCategory, point, filters, testGoods, testDataYouR
         ${breadCrumbsCatalog(catalogCategory)}
                     
         <div class="wrapper-pagination">
-            ${titleCatalog(catalogCategory)}      
+            <div class="wrap-flex">
+                <article class="burger-catalog" id="burger-catalog">
+                    
+                </article>
+                ${titleCatalog(catalogCategory)}      
+            </div>
             ${pagination('Предыдущая страница', 'Следующая страница')}
             ${numberPages()}
         </div>
+        <section class="sidebar-page-categories">
+            <div class="points" id="points-catalog-open-js">
+                ${sidebarPoint(point,'notArrow')}
+            </div>
+            <div class="wrapper-filter">${filter()}</div>
+        </section>
+        <div class="mobile-filter" id="mobile-filter-js">${filter()}</div>
                    
         <div class="wrapper-number">
             ${numberPages()}            
@@ -30,20 +42,12 @@ export function catalog(catalogCategory, point, filters, testGoods, testDataYouR
         </div>
         
         <div class="flex-wrap">	            
-            <section class="sidebar-page-categories">              
-                <div class="points" id="points-catalog-open-js">				
-                    ${sidebarPoint(point,'notArrow')}
-                </div>
-                <div class="wrapper-filter mobile-filter" id="mobile-filter-js">${filter()}</div>                    
-            </section>
-            
             <section class="cards-wrapper">               
                 <div class="container">
                     ${navCatalog(filters)}
                     <div class="wrapper-filter-desktop-ilmira">
                         <div id="select-filter"></div>
                     </div>
-                     
                 </div>                
                 <div id="selected-filters-js" class="selected-filters"></div>			                   
                 <div class="cards">

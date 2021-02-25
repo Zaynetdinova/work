@@ -1,9 +1,12 @@
 .sidebar-page-categories {
-  position: relative;
+  position: absolute;
+  top: 90px;
+  z-index: 3;
   margin-right: 20px;
-  padding: 0;
-  width: 223px;
-  height: 100%;
+  width: 243px;
+  background: #FFFFFF;
+  padding: 10px 10px 36px 10px;
+  display: block;
   .points {
     width: 100%;
   }
@@ -27,10 +30,11 @@
     font-size: 13px;
   }
   @media (max-width: 1024px) {
-    width: 0;
-    margin-right: 0;
-    .points {
-      display: none;
-    }
+    display: none;
+    //width: 0;
+    //margin-right: 0;
+    //.points {
+    //  display: none;
+    //}
   }
 }
