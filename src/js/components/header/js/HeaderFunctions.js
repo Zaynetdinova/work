@@ -184,7 +184,4 @@ export class HeaderMenu {
 		this.$parentExtraMobile.classList.remove('show-extra-mobile')
 		this.$parentExtraMobile.classList.remove('show-extra-cancel')
 	}
-
-	//
-
 }

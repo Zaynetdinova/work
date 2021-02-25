@@ -2,14 +2,17 @@
   display: flex;
   justify-content: center;
   margin-top: 70px;
-  .text-checkbox {
+  .text-checkbox,
+  .text-checkbox-forMe {
     font-style: italic;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.05em;
-    text-decoration-line: underline;
     color: #FFFFFF;
     cursor: pointer;
+  }
+  .text-checkbox-forMe {
+    text-decoration: underline;
     &:hover {
       text-decoration: none;
     }

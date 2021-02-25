@@ -34,7 +34,7 @@ export function buyForMeTemplate() {
             <div class="wrap-checkbox">
                 <input  checked class="checkbox checkbox-filter-js" type="checkbox" id="forMe"> 
                 <label for="forMe"></label>
-                <div class="text-checkbox">
+                <div class="text-checkbox-forMe">
                        Даю согласие на обработку персональных данных
                 </div>
             </div> 

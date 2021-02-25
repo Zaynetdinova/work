@@ -38,7 +38,9 @@ export function changeLegalAddressTemplate() {
                 </div>
             </div>
             ${nesessaryFildsTemplate()}
-            ${checkboxRegistration('Юр. адрес совпадает с фактическим')}
+            <div class="wrap-legal-address-link">
+                ${checkboxRegistration('Юр. адрес совпадает с фактическим')}
+            </div>
             <div class="wrapper-button">${buttonRegistration('Сохранить')}</div>
         </form>
     `

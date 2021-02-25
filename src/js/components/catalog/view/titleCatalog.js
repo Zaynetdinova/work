@@ -1,6 +1,6 @@
 export function titleCatalog(item) {
 		const items = item.map((item) => {
-				return `
+		return `
             <div class="titleWrapper">
                 <div class="titleAndValue">
                     <div class="title">${item.titleCategory}</div>

@@ -111,22 +111,22 @@ export class Catalog extends Component {
             switch (element.id) {
                 case 'filter-catalog':
                     this.catalogFilters.toggleFilter(element)
-                    break
+                    break;
                 case 'delete-filter-js':
                     this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
-                    break
+                    break;
                 case 'button-filter-mobile-js':
                   this.catalog.openFilterMobile()
-                    break
+                    break;
                 case 'mobile-filter-close-js':
                   this.catalog.closeFilterMobile()
-                    break
+                    break;
                 case 'clear-filter-list':
                     this.catalogFilters.defineDeleteFilterGroup(element.dataset._id)
-                    break
+                    break;
                 case 'number-pages-js':
                   this.catalog.changeNumberPage(e)
-                    break
+                    break;
             }
         }
     }
