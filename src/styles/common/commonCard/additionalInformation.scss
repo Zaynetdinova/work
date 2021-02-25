@@ -69,6 +69,8 @@ $widthCardImage: 87px;
       @media (max-width: 1200px) {
         height: 390px;
       }
+
+
     }
     .button {
       justify-content: center;
@@ -167,6 +169,34 @@ $widthCardImage: 87px;
       }
       .images {
         left: -$widthCardImage/1.1;
+      }
+    }
+  }
+}
+
+@media (min-width: 1780px) {
+  .additional-information {
+    .content {
+      .text-size-wrapper {
+        .block-under-image {
+          width: $widthCardImage/0.9;
+        }
+      }
+      .images {
+        right: -$widthCardImage/0.9;
+        width: $widthCardImage/0.9;
+      }
+    }
+  }
+  &.additional-information-open-left {
+    .content {
+      .text-size-wrapper {
+        .block-under-image {
+          left: -$widthCardImage/.9;
+        }
+      }
+      .images {
+        left: -$widthCardImage/0.9;
       }
     }
   }
