@@ -1,19 +1,19 @@
 import basket from '../../../images/icons/basket.svg'
 import delivery from '../../../images/icons/delivery.svg'
 
-export function basketSteps() {
+export function basketSteps(link,cursor) {
     return `
         <div class="Steps">
             <div class="basket-steps">
-                <div class="icon-text" style="cursor: pointer">
+                <a href="/#personal-area/basket" class="icon-text" style="cursor: pointer">
                     <img src="${basket}" alt="">
                     <div class="active">Корзина</div>
-                </div>
+                </a>
                 <div class="pointer-arrow"></div>
-                <div class="icon-text">
+                <a href="${link}" class="icon-text" style="${cursor}">
                     <img src="${delivery}" alt="">
                     <div class="active">Доставка</div>
-                </div>
+                </a>
                 <div class="pointer-grey"></div>
                 <div class="icon-text">
                     <div class="pay-icon"></div>

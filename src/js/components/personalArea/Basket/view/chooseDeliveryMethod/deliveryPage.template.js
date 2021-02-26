@@ -8,35 +8,57 @@ import {leftColumnAddress} from './leftColumnAddress'
 import {titleImg} from '../../../../common/titleImg'
 import {personalCheckedOptions} from '../../../../common/personalCheckedOptions'
 import {basketSteps} from '../../../../common/basketSteps'
+import {breadCrumbs} from "../../../../common/breadCrumbs";
+import {navigation} from "../../../../common/navigation";
+import {navigationMobile} from "../../../../common/navigation-mobile";
 
 export function deliveryPageTemplate() {
     return `
-        <div data-parent-basket-component-js 
-             data-delivery-page-event-js id="delivery-page-js" class="Delivery-page">
-            ${basketSteps()}
-            
-            <div class="basket-delivery">
-                ${personalCheckedOptions(data)}
+        <div id="personal-area-js" class="wrapper-personal-area">
+            ${breadCrumbs(link)}
+            <div class="header-personal-area">
+                <div class="title">Личный кабинет</div>
+                <a href="/" class="exit">Выйти</a>
             </div>
-            
-            <div class="delivery-address">
-                <div data-parent-delivery-block-js class="address">
-                    ${leftColumnAddress()}
+            <div class="name-user">Имя пользователя</div>
+            <div class="wrapper-navigation-personal-area">
+                ${navigation('basket')}
+                ${navigationMobile('/#personal-area/favorites','Корзина','/#personal-area/personal-data')}
+            </div>
+            <div data-parent-basket-component-js 
+                 data-delivery-page-event-js id="delivery-page-js" class="Delivery-page">
+                ${basketSteps('/#personal-area/delivery-page','cursor: default')}
+                
+                <div class="basket-delivery">
+                    ${personalCheckedOptions(data)}
                 </div>
                 
-                <div class="right-column">
-                    ${titleImg(money,'Стоимость заказа')}
-                    <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
-                    <div class="result">Итого:  <b>1 234,00 ₽</b></div>
+                <div class="delivery-address">
+                    <div data-parent-delivery-block-js class="address">
+                        ${leftColumnAddress()}
+                    </div>
+                    
+                    <div class="right-column">
+                        ${titleImg(money,'Стоимость заказа')}
+                        <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
+                        <div class="result">Итого:  <b>1 234,00 ₽</b></div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="wrapper-pagination">
-                ${pagination('Назад к корзине','Далее к оплате', )}
+                
+                <div class="wrapper-pagination">
+                    ${pagination('Назад к корзине','/#personal-area/basket','Далее к оплате','/#personal-area/payment-page' )}
+                </div>
             </div>
         </div>
     `
 }
+
+let link = [
+    {
+        title: 'Корзина',
+        link: '/#personal-area/basket'
+    }
+]
 
 let data = [
     {

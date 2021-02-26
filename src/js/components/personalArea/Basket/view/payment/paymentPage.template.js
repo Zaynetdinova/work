@@ -11,33 +11,53 @@ import {orderCommentPayment} from './orderСommentPayment'
 import {titleImg} from '../../../../common/titleImg'
 import {personalCheckedOptions} from '../../../../common/personalCheckedOptions'
 import {basketSteps} from '../../../../common/basketSteps'
+import {breadCrumbs} from "../../../../common/breadCrumbs";
+import {navigation} from "../../../../common/navigation";
+import {navigationMobile} from "../../../../common/navigation-mobile";
 
 export function paymentPageTemplate() {
     return ` 
-        <div data-parent-basket-component-js 
-             id="personal-area-basket-payment-js"
-             class="Payment-Page">
-            ${basketSteps()}
-            ${waysOfPayment()}
-            ${orderCommentPayment()}
-            <div class="basket-delivery">
-                ${personalCheckedOptions(data)}
+         <div id="personal-area-js" class="wrapper-personal-area">
+            ${breadCrumbs(link)}
+            <div class="header-personal-area">
+                <div class="title">Личный кабинет</div>
+                <a href="/" class="exit">Выйти</a>
             </div>
-            <div class="delivery-address">
-                <div class="left-column">
-                    ${titleImg(comment,'Комментарий к заказу')}
-                    <textarea class="comment" placeholder="Ваш комментарий к заказу (не обязательно)"></textarea>
-                </div>
-                <div class="right-column">
-                    ${titleImg(money,'Стоимость заказа')}
-                    <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
-                    <div class="result">Итого:  <b>1 234,00 ₽</b></div>
-                </div>
+            <div class="name-user">Имя пользователя</div>
+            <div class="wrapper-navigation-personal-area">
+                ${navigation('basket')}
+                ${navigationMobile('/#personal-area/favorites','Корзина','/#personal-area/personal-data')}
             </div>
-            <div class="wrapper-pagination">${pagination('Назад к доставке','Отправить заказ')}</div>
+
+            <div data-parent-basket-component-js id="personal-area-basket-payment-js" class="Payment-Page">
+                ${basketSteps('/#personal-area/delivery-page','cursor: pointer')}
+                ${waysOfPayment()}
+                ${orderCommentPayment()}
+                <div class="basket-delivery">
+                    ${personalCheckedOptions(data)}
+                </div>
+                <div class="delivery-address">
+                    <div class="left-column">
+                        ${titleImg(comment,'Комментарий к заказу')}
+                        <textarea class="comment" placeholder="Ваш комментарий к заказу (не обязательно)"></textarea>
+                    </div>
+                    <div class="right-column">
+                        ${titleImg(money,'Стоимость заказа')}
+                        <div class="wrap-sum">${SumMoneySale(sumMoney)}</div>
+                        <div class="result">Итого:  <b>1 234,00 ₽</b></div>
+                    </div>
+                </div>
+                <div class="wrapper-pagination">${pagination('Назад к доставке','/#personal-area/delivery-page','Отправить заказ','/#personal-area/order-done')}</div>
+            </div>
         </div>
     `
 }
+let link = [
+    {
+        title: 'Корзина',
+        link: '/#personal-area/basket'
+    }
+]
 
 let data = [
     {
