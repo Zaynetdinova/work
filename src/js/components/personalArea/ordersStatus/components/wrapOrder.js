@@ -41,7 +41,7 @@ export function wrapOrder() {
                     <td>
                         <div class="pay-order">
                             <div class="way-pay">Ожидается оплата</div>
-                            <a class="pay-online" href="">Оплатить онлайн</a>
+                            <a href="/#personal-area/online-order" class="pay-online" href="">Оплатить онлайн</a>
                         </div>
                     </td>
                 </tr>
@@ -70,7 +70,7 @@ export function wrapOrder() {
                     <td>
                         <div class="pay-order">
                             <div class="way-pay">Ожидается оплата</div>
-                            <a class="pay-online" href="">Оплатить онлайн</a>
+                            <a href="/#personal-area/online-order" class="pay-online" href="">Оплатить онлайн</a>
                         </div>
                     </td>
                 </tr>

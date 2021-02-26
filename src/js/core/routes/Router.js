@@ -57,6 +57,18 @@ export class Router {
 			case 'personal-area/view-order':
 				Page = this.routes.personalAreaViewOrder
 				break;
+			case 'personal-area/delivery-page':
+				Page = this.routes.personalAreaDeliveryPage
+				break;
+			case 'personal-area/online-order':
+				Page =this.routes.onlineOrderPage
+				break;
+			case 'personal-area/order-done':
+				Page = this.routes.orderDonePage
+				break;
+			case 'personal-area/payment-page':
+				Page = this.routes.personalAreaPaymentPage
+				break;
 			case 'information/about-shopping':
 				Page = this.routes.aboutShoppingPage
 				break;

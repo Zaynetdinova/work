@@ -21,7 +21,7 @@ export function catalog(catalogCategory, point, filters, testGoods, testDataYouR
                 </article>
                 ${titleCatalog(catalogCategory)}      
             </div>
-            ${pagination('Предыдущая страница', 'Следующая страница')}
+            ${pagination('Предыдущая страница','', 'Следующая страница','')}
             ${numberPages()}
         </div>
         <article class="sidebar-page-categories" id="desktop-filter-js">
@@ -57,7 +57,7 @@ export function catalog(catalogCategory, point, filters, testGoods, testDataYouR
                     `}).join('')}
                 </div>                                  
                  <div class="bottom-pagination">                                             
-                    <div class="box">${pagination('Предыдущая страница','Следующая страница')}</div>
+                    <div class="box">${pagination('Предыдущая страница','','Следующая страница','')}</div>
                     <div class="box-number">${numberPages()}</div>
                  </div>  
                  <div class="wrapper-number">

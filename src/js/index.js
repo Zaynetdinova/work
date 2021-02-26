@@ -23,6 +23,10 @@ import {AboutWorkingCondition} from "./pages/informationPage/AboutWorkingConditi
 import {Chosen} from "./pages/PersonalAreaPage/Chosen";
 import {OrderStatusPage} from "./pages/PersonalAreaPage/OrderStatusPage";
 import {ViewOrderPage} from "./pages/PersonalAreaPage/ViewOrderPage";
+import {OnlinePayPage} from "./pages/PersonalAreaPage/OnlinePayPage";
+import {OrderDonePage} from "./pages/PersonalAreaPage/OrderDonePage";
+import {PaymentOrderPage} from "./pages/PersonalAreaPage/PaymentPage";
+import {DeliveryOrderPage} from "./pages/PersonalAreaPage/DeliveryPage";
 
 
 
@@ -40,6 +44,10 @@ new Router('#app', {
   personalAreaChosen: Chosen,
   personalAreaOrdersStatus: OrderStatusPage,
   personalAreaViewOrder: ViewOrderPage,
+  personalAreaPaymentPage: PaymentOrderPage,
+  personalAreaDeliveryPage: DeliveryOrderPage,
+  onlineOrderPage: OnlinePayPage,
+  orderDonePage: OrderDonePage,
   aboutShoppingPage: AboutShopping,
   aboutPaymentPage: AboutPayment,
   aboutQuestionAnswers: AboutQuestionsAnswers,

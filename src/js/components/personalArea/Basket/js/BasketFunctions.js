@@ -1,7 +1,7 @@
 import {deliveryPageTemplate} from '../view/chooseDeliveryMethod/deliveryPage.template'
 import {paymentPageTemplate} from '../view/payment/paymentPage.template'
 import {basketPageTemplate} from '../view/goodsInBaskets/basketPage.template'
-import {orderDone} from "../view/payment/orderDone";
+import {orderDoneTemplate} from "../view/payment/orderDone/orderDone.template";
 import {toggleShowInformation} from '../../../../core/utils/utils'
 
 export class BasketFunctions {
@@ -23,7 +23,7 @@ export class BasketFunctions {
 
   showPaymentSection() {
     if(this.stateComponent.id === 'personal-area-basket-payment-js' ) {
-      this.addComponent(orderDone())
+      this.addComponent(orderDoneTemplate())
       return
     }
     this.addComponent(paymentPageTemplate())

@@ -2,9 +2,15 @@
 .Personal-Data,
 .Discount-and-bonuses,
 .Chosen-page,
-.Orders-status {
+.Orders-status,
+.Online-pay-order,
+.Order-done,
+.Payment-page,
+.Delivery-page {
   @import '../common/buttonData';
-
+   a {
+     text-decoration: none;
+   }
   .wrapper-personal-area {
     max-width: 1480px;
     margin: 0 auto;
@@ -84,4 +90,8 @@
 @import 'discountAndBonuses/discountAndBonuses';
 @import 'chosenPage/chosenPage';
 @import 'ordersStatus/ordersStatus';
+@import 'basketTemplate/components/onlinePayOrder';
+@import "basketTemplate/components/orderDone";
+@import "basketTemplate/payment";
+@import "basketTemplate/delivery";
 

@@ -102,7 +102,7 @@ export class CategoriesWomen extends Component {
     }
 
 
-		new Swiper('[data-common-card-slider-goods]', options)
+	new Swiper('[data-common-card-slider-goods]', options)
     new Swiper('[data-slider-partner-js]',  partnerOptions)
 	}
 
