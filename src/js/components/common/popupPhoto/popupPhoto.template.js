@@ -3,12 +3,11 @@ export function popupPhotoTemplate(testDataPopupPhoto) {
   <section class="view-big-photos-popup-block">
     <div class="paranja"></div>
     <div  class='content'>
-      
+      <div class="wrapper-close-popup">
+        <article id="close-popup-js" class="close-popup"></article>
+      </div>
       <div id="view-big-photos-popup-swiper-js" class="swiper-container wrapper-slider">
         <div class="swiper-wrapper">
-          <div class="wrapper-close-popup">
-            <article id="close-popup-js" class="close-popup"></article>
-          </div>
           ${popupPhoto(testDataPopupPhoto)}
         </div>
         <div class="swiper-button-next-main swiper-button button-next"></div>

@@ -23,7 +23,7 @@ export function wrapOrderMobile() {
 						${orderName(order)}
 						<div class="pay-order">
 							<div class="way-pay">Ожидается оплата</div>
-							<a href="" class="pay-online" href="">Оплатить онлайн</a>
+							<a href="/#personal-area/online-order" class="pay-online">Оплатить онлайн</a>
 						</div>
 					</div>
 					<div data-parent-order-js class="more-details" id="more-details">

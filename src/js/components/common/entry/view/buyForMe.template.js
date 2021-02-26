@@ -2,6 +2,7 @@ import {titleRegistration} from '../../popupDefaultTemplate/titleRegistration';
 import {buttonRegistration} from '../../popupDefaultTemplate/buttonRegistration';
 import {nesessaryFildsTemplate} from './nesesaryFilds.template';
 import {infoTextRegistration} from '../../popupDefaultTemplate/infoTextRegistration'
+import {popupAgreementData} from "./popupAgreementData";
 
 export function buyForMeTemplate() {
     return `
@@ -41,6 +42,7 @@ export function buyForMeTemplate() {
             <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
 
         </form>
-        ${infoTextRegistration()} 
+        ${infoTextRegistration()}
+        ${popupAgreementData()}
     `
 }

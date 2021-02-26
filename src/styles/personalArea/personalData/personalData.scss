@@ -36,6 +36,8 @@
             padding-bottom: 28px;
             border-bottom: 2px dotted #DDDDDD;
             width: 100%;
+            font-size: 12px;
+            line-height: 17px;
           }
         }
         .wrapper-box {
@@ -218,11 +220,6 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-
-        .info-text {
-          font-size: 12px;
-          line-height: 17px;
-        }
 
         .tower {
           display: flex;

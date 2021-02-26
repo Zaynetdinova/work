@@ -84,6 +84,7 @@
   }
   @media (max-width: 890px) {
     max-width: 500px;
+    margin: 60px auto;
     .wrap-input {
       width: 100%;
       .password {
@@ -102,7 +103,7 @@
   }
   @media (max-width: 550px) {
     max-width: 354px;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     .wrap-input {
       .password {
         width: 100%;

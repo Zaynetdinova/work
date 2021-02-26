@@ -10,6 +10,9 @@
   @import 'components/wrapper-sort';
   @import 'components/cards';
   @import 'components/wrap-card';
+  a {
+    text-decoration: none;
+  }
   .wrapper-catalog {
     padding: 0 20px;
     position: relative;

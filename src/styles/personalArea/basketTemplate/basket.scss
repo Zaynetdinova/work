@@ -189,6 +189,13 @@
       .mobile {
         display: block;
       }
+      .button-buy-arrange {
+        flex-direction: column;
+        .arrange-button {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
     }
   }
 
