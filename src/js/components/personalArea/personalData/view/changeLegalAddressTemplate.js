@@ -9,7 +9,7 @@ export function changeLegalAddressTemplate() {
         <form class="form-js">
             <div class="box-input wrap-title-address">
                 <div class="wrap-input">
-                    <div class="wrap-title-buy">Юр. адрес</div>
+                    <div class="wrap-title-buy">Юридический адрес</div>
                     <div class="wrap-address">
                         <input class="input-name" placeholder="Почтовый индекс*" type="text">
                         <input class="input-name" placeholder="Страна*" type="text">
@@ -23,7 +23,7 @@ export function changeLegalAddressTemplate() {
                     </div>
                 </div>
                 <div class="wrap-input">
-                    <div class="wrap-title-buy">Факт. адрес</div>
+                    <div class="wrap-title-buy">Фактический адрес</div>
                     <div class="wrap-address">
                         <input class="input-name" placeholder="Почтовый индекс*" type="text">
                         <input class="input-name" placeholder="Страна*" type="text">
@@ -39,7 +39,7 @@ export function changeLegalAddressTemplate() {
             </div>
             ${nesessaryFildsTemplate()}
             <div class="wrap-legal-address-link">
-                ${checkboxRegistration('Юр. адрес совпадает с фактическим')}
+                ${checkboxRegistration('Юридический адрес совпадает с фактическим')}
             </div>
             <div class="wrapper-button">${buttonRegistration('Сохранить')}</div>
         </form>

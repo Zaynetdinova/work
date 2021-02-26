@@ -47,10 +47,10 @@ export function personalDataLegalEntitiesTemplate(link) {
                             <div class="legal-entities">
                                 <div class="wrapper-box-2">
                                     <div class="wrapper-box-1" style="margin-bottom: 7px">
-                                        ${TitleData('Организация')}
-                                        <div class="organization">ООО “Название организации”</div>
+                                        ${TitleData('ООО “Название организации”')}
                                     </div>
-                                    <div class="info-text">Для изменения формы собственности, ИНН, ФИО, названия компании, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
+                                    <div class="info-text">Для изменения формы собственности, названия организации, ИНН, ФИО,
+                                    позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                                     <div class="wrapper-box">
                                         <div class="wrap-bank-details">
                                             <div class="bank-details">

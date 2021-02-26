@@ -1,0 +1,81 @@
+.Popup-agreement-data {
+  display: none;
+  position: absolute;
+  max-width: 532px;
+  left: 0;
+  right: 0;
+  top: 144px;
+  background: #F3F2F0;
+  padding: 20px 21px 25px 23px;
+  z-index: 100;
+  margin: auto;
+  .popup-wrapper-text {
+    p {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 20px;
+    }
+  }
+  .wrapper-title {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #AB064E;
+    margin-bottom: 30px;
+    .title {
+      width: 316px;
+    }
+  }
+  .wrap-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+    .popup-close {
+      cursor: pointer;
+      background-image: url("../images/icons/close-quiq-white.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+      &:hover {
+        background-image: url("../images/icons/close-quiq.svg");
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    top: 108px;
+  }
+  @media (max-width: 550px) {
+    max-width: 354px;
+    top: 30px;
+    .wrapper-title {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 25px;
+      .title {
+        width: 100%;
+      }
+    }
+    .popup-wrapper-text {
+      max-height: 505px;
+      overflow-y: scroll;
+    }
+    .wrap-close {
+      margin-bottom: 23px;
+    }
+  }
+  @media (max-width: 375px) {
+    max-width: 315px;
+    .popup-wrapper-text {
+      max-height: 434px;
+    }
+  }
+  @media (max-width: 374px) {
+    top: 15px;
+    max-width: 290px;
+    .popup-wrapper-text {
+      max-height: 360px;
+    }
+  }
+}

@@ -15,7 +15,7 @@ export function basketSteps(link,cursor) {
                     <div class="active">Доставка</div>
                 </a>
                 <div class="pointer-grey"></div>
-                <div class="icon-text">
+                <div class="icon-text" style="cursor: default">
                     <div class="pay-icon"></div>
                     <div class="active">Оплата</div>
                 </div>
