@@ -55,23 +55,7 @@ $widthCardImage: 87px;
       background-size: cover;
       background-position: center;
     }
-    .photos-block-common-block {
-      height: 490px;
-      @media (max-width: 1440px) {
-        height: 483px;
-      }
-      @media (max-width: 1400px) {
-        height: 445px;
-      }
-      @media (max-width: 1300px) {
-        height: 430px;
-      }
-      @media (max-width: 1200px) {
-        height: 390px;
-      }
 
-
-    }
     .button {
       justify-content: center;
       align-items: center;
@@ -146,58 +130,3 @@ $widthCardImage: 87px;
   }
 }
 
-@media (max-width: 1280px) {
-  .additional-information {
-    .content {
-      .text-size-wrapper {
-        .block-under-image {
-          width: $widthCardImage/1.1;
-        }
-      }
-      .images {
-        right: -$widthCardImage/1.1;
-        width: $widthCardImage/1.1;
-      }
-    }
-  }
-  &.additional-information-open-left {
-    .content {
-      .text-size-wrapper {
-        .block-under-image {
-          left: -$widthCardImage/1.1;
-        }
-      }
-      .images {
-        left: -$widthCardImage/1.1;
-      }
-    }
-  }
-}
-
-@media (min-width: 1780px) {
-  .additional-information {
-    .content {
-      .text-size-wrapper {
-        .block-under-image {
-          width: $widthCardImage/0.9;
-        }
-      }
-      .images {
-        right: -$widthCardImage/0.9;
-        width: $widthCardImage/0.9;
-      }
-    }
-  }
-  &.additional-information-open-left {
-    .content {
-      .text-size-wrapper {
-        .block-under-image {
-          left: -$widthCardImage/.9;
-        }
-      }
-      .images {
-        left: -$widthCardImage/0.9;
-      }
-    }
-  }
-}

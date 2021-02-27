@@ -50,7 +50,7 @@ let point =
           link: '/#catalog'
         },
         {
-          id: 'jerseyWoman',
+          id: 'jerseyWomen',
           category: 'Трикотаж',
           link: '/#catalog'
         },
@@ -266,87 +266,87 @@ let point =
     },
     {
       title: 'мужчинам',
-      id: 'men',
+      id: 'man',
       img: icon3,
       category: [
         {
-          id: 't-shirtsMen',
+          id: 't-shirtsMan',
           category: 'Майки, футболки',
           link: '/#catalog'
         },
         {
-          id: 'shirtsMen',
+          id: 'shirtsMan',
           category: 'Рубашки',
           link: '/#catalog'
         },
         {
-          id: 'jerseyMen',
+          id: 'jerseyMan',
           category: 'Трикотаж',
           link: '/#catalog'
         },
         {
-          id: 'topMen',
+          id: 'topMan',
           link: '/#catalog',
           category: 'Верха',
 
         },
         {
-          id: 'outerwearMen',
+          id: 'outerwearMan',
           link: '/#catalog',
           category: 'Верхняя одежда'
         },
         {
-          id: 'shortsMen',
+          id: 'shortsMan',
           link: '/#catalog',
           category: 'Брюки, джинсы, шорты'
         },
         {
-          id: 'costumesMen',
+          id: 'costumesMan',
           link: '',
           category: 'Костюмы'
         },
         {
-          id: 'forHomeMen',
+          id: 'forHomeMan',
           link: '',
           category: 'Для дома'
         },
         {
-          id: 'underwearMen',
+          id: 'underwearMan',
           link: '',
           category: 'Нижнее белье'
         },
         {
-          id: 'tightsSocksMen',
+          id: 'tightsSocksMan',
           link: '',
           category: 'Носки'
         },
         {
-          id: 'accessoriesMen',
+          id: 'accessoriesMan',
           link: '',
           category: 'Аксессуары'
         },
         {
-          id: 'footwearMen',
+          id: 'footwearMan',
           link: '',
           category: 'Обувь'
         },
         {
-          id: 'newItemsMen',
+          id: 'newItemsMan',
           link: '',
           category: 'Новинки'
         },
         {
-          id: 'promotionsMen',
+          id: 'promotionsMan',
           link: '',
           category: 'Акции'
         },
         {
-          id: 'discountsMen',
+          id: 'discountsMan',
           link: '',
           category: 'Скидки'
         },
         {
-          id: 'brandMen',
+          id: 'brandMan',
           link: '',
           category: 'Бренды'
         },
