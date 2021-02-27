@@ -1,5 +1,4 @@
 import cash from '../../../../../../images/icons/cash.svg'
-import {inputChoice} from '../../../../common/personalCheckedOptions'
 
 export function waysOfPayment() {
     return `

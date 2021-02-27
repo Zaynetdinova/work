@@ -16,6 +16,10 @@
   .wrapper-catalog {
     padding: 0 20px;
     position: relative;
+    .wrapper-filter-desktop {
+      max-width: 130px;
+      padding-right: 3px;
+    }
   }
   .mobile-filter {
     position: fixed;

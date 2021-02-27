@@ -45,7 +45,7 @@ export function catalog(catalogCategory, point, filters, testGoods, testDataYouR
             <section class="cards-wrapper">               
                 <div class="container">
                     ${navCatalog(filters)}
-                    <div class="wrapper-filter-desktop-ilmira">
+                    <div class="wrapper-filter-desktop">
                         <div id="select-filter"></div>
                     </div>
                 </div>                
