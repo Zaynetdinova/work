@@ -84,7 +84,7 @@ export class CommonCard {
 		this.changeMainPhoto(card)
 
 		if(comWidth/2 < cardСoordinate.left) {
-      this.onResizeCardLeft(card)
+      this.onResizeCard(card, true)
 			card.classList.add('additional-information-open-left')
 			parent.classList.add('Com-super-z-index')
 
@@ -95,61 +95,29 @@ export class CommonCard {
 		}
 	}
 
-  onResizeCardLeft(card) {
+	onResizeCard(card, left) {
     if(card) {
       function t() {
         const  mainImg = card.querySelector('[data-common-card-main-img-js]')
-        console.log(mainImg, 'mainImg')
         const  photos = card.querySelector('.photos-block-common-block')
-        const heightPhotosBlock = mainImg.clientHeight + 150
 
-        photos.style.height = `${heightPhotosBlock}px`
-
-        // right
-        const right = card.querySelector('.additional-information')
-        const blockUnderImage = right.querySelector('.block-under-image')
-        const rightImages = right.querySelector('.images')
-
-
-
-
-        blockUnderImage.style.width = `${heightPhotosBlock/6}px`
-        blockUnderImage.style.left = `-${heightPhotosBlock/6}px`
-
-        rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; left: -${heightPhotosBlock/6}px`)
-
-      }
-      t()
-
-      window.addEventListener('resize', (event) => {
-        t()
-      })
-    }
-  }
-
-  onResizeCard(card) {
-    if(card) {
-      function t() {
-        const  mainImg = card.querySelector('[data-common-card-main-img-js]')
-        console.log(mainImg, 'mainImg')
-        const  photos = card.querySelector('.photos-block-common-block')
         const heightPhotosBlock = mainImg.clientHeight + 160
 
         photos.style.height = `${heightPhotosBlock}px`
 
-        // right
-        const right = card.querySelector('.additional-information')
-        const blockUnderImage = right.querySelector('.block-under-image')
-        const rightImages = right.querySelector('.images')
-
-
-
-
+        const blockUnderImage = card.querySelector('.block-under-image')
         blockUnderImage.style.width = `${heightPhotosBlock/6}px`
 
-        rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; right: -${heightPhotosBlock/6}px`)
+        const rightImages = card.querySelector('.images')
 
+        if(left) {
+          blockUnderImage.style.left = `-${heightPhotosBlock/6}px`
+          rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; left: -${heightPhotosBlock/6}px`)
+        } else {
+          rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; right: -${heightPhotosBlock/6}px`)
+        }
       }
+
       t()
 
       window.addEventListener('resize', (event) => {
