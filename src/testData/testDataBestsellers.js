@@ -107,6 +107,7 @@ export let testDataBestsellers = {
 						testSecondaryImg2,
 						testSecondaryImg3,
 						testSecondaryImg4,
+            testSecondaryImg5
 					]
 				},
 				{
@@ -126,6 +127,8 @@ export let testDataBestsellers = {
 						testSecondaryImg1,
 						testSecondaryImg2,
 						testSecondaryImg3,
+            testSecondaryImg4,
+            testSecondaryImg5
 					]
 				},
 				{

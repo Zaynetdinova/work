@@ -2,7 +2,12 @@ import img from '../../../../../images/sidebar/img.png'
 import sale from '../../../../../images/sidebar/sale.svg'
 
 export function extra(elementsMenu) {
-    const {firstColumn, secondColumn} = elementsMenu
+
+  if(!elementsMenu) {
+    return
+  }
+
+  const secondColumn = null
 
     const saleBlock = `
      <a href="#">
@@ -15,7 +20,7 @@ export function extra(elementsMenu) {
                 <div class="wrap-col">
                     <div class="first-col">
                         <div class='first-content'>                  
-                            ${pick(firstColumn)}
+                            ${elementsMenu.firstColumn ? pick(elementsMenu.firstColumn) : ''}
                         </div>
                         ${!secondColumn ? saleBlock : ''}
                     </div>

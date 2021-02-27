@@ -19,12 +19,15 @@ export function subCategoriesMenu() {
   `
 }
 
-export function newTest({firstColumn, secondColumn}) {
+export function newTest(elementsMenu) {
+  if(!elementsMenu) {
+    return
+  }
 
   return `
     <div>
-         ${pick(firstColumn)}
-         ${secondColumn ? pick(secondColumn) : null}
+         ${pick(elementsMenu.firstColumn)}
+         ${elementsMenu.secondColumn ? pick(elementsMenu.secondColumn) : null}
     </div>
   `
 }

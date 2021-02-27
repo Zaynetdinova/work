@@ -14,7 +14,6 @@ export class ExtraMenuItemShow {
 
 
 	init(e) {
-	  console.log('init', e.target)
     if(e.target.closest('.point')){
        this.$extraRoot.innerHTML = ''
       return
@@ -23,6 +22,7 @@ export class ExtraMenuItemShow {
 
 
 		if(el != undefined) {
+		  console.log(el.id, '3')
 			this.defineCategory(el.id)
 		} else {
 			// подумать над логикой
@@ -39,8 +39,8 @@ export class ExtraMenuItemShow {
 		if (id.toLowerCase().indexOf("newborn") != -1) {
 			this.girlNewBorn(id)
 		}
-		if (id.toLowerCase().indexOf("men") != -1) {
-			this.men(id)
+		if (id.toLowerCase().indexOf("man") != -1) {
+			this.man(id)
 		}
 		if (id.toLowerCase().indexOf("home") != -1) {
 			this.home(id)
@@ -74,8 +74,7 @@ export class ExtraMenuItemShow {
 			case 'dressWomen':
 				this.menuExtra = 'dress'
 				break;
-			case 'jerseyWoman':
-				console.log('super')
+			case 'jerseyWomen':
 				this.menuExtra = 'jersey'
 				break;
 			case 'topWomen':
@@ -91,13 +90,14 @@ export class ExtraMenuItemShow {
 		this.initialCategory(this.menuExtra, extraDataWomen)
 	}
 
-	men(id) {
+	man(id) {
 		switch (id) {
-			case 't-shirtsMen':
+			case 't-shirtsMan':
 				this.menuExtra = 'tShirts'
 				break;
-			case 'shirtsMen':
+			case 'shirtsMan':
 				this.menuExtra = 'shirts'
+        break;
 		}
 
 		this.initialCategory(this.menuExtra, extraDataMen)
