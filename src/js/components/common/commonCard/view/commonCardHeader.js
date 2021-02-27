@@ -1,4 +1,3 @@
-import {sliderPointerTemplate} from '../../sliderPointer.template'
 
 export function commonCardHeader(text,link) {
   return `

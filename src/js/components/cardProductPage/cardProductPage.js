@@ -4,9 +4,8 @@ import {ChangeSizeCount} from '../common/js/changeSizeCount'
 import {UtilsCardProductPage} from './js/utilsCardProductPage'
 import {inputFile} from './js/inputFile'
 import {CardProductPageSliders} from './js/CardProductPageSliders'
-
 import {testDataCardProductPage} from '../../../testData/testDataCardProductPage'
-import {ChangeFavoritesProduct, changeFavoritesProduct} from '../../core/utils/utils'
+import {ChangeFavoritesProduct} from '../../core/utils/utils'
 
 
 export class CardProductPage extends Component {
@@ -90,9 +89,9 @@ export class CardProductPage extends Component {
 				case 'zoom-photo-js':
 					this.utils.popupPhotos()
 					break;
-        case 'zoom-photo-js-mobile':
+        		case 'zoom-photo-js-mobile':
 					this.utils.popupPhotos()
-          break;
+          			break;
 			}
 		}
 	}

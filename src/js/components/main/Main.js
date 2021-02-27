@@ -36,11 +36,12 @@ export class Main extends Component {
 	}
 
 	toHTML() {
-		return MainTemplate(this.banner,
-												this.menu24,
-												this.popularBrand,
-												this.sharesBlock,
-												this.moyomodaBlock,
-												this.bestsellers)
+		return MainTemplate(
+			this.banner,
+			this.menu24,
+			this.popularBrand,
+			this.sharesBlock,
+			this.moyomodaBlock,
+			this.bestsellers)
 	}
 }

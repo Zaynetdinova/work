@@ -1,10 +1,10 @@
 export function transitionBrand(item) {
     const items = item.map((item) => {
         return `
-            <div class="transitionBrand">
+            <div class="transition-brand">
                 <span class="brand"><a href=''>${item.brand}</a></span>
                 <span class="category">/</span>
-                <span class="category" style="margin-left: 8px"><a href=''>${item.category}</a></span>     
+                <span class="category last-item"><a href=''>${item.category}</a></span>     
             </div>                
         `
     })

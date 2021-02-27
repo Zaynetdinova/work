@@ -1,9 +1,10 @@
-export function MainTemplate(banner,
-														 menu24,
-														 popularBrand,
-														 sharesBlock,
-														 moyomodaBlock,
-														 bestsellers) {
+export function MainTemplate(
+	banner,
+	menu24,
+	popularBrand,
+	sharesBlock,
+	moyomodaBlock,
+	bestsellers) {
 	return `
 	 	<div>
 			${banner.toHTML()}

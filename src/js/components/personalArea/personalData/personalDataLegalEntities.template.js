@@ -118,8 +118,11 @@ export function personalDataLegalEntitiesTemplate(link) {
                                 </div>
                                 <div class="tower">
                                     <div class="width-info">
-                                        <div style="margin-bottom: 16px"><span style="color: #AB064E">Внимание!</span> Указан город, в котором Вы получите груз</div>
-                                        <div>Информация о городе доставки берется из данных при регистрации на сайте. Если Вы хотите изменить город доставки и у Вас есть оплаченный заказ, позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
+                                        <div style="margin-bottom: 16px"><span style="color: #AB064E">Внимание!</span> 
+                                        Указан город, в котором Вы получите груз</div>
+                                        <div>Информация о городе доставки берется из данных при регистрации на сайте. 
+                                        Если Вы хотите изменить город доставки и у Вас есть оплаченный заказ, 
+                                        позвоните нашему менеджеру: <span style="white-space: nowrap">+7 800 301-25-75</span></div>
                                     </div>
                                     ${ButtonData('Изменить','personal-change-city-js')}
                                 </div>

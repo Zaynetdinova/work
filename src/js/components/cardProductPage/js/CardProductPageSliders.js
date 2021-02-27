@@ -10,14 +10,10 @@ export class CardProductPageSliders {
       slidesOffsetAfter: 16,
 
       on: {
-        slideChange: function () {
-
-        },
+        slideChange: function () {},
 
         init: function () {
-
           if(this.slides.length >= 8) {
-
           }
         }
       },

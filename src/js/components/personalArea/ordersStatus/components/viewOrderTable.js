@@ -87,7 +87,7 @@ export function viewOrderTable() {
                     <td class="sum-product">
                         ${sizes.map(({id, price}) => {
                             return `
-                                <div class="number-sum" style="font-weight: bold">1 234,00 ₽</div>
+                                <div class="number-sum">1 234,00 ₽</div>
                             `
                             }).join('')}
                     </td>

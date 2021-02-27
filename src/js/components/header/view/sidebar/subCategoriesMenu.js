@@ -1,5 +1,4 @@
 import {pick} from './extra'
-import {sidebarChoice} from '../../../common/sidebarChoice'
 
 export function subCategoriesMenu() {
   return `

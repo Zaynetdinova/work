@@ -1,5 +1,4 @@
 import done from '../../../../../../../images/icons/done.svg'
-import {commonCard} from "../../../../../common/commonCard/commonCards";
 import img1 from "../../../../../../../images/bestsellers/1/img1.png";
 import img2 from "../../../../../../../images/bestsellers/1/img2.png";
 import img3 from "../../../../../../../images/bestsellers/1/img3.png";
