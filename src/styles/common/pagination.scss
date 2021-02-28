@@ -1,3 +1,4 @@
+@import "../color";
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -10,18 +11,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #FFFFFF;
-      border: 1px solid #CDCDCD;
+      background: $baseColor;
+      border: 1px solid $color-CDCDCD;
       cursor: pointer;
       width: 340px;
       &:hover {
-        background: #AB064E;
+        background: $burgundy;
         .arrow-prev,
         .arrow-next {
           background: url("../images/icons/arrow-white2.svg") no-repeat;
         }
         .text {
-          color: #FFFFFF;
+          color: $baseColor;
         }
       }
     }

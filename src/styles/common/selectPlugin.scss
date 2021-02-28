@@ -1,3 +1,4 @@
+@import "../color";
 .select {
   width: 100%;
   position: relative;
@@ -19,30 +20,30 @@
 
   .popup-selected-items {
     margin-top: 7px;
-    background-color: #FDFDFD;
+    background-color: $color-FDFDFD;
     position: absolute;
     z-index: 3;
     width: 100%;
     display: none;
     padding: 10px;
-    border-top: 5px solid #F3F2F0;
+    border-top: 5px solid $color-F3F2F0;
 
     .select-item {
-      border-bottom: 1px dotted #ccc;
+      border-bottom: 1px dotted $color-CCCCCC;
       padding: 8px 0;
-      background-color: #FDFDFD;
+      background-color: $color-F9F9F9;
       cursor: pointer;
       font-size: 14px;
       line-height: 100%;
       letter-spacing: 0.05em;
-      color: #555555;
+      color: $color-555555;
 
       &.selected {
-        color: #AB064E;
+        color: $burgundy;
       }
 
       &:hover {
-        color: #AB064E;
+        color: $burgundy;
       }
     }
 
@@ -64,7 +65,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
     cursor: pointer;
 
     .title {

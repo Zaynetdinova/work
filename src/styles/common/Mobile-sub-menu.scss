@@ -5,14 +5,14 @@
   .main-sub-menu {
     display: flex;
     justify-content: space-between;
-    background: #F3F2F0;
+    background: $color-F3F2F0;
     padding: 14px 18px;
     align-items: center;
   }
   .title-sub-menu {
     font-weight: bold;
     text-transform: capitalize;
-    color: #555555;
+    color: $color-555555;
     letter-spacing: 0.05em;
     font-size: 15px;
     line-height: 17px;
@@ -35,10 +35,10 @@
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 0.05em;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
   }
   .line {
-    border-bottom: 2px dotted #D9D9D9;
+    border-bottom: 2px dotted $color-D9D9D9;
   }
   .categories {
     padding: 0 18px 0 18px;
@@ -47,11 +47,11 @@
       font-size: 15px;
       height: 40px;
       letter-spacing: 0.05em;
-      border-bottom: 1px dashed #D9D9D9;
+      border-bottom: 1px dashed $color-D9D9D9;
       display: flex;
       align-items: center;
       a {
-        color: #555555;
+        color: $color-555555;
         text-decoration: none;
       }
     }
@@ -59,12 +59,12 @@
       font-size: 14px;
       height: 40px;
       letter-spacing: 0.05em;
-      border-bottom: 1px dashed #D9D9D9;
+      border-bottom: 1px dashed $color-D9D9D9;
       display: flex;
       align-items: center;
       padding-left: 15px;
       a {
-        color: #9E9E9E;
+        color: $color-D9D9D9;
         text-decoration: none;
       }
     }

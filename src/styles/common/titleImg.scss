@@ -1,10 +1,11 @@
+@import "../color";
 .title-img {
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: end;
-  background: #F3F2F0;
+  background: $color-F3F2F0;
   padding: 10px 20px;
   img {
     margin-right: 10px;

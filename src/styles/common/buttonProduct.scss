@@ -1,13 +1,14 @@
+@import "../color";
 .Button-product {
   text-decoration: none;
   .text {
     width: 76px;
-    background-color: #E7003E;
+    background-color: $color-E7003E;
     font-weight: bold;
     font-size: 10px;
     line-height: 106.8%;
     text-align: center;
-    color: #FFFFFF;
+    color: $baseColor;
     padding: 5px 0;
     text-transform: uppercase;
     letter-spacing: 0.4px;

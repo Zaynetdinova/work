@@ -1,3 +1,4 @@
+@import "../../color";
 .transition-brand {
   a {
     text-decoration: none;
@@ -12,11 +13,11 @@
     }
   }
   .brand a {
-    color: #3D3D3C;
+    color: $color-3D3D3C;
     margin-right: 8px;
   }
   .category a{
-    color: #777777;
+    color: $color-777777;
   }
 }
 
@@ -26,6 +27,6 @@
   .stock {
     font-size: 14px;
     line-height: 140%;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
   }
 }

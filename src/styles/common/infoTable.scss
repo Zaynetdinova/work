@@ -1,3 +1,4 @@
+@import "../color";
 .infoTable {
   width: 100%;
   .common {
@@ -8,11 +9,11 @@
       font-size: 14px;
       height: 100%;
       cursor: pointer;
-      color: #777777;
-      border-bottom: 0.5px dashed #777777;
+      color: $color-777777;
+      border-bottom: 0.5px dashed $color-777777;
       &:hover {
-        color: #AB064E;
-        border-bottom: 0.5px dashed #AB064E;
+        color: $burgundy;
+        border-bottom: 0.5px dashed $burgundy;
       }
     }
     .size-quantity {
@@ -29,14 +30,14 @@
     border-collapse: collapse;
     width: 100%;
     th {
-      background: #F3F2F0;
-      color: #3D3D3C;
+      background: $color-F3F2F0;
+      color: $color-3D3D3C;
       padding: 10px 0;
       text-align: left;
       font-weight: normal;
     }
     .tr-common {
-      background-image: linear-gradient(to right, #777777 33%, rgba(255,255,255,0) 0%);
+      background-image: linear-gradient(to right, $color-777777 33%, rgba(255,255,255,0) 0%);
       background-position: bottom;
       background-size: 4px 2px;
       background-repeat: repeat-x;
@@ -46,7 +47,7 @@
     }
     .price {
       padding-left: 12px;
-      color: #AB064E;
+      color: $burgundy;
     }
     #col1 {
       width: 277px;
@@ -101,14 +102,14 @@
       .old-price {
         font-size: 12px;
         line-height: 106.8%;
-        color: #777777;
+        color: $color-777777;
         text-decoration: line-through;
       }
     }
     .price {
       font-size: 14px;
       line-height: 106.8%;
-      color: #3D3D3C;
+      color: $color-3D3D3C;
       padding: 0;
     }
   }
@@ -117,7 +118,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, $color-777777 33%, rgba(255, 255, 255, 0) 0%);
     background-position: bottom;
     background-size: 4px 2px;
     background-repeat: repeat-x;
@@ -129,7 +130,7 @@
   .wrapper-first-line {
     display: flex;
     justify-content: space-between;
-    background: #F3F2F0;
+    background: $color-F3F2F0;
     padding: 10px 0;
     font-size: 14px;
     line-height: 20px;

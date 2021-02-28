@@ -1,17 +1,18 @@
+@import "../color";
 .title-product-page {
   font-weight: bold;
   font-size: 15px;
   line-height: 140%;
-  color: #3D3D3C;
+  color: $color-3D3D3C;
   padding-bottom: 11px;
-  border-bottom: 1px solid #AB064E;
+  border-bottom: 1px solid $burgundy;
   display: flex;
   justify-content: space-between;
   .arrow {
     display: none;
   }
   @media (max-width: 1024px) {
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid $color-D9D9D9;
     padding-top: 8px;
     border-bottom: none;
     .arrow {

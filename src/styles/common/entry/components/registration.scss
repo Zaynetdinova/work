@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrapper-btn-enter {
   display: flex;
   justify-content: space-between;
@@ -9,12 +10,12 @@
     text-align: center;
     font-size: 15px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: $baseColor;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(243, 242, 240, 0.5);
     cursor: pointer;
     &:hover {
-      border-bottom: 1px solid #F3F2F0;
+      border-bottom: 1px solid $color-F3F2F0;
     }
   }
   @media (max-width: 550px) {

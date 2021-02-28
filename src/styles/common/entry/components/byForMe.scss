@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrapper-buyForMe {
   max-width: 1020px;
   margin: 76px auto;
@@ -5,9 +6,9 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: $baseColor;
     padding-bottom: 15px;
-    border-bottom: 1px solid #F3F2F0;
+    border-bottom: 1px solid $color-F3F2F0;
     margin-top: 57px;
   }
   .box-input {

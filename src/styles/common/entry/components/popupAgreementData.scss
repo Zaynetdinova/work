@@ -1,3 +1,4 @@
+@import "../../../color";
 .Popup-agreement-data {
   display: none;
   position: absolute;
@@ -5,7 +6,7 @@
   left: 0;
   right: 0;
   top: 144px;
-  background: #F3F2F0;
+  background: $color-F3F2F0;
   padding: 20px 21px 25px 23px;
   z-index: 100;
   margin: auto;
@@ -20,7 +21,7 @@
     font-size: 24px;
     line-height: 24px;
     padding-bottom: 25px;
-    border-bottom: 2px solid #AB064E;
+    border-bottom: 2px solid $burgundy;
     margin-bottom: 30px;
     .title {
       width: 316px;

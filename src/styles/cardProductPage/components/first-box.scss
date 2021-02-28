@@ -1,3 +1,4 @@
+@import "../../color";
 .first-box {
   padding: 46px 43px 45px 44px;
   display: flex;
@@ -7,7 +8,6 @@
     .comment {
       font-weight: bold;
       line-height: 106.8%;
-      color: #3D3D3C;
       text-align: center;
     }
     .wrap-star {
@@ -42,7 +42,6 @@
         .third {
           font-size: 16px;
           line-height: 106.8%;
-          color: #3D3D3C;
         }
         .first {
           font-weight: bold;
@@ -56,12 +55,12 @@
         .progress-bar {
           width: 232px;
           height: 8px;
-          background-color: #B2B2B2;
+          background-color: $color-B2B2B2;
           .progress-bar-fill {
             display: block;
             height: 8px;
             width: 232px;
-            background-color: #AB064E;
+            background-color: $burgundy;
           }
         }
       }

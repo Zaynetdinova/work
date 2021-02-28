@@ -13,8 +13,6 @@ export class CommonCard {
 		new SliderCommonCard().init()
 
     this.stateShowInformation = true
-
-
 	}
 
 	eventInitial() {
@@ -23,14 +21,11 @@ export class CommonCard {
 		this.windowResize()
 	}
 
-
-
 	leaveMouse() {
 		this.cards.forEach((item) => {
 			item.addEventListener('mouseleave', (event) => this.closeCard(event) )
 		})
 	}
-
 
 	enterMouse() {
 		if(this.clientWidth < this.minWidthNotSlider) {
@@ -63,19 +58,19 @@ export class CommonCard {
 	windowResize() {
 		window.addEventListener('resize', () => {
 			const clientWidth = document.documentElement.clientWidth
-      console.log(clientWidth)
-			if(clientWidth < this.minWidthNotSlider) {
-				this.stateShowInformation = false
-			} else {
-        this.stateShowInformation = true
-			}
-		})
+			console.log(clientWidth)
+				if(clientWidth < this.minWidthNotSlider) {
+					this.stateShowInformation = false
+				} else {
+			this.stateShowInformation = true
+				}
+			})
 	}
 
 	viewMaterial(id) {
-	  if(!this.stateShowInformation) {
-	    return
-    }
+		if(!this.stateShowInformation) {
+		return
+    	}
 		const comWidth = document.documentElement.clientWidth
 		const card = document.querySelector(`#${id}`)
 		const parent = card.closest('[data-parent-common-cards-js]')
@@ -84,12 +79,12 @@ export class CommonCard {
 		this.changeMainPhoto(card)
 
 		if(comWidth/2 < cardСoordinate.left) {
-      this.onResizeCard(card, true)
+      	this.onResizeCard(card, true)
 			card.classList.add('additional-information-open-left')
 			parent.classList.add('Com-super-z-index')
 
 		} else {
-      this.onResizeCard(card)
+      	this.onResizeCard(card)
 			card.classList.add('additional-information-open')
 			parent.classList.add('Com-super-z-index')
 		}
@@ -97,48 +92,43 @@ export class CommonCard {
 
 	onResizeCard(card, left) {
     if(card) {
-      function t() {
-        const  mainImg = card.querySelector('[data-common-card-main-img-js]')
-        const  photos = card.querySelector('.photos-block-common-block')
+		function resizeCard() {
+			const  mainImg = card.querySelector('[data-common-card-main-img-js]')
+			const  photos = card.querySelector('[data-photos-block-js]')
 
-        const heightPhotosBlock = mainImg.clientHeight + 160
+			const heightPhotosBlock = mainImg.clientHeight + 160
 
-        photos.style.height = `${heightPhotosBlock}px`
+			photos.style.height = `${heightPhotosBlock}px`
 
-        const blockUnderImage = card.querySelector('.block-under-image')
-        blockUnderImage.style.width = `${heightPhotosBlock/6}px`
+			const blockUnderImage = card.querySelector('[data-block-under-image-js]')
+			blockUnderImage.style.width = `${heightPhotosBlock/6}px`
 
-        const rightImages = card.querySelector('.images')
+			const rightImages = card.querySelector('[data-images-js]')
 
-        if(left) {
-          blockUnderImage.style.left = `-${heightPhotosBlock/6}px`
-          rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; left: -${heightPhotosBlock/6}px`)
-        } else {
-          rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; right: -${heightPhotosBlock/6}px`)
-        }
-      }
+			if(left) {
+			  blockUnderImage.style.left = `-${heightPhotosBlock/6}px`
+			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; left: -${heightPhotosBlock/6}px`)
+			} else {
+			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; right: -${heightPhotosBlock/6}px`)
+			}
+		}
 
-      t()
+		resizeCard()
 
-      window.addEventListener('resize', (event) => {
-        t()
-      })
+		window.addEventListener('resize', (event) => {
+		resizeCard()
+		})
     }
-
-
-
-  }
+  	}
 
 	changeMainPhoto(card) {
 		const mainImg = card.querySelector('[data-common-card-main-img-js]')
 		card.onmouseover = function (event) {
 			if(event.target.closest('[data-common-card-main-secondImg-js]')) {
 				mainImg.setAttribute("style", `background-image: ${event.target.style.backgroundImage}`);
-
 			}
 		}
 	}
-
 }
 
 export class SizeCommonCard {

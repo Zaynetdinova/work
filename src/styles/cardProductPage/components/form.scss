@@ -1,17 +1,18 @@
+@import "../../color";
 .form {
   .button-write-feedback {
-    background: #8F8F8F;
+    background: $color-8F8F8F;
     border-radius: 4px;
     font-size: 15px;
     line-height: 17px;
     text-align: center;
-    color: #FFFFFF;
+    color: $baseColor;
     max-width: 232px;
     margin: 0 auto 40px auto;
     padding: 8px 0 11px;
     cursor: pointer;
     &:hover {
-      background: #AB064E;
+      background: $burgundy;
     }
   }
   .wrapper-title {
@@ -21,9 +22,9 @@
     padding-top: 8px;
     padding-bottom: 11px;
     padding-right: 4px;
-    border-top: 1px solid #AB064E;
+    border-top: 1px solid $burgundy;
     cursor: pointer;
-    border-bottom: 1px solid #AB064E;
+    border-bottom: 1px solid $burgundy;
     .arrow {
       transform: rotate(90deg);
       width: 10px;
@@ -37,15 +38,12 @@
     text-align: left;
     font-size: 14px;
     line-height: 16px;
-    color: #777777;
-    background: #FFFFFF;
-    border: 1px dashed #E0E0DE;
+    color: $color-777777;
+    background: $baseColor;
+    border: 1px dashed $color-E0E0DE;
     box-sizing: border-box;
     border-radius: 4px;
     max-height: 90px;
-    &.highlight {
-      border-color: purple;
-    }
 
     .file-elem-input {
       display: none;
@@ -83,7 +81,7 @@
       display: flex;
       flex-wrap: wrap;
       div {
-        color: #000000;
+        color: $color-3D3D3C;
         margin-bottom: 6px;
         margin-right: 10px;
       }
@@ -94,7 +92,7 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 140%;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
   }
 
   .content-form {
@@ -103,7 +101,7 @@
 
   .form-wrapper {
     padding: 22px 20px 55px 20px;
-    background: #F3F2F0;
+    background: $color-F3F2F0;
     display: none;
     margin-bottom: 40px;
     .name {
@@ -118,7 +116,7 @@
   }
   input[type='text'], textarea {
     width: 100%;
-    background: #FFFFFF;
+    background: $baseColor;
     border: 1px solid transparent;
     box-sizing: border-box;
     border-radius: 4px;
@@ -128,13 +126,13 @@
     line-height: 16px;
     outline: none;
     &:active {
-      border: 1px solid #C4C4C4;
+      border: 1px solid $color-C4C4C4;
     }
     &:hover {
-      border: 1px solid #C4C4C4;
+      border: 1px solid $color-C4C4C4;
     }
     &:checked {
-      border: 1px solid #C4C4C4;
+      border: 1px solid $color-C4C4C4;
     }
   }
   .appraisal {
@@ -161,8 +159,8 @@
     min-height: 90px;
   }
   .click {
-    background: #FFFFFF;
-    border: 1px dashed #E0E0DE;
+    background: $baseColor;
+    border: 1px dashed $color-E0E0DE;
     box-sizing: border-box;
     border-radius: 4px;
     margin-top: 30px;
@@ -191,23 +189,23 @@
       text-align: center;
     }
     .cancel {
-      color: #3D3D3C;
-      background: #FFFFFF;
-      border: 1px solid #CDCDCD;
+      color: $color-3D3D3C;
+      background: $baseColor;
+      border: 1px solid $color-CDCDCD;
       &:hover {
-        color: #AB064E;
-        border: 1px solid #AB064E;
+        color: $burgundy;
+        border: 1px solid $burgundy;
       }
     }
     .send {
-      color: #FFFFFF;
-      background: #8F8F8F;
-      border: 1px solid #8F8F8F;
+      color: $baseColor;
+      background: $color-8F8F8F;
+      border: 1px solid $color-8F8F8F;
       outline: none;
       margin-left: 6px;
       &:hover {
-        background: #AB064E;
-        border: 1px solid #AB064E;
+        background: $burgundy;
+        border: 1px solid $burgundy;
       }
     }
   }
@@ -280,8 +278,8 @@
       top: 0;
       width: 14px;
       height: 14px;
-      border: 1px solid #C4C4C4;
-      background-color: #ffffff;
+      border: 1px solid $color-C4C4C4;
+      background-color: $baseColor;
     }
 
     input[type="radio"]:checked + label:after,
@@ -300,8 +298,8 @@
       top: 4px;
       width: 7px;
       height: 3px;
-      border-left: 2px solid #555555;
-      border-bottom: 2px solid #555555;
+      border-left: 2px solid $color-555555;
+      border-bottom: 2px solid $color-555555;
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
@@ -321,7 +319,7 @@
     .wrapper-title {
       border-top: none;
       cursor: none;
-      border-bottom: 1px solid #D9D9D9;
+      border-bottom: 1px solid $color-D9D9D9;
     }
   }
   @media (max-width: 1023px) {

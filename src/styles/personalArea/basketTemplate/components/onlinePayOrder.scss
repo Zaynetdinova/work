@@ -1,3 +1,4 @@
+@import "../../../color";
 .Online-pay-order {
   margin-bottom: 195px;
   font-size: 14px;
@@ -38,7 +39,7 @@
         margin: 25px 0;
       }
       .text-attention {
-        color: #AB064E;
+        color: $burgundy;
         font-weight: bold;
       }
     }
@@ -75,7 +76,7 @@
           }
         }
         .button-pay {
-          background: #AB064E;
+          background: $burgundy;
           border-radius: 4px;
           font-size: 15px;
           line-height: 17px;

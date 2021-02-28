@@ -1,3 +1,4 @@
+@import "../../color";
 .ChildrenSidebar {
   .point {
     padding: 10.5px 10px 10.5px 13px;
@@ -24,7 +25,7 @@
   .line-children {
     border: none;
     height: 2px;
-    background: #F3F2F0;
+    background: $color-F3F2F0;
   }
   .wrap-span {
     display: flex;
@@ -51,13 +52,13 @@
 
     text-transform: uppercase;
 
-    color: #555555;
+    color: $color-555555;
   }
   .month {
 
     font-size: 11px;
     line-height: 140%;
-    color: #777777;
+    color: $color-777777;
   }
 
   .points {

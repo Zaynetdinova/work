@@ -1,3 +1,4 @@
+@import "../../color";
 .basket-page {
     .desktop {
       display: block;
@@ -118,7 +119,7 @@
                 display: flex;
                 margin-bottom: 2px;
                 .sale-sum {
-                  color: #AB064E;
+                  color: $burgundy;
                   font-size: 12px;
                   line-height: 13px;
                   margin-left: 5px;
@@ -162,14 +163,14 @@
       background: #FFFFFF;
       border: 1px solid #CDCDCD;
       &:hover {
-        color: #AB064E;
-        border: 1px solid #AB064E;
+        color: $burgundy;
+        border: 1px solid $burgundy;
       }
     }
     .arrange-button {
       color: #FFFFFF;
-      background: #AB064E;
-      border: 1px solid #AB064E;
+      background: $burgundy;
+      border: 1px solid $burgundy;
       outline: none;
       margin-left: 6px;
       &:hover {

@@ -39,10 +39,8 @@ export function cardProductPageTemplate(
 						<div class="right-wrap">
 							<div class="wrapper-button-new">
 								${buttonProduct('Новинка')}
-							</div>
-														
+							</div>						
 							${star()}
-							
 						</div>
 						
 						${favorites()}
@@ -57,13 +55,12 @@ export function cardProductPageTemplate(
 					
 					<div class="info">
 						<div class="info-1">${infoProduct(testInfo)}</div>
-						
 						<div class="wrapper-right-info">
 							<div class="social">${socialProduct(socialNetworks)}</div>
 							<div class="buttonAnotherGoods">Другие товары этого бренда</div>
 						</div>
-						
 					</div>
+					
 					<div class="wrapper-another-color">
 						${anotherColor(testColor)}
 					</div>

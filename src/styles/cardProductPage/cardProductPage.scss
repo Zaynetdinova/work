@@ -1,3 +1,4 @@
+@import "../color";
 .Card-product-page {
   @import "components/viewPhotosBlock";
   @import "./components/product-description";
@@ -55,7 +56,7 @@
       .auxiliary-block {
         display: table;
         width: 15px;
-        background: #ffffff;
+        background: $baseColor;
       }
     }
     /* хром, сафари */

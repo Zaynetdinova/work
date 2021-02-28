@@ -1,3 +1,4 @@
+@import "../color";
 .Icon-img {
   display: grid;
   grid-template: repeat(auto-fit, minmax(70px, 1fr)) / repeat(auto-fit, minmax(55px, 1fr));
@@ -14,12 +15,12 @@
     cursor: pointer;
     &:hover {
       .title {
-        color: #AB064E;
+        color: $burgundy;
       }
     }
     &:last-child {
       .title {
-        color: #AB064E;
+        color: $burgundy;
       }
     }
 
@@ -28,7 +29,7 @@
       font-size: 9px;
       line-height: 10px;
       text-transform: uppercase;
-      color: #555555;
+      color: $color-555555;
       margin-top: 12px;
     }
   }

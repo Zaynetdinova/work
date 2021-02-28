@@ -10,7 +10,7 @@ $widthCardImage: 87px;
   border: 1px solid transparent;
 
   &:hover {
-    border: 1px solid #555555;
+    border: 1px solid $color-555555;
   }
 
   .card-banner-wrapper {
@@ -37,7 +37,7 @@ $widthCardImage: 87px;
   }
 
   .info {
-    background: #FFFFFF;
+    background: $baseColor;
     padding: 19px;
     position: relative;
     margin: 0;
@@ -80,7 +80,7 @@ $widthCardImage: 87px;
       position: fixed;
       width: 100%;
       height: 100%;
-      background: #000000;
+      background: $black;
       opacity: .5;
       top: 0;
       bottom: 0;

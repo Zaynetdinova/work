@@ -1,10 +1,11 @@
+@import "../color";
 .anotherColor {
   .wrapper-title-dots {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid $color-D9D9D9;
   }
   .title {
     font-weight: bold;
@@ -15,7 +16,7 @@
   img {
     cursor: pointer;
     &.active-color {
-      outline: 3px solid #AB064E;
+      outline: 3px solid $burgundy;
       outline-offset: -3px;
     }
   }

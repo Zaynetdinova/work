@@ -1,3 +1,4 @@
+@import '../../color';
 .dop-info {
   .dop-info-items {
     display: flex;
@@ -11,7 +12,7 @@
     }
   }
   .common-dop-info {
-    border-bottom: 1px dotted #777777;
+    border-bottom: 1px dotted $color-777777;
     padding: 10px 0;
     .dop-info-inform,
     .dop-info-title {
@@ -29,10 +30,10 @@
   &.show-info {
     .dop-info-items {
       display: flex;
-      border-bottom: 1px solid #D9D9D9;
+      border-bottom: 1px solid $color-D9D9D9;
     }
     .title-product-page {
-      border-bottom: 1px solid #AB064E;
+      border-bottom: 1px solid $burgundy;
       .arrow {
         transform: rotate(-90deg);
       }
@@ -43,7 +44,7 @@
       display: none;
     }
     .title-product-page {
-      border-bottom: 1px solid #D9D9D9;
+      border-bottom: 1px solid $color-D9D9D9;
     }
   }
   @media (max-width: 1023px) {

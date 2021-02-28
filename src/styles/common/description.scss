@@ -1,3 +1,4 @@
+@import "../color";
 .description-module {
   display: block;
   &.show-info {
@@ -5,7 +6,7 @@
       display: block;
     }
     .title-product-page {
-      border-bottom: 1px solid #AB064E;
+      border-bottom: 1px solid $burgundy;
       .arrow {
         transform: rotate(-90deg);
       }

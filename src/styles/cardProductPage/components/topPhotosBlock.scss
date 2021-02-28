@@ -1,3 +1,4 @@
+@import "../../color";
 .view-big-photos-block {
   width: 462px;
   height: 2799px;
@@ -11,7 +12,7 @@
     }
 
     &:hover {
-      border: .5px solid #555555;
+      border: .5px solid $color-555555;
       .main-img {
         opacity: 0;
       }
