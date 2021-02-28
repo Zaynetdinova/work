@@ -10,17 +10,17 @@
       height: auto;
       width: 100%;
     }
+  }
 
-    &:hover {
-      border: .5px solid $color-555555;
-      .main-img {
-        opacity: 0;
-      }
+  .test-move:hover {
+    border: .5px solid $color-555555;
+    .main-img {
+      opacity: 0;
+    }
 
-      .zoom-img-wrapper {
-        opacity: 1;
-        cursor: zoom-in;
-      }
+    .zoom-img-wrapper {
+      opacity: 1;
+      cursor: zoom-in;
     }
   }
 

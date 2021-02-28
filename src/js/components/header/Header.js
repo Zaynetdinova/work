@@ -16,13 +16,14 @@ export class Header extends Component {
   }
 
   afterInitComponent() {
+    console.log('super')
     this.header = headerStorage.headerFunctions()
     this.headerMenu = headerStorage.headerMenu()
     this.headerStateRegulation = headerStorage.headerStateRegulation()
+    this.headerMenu.menuClose()
   }
 
   onClick(e) {
-
     if(e.target.closest('article')) {
       const element = e.target.closest('article');
 

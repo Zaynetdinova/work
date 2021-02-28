@@ -17,8 +17,8 @@ export function viewPhotosBlockPopup() {
 		</section>
 		
 		<section id="view-big-photos-block-swiper-popup-js" class="swiper-container view-big-photos-block">
-			<div class="swiper-wrapper">
-				${photos()}
+			<div id="zoom-photo-js" class="swiper-wrapper">
+				${photosBig(dataPhotos)}
 			</div>
 						
 			${buttonPhotos('prev')}
@@ -48,3 +48,42 @@ function photos() {
 	<img src="${testBig1}" class="swiper-slide img-slide">
 	`
 }
+
+function photosBig(data) {
+  return data.map((photo) => {
+    return `
+		<div data-test-img-slide  class="swiper-slide img-slide">
+		
+			<img  src="${photo.original}" class="main-img">
+		
+			
+			<div data-zoom-js class="zoom-img-wrapper">
+				<img class="zoom-img-js" src="${photo.original}">
+			</div>
+		</div>
+		`
+  }).join('')
+}
+
+const dataPhotos = [
+  {
+    original: testBig1,
+    compressedImg: testBig1,
+  },
+  {
+    original: testBig2,
+    compressedImg: testBig2,
+  },
+  {
+    original: testBig3,
+    compressedImg: testBig3,
+  },
+  {
+    original: testBig4,
+    compressedImg: testBig4,
+  },
+  {
+    original: testBig1,
+    compressedImg: testBig1,
+  }
+]

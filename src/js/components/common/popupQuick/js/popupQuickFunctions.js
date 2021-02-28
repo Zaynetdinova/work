@@ -2,6 +2,7 @@ import {popupQuick} from '../popupQuick'
 import Swiper from 'swiper'
 import {ChangeSizeCount} from '../../js/changeSizeCount'
 import {ChangeFavoritesProduct} from '../../../../core/utils/utils'
+import {ViewPhotoZoom} from '../../../../core/utils/viewPhotoZoom'
 
 export class PopupQuick {
 	constructor() {
@@ -17,6 +18,7 @@ export class PopupQuick {
 		this.$like = null
 		this.$rootPopup = null
 		this.sliders = new PopupInitialSliders()
+
 	}
 
 	init() {
@@ -28,7 +30,6 @@ export class PopupQuick {
 
 	openQuickView(event) {
 		event.preventDefault()
-		console.log(event.target)
 		this.$body.insertAdjacentHTML('afterbegin', popupQuick());
 		this.findAllElementsPopup()
 		this.initialEvent()
@@ -54,6 +55,8 @@ export class PopupQuick {
 		this.$closeButton.addEventListener('click',() => this.closePopupQuick())
 		this.$colorCard.addEventListener('click', (event) => this.anotherColorButton(event))
 		this.$countSize.addEventListener('click', (event) => this.size.init(event))
+    new ViewPhotoZoom()
+
 	}
 
 	positionPopup() {
@@ -89,41 +92,54 @@ export class PopupQuick {
 
 class PopupInitialSliders {
 	constructor() {
-		this.colorOptions = {
-			observer: true,
-			observeParents: true,
-			slidesPerView: 6,
-			spaceBetween: 5,
-		}
 
-		this.verticalPhotoOptions = {
-			slidesPerView: 4,
-			direction: 'vertical',
-			observer: true,
-			observeParents: true,
-			spaceBetween: 5,
-			navigation: {
-				nextEl: '.swiper-button-next-main',
-				prevEl: '.swiper-button-prev-main',
-			},
-		}
-
-		this.verticalBigPhotoOptions = {
-			slidesPerView: 1,
-			direction: 'vertical',
-			observer: true,
-			observeParents: true,
-			navigation: {
-				nextEl: '.swiper-button-next-main',
-				prevEl: '.swiper-button-prev-main',
-			},
-		}
 	}
 
 	init() {
+    this.colorOptions = {
+      observer: true,
+      observeParents: true,
+      slidesPerView: 6,
+      spaceBetween: 5,
+    }
+
+    this.verticalPhotoOptions = {
+      slidesPerView: 4,
+      direction: 'vertical',
+      observer: true,
+      observeParents: true,
+      spaceBetween: 5,
+      navigation: {
+        nextEl: '.swiper-button-next-main',
+        prevEl: '.swiper-button-prev-main',
+      },
+      on: {
+        click: function(e) {
+          if(this.clickedSlide) {
+            const slideNumber = this.clickedSlide.getAttribute('aria-label').charAt(0)
+            const a = +slideNumber - 1
+            console.log(a)
+            topSlider.slideTo(a)
+          }
+        }
+      }
+    }
+
+    this.verticalBigPhotoOptions = {
+      slidesPerView: 1,
+      direction: 'vertical',
+      observer: true,
+      observeParents: true,
+      navigation: {
+        nextEl: '.swiper-button-next-main',
+        prevEl: '.swiper-button-prev-main',
+      },
+    }
+
+    const topSlider=  new Swiper('#view-big-photos-block-swiper-popup-js', this.verticalBigPhotoOptions)
+
 		new Swiper('#another-color-popup-js', this.colorOptions)
 		new Swiper('#view-photos-block-swiper-popup-js', this.verticalPhotoOptions)
-		new Swiper('#view-big-photos-block-swiper-popup-js', this.verticalBigPhotoOptions)
 	}
 }
 

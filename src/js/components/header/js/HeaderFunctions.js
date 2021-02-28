@@ -132,7 +132,7 @@ export class HeaderMenu {
 
 	menuOpen() {
 		if(this.buttonMenu.classList.contains('show')) {
-			this.classListRemove()
+			this.menuClose()
 		} else {
 			this.classListAdd()
 		}

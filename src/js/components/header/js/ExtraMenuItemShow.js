@@ -22,7 +22,6 @@ export class ExtraMenuItemShow {
 
 
 		if(el != undefined) {
-		  console.log(el.id, '3')
 			this.defineCategory(el.id)
 		} else {
 			// подумать над логикой
