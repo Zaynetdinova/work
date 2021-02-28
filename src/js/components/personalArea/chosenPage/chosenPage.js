@@ -1,5 +1,6 @@
-import {Component} from "../../../core/Component";
-import {chosenPageTemplate} from "./chosenPage.template";
+import {Component} from '../../../core/Component'
+import {chosenPageTemplate} from './chosenPage.template'
+import {testDataCatalog} from '../../../../testData/testDataCatalog'
 
 export class ChosenPage extends Component {
     static className = 'Chosen-page'
@@ -7,7 +8,7 @@ export class ChosenPage extends Component {
     constructor($root) {
         super($root, {
             name: 'ChosenPage',
-            listeners: ['click']
+            listeners: []
         });
         this.link = [
             {
@@ -17,6 +18,6 @@ export class ChosenPage extends Component {
         ]
     }
     toHTML() {
-        return chosenPageTemplate(this.link)
+        return chosenPageTemplate(this.link, testDataCatalog.goods)
     }
 }

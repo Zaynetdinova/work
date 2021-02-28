@@ -53,11 +53,14 @@ export class CommonCard {
 		let elem = event.target.closest('[data-common-card-js]');
 		const id = elem.dataset.id
 		const card = document.querySelector(`#${id}`)
+    const parent = card.closest('[data-parent-common-cards-js]')
 
-		const parent = card.closest('[data-parent-common-cards-js]')
 		card.classList.remove('additional-information-open')
 		card.classList.remove('additional-information-open-left')
-		parent.classList.remove('Com-super-z-index')
+
+    if(parent) {
+      parent.classList.remove('Com-super-z-index')
+    }
 	}
 
 	windowResize() {
@@ -86,13 +89,13 @@ export class CommonCard {
 		if(comWidth/2 < cardСoordinate.left) {
       this.onResizeCard(card, true)
 			card.classList.add('additional-information-open-left')
-			parent.classList.add('Com-super-z-index')
-
 		} else {
       this.onResizeCard(card)
 			card.classList.add('additional-information-open')
-			parent.classList.add('Com-super-z-index')
 		}
+	  if(parent) {
+      parent.classList.add('Com-super-z-index')
+    }
 	}
 
 	onResizeCard(card, left) {
