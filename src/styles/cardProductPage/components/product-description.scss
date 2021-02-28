@@ -1,3 +1,4 @@
+@import "../../color";
 .product-description {
   @import "src/styles/common/price";
   padding-top: 47px;
@@ -13,7 +14,7 @@
       display: flex;
       .wrapper-button-new {
         margin-right: 12px;
-        .ButtonProduct {
+        .Button-product {
           text-decoration-line: none;
         }
       }
@@ -30,15 +31,15 @@
         margin-top: 20px;
         cursor: pointer;
         max-width: 240px;
-        background: #8F8F8F;
+        background: $color-8F8F8F;
         border-radius: 4px;
         font-size: 15px;
         line-height: 17px;
         text-align: center;
-        color: #FFFFFF;
+        color: $baseColor;
         padding: 10px 0;
         &:hover {
-          background: #AB064E;
+          background: $burgundy;
         }
       }
     }

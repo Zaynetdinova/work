@@ -1,3 +1,4 @@
+@import "../../color";
 .wrap-checkbox {
   display: flex;
   justify-content: center;
@@ -8,7 +9,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: $baseColor;
     cursor: pointer;
   }
   .text-checkbox-forMe {
@@ -44,7 +45,7 @@
     background: rgba(255, 255, 255, 0.7);
   }
   input[type="checkbox"]:checked + label:before {
-    background: #FFFFFF;
+    background: $baseColor;
   }
 
 
@@ -64,8 +65,8 @@
     top: 4px;
     width: 7px;
     height: 3px;
-    border-left: 2px solid #555555;
-    border-bottom: 2px solid #555555;
+    border-left: 2px solid $color-555555;
+    border-bottom: 2px solid $color-555555;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -83,7 +84,7 @@
   &:hover {
     input[type="checkbox"]:checked + label:before,
     input[type="checkbox"]:not(:checked) + label:before {
-      background: #FFFFFF;
+      background: $baseColor;
     }
   }
   @media (max-width: 890px) {

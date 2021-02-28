@@ -1,3 +1,4 @@
+@import "../../color";
 .product-description {
   max-width: 528px;
   .first-line {
@@ -45,7 +46,7 @@
           font-size: 15px;
           line-height: 17px;
           &:hover {
-            background: #AB064E;
+            background: $burgundy;
           }
         }
       }

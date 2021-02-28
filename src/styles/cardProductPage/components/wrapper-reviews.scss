@@ -1,8 +1,9 @@
+@import "../../color";
 .wrapper-reviews {
   padding-bottom: 20px;
   .nameClient {
     display: flex;
-    border-bottom: 2px dotted #777777;
+    border-bottom: 2px dotted $color-777777;
     padding-bottom: 10px;
     .name,
     .data {
@@ -11,11 +12,11 @@
     }
     .name {
       font-weight: bold;
-      color: #3D3D3C;
+      color: $color-3D3D3C;
       margin-right: 7px;
     }
     .data {
-      color: #777777;
+      color: $color-3D3D3C;
     }
   }
   .wrap {
@@ -35,17 +36,17 @@
     font-size: 15px;
     line-height: 140%;
     .size {
-      color: #3D3D3C;
+      color: $color-3D3D3C;
       margin-right: 5px;
     }
     .text {
-      color: #009295;
+      color: $color-009295;
     }
   }
   .description {
     font-size: 14px;
     line-height: 140%;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
     margin-top: 15px;
   }
   .photo {

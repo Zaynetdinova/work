@@ -1,3 +1,4 @@
+@import "../color";
 .titleWrapper {
   padding: 0 0 20px;
   display: flex;
@@ -13,7 +14,7 @@
   .value {
     font-size: 12px;
     line-height: 13px;
-    color: #777777;
+    color: $color-777777;
   }
   @media (max-width: 1024px) {
     padding: 0 15px 14px 15px;

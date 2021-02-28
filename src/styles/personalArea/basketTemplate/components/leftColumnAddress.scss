@@ -1,3 +1,4 @@
+@import "../../../color";
 .left-column-address {
   .title-img {
     display: flex;
@@ -47,9 +48,9 @@
     height: 36px;
     margin-left: 20px;
     &:hover {
-      background: #AB064E;
+      background: $burgundy;
       color: #FFFFFF;
-      border: 1px solid #AB064E;
+      border: 1px solid $burgundy;
     }
   }
 

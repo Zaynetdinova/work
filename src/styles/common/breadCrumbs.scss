@@ -1,3 +1,4 @@
+@import "../color";
 .bread-crumbs {
   font-size: 12px;
   line-height: 14px;
@@ -7,9 +8,9 @@
     text-decoration: none;
   }
   .home a {
-    color: #777777;
+    color: $color-777777;
     &:hover {
-      color: #3D3D3C;
+      color: $color-3D3D3C;
     }
   }
   .line-span {
@@ -17,7 +18,7 @@
     margin-left: 4px;
   }
   .title a {
-    color: #3D3D3C;
+    color: $color-3D3D3C;
   }
   @media (max-width: 1024px) {
     padding: 10px 15px;

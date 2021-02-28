@@ -1,38 +1,52 @@
 $baseColor: #FFFFFF;
+$black: #000000;
+$color-555555: #555555;
+$color-666666: #666666;
+$color-777777: #777777;
+$color-3D3D3C: #3D3D3C;
+$color-D9D9D9: #D9D9D9;
+$color-B2B2B2: #B2B2B2;
+$color-BDBDBD: #BDBDBD;
+$color-8F8F8F: #8F8F8F;
+$color-E0E0DE: #E0E0DE;
+$color-CCCCCC: #CCCCCC;
+$color-C4C4C4: #C4C4C4;
+$color-C8C8C8: #C8C8C8;
+$color-CDCDCD: #CDCDCD;
+$color-F3F2F0: #F3F2F0;
+$color-F9F9F9: #F9F9F9;
+$color-FDFDFD: #FDFDFD;
+$color-009295: #009295;
+$burgundy: #AB064E;
+$color-89028D: #89028D;
+$color-E7003E: #E7003E;
 
+//filter-choice
+$multi: linear-gradient(90deg, #FF0000 6.25%, #FE8900 18.68%, #E4F86E 31.14%, #39D63F 43.6%, #49DCE6 56.34%, #4DB9E5 69.22%, #5574E4 81.45%, #D92BA8 93.75%);
+$mint: #3EB489;
+$purple: #800080;
+$green: #008000;
+$grey: #808080;
+$beige: #F5F5DC;
 //sidebar
 $bg-sidebar: #F3F2F0;
 $sidebar-color: #555555;
-
 $bg-search:  #FDFDFD;
 //Blocks
 $bg-Blocks: #F3F2F0;
 $color-Blocks: #3D3D3C;
 $bg-phone-Blocks: #f9f9f9;
-
 //footer
 $bg-footer: #F3F2F0;
 $bg-down: #3D3D3C;
 $color-footer: #555555;
-$color-footer-hover: #AB064E;
 
 //popupDefaultTemplate
 $bg-popup-default: linear-gradient(90.08deg, rgba(113, 0, 103, 0.95) 3.72%, rgba(207, 9, 62, 0.95) 122.63%);
-
-//ButtonSale
-$bg-button-sale: #009295;
 
 //informationPage
 $color-link-information: #AB064E;
 $color-title-table-size: #AB064E;
 
-//cardSize
-$color-card-size: #777777;
-$color-card-number: #3D3D3C;
-$color-card-number-active: #FFFFFF;
 
-//additional-information-card
-$color-additional-information: #555555;
 
-//catalog
-$bg-mobile-filter-catalog: #fff;

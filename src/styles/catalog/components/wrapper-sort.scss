@@ -1,3 +1,4 @@
+@import "../../color";
 .wrapper-sort {
   display: none;
   justify-content: space-between;
@@ -8,7 +9,7 @@
 
   .button-popular,
   .button-quantity {
-    background-color: #F3F2F0;
+    background-color: $color-F3F2F0;
     width: 50%;
 
   }

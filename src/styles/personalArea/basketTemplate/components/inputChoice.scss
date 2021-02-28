@@ -1,3 +1,4 @@
+@import "../../../color";
 .choice {
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@
       content: '';
       position: absolute;
       left: 2px; top: 2px;
-      background: #AB064E;
+      background: $burgundy;
       width: 8px; height: 8px;
       border-radius: 50%;
     }

@@ -1,3 +1,4 @@
+@import "../../color";
 .number {
   display: flex;
   align-items: center;
@@ -22,8 +23,8 @@
 
   .button-prev,
   .button-next {
-    background: #FFFFFF;
-    border: 1px solid #CDCDCD;
+    background: $baseColor;
+    border: 1px solid $color-CDCDCD;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -48,8 +49,8 @@
     list-style: none;
     font-size: 14px;
     line-height: 16px;
-    :hover {
-      color: #AB064E;
+    &:hover {
+      color: $burgundy;
       text-decoration: underline;
     }
     &:last-child {
@@ -57,7 +58,7 @@
     }
 
     .active-number {
-      color: #AB064E;
+      color: $burgundy;
     }
   }
   @media (max-width: 1130px) {

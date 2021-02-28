@@ -1,7 +1,8 @@
+@import "../../color";
 .view-photos-block {
   width: 124px;
   height: 695px;
-  background: #555555;
+  background: $color-555555;
   padding: 5px 6px;
 
   .button {

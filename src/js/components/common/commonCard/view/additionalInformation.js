@@ -14,12 +14,12 @@ export function additionalInformation(title, description, img, index, sizeElemen
 				
 				<div class="size-wrapper">
 				    ${size(sizeElements)}
-        </div>
-					<div class="block-under-image"></div>
+        		</div>
+					<div data-block-under-image-js class="block-under-image"></div>
 				</div>
 			
-				<div class='images'>
-					<div class="swiper-container photos-block-common-block photos-block-common-block-js">
+				<div data-images-js class='images'>
+					<div data-photos-block-js class="swiper-container photos-block-common-block photos-block-common-block-js">
 						<div class="swiper-wrapper">
 							${secondaryImg.map((img) => {
 								return `

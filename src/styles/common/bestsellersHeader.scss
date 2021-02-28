@@ -31,12 +31,12 @@
   }
 
   .categories:hover {
-    color: #AB064E;
+    color: $burgundy;
   }
 
   .line {
     width: 16px;
-    border-bottom: 2px solid #C8C8C8;
+    border-bottom: 2px solid $color-C8C8C8;
     transform: rotate(90deg);
     margin: 0 8px 0 8px;
   }
@@ -46,11 +46,11 @@
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 0.05em;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
     text-transform: uppercase;
     cursor: pointer;
     &:hover {
-      color: #AB064E;
+      color: $burgundy;
     }
   }
 }

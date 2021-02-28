@@ -1,10 +1,11 @@
+@import "../color";
 .infoProduct {
   margin-bottom: 1px;
   .infoType {
     font-weight: bold;
     font-size: 14px;
     line-height: 140%;
-    color: #3D3D3C;
+    color: $color-3D3D3C;
   }
   .infoResult {
     font-weight: normal;

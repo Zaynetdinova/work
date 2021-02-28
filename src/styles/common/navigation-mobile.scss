@@ -1,11 +1,12 @@
+@import "../color";
 .navigation-mobile {
   display: flex;
   width: 100%;
   justify-content: space-between;
   .next-info,
   .prev-info {
-    background: #FFFFFF;
-    border: 1px solid #CDCDCD;
+    background: $baseColor;
+    border: 1px solid $color-CDCDCD;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -43,9 +44,9 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    border-top: 1px solid #CDCDCD;
-    border-bottom: 1px solid #CDCDCD;
+    border-top: 1px solid $color-CDCDCD;
+    border-bottom: 1px solid $color-CDCDCD;
     width: 100%;
-    background: #FFFFFF;
+    background: $baseColor;
   }
 }

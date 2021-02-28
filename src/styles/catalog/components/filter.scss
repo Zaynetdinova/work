@@ -1,5 +1,6 @@
+@import "../../color";
 .filter {
   @import "wrapper-title";
   @import "material";
-  color: #555555;
+  color: $color-555555;
 }

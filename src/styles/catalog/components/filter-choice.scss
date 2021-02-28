@@ -1,13 +1,14 @@
+@import "../../color";
 .checkbox-choice {
   padding: 10px 10px 0 13px;
-  color: #777777;
+  color: $color-777777;
 
   .checkbox {
     margin-right: 9px;
   }
 
   .line {
-    border-bottom: 2px dotted #D9D9D9;
+    border-bottom: 2px dotted $color-D9D9D9;
     padding-top: 7px;
   }
 
@@ -17,39 +18,39 @@
   }
 
   .color {
-    border: 1px solid #C4C4C4;
+    border: 1px solid $color-C4C4C4;
     width: 16px;
     height: 16px;
     margin-right: 10px;
   }
 
   .black-and-white {
-    border-bottom: 15px solid #3D3D3C;
-    border-left: 15px solid #f9f9f9;
+    border-bottom: 15px solid $color-3D3D3C;
+    border-left: 15px solid $color-F9F9F9;
   }
 
   .beige {
-    background: #F5F5DC;
+    background: $beige;
   }
 
   .grey {
-    background: #808080;
+    background: $grey;
   }
 
   .green {
-    background: #008000;
+    background: $green;
   }
 
   .purple {
-    background: #800080;
+    background: $purple;
   }
 
   .mint {
-    background: #3EB489;
+    background: $mint;
   }
 
   .multi {
-    background: linear-gradient(90deg, #FF0000 6.25%, #FE8900 18.68%, #E4F86E 31.14%, #39D63F 43.6%, #49DCE6 56.34%, #4DB9E5 69.22%, #5574E4 81.45%, #D92BA8 93.75%);
+    background: $multi;
   }
 
   input[type="checkbox"]:checked,
@@ -75,8 +76,8 @@
     top: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid #C4C4C4;
-    background-color: #ffffff;
+    border: 1px solid $color-C4C4C4;
+    background-color: $baseColor;
   }
 
   input[type="checkbox"]:checked + label:after,
@@ -95,8 +96,8 @@
     top: 4px;
     width: 7px;
     height: 3px;
-    border-left: 2px solid #555555;
-    border-bottom: 2px solid #555555;
+    border-left: 2px solid $color-555555;
+    border-bottom: 2px solid $color-555555;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);

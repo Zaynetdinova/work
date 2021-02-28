@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrapper-Popup {
   max-width: 500px;
   margin: 76px auto;
@@ -18,9 +19,9 @@
     font-weight: bold;
     font-size: 15px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: $baseColor;
     padding-bottom: 15px;
-    border-bottom: 1px solid #F3F2F0;
+    border-bottom: 1px solid $color-F3F2F0;
     margin-top: 57px;
   }
 
@@ -28,7 +29,7 @@
     font-style: italic;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: $baseColor;
     margin-top: 15px;
     margin-bottom: 70px;
   }
@@ -42,7 +43,7 @@
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: $baseColor;
 
     .restore {
       font-style: italic;
@@ -52,7 +53,7 @@
       cursor: pointer;
 
       &:hover {
-        color: #FFFFFF;
+        color: $baseColor;
       }
     }
   }
@@ -65,7 +66,7 @@
     margin: 44px auto 44px auto;
     font-size: 13px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: $baseColor;
     text-align: center;
   }
   .sign-up {
@@ -93,7 +94,7 @@
           line-height: 100%;
           text-align: center;
           letter-spacing: 0.05em;
-          color: #FFFFFF;
+          color: $baseColor;
           text-decoration: none;
         }
       }
@@ -113,7 +114,7 @@
         margin-left: 10px;
         font-size: 13px;
         line-height: 128%;
-        color: #FFFFFF;
+        color: $baseColor;
         a {
           text-decoration-line: underline;
           font-style: italic;

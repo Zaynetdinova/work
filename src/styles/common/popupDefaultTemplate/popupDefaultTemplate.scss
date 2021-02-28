@@ -46,7 +46,7 @@
         align-items: center;
       }
       &:hover {
-        color: #FFFFFF;
+        color: $baseColor;
         .btn {
           background-image: url("../images/icons/arrow-back-white.svg");
         }

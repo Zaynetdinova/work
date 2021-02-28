@@ -1,8 +1,9 @@
+@import "../../color";
 .wrapper-title {
   display: flex;
   justify-content: space-between;
   padding: 10.5px 10px 10.5px 13px;
-  background: #F3F2F0;
+  background: $color-F3F2F0;
 
   .title {
     font-weight: bold;
@@ -26,7 +27,7 @@
       line-height: 17px;
       letter-spacing: 0.05em;
       text-transform: capitalize;
-      color: #555555;
+      color: $color-555555;
     }
   }
   .cancel {

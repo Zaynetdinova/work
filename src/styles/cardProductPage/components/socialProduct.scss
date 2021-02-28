@@ -1,8 +1,9 @@
+@import "../../color";
 .socialProduct {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid #C8C8C8;
+  border-left: 1px solid $color-C8C8C8;
   min-width: 40px;
   height: 17px;
   .vk, .fb, .tw, .pen, .mail, .od {
@@ -58,6 +59,6 @@
     }
   }
   &:last-child {
-    border-right: 1px solid #C8C8C8;
+    border-right: 1px solid $color-C8C8C8;
   }
 }

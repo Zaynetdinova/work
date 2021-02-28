@@ -1,3 +1,4 @@
+@import "../../color";
 .titleWrapper {
   padding: 0;
   .button-filter {
@@ -5,10 +6,10 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    border-bottom: 0.5px dashed #555555;
+    border-bottom: 0.5px dashed $color-555555;
     letter-spacing: 0.05em;
     text-transform: capitalize;
-    color: #555555;
+    color: $color-555555;
     display: none;
     cursor: pointer;
   }

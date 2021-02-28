@@ -51,7 +51,7 @@
     color: $color-footer;
 
     &:hover {
-      color: $color-footer-hover;
+      color: $burgundy;
     }
   }
 
@@ -74,11 +74,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left: 1px solid #C8C8C8;
+      border-left: 1px solid $color-C8C8C8;
       min-width: 40px;
       height: 17px;
       &:last-child {
-        border-right: 1px solid #C8C8C8;
+        border-right: 1px solid $color-C8C8C8;
       }
     }
     .vk {
@@ -140,7 +140,7 @@
         text-decoration-line: underline;
         color: $color-footer;
         &:hover {
-          color: $color-footer-hover;
+          color: $burgundy;
         }
       }
       .imgPhone {
@@ -167,7 +167,7 @@
     color: $color-footer;
 
     &:hover {
-      color: $color-footer-hover;
+      color: $burgundy;
     }
   }
   .mode {
@@ -180,7 +180,7 @@
     font-weight: normal;
   }
   .line-footer {
-    border-left: 1px solid #555555;
+    border-left: 1px solid $color-555555;
     margin-left: 4px;
     margin-right: 4px;
   }
@@ -203,7 +203,7 @@
 
     color: $color-footer;
     &:hover {
-      color: $color-footer-hover;
+      color: $burgundy;
     }
   }
   .bg-down {

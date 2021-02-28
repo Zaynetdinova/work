@@ -1,3 +1,4 @@
+@import "../../color";
 .navCatalog {
   display: flex;
   .nav-text {
@@ -6,15 +7,15 @@
     line-height: 16px;
     color: #3D3D3C;
     text-decoration: none;
-    border-bottom: 0.5px dashed #555555;
+    border-bottom: 0.5px dashed $color-555555;
     cursor: pointer;
     &:hover {
-      color: #AB064E;
-      border-bottom: 0.5px dashed #AB064E;
+      color: $burgundy;
+      border-bottom: 0.5px dashed $burgundy;
     }
   }
   .active-number {
     color: #AB064E;
-    border-bottom: 0.5px dashed #AB064E;
+    border-bottom: 0.5px dashed $burgundy;
   }
 }

@@ -1,3 +1,4 @@
+@import "../color";
 .Sum-money-sale {
   margin-bottom: 15px;
   font-size: 14px;
@@ -9,7 +10,7 @@
 
   .money-sum  {
     font-weight: bold;
-    color: #AB064E;
+    color: $burgundy;
     white-space: nowrap;
     display: inline-block;
   }
@@ -32,7 +33,7 @@
 
   &:first-child {
     .money-sum {
-      color: #3D3D3C;
+      color: $color-3D3D3C;
     }
   }
 
@@ -40,7 +41,7 @@
     position: relative;
     display: inline-flex;
     b {
-      background: #F3F2F0;
+      background: $color-F3F2F0;
       font-weight: 400;
       position: relative;
       z-index: 1;

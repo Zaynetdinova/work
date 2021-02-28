@@ -20,7 +20,7 @@ $widthCardImage: 87px;
     display: none;
   }
   .text-size-wrapper {
-    border: 1px solid $color-additional-information;
+    border: 1px solid $color-555555;
     position: absolute;
     background: #fff;
     padding: 0 19px 20px 19px;
@@ -36,11 +36,11 @@ $widthCardImage: 87px;
     .block-under-image {
       position: absolute;
       bottom: -1px;
-      background: $color-additional-information;
+      background: $color-555555;
       height: 100%;
       width: $widthCardImage;
       left: 100%;
-      border-bottom: 1px solid $color-additional-information;
+      border-bottom: 1px solid $color-555555;
     }
   }
   .images {
@@ -49,7 +49,7 @@ $widthCardImage: 87px;
     top: -1px;
     right: -$widthCardImage;
     width: $widthCardImage;
-    background: $color-additional-information;
+    background: $color-555555;
     padding: 5px;
     .image {
       background-size: cover;
@@ -96,7 +96,7 @@ $widthCardImage: 87px;
   }
 }
 &.additional-information-open {
-  border: 1px solid $color-additional-information;
+  border: 1px solid $color-555555;
   .quick-view {
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@ $widthCardImage: 87px;
   }
 }
 &.additional-information-open-left {
-  border: 1px solid $color-additional-information;
+  border: 1px solid $color-555555;
   .quick-view {
     display: flex;
     justify-content: center;

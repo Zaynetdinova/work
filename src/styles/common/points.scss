@@ -5,7 +5,7 @@
   min-width: 223px;
   background: $bg-sidebar;
   overflow-y: auto;
-  color: #555555;
+  color: $color-555555;
   .points-header {
     padding-top: 26px;
   }
@@ -24,7 +24,7 @@
       display: block;
       .category {
         line-height: 40px;
-        border-bottom: 1px dashed #D9D9D9;
+        border-bottom: 1px dashed $color-D9D9D9;
       }
     }
     .plus {
@@ -48,7 +48,7 @@
     cursor: pointer;
     &:hover {
       .title {
-        color: #AB064E;
+        color: $burgundy;
       }
     }
   }
@@ -67,7 +67,7 @@
   .name {
     display: flex;
     align-items: center;
-    color: #555555;
+    color: $color-555555;
   }
   .plus {
     display: block;
@@ -92,10 +92,10 @@
     }
   }
   .line {
-    border-bottom: 2px dotted #D9D9D9;
+    border-bottom: 2px dotted $color-D9D9D9;
   }
   a {
-    color: #555555;
+    color: $color-555555;
     text-decoration: none;
   }
   .choice {
@@ -112,7 +112,7 @@
       display: none;
     }
     &:hover {
-      color: #AB064E;
+      color: $burgundy;
       cursor: pointer;
       .arrow {
         display: block;

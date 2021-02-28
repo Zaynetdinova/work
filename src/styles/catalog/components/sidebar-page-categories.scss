@@ -1,10 +1,11 @@
+@import "../../color";
 .sidebar-page-categories {
   position: absolute;
   top: 90px;
   z-index: 3;
   margin-right: 20px;
   width: 243px;
-  background: #FFFFFF;
+  background: $baseColor;
   padding: 10px 10px 36px 10px;
   display: none;
   &.show {
@@ -24,7 +25,7 @@
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.05em;
-      color: #555555;
+      color: $color-555555;
     }
   }
   .categories {

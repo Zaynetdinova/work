@@ -1,3 +1,5 @@
+@import "../../color";
+@import "../../var";
 .PopularBrand {
   -webkit-transform: translate3d(0,0,0);
   background: #f9f9f9;
@@ -74,7 +76,7 @@
       }
       .button-more-details {
         .text {
-          color: #AB064E;
+          color: $burgundy;
         }
       }
     }
