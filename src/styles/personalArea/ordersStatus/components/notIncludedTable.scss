@@ -1,3 +1,4 @@
+@import "../../../color";
 .not-included-table {
   width: 100%;
 
@@ -19,7 +20,7 @@
   }
   .auxiliary-unit {
     .line-top {
-      border-top: 2px solid #AB064E;
+      border-top: 2px solid $burgundy;
     }
   }
   .auxiliary-unit-top {
@@ -28,7 +29,7 @@
   .auxiliary-unit-bottom {
     height: 30px;
     td {
-      background-image: linear-gradient(to right, #AB064E 33%, rgba(255, 255, 255, 0) 0%);
+      background-image: linear-gradient(to right, $burgundy 33%, rgba(255, 255, 255, 0) 0%);
       background-position: bottom;
       background-size: 4px 2px;
       background-repeat: repeat-x;

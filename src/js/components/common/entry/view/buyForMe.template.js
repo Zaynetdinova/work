@@ -8,7 +8,7 @@ export function buyForMeTemplate() {
     return `
         ${titleRegistration('Регистрация')}
         <div class="wrap-title-buy">Покупаю для себя</div>
-        <form class="form-js">
+        <form class="form-js" data-buy-forMe-form-js>
             <div class="box-input">
                 <div class="wrap-input">
                     <input name="surname"  class="input-name" placeholder="Фамилия*" type="text">
@@ -35,14 +35,13 @@ export function buyForMeTemplate() {
             <div class="wrap-checkbox">
                 <input  checked class="checkbox checkbox-filter-js" type="checkbox" id="forMe"> 
                 <label for="forMe"></label>
-                <div class="text-checkbox-forMe">
+                <div data-parent-checkbox-js class="text-checkbox-forMe" id="text-checkbox-forMe-js">
                        Даю согласие на обработку персональных данных
                 </div>
             </div> 
             <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
-
+            ${popupAgreementData()}
         </form>
         ${infoTextRegistration()}
-        ${popupAgreementData()}
     `
 }

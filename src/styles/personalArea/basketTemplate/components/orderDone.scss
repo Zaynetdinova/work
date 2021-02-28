@@ -49,9 +49,9 @@
       text-decoration: none;
     }
     .main-button {
-      background: #FFFFFF;
-      color: #3D3D3C;
-      border: 1px solid #CDCDCD;
+      background: $baseColor;
+      color: $color-3D3D3C;
+      border: 1px solid $color-CDCDCD;
       margin-right: 5px;
       &:hover {
         border: 1px solid $burgundy;
@@ -60,10 +60,10 @@
     }
     .history-order-button {
       background: $burgundy;
-      color: #FFFFFF;
+      color: $baseColor;
       &:hover {
-        background: #C00A5A;
-        border: 1px solid #C00A5A;
+        background: $burgundy-hover;
+        border: 1px solid $burgundy-hover;
       }
     }
   }
@@ -93,7 +93,7 @@
       }
       .Bestsellers-header .line {
         width: 16px;
-        border-bottom: 2px solid #C8C8C8;
+        border-bottom: 2px solid $color-C8C8C8;
         transform: rotate(90deg);
         margin: 0;
       }

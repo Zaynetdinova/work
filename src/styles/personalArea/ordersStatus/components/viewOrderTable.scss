@@ -1,3 +1,4 @@
+@import "../../../color";
 .view-order-table {
   width: 100%;
   margin-bottom: 60px;
@@ -16,7 +17,7 @@
   }
   .auxiliary-unit {
     .line-top {
-      border-top: 2px solid #D9D9D9;
+      border-top: 2px solid $color-D9D9D9;
     }
   }
   .auxiliary-unit-top {

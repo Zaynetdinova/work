@@ -1,19 +1,16 @@
 @import "../../../color";
 .basketDeliveryBlock {
   @import "inputChoice";
-  background: #F3F2F0;
+  background: $color-F3F2F0;
   width: 32.362%;
   height: 346px;
   cursor: pointer;
   transition: .2s;
   border-bottom: 4px solid transparent;
 
-  &:hover {
-    background: #FFFFFF;
-    border-bottom: 4px solid $burgundy;
-  }
+  &:hover,
   &.active {
-    background: #FFFFFF;
+    background: $baseColor;
     border-bottom: 4px solid $burgundy;
   }
   .wrap {
@@ -78,7 +75,7 @@
         padding: 0 15px;
       }
       .title {
-        background: #F3F2F0;
+        background: $color-F3F2F0;
         padding: 10px 20px;
         .arrow {
           display: block;

@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrap-order-mobail {
   margin-bottom: 140px;
   .wrapper-order-name {
@@ -27,7 +28,7 @@
         line-height: 14px;
         text-decoration-line: underline;
         text-transform: capitalize;
-        color: #777777;
+        color: $color-777777;
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -61,8 +62,8 @@
             line-height: 20px;
             text-align: center;
             padding: 10px 0;
-            border-top: 2px solid #D9D9D9;
-            border-bottom: 2px solid #D9D9D9;
+            border-top: 2px solid $color-D9D9D9;
+            border-bottom: 2px solid $color-D9D9D9;
           }
           .sum {
             width: 100%;
@@ -70,7 +71,7 @@
             line-height: 15px;
             text-align: center;
             padding: 27.5px 0;
-            background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+            background-image: linear-gradient(to right, $color-777777 33%, rgba(255, 255, 255, 0) 0%);
             background-position: bottom;
             background-size: 4px 2px;
             background-repeat: repeat-x;
@@ -85,12 +86,12 @@
         }
       }
       .button-see-order {
-        background: #AB064E;
+        background: $burgundy;
         border-radius: 4px;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
-        color: #FFFFFF;
+        color: $baseColor;
         width: 290px;
         height: 36px;
         display: flex;
@@ -102,7 +103,7 @@
     }
     .line {
       height: 2px;
-      background-image: linear-gradient(to right, #777777 33%, rgba(255, 255, 255, 0) 0%);
+      background-image: linear-gradient(to right, $color-777777 33%, rgba(255, 255, 255, 0) 0%);
       background-position: bottom;
       background-size: 4px 2px;
       background-repeat: repeat-x;
@@ -131,7 +132,7 @@
       align-items: center;
       justify-content: flex-start;
       padding: 10px;
-      background: #F3F2F0;
+      background: $color-F3F2F0;
       margin-bottom: 2px;
       img {
         margin-right: 8px;
