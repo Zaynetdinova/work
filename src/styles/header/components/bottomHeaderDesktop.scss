@@ -204,6 +204,9 @@
           display: flex;
           align-items: flex-start;
           width: 100%;
+          &:hover {
+            background: #F3F2F0;
+          }
           .wrapper-img {
             position: relative;
             .Card-banner {

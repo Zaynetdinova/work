@@ -9,7 +9,7 @@
     .wrapper-column {
       display: flex;
       justify-content: flex-end;
-      background: #F3F2F0;
+      background: $color-F3F2F0;
       padding: 35px 20px 20px 20px;
     }
     .column {
@@ -39,7 +39,7 @@
       justify-content: space-between;
       align-items: center;
       padding-bottom: 25px;
-      border-bottom: 2px solid #D9D9D9;
+      border-bottom: 2px solid $color-D9D9D9;
       .wrapper-refund-amount {
         font-size: 14px;
         line-height: 15px;
@@ -48,7 +48,7 @@
           margin-bottom: 3px;
         }
         .refund-amount-sum {
-          color: #AB064E;
+          color: $burgundy;
           font-weight: bold;
           font-size: 18px;
           line-height: 22px;
@@ -59,7 +59,7 @@
         align-items: flex-start;
 
         .button-back {
-          background: #AB064E;
+          background: $burgundy;
           border-radius: 4px;
           height: 36px;
           width: 36px;
@@ -90,12 +90,12 @@
             font-weight: bold;
           }
           .assembled {
-            color: #009295;
+            color: $color-009295;
             margin: 0 5px;
           }
           .invoice-contract {
             text-decoration-line: underline;
-            color: #777777;
+            color: $color-777777;
             cursor: pointer;
             &:hover {
               text-decoration: none;
@@ -103,7 +103,7 @@
           }
           .line {
             width: 16px;
-            border-left: 1px solid #C8C8C8;
+            border-left: 1px solid $color-C8C8C8;
             transform: rotate(90deg);
             margin: 0 13px 0 13px;
           }
@@ -118,7 +118,7 @@
       line-height: 15px;
       letter-spacing: 0.05em;
       padding-bottom: 28px;
-      border-bottom: 2px solid #AB064E;
+      border-bottom: 2px solid $burgundy;
     }
   }
   .good {
@@ -197,13 +197,13 @@
         }
         .popup {
           width: 145px;
-          background: #3D3D3C;
+          background: $color-3D3D3C;
           border-radius: 4px;
           padding: 10px;
           font-size: 12px;
           line-height: 12px;
           text-align: left;
-          color: #FFFFFF;
+          color: $baseColor;
           position: absolute;
           top: -53px;
           left: 24px;
@@ -213,7 +213,7 @@
         .popup::after, .popup::before {
           content: '';
           position: absolute;
-          background: #3D3D3C;
+          background: $color-3D3D3C;
           left: 10px;
           bottom: -4px;
           width: 8px;
@@ -239,7 +239,7 @@
     }
     .product-out {
       text-align: center;
-      color: #AB064E;
+      color: $burgundy;
     }
     .sale-product {
       .wrapper-sale-product {

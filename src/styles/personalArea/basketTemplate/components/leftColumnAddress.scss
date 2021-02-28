@@ -40,8 +40,8 @@
     cursor: pointer;
     font-size: 15px;
     line-height: 17px;
-    background: #FFFFFF;
-    border: 1px solid #CDCDCD;
+    background: $baseColor;
+    border: 1px solid $color-CDCDCD;
     box-sizing: border-box;
     border-radius: 4px;
     width: 200px;
@@ -49,7 +49,7 @@
     margin-left: 20px;
     &:hover {
       background: $burgundy;
-      color: #FFFFFF;
+      color: $baseColor;
       border: 1px solid $burgundy;
     }
   }

@@ -14,22 +14,23 @@ import {Popup} from '../js/Popup'
 import {popupDefaultTemplate} from '../popupDefaultTemplate/popupDefault.template'
 import {entryStorage} from '../../../core/storage/storages'
 import {Select} from '../../../core/utils/selectPlugin'
+import {toggleShowInformation} from '../../../core/utils/utils'
 
 export class Entry {
   constructor() {
-		this.$body = document.querySelector('body')
-		this.popup = new Popup(popupDefaultTemplate)
-    this.select = new entryStorage.entrySelect()
-    this.init()
-	}
+	this.$body = document.querySelector('body')
+	this.popup = new Popup(popupDefaultTemplate)
+	this.select = new entryStorage.entrySelect()
+	this.init()
+  }
 
-	init() {
+  init() {
     this.initDesktop()
     this.initMobile()
     this.initCalls()
-	}
+  }
 
-	initDesktop() {
+  initDesktop() {
     const $button = document.querySelector('#entry-registration-button-js')
     $button.addEventListener('click', () => {
       this.popup.addElement(this.toEntry(), this)
@@ -61,70 +62,80 @@ export class Entry {
     }
   }
 
-	handleClick(event) {
-		const clickElem = event.target
+  handleClick(event) {
+	const clickElem = event.target
 
-		if(clickElem.closest('#close-entry-registration-js')) {
-			this.closeEntry()
-		}
-
-		if(clickElem.closest('#sign-up-js')) {
-			this.popup.addElement(this.toRegistration(), this)
-		}
-
-		if(clickElem.closest('#restore-password-button-js')) {
-			this.popup.addElement(this.toRestorePassword(), this)
-			this.controlBack('password-className-js')
-		}
-
-		if(clickElem.closest('#buy-for-sale-js')) {
-			this.popup.addElement(this.toBuyForSale(), this)
-			this.controlStylingWrapper()
-			this.controlBack('restore-className-js')
-			this.select.selectFormOwner()
-			this.select.selectPhone('#select-phone-registration-js')
-			inputMaskPhone('.test-mask')
-		}
-
-		if(clickElem.closest('#buy-for-me-js')) {
-			this.popup.addElement(this.toBuyForMe(), this)
-			this.controlStylingWrapper()
-			this.controlBack('restore-className-js')
-      this.select.selectPhone('#select-phone-registration-js')
-			inputMaskPhone('.test-mask')
-		}
-
-		//back
-		if(clickElem.closest('.password-className-js')) {
-			this.popup.addElement(this.toEntry(), this)
-		}
-
-		if(clickElem.closest('.restore-className-js')) {
-			this.popup.addElement(this.toRegistration(), this)
-		}
+	if(clickElem.closest('#close-entry-registration-js')) {
+		this.closeEntry()
 	}
 
-	controlBack(className) {
-		const backButton = document.querySelector('#back-js')
-		backButton.classList.add(`block`)
-		backButton.classList.add(`${className}`)
-
+	if(clickElem.closest('#sign-up-js')) {
+		this.popup.addElement(this.toRegistration(), this)
 	}
 
-	controlStylingWrapper() {
-		const test = document.querySelector('#entry-wrapper-js')
-		test.classList.remove('wrapper-Entry')
-		test.classList.add('wrapper-buyForMe')
+	if(clickElem.closest('#restore-password-button-js')) {
+		this.popup.addElement(this.toRestorePassword(), this)
+		this.controlBack('password-className-js')
 	}
 
-	closeEntry() {
-		this.$body.style = 'overflow: auto'
-		const $wrapper = document.querySelector('#Entry-js')
-		if($wrapper) {
-			$wrapper.remove()
-		}
+	if(clickElem.closest('#buy-for-sale-js')) {
+		this.popup.addElement(this.toBuyForSale(), this)
+		this.controlStylingWrapper()
+		this.controlBack('restore-className-js')
+		this.select.selectFormOwner()
+		this.select.selectPhone('#select-phone-registration-js')
+		inputMaskPhone('.test-mask')
 	}
 
+	if(clickElem.closest('#buy-for-me-js')) {
+		this.popup.addElement(this.toBuyForMe(), this)
+		this.controlStylingWrapper()
+		this.controlBack('restore-className-js')
+  		this.select.selectPhone('#select-phone-registration-js')
+		inputMaskPhone('.test-mask')
+	}
+
+	//back
+	if(clickElem.closest('.password-className-js')) {
+		this.popup.addElement(this.toEntry(), this)
+	}
+
+	if(clickElem.closest('.restore-className-js')) {
+		this.popup.addElement(this.toRegistration(), this)
+	}
+  }
+
+	// onClick(e) {
+	// 	if(e.target.closest('[data-parent-checkbox-js]')) {
+	// 		const element = e.target.closest('[data-parent-checkbox-js]');
+	//
+	// 		switch (element.id) {
+	// 			case 'text-checkbox-forMe-js':
+	// 			toggleShowInformation('[data-buy-forMe-form-js]');
+	// 			break;
+	// 		}
+	// 	}
+	// }
+
+  controlBack(className) {
+	const backButton = document.querySelector('#back-js')
+	backButton.classList.add(`block`)
+	backButton.classList.add(`${className}`)
+  }
+
+  controlStylingWrapper() {
+	const test = document.querySelector('#entry-wrapper-js')
+	test.classList.remove('wrapper-Entry')
+	test.classList.add('wrapper-buyForMe')
+  }
+
+  closeEntry() {
+	this.$body.style = 'overflow: auto'
+	const $wrapper = document.querySelector('#Entry-js')
+	if($wrapper) {
+		$wrapper.remove()
+	}
+  }
 
 	// шаблоны
 	toEntry() {

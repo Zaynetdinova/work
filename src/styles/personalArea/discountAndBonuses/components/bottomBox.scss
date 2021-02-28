@@ -1,3 +1,4 @@
+@import "../../../color";
 .bottom-box {
   display: flex;
   justify-content: space-between;
@@ -5,7 +6,7 @@
   .bottom-box-second {
     width: 49.5%;
     .title {
-      background: #F1F0EE;
+      background: $color-F1F0EE;
       font-weight: bold;
       font-size: 15px;
       line-height: 17px;
@@ -14,7 +15,7 @@
     }
     .wrapper-order {
       padding: 25px 20px 35px 20px;
-      background: #F3F2F0;
+      background: $color-F3F2F0;
       height: 195px;
     }
   }

@@ -21,13 +21,13 @@
         padding: 8.5px 13px 8.5px 117px;
         background: $burgundy;
         .text {
-          color: #FFFFFF;
+          color: $baseColor;
         }
         .arrow-next {
           background: url("../images/icons/arrow-white2.svg") no-repeat;
         }
         &:hover {
-          background: #C00A5A;
+          background: $burgundy-hover;
         }
       }
     }

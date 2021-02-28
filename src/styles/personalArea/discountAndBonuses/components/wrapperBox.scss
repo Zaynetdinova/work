@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrapper-box {
   @import "textBonuses";
   display: flex;
@@ -70,11 +71,11 @@
       font-size: 15px;
       line-height: 17px;
       padding: 12px 0 11px 20px;
-      background: #F1F0EE;
+      background: $color-F1F0EE;
       margin-bottom: 2px;
     }
     .wrapper-box-second {
-      background: #F3F2F0;
+      background: $color-F3F2F0;
       padding: 25px 20px 47px 20px;
       height: 100%;
       .Table-discount {

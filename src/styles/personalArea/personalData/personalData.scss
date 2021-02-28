@@ -35,7 +35,7 @@
           height: 426px;
           .info-text {
             padding-bottom: 28px;
-            border-bottom: 2px dotted #DDDDDD;
+            border-bottom: 2px dotted $color-DDDDDD;
             width: 100%;
             font-size: 12px;
             line-height: 17px;
@@ -49,7 +49,7 @@
             width: 100%;
             padding-bottom: 20px;
             padding-top: 20px;
-            border-bottom: 2px dotted #DDDDDD;
+            border-bottom: 2px dotted $color-DDDDDD;
           }
           .bank-details {
             display: flex;
@@ -111,7 +111,7 @@
       .wrapper-box-3 {
         align-items: center;
         padding: 20px;
-        background: #F3F2F0;
+        background: $color-F3F2F0;
         width: 710px;
         margin-bottom: 10px;
 
@@ -123,7 +123,7 @@
           align-items: center;
 
           .color {
-            color: #AB064E;
+            color: $burgundy;
             margin-left: 10px;
           }
 
@@ -149,14 +149,14 @@
           .input-personal-data {
             font-size: 13px;
             text-align: center;
-            color: #777777;
+            color: $color-777777;
             width: 160px;
             height: 36px;
-            border: 1px solid #C4C4C4;
+            border: 1px solid $color-C4C4C4;
 
             &:focus {
               outline: none;
-              border: 1px solid #777777;
+              border: 1px solid $color-777777;
             }
           }
           .input-personal-data {
@@ -166,8 +166,8 @@
             background: $burgundy;
             border: 1px solid $burgundy;
             &:hover {
-              background: #C00A5A;
-              border: 1px solid #C00A5A;
+              background: $burgundy-hover;
+              border: 1px solid $burgundy-hover;
             }
           }
         }
@@ -182,15 +182,15 @@
               line-height: 16px;
               letter-spacing: normal;
               text-decoration-line: none;
-              color: #3D3D3C;
+              color: $color-3D3D3C;
             }
 
             input[type="checkbox"]:checked + label:before,
             input[type="checkbox"]:not(:checked) + label:before {
               width: 14px;
               height: 14px;
-              border: 1px solid #C4C4C4;
-              background: #FFFFFF;
+              border: 1px solid $color-C4C4C4;
+              background: $baseColor;
             }
           }
         }
@@ -199,12 +199,12 @@
           font-size: 14px;
           line-height: 16px;
           text-align: center;
-          color: #777777;
+          color: $color-777777;
           width: 160px;
           height: 36px;
           outline: none;
-          border: 1px solid #C4C4C4;
-          background: #FFFFFF;
+          border: 1px solid $color-C4C4C4;
+          background: $baseColor;
           option {
             padding-right: 14px;
             padding-left: 15px;
