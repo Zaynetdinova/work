@@ -6,6 +6,7 @@ import {inputFile} from './js/inputFile'
 import {CardProductPageSliders} from './js/CardProductPageSliders'
 import {testDataCardProductPage} from '../../../testData/testDataCardProductPage'
 import {ChangeFavoritesProduct} from '../../core/utils/utils'
+import {ViewPhotoZoom} from '../../core/utils/viewPhotoZoom'
 
 
 export class CardProductPage extends Component {
@@ -47,7 +48,7 @@ export class CardProductPage extends Component {
 	afterInitComponent() {
 		this.utils = new UtilsCardProductPage()
     const sliders = new CardProductPageSliders()
-		this.utils.viewPhotoZoom()
+    new ViewPhotoZoom()
 		this.utils.transitionTitleScroll()
 		this.utils.star(this.testQuantityStars)
 		inputFile()
