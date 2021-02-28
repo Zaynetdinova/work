@@ -1,3 +1,4 @@
+@import "../../../color";
 .wrapper-basket {
   margin-bottom: 65px;
   font-size: 14px;
@@ -117,7 +118,7 @@
     .selected-dimensions-product {
       .change-selected-dimensions {
         text-decoration-line: underline;
-        color: #777777;
+        color: $color-777777;
         width: 102px;
         margin: 0 auto;
         cursor: pointer;
@@ -138,7 +139,7 @@
   }
   .auxiliary-unit-line {
     .line-top {
-      border-top: 2px solid #D9D9D9;
+      border-top: 2px solid $color-D9D9D9;
     }
   }
   .auxiliary-unit-top {
@@ -159,7 +160,7 @@
     .change-selected-dimensions {
       display: none;
       font-size: 14px;
-      color: #777777;
+      color: $color-777777;
       text-decoration: underline;
       cursor: pointer;
     }

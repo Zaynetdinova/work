@@ -1,3 +1,4 @@
+@import "../../../color";
 .view-order-mobile {
   margin-bottom: 165px;
   font-size: 14px;
@@ -16,7 +17,7 @@
         font-weight: bold;
       }
       .assembled {
-        color: #009295;
+        color: $color-009295;
         font-weight: bold;
         margin-top: 10px;
         margin-bottom: 15px;
@@ -24,7 +25,7 @@
       }
       .invoice-contract {
         text-decoration-line: underline;
-        color: #777777;
+        color: $color-777777;
         display: flex;
         align-items: flex-end;
         img {
@@ -43,7 +44,7 @@
           margin-bottom: 3px;
         }
         .refund-amount-sum {
-          color: #AB064E;
+          color: $burgundy;
           font-size: 18px;
           line-height: 22px;
         }
@@ -60,7 +61,7 @@
       font-weight: bold;
       font-size: 12px;
       line-height: 12px;
-      color: #AB064E;
+      color: $burgundy;
       margin-top: 10px;
     }
   }
@@ -124,7 +125,7 @@
     line-height: 14px;
     text-decoration-line: underline;
     text-transform: capitalize;
-    color: #777777;
+    color: $color-777777;
     display: flex;
     align-items: center;
     .arrow {
@@ -159,8 +160,8 @@
         font-size: 14px;
         line-height: 20px;
         padding: 10px 0;
-        border-top: 2px solid #D9D9D9;
-        border-bottom: 2px solid #D9D9D9;
+        border-top: 2px solid $color-D9D9D9;
+        border-bottom: 2px solid $color-D9D9D9;
       }
       .size-col {
         display: flex;
@@ -208,7 +209,7 @@
             display: flex;
             margin-bottom: 2px;
             .sale-sum {
-              color: #AB064E;
+              color: $burgundy;
               font-size: 12px;
               line-height: 13px;
               margin-left: 5px;
@@ -219,20 +220,20 @@
           }
           .sum {
             padding-bottom: 2px;
-            border-bottom: 0.5px solid #B7B7B7;
+            border-bottom: 0.5px solid $color-B7B7B7;
             margin-bottom: 3px;
           }
         }
 
         &:last-child {
           background-image: none;
-          border-bottom: 2px solid #D9D9D9;
+          border-bottom: 2px solid $color-D9D9D9;
         }
       }
     }
   }
   .wrapper-column {
-    background: #F3F2F0;
+    background: $color-F3F2F0;
     padding: 20px 15px 25px 15px;
     margin: 40px -15px;
     .column {
@@ -259,8 +260,8 @@
       text-align: center;
       letter-spacing: 0.05em;
       padding: 15.5px 0;
-      border-bottom: 2px solid #AB064E;
-      border-top: 2px solid #AB064E;
+      border-bottom: 2px solid $burgundy;
+      border-top: 2px solid $burgundy;
     }
     .wrapper-order-table {
       margin-top: 15px;
@@ -283,8 +284,8 @@
           line-height: 20px;
           text-align: center;
           padding: 10px 0;
-          border-top: 2px solid #D9D9D9;
-          border-bottom: 2px solid #D9D9D9;
+          border-top: 2px solid $color-D9D9D9;
+          border-bottom: 2px solid $color-D9D9D9;
         }
         .sum {
           width: 100%;

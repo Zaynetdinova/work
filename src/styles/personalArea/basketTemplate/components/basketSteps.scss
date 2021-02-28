@@ -1,3 +1,4 @@
+@import "../../../color";
 .Steps {
   .basket-steps {
     display: flex;
@@ -5,7 +6,7 @@
     max-width: 665px;
     margin: 20px auto;
     a {
-      color: #3D3D3C;
+      color: $color-3D3D3C;
     }
     .icon-text {
       display: flex;
@@ -40,7 +41,7 @@
     }
   }
   .line-delivery {
-    border: 2px solid #D9D9D9;
+    border: 2px solid $color-F9F9F9;
     margin-bottom: 20px;
   }
   @media (max-width: 767px) {

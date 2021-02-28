@@ -23,8 +23,8 @@
   .text-attention-mobile {
     display: none;
     margin-bottom: 1px;
-    background: #A72159;
-    color: #FFFFFF;
+    background: $color-A72159;
+    color: $baseColor;
     font-weight: bold;
     padding: 10px 15px;
   }
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     .column-one {
-      background: #F3F2F0;
+      background: $color-F3F2F0;
       padding: 20px 30px;
       width: 49.5%;
       .middle-text {
@@ -57,7 +57,7 @@
         .wrap-checkbox {
           margin: 0;
           .text-checkbox {
-            color: #3D3D3C;
+            color: $color-3D3D3C;
             font-style: normal;
             text-decoration: none;
             font-size: 11px;
@@ -65,12 +65,12 @@
             letter-spacing: 0.05em;
           }
           input[type=checkbox]:checked + label:before, .wrap-checkbox input[type=checkbox]:not(:checked) + label:before {
-            border: 1px solid #C4C4C4;
+            border: 1px solid $color-C4C4C4;
             width: 14px;
             height: 14px;
           }
           input[type=checkbox]:not(:checked) + label:before {
-            border: 1px solid #C4C4C4;
+            border: 1px solid $color-C4C4C4;
             width: 14px;
             height: 14px;
           }
@@ -80,7 +80,7 @@
           border-radius: 4px;
           font-size: 15px;
           line-height: 17px;
-          color: #FFFFFF;
+          color: $baseColor;
           height: 36px;
           width: 223px;
           display: flex;
@@ -89,8 +89,8 @@
           margin-left: 40px;
           cursor: pointer;
           &:hover {
-            background: #C00A5A;
-            border: 1px solid #C00A5A;
+            background: $burgundy-hover;
+            border: 1px solid $burgundy-hover;
           }
         }
       }

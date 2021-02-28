@@ -20,7 +20,7 @@
       text-align: center;
     }
     .way-pay-green {
-      color: #009295;
+      color: $color-009295;
       font-size: 14px;
       line-height: 15px;
       text-align: center;
@@ -64,12 +64,12 @@
     align-items: center;
     justify-content: flex-end;
     padding: 10px 20px;
-    background: #F3F2F0;
+    background: $color-F3F2F0;
     img {
       margin-right: 8px;
     }
     a {
-      color: #3D3D3C;
+      color: $color-3D3D3C;
       &:hover {
         text-decoration: none;
       }

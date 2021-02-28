@@ -1,9 +1,10 @@
+@import "../../../color";
 .wrapper-result {
   .promo-code {
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
-    background: #F3F2F0;
+    background: $color-F3F2F0;
     margin-bottom: 30px;
     .column {
       width: 49%;
@@ -49,15 +50,15 @@
       .bonus {
         display: flex;
         align-items: center;
-        background: #FFFFFF;
-        border-bottom: 1px solid #B2B2B2;
-        border-top: 1px solid #B2B2B2;
+        background: $baseColor;
+        border-bottom: 1px solid $color-B2B2B2;
+        border-top: 1px solid $color-B2B2B2;
         padding-left: 10px;
         width: 100%;
       }
       .input-promo-cod {
-        background: #FFFFFF;
-        border: 1px dashed #777777;
+        background: $baseColor;
+        border: 1px dashed $color-777777;
         border-right: none;
         padding-left: 10px;
         outline: none;
@@ -69,7 +70,7 @@
       .margin {
         font-weight: bold;
         margin-left: 6px;
-        color: #009295;
+        color: $color-009295;
       }
     }
   }
@@ -113,7 +114,7 @@
       .column {
         width: 100%;
         padding: 25px 15px;
-        background: #F3F2F0;
+        background: $color-F3F2F0;
         &:first-child {
           margin-bottom: 5px;
         }
