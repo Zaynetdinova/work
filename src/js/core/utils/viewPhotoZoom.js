@@ -1,7 +1,7 @@
 export class ViewPhotoZoom {
   constructor() {
     this.$zoomContent = document.querySelector('#zoom-photo-js')
-    this.dataTestImgSlide = null
+    this.$root = null
     this.events()
   }
 
@@ -13,8 +13,8 @@ export class ViewPhotoZoom {
 
   moveZoom(event) {
     const imgWrapper = event.target.closest('[data-zoom-js]')
-    this.dataTestImgSlide = event.target.closest('[data-test-img-slide]')
-    this.dataTestImgSlide.classList.add('test-move')
+    this.$root = event.target.closest('[data-zoom-wrapper-js]')
+    this.$root.classList.add('active-zoom')
     const $img = imgWrapper.querySelector('.zoom-img-js')
     const bounds = imgWrapper.getBoundingClientRect();
     const x = event.clientX - bounds.left;
