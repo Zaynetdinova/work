@@ -61,7 +61,7 @@ function photos(data) {
 function photosBig(data) {
 	return data.map((photo) => {
 		return `
-		<div data-test-img-slide class="swiper-slide img-slide">
+		<div data-zoom-wrapper-js class="swiper-slide Zoom-photo">
 		
 			<img src="${photo.original}" class="main-img">
 		
