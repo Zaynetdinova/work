@@ -32,10 +32,11 @@
 
   .content {
     position: relative;
-    width: 90%;
-    margin: 0 60px;
+    right: 0;
+    left: 0;
     padding: 20px;
     height: 90vh;
+    width: 35%;
     .wrapper-close-popup {
       display: flex;
       justify-content: flex-end;
@@ -71,20 +72,16 @@
     top: 50%;
     width: 25px;
     height: 25px;
-    background: url("../images/icons/arrow3.svg") center no-repeat;
+    background: url("../images/icons/arrow-popup-photo.svg") center no-repeat;
     background-size: contain;
     cursor: pointer;
-    &:hover {
-      width: 25px;
-      height: 25px;
-      background: url("../images/icons/arrow4.svg") center no-repeat;
-      background-size: contain;
-      cursor: pointer;
-    }
   }
   .button-next {
     right: 0;
     outline: none;
+    &.swiper-button-disabled {
+      transform: rotate(180deg);
+    }
   }
 
   .button-prev {
@@ -95,11 +92,12 @@
   .swiper-button-disabled {
     width: 25px;
     height: 25px;
-    background: url("../images/icons/arrow5.svg") center no-repeat;
+    background: url("../images/icons/arrow-popup-photo-unactive.svg") center no-repeat;
     background-size: contain;
     cursor: default;
+    transform: rotate(0deg);
     &:hover {
-      background: url("../images/icons/arrow5.svg") center no-repeat;
+      background: url("../images/icons/arrow-popup-photo-unactive.svg") center no-repeat;
       width: 25px;
       height: 25px;
       background-size: contain;
