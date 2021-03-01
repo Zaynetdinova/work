@@ -2,12 +2,13 @@ import {titleRegistration} from "../../popupDefaultTemplate/titleRegistration";
 import {buttonRegistration} from "../../popupDefaultTemplate/buttonRegistration";
 import {nesessaryFildsTemplate} from './nesesaryFilds.template'
 import {infoTextRegistration} from '../../popupDefaultTemplate/infoTextRegistration'
+import {popupAgreementData} from "./popupAgreementData";
 
 export function buyForSaleTemplate() {
     return `
         ${titleRegistration('Регистрация')}
         <div class="wrap-title-buy">Покупаю для продажи</div>
-        <form class="form-js">
+        <form class="form-js" data-buy-forMe-form-js>
             <div class="box-input">
                 <div class="wrap-input">
                     <input name="surname" class="input-name" placeholder="Фамилия*" type="text">
@@ -42,11 +43,12 @@ export function buyForSaleTemplate() {
             <div class="wrap-checkbox">
                 <input  checked class="checkbox checkbox-filter-js" type="checkbox" id="forMe"> 
                 <label for="forMe"></label>
-                <div class="text-checkbox-forMe">
+                <div data-parent-checkbox-js class="text-checkbox-forMe">
                        Даю согласие на обработку персональных данных
                 </div>
             </div>
             <div class="wrapper-button">${buttonRegistration('Зарегистрироваться')}</div>
+            ${popupAgreementData()}
         </form> 
         ${infoTextRegistration()}       
     `

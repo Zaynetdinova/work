@@ -18,6 +18,7 @@ export class PopupQuick {
 		this.$like = null
 		this.$rootPopup = null
 		this.sliders = new PopupInitialSliders()
+		this.testQuantityStars = 3
 
 	}
 
@@ -36,6 +37,7 @@ export class PopupQuick {
 		this.positionPopup()
 		this.sliders.init()
 		new ChangeFavoritesProduct().init()
+		this.star(this.testQuantityStars)
 	}
 
 	findAllElementsPopup() {
@@ -85,6 +87,20 @@ export class PopupQuick {
 			})
 			const $el = e.target
 			$el.classList.add('active-color')
+		}
+	}
+	star(quantityStars = 5) {
+		if(quantityStars > 5) {
+			return
+		}
+		const maxCount = 5
+		const star = document.querySelector('#popup-quick-page-star-js')
+		for(let i = 0; i < quantityStars; i++) {
+			star.insertAdjacentHTML('afterbegin', '<span class="active"></span>')
+		}
+
+		for(let i = 0; i < maxCount - quantityStars; i++) {
+			star.insertAdjacentHTML('beforeend', '<span class="inactive"></span>')
 		}
 	}
 

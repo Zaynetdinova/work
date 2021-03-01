@@ -2,7 +2,7 @@ export function popupAgreementData() {
     return `
         <div class="Popup-agreement-data">
             <div class="wrap-close">
-                <div class="popup-close"></div>
+                <div data-popup-agreement-close-js class="popup-close"></div>
             </div>
             <div class="wrapper-title">
                 <div class="title">Соглашение на обработку персональных данных</div>

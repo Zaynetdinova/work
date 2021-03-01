@@ -47,8 +47,8 @@ export class CardProductPage extends Component {
 
 	afterInitComponent() {
 		this.utils = new UtilsCardProductPage()
-    const sliders = new CardProductPageSliders()
-    new ViewPhotoZoom()
+    	const sliders = new CardProductPageSliders()
+    	new ViewPhotoZoom()
 		this.utils.transitionTitleScroll()
 		this.utils.star(this.testQuantityStars)
 		inputFile()

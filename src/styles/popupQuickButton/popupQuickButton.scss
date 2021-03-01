@@ -47,6 +47,10 @@
   .main-popup {
     padding: 20px 20px 41px 20px;
     background: $baseColor;
+    .wrapper-popup {
+      display: flex;
+      justify-content: space-between;
+    }
     .photos {
       max-width: 546px;
     }
