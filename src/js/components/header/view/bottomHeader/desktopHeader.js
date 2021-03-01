@@ -55,6 +55,7 @@ export function desktopHeader() {
                         <a href="/#personal-area/favorites" class="registry-user favorites">
                             <img src=${like}>
                         </a>
+                        <div class="quantity-favorites-header">99</div>
                         <div class="favorite-dropdown">
                             <div class="basket-dropdown-wrap">
                                 <ul>
