@@ -1,5 +1,12 @@
 @import "../../color";
 .Wrap-component {
+  .form-js {
+    &.show-info {
+      .Popup-agreement-data {
+        display: block;
+      }
+    }
+  }
   .title-address {
     display: flex;
     justify-content: space-between;

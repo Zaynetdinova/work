@@ -8,13 +8,13 @@ import {viewPhotosBlockPopup} from "./view/viewPhotosBlockPopup";
 import {anotherColorPopup} from "./view/anotherColorPopup";
 import {popupSizes} from "../infoTable";
 import {goodStock, transitionBrand} from '../../cardProductPage/view/transitionBrand'
-import {star} from '../../cardProductPage/view/star'
+import {star} from "../../cardProductPage/view/star";
 
 export function popupQuickTemplate(color, info, brand) {
 	return `
     <div id="popup-js" class="root">
         <div class="main-popup">
-            <div style="display: flex; justify-content: space-between;">
+            <div class="wrapper-popup">
                 <section class="photos">
                     ${viewPhotosBlockPopup()}
                 </section>
@@ -28,8 +28,10 @@ export function popupQuickTemplate(color, info, brand) {
                     </div>
                     ${transitionBrand(brand)}
                      <div class="wrapper-star-goodStock">
-						<div class="star-popup">${star()}</div>
-						${goodStock()}
+						<div class="star-popup">
+						    ${star('popup-quick-page-star-js')}
+                        </div>
+						${goodStock('товар в наличии ','1')}
             		</div>
                     <div class="price">${priceContent('1 234,00 ₽', '-234,00 ₽', '1 234,00 ₽', true)}</div>
                     <div class="info">

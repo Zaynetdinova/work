@@ -1,7 +1,7 @@
-export function star() {
+export function star(id) {
     return `
-        <div id="card-product-page-star-js" class="rating-result">
-           
+        <div id="${id}" class="rating-result">
+
         </div>
    
     `

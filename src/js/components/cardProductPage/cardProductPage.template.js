@@ -40,7 +40,7 @@ export function cardProductPageTemplate(
 							<div class="wrapper-button-new">
 								${buttonProduct('Новинка')}
 							</div>						
-							${star()}
+							${star('card-product-page-star-js')}
 						</div>
 						
 						${favorites()}

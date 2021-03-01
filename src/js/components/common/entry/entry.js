@@ -14,7 +14,7 @@ import {Popup} from '../js/Popup'
 import {popupDefaultTemplate} from '../popupDefaultTemplate/popupDefault.template'
 import {entryStorage} from '../../../core/storage/storages'
 import {Select} from '../../../core/utils/selectPlugin'
-import {toggleShowInformation} from '../../../core/utils/utils'
+import {removeShowInformation, toggleShowInformation} from "../../../core/utils/utils";
 
 export class Entry {
   constructor() {
@@ -103,19 +103,15 @@ export class Entry {
 	if(clickElem.closest('.restore-className-js')) {
 		this.popup.addElement(this.toRegistration(), this)
 	}
+
+	if (clickElem.closest('[data-parent-checkbox-js]')) {
+	    toggleShowInformation('[data-buy-forMe-form-js]')
+    }
+	if (clickElem.closest('[data-popup-agreement-close-js]')) {
+	    removeShowInformation('[data-buy-forMe-form-js]')
+    }
   }
 
-	// onClick(e) {
-	// 	if(e.target.closest('[data-parent-checkbox-js]')) {
-	// 		const element = e.target.closest('[data-parent-checkbox-js]');
-	//
-	// 		switch (element.id) {
-	// 			case 'text-checkbox-forMe-js':
-	// 			toggleShowInformation('[data-buy-forMe-form-js]');
-	// 			break;
-	// 		}
-	// 	}
-	// }
 
   controlBack(className) {
 	const backButton = document.querySelector('#back-js')
