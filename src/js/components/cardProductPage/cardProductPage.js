@@ -21,7 +21,7 @@ export class CardProductPage extends Component {
 
 		this.productPageTitle = [
 			{
-				link: '/#categories',
+				link: '/#categories-women',
 				title: 'Женщинам',
 				titleCategory: 'Платья',
 				linkCategory: '/#catalog',

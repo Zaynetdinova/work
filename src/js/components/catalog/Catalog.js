@@ -22,7 +22,7 @@ export class Catalog extends Component {
 
         this.catalogCategory = [
             {
-                link: '/#categories',
+                link: '/#categories-women',
                 title: 'Женщинам',
                 value: '1000 товаров',
                 titleCategory: 'Платья',
