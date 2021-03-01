@@ -19,7 +19,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img1
+			]
 		},
 		{
 			id: 'test2',
@@ -29,7 +32,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img2
+			]
 		},
 		{
 			id: 'test3',
@@ -39,7 +45,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img3
+			]
 		},
 		{
 			id: 'test4',
@@ -49,7 +58,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img4
+			]
 		},
 		{
 			id: 'test5',
@@ -59,7 +71,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img5
+			]
 		},
 		{
 			id: 'test6',
@@ -69,7 +84,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img6
+			]
 		},
 		{
 			id: 'test7',
@@ -79,7 +97,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img5
+			]
 		},
 		{
 			id: 'test8',
@@ -89,7 +110,10 @@ export let testDataYouRecentlyViewed = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			secondaryImg: [
+				img5
+			]
 		},
 	],
 }

@@ -99,20 +99,20 @@ export class CommonCard {
 			const  mainImg = card.querySelector('[data-common-card-main-img-js]')
 			const  photos = card.querySelector('[data-photos-block-js]')
 
-			const heightPhotosBlock = mainImg.clientHeight + 160
+			const heightPhotosBlock = mainImg.clientHeight + 144
 
 			photos.style.height = `${heightPhotosBlock}px`
 
 			const blockUnderImage = card.querySelector('[data-block-under-image-js]')
-			blockUnderImage.style.width = `${heightPhotosBlock/6}px`
+			blockUnderImage.style.width = `${heightPhotosBlock/5.5}px`
 
 			const rightImages = card.querySelector('[data-images-js]')
 
 			if(left) {
-			  blockUnderImage.style.left = `-${heightPhotosBlock/6}px`
-			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; left: -${heightPhotosBlock/6}px`)
+			  blockUnderImage.style.left = `-${heightPhotosBlock/5.5}px`
+			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/5.5}px; left: -${heightPhotosBlock/5.5}px`)
 			} else {
-			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/6}px; right: -${heightPhotosBlock/6}px`)
+			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/5.5}px; right: -${heightPhotosBlock/5.5}px`)
 			}
 		}
 

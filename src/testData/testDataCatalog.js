@@ -41,7 +41,16 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+			],
+			secondaryImg: [
+				img2,
+				img3,
+				img4
+			]
 		},
 		{
 			id: 'woman3',
@@ -51,7 +60,14 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img3,
+				img4
+			]
 		},
 		{
 			id: 'woman4',
@@ -61,7 +77,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img4
+			]
 		},
 		{
 			id: 'woman5',
@@ -71,7 +93,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img5
+			]
 		},
 		{
 			id: 'woman6',
@@ -81,7 +109,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img6
+			]
 		},
 		{
 			id: 'woman7',
@@ -91,7 +125,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img5
+			]
 		},
 		{
 			id: 'woman8',
@@ -101,7 +141,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img6
+			]
 		},
 		{
 			id: 'woman9',
@@ -113,7 +159,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img1,
+			]
 		},
 		{
 			id: 'woman10',
@@ -123,7 +175,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img2,
+			]
 		},
 		{
 			id: 'woman11',
@@ -133,7 +191,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img3,
+			]
 		},
 		{
 			id: 'woman12',
@@ -143,7 +207,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img4
+			]
 		},
 		{
 			id: 'woman13',
@@ -153,7 +223,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img5
+			]
 		},
 		{
 			id: 'woman14',
@@ -163,7 +239,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img6
+			]
 		},
 		{
 			id: 'woman15',
@@ -173,7 +255,13 @@ export let testDataCatalog = {
 			oldPrice: '1 234,00 &#8381',
 			newPrice: '-234,00 &#8381;',
 			price: '1 243,00 &#8381; ',
-			sale: true
+			sale: true,
+			size: [
+				'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
+			],
+			secondaryImg: [
+				img5
+			]
 		},
 	],
 
