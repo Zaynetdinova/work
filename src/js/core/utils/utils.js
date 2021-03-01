@@ -98,3 +98,8 @@ export function closeWhenClickingInAnInactiveZone() {
 
   })
 }
+
+export function scrollUpBody() {
+  window.scroll(0, 0)
+
+}

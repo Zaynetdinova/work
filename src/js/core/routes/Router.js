@@ -1,5 +1,6 @@
 import {$} from '../dom'
 import {ActiveRoute} from './ActiveRoute'
+import {scrollUpBody} from "../utils/utils";
 
 export class Router {
 	constructor(selector, routes) {
@@ -99,6 +100,7 @@ export class Router {
 			default:
 				Page = this.routes.mainPage
 		}
+    scrollUpBody()
 		this.page = new Page(ActiveRoute.param)
 		this.$placeholder.append(this.page.getRoot())
 		this.page.afterRender()
