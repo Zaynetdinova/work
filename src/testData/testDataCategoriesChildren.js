@@ -5,6 +5,7 @@ import img4 from '../images/bestsellers/1/img4.png'
 import img5 from '../images/bestsellers/1/img5.png'
 import img6 from '../images/bestsellers/1/img6.png'
 
+
 export let testDataCategoriesChildren = {
 		_id: 'children',
 		title: 'Категория',
@@ -23,6 +24,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img1
+				]
 			},
 			{
 				id: 'w2',
@@ -36,6 +40,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img2
+				]
 			},
 			{
 				id: 'w3',
@@ -49,6 +56,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img3
+				]
 			},
 			{
 				id: 'w4',
@@ -62,6 +72,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img4
+				]
 			},
 			{
 				id: 'w5',
@@ -75,6 +88,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img5
+				]
 			},
 			{
 				id: 'w6',
@@ -88,6 +104,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img6
+				]
 			},
 			{
 				id: 'w7',
@@ -101,6 +120,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img5
+				]
 			},
 			{
 				id: 'w8',
@@ -116,6 +138,9 @@ export let testDataCategoriesChildren = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img1
+				]
 			},
 
 		],

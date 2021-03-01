@@ -82,7 +82,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img3
+					]
 				},
 				{
 					id: 'woman2',
@@ -92,7 +95,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img4
+					]
 				},
 				{
 					id: 'woman3',
@@ -102,7 +108,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img3
+					]
 				},
 				{
 					id: 'woman4',
@@ -112,7 +121,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img4
+					]
 				},
 				{
 					id: 'woman5',
@@ -122,7 +134,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img5
+					]
 				},
 				{
 					id: 'woman6',
@@ -132,7 +147,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img5
+					]
 				},
 			],
 		},
@@ -151,7 +169,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img5
+					]
 				},
 				{
 					id: 'test2',
@@ -161,7 +182,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img6
+					]
 				},
 				{
 					id: 'test3',
@@ -171,7 +195,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img3
+					]
 				},
 				{
 					id: 'test4',
@@ -181,7 +208,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img4
+					]
 				},
 				{
 					id: 'test5',
@@ -191,7 +221,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img5
+					]
 				},
 				{
 					id: 'test6',
@@ -201,7 +234,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img6
+					]
 				},
 				{
 					id: 'test7',
@@ -211,7 +247,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img5
+					]
 				},
 				{
 					id: 'test8',
@@ -221,7 +260,10 @@ export let testDataCardProductPage = {
 					oldPrice: '1 234,00 &#8381',
 					newPrice: '-234,00 &#8381;',
 					price: '1 243,00 &#8381; ',
-					sale: true
+					sale: true,
+					secondaryImg: [
+						img5
+					]
 				},
 			],
 		},

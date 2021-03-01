@@ -83,7 +83,7 @@ export let testDataBestsellers = {
 						'40', '42', '46', '48', '50', '52',
 					],
 					secondaryImg: [
-						testSecondaryImg1,
+						img2,
 						testSecondaryImg2,
 						testSecondaryImg3,
 					]
@@ -100,14 +100,10 @@ export let testDataBestsellers = {
 					link: '/#card-product',
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 ',
-            '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
+            			'40', '42', '46', '48', '50',
 					],
 					secondaryImg: [
-						testSecondaryImg1,
-						testSecondaryImg2,
-						testSecondaryImg3,
-						testSecondaryImg4,
-            testSecondaryImg5
+						img3
 					]
 				},
 				{
@@ -124,11 +120,7 @@ export let testDataBestsellers = {
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
 					secondaryImg: [
-						testSecondaryImg1,
-						testSecondaryImg2,
-						testSecondaryImg3,
-            testSecondaryImg4,
-            testSecondaryImg5
+						img4
 					]
 				},
 				{
@@ -144,6 +136,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						img5
+					]
 				},
 				{
 					id: 'woman6',
@@ -158,6 +153,13 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						testSecondaryImg1,
+						testSecondaryImg2,
+						testSecondaryImg3,
+						testSecondaryImg4,
+						testSecondaryImg5
+					]
 				},
 				{
 					id: 'woman7',
@@ -172,6 +174,13 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						testSecondaryImg1,
+						testSecondaryImg2,
+						testSecondaryImg3,
+						testSecondaryImg4,
+						testSecondaryImg5
+					]
 				},
 				{
 					id: 'woman8',
@@ -186,6 +195,13 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						testSecondaryImg1,
+						testSecondaryImg2,
+						testSecondaryImg3,
+						testSecondaryImg4,
+						testSecondaryImg5
+					]
 				},
         {
           id: 'woman9',
@@ -200,6 +216,13 @@ export let testDataBestsellers = {
           size: [
             '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
           ],
+			secondaryImg: [
+				testSecondaryImg1,
+				testSecondaryImg2,
+				testSecondaryImg3,
+				testSecondaryImg4,
+				testSecondaryImg5
+			]
         },
         {
           id: 'woman10',
@@ -214,6 +237,13 @@ export let testDataBestsellers = {
           size: [
             '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
           ],
+			secondaryImg: [
+				testSecondaryImg1,
+				testSecondaryImg2,
+				testSecondaryImg3,
+				testSecondaryImg4,
+				testSecondaryImg5
+			]
         },
         {
           id: 'woman11',
@@ -228,6 +258,13 @@ export let testDataBestsellers = {
           size: [
             '40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
           ],
+			secondaryImg: [
+				testSecondaryImg1,
+				testSecondaryImg2,
+				testSecondaryImg3,
+				testSecondaryImg4,
+				testSecondaryImg5
+			]
         },
 			],
 			link: '/#categories',
@@ -248,6 +285,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						ch1,
+					]
 				},
 				{
 					id: 'ch2',
@@ -261,6 +301,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						ch2,
+					]
 				},
 				{
 					id: 'ch3',
@@ -271,6 +314,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						ch3,
+					]
 				},
 				{
 					id: 'ch4',
@@ -284,6 +330,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						ch4,
+					]
 				},
 				{
 					id: 'ch5',
@@ -296,6 +345,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						ch5,
+					]
 				}
 			],
 			link: '/#categories-children',
@@ -317,6 +369,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men1
+					]
 				},
 				{
 					id: 'men2',
@@ -330,6 +385,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men2
+					]
 				},
 				{
 					id: 'men3',
@@ -341,6 +399,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men3
+					]
 				},
 				{
 					id: 'men4',
@@ -354,6 +415,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men4
+					]
 				},
 				{
 					id: 'men5',
@@ -365,6 +429,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men5
+					]
 				},
 				{
 					id: 'men6',
@@ -378,6 +445,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men6
+					]
 				},
 				{
 					id: 'men7',
@@ -389,6 +459,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						men5
+					]
 				}
 			],
 		},
@@ -406,6 +479,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil1
+					]
 				},
 				{
 					id: 'pil2',
@@ -419,6 +495,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil2
+					]
 				},
 				{
 					id: 'pil3',
@@ -429,6 +508,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil3
+					]
 				},
 				{
 					id: 'pil4',
@@ -442,6 +524,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil4
+					]
 				},
 				{
 					id: 'pil5',
@@ -456,6 +541,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil5
+					]
 				},
 				{
 					id: 'pil6',
@@ -469,6 +557,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil6
+					]
 				},
 				{
 					id: 'pil7',
@@ -483,6 +574,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil5
+					]
 				},
 				{
 					id: 'pil8',
@@ -496,6 +590,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						pil6
+					]
 				}
 			],
 		},
@@ -513,6 +610,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy1
+					]
 				},
 				{
 					id: 'toy2',
@@ -526,6 +626,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy2
+					]
 				},
 				{
 					id: 'toy3',
@@ -536,6 +639,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy3
+					]
 				},
 				{
 					id: 'toy4',
@@ -549,6 +655,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy4
+					]
 				},
 				{
 					id: 'toy5',
@@ -560,6 +669,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy5
+					]
 				},
 				{
 					id: 'toy6',
@@ -573,6 +685,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy6
+					]
 				},
 				{
 					id: 'toy7',
@@ -586,6 +701,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy4
+					]
 				},
 				{
 					id: 'toy8',
@@ -597,6 +715,9 @@ export let testDataBestsellers = {
 					size: [
 						'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 					],
+					secondaryImg: [
+						toy5
+					]
 				},
 			],
 		}

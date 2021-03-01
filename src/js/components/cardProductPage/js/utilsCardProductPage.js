@@ -74,6 +74,5 @@ export class UtilsCardProductPage {
 		for(let i = 0; i < maxCount - quantityStars; i++) {
 			star.insertAdjacentHTML('beforeend', '<span class="inactive"></span>')
 		}
-
 	}
 }

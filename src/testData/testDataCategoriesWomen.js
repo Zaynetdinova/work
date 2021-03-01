@@ -4,6 +4,7 @@ import img20 from '../images/bestsellers/1/img3.png'
 import img21 from '../images/bestsellers/1/img4.png'
 import img22 from '../images/bestsellers/1/img5.png'
 import img23 from '../images/bestsellers/1/img6.png'
+import img5 from "../images/bestsellers/1/img5.png";
 
 
 export let testDataCategoriesWomen = {
@@ -24,6 +25,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106'
 				],
+				secondaryImg: [
+					img18
+				]
 			},
 			{
 				id: 'woman22',
@@ -37,6 +41,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106'
 				],
+				secondaryImg: [
+					img19
+				]
 			},
 			{
 				id: 'woman32',
@@ -50,6 +57,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106'
 				],
+				secondaryImg: [
+					img20
+				]
 			},
 			{
 				id: 'woman42',
@@ -63,6 +73,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106'
 				],
+				secondaryImg: [
+					img21
+				]
 			},
 			{
 				id: 'woman52',
@@ -76,6 +89,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106'
 				],
+				secondaryImg: [
+					img22
+				]
 			},
 			{
 				id: 'woman62',
@@ -89,6 +105,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img23
+				]
 			},
 			{
 				id: 'woman72',
@@ -102,6 +121,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img20
+				]
 			},
 			{
 				id: 'woman82',
@@ -117,6 +139,9 @@ export let testDataCategoriesWomen = {
 				size: [
 					'40', '42', '46', '48', '50', '52', '23/22', '23/32', '164 - 106 '
 				],
+				secondaryImg: [
+					img21
+				]
 			},
 
 		],
