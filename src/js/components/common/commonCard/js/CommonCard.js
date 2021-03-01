@@ -109,9 +109,11 @@ export class CommonCard {
 			const rightImages = card.querySelector('[data-images-js]')
 
 			if(left) {
+				console.log('super')
 			  blockUnderImage.style.left = `-${heightPhotosBlock/5.5}px`
 			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/5.5}px; left: -${heightPhotosBlock/5.5}px`)
 			} else {
+				blockUnderImage.style.left = `100%`
 			  rightImages.setAttribute('style', `width: ${heightPhotosBlock/5.5}px; right: -${heightPhotosBlock/5.5}px`)
 			}
 		}

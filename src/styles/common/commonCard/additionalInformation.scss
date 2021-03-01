@@ -116,14 +116,6 @@ $widthCardImage: 87px;
   }
   .content {
     display: block;
-    .text-size-wrapper {
-      .block-under-image {
-        left: -$widthCardImage;
-      }
-    }
-    .images {
-      left: -$widthCardImage;
-    }
   }
   .Health {
     display: block;
