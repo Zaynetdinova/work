@@ -31,7 +31,7 @@ export function paymentPageTemplate() {
 
             <div data-parent-basket-component-js id="personal-area-basket-payment-js" class="Payment-Page">
                 ${basketSteps('/#personal-area/delivery-page','cursor: pointer')}
-                ${waysOfPayment()}
+                ${waysOfPayment(data)}
                 ${orderCommentPayment()}
                 <div class="basket-delivery">
                     ${personalCheckedOptions(data)}

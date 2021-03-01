@@ -356,6 +356,98 @@ let point =
       title: 'мальчикам',
       id: 'boy',
       img: icon4,
+      category: [
+        {
+          id: 'outerwearBoy',
+          category: 'Верхняя одежда',
+          link: ''
+        },
+        {
+          id: 'jumpersBoy',
+          category: 'Джемперы',
+          link: ''
+        },
+        {
+          id: 'jerseyBoy',
+          category: 'Трикотаж',
+          link: ''
+        },
+        {
+          id: 'tiShirtsBoy',
+          category: 'Футболки',
+          link: ''
+        },
+        {
+          id: 'shirtsBoy',
+          category: 'Рубашки',
+          link: ''
+        },
+        {
+          id: 'overallsBoy',
+          category: 'Комбинезоны',
+          link: ''
+        },
+        {
+          id: 'trousersBoy',
+          category: 'Брюки',
+          link: ''
+        },
+        {
+          id: 'costumesBoy',
+          category: 'Костюмы',
+          link: ''
+        },
+        {
+          id: 'schoolBoy',
+          category: 'Школа',
+          link: ''
+        },
+        {
+          id: 'bodysuitBoy',
+          category: 'Боди',
+          link: ''
+        },
+        {
+          id: 'linenBoy',
+          category: 'Белье',
+          link: ''
+        },
+        {
+          id: 'footwearBoy',
+          category:  'Обувь',
+          link: ''
+        },
+        {
+          id: 'accessoriesBoy',
+          category:  'Аксессуары',
+          link: ''
+        },
+        {
+          id: 'forHomeBoy',
+          category: 'Для дома',
+          link: ''
+        },
+        {
+          id: 'sockBoy',
+          category: 'Носки,колготки',
+          link: ''
+        },
+        {
+          id: 'newHome',
+          category: 'Новинки',
+          link: ''
+        },
+        {
+          id: 'saleHome',
+          category: 'Скидки',
+          link: ''
+        },
+        {
+          id: 'brandHome',
+          category: 'Бренды',
+          link: ''
+        },
+      ]
     },
     {
       title: 'для дома',
