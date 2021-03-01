@@ -50,6 +50,7 @@ export function mobileHeader() {
                             <div class="content">
                                 <img class='icon-img' id='basket' src=${basket} alt='basket'>
                             </div>
+                            <span class="quantity-basket-header">99</span>
                         </a>                   
                     </div>                          
                 </div>                                        
