@@ -41,6 +41,14 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/index.html'
         }),
+        new HTMLWebpackPlugin({
+            filename: 'main.html',
+            template: './src/main.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'size.html',
+            template: './src/size.html'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',

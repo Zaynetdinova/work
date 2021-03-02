@@ -27,37 +27,58 @@ import {OnlinePayPage} from "./pages/PersonalAreaPage/OnlinePayPage";
 import {OrderDonePage} from "./pages/PersonalAreaPage/OrderDonePage";
 import {PaymentOrderPage} from "./pages/PersonalAreaPage/PaymentPage";
 import {DeliveryOrderPage} from "./pages/PersonalAreaPage/DeliveryPage";
+import {$} from './core/dom'
 
 
 
 window.userRegistry = true
 
-new Router('#app', {
-  mainPage: MainPage,
-  viewCategoriesPage: ViewCategoriesPage,
-  viewCategoriesIndex: CatalogPage,
-  viewCategoriesChildren: ViewCategoriesChildren,
-  cardProduct: CardProduct,
-  personalAreaBasket: BasketPage,
-  personalAreaData: PersonalDataPage,
-  personalAreaBonusesPage: BonusesPage,
-  personalAreaChosen: Chosen,
-  personalAreaOrdersStatus: OrderStatusPage,
-  personalAreaViewOrder: ViewOrderPage,
-  personalAreaPaymentPage: PaymentOrderPage,
-  personalAreaDeliveryPage: DeliveryOrderPage,
-  onlineOrderPage: OnlinePayPage,
-  orderDonePage: OrderDonePage,
-  aboutShoppingPage: AboutShopping,
-  aboutPaymentPage: AboutPayment,
-  aboutQuestionAnswers: AboutQuestionsAnswers,
-  aboutCooperation: AboutCooperation,
-  aboutSize: AboutSize,
-  aboutReturn: AboutReturn,
-  aboutContacts: AboutContacts,
-  aboutUs: AboutUs,
-  aboutWorkingCondition: AboutWorkingCondition,
-})
+
+const test = $('#main')
+const size = $('#size')
+if(test.$el) {
+	console.log('super', test)
+	const t = new MainPage()
+	test.append(t.getRoot())
+	t.afterRender()
+}
+
+if(size.$el) {
+	console.log(size)
+	const s = new AboutSize()
+	size.append(s.getRoot())
+	s.afterRender()
+}
+
+
+
+
+// new Router('#app', {
+//   mainPage: MainPage,
+//   viewCategoriesPage: ViewCategoriesPage,
+//   viewCategoriesIndex: CatalogPage,
+//   viewCategoriesChildren: ViewCategoriesChildren,
+//   cardProduct: CardProduct,
+//   personalAreaBasket: BasketPage,
+//   personalAreaData: PersonalDataPage,
+//   personalAreaBonusesPage: BonusesPage,
+//   personalAreaChosen: Chosen,
+//   personalAreaOrdersStatus: OrderStatusPage,
+//   personalAreaViewOrder: ViewOrderPage,
+//   personalAreaPaymentPage: PaymentOrderPage,
+//   personalAreaDeliveryPage: DeliveryOrderPage,
+//   onlineOrderPage: OnlinePayPage,
+//   orderDonePage: OrderDonePage,
+//   aboutShoppingPage: AboutShopping,
+//   aboutPaymentPage: AboutPayment,
+//   aboutQuestionAnswers: AboutQuestionsAnswers,
+//   aboutCooperation: AboutCooperation,
+//   aboutSize: AboutSize,
+//   aboutReturn: AboutReturn,
+//   aboutContacts: AboutContacts,
+//   aboutUs: AboutUs,
+//   aboutWorkingCondition: AboutWorkingCondition,
+// })
 
 
 
