@@ -24,6 +24,13 @@
   .wrapper {
     display: flex;
   }
+  .card-product-page-js {
+    &.show-table {
+      .Popup-table-main-size {
+        display: block;
+      }
+    }
+  }
   .wrapper-card {
     padding: 0 20px;
     max-width: 1480px;
