@@ -1,7 +1,6 @@
 import info from '../../../images/icons/info.svg'
 import {Sale} from './sale'
 import {quantity} from "./quantity";
-import {popupTableMainSize} from "./popupTable/popupTableMainSize";
 
 // error
 const testArrSizes = [

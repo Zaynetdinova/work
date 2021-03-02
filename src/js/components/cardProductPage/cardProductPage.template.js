@@ -16,6 +16,7 @@ import {commonCard} from "../common/commonCard/commonCards";
 import {socialNetworks} from '../../core/utils/social'
 import {breadCrumbsProduct} from './view/breadCrumbsProduct'
 import {popupTableMainSize} from "../common/popupTable/popupTableMainSize";
+import {popupTableSizeKinds} from "../common/popupTable/popupTableSizeKinds";
 
 export function cardProductPageTemplate(
 	cards = [],
@@ -79,7 +80,7 @@ export function cardProductPageTemplate(
 					
 					${form()}
 				</section>
-				${popupTableMainSize()}
+				${popupTableSizeKinds()}
 			</div>
 		</div>
 		
