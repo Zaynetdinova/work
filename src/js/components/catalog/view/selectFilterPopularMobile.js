@@ -1,4 +1,4 @@
-import arrow from '../../../../images/icons/arrow3.svg'
+import arrow from '../../../../images/icons/arrow5.svg'
 
 export function selectFilterPopularMobileTemplate (items, text) {
 	return `

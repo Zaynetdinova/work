@@ -93,6 +93,12 @@ export class CardProductPage extends Component {
         		case 'zoom-photo-js-mobile':
 					this.utils.popupPhotos()
           			break;
+				case 'table-size-js':
+					this.utils.showTable('.card-product-page-js')
+					break;
+				case 'close-table-main-size':
+					this.utils.removeTable('.card-product-page-js')
+					break;
 			}
 		}
 	}

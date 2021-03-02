@@ -1,4 +1,4 @@
-import arrow from "../../../images/icons/arrow3.svg"
+import arrow from "../../../images/icons/arrow5.svg"
 
 import {selectFilterPopularMobileTemplate} from '../../components/catalog/view/selectFilterPopularMobile'
 import {selectChoicePhoneType} from '../../components/common/selectChoicePhoneType'
@@ -12,6 +12,7 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 				<article data-type="item" data-id="${item.id}" class="select-item">
 					${item.value} 
 				</article>
+				<div class="select-line"></div>
     `
 	})
 
@@ -24,27 +25,25 @@ const getTemplate = (data = [], placeholder, originalText, selectedId, type = ''
 			return selectFilterPopularMobileTemplate(items, text)
 			break;
 		case 'select-phone-type':
-      return selectChoicePhoneType(data, text)
+      		return selectChoicePhoneType(data, text)
 			break;
-    case 'form-organization-select-js':
-      return selectOrganizationType(items, text)
-      break;
+		case 'form-organization-select-js':
+			return selectOrganizationType(items, text)
+			break;
 	}
 
 	function defaultTemplate(items, text, mainText) {
 		return `
-    <div class="wrapper-select">
-    
-   		<article data-type="input" class="input-selected-item">
-				<div class="title" >${mainText}</div>
-				<div class="arrow-wrapper">
-					<img class="arrow" src="${arrow}" alt="">      
-					<span data-type="value" class="value">${text}</span>
-				</div>
-			</article>
-			
-			<div class="popup-selected-items">  ${items.join('')}</div>        
-		</div> 
+			<div class="wrapper-select">
+				<article data-type="input" class="input-selected-item">
+					<div class="title" >${mainText}</div>
+					<div class="arrow-wrapper">
+						<img class="arrow" src="${arrow}" alt="">      
+						<span data-type="value" class="value">${text}</span>
+					</div>
+				</article>
+				<div class="popup-selected-items">  ${items.join('')}</div>        
+			</div> 
   `
 	}
 }
@@ -88,9 +87,10 @@ export class Select {
 				case 'item':
 					const id = event.target.dataset.id
 					this.select(id)
-					break
+					break;
 				case 'input-item':
 					this.inputSelect(element)
+					break;
 			}
 		}
 	}
@@ -107,7 +107,7 @@ export class Select {
 		this.selectedId = element.dataset.id
 		this.$value.innerHTML = `
 			<span data-type="value" class="value">
-				<img src="${this.current.value}">
+				<img src="${this.current.value}" alt="">
 			</span>
 		`
 

@@ -15,6 +15,7 @@ import {form} from "./view/form";
 import {commonCard} from "../common/commonCard/commonCards";
 import {socialNetworks} from '../../core/utils/social'
 import {breadCrumbsProduct} from './view/breadCrumbsProduct'
+import {popupTableMainSize} from "../common/popupTable/popupTableMainSize";
 
 export function cardProductPageTemplate(
 	cards = [],
@@ -27,7 +28,7 @@ export function cardProductPageTemplate(
 			
 			${breadCrumbsProduct(title)}
 			
-			<div class="wrapper">
+			<div class="wrapper card-product-page-js">
 			
 				<section class="photos">
 					${viewPhotosBlock()}
@@ -41,10 +42,8 @@ export function cardProductPageTemplate(
 								${buttonProduct('Новинка')}
 							</div>						
 							${star('card-product-page-star-js')}
-						</div>
-						
+						</div>		
 						${favorites()}
-						
 					</div>
 					
 					${transitionBrand(brand)}
@@ -67,9 +66,10 @@ export function cardProductPageTemplate(
 					
 					${infoTable(table)}
 					
+					
 					<div class="wrapper-attention">
 						${attention()}
-						</div>
+					</div>
 					
 					${descriptionModule()}
 					
@@ -79,7 +79,7 @@ export function cardProductPageTemplate(
 					
 					${form()}
 				</section>
-				
+				${popupTableMainSize()}
 			</div>
 		</div>
 		

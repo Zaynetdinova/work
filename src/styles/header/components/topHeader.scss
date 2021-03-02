@@ -74,16 +74,19 @@
   .wrapper-tooltip {
     position: absolute;
     left: 0;
-    padding-top: 4px;
     display: none;
     z-index: 10;
+    border-top: 5px solid $burgundy;
+    margin-top: 3px;
     .tooltip {
       display: flex;
       flex-direction: column;
       background: #FFFFFF;
-      border: 1px solid #EAE7E1;
       color: black;
       width: 199px;
+      border-left: 1px solid #EAE7E1;
+      border-right: 1px solid #EAE7E1;
+      border-bottom: 1px solid #EAE7E1;
       .item {
         cursor: pointer;
         font-size: 13px;

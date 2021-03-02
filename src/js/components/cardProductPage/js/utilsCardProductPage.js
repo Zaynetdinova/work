@@ -61,6 +61,15 @@ export class UtilsCardProductPage {
 		}
 	}
 
+	showTable(className) {
+		const $mainElem = document.querySelector(className)
+		$mainElem.classList.toggle('show-table')
+	}
+	removeTable(className) {
+		const $mainElem = document.querySelector(className)
+		$mainElem.classList.remove('show-table')
+	}
+
 	star(quantityStars = 5) {
 		if(quantityStars > 5) {
 			return

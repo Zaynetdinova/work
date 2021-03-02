@@ -1,6 +1,6 @@
 export function navCatalog(item) {
     return `
-        <nav class="navCatalog">${jumpCatalog(item)}</nav>
+        <nav id="nav-catalog" data-catalog-parent-event-js class="navCatalog">${jumpCatalog(item)}</nav>
     `
 }
 
@@ -8,9 +8,7 @@ export function navCatalog(item) {
 function jumpCatalog(item) {
     const items = item.map((item) => {
         return `
-            <article data-catalog-parent-event-js id="page-number-js">
-                <div class="nav-text ${item.class}" id="${item.id}">${item.title}</div>
-            </article>        
+            <div class="page-number-js nav-text ${item.class}" id="${item.id}">${item.title}</div>      
         `
     })
     return `${items.join('')}`

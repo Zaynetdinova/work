@@ -1,6 +1,7 @@
 import info from '../../../images/icons/info.svg'
 import {Sale} from './sale'
 import {quantity} from "./quantity";
+import {popupTableMainSize} from "./popupTable/popupTableMainSize";
 
 // error
 const testArrSizes = [
@@ -13,10 +14,10 @@ const testArrSizes = [
 
 export function infoTable(item) {
     return `
-        <article id="info-table" class="infoTable">
+        <article data-info-table id="info-table" class="infoTable">
             <div class="common">
                 <div class="size-quantity">Размер и количество</div>
-                <div class="table-size">Таблица размеров</div>
+                <article id="table-size-js" data-card-product-page-table-js class="table-size">Таблица размеров</article>
             </div>
             
             <table>

@@ -134,6 +134,9 @@ export class Catalog extends Component {
                 case 'number-pages-js':
                     this.catalog.changeNumberPage(e)
                     break;
+                case 'nav-catalog':
+                    this.catalog.changeNumberPage(e)
+                    break;
             }
         }
         if (e.target.closest('#burger-catalog')) {
