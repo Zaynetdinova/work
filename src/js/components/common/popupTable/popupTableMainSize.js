@@ -1,7 +1,7 @@
 export function popupTableMainSize() {
     return `
         <div class="Popup-table-main-size">
-            <div class="paranja"></div>
+            <div id="paranja-js" class="paranja"></div>
             <div class="wrapper-popup-table-main-size">
                 <div class="wrapper-close">
                      <article id="close-table-main-size" class="close"></article>
@@ -10,7 +10,7 @@ export function popupTableMainSize() {
                 <div class="wrapper-table-common">
                 <div class="title-size-page">Таблица основных размеров</div>
                     <section class="wrapper-table">
-                        <table>
+                        <table class="main-size">
                         <tr class="one-line">
                             <td class="title">Размер</td>
                             <td>38</td>

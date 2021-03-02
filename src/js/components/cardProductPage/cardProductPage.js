@@ -99,6 +99,9 @@ export class CardProductPage extends Component {
 				case 'close-table-main-size':
 					this.utils.removeTable('.card-product-page-js')
 					break;
+				case 'paranja-js':
+					this.utils.removeTable('.card-product-page-js')
+					break;
 			}
 		}
 	}
