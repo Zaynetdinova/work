@@ -27,26 +27,6 @@ export function popupTableChildrenHats() {
                     </tr>
                 </table>
                 </section>
-                <div class="title-category">Детские шарфы, перчатки</div>
-                
-                <section class="wrapper-table">
-                    <table class="kinds-four">
-                    <tr class="one-line">
-                        <td class="title">Размер</td>
-                        <td>XS</td>
-                        <td>S</td>
-                        <td>M</td>
-                        <td>L</td>
-                    </tr>
-                    <tr class="white-line">
-                        <td class="title">Возраст</td>
-                        <td>2 – 4</td>
-                        <td>4 – 8</td>
-                        <td>8 – 10</td>
-                        <td>10 – 12</td>
-                    </tr>
-                </table>
-                </section>
                 </div>
             </div>
         </div>    

@@ -18,6 +18,7 @@ import {breadCrumbsProduct} from './view/breadCrumbsProduct'
 import {popupTableMainSize} from "../common/popupTable/popupTableMainSize";
 import {popupTableSizeKinds} from "../common/popupTable/popupTableSizeKinds";
 import {popupTableKinds} from "../common/popupTable/popupTableKinds";
+import {popupTableChildrenHats} from "../common/popupTable/popupTableChildrenHats";
 
 export function cardProductPageTemplate(
 	cards = [],
@@ -81,7 +82,7 @@ export function cardProductPageTemplate(
 					
 					${form()}
 				</section>
-				${popupTableKinds()}
+				${popupTableChildrenHats()}
 			</div>
 		</div>
 		
