@@ -7,6 +7,7 @@ export class Router {
 		if(!selector) {
 			throw new Error('Selector is not provided')
 		}
+		console.log('routes', routes)
 
 		this.$placeholder = $(selector)
 		this.routes = routes
@@ -101,7 +102,9 @@ export class Router {
 				Page = this.routes.mainPage
 		}
     scrollUpBody()
+		console.log(ActiveRoute.param)
 		this.page = new Page(ActiveRoute.param)
+		console.log(this.page)
 		this.$placeholder.append(this.page.getRoot())
 		this.page.afterRender()
 	}

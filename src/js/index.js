@@ -3,6 +3,7 @@ import 'swiper/swiper-bundle.css';
 import 'nouislider/distribute/nouislider.css';
 import {Router} from './core/routes/Router'
 import {MainPage} from './pages/MainPage'
+
 import {ViewCategoriesPage} from './pages/ViewCategoriesPage'
 import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
@@ -27,10 +28,31 @@ import {OnlinePayPage} from "./pages/PersonalAreaPage/OnlinePayPage";
 import {OrderDonePage} from "./pages/PersonalAreaPage/OrderDonePage";
 import {PaymentOrderPage} from "./pages/PersonalAreaPage/PaymentPage";
 import {DeliveryOrderPage} from "./pages/PersonalAreaPage/DeliveryPage";
+import {$} from './core/dom'
 
 
 
 window.userRegistry = true
+
+
+// const test = $('#main')
+// const size = $('#size')
+// if(test.$el) {
+// 	console.log('super', test)
+// 	const t = new MainPage()
+// 	test.append(t.getRoot())
+// 	t.afterRender()
+// }
+//
+// if(size.$el) {
+// 	console.log(size)
+// 	const s = new AboutSize()
+// 	size.append(s.getRoot())
+// 	s.afterRender()
+// }
+
+
+
 
 new Router('#app', {
   mainPage: MainPage,

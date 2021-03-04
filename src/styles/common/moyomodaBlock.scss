@@ -92,7 +92,7 @@
     background-position: 50% 48%;
     .card {
       .img {
-        height: 230px;
+        height: 320px;
       }
       .info {
         .line {
@@ -102,12 +102,15 @@
     }
   }
 
-  @media (max-width: $tablet-breakpoint) {
-    background-position: 50% 56%;
+  @media (max-width: 1400px) {
+    background-position: 50% 44%;
     .root {
       padding: 68px 20px 80px 20px;
     }
     .card {
+      .img {
+        height: 270px;
+      }
       .info {
         .text {
           .description {
@@ -117,7 +120,15 @@
       }
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
+    background-position: 50% 44%;
+    .card {
+      .img {
+        height: 250px;
+      }
+    }
+  }
+  @media (max-width: 1060px) {
     .root {
       padding: 68px 20px 60px 20px;
     }
