@@ -3,6 +3,7 @@ import 'swiper/swiper-bundle.css';
 import 'nouislider/distribute/nouislider.css';
 import {Router} from './core/routes/Router'
 import {MainPage} from './pages/MainPage'
+
 import {ViewCategoriesPage} from './pages/ViewCategoriesPage'
 import {CatalogPage} from './pages/CatalogPage'
 import {ViewCategoriesChildren} from './pages/ViewCategoriesChildren'
@@ -34,51 +35,51 @@ import {$} from './core/dom'
 window.userRegistry = true
 
 
-const test = $('#main')
-const size = $('#size')
-if(test.$el) {
-	console.log('super', test)
-	const t = new MainPage()
-	test.append(t.getRoot())
-	t.afterRender()
-}
-
-if(size.$el) {
-	console.log(size)
-	const s = new AboutSize()
-	size.append(s.getRoot())
-	s.afterRender()
-}
-
-
+// const test = $('#main')
+// const size = $('#size')
+// if(test.$el) {
+// 	console.log('super', test)
+// 	const t = new MainPage()
+// 	test.append(t.getRoot())
+// 	t.afterRender()
+// }
+//
+// if(size.$el) {
+// 	console.log(size)
+// 	const s = new AboutSize()
+// 	size.append(s.getRoot())
+// 	s.afterRender()
+// }
 
 
-// new Router('#app', {
-//   mainPage: MainPage,
-//   viewCategoriesPage: ViewCategoriesPage,
-//   viewCategoriesIndex: CatalogPage,
-//   viewCategoriesChildren: ViewCategoriesChildren,
-//   cardProduct: CardProduct,
-//   personalAreaBasket: BasketPage,
-//   personalAreaData: PersonalDataPage,
-//   personalAreaBonusesPage: BonusesPage,
-//   personalAreaChosen: Chosen,
-//   personalAreaOrdersStatus: OrderStatusPage,
-//   personalAreaViewOrder: ViewOrderPage,
-//   personalAreaPaymentPage: PaymentOrderPage,
-//   personalAreaDeliveryPage: DeliveryOrderPage,
-//   onlineOrderPage: OnlinePayPage,
-//   orderDonePage: OrderDonePage,
-//   aboutShoppingPage: AboutShopping,
-//   aboutPaymentPage: AboutPayment,
-//   aboutQuestionAnswers: AboutQuestionsAnswers,
-//   aboutCooperation: AboutCooperation,
-//   aboutSize: AboutSize,
-//   aboutReturn: AboutReturn,
-//   aboutContacts: AboutContacts,
-//   aboutUs: AboutUs,
-//   aboutWorkingCondition: AboutWorkingCondition,
-// })
+
+
+new Router('#app', {
+  mainPage: MainPage,
+  viewCategoriesPage: ViewCategoriesPage,
+  viewCategoriesIndex: CatalogPage,
+  viewCategoriesChildren: ViewCategoriesChildren,
+  cardProduct: CardProduct,
+  personalAreaBasket: BasketPage,
+  personalAreaData: PersonalDataPage,
+  personalAreaBonusesPage: BonusesPage,
+  personalAreaChosen: Chosen,
+  personalAreaOrdersStatus: OrderStatusPage,
+  personalAreaViewOrder: ViewOrderPage,
+  personalAreaPaymentPage: PaymentOrderPage,
+  personalAreaDeliveryPage: DeliveryOrderPage,
+  onlineOrderPage: OnlinePayPage,
+  orderDonePage: OrderDonePage,
+  aboutShoppingPage: AboutShopping,
+  aboutPaymentPage: AboutPayment,
+  aboutQuestionAnswers: AboutQuestionsAnswers,
+  aboutCooperation: AboutCooperation,
+  aboutSize: AboutSize,
+  aboutReturn: AboutReturn,
+  aboutContacts: AboutContacts,
+  aboutUs: AboutUs,
+  aboutWorkingCondition: AboutWorkingCondition,
+})
 
 
 
